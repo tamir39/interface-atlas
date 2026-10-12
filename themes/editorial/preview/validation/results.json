@@ -1,0 +1,909 @@
+{
+  "checks": [
+    {
+      "name": "Light/dark and comfortable/compact reflow and opaque text contrast",
+      "passed": true,
+      "details": "20 combinations"
+    },
+    {
+      "name": "Keyboard skip link moves focus to main",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Run filters expose empty results and recover",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Keyboard detail navigation and cancellation request/acknowledgement remain distinct",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Returning from a filtered-out run preserves filters and detail context",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System follows live changes; explicit appearance persists",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off give immediate feedback",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Forced-colors focus outline retains geometry",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize reflows at 640px",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Actual fallback font families recorded",
+      "passed": true,
+      "details": {
+        ".intro-description": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 143
+          }
+        ],
+        ".serif-sample": [
+          {
+            "family": "Georgia",
+            "custom": false,
+            "glyphCount": 41
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 30
+          }
+        ],
+        "p[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 35
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blocked and invalid stored preferences retain a usable interface",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript content remains available and passes opaque text contrast; simulation actions unavailable",
+      "passed": true,
+      "details": {
+        "checked": 270,
+        "minimum": 7.38
+      }
+    },
+    {
+      "name": "No browser runtime errors or external resource requests",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 237,
+        "minimum": 5.15,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 3.8,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.8,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 237,
+        "minimum": 7.38,
+        "skipped": [],
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "run-state-filter",
+            "ratio": 5.03,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.03,
+            "required": 3
+          }
+        ]
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing.",
+    "Contrast checks cover visible text with opaque solid backgrounds; disabled controls, placeholders, text selection, and native popup menus are outside this check.",
+    "Font fallbacks are tested; the named webfont files are not distributed or loaded."
+  ],
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "27100b9ca6591e41c67bc71a67e67fb1d3aef6b5f931d91590d7a953346c496f",
+    "styles.css": "209a6481aced8ebb2739c1dda14c9088db4f60c1f5d3a47afa1f3903a321d35b",
+    "preview.js": "a154e6238a66388b194b70ec10f90401d9f7e31e91131ddd09f6be549aebeb02"
+  },
+  "renderedFonts": {
+    ".intro-description": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 143
+      }
+    ],
+    ".serif-sample": [
+      {
+        "family": "Georgia",
+        "custom": false,
+        "glyphCount": 41
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 30
+      }
+    ],
+    "p[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 35
+      }
+    ]
+  }
+}

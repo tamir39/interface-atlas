@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "themes": [
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "basis": "adapted-from-tamir39-portfolio",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "portfolio",
+        "publication",
+        "boutique-site",
+        "agent-workspace",
+        "operations-dashboard"
+      ],
+      "motion_character": "restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "166f44091a58a68d74096bc44defceb99243ba4e",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/editorial/README.md",
+        "design": "themes/editorial/design.md",
+        "sources": "themes/editorial/sources.md",
+        "effects": "themes/editorial/effects.md",
+        "motion": "themes/editorial/motion.md"
+      }
+    }
+  ]
+}

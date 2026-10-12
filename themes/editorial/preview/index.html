@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-appearance="system" data-density="comfortable" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original, standalone reference preview of Interface Atlas's draft Editorial theme.">
+  <title>Editorial reference preview · Interface Atlas</title>
+  <script>
+    (() => {
+      const defaults = { appearance: 'system', density: 'comfortable', motion: 'on' };
+      let saved;
+      try { saved = JSON.parse(localStorage.getItem('interface-atlas-editorial-preview')); } catch {}
+      const options = { appearance: ['light', 'dark', 'system'], density: ['comfortable', 'compact'], motion: ['on', 'off'] };
+      for (const key of Object.keys(defaults)) {
+        document.documentElement.dataset[key] = options[key].includes(saved?.[key]) ? saved[key] : defaults[key];
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="preview-header container">
+    <a class="atlas-brand" href="../../../README.md"><span class="atlas-mark" aria-hidden="true">ia</span> Interface Atlas</a>
+    <span class="draft-label">Reference preview <span aria-hidden="true">/</span> Draft 0.1.0</span>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="preview-intro container" aria-labelledby="preview-title">
+      <div class="intro-copy">
+        <p class="eyebrow">Theme 01 <span aria-hidden="true">—</span> A study in warm restraint</p>
+        <h1 id="preview-title">Editorial</h1>
+        <p class="intro-description">One visual language, two different kinds of work. Explore the palette, the reading rhythm, and the decisions that change with a project's purpose.</p>
+      </div>
+      <form class="preview-settings" aria-label="Preview preferences">
+        <div class="preference-fields">
+          <div class="field">
+            <label for="appearance">Appearance</label>
+            <select id="appearance" name="appearance" disabled>
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="density">Specimen density</label>
+            <select id="density" name="density" disabled>
+              <option value="comfortable">Comfortable</option>
+              <option value="compact">Compact</option>
+            </select>
+          </div>
+        </div>
+        <label class="checkbox-label" for="motion"><input id="motion" name="motion" type="checkbox" checked disabled> Enable subtle feedback motion</label>
+        <p class="support" id="motion-note">System reduced-motion preferences take priority.</p>
+        <p class="support" id="preference-note">Controls become available when JavaScript runs.</p>
+      </form>
+    </section>
+
+    <nav class="section-nav container" aria-label="Preview sections">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#operations">Agent operations</a>
+      <a href="#specimen">Component specimen</a>
+      <a href="#credits">Credits</a>
+    </nav>
+
+    <section id="portfolio" class="portfolio section-block container" aria-labelledby="portfolio-title">
+      <div class="section-caption"><p class="eyebrow">01 / Portfolio adaptation</p><span class="support">Comfortable · Expressive · Static artwork</span></div>
+      <div class="portfolio-hero">
+        <div class="hero-copy">
+          <p class="small-label">Sample portfolio · Frontend developer</p>
+          <h2 id="portfolio-title">Make room for<br><em>meaningful work.</em></h2>
+          <p class="introduction">Careful structure, readable interfaces, and a clear path from an idea to the next useful action.</p>
+          <p class="support">Fictional sample briefs below demonstrate the theme. They do not represent shipped projects or measured outcomes.</p>
+          <div class="action-group"><a class="button primary" href="#selected-work">Explore the sample work <span aria-hidden="true">↗</span></a><a class="button secondary" href="#portfolio-approach">Read the approach</a></div>
+        </div>
+        <div class="composition" aria-hidden="true">
+          <div class="composition-label">A little space. A clearer story.</div>
+          <div class="composition-paper">
+            <span class="paper-marker">I.</span>
+            <span class="paper-title">Room<br>to think.</span>
+            <span class="paper-line wide"></span><span class="paper-line"></span><span class="paper-line short"></span>
+            <span class="paper-footer">Structure before decoration</span>
+          </div>
+          <div class="composition-note">Clarity is a design decision.</div>
+          <svg class="composition-orbit" viewBox="0 0 300 300" fill="none"><circle cx="150" cy="150" r="126"/><circle cx="150" cy="150" r="106"/><path d="M12 150h276M150 12v276"/></svg>
+        </div>
+      </div>
+
+      <div class="section-heading" id="selected-work"><h3>Selected sample work</h3><p class="support">Two small briefs, two distinct reading flows.</p></div>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-art reading-art" aria-hidden="true"><span class="art-index">01</span><div class="mini-page"><span class="mini-eyebrow">Field notes</span><span class="mini-title">The value of<br>a slower read.</span><span class="mini-line"></span><span class="mini-line"></span><span class="mini-line shorter"></span></div><span class="art-caption">A reading study</span></div>
+          <div class="work-content"><p class="small-label">Publication · Sample brief</p><h4>A calmer reading flow</h4><p>Bring the article, its context, and the next chapter into a clear reading order.</p><a href="#reading-brief">Read the publication brief <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="work-card">
+          <div class="work-art handoff-art" aria-hidden="true"><span class="art-index">02</span><div class="mini-workspace"><span class="mini-eyebrow">Next action</span><span class="mini-task">Review the proposal</span><span class="mini-task secondary-task">Understand the scope</span><span class="mini-task final-task">Record the decision</span></div><span class="art-caption">A handoff study</span></div>
+          <div class="work-content"><p class="small-label">Agent workspace · Sample brief</p><h4>A clearer task handoff</h4><p>Keep the observed state, the proposed action, and the operator's decision distinct.</p><a href="#handoff-brief">Read the workspace brief <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <div class="approach-grid" id="portfolio-approach">
+        <div><p class="eyebrow">An intentional approach</p><h3>Let the content<br>lead the composition.</h3></div>
+        <div class="briefs">
+          <details id="reading-brief"><summary>Publication brief</summary><p>Start with the article title, author context, and a readable text measure. Introduce related reading after the main story. This preview supplies a fictional design brief, not an account of a completed project.</p></details>
+          <details id="handoff-brief"><summary>Workspace brief</summary><p>State what is known before offering an action. Give the operator a stable place to read the proposal and its scope. A requested command stays pending until its acknowledgement is received.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="operations" class="operations section-block" aria-labelledby="operations-title">
+      <div class="container">
+        <div class="section-caption"><p class="eyebrow">02 / Agent operations adaptation</p><span class="support">Compact · Flat panels · Explicit state</span></div>
+        <div class="operations-heading"><div><h2 id="operations-title">Built for decisions, too.</h2><p>The same palette, with less expressive geometry and more room for operational context.</p></div><span class="simulation-label">Simulation · No backend connected</span></div>
+        <div class="operations-shell">
+          <div class="workspace-top"><div><p class="small-label">Sample workspace</p><h3>Runs</h3></div><p class="support">Four fictional runs · Updates are manual</p></div>
+          <form id="run-filters" class="run-filters" aria-label="Filter sample runs">
+            <div class="field search-field"><label for="run-search">Search runs</label><input id="run-search" name="search" type="search" placeholder="Name or run ID" disabled></div>
+            <div class="field"><label for="run-state-filter">Execution state</label><select id="run-state-filter" name="execution" disabled><option value="all">All states</option><option value="running">Running</option><option value="waiting">Waiting</option><option value="succeeded">Succeeded</option><option value="queued">Queued</option><option value="cancelled">Cancelled</option></select></div>
+            <button id="reset-filters" class="button secondary" type="button" disabled>Reset filters</button>
+          </form>
+          <p id="run-count" class="support results-count" role="status" aria-atomic="true">4 sample runs</p>
+          <div class="operations-grid">
+            <div class="run-list-pane">
+              <ul class="run-list" aria-label="Sample runs">
+                <li id="run-101" data-run-id="101" data-state="running" class="run-row">
+                  <div class="run-row-top"><h4>Review homepage hierarchy</h4><span class="status information" data-execution-label="101">Running</span></div><p class="run-id">RUN-101</p><dl class="run-meta"><div><dt>Attention</dt><dd>None</dd></div><div><dt>Last observed</dt><dd><time>10:24:16</time></dd></div></dl><a id="inspect-run-101" class="inspect-link" href="#detail-run-101">Inspect <span class="sr-only">RUN-101</span><span aria-hidden="true">↗</span></a>
+                </li>
+                <li id="run-102" data-run-id="102" data-state="waiting" class="run-row">
+                  <div class="run-row-top"><h4>Draft navigation options</h4><span class="status warning">Waiting</span></div><p class="run-id">RUN-102</p><dl class="run-meta"><div><dt>Attention</dt><dd>Needs input</dd></div><div><dt>Last observed</dt><dd><time>10:21:04</time></dd></div></dl><a id="inspect-run-102" class="inspect-link" href="#detail-run-102">Inspect <span class="sr-only">RUN-102</span><span aria-hidden="true">↗</span></a>
+                </li>
+                <li id="run-103" data-run-id="103" data-state="succeeded" class="run-row">
+                  <div class="run-row-top"><h4>Check button contrast</h4><span class="status success">Succeeded</span></div><p class="run-id">RUN-103</p><dl class="run-meta"><div><dt>Attention</dt><dd>None</dd></div><div><dt>Last observed</dt><dd><time>10:20:31</time></dd></div></dl><a id="inspect-run-103" class="inspect-link" href="#detail-run-103">Inspect <span class="sr-only">RUN-103</span><span aria-hidden="true">↗</span></a>
+                </li>
+                <li id="run-104" data-run-id="104" data-state="queued" class="run-row">
+                  <div class="run-row-top"><h4>Organize case-study notes</h4><span class="status">Queued</span></div><p class="run-id">RUN-104</p><dl class="run-meta"><div><dt>Attention</dt><dd>None</dd></div><div><dt>Last observed</dt><dd><time>10:19:32</time></dd></div></dl><a id="inspect-run-104" class="inspect-link" href="#detail-run-104">Inspect <span class="sr-only">RUN-104</span><span aria-hidden="true">↗</span></a>
+                </li>
+              </ul>
+              <p id="no-runs" class="empty-state" hidden>No sample runs match. Change the search or reset the filters.</p>
+              <p class="support selection-note">Filtering preserves the open run's context and the list's order.</p>
+            </div>
+            <div class="detail-pane" aria-label="Sample run details">
+              <article id="detail-run-101" class="run-detail" data-detail-id="101" aria-labelledby="detail-heading-101">
+                <div class="detail-heading"><p class="run-id">RUN-101 · Sample data</p><h4 id="detail-heading-101" tabindex="-1">Review homepage hierarchy</h4></div>
+                <dl class="state-grid"><div><dt>Confirmed execution</dt><dd id="execution-run-101" class="information">Running</dd></div><div><dt>Attention</dt><dd>None</dd></div><div><dt>Pending command</dt><dd id="pending-run-101">None</dd></div><div><dt>Connection</dt><dd>Connected</dd></div></dl>
+                <p id="cancel-explanation" class="detail-explanation">Requesting cancellation leaves the confirmed execution state as Running until an acknowledgement is simulated.</p>
+                <div class="action-group"><button id="request-cancel" class="button secondary" type="button" disabled>Cancel run</button><button id="acknowledge-cancel" class="button primary" type="button" hidden disabled>Simulate acknowledgement</button></div>
+                <div class="evidence"><h5>Observed sample events</h5><ol id="run-101-events" class="event-list"><li><time>10:24:00</time><span>Simulation: run started.</span></li><li><time>10:24:16</time><span>Simulation: layout review requested.</span></li></ol><p class="support">These fixed events are demonstration data. No tool or external service has been called.</p></div>
+                <button id="back-to-run-101" class="back-to-run button secondary" type="button" hidden>Back to runs</button>
+              </article>
+              <article id="detail-run-102" class="run-detail" data-detail-id="102" aria-labelledby="detail-heading-102">
+                <div class="detail-heading"><p class="run-id">RUN-102 · Sample data</p><h4 id="detail-heading-102" tabindex="-1">Draft navigation options</h4></div><dl class="state-grid"><div><dt>Confirmed execution</dt><dd class="warning">Waiting</dd></div><div><dt>Attention</dt><dd>Needs input</dd></div><div><dt>Pending command</dt><dd>None</dd></div><div><dt>Connection</dt><dd>Connected</dd></div></dl><p class="detail-explanation">Sample request: choose whether the navigation should prioritize articles or projects. This preview does not submit a decision.</p><p class="support">Last sample event: 10:21:04. No approval request is present.</p><button id="back-to-run-102" class="back-to-run button secondary" type="button" hidden>Back to runs</button>
+              </article>
+              <article id="detail-run-103" class="run-detail" data-detail-id="103" aria-labelledby="detail-heading-103">
+                <div class="detail-heading"><p class="run-id">RUN-103 · Sample data</p><h4 id="detail-heading-103" tabindex="-1">Check button contrast</h4></div><dl class="state-grid"><div><dt>Confirmed execution</dt><dd class="success">Succeeded</dd></div><div><dt>Attention</dt><dd>None</dd></div><div><dt>Pending command</dt><dd>None</dd></div><div><dt>Connection</dt><dd class="warning">Disconnected</dd></div></dl><p class="detail-explanation">The stream is disconnected. Succeeded remains the last confirmed sample state; a connection change does not establish a different execution outcome.</p><p class="support">Last sample event: 10:20:31. The fictional run name does not claim that this preview passed a contrast audit.</p><button id="back-to-run-103" class="back-to-run button secondary" type="button" hidden>Back to runs</button>
+              </article>
+              <article id="detail-run-104" class="run-detail" data-detail-id="104" aria-labelledby="detail-heading-104">
+                <div class="detail-heading"><p class="run-id">RUN-104 · Sample data</p><h4 id="detail-heading-104" tabindex="-1">Organize case-study notes</h4></div><dl class="state-grid"><div><dt>Confirmed execution</dt><dd>Queued</dd></div><div><dt>Attention</dt><dd>None</dd></div><div><dt>Pending command</dt><dd>None</dd></div><div><dt>Connection</dt><dd>Connected</dd></div></dl><p class="detail-explanation">This run is queued in the sample state. No progress estimate or cancellation capability is asserted.</p><p class="support">Last sample event: 10:19:32.</p><button id="back-to-run-104" class="back-to-run button secondary" type="button" hidden>Back to runs</button>
+              </article>
+            </div>
+          </div>
+          <p id="operation-status" class="sr-only" role="status" aria-atomic="true"></p>
+          <noscript><p class="no-script">JavaScript is unavailable. All four run details remain readable; filters and cancellation simulation are disabled.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section id="specimen" class="specimen section-block container" aria-labelledby="specimen-title">
+      <div class="section-caption"><p class="eyebrow">03 / Component specimen</p><span class="support" id="density-note">Comfortable density</span></div>
+      <div class="section-heading"><h2 id="specimen-title">The small details, together.</h2><p>A neutral sample for comparing appearance and density. The project examples above keep their own profiles.</p></div>
+      <div class="specimen-grid">
+        <article class="specimen-card type-specimen" aria-labelledby="type-title"><p class="eyebrow">Typography</p><h3 id="type-title">A clear reading rhythm.</h3><p class="serif-sample">An expressive accent,<br>used with intention.</p><p>Warm surfaces support the content. A measured line length gives each sentence room; a restrained hierarchy helps the reader find the next idea.</p><p lang="vi">Giao diện rõ ràng, nội dung dễ đọc.</p><p class="support">English and Vietnamese text use local font fallbacks here.</p><p class="technical">RUN-101 / 10:24:16 / 128 items</p></article>
+        <article class="specimen-card" aria-labelledby="controls-title"><p class="eyebrow">Controls</p><h3 id="controls-title">Visible choices.</h3><div class="field"><label for="specimen-name">Project name</label><input id="specimen-name" type="text" name="project-name" value="A thoughtful interface" autocomplete="off" aria-describedby="specimen-name-note"><p id="specimen-name-note" class="support">An editable local specimen; nothing is submitted.</p></div><div class="action-group"><a id="primary-specimen" class="button primary" href="#specimen-title">Primary action</a><a id="secondary-specimen" class="button secondary" href="#specimen-title">Secondary action</a></div><button class="button secondary" type="button" disabled>Unavailable action</button><p class="support">This unavailable control demonstrates its disabled state.</p><p class="note">Note: helpful context belongs near the decision.</p></article>
+        <article class="specimen-card status-specimen" aria-labelledby="states-title"><p class="eyebrow">State and feedback</p><h3 id="states-title">Meaning beyond color.</h3><ul class="status-list"><li class="success"><span aria-hidden="true">✓</span> Succeeded — result confirmed</li><li class="warning"><span aria-hidden="true">!</span> Needs input — choose a direction</li><li class="danger"><span aria-hidden="true">×</span> Failed — review the error</li><li class="information"><span aria-hidden="true">i</span> Running — observed activity</li></ul><p>Text carries the meaning. Color provides a second cue.</p><p><a href="../design.md">Read the design specification</a></p></article>
+        <article class="specimen-card table-specimen" aria-labelledby="table-title"><p class="eyebrow">Structured information</p><h3 id="table-title">A table with room to scroll.</h3><p id="table-help" class="support">On narrow screens, scroll the table horizontally. The rest of the page stays within the viewport.</p><div id="specimen-table-scroll" class="table-scroll" tabindex="0" role="region" aria-label="Sample component values" aria-describedby="table-help"><table><caption>Selected Editorial component values</caption><thead><tr><th scope="col">Component</th><th scope="col">Comfortable</th><th scope="col">Compact proposal</th></tr></thead><tbody><tr><th scope="row">Card radius</th><td>24px</td><td>12px</td></tr><tr><th scope="row">Control radius</th><td>Pill / input 12px</td><td>8px</td></tr><tr><th scope="row">Panel padding</th><td>24px</td><td>16px</td></tr><tr><th scope="row">Feedback timing</th><td>240ms</td><td>150ms</td></tr></tbody></table></div></article>
+      </div>
+    </section>
+
+    <footer id="credits" class="preview-footer container">
+      <div><p class="eyebrow">Sources, kept in view</p><h2>Credit the work behind the work.</h2><p>Editorial's seed palette, geometry, and font choices come from Tamir (Phi Vuong Tuong Tam)'s portfolio. This preview's code, static composition, and fictional sample content were created for Interface Atlas with AI assistance.</p><p class="support">No third-party implementation, artwork, or font files are included. Named fonts use local fallbacks here. This draft preview does not establish full accessibility conformance or production readiness.</p></div>
+      <div class="credit-links"><a href="../sources.md">Full sources and creator credits <span aria-hidden="true">↗</span></a><a href="../../../THIRD_PARTY_NOTICES.md">Reuse and notices <span aria-hidden="true">↗</span></a><a href="README.md">Preview scope and limitations <span aria-hidden="true">↗</span></a><a href="../../../examples/portfolio/design.md">Portfolio sample design <span aria-hidden="true">↗</span></a><a href="../../../examples/agent-operations-dashboard/design.md">Operations sample design <span aria-hidden="true">↗</span></a></div>
+    </footer>
+  </main>
+</body>
+</html>
