@@ -1,9 +1,12 @@
 # Editorial reference preview
 
-Open [index.html](index.html) directly in a browser. No build, package installation, external requests, or server is required. The preview is original HTML, CSS, and JavaScript prepared for Interface Atlas with AI assistance; its static composition and fictional project briefs are original to this preview.
+**[Open the live Editorial preview](https://tamir39.github.io/interface-atlas/themes/editorial/preview/).** It is hosted on GitHub Pages and updates when preview changes reach `main`.
+
+For offline use, open [index.html](index.html) directly in a browser. No build, package installation, external resource requests, or server is required. The preview is original HTML, CSS, and JavaScript prepared for Interface Atlas with AI assistance; its static composition and fictional project briefs are original to this preview.
 
 ## Scope
 
+- The Atlas navigation mark and intro diagram are original library artwork. They frame the reference; they are not required branding or effects for projects that select Editorial. The [logo gallery](../../../assets/brand/preview.html) and [usage notes](../../../assets/brand/README.md) record the variants and authorship.
 - Light, Dark, and System appearance choices use the draft Editorial tokens. A guarded inline script reads the preference before the stylesheet; CSS follows live system appearance changes. Invalid or unavailable storage falls back to usable defaults.
 - The density choice changes the neutral component specimen. Its compact demonstration selects proposed 12px card radii, 8px control radii, 16px padding, 14px body text, and 150ms feedback. The portfolio retains its comfortable profile; the operations workspace retains its separate compact project profile.
 - Motion controls affect only short background/border feedback. OS reduced motion overrides the enabled choice; motion off and reduced motion make changes immediate. There are no entrance animations, moving artwork, cursor effects, animated scrolling, or continuous loops.
@@ -24,6 +27,8 @@ Font designer credits are Mikhail Sharanda (Manrope), Colophon Foundry (DM Serif
 Seed palette, geometry, focus dimensions, named font roles, and feedback timing are derived from Tamir (Phi Vuong Tuong Tam)'s inspected Editorial source revision `166f44091a58a68d74096bc44defceb99243ba4e`. Typography scale, spacing, stronger control borders, semantic foregrounds, compact geometry, and operational behavior are Atlas proposals. Uniform easing across feedback properties is an Atlas normalization of the source timing.
 
 See [source credits](../sources.md), [reuse and notices](../../../THIRD_PARTY_NOTICES.md), the [portfolio design example](../../../examples/portfolio/design.md), and the [operations design example](../../../examples/agent-operations-dashboard/design.md). This implementation copies no third-party code, source artwork, portfolio branding, or font files. It does not implement the optional Floating Paths or cursor halo concepts.
+
+The deployed copy keeps the same local simulation behavior. Its documentation links are resolved to GitHub source pages during the [preview site build](../../../site/README.md); no remote fonts or third-party scripts are added.
 
 This is a representative **draft reference**, not a production portfolio or operational application. It does not implement routes, contact destinations, real agent APIs, proposals/approvals, retries, reconnecting streams, or production telemetry. Browser checks of this specimen do not validate every project adaptation, optional effect, font, assistive technology, or accessibility criterion. Consult the theme's validation record for the checks actually performed.
 

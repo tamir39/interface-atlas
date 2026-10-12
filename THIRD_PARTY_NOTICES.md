@@ -2,6 +2,8 @@
 
 This pilot includes original Atlas documentation, retained design values from Tamir's portfolio, and links to external references. It does not include third-party implementation code, font binaries, or artwork.
 
+The [Interface Atlas logo family and README hero artwork](assets/brand/README.md) are original SVG geometry and compositions created for this project with AI assistance. They contain no imported third-party logo, stock illustration, or embedded font files. Their ownership and usage notes are separate from individual theme source records.
+
 ## Local source
 
 Editorial derives from Tamir / Phi Vuong Tuong Tam's [Tamir39Portfolio](https://github.com/tamir39/tamir39-portfolio), inspected locally at revision 166f44091a58a68d74096bc44defceb99243ba4e. No implementation license was found in that checkout. Atlas's own publishing license is not yet selected.

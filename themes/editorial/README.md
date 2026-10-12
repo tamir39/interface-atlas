@@ -48,7 +48,7 @@ Projects can implement this specification without a theme-specific runtime or an
 
 ## Preview and validation
 
-A standalone [reference preview](preview/README.md) demonstrates neutral components and representative portfolio and agent operations layouts. Open [index.html](preview/index.html) directly. It has no build or network dependency and uses local font fallbacks; named webfont files and optional artwork are not included.
+A [live reference preview](https://tamir39.github.io/interface-atlas/themes/editorial/preview/) demonstrates neutral components and representative portfolio and agent operations layouts. Read the [preview notes](preview/README.md) for scope, or open [index.html](preview/index.html) locally for offline use. It has no build or external resource dependency and uses local font fallbacks; named webfont files and optional source artwork are not included.
 
 The [validation report](validation.md) records browser checks and their limits. Numerical token calculations remain in [design.md](design.md). This entry stays a draft: representative preview evidence does not validate every adaptation, font package, assistive technology, browser, or backend integration.
 

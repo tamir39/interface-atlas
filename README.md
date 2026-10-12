@@ -1,8 +1,17 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/hero-dark.svg">
+  <img src="assets/brand/hero-light.svg" alt="Interface Atlas — design knowledge ready for your agents. Themes, typography, layout, motion, and agent experience come together in a project design." width="1200">
+</picture>
+
 # Interface Atlas
 
 A frontend UI/UX knowledge library for preparing project-specific design documents.
 
-Editorial is the first reusable theme. The portfolio and agent operations dashboard are examples of adapting that theme for different projects. All three specifications remain drafts. A standalone reference preview and a limited browser validation report now accompany Editorial; this is evidence about representative components, not complete project or accessibility validation.
+[Live previews](https://tamir39.github.io/interface-atlas/) · [Explore themes](catalog/themes.json) · [Prepare a project design](skills/prepare-frontend-design/SKILL.md) · [Logo kit](assets/brand/README.md)
+
+Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load the library when preparing or deliberately revising that document.
+
+**Current pilot:** Editorial is the first reusable theme, with portfolio and agent operations design examples. The specifications remain drafts; [validation evidence](themes/editorial/validation.md) records representative browser checks and their limits.
 
 ## Start here
 
@@ -20,7 +29,8 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 - [Portfolio example](examples/portfolio/design.md): expressive presentation and case-study reading.
 - [Agent operations dashboard example](examples/agent-operations-dashboard/design.md): compact layouts and human-agent interaction.
 - [Example notes](examples/README.md): assumptions and how to adapt the examples.
-- [Editorial reference preview](themes/editorial/preview/README.md): light/dark appearances, density, component specimens, and two sample layouts. Open its index.html directly; no build or network is needed.
+- [Live Editorial preview](https://tamir39.github.io/interface-atlas/themes/editorial/preview/): light/dark appearances, density, component specimens, and two sample layouts. [Preview notes](themes/editorial/preview/README.md) explain scope and offline use.
+- [Live logo gallery](https://tamir39.github.io/interface-atlas/assets/brand/preview.html): nine logo variants, small-size comparisons, and light/dark README heroes.
 - [Validation evidence](themes/editorial/validation.md): checks performed and remaining coverage.
 - [Preparation workflow evaluation](examples/workflow-evaluation/README.md): one fresh journal brief and the self-contained design document it produced.
 
@@ -30,6 +40,15 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 AGENTS.md
 README.md
 THIRD_PARTY_NOTICES.md
+assets/brand/
+  README.md
+  preview.html
+  logo-icon-*.svg
+  logo-horizontal-*.svg
+  logo-stacked-*.svg
+  favicon.svg
+  hero-light.svg
+  hero-dark.svg
 catalog/themes.json
 themes/editorial/
   README.md
@@ -61,6 +80,12 @@ tools/
   README.md
   catalog.mjs
   validate-editorial.mjs
+  build-preview-site.mjs
+site/
+  README.md
+  index.html
+  styles.css
+.github/workflows/preview-pages.yml
 ```
 
 Themes are grouped by name. Suitable project types belong in each theme README and the small discovery catalog.
@@ -72,6 +97,8 @@ The shared knowledge layer holds cross-theme decisions. Adapters hold framework-
 Every entry distinguishes retained source values, referenced concepts, and Atlas proposals. Preserve creators, original URLs, source revisions, applicable licenses, and adaptation notes in generated project documents.
 
 See [the source registry](references/SOURCES.md), [Editorial's provenance](themes/editorial/sources.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Interface Atlas's [logo family and hero artwork](assets/brand/README.md) are original project assets created with AI assistance. The Atlas identity belongs to the library; individual themes retain their own visual direction and source credits.
 
 No third-party implementation code, font binaries, or artwork is included in this pilot. Atlas's own publishing license is not yet selected; individual source terms remain separate.
 
@@ -87,5 +114,7 @@ node tools/catalog.mjs --check
 The catalog is generated from each named theme's README metadata. Its flat metadata format is described in [tools/README.md](tools/README.md).
 
 Optional browser checks use an installed Playwright package. They are separate from the dependency-free library and preview; see [tools/README.md](tools/README.md).
+
+The [live preview site](https://tamir39.github.io/interface-atlas/) deploys from `main` through GitHub Pages. Only the landing page, theme previews, and brand assets are published; document links lead back to their GitHub source. See [site maintenance](site/README.md).
 
 Interface Atlas is independent of the Twohearts workspace and its product policies.

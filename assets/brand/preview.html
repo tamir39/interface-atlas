@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Interface Atlas · Brand family</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root { color-scheme: light; --page:#fbf8f5; --paper:#eee8f2; --ink:#332b49; --muted:#655c7e; --action:#493b61; --divider:#d8cfe0; --dark:#19151e; --focus:#332b49; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--ink); font:1rem/1.6 "Segoe UI",Arial,sans-serif; }
+    img { display:block; max-inline-size:100%; block-size:auto; }
+    a { color:var(--action); text-underline-offset:.22em; }
+    a:focus-visible { outline:3px solid var(--focus); outline-offset:5px; }
+    a:hover { text-decoration-thickness:2px; }
+    h1,h2,h3,p,figure { margin:0; }
+    h1,h2,h3 { line-height:1.15; font-weight:600; text-wrap:balance; }
+    h1 { font-size:clamp(2.75rem,7vw,5.75rem); letter-spacing:-.04em; margin-block:2rem 1.5rem; }
+    h2 { font-size:clamp(1.75rem,3.5vw,2.5rem); letter-spacing:-.025em; }
+    h3 { font-size:1.125rem; line-height:1.4; }
+    p { max-inline-size:62ch; }
+    .wrap { max-inline-size:76rem; margin-inline:auto; padding-inline:clamp(1rem,4vw,3rem); }
+    .skip { position:absolute; inset-block-start:-8rem; inset-inline-start:1rem; padding:.75rem 1rem; background:white; z-index:2; min-block-size:44px; }
+    .skip:focus { inset-block-start:1rem; }
+    header { padding-block:2rem 3rem; }
+    .identity { display:flex; align-items:center; gap:.75rem; font-weight:600; }
+    .identity img { inline-size:40px; block-size:40px; }
+    .eyebrow { font-size:.8125rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+    .intro { font-size:1.125rem; line-height:1.65; color:var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; margin-block-start:1.75rem; }
+    nav a { display:inline-flex; align-items:center; min-block-size:44px; padding-block:.5rem; font-weight:600; }
+    section { padding-block:3rem; }
+    section + section { border-block-start:1px solid var(--divider); }
+    .section-heading { display:grid; gap:.75rem; margin-block-end:1.75rem; }
+    .section-heading p { color:var(--muted); }
+    .grid { display:grid; gap:1.25rem; grid-template-columns:1fr; }
+    .card { min-inline-size:0; background:white; border:1px solid var(--divider); border-radius:1.25rem; }
+    .canvas { min-block-size:13rem; padding:1rem; display:grid; place-items:center; border-start-start-radius:calc(1.25rem - 1px); border-start-end-radius:calc(1.25rem - 1px); }
+    .paper { background:var(--paper); }
+    .dark { background:var(--dark); }
+    .canvas .icon { inline-size:96px; block-size:96px; }
+    .canvas .horizontal { inline-size:320px; }
+    .canvas .stacked { inline-size:260px; }
+    figcaption { padding:1.25rem; }
+    .note { font-size:.875rem; color:var(--muted); margin-block:.3rem .75rem; }
+    code { font: .8125rem/1.5 Consolas,"Liberation Mono",monospace; overflow-wrap:anywhere; color:var(--muted); }
+    .actions { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; margin-block-start:.75rem; }
+    .actions a { display:inline-flex; gap:.4rem; align-items:center; min-block-size:44px; padding-block:.5rem; font-size:.875rem; font-weight:600; }
+    .pair { margin-block-start:1.25rem; }
+    .size-strip { list-style:none; padding:1.5rem; margin:0; display:flex; flex-wrap:wrap; gap:2rem; align-items:end; background:var(--paper); border-radius:1.25rem; }
+    .size-strip li { display:grid; justify-items:center; align-content:end; gap:1rem; font-size:.875rem; color:var(--muted); }
+    .size-note { margin-block-start:1rem; font-size:.9375rem; color:var(--muted); }
+    .hero-card > img { inline-size:100%; border-start-start-radius:calc(1.25rem - 1px); border-start-end-radius:calc(1.25rem - 1px); }
+    footer { border-block-start:1px solid var(--divider); padding-block:2rem 3rem; color:var(--muted); font-size:.9375rem; }
+    footer p + p { margin-block-start:.75rem; }
+    @media (min-width:46rem) { .pair { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (min-width:58rem) { .icons { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media (forced-colors:active) { a:focus-visible { outline-color:Highlight; } .card { border-color:CanvasText; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to brand assets</a>
+  <header class="wrap">
+    <div class="identity"><img src="logo-icon-light.svg" width="40" height="40" alt=""><span>Interface Atlas</span></div>
+    <h1>One mark.<br>Many contexts.</h1>
+    <p class="intro">A folded atlas, an open interface, and an A. One original shape carries the library from a browser tab to a README hero.</p>
+    <nav aria-label="Brand gallery"><a href="#logos">Logo family</a><a href="#sizes">Small sizes</a><a href="#heroes">README heroes</a><a href="README.md">Usage &amp; credits</a></nav>
+  </header>
+  <main id="content" class="wrap" tabindex="-1">
+    <section id="logos" aria-labelledby="logos-title">
+      <div class="section-heading"><p class="eyebrow">01 / Signatures</p><h2 id="logos-title">The logo family</h2><p>Choose a variant for its background and available space. Transparent artwork keeps the surrounding surface part of the composition.</p></div>
+      <div class="grid icons">
+        <figure class="card">
+          <div class="canvas paper"><img src="logo-icon-light.svg" width="96" height="96" class="icon" alt="Interface Atlas mark"></div>
+          <figcaption><h3>Light surface</h3><p class="note">Ink on paper</p><code>logo-icon-light.svg</code><div class="actions"><a href="logo-icon-light.svg" aria-label="Open Light surface SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-icon-light.svg" download aria-label="Download Light surface SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas dark"><img src="logo-icon-dark.svg" width="96" height="96" class="icon" alt="Interface Atlas mark"></div>
+          <figcaption><h3>Dark surface</h3><p class="note">Lavender on ink</p><code>logo-icon-dark.svg</code><div class="actions"><a href="logo-icon-dark.svg" aria-label="Open Dark surface SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-icon-dark.svg" download aria-label="Download Dark surface SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas paper"><img src="logo-icon-black.svg" width="96" height="96" class="icon" alt="Interface Atlas mark"></div>
+          <figcaption><h3>Black</h3><p class="note">Single-color reproduction</p><code>logo-icon-black.svg</code><div class="actions"><a href="logo-icon-black.svg" aria-label="Open Black SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-icon-black.svg" download aria-label="Download Black SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas dark"><img src="logo-icon-white.svg" width="96" height="96" class="icon" alt="Interface Atlas mark"></div>
+          <figcaption><h3>White</h3><p class="note">Single-color reproduction</p><code>logo-icon-white.svg</code><div class="actions"><a href="logo-icon-white.svg" aria-label="Open White SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-icon-white.svg" download aria-label="Download White SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas paper"><img src="favicon.svg" width="96" height="96" class="icon" alt="Interface Atlas mark"></div>
+          <figcaption><h3>Favicon</h3><p class="note">A contained mark for compact surfaces</p><code>favicon.svg</code><div class="actions"><a href="favicon.svg" aria-label="Open Favicon SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="favicon.svg" download aria-label="Download Favicon SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+      </div>
+      <div class="grid pair">
+        <figure class="card">
+          <div class="canvas paper"><img src="logo-horizontal-light.svg" width="320" height="80" class="horizontal" alt="Interface Atlas wordmark"></div>
+          <figcaption><h3>Horizontal / light</h3><p class="note">320 × 80 · transparent</p><code>logo-horizontal-light.svg</code><div class="actions"><a href="logo-horizontal-light.svg" aria-label="Open Horizontal / light SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-horizontal-light.svg" download aria-label="Download Horizontal / light SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas dark"><img src="logo-horizontal-dark.svg" width="320" height="80" class="horizontal" alt="Interface Atlas wordmark"></div>
+          <figcaption><h3>Horizontal / dark</h3><p class="note">320 × 80 · transparent</p><code>logo-horizontal-dark.svg</code><div class="actions"><a href="logo-horizontal-dark.svg" aria-label="Open Horizontal / dark SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-horizontal-dark.svg" download aria-label="Download Horizontal / dark SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+      </div>
+      <div class="grid pair">
+        <figure class="card">
+          <div class="canvas paper"><img src="logo-stacked-light.svg" width="260" height="170" class="stacked" alt="Interface Atlas wordmark"></div>
+          <figcaption><h3>Stacked / light</h3><p class="note">260 × 170 · transparent</p><code>logo-stacked-light.svg</code><div class="actions"><a href="logo-stacked-light.svg" aria-label="Open Stacked / light SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-stacked-light.svg" download aria-label="Download Stacked / light SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card">
+          <div class="canvas dark"><img src="logo-stacked-dark.svg" width="260" height="170" class="stacked" alt="Interface Atlas wordmark"></div>
+          <figcaption><h3>Stacked / dark</h3><p class="note">260 × 170 · transparent</p><code>logo-stacked-dark.svg</code><div class="actions"><a href="logo-stacked-dark.svg" aria-label="Open Stacked / dark SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="logo-stacked-dark.svg" download aria-label="Download Stacked / dark SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="sizes" aria-labelledby="sizes-title">
+      <div class="section-heading"><p class="eyebrow">02 / Scale</p><h2 id="sizes-title">A clear silhouette at every size</h2><p>The same three filled planes, shown at their actual CSS sizes.</p></div>
+      <ul class="size-strip" aria-label="Mark displayed at 16, 24, 32, 48, and 64 CSS pixels">
+        <li><img src="logo-icon-light.svg" width="16" height="16" alt=""><span>16 px</span></li>
+        <li><img src="logo-icon-light.svg" width="24" height="24" alt=""><span>24 px</span></li>
+        <li><img src="logo-icon-light.svg" width="32" height="32" alt=""><span>32 px</span></li>
+        <li><img src="logo-icon-light.svg" width="48" height="48" alt=""><span>48 px</span></li>
+        <li><img src="logo-icon-light.svg" width="64" height="64" alt=""><span>64 px</span></li>
+      </ul>
+      <p class="size-note">Use 24 px or larger for interface navigation where space permits. The 16 px version is for compact contexts such as a browser tab.</p>
+    </section>
+    <section id="heroes" aria-labelledby="heroes-title">
+      <div class="section-heading"><p class="eyebrow">03 / Library cover</p><h2 id="heroes-title">Design knowledge, ready for your agents.</h2><p>Layered interface blueprints turn the library's themes, craft, and agent flows into an original visual cover. Open an SVG to view the artwork at full size.</p></div>
+      <div class="grid pair">
+        <figure class="card hero-card">
+          <img src="hero-light.svg" width="1200" height="600" alt="Interface Atlas. Design knowledge, ready for your agents. Typography, layout, motion, and agent experience appear as layered interface blueprints.">
+          <figcaption><h3>README hero / light</h3><p class="note">1200 × 600 · original SVG illustration</p><code>hero-light.svg</code><div class="actions"><a href="hero-light.svg" aria-label="Open README hero / light SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="hero-light.svg" download aria-label="Download README hero / light SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+        <figure class="card hero-card">
+          <img src="hero-dark.svg" width="1200" height="600" alt="Interface Atlas. Design knowledge, ready for your agents. Typography, layout, motion, and agent experience appear as layered interface blueprints.">
+          <figcaption><h3>README hero / dark</h3><p class="note">1200 × 600 · original SVG illustration</p><code>hero-dark.svg</code><div class="actions"><a href="hero-dark.svg" aria-label="Open README hero / dark SVG">Open SVG <span aria-hidden="true">↗</span></a><a href="hero-dark.svg" download aria-label="Download README hero / dark SVG">Download <span aria-hidden="true">↓</span></a></div></figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">
+    <p>Original Interface Atlas brand assets, created for Tamir with Codex AI assistance. No external logo or illustration was copied. <a href="README.md">Read usage and credits</a>.</p>
+    <p>This is the library's identity. Generated project designs use their own brand and selected theme rules.</p>
+  </footer>
+</body>
+</html>

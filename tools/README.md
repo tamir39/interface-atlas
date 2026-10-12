@@ -36,3 +36,13 @@ node tools/validate-editorial.mjs --module /path/to/playwright/index.mjs --brows
 If Playwright and its browser are installed locally with their standard defaults, only `node tools/validate-editorial.mjs` is needed. The optional output directory receives three screenshots and a JSON report; omitting it writes no artifacts. Use a temporary output directory rather than committing repeated captures.
 
 The check serves only the preview on a loopback address, tests reflow and representative behavior, measures opaque solid-background text pairs, and closes the server and browser afterward. See [Editorial's report](../themes/editorial/validation.md) for the precise coverage and exclusions. Passing this smoke check does not establish WCAG conformance or validate a production project.
+
+## Live preview site
+
+The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:
+
+```sh
+node tools/build-preview-site.mjs
+```
+
+See [site/README.md](../site/README.md) for output handling, deployment, and documentation links. The checked-in preview files still open locally without a build; GitHub Pages serves a prepared copy.

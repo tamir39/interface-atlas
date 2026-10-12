@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Interface Atlas — design knowledge, ready for your agents</title>
+  <desc id="desc">An original Interface Atlas brand illustration. A folded A mark and large editorial title sit beside layered interface blueprints, typography, color swatches, and a plotted route. Themes, typography, layout, motion, and agent experience form the knowledge library.</desc>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#e9e2ec" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" rx="24" fill="#fbf8f5"/>
+  <rect x="22" y="22" width="1156" height="556" rx="12" fill="none" stroke="#d8cfe0"/>
+  <path d="M626 23V514M23 514H1177" stroke="#d8cfe0" fill="none"/>
+  <g fill="#493b61" transform="translate(50 45) scale(.88)">
+    <path d="M7 52 28 10v21L18 52Z"/>
+    <path d="M32 10 57 52H44L32 31Z"/>
+    <path d="M23 38H38l6 10H18Z"/>
+  </g>
+  <g font-family="'Segoe UI', Arial, sans-serif">
+    <text x="120" y="84" font-size="24" font-weight="600" letter-spacing="2.3" fill="#655c7e">FRONTEND / UI / UX</text>
+    <text x="58" y="214" font-size="84" font-weight="600" letter-spacing="-3.4" fill="#493b61">Interface</text>
+    <text x="58" y="323" font-family="Georgia, 'Times New Roman', serif" font-size="119" font-weight="400" letter-spacing="-5" fill="#493b61">Atlas<tspan fill="#75618d">.</tspan></text>
+    <text x="60" y="390" font-size="29" font-weight="600" fill="#493b61">Design knowledge.</text>
+    <text x="60" y="430" font-size="29" fill="#655c7e">Ready for your agents.</text>
+    <path d="M61 466H220" stroke="#75618d" stroke-width="3"/>
+    <circle cx="233" cy="466" r="4" fill="#75618d"/>
+  </g>
+  <g>
+    <rect x="644" y="42" width="512" height="450" fill="url(#grid)"/>
+    <circle cx="905" cy="268" r="187" fill="none" stroke="#d8cfe0" stroke-width="1.5"/>
+    <circle cx="905" cy="268" r="164" fill="none" stroke="#d8cfe0" stroke-dasharray="3 9"/>
+    <path d="M905 61V84M905 452V475M698 268H721M1089 268H1112" fill="none" stroke="#75618d" stroke-width="2"/>
+    <path d="M650 60H665M657.5 52.5V67.5M1138 466H1153M1145.5 458.5V473.5" stroke="#655c7e" stroke-width="1.5"/>
+    <g transform="translate(744 117) rotate(-10 172 165)">
+      <rect width="342" height="328" rx="16" fill="#e5ddeb" stroke="#d8cfe0" stroke-width="1.5"/>
+      <path d="M25 34H145M25 48H98M25 80H317M25 107H317M25 134H317M25 161H317M25 188H317M25 215H317M25 242H317M25 269H317M25 296H317" fill="none" stroke="#b3a6c3" stroke-width="2"/>
+    </g>
+    <g transform="translate(781 121) rotate(7 169 157)">
+      <rect width="336" height="308" rx="16" fill="#eee8f2" stroke="#d8cfe0" stroke-width="1.5"/>
+      <path d="M25 36H119M25 66H312M25 94H166M25 113H112M25 190H310M25 218H270M25 246H286M25 274H144" fill="none" stroke="#c5b9d0" stroke-width="3"/>
+      <rect x="211" y="93" width="99" height="66" rx="7" fill="#75618d" opacity=".18"/>
+    </g>
+    <g transform="translate(705 163)">
+      <rect x="8" y="12" width="356" height="284" rx="17" fill="#493b61" opacity=".10"/>
+      <rect width="356" height="284" rx="17" fill="#ffffff" stroke="#b4a6c2" stroke-width="1.5"/>
+      <path d="M0 53H356" stroke="#d8cfe0"/>
+      <g fill="#493b61" transform="translate(16 12) scale(.45)">
+        <path d="M7 52 28 10v21L18 52Z"/>
+        <path d="M32 10 57 52H44L32 31Z"/>
+        <path d="M23 38H38l6 10H18Z"/>
+      </g>
+      <text x="58" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600" fill="#493b61">Design → direction</text>
+      <text x="26" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="65" fill="#493b61">Aa</text>
+      <path d="M26 149H140" stroke="#75618d" stroke-width="2"/>
+      <g transform="translate(170 83)">
+        <rect width="45" height="59" rx="8" fill="#493b61"/>
+        <rect x="55" width="45" height="59" rx="8" fill="#baaad0"/>
+        <rect x="110" width="45" height="59" rx="8" fill="#fff0ad"/>
+      </g>
+      <path d="M26 182H180M26 199H130M26 233H87" fill="none" stroke="#655c7e" stroke-width="3" stroke-linecap="round"/>
+      <path d="M204 216C231 216 234 182 264 182S296 216 328 216" stroke="#75618d" stroke-width="3" fill="none"/>
+      <circle cx="204" cy="216" r="5" fill="#75618d"/>
+      <circle cx="328" cy="216" r="5" fill="#75618d"/>
+      <path d="M204 237H328" stroke="#d8cfe0" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(1058 66)">
+      <circle cx="34" cy="34" r="33" fill="#fbf8f5" stroke="#d8cfe0"/>
+      <path d="M34 14 42 34 34 54 26 34Z" fill="#75618d"/>
+      <path d="M34 14 42 34H34Z" fill="#493b61"/>
+      <circle cx="34" cy="34" r="3" fill="#fbf8f5"/>
+    </g>
+  </g>
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#655c7e">
+    <text x="60" y="554">Themes</text>
+    <circle cx="165" cy="546" r="2.5" fill="#75618d"/>
+    <text x="187" y="554">Typography</text>
+    <circle cx="338" cy="546" r="2.5" fill="#75618d"/>
+    <text x="360" y="554">Layout</text>
+    <circle cx="458" cy="546" r="2.5" fill="#75618d"/>
+    <text x="480" y="554">Motion</text>
+    <circle cx="582" cy="546" r="2.5" fill="#75618d"/>
+    <text x="604" y="554">Agent experience</text>
+    <path d="M1062 546H1128M1118 536 1128 546 1118 556" stroke="#493b61" stroke-width="2" fill="none"/>
+  </g>
+</svg>

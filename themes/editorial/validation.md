@@ -13,7 +13,7 @@ Run [tools/validate-editorial.mjs](../../tools/validate-editorial.mjs) with an i
 | Check | Observed result | Limit |
 | --- | --- | --- |
 | Responsive layout | Passed 20 combinations: light/dark × comfortable/compact specimen × 320, 390, 768, 1280, 1440 CSS px; no page-wide horizontal overflow | Portfolio and operations sections keep their own density profiles; table overflow is deliberately contained |
-| Opaque text contrast | 237 rendered text/control-value samples per combination; minimum 5.15:1 light and 7.38:1 dark; all met the applicable 4.5:1 normal or 3:1 large-text threshold | Computed solid background pairs, not a pixel-level or full accessibility audit |
+| Opaque HTML text contrast | 242 rendered text/control-value samples per combination; minimum 5.15:1 light and 7.38:1 dark; all met the applicable 4.5:1 normal or 3:1 large-text threshold | Computed solid background pairs; SVG artwork is excluded, and this is not a pixel-level or full accessibility audit |
 | Input/select borders | Five sampled controls per combination; border/fill contrast 3.80:1 light and 5.03:1 dark | Does not cover every focus, checkbox, disabled, hover, or native popup treatment |
 | Keyboard navigation | Skip link focused main; run selection focused its detail heading; return restored the corresponding Inspect link | Representative paths, not a complete keyboard-only walkthrough of every control |
 | Filtering and recovery | Empty results and reset worked; returning from a filtered-out run preserved filters and detail context, focusing search | Fixed sample data; no streamed reordering or router integration |
@@ -22,10 +22,10 @@ Run [tools/validate-editorial.mjs](../../tools/validate-editorial.mjs) with an i
 | Motion preferences | OS reduced motion and explicit motion off made sampled feedback immediate, including live changes | No entrance sequence or optional continuous effects selected |
 | Focus in forced colors | Sample outline retained 3px width and 5px offset, with system Highlight color | Not a full forced-colors or focus-visibility audit |
 | Text resize | 200% CSS root text sizing reflowed at a 640px viewport | This is not native browser zoom testing |
-| No JavaScript | Content and all four detail articles remained available at 320px; 270 opaque text samples passed, minimum 7.38:1; simulation actions stayed unavailable | Announcements and interactive filtering need JavaScript |
+| No JavaScript | Content and all four detail articles remained available at 320px; 275 opaque HTML text samples passed, minimum 7.38:1; simulation actions stayed unavailable | Announcements and interactive filtering need JavaScript |
 | Runtime/network | No browser runtime errors or external resource requests in the tested contexts | No production delivery or performance measurement |
 
-There are 13 grouped browser checks in the JSON record. The test requires nonzero text and control-border coverage; unsupported image/translucent text backgrounds cannot silently establish coverage. The current layout matrix recorded no such skipped text samples. Disabled controls, placeholders, text selection, native popup menus, and offscreen focus visibility still need separate review.
+There are 13 grouped browser checks in the JSON record. The test requires nonzero HTML text and control-border coverage; unsupported image/translucent text backgrounds cannot silently establish coverage. The current layout matrix recorded no such skipped HTML text samples. SVG artwork, disabled controls, placeholders, text selection, native popup menus, and offscreen focus visibility still need separate review.
 
 ## Font and visual evidence
 
@@ -40,6 +40,8 @@ Retained reference captures:
 - [Light mobile portfolio viewport](preview/validation/light-mobile.png).
 
 The preview artwork and fixture text are original Interface Atlas work. Their presence does not imply permission to import the seed portfolio's artwork or implementation. Creator and font credits remain in [sources.md](sources.md) and [the preview notes](preview/README.md).
+
+The refreshed record includes the Atlas navigation mark and revised introductory hero. These are original library artwork; the [brand notes](../../assets/brand/README.md) distinguish their authorship from Editorial's source palette. The validation tool checks the repository preview files. The GitHub Pages build changes documentation URLs in its published HTML copy; it does not change the theme styles or local simulation.
 
 ## Corrections from validation
 

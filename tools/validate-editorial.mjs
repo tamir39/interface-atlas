@@ -37,7 +37,7 @@ const server = createServer(async (request, response) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const url = 'http://127.0.0.1:' + server.address().port + '/';
 let browser;
-const report = { checks: [], layouts: [], browser: null, limits: ['No screen-reader, touch-device, native browser zoom, or real backend testing.', 'Contrast checks cover visible text with opaque solid backgrounds; disabled controls, placeholders, text selection, and native popup menus are outside this check.', 'Font fallbacks are tested; the named webfont files are not distributed or loaded.'] };
+const report = { checks: [], layouts: [], browser: null, limits: ['No screen-reader, touch-device, native browser zoom, or real backend testing.', 'Contrast checks cover visible HTML text with opaque solid backgrounds; SVG artwork, disabled controls, placeholders, text selection, and native popup menus are outside this check.', 'Font fallbacks are tested; the named webfont files are not distributed or loaded.'] };
 report.node = process.version;
 report.testedFiles = {};
 for (const filename of ['index.html', 'styles.css', 'preview.js']) {
@@ -78,6 +78,7 @@ async function contrast(page) {
     };
     const failures = [], skipped = [], pairs = [], controlBorders = [];
     for (const element of document.querySelectorAll('body *')) {
+      if (element.namespaceURI !== 'http://www.w3.org/1999/xhtml') continue;
       if (['SCRIPT', 'STYLE', 'OPTION', 'NOSCRIPT'].includes(element.tagName) || element.closest('[disabled]')) continue;
       const text = element.tagName === 'SELECT' ? element.selectedOptions[0]?.textContent :
         element.tagName === 'INPUT' ? element.value :

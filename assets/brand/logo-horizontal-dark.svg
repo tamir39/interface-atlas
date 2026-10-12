@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-labelledby="title description">
+  <title id="title">Interface Atlas</title>
+  <desc id="description">The folded atlas mark beside the Interface Atlas wordmark.</desc>
+  <g fill="#c7abe8" transform="translate(8 8)">
+    <path d="M7 52 28 10v21L18 52Z"/>
+    <path d="M32 10 57 52H44L32 31Z"/>
+    <path d="M23 38H38l6 10H18Z"/>
+  </g>
+  <text x="90" y="52" fill="#c7abe8" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="-1">Interface Atlas</text>
+</svg>

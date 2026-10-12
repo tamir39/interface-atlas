@@ -92,7 +92,7 @@
       "name": "No-JavaScript content remains available and passes opaque text contrast; simulation actions unavailable",
       "passed": true,
       "details": {
-        "checked": 270,
+        "checked": 275,
         "minimum": 7.38
       }
     },
@@ -109,7 +109,7 @@
       "width": 320,
       "scroll": 320,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -147,7 +147,7 @@
       "width": 390,
       "scroll": 390,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -185,7 +185,7 @@
       "width": 768,
       "scroll": 768,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -223,7 +223,7 @@
       "width": 1280,
       "scroll": 1280,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -261,7 +261,7 @@
       "width": 1440,
       "scroll": 1440,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -299,7 +299,7 @@
       "width": 320,
       "scroll": 320,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -337,7 +337,7 @@
       "width": 390,
       "scroll": 390,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -375,7 +375,7 @@
       "width": 768,
       "scroll": 768,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -413,7 +413,7 @@
       "width": 1280,
       "scroll": 1280,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -451,7 +451,7 @@
       "width": 1440,
       "scroll": 1440,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 5.15,
         "skipped": [],
         "controlBorders": [
@@ -489,7 +489,7 @@
       "width": 320,
       "scroll": 320,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -527,7 +527,7 @@
       "width": 390,
       "scroll": 390,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -565,7 +565,7 @@
       "width": 768,
       "scroll": 768,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -603,7 +603,7 @@
       "width": 1280,
       "scroll": 1280,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -641,7 +641,7 @@
       "width": 1440,
       "scroll": 1440,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -679,7 +679,7 @@
       "width": 320,
       "scroll": 320,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -717,7 +717,7 @@
       "width": 390,
       "scroll": 390,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -755,7 +755,7 @@
       "width": 768,
       "scroll": 768,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -793,7 +793,7 @@
       "width": 1280,
       "scroll": 1280,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -831,7 +831,7 @@
       "width": 1440,
       "scroll": 1440,
       "contrast": {
-        "checked": 237,
+        "checked": 242,
         "minimum": 7.38,
         "skipped": [],
         "controlBorders": [
@@ -867,13 +867,13 @@
   "browser": "153.0.8010.12",
   "limits": [
     "No screen-reader, touch-device, native browser zoom, or real backend testing.",
-    "Contrast checks cover visible text with opaque solid backgrounds; disabled controls, placeholders, text selection, and native popup menus are outside this check.",
+    "Contrast checks cover visible HTML text with opaque solid backgrounds; SVG artwork, disabled controls, placeholders, text selection, and native popup menus are outside this check.",
     "Font fallbacks are tested; the named webfont files are not distributed or loaded."
   ],
   "node": "v24.14.1",
   "testedFiles": {
-    "index.html": "27100b9ca6591e41c67bc71a67e67fb1d3aef6b5f931d91590d7a953346c496f",
-    "styles.css": "209a6481aced8ebb2739c1dda14c9088db4f60c1f5d3a47afa1f3903a321d35b",
+    "index.html": "9b36484813622bb82159515404d41badf1f32f912a0ccff426d666b5013058ac",
+    "styles.css": "f6e6a1889d4f6de1268c78f6fc4af7513f8fa1f4c5e061a82517911590d4a518",
     "preview.js": "a154e6238a66388b194b70ec10f90401d9f7e31e91131ddd09f6be549aebeb02"
   },
   "renderedFonts": {
