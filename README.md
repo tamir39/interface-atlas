@@ -37,56 +37,78 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 ## Structure
 
 ```text
-AGENTS.md
-README.md
-THIRD_PARTY_NOTICES.md
-assets/brand/
-  README.md
-  preview.html
-  logo-icon-*.svg
-  logo-horizontal-*.svg
-  logo-stacked-*.svg
-  favicon.svg
-  hero-light.svg
-  hero-dark.svg
-catalog/themes.json
-themes/editorial/
-  README.md
-  design.md
-  effects.md
-  motion.md
-  sources.md
-  validation.md
-  preview/
-    README.md
-    index.html
-    styles.css
-    preview.js
-knowledge/
-  README.md
-  agent-experience.md
-references/SOURCES.md
-adapters/README.md
-skills/prepare-frontend-design/SKILL.md
-templates/project-design.md
-examples/
-  README.md
-  portfolio/design.md
-  agent-operations-dashboard/design.md
-  workflow-evaluation/
-    README.md
-    design.md
-tools/
-  README.md
-  catalog.mjs
-  validate-editorial.mjs
-  build-preview-site.mjs
-site/
-  README.md
-  index.html
-  styles.css
-.github/workflows/preview-pages.yml
+interface-atlas/
+├── README.md
+├── AGENTS.md
+├── THIRD_PARTY_NOTICES.md
+├── .gitattributes
+├── .gitignore
+├── themes/
+│   └── editorial/
+│       ├── README.md
+│       ├── design.md
+│       ├── effects.md
+│       ├── motion.md
+│       ├── sources.md
+│       ├── validation.md
+│       └── preview/
+│           ├── README.md
+│           ├── index.html
+│           ├── styles.css
+│           ├── preview.js
+│           └── validation/
+│               ├── results.json
+│               ├── light-desktop.png
+│               ├── dark-desktop.png
+│               └── light-mobile.png
+├── catalog/
+│   └── themes.json
+├── knowledge/
+│   ├── README.md
+│   └── agent-experience.md
+├── skills/
+│   └── prepare-frontend-design/
+│       └── SKILL.md
+├── templates/
+│   └── project-design.md
+├── examples/
+│   ├── README.md
+│   ├── portfolio/
+│   │   └── design.md
+│   ├── agent-operations-dashboard/
+│   │   └── design.md
+│   └── workflow-evaluation/
+│       ├── README.md
+│       └── design.md
+├── references/
+│   └── SOURCES.md
+├── adapters/
+│   └── README.md
+├── tools/
+│   ├── README.md
+│   ├── catalog.mjs
+│   ├── validate-editorial.mjs
+│   └── build-preview-site.mjs
+├── assets/
+│   └── brand/
+│       ├── README.md
+│       ├── preview.html
+│       ├── logo-icon-*.svg
+│       ├── logo-horizontal-*.svg
+│       ├── logo-stacked-*.svg
+│       ├── favicon.svg
+│       ├── hero-light.svg
+│       └── hero-dark.svg
+├── site/
+│   ├── README.md
+│   ├── index.html
+│   └── styles.css
+└── .github/
+    └── workflows/
+        └── preview-pages.yml
 ```
+
+The `*` entries group the available logo variants; all other entries are actual folders and files.
 
 Themes are grouped by name. Suitable project types belong in each theme README and the small discovery catalog.
 
