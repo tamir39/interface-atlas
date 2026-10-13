@@ -12,6 +12,14 @@ See [Editorial's detailed provenance](themes/editorial/sources.md) and [the sour
 
 Swiss derives from Tamir's Swiss direction at the separately inspected revision `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. Its [provenance record](themes/swiss/sources.md) distinguishes retained seed values, historical references, and original Atlas adaptations. Editorial retains its earlier pinned source snapshot.
 
+## Play source and references
+
+Play adapts Tamir's portfolio direction at source revision `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. Its [provenance record](themes/play/sources.md) separates retained values, original Atlas implementation, and additional references. No portfolio implementation license was found; no portfolio code, artwork, or font files are copied into this package.
+
+The additional Neobrutalism comparison credits **Samuel Breznjak**, whose pinned [LICENSE](https://github.com/ekmas/neobrutalism-components/blob/3306a802724874a85f93079702b2795370a279d4/LICENSE) is MIT, copyright 2023 Samuel Breznjak. This does not establish that Tamir used the library or that Samuel authored Play. No upstream component code is imported.
+
+The optional [Interactive Hero Backgrounds](https://21st.dev/@ravikatiyar162/components/interactive-hero-backgrounds) inspiration is credited to **Ravi Katiyar**. Its implementation reuse terms remain unverified. Play's preview uses original static artwork and does not import the reference effect. W3C WAI's form guidance informs Atlas's original error, review, and feedback proposals; no tutorial prose or sample code is reproduced.
+
 ## Precision reference sources
 
 Precision is an original Atlas theme prepared for Tamir with Codex AI assistance, informed by **IBM's Carbon team and contributors** and **GitHub's Primer team and contributors**. It is not an official Carbon or Primer theme. [Precision's provenance record](themes/precision/sources.md) distinguishes referenced concepts, pinned repository evidence, and original Atlas decisions.

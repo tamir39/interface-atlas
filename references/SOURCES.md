@@ -32,6 +32,9 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R24 | [IBM Plex](https://www.ibm.com/plex/specs/) | Mike Abbink, Paul van der Laan and Pieter van Rosmalen of Bold Monday, and credited Plex contributors | Precision sans and monospace roles | Pinned font package OFL-1.1; no font files imported. |
 | R25 | [Primer product layout](https://primer.style/product/getting-started/foundations/layout/) | GitHub's Primer team and contributors | Application composition, narrow-screen reading order, and list/detail patterns | Conceptual reference; Primer React repository MIT is scoped to covered software. |
 | R26 | [Carbon foundations](https://www.carbondesignsystem.com/building-blocks/foundations/color/overview) | IBM's Carbon team and contributors | Semantic layers, productive typography, grid, and motion guidance | Conceptual reference; Carbon repository Apache-2.0 does not clear all website assets. |
+| R27 | [Neobrutalism components](https://www.neobrutalism.dev/docs) | Samuel Breznjak / @ekmas and contributors | Additional Play comparison: outlined surfaces, offset shadows, and component states | Pinned repository MIT; no components imported. Current September 2026 direction is light-only; Atlas Play retains its own portfolio source appearances. |
+| R28 | [Interactive Hero Backgrounds](https://21st.dev/@ravikatiyar162/components/interactive-hero-backgrounds) | Ravi Katiyar | Optional Play sphere-interaction inspiration recorded by Tamir's portfolio | Implementation reuse terms unverified; no external effect code imported. |
+| R29 | [W3C WAI Forms Tutorial](https://www.w3.org/WAI/tutorials/forms/notifications/) | W3C WAI; Education and Outreach Working Group and contributors | Form errors, associated help, review, and understandable feedback | Conceptual guidance; no tutorial prose or sample code copied. |
 
 ## Material used in this pilot
 
@@ -43,9 +46,11 @@ The portfolio's README credits R02 and R03 as general inspiration; it does not e
 
 Precision is an original Atlas synthesis rather than a portfolio extraction. Its [source record](../themes/precision/sources.md) pins Carbon `c9b1f79128df93d79e7a65ced3ad1bed5709c7cc`, Primer React `7f5303d803986887187d86dcebaeda22a4dc6823`, and IBM Plex `763c36ef9117782905ae010056dfbe8fd2653a25` as repository evidence. Website guidance is recorded by URL and access date separately. R14, R24, R25, and R26 inform the new entry; no upstream implementation, brand assets, or font files are imported.
 
+Play's [source record](../themes/play/sources.md) pins Tamir's portfolio at `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74` and the additional Neobrutalism comparison at `3306a802724874a85f93079702b2795370a279d4`. R27 is an Atlas study reference, not proof that Tamir used the library. R28 retains the portfolio's effect-inspiration credit; R29 informs Atlas's original brief-builder behavior. The preview includes no external effect implementation, tutorial code, or font files.
+
 The optional path-effect inspiration is [Floating Paths](https://21st.dev/@bundui/components/floating-paths), credited to Bundui.io. External component implementation terms are unresolved. No external effect code is included.
 
-Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), and [Precision](../themes/precision/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
+Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), [Precision](../themes/precision/sources.md), and [Play](../themes/play/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
 
 R16 and R17 inform theme guidance. R19 informs [shared Agent Experience](../knowledge/agent-experience.md) and the [dashboard example](../examples/agent-operations-dashboard/design.md).
 

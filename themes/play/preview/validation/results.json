@@ -1,0 +1,5775 @@
+{
+  "checks": [
+    {
+      "name": "Native builder defaults and field limits",
+      "passed": true,
+      "details": {
+        "projectNameMax": 80,
+        "goalMin": 15,
+        "goalMax": 600,
+        "projectTypes": 3,
+        "deliverablesMinimum": 1
+      }
+    },
+    {
+      "name": "Light/dark × comfortable/compact × 320/390/768/1280/1440 reflow, HTML text/control contrast, measured density, and 44px targets",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "measuredDensities": {
+          "comfortable": {
+            "height": 537.84375,
+            "padding": {
+              "blockStart": 24,
+              "blockEnd": 24,
+              "inlineStart": 24
+            }
+          },
+          "compact": {
+            "height": 521.84375,
+            "padding": {
+              "blockStart": 16,
+              "blockEnd": 16,
+              "inlineStart": 16
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip link focuses main; all three native portfolio disclosures open and close by keyboard",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Empty submission focuses linked error summary and exposes aria-invalid plus described inline errors",
+      "passed": true,
+      "details": {
+        "links": [
+          {
+            "href": "#project-name",
+            "text": "Enter a project name of 1–80 characters."
+          },
+          {
+            "href": "#type-brand",
+            "text": "Choose one project type."
+          },
+          {
+            "href": "#project-goal",
+            "text": "Describe your project goal in 15–600 characters."
+          },
+          {
+            "href": "#deliverable-identity",
+            "text": "Choose at least one deliverable."
+          }
+        ],
+        "inlineErrors": [
+          {
+            "id": "name-error",
+            "visible": true,
+            "text": "Enter a project name of 1–80 characters."
+          },
+          {
+            "id": "type-error",
+            "visible": true,
+            "text": "Choose one project type."
+          },
+          {
+            "id": "goal-error",
+            "visible": true,
+            "text": "Describe your project goal in 15–600 characters."
+          },
+          {
+            "id": "deliverables-error",
+            "visible": true,
+            "text": "Choose at least one deliverable."
+          }
+        ],
+        "contrast": {
+          "checked": 232,
+          "minimum": 6.1,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 14,
+            "disabledTextSamples": 3,
+            "unrenderedTextSamples": 23,
+            "visuallyHiddenTextSamples": 0
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "project-name",
+              "sample": "input",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "type-brand",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "type-product",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "type-campaign",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "project-goal",
+              "sample": "textarea",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "deliverable-identity",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "deliverable-website",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "deliverable-launch",
+              "sample": "label",
+              "ratio": 9.79,
+              "fillRatio": 9.79,
+              "adjacentRatio": 9.79,
+              "required": 3
+            },
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Custom validation rejects names above 80 and goals outside 15–600 even when native maxlength is bypassed",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Exact 80-character name, 15/600-character goals, and one deliverable are accepted and preserved on edit",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Valid review focuses its heading, preserves entered values, trims an immutable snapshot, clears errors, and treats user content as text",
+      "passed": true,
+      "details": {
+        "contrast": {
+          "checked": 214,
+          "minimum": 6.1,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 14,
+            "disabledTextSamples": 24,
+            "unrenderedTextSamples": 19,
+            "visuallyHiddenTextSamples": 0
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Edit returns focus to the name and preserves every entered field; repeat review retains trimmed values",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Request remains pending with edit and duplicate submission disabled; only manual acknowledgement reveals a local receipt and never starts an agent",
+      "passed": true,
+      "details": {
+        "pendingText": "Confirmation requested locally. Pending acknowledgement; no receipt is confirmed and no agent has started.",
+        "pendingContrast": {
+          "checked": 215,
+          "minimum": 6.1,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 14,
+            "disabledTextSamples": 25,
+            "unrenderedTextSamples": 17,
+            "visuallyHiddenTextSamples": 0
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            }
+          ]
+        },
+        "receiptContrast": {
+          "checked": 216,
+          "minimum": 6.1,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 14,
+            "disabledTextSamples": 25,
+            "unrenderedTextSamples": 16,
+            "visuallyHiddenTextSamples": 0
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            },
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 6.37,
+              "fillRatio": 6.37,
+              "adjacentRatio": 6.37,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Revising an acknowledged brief returns focus, preserves entered data, and requires a fresh receipt",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Reset clears the local demo and restores focus to the first field",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System follows live OS appearance; explicit appearance, density, and motion persist across reload",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off make feedback immediate and remove press transforms",
+      "passed": true,
+      "details": {
+        "reduced": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        },
+        "motionOff": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        }
+      }
+    },
+    {
+      "name": "Forced-colors focus retains a 3px outline with 5px offset",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize reflows at 640px; separate from native browser zoom",
+      "passed": true,
+      "details": {
+        "width": 640,
+        "scroll": 640
+      }
+    },
+    {
+      "name": "Actual local fallback families and Vietnamese glyphs recorded through Chromium CDP",
+      "passed": true,
+      "details": {
+        "#type-display": [
+          {
+            "family": "Segoe UI Black",
+            "custom": false,
+            "glyphCount": 10
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 14
+          }
+        ],
+        "[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 62
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blocked, invalid, and malformed storage retain defaults, usable preferences, and builder review",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript static brief and native portfolio disclosures remain readable; all runtime controls stay disabled; text contrast passes",
+      "passed": true,
+      "details": {
+        "contrast": {
+          "checked": 207,
+          "minimum": 6.1,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 14,
+            "disabledTextSamples": 28,
+            "unrenderedTextSamples": 15,
+            "visuallyHiddenTextSamples": 0
+          },
+          "controlBorders": []
+        },
+        "disabledControls": 18
+      }
+    },
+    {
+      "name": "No browser runtime errors, external requests, or failed preview resources",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 220,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 26,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 244,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 244,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 236,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 236,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 298,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 298,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 294,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 636,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 636,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 280,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 224.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 224.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 291.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 749.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 749.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 332,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 332,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 317.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 813.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 813.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 364,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 364,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 220,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 26,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 244,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 244,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 252,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 252,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 298,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 314,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 314,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 294,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 636,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 636,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 296,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 296,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 224.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 224.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 291.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 749.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 749.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 348,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 348,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 221,
+        "minimum": 5.55,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 9.74,
+            "fillRatio": 9.74,
+            "adjacentRatio": 15.25,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.04,
+            "fillRatio": 5.04,
+            "adjacentRatio": 5.04,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 317.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 813.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 813.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 380,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 380,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 220,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 26,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 244,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 244,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 236,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 236,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 298,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 298,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 294,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 636,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 636,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 280,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 224.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 224.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 291.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 749.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 749.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 332,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 332,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 317.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 813.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 813.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 364,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 364,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 220,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 26,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 244,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 244,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 244,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 244,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 252,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 252,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 298,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 298,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 298,
+          "height": 48
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 314,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 314,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 306,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 306,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 280,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 294,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 636,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 636,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 204,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 296,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 296,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 224.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 224.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 291.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 332,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 749.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 749.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 241.78,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 348,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 348,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 221,
+        "minimum": 6.1,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 14,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 25,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-brand",
+            "sample": "label",
+            "ratio": 6.9,
+            "fillRatio": 6.9,
+            "adjacentRatio": 14.67,
+            "required": 3
+          },
+          {
+            "id": "type-product",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "type-campaign",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "project-goal",
+            "sample": "textarea",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-identity",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-website",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "deliverable-launch",
+            "sample": "label",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 6.37,
+            "fillRatio": 6.37,
+            "adjacentRatio": 6.37,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181.98,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 205.03,
+          "height": 48
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 244.16,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 244.17,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 317.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 117.45,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 106.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 145.83,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 364,
+          "height": 49
+        },
+        {
+          "id": "project-name",
+          "via": "control",
+          "width": 813.34,
+          "height": 48
+        },
+        {
+          "id": "type-brand",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-product",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "type-campaign",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "project-goal",
+          "via": "control",
+          "width": 813.34,
+          "height": 132
+        },
+        {
+          "id": "deliverable-identity",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-website",
+          "via": "associated label",
+          "width": 263.11,
+          "height": 56
+        },
+        {
+          "id": "deliverable-launch",
+          "via": "associated label",
+          "width": 263.13,
+          "height": 56
+        },
+        {
+          "id": "review-brief",
+          "via": "control",
+          "width": 153.86,
+          "height": 48
+        },
+        {
+          "id": "reset-demo",
+          "via": "control",
+          "width": 111.67,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 380,
+          "height": 48
+        },
+        {
+          "id": "primary-specimen",
+          "via": "control",
+          "width": 176.02,
+          "height": 48
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136.63,
+          "height": 48
+        },
+        {
+          "id": "specimen-check",
+          "via": "associated label",
+          "width": 380,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "c73a53748ab4bb4b784239f054810c1da9d175edbd8e448a1357672cde8a3cf9",
+    "styles.css": "f2f8515e6eed32a717dabf91af2a3ff27e47fbf603ce4834c313ee51fc8e031c",
+    "preview.js": "65069a009e661249405287636ad3e0b393de239afb82481673ac2e6fdf5136c2"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input/textarea and associated radio/checkbox-label boundaries against their fill and adjacent background. SVG artwork, disabled controls, placeholders, text selection, native popup menus, radio/checkbox glyph internals, and backgrounds with images are outside this check.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "44px target samples include enabled native controls, associated checkbox/radio labels, summary controls, button-styled links, and section navigation. Contextual inline links are excluded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "renderedFonts": {
+    "#type-display": [
+      {
+        "family": "Segoe UI Black",
+        "custom": false,
+        "glyphCount": 10
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 14
+      }
+    ],
+    "[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 62
+      }
+    ]
+  },
+  "passed": true
+}

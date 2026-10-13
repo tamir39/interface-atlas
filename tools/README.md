@@ -57,6 +57,16 @@ node tools/validate-precision.mjs --module /path/to/playwright/index.mjs --brows
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Precision's validation record](../themes/precision/validation.md) for the actual evidence and limits. The preview's control commands and disconnection toggle are local simulations.
 
+## Optional Play browser checks
+
+Play has repeatable checks for responsive layout, preferences, native case-study disclosures, form errors, preserved draft values, review, and the local request/acknowledgement lifecycle:
+
+```sh
+node tools/validate-play.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Play's validation record](../themes/play/validation.md) for evidence and limits. No brief is uploaded and no agent is started by the local demonstration.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

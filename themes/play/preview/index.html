@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-appearance="system" data-density="comfortable" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Play: an original Interface Atlas reference preview with expressive work and a local project brief builder.">
+  <title>Play reference preview · Interface Atlas</title>
+  <script>
+    (() => {
+      const preferences = { appearance: 'system', density: 'comfortable', motion: true };
+      try {
+        const saved = JSON.parse(localStorage.getItem('interface-atlas-play-preview'));
+        if (saved && typeof saved === 'object' && !Array.isArray(saved)) {
+          if (['system', 'light', 'dark'].includes(saved.appearance)) preferences.appearance = saved.appearance;
+          if (['comfortable', 'compact'].includes(saved.density)) preferences.density = saved.density;
+          if (typeof saved.motion === 'boolean') preferences.motion = saved.motion;
+        }
+      } catch {}
+      const root = document.documentElement;
+      const dark = preferences.appearance === 'dark' || (preferences.appearance === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      root.dataset.appearance = dark ? 'dark' : 'light';
+      root.dataset.density = preferences.density;
+      root.dataset.motion = preferences.motion ? 'on' : 'off';
+      window.__playPreferences = preferences;
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="preview-header container">
+    <a class="atlas-brand" href="../../../README.md"><svg class="atlas-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg>Interface Atlas</a>
+    <p class="meta">Theme 04 · Play <span class="draft-label">Draft 0.1.0</span></p>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <section class="hero container" aria-labelledby="preview-title">
+      <div class="hero-copy">
+        <p class="eyebrow">An expressive visual language</p>
+        <h1 id="preview-title">Make room<br>for <span class="play-word">play<svg viewBox="0 0 280 26" aria-hidden="true" focusable="false"><path d="M8 17C70 2 178 1 270 11M13 23C102 11 178 9 239 16"/></svg></span>.</h1>
+        <p class="hero-description">Big type. Soft colors. A little unexpected.<br> A friendly system for ideas with a point of view.</p>
+        <div class="action-group"><a class="button primary" href="#portfolio">Explore the work <span aria-hidden="true">↗</span></a><a class="button secondary" href="#brief">Make a project brief <span aria-hidden="true">→</span></a></div>
+        <p class="support hero-note">Original Atlas preview · Fictional projects · Local demo</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hello-orbit"><span class="orbit-caption">GOOD IDEAS START HERE</span><span class="hello-word">hello<span>!</span></span><svg class="hello-spark" viewBox="0 0 100 100" focusable="false"><path d="M50 4 60 38 96 50 60 62 50 96 38 62 4 50 38 38Z"/></svg></div>
+        <div class="idea-sticker"><span class="technical">A tiny thought</span><strong>what<br>if?</strong><span class="sticker-arrow">↗</span></div>
+        <div class="good-sticker"><svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="27"/><path d="M19 35c5 14 22 14 27 0M21 22v4M42 22v4"/></svg><span>Something<br>good.</span></div>
+        <span class="doodle-plus plus-one">+</span><span class="doodle-plus plus-two">+</span>
+        <span class="art-label">A study in happy accidents / 04</span>
+      </div>
+    </section>
+    <div class="preferences-wrap container">
+      <form class="preview-settings" aria-label="Preview preferences">
+        <div class="settings-intro"><strong>Make yourself at home.</strong><p class="support" id="preference-note">Preferences are available when JavaScript runs.</p></div>
+        <div class="field"><label for="appearance">Appearance</label><select id="appearance" name="appearance" disabled><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+        <div class="field"><label for="density">Specimen density</label><select id="density" name="density" disabled><option value="comfortable">Comfortable</option><option value="compact">Compact</option></select></div>
+        <div><label class="checkbox-label" for="motion"><input id="motion" name="motion" type="checkbox" checked disabled>Subtle feedback motion</label><p class="support" id="motion-note">System reduced motion takes priority.</p></div>
+      </form>
+    </div>
+    <nav class="section-nav container" aria-label="Preview sections"><a href="#portfolio"><span class="nav-number">01</span>Selected work</a><a href="#brief"><span class="nav-number">02</span>Project brief</a><a href="#specimen"><span class="nav-number">03</span>The details</a><a href="#credits">Sources &amp; creators <span aria-hidden="true">↗</span></a></nav>
+
+    <section id="portfolio" class="portfolio section-block container" aria-labelledby="portfolio-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / Creative portfolio adaptation</p><h2 id="portfolio-title">Serious about<br>good ideas.</h2></div><p class="section-description">Meet three small imaginary projects with big personalities. Each one starts with a problem and a few deliberate decisions.</p></div>
+      <div class="work-grid">
+        <article class="case-study sprout-case">
+          <div class="project-art sprout-art" aria-hidden="true"><span class="art-meta">A neighborhood exchange</span><svg class="sprout-symbol" viewBox="0 0 180 150" focusable="false"><path d="M89 133V69M89 94C37 101 13 67 20 38c40-7 74 11 69 56ZM90 70c-3-43 24-68 64-59 7 31-13 59-64 59Z"/><path class="art-stroke" d="M26 134h128"/></svg><strong>sprout.</strong><span class="art-pill">Small swaps. Big connections.</span></div>
+          <div class="project-copy"><p class="small-label">Brand identity / Fictional case study</p><h3>A little closer<br>to your neighbors.</h3><p>Give a neighborhood swap club a warm, useful identity that feels welcoming before the first hello.</p><details id="case-sprout"><summary>Inside the Sprout project <span class="summary-symbol" aria-hidden="true">+</span></summary><div class="case-detail"><h4>The starting point</h4><p>A local club needs a name, a signup card, and a simple way to explain what members can share.</p><h4>The design decisions</h4><p>A growing two-leaf symbol introduces the idea of exchange. Large words make the invitation direct; a mint surface keeps the tone light. The signup card uses plain labels and a visible next step.</p><p class="support">This is an original illustrative brief. No client, launch, or measured outcome is claimed.</p></div></details></div>
+        </article>
+        <article class="case-study daydream-case">
+          <div class="project-art daydream-art" aria-hidden="true"><span class="art-meta">A digital sketchbook</span><div class="dream-window"><span class="dream-toolbar"><i></i><i></i><i></i></span><span class="dream-line line-a"></span><span class="dream-line line-b"></span><span class="dream-star">✳</span><strong>day<br>dream</strong><span class="dream-note">Keep the little ideas.</span></div><span class="dream-tab">Idea no. 024 ↗</span></div>
+          <div class="project-copy"><p class="small-label">Product design / Fictional case study</p><h3>A home for your<br>“maybe later.”</h3><p>A sketchbook for half-formed thoughts. Make it easy to collect an idea without deciding what it becomes.</p><details id="case-daydream"><summary>Inside the Daydream project <span class="summary-symbol" aria-hidden="true">+</span></summary><div class="case-detail"><h4>The starting point</h4><p>A creative notebook needs quick capture and a calm way to revisit older ideas without ranking every note.</p><h4>The design decisions</h4><p>The writing surface stays quiet while labels and controls carry a little personality. Notes remain selectable, the add action has an explicit label, and a native disclosure keeps supporting context close.</p><p class="support">This is an original illustrative brief. No app, user research result, or shipped product is claimed.</p></div></details></div>
+        </article>
+        <article class="case-study loop-case">
+          <div class="project-art loop-art" aria-hidden="true"><span class="art-meta">A creative afternoon</span><div class="loop-rings"><span></span><span></span><span></span></div><strong>come<br>around.</strong><span class="art-pill">Make a thing. Meet a friend.</span></div>
+          <div class="project-copy"><p class="small-label">Campaign / Fictional case study</p><h3>Make something.<br>Find your people.</h3><p>A community making afternoon needs a bright invitation and an easy path from curiosity to joining in.</p><details id="case-loop"><summary>Inside the Come Around project <span class="summary-symbol" aria-hidden="true">+</span></summary><div class="case-detail"><h4>The starting point</h4><p>A free making afternoon needs a poster and a short event page that tells newcomers what to expect.</p><h4>The design decisions</h4><p>Overlapping circles suggest people gathering. The invitation leads with the activity, then gives the time, place, and access information in a readable order. The join action remains visible at small sizes.</p><p class="support">This is an original illustrative brief. No event, attendance, or campaign outcome is claimed.</p></div></details></div>
+        </article>
+      </div>
+      <p class="portfolio-footnote support">Three different ideas, one visual language. Open a project to read its brief; every disclosure works without JavaScript.</p>
+    </section>
+
+    <section id="brief" class="brief-section section-block" aria-labelledby="brief-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">02 / Project intake adaptation</p><h2 id="brief-title">A big idea<br>starts small.</h2></div><div class="simulation-label"><span class="status information">Local demo</span><p>No backend connected.<br>Use fictional project details.</p></div></div>
+      <div id="brief-builder" class="brief-shell" data-state="editing">
+        <aside class="brief-context"><span class="step-sticker" aria-hidden="true">Let's<br>make it.</span><h3>Give your idea<br>a little shape.</h3><p>Build a brief, read the exact snapshot, then request its confirmation.</p><ol class="flow-steps"><li><span>01</span><div><strong>Write the brief</strong><p>Set the goal and deliverables.</p></div></li><li><span>02</span><div><strong>Review the snapshot</strong><p>Check the exact details to confirm.</p></div></li><li><span>03</span><div><strong>Wait for a receipt</strong><p>Simulate acknowledgement yourself.</p></div></li></ol><p class="support">This demo makes no remote request. A receipt confirms the brief in this page; it starts no agent or project.</p></aside>
+        <div class="brief-workspace">
+          <form id="brief-form" novalidate>
+            <div id="error-summary" class="error-summary" tabindex="-1" hidden><h3>Check your brief</h3><p>Fix the following fields, then review again.</p><ul id="error-list"></ul></div>
+            <fieldset id="brief-fields" disabled><legend class="form-legend">Your project brief</legend>
+              <div class="field"><label for="project-name">Project name <span class="required-label">Required</span></label><input id="project-name" name="projectName" type="text" maxlength="80" autocomplete="off" required aria-describedby="name-help name-error" placeholder="e.g. The little idea club"><p id="name-help" class="support">Use a fictional name, up to 80 characters. Avoid personal details.</p><p id="name-error" class="field-error" hidden></p></div>
+              <fieldset class="choice-group"><legend>What kind of project?</legend><p id="type-help" class="support">Choose one starting point.</p><div class="radio-grid"><label class="choice-label" for="type-brand"><input id="type-brand" type="radio" name="projectType" value="brand" checked aria-describedby="type-help type-error"><span>Brand identity</span></label><label class="choice-label" for="type-product"><input id="type-product" type="radio" name="projectType" value="product" aria-describedby="type-help type-error"><span>Digital product</span></label><label class="choice-label" for="type-campaign"><input id="type-campaign" type="radio" name="projectType" value="campaign" aria-describedby="type-help type-error"><span>Creative campaign</span></label></div><p id="type-error" class="field-error" hidden></p></fieldset>
+              <div class="field"><label for="project-goal">What should it do? <span class="required-label">Required</span></label><textarea id="project-goal" name="goal" rows="4" maxlength="600" minlength="15" required aria-describedby="goal-help goal-count goal-error" placeholder="Describe the people it should help and the change you want to make."></textarea><div class="help-line"><p id="goal-help" class="support">Write 15–600 characters. Keep it about the project.</p><p id="goal-count" class="support technical">0 / 600</p></div><p id="goal-error" class="field-error" hidden></p></div>
+              <fieldset class="choice-group"><legend>What do you need?</legend><p id="deliverables-help" class="support">Choose at least one deliverable.</p><div class="deliverable-grid"><label class="choice-label" for="deliverable-identity"><input id="deliverable-identity" name="deliverables" type="checkbox" value="identity" aria-describedby="deliverables-help deliverables-error"><span>Identity direction</span></label><label class="choice-label" for="deliverable-website"><input id="deliverable-website" name="deliverables" type="checkbox" value="website" aria-describedby="deliverables-help deliverables-error"><span>Website concept</span></label><label class="choice-label" for="deliverable-launch"><input id="deliverable-launch" name="deliverables" type="checkbox" value="launch" aria-describedby="deliverables-help deliverables-error"><span>Launch materials</span></label></div><p id="deliverables-error" class="field-error" hidden></p></fieldset>
+              <button id="review-brief" type="submit" class="button primary">Review brief <span aria-hidden="true">→</span></button>
+            </fieldset>
+          </form>
+          <article id="brief-review" class="brief-review" aria-labelledby="review-heading" hidden><p class="small-label">Read before confirming</p><h3 id="review-heading" tabindex="-1">Your brief, in black and white.</h3><p class="support">This is the fixed snapshot that the confirmation request will use.</p><dl class="review-grid"><div><dt>Project name</dt><dd id="review-name"></dd></div><div><dt>Project type</dt><dd id="review-type"></dd></div><div class="review-goal"><dt>Goal</dt><dd id="review-goal"></dd></div><div><dt>Deliverables</dt><dd><ul id="review-deliverables"></ul></dd></div></dl><div class="action-group"><button id="request-confirmation" class="button primary" type="button" disabled>Request confirmation</button><button id="edit-brief" class="button secondary" type="button" disabled>Edit brief</button></div></article>
+          <div id="pending-panel" class="pending-panel" hidden><span class="status warning">Pending acknowledgement</span><p>The confirmation request is pending. The reviewed snapshot stays fixed while this demo waits for your simulated acknowledgement.</p><button id="acknowledge-request" class="button primary" type="button" disabled>Simulate acknowledgement</button></div>
+          <article id="brief-receipt" class="brief-receipt" aria-labelledby="receipt-heading" hidden><span class="status success">Receipt confirmed</span><h3 id="receipt-heading" tabindex="-1">Got it. A little idea, recorded.</h3><p>The reviewed snapshot has a confirmed local receipt. No agent has started, and no project, message, or remote request was created.</p></article>
+          <p id="request-status" class="request-status support" role="status" aria-atomic="true"></p>
+          <div class="reset-line"><button id="reset-demo" class="text-button" type="button" disabled>Reset local demo</button><p class="support">Reset discards this brief and receipt in this page. Preferences stay saved.</p></div>
+          <details id="no-js-review" class="no-js-review" open><summary>Readable example brief</summary><p>The interactive builder becomes available when JavaScript runs. Here is an example review:</p><dl><div><dt>Project name</dt><dd>The little idea club</dd></div><div><dt>Project type</dt><dd>Brand identity</dd></div><div><dt>Goal</dt><dd>Help neighbors discover a friendly club where they can share materials and try a creative project together.</dd></div><div><dt>Deliverables</dt><dd>Identity direction · Website concept</dd></div></dl><p>A confirmation request would remain pending until acknowledged. A local receipt would start no agent.</p></details>
+          <noscript><p class="no-script">JavaScript is unavailable. Preferences and the brief demo are disabled. The example brief and all case study disclosures remain readable.</p></noscript>
+        </div>
+      </div>
+    </div></section>
+
+    <section id="specimen" class="specimen section-block container" aria-labelledby="specimen-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / Component specimen</p><h2 id="specimen-title">Personality lives<br>in the details.</h2></div><p class="section-description">Compare the palette, type, and useful little controls.<br><span id="density-note" class="support">Comfortable density · 24px specimen space</span></p></div>
+      <div class="specimen-grid">
+        <article class="specimen-card type-card" aria-labelledby="type-title"><p class="small-label">Typography / Sans + mono</p><h3 id="type-title">A friendly voice.</h3><p id="type-display" class="type-display">Aa Bb<br>0123<span class="accent">!</span></p><p>Good ideas deserve clear words. Let expressive headings introduce the story and quiet body text carry it.</p><p lang="vi">Ý tưởng nhỏ, niềm vui lớn.<br>Một giao diện thân thiện và rõ ràng.</p><p class="support">Manrope and JetBrains Mono are named roles. Installed fonts or local fallbacks render this preview.</p><p class="technical">IDEA-024 / 240ms / Aa → Bb</p></article>
+        <article class="specimen-card" aria-labelledby="controls-title"><p class="small-label">Controls / Useful affordances</p><h3 id="controls-title">An easy next step.</h3><div class="field"><label for="specimen-name">A little idea</label><input id="specimen-name" name="specimenName" value="Make something good" autocomplete="off" type="text" aria-describedby="specimen-name-note" disabled><p id="specimen-name-note" class="support">Editable local specimen. Nothing is submitted.</p></div><div class="action-group"><a id="primary-specimen" class="button primary" href="#brief">Try the brief builder</a><a class="button secondary" href="#credits">Source credits</a></div><label class="checkbox-label" for="specimen-check"><input id="specimen-check" type="checkbox" checked disabled>Keep a little context</label><div class="note"><strong>Friendly can be clear.</strong><p>Give important information a stable home. The words explain it; the color helps you find it.</p></div></article>
+        <article class="specimen-card" aria-labelledby="status-title"><p class="small-label">States / Every one has a name</p><h3 id="status-title">Say what happened.</h3><ul class="status-list"><li><span class="status success">Confirmed</span><span>Acknowledged receipt</span></li><li><span class="status warning">Pending</span><span>Awaiting acknowledgement</span></li><li><span class="status danger">Needs correction</span><span>Named validation error</span></li><li><span class="status information">In review</span><span>Snapshot ready to read</span></li><li><span class="status">Not started</span><span>No execution observed</span></li></ul><p class="support">These are independent sample states. A request alone establishes no receipt or execution.</p><div class="palette-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></article>
+      </div>
+      <div class="data-specimen"><div class="section-heading"><h3>A little order goes a long way.</h3><p class="support">Fictional project inventory. Scroll the table region on narrow screens.</p></div><div class="table-region" role="region" aria-label="Fictional project table, horizontally scrollable" tabindex="0"><table><caption>Three imaginary projects</caption><thead><tr><th scope="col">Project</th><th scope="col">Focus</th><th scope="col">Sample state</th><th scope="col" class="number-cell">Concepts</th></tr></thead><tbody><tr><th scope="row">Sprout</th><td>Brand identity</td><td><span class="status information">In review</span></td><td class="number-cell">03</td></tr><tr><th scope="row">Daydream</th><td>Digital product</td><td><span class="status success">Confirmed</span></td><td class="number-cell">02</td></tr><tr><th scope="row">Come Around</th><td>Creative campaign</td><td><span class="status warning">Pending</span></td><td class="number-cell">04</td></tr></tbody></table></div></div>
+    </section>
+  </main>
+  <footer id="credits" class="preview-footer container"><div><p class="eyebrow">Interface Atlas / Play</p><h2>Good ideas have<br>good company.</h2><p>Play's seed colors and geometry come from the portfolio of <a href="https://github.com/tamir39/tamir39-portfolio">Tamir / Phi Vuong Tuong Tam</a>, inspected at revision <code>6f9bfc6119f0e71dee04b675fbf59b8482aa9c74</code>. This original composition, CSS and vector artwork, fictional projects, and local demo were created for Interface Atlas with Codex AI assistance.</p><p class="support">Manrope is by Mikhail Sharanda. JetBrains Mono is by JetBrains, Philipp Nurullin, and Konstantin Bulenkov. No font files, third-party implementation, images, or artwork are imported or downloaded.</p><p class="support">Ravi Katiyar is credited for the optional sphere-artwork inspiration in Interactive Hero Backgrounds, which is not imported here. Samuel Breznjak's Neobrutalism components are an additional Atlas comparison, not authorship of Play.</p></div><nav aria-label="Preview documentation"><a href="../sources.md">Sources &amp; creators <span aria-hidden="true">↗</span></a><a href="../design.md">Play design rules <span aria-hidden="true">↗</span></a><a href="README.md">Preview scope &amp; limitations <span aria-hidden="true">↗</span></a><a href="../validation.md">Validation evidence <span aria-hidden="true">↗</span></a><a href="../../../THIRD_PARTY_NOTICES.md">Third-party notices <span aria-hidden="true">↗</span></a><a href="../../editorial/preview/">Compare Editorial <span aria-hidden="true">↗</span></a><a href="../../swiss/preview/">Compare Swiss <span aria-hidden="true">↗</span></a><a href="../../precision/preview/">Compare Precision <span aria-hidden="true">↗</span></a><a href="https://tamir39.github.io/interface-atlas/">Live Atlas hub <span aria-hidden="true">↗</span></a></nav></footer>
+</body>
+</html>

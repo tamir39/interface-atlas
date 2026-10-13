@@ -40,6 +40,45 @@
       }
     },
     {
+      "id": "play",
+      "name": "Play",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "basis": "adapted-from-tamir39-portfolio",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "portfolio",
+        "creative-tool",
+        "community-site",
+        "learning-product",
+        "consumer-onboarding",
+        "agent-brief-builder"
+      ],
+      "motion_character": "tactile-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "6f9bfc6119f0e71dee04b675fbf59b8482aa9c74",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/play/README.md",
+        "design": "themes/play/design.md",
+        "sources": "themes/play/sources.md",
+        "effects": "themes/play/effects.md",
+        "motion": "themes/play/motion.md"
+      }
+    },
+    {
       "id": "precision",
       "name": "Precision",
       "revision": "0.1.0-draft",
