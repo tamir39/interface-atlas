@@ -11,7 +11,7 @@ A frontend UI/UX knowledge library for preparing project-specific design documen
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load the library when preparing or deliberately revising that document.
 
-**Current pilot:** Editorial is the first reusable theme, with portfolio and agent operations design examples. The specifications remain drafts; [validation evidence](themes/editorial/validation.md) records representative browser checks and their limits.
+**Current pilot:** Editorial and Swiss are the first reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a distinct studio layout and change-review specimen. Both theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md).
 
 ## Start here
 
@@ -23,15 +23,17 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this workflow.
 
-## First theme and examples
+## Themes and examples
 
 - [Editorial](themes/editorial/README.md): reusable identity, visual rules, optional effects, motion, and provenance.
+- [Swiss](themes/swiss/README.md): bold sans typography, aligned composition, flat geometry, optional effects, and separately credited sources.
 - [Portfolio example](examples/portfolio/design.md): expressive presentation and case-study reading.
 - [Agent operations dashboard example](examples/agent-operations-dashboard/design.md): compact layouts and human-agent interaction.
 - [Example notes](examples/README.md): assumptions and how to adapt the examples.
 - [Live Editorial preview](https://tamir39.github.io/interface-atlas/themes/editorial/preview/): light/dark appearances, density, component specimens, and two sample layouts. [Preview notes](themes/editorial/preview/README.md) explain scope and offline use.
+- [Live Swiss preview](https://tamir39.github.io/interface-atlas/themes/swiss/preview/): a studio layout, local proposal review, and component specimens. [Preview notes](themes/swiss/preview/README.md) explain the simulation, source values, and offline use.
 - [Live logo gallery](https://tamir39.github.io/interface-atlas/assets/brand/preview.html): nine logo variants, small-size comparisons, and light/dark README heroes.
-- [Validation evidence](themes/editorial/validation.md): checks performed and remaining coverage.
+- Validation evidence: [Editorial](themes/editorial/validation.md) and [Swiss](themes/swiss/validation.md), with checks performed and remaining coverage.
 - [Preparation workflow evaluation](examples/workflow-evaluation/README.md): one fresh journal brief and the self-contained design document it produced.
 
 ## Structure
@@ -44,7 +46,24 @@ interface-atlas/
 ├── .gitattributes
 ├── .gitignore
 ├── themes/
-│   └── editorial/
+│   ├── editorial/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── effects.md
+│   │   ├── motion.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── preview.js
+│   │       └── validation/
+│   │           ├── results.json
+│   │           ├── light-desktop.png
+│   │           ├── dark-desktop.png
+│   │           └── light-mobile.png
+│   └── swiss/
 │       ├── README.md
 │       ├── design.md
 │       ├── effects.md
@@ -88,6 +107,7 @@ interface-atlas/
 │   ├── README.md
 │   ├── catalog.mjs
 │   ├── validate-editorial.mjs
+│   ├── validate-swiss.mjs
 │   └── build-preview-site.mjs
 ├── assets/
 │   └── brand/

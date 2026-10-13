@@ -26,7 +26,7 @@ Files 5–8 were batched after theme selection. No project example design.md was
 
 | Criterion | Result | Evidence or limitation |
 | --- | --- | --- |
-| Choose by fit, not appearance alone | Pass | Editorial publication suitability and draft status explicitly stated. Only one current theme makes comparison coverage limited. |
+| Choose by fit, not appearance alone | Pass | Editorial publication suitability and draft status explicitly stated. Only Editorial was available during this evaluation, so theme-comparison coverage was limited. |
 | Selective reading | Pass | 9 relevant files; no effects/agent-workflow docs or full examples loaded. |
 | Self-contained project contract | Pass | Concrete token values, pairings, font roles, scales, geometry, responsive rules, controls, key flows, and validation requirements. |
 | Requirements vs proposals | Pass | Page choices, storage protocol, schema assumptions, copy, and breakpoints explicitly proposed; confirmed brief preserved. |
@@ -46,7 +46,7 @@ The current skill and template are sufficient to create this draft. No blocking 
 - The template could ask for state ownership/persistence and meaningful content/asset rules in the existing components/flows sections. A separate universal backend or Agent Experience section would be inappropriate.
 - Editorial warns about language coverage but has no recorded multilingual rendered sample. A Vietnamese specimen should be part of real preview checks if that language remains a likely use case.
 - Editorial provides generic component rules; a journal adaptation benefits from figure captions, image rights, responsive media, and non-translated route behavior. These belong in a relevant knowledge page later if repeated demand warrants it, not as mandatory theme defaults.
-- Catalog selection evaluation is incomplete while only Editorial exists. A second distinct theme is needed to assess whether README fit and limitations change the choice meaningfully.
+- Catalog selection evaluation covered only Editorial. Swiss was added afterward; a fresh comparison evaluation is still needed to assess whether README fit and limitations change the choice meaningfully.
 
 After review, the preparation skill and project template received brief conditional reminders for state persistence, recovery, languages, and media/asset credits. These reminders do not require loading additional knowledge or introducing backend features. The Editorial preview also includes a Vietnamese fallback-font specimen. Selection across multiple themes remains untested.
 

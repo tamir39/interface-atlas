@@ -1,6 +1,6 @@
 # Research source registry
 
-Reviewed on 2026-10-13. These twenty external candidates cover theme discovery, design documentation, foundations, and Agent Experience. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
+Reviewed on 2026-10-13. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by Swiss's specific conceptual and historical sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
 
 Repository license notes refer to inspected repository material. Website prose, illustrations, trademarks, commercial components, and separately licensed assets may have different terms. Preserve the terms for the actual material selected.
 
@@ -26,10 +26,15 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R18 | [Laws of UX](https://lawsofux.com/) | Jon Yablonski | Usability principles and research references | Reuse terms not established; reference only. |
 | R19 | [HAX Design Library](https://www.microsoft.com/en-us/haxtoolkit/library/) | Microsoft HAX team and research contributors | Human-AI interaction patterns | Conceptual reference; no documentation/code/assets copied. |
 | R20 | [Tailwind theme documentation](https://tailwindcss.com/docs/theme) | Tailwind Labs and contributors | Framework token mappings | Code repository MIT; docs referenced, no adapter shipped. |
+| R21 | [The Vignelli Canon](https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf) | Massimo Vignelli; book design with Beatriz Cifuentes; RIT archival host | Grid, typography, and composition principles | No open redistribution license established; reference only, no pages or artwork copied. |
+| R22 | [50 Years of Helvetica](https://www.moma.org/calendar/exhibitions/38) | MoMA; typeface creators Max Miedinger and Edouard Hoffmann | Historical typography attribution | Museum material reference only; does not provide a Helvetica font license. |
+| R23 | [Kinetic Grid](https://21st.dev/@satoriui/components/kinetic-grid) | SatoriUI, published as @satoriui | Optional Swiss grid-effect inspiration in Tamir's portfolio | Listing states MIT; exact package license/notices must be verified before importing implementation. No effect code imported. |
 
 ## Material used in this pilot
 
 Editorial's source implementation is maintained by Tamir / Phi Vuong Tuong Tam in [Tamir39Portfolio](https://github.com/tamir39/tamir39-portfolio), inspected locally at revision 166f44091a58a68d74096bc44defceb99243ba4e. Its detailed [provenance record](../themes/editorial/sources.md) identifies retained values and Atlas proposals.
+
+Swiss's seed was inspected at revision `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. Its separate [source record](../themes/swiss/sources.md) preserves Tamir's creator credit and the distinction between source values and Atlas rules. R21 and R22 are additional Atlas references, not evidence that Tamir used them directly or that their authors created this complete theme. R23 is credited as the portfolio's optional grid-effect inspiration.
 
 The portfolio's README credits R02 and R03 as general inspiration; it does not establish a source entry for every individual design decision.
 

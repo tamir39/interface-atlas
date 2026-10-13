@@ -38,6 +38,44 @@
         "effects": "themes/editorial/effects.md",
         "motion": "themes/editorial/motion.md"
       }
+    },
+    {
+      "id": "swiss",
+      "name": "Swiss",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "basis": "adapted-from-tamir39-portfolio",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "portfolio",
+        "publication",
+        "studio-site",
+        "documentation",
+        "agent-workspace"
+      ],
+      "motion_character": "crisp-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "6f9bfc6119f0e71dee04b675fbf59b8482aa9c74",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/swiss/README.md",
+        "design": "themes/swiss/design.md",
+        "sources": "themes/swiss/sources.md",
+        "effects": "themes/swiss/effects.md",
+        "motion": "themes/swiss/motion.md"
+      }
     }
   ]
 }

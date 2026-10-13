@@ -37,6 +37,16 @@ If Playwright and its browser are installed locally with their standard defaults
 
 The check serves only the preview on a loopback address, tests reflow and representative behavior, measures opaque solid-background text pairs, and closes the server and browser afterward. See [Editorial's report](../themes/editorial/validation.md) for the precise coverage and exclusions. Passing this smoke check does not establish WCAG conformance or validate a production project.
 
+## Optional Swiss browser checks
+
+The Swiss preview has its own repeatable checks for responsive layout, preferences, native disclosures, and the local proposal/decision/acknowledgement simulation:
+
+```sh
+node tools/validate-swiss.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It has the same optional dependency and output conventions as the Editorial check. See [Swiss's validation record](../themes/swiss/validation.md) for exact evidence and limitations. The check does not send a real approval or execute an agent task.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

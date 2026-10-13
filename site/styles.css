@@ -70,6 +70,13 @@ h1 em { color: var(--action); }
 .study-type span, .study-type em { display: block; }
 .study-panels { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: .75rem; }
 .study-panels span { block-size: 2.5rem; border: 1px solid var(--divider); border-radius: .25rem; background: var(--surface); }
+.swiss-study { display: grid; grid-template-columns: auto 1fr; gap: 1rem; min-block-size: 14rem; margin-block: 1.5rem; padding: 1.5rem; background: #fafaf7; color: #181816; border-radius: 2px; border-block-start: 4px solid #b52e21; }
+.swiss-number { align-self: start; padding: .25rem .5rem; background: #b52e21; color: #fff; font-size: .875rem; font-weight: 700; }
+.swiss-type { font-size: clamp(1.75rem, 3.5vw, 2.75rem); font-weight: 800; line-height: 1.1; letter-spacing: -.035em; }
+.swiss-lines { display: grid; grid-column: 1 / -1; grid-template-columns: 2fr 1fr 1fr; align-items: end; gap: .75rem; }
+.swiss-lines span { block-size: 2px; background: currentColor; }
+.brand-card { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: center; }
+.brand-card .card-meta { grid-column: 1 / -1; }
 .brand-study { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); background: var(--tile); color: var(--tile-ink); }
 .brand-study svg { inline-size: 96px; block-size: 96px; flex: 0 0 96px; fill: var(--tile-accent); }
 .brand-study p { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 500; line-height: 1.2; letter-spacing: -.03em; }
@@ -87,7 +94,7 @@ h1 em { color: var(--action); }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; padding-block: 1.75rem 2rem; border-block-start: 1px solid var(--divider); color: var(--muted); font-size: .8125rem; }
 .site-footer a { display: inline-flex; align-items: center; gap: .5rem; min-block-size: 44px; padding-block: .5rem; }
 @media (max-width: 48rem) {
-  .cover-copy, .preview-grid, .reading-note { grid-template-columns: 1fr; }
+  .cover-copy, .preview-grid, .reading-note, .brand-card { grid-template-columns: 1fr; }
   .cover-copy { gap: 1.5rem; }
   .cover-intro { max-inline-size: 52ch; }
   .reading-note { gap: 1.25rem; }
@@ -99,6 +106,8 @@ h1 em { color: var(--action); }
 }
 @media (prefers-color-scheme: dark) {
   .cover-art img { outline-color: oklch(1 0 0 / .1); }
+  .swiss-study { background: #171716; color: #faf6ed; border-color: #ff8978; }
+  .swiss-number { background: #ff8978; color: #35160f; }
 }
 @media (forced-colors: active) {
   a:focus-visible { outline-color: Highlight; }

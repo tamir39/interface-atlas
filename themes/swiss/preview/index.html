@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-appearance="system" data-density="comfortable" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original, standalone reference preview of Interface Atlas's draft Swiss theme.">
+  <title>Swiss reference preview · Interface Atlas</title>
+  <script>
+    (() => {
+      const defaults = { appearance: 'system', density: 'comfortable', motion: 'on' };
+      const options = { appearance: ['light', 'dark', 'system'], density: ['comfortable', 'compact'], motion: ['on', 'off'] };
+      let saved;
+      try { saved = JSON.parse(localStorage.getItem('interface-atlas-swiss-preview')); } catch {}
+      for (const key of Object.keys(defaults)) {
+        document.documentElement.dataset[key] = options[key].includes(saved?.[key]) ? saved[key] : defaults[key];
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="preview-header container">
+    <a class="atlas-brand" href="../../../README.md"><svg class="atlas-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg> Interface Atlas</a>
+    <p class="meta">Theme 02 <span aria-hidden="true">/</span> Reference preview <span aria-hidden="true">/</span> Draft 0.1.0</p>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="preview-intro container" aria-labelledby="preview-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A visual language of deliberate order</p>
+        <h1 id="preview-title">Swiss<span class="accent">.</span></h1>
+        <p class="hero-statement">Clear structure.<br>Strong character.</p>
+        <p class="intro-description">A shared grid, confident typography, and one useful accent. Explore how the same visual system supports a studio story and an agent's next decision.</p>
+        <div class="action-group"><a class="button primary" href="#studio">Explore the theme <span aria-hidden="true">↗</span></a><a class="text-link" href="../design.md">Read the design rules</a></div>
+      </div>
+      <aside class="hero-side" aria-label="Theme preferences">
+        <div class="theme-index" aria-hidden="true"><span>02</span><svg viewBox="0 0 100 100" focusable="false"><path d="M42 8h16v34h34v16H58v34H42V58H8V42h34Z"/></svg></div>
+        <form class="preview-settings" aria-label="Preview preferences">
+          <p class="small-label">Set your view</p>
+          <div class="field"><label for="appearance">Appearance</label><select id="appearance" name="appearance" disabled><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></div>
+          <div class="field"><label for="density">Specimen density</label><select id="density" name="density" disabled><option value="comfortable">Comfortable</option><option value="compact">Compact</option></select></div>
+          <label class="checkbox-label" for="motion"><input id="motion" name="motion" type="checkbox" checked disabled> Enable subtle feedback motion</label>
+          <p class="support" id="motion-note">System reduced-motion preferences take priority.</p>
+          <p class="support" id="preference-note">Controls become available when JavaScript runs.</p>
+        </form>
+      </aside>
+    </section>
+
+    <nav class="section-nav container" aria-label="Preview sections"><a href="#studio"><span class="nav-number">01</span> Studio &amp; publication</a><a href="#review"><span class="nav-number">02</span> Change review</a><a href="#specimen"><span class="nav-number">03</span> Components</a><a href="#credits">Credits <span aria-hidden="true">↗</span></a></nav>
+
+    <section id="studio" class="studio section-block container" aria-labelledby="studio-title">
+      <div class="section-caption"><p class="eyebrow">01 / Studio adaptation</p><p class="support">Comfortable reading · Modular composition</p></div>
+      <div class="studio-grid">
+        <div class="studio-copy"><p class="small-label">A fictional independent design studio</p><h2 id="studio-title">Form follows<br>the message.</h2><p class="lead">Interfaces with a clear point of view, built around the people who use them.</p><p>Shared edges give the story its rhythm. Large type introduces an idea; smaller details give it context. The accent points to what matters next.</p><a class="text-link" href="#sample-work">See the sample briefs <span aria-hidden="true">↗</span></a></div>
+        <div class="grid-poster" aria-hidden="true"><div class="poster-meta"><span>Study / 02</span><span>Type + space</span></div><div class="poster-word">Aa<span class="poster-dot">.</span></div><div class="poster-bottom"><span class="poster-rule"></span><span class="poster-grid"><i></i><i></i><i></i><i></i></span></div></div>
+      </div>
+      <div id="sample-work" class="sample-work"><div class="section-heading"><h3>Two briefs. One system.</h3><p class="support">Original fictional briefs; no shipped outcomes are claimed.</p></div>
+        <article class="project-row"><p class="project-index" aria-hidden="true">01</p><div><p class="small-label">Publication / Sample brief</p><h4>A field guide to<br>urban places.</h4><p>Make essays, maps, and image captions easy to scan without flattening the reading experience.</p><details id="publication-brief"><summary>Read the publication brief</summary><p>Use a shared alignment edge for the article title, summary, and author context. Keep the body near 65 characters per line. Let image captions and related reading form a quieter second layer. The grid adapts to a single reading column on small screens.</p></details></div><div class="project-art publication-art" aria-hidden="true"><span class="art-title">City<br>notes.</span><span class="art-bar"></span><span class="art-lines"><i></i><i></i><i></i></span><span class="art-index">01 / Field guide</span></div></article>
+        <article class="project-row"><p class="project-index" aria-hidden="true">02</p><div><p class="small-label">Studio portfolio / Sample brief</p><h4>A direct introduction<br>to useful work.</h4><p>Lead with the studio's approach, then show the problem and decisions behind each project.</p><details id="portfolio-brief"><summary>Read the portfolio brief</summary><p>Start with a concise statement of the studio's work. Use numbered project rows and explicit links to briefs. Keep all reading and navigation available without motion. The change-review demonstration below is a separate operational adaptation; it is not an approval step in this portfolio.</p></details></div><div class="project-art studio-art" aria-hidden="true"><span class="art-title">Work<br>in order.</span><div class="module-grid"><span></span><span></span><span></span><span></span></div><span class="art-index">02 / Studio system</span></div></article>
+      </div>
+    </section>
+
+    <section id="review" class="review section-block" aria-labelledby="review-title"><div class="container">
+      <div class="section-caption"><p class="eyebrow">02 / Agent change-review adaptation</p><p class="support">Stable context · Explicit decisions</p></div>
+      <div class="review-heading"><div><h2 id="review-title">Make the next<br>decision clear.</h2><p>Use the same grid to distinguish a proposal, a requested decision, and a confirmed outcome.</p></div><p class="simulation-label">Local simulation<br>No backend connected</p></div>
+      <div class="review-shell">
+        <div class="workspace-top"><div><p class="small-label">Sample review workspace</p><h3>Change proposal</h3></div><span class="technical">CHG-024</span></div>
+        <div class="review-grid"><div class="proposal-summary"><p class="small-label">Navigation / Fictional proposal</p><h4>Bring project links<br>into one clear group.</h4><p>The sample agent proposes grouping “Work” and “About” at the leading edge and keeping “Contact” at the trailing edge.</p><dl class="state-grid"><div><dt>Confirmed decision</dt><dd id="confirmed-decision">Unreviewed</dd></div><div><dt>Pending decision</dt><dd id="pending-decision">None</dd></div><div><dt>Execution</dt><dd>Not started</dd></div><div><dt>Connection</dt><dd>Local simulation</dd></div></dl><button id="view-proposal" class="button secondary" type="button" disabled aria-controls="proposal-detail" aria-expanded="true">View the proposal <span aria-hidden="true">↗</span></button><p class="support">Decisions affect only this page and reset on reload.</p></div>
+        <article id="proposal-detail" class="proposal-detail" aria-labelledby="proposal-heading"><p class="small-label">CHG-024 / Scope &amp; evidence</p><h4 id="proposal-heading" tabindex="-1">A smaller, clearer navigation.</h4><p>Arrange three existing links along a shared baseline. Preserve their labels, destinations, keyboard order, and visible focus.</p><div class="proposal-comparison"><div><h5>Current sample</h5><p>Work, About, and Contact have equal spacing and visual weight.</p></div><div><h5>Proposed sample</h5><p>Work and About form a group. Contact stays separate as the next action.</p></div></div><ul class="scope-list"><li>Scope: one navigation component.</li><li>No new routes, tracking, or remote requests.</li><li>Decision acknowledgement does not run or deploy a change.</li></ul><div class="decision-actions"><button id="accept-proposal" class="button primary" type="button" disabled>Request acceptance</button><button id="reject-proposal" class="button secondary" type="button" disabled>Request rejection</button><button id="acknowledge-decision" class="button primary" type="button" disabled hidden>Simulate acknowledgement</button></div><p id="decision-explanation" class="support">A requested decision remains pending until its acknowledgement is simulated.</p><p id="review-result" class="review-result" tabindex="-1" hidden></p><div class="detail-navigation"><button id="back-to-proposal" class="button secondary" type="button" disabled hidden>Back to proposal</button><button id="reset-proposal" class="button secondary" type="button" disabled>Reset sample</button></div></article>
+        <p id="proposal-placeholder" class="proposal-placeholder" hidden>Read the proposal's scope before requesting a decision. Select “View the proposal” to open it.</p></div>
+        <p id="review-status" class="sr-only" role="status" aria-atomic="true"></p><noscript><p class="no-script">JavaScript is unavailable. The proposal and its scope remain readable. Decision simulation and preferences are disabled.</p></noscript>
+      </div>
+    </div></section>
+
+    <section id="specimen" class="specimen section-block container" aria-labelledby="specimen-title"><div class="section-caption"><p class="eyebrow">03 / Component specimen</p><p class="support" id="density-note">Comfortable density</p></div><div class="section-heading"><h2 id="specimen-title">A system in the details.</h2><p class="lead">One neutral specimen for comparing density and appearance. The project adaptations above keep their own reading profiles.</p></div>
+      <div class="specimen-grid"><article class="specimen-card" aria-labelledby="type-title"><p class="small-label">Typography / Sans + mono</p><h3 id="type-title">Useful hierarchy.</h3><p class="type-display">Aa Bb<br>0123<span class="accent">.</span></p><p>Start with the content and let the grid support it. Keep the type bold where it introduces an idea and quiet where it helps someone read.</p><p lang="vi">Cấu trúc rõ ràng, giao diện có cá tính.</p><p class="support">Local font fallbacks render English and Vietnamese here.</p><p class="technical">CHG-024 / GRID-12 / 160ms</p></article>
+      <article class="specimen-card" aria-labelledby="controls-title"><p class="small-label">Controls / Clear affordances</p><h3 id="controls-title">Visible choices.</h3><div class="field"><label for="specimen-name">Project name</label><input id="specimen-name" name="project-name" type="text" value="A clear interface" autocomplete="off" aria-describedby="specimen-name-note"><p id="specimen-name-note" class="support">An editable local specimen; nothing is submitted.</p></div><div class="action-group"><a id="primary-specimen" class="button primary" href="#specimen-title">Primary action</a><a class="button secondary" href="#credits">Source credits</a></div><label class="checkbox-label" for="specimen-check"><input id="specimen-check" type="checkbox" checked> Show additional context</label><div class="note"><strong>A useful note</strong><p>Use a stable surface for important context. Color supports the message; the words carry it.</p></div></article>
+      <article class="specimen-card statuses" aria-labelledby="status-title"><p class="small-label">States / Always named</p><h3 id="status-title">Words before color.</h3><ul class="status-list"><li><span class="status success">Succeeded</span><span>Confirmed outcome</span></li><li><span class="status warning">Needs input</span><span>Attention required</span></li><li><span class="status danger">Failed</span><span>Confirmed failure</span></li><li><span class="status information">Running</span><span>Observed execution</span></li><li><span class="status">Queued</span><span>Waiting to start</span></li></ul><p class="support">These are independent sample states. A connection issue does not establish a failure.</p></article></div>
+      <div class="data-specimen"><div class="section-heading"><h3>Data, on a shared baseline.</h3><p class="support">Fictional sample data. On narrow screens, scroll the table region.</p></div><div class="table-region" role="region" aria-label="Sample project table, horizontally scrollable" tabindex="0"><table><caption>Sample project inventory</caption><thead><tr><th scope="col">Project</th><th scope="col">Type</th><th scope="col">State</th><th scope="col" class="number-cell">Pages</th></tr></thead><tbody><tr><th scope="row">City notes</th><td>Publication</td><td><span class="status information">In review</span></td><td class="number-cell">12</td></tr><tr><th scope="row">Studio system</th><td>Portfolio</td><td><span class="status success">Ready</span></td><td class="number-cell">4</td></tr><tr><th scope="row">Review workspace</th><td>Agent experience</td><td><span class="status warning">Needs input</span></td><td class="number-cell">3</td></tr></tbody></table></div></div>
+    </section>
+  </main>
+
+  <footer id="credits" class="preview-footer container"><div><p class="eyebrow">Interface Atlas / Swiss</p><h2>Designed with<br>a clear source trail.</h2><p>This original preview was created for Interface Atlas with Codex AI assistance. Swiss seed colors and geometry come from Tamir's portfolio; the composition, fictional briefs, and local simulation were prepared for this preview.</p><p class="support">Manrope is by Mikhail Sharanda. JetBrains Mono is by JetBrains, Philipp Nurullin, and Konstantin Bulenkov. No font files are embedded or downloaded; installed fonts and local fallbacks determine the rendering.</p></div><nav aria-label="Preview documentation"><a href="../sources.md">Sources &amp; creators <span aria-hidden="true">↗</span></a><a href="../design.md">Swiss design rules <span aria-hidden="true">↗</span></a><a href="README.md">Preview scope &amp; limitations <span aria-hidden="true">↗</span></a><a href="../../../THIRD_PARTY_NOTICES.md">Third-party notices <span aria-hidden="true">↗</span></a><a href="../../../site/README.md">Live site documentation <span aria-hidden="true">↗</span></a><a href="../../editorial/preview/">Compare Editorial <span aria-hidden="true">↗</span></a><a href="https://tamir39.github.io/interface-atlas/">Live Atlas hub <span aria-hidden="true">↗</span></a></nav></footer>
+</body>
+</html>

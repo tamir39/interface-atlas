@@ -1,0 +1,823 @@
+{
+  "checks": [
+    {
+      "name": "Light/dark and comfortable/compact reflow and solid-background HTML text/control contrast",
+      "passed": true,
+      "details": "20 combinations"
+    },
+    {
+      "name": "Keyboard skip link moves focus to main",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Native project brief disclosure opens and closes by keyboard",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Keyboard proposal decisions distinguish pending requests from confirmed acceptance/rejection and reset",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Back to proposal restores the invoking control and preserves pending decision context",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System appearance follows live changes; explicit appearance and density persist",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off make feedback immediate",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Forced-colors focus outline retains geometry",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize reflows at 640px",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Actual local fallback font families and Vietnamese sample recorded",
+      "passed": true,
+      "details": {
+        ".intro-description": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 146
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 7
+          }
+        ],
+        "p[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 39
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blocked, invalid, and malformed stored preferences retain usable defaults and controls",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript proposal and native briefs remain readable; simulation/preferences stay disabled; text contrast passes",
+      "passed": true,
+      "details": {
+        "checked": 177,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 10,
+          "unrenderedTextSamples": 1,
+          "visuallyHiddenTextSamples": 0
+        }
+      }
+    },
+    {
+      "name": "No browser runtime errors, external resource requests, or failed preview resources",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 171,
+        "minimum": 5.34,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.59,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.59,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 171,
+        "minimum": 6.22,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 6,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 13,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 5.38,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 5.38,
+            "required": 3
+          }
+        ]
+      }
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "899056cb62cc31604de283f613598ae381c78596c9d2fdec46a085f1a499d3ec",
+    "styles.css": "c8ff5ac231b254862b2b0259dc150f0d371b1141b88d8c3b263b693b8ac90f2f",
+    "preview.js": "378cacf339218374d5fb6b2c7d67884ace8606f6394cc4ac287ead1466ad167a"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input boundaries. SVG artwork, disabled controls, placeholders, text selection, native popup menus, and backgrounds with images are outside this check.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "renderedFonts": {
+    ".intro-description": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 146
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 7
+      }
+    ],
+    "p[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 39
+      }
+    ]
+  }
+}

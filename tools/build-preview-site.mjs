@@ -18,9 +18,10 @@ const files = [
   ['site/index.html', 'index.html'],
   ['site/styles.css', 'styles.css'],
   ...brandFiles.map((name) => [`assets/brand/${name}`, `assets/brand/${name}`]),
-  ...['index.html', 'styles.css', 'preview.js'].map((name) => [
-    `themes/editorial/preview/${name}`, `themes/editorial/preview/${name}`,
-  ]),
+  ...['editorial', 'swiss'].flatMap((theme) =>
+    ['index.html', 'styles.css', 'preview.js'].map((name) => [
+      `themes/${theme}/preview/${name}`, `themes/${theme}/preview/${name}`,
+    ])),
 ];
 
 function inside(parent, child) {
