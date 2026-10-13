@@ -1,6 +1,6 @@
 # Research source registry
 
-Reviewed on 2026-10-13. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by Swiss's specific conceptual and historical sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
+Reviewed on 2026-10-13. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by theme-specific study sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
 
 Repository license notes refer to inspected repository material. Website prose, illustrations, trademarks, commercial components, and separately licensed assets may have different terms. Preserve the terms for the actual material selected.
 
@@ -29,6 +29,9 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R21 | [The Vignelli Canon](https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf) | Massimo Vignelli; book design with Beatriz Cifuentes; RIT archival host | Grid, typography, and composition principles | No open redistribution license established; reference only, no pages or artwork copied. |
 | R22 | [50 Years of Helvetica](https://www.moma.org/calendar/exhibitions/38) | MoMA; typeface creators Max Miedinger and Edouard Hoffmann | Historical typography attribution | Museum material reference only; does not provide a Helvetica font license. |
 | R23 | [Kinetic Grid](https://21st.dev/@satoriui/components/kinetic-grid) | SatoriUI, published as @satoriui | Optional Swiss grid-effect inspiration in Tamir's portfolio | Listing states MIT; exact package license/notices must be verified before importing implementation. No effect code imported. |
+| R24 | [IBM Plex](https://www.ibm.com/plex/specs/) | Mike Abbink, Paul van der Laan and Pieter van Rosmalen of Bold Monday, and credited Plex contributors | Precision sans and monospace roles | Pinned font package OFL-1.1; no font files imported. |
+| R25 | [Primer product layout](https://primer.style/product/getting-started/foundations/layout/) | GitHub's Primer team and contributors | Application composition, narrow-screen reading order, and list/detail patterns | Conceptual reference; Primer React repository MIT is scoped to covered software. |
+| R26 | [Carbon foundations](https://www.carbondesignsystem.com/building-blocks/foundations/color/overview) | IBM's Carbon team and contributors | Semantic layers, productive typography, grid, and motion guidance | Conceptual reference; Carbon repository Apache-2.0 does not clear all website assets. |
 
 ## Material used in this pilot
 
@@ -38,9 +41,11 @@ Swiss's seed was inspected at revision `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74
 
 The portfolio's README credits R02 and R03 as general inspiration; it does not establish a source entry for every individual design decision.
 
+Precision is an original Atlas synthesis rather than a portfolio extraction. Its [source record](../themes/precision/sources.md) pins Carbon `c9b1f79128df93d79e7a65ced3ad1bed5709c7cc`, Primer React `7f5303d803986887187d86dcebaeda22a4dc6823`, and IBM Plex `763c36ef9117782905ae010056dfbe8fd2653a25` as repository evidence. Website guidance is recorded by URL and access date separately. R14, R24, R25, and R26 inform the new entry; no upstream implementation, brand assets, or font files are imported.
+
 The optional path-effect inspiration is [Floating Paths](https://21st.dev/@bundui/components/floating-paths), credited to Bundui.io. External component implementation terms are unresolved. No external effect code is included.
 
-Font designers and package license evidence are recorded in Editorial's sources.md and [third-party notices](../THIRD_PARTY_NOTICES.md).
+Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), and [Precision](../themes/precision/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
 
 R16 and R17 inform theme guidance. R19 informs [shared Agent Experience](../knowledge/agent-experience.md) and the [dashboard example](../examples/agent-operations-dashboard/design.md).
 

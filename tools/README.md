@@ -47,6 +47,16 @@ node tools/validate-swiss.mjs --module /path/to/playwright/index.mjs --browser /
 
 It has the same optional dependency and output conventions as the Editorial check. See [Swiss's validation record](../themes/swiss/validation.md) for exact evidence and limitations. The check does not send a real approval or execute an agent task.
 
+## Optional Precision browser checks
+
+Precision has repeatable checks for responsive layout, preferences, filtering, detail focus, cancellation request/acknowledgement, and the difference between connection freshness and execution state:
+
+```sh
+node tools/validate-precision.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Precision's validation record](../themes/precision/validation.md) for the actual evidence and limits. The preview's control commands and disconnection toggle are local simulations.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

@@ -75,6 +75,13 @@ h1 em { color: var(--action); }
 .swiss-type { font-size: clamp(1.75rem, 3.5vw, 2.75rem); font-weight: 800; line-height: 1.1; letter-spacing: -.035em; }
 .swiss-lines { display: grid; grid-column: 1 / -1; grid-template-columns: 2fr 1fr 1fr; align-items: end; gap: .75rem; }
 .swiss-lines span { block-size: 2px; background: currentColor; }
+.precision-study { --study-page: #f6f8fb; --study-panel: #fff; --study-ink: #17212f; --study-muted: #526174; --study-line: #d6dee8; --study-action: #175cd3; display: grid; align-content: start; gap: .5rem; min-block-size: 14rem; margin-block: 1.5rem; padding: 1rem; border-radius: 4px; color: var(--study-ink); background: var(--study-page); }
+.precision-study-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding-block-end: .25rem; border-block-end: 1px solid var(--study-line); color: var(--study-muted); font-size: .8125rem; }
+.precision-study-row { display: grid; grid-template-columns: 4px 1fr auto; gap: .5rem; align-items: center; padding: .25rem .5rem; background: var(--study-panel); border: 1px solid var(--study-line); border-radius: 4px; font-size: .75rem; }
+.precision-study-row strong { font-family: Consolas, monospace; font-weight: 500; }
+.precision-study-row > span:last-child { color: var(--study-muted); }
+.precision-study-marker { align-self: stretch; background: var(--study-action); }
+.precision-study-note { font-size: 1rem; font-weight: 600; line-height: 1.25; }
 .brand-card { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: center; }
 .brand-card .card-meta { grid-column: 1 / -1; }
 .brand-study { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); background: var(--tile); color: var(--tile-ink); }
@@ -99,6 +106,9 @@ h1 em { color: var(--action); }
   .cover-intro { max-inline-size: 52ch; }
   .reading-note { gap: 1.25rem; }
 }
+@media (min-width: 70rem) {
+  .preview-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 @media (max-width: 26rem) {
   .preview-card { padding: 1rem; }
   .theme-study, .brand-study { padding: 1rem; }
@@ -108,6 +118,7 @@ h1 em { color: var(--action); }
   .cover-art img { outline-color: oklch(1 0 0 / .1); }
   .swiss-study { background: #171716; color: #faf6ed; border-color: #ff8978; }
   .swiss-number { background: #ff8978; color: #35160f; }
+  .precision-study { --study-page: #0c121c; --study-panel: #141e2c; --study-ink: #e9eff7; --study-muted: #aab9cc; --study-line: #33445b; --study-action: #88b7ff; }
 }
 @media (forced-colors: active) {
   a:focus-visible { outline-color: Highlight; }

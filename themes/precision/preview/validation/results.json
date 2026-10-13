@@ -1,0 +1,2327 @@
+{
+  "checks": [
+    {
+      "name": "Light/dark and comfortable/compact reflow, text/control contrast, density change, and 44px primary targets",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "measuredDensities": {
+          "comfortable": {
+            "height": 155.1875,
+            "padding": [
+              {
+                "blockStart": 16,
+                "blockEnd": 16
+              }
+            ]
+          },
+          "compact": {
+            "height": 147.1875,
+            "padding": [
+              {
+                "blockStart": 12,
+                "blockEnd": 12
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip link focuses main; native disclosure opens and closes by keyboard",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Search and status filters expose empty results and recover through reset",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Connection toggle retains a stable accessible name; disconnection/reconnection preserve confirmed execution and pending command",
+      "passed": true,
+      "details": {
+        "disconnectedTextSamples": 206
+      }
+    },
+    {
+      "name": "Keyboard run navigation restores the invoking control; requested cancellation stays Running until acknowledgement",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Returning from a filtered-out selected run preserves filters and detail context, then reset preserves selection",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off make feedback immediate",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Forced-colors focus outline retains geometry",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize reflows at 640px",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Actual local fallback font families and Vietnamese sample recorded",
+      "passed": true,
+      "details": {
+        ".intro-description": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 131
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 7
+          }
+        ],
+        "p[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 40
+          }
+        ]
+      }
+    },
+    {
+      "name": "System follows live appearance changes; explicit appearance/density/motion persist; blocked, invalid, and malformed storage retain usable defaults",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript run details and native disclosures remain readable; runtime controls stay disabled; text contrast passes",
+      "passed": true,
+      "details": {
+        "checked": 248,
+        "minimum": 7.27,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 18,
+          "unrenderedTextSamples": 7,
+          "visuallyHiddenTextSamples": 0
+        }
+      }
+    },
+    {
+      "name": "No browser runtime errors, external resource requests, or failed preview resources",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.89,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 3.61,
+            "fillRatio": 3.61,
+            "adjacentRatio": 3.61,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 199,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 72,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 44
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 203,
+        "minimum": 4.76,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 1,
+          "unrenderedTextSamples": 68,
+          "visuallyHiddenTextSamples": 0
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-search",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "run-status-filter",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "ratio": 4.71,
+            "fillRatio": 4.71,
+            "adjacentRatio": 4.71,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "appearance",
+          "height": 45
+        },
+        {
+          "id": "density",
+          "height": 45
+        },
+        {
+          "id": "simulate-disconnection",
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "height": 59
+        },
+        {
+          "id": "run-search",
+          "height": 46
+        },
+        {
+          "id": "run-status-filter",
+          "height": 45
+        },
+        {
+          "id": "reset-filters",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-041",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-042",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-043",
+          "height": 44
+        },
+        {
+          "id": "inspect-RUN-044",
+          "height": 44
+        },
+        {
+          "id": "back-to-runs",
+          "height": 44
+        },
+        {
+          "id": "cancel-run",
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "c5e47bc5cd058200f50616b03b6de79649d5d7c521686d9ca05d2192b245904f",
+    "styles.css": "9d744dc7cb51e0b85dd1fcb66f1fcf0557b2879414d0f6e1553196f80f7a215e",
+    "preview.js": "22a87a0cdc65a88cf74fd6fe19b20628c9fe607537243ecf12d54865316dca5a"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input boundaries against their fill and adjacent background. SVG artwork, disabled controls, placeholders, text selection, native popup menus, and backgrounds with images are outside this check.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "renderedFonts": {
+    ".intro-description": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 131
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 7
+      }
+    ],
+    "p[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 40
+      }
+    ]
+  }
+}

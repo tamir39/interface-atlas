@@ -11,7 +11,7 @@ A frontend UI/UX knowledge library for preparing project-specific design documen
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load the library when preparing or deliberately revising that document.
 
-**Current pilot:** Editorial and Swiss are the first reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a distinct studio layout and change-review specimen. Both theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md).
+**Current pilot:** Editorial, Swiss, and Precision are the first reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change-review specimen; Precision adds a compact operational workspace. All three theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md).
 
 ## Start here
 
@@ -27,13 +27,15 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 
 - [Editorial](themes/editorial/README.md): reusable identity, visual rules, optional effects, motion, and provenance.
 - [Swiss](themes/swiss/README.md): bold sans typography, aligned composition, flat geometry, optional effects, and separately credited sources.
+- [Precision](themes/precision/README.md): productive typography, semantic layers, compact controls, and clear execution, connection, and pending-command states.
 - [Portfolio example](examples/portfolio/design.md): expressive presentation and case-study reading.
 - [Agent operations dashboard example](examples/agent-operations-dashboard/design.md): compact layouts and human-agent interaction.
 - [Example notes](examples/README.md): assumptions and how to adapt the examples.
 - [Live Editorial preview](https://tamir39.github.io/interface-atlas/themes/editorial/preview/): light/dark appearances, density, component specimens, and two sample layouts. [Preview notes](themes/editorial/preview/README.md) explain scope and offline use.
 - [Live Swiss preview](https://tamir39.github.io/interface-atlas/themes/swiss/preview/): a studio layout, local proposal review, and component specimens. [Preview notes](themes/swiss/preview/README.md) explain the simulation, source values, and offline use.
+- [Live Precision preview](https://tamir39.github.io/interface-atlas/themes/precision/preview/): a run queue, evidence detail, local cancellation and connection simulations, and component specimens. [Preview notes](themes/precision/preview/README.md) explain scope and offline use.
 - [Live logo gallery](https://tamir39.github.io/interface-atlas/assets/brand/preview.html): nine logo variants, small-size comparisons, and light/dark README heroes.
-- Validation evidence: [Editorial](themes/editorial/validation.md) and [Swiss](themes/swiss/validation.md), with checks performed and remaining coverage.
+- Validation evidence: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), and [Precision](themes/precision/validation.md), with checks performed and remaining coverage.
 - [Preparation workflow evaluation](examples/workflow-evaluation/README.md): one fresh journal brief and the self-contained design document it produced.
 
 ## Structure
@@ -47,6 +49,23 @@ interface-atlas/
 ├── .gitignore
 ├── themes/
 │   ├── editorial/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── effects.md
+│   │   ├── motion.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── preview.js
+│   │       └── validation/
+│   │           ├── results.json
+│   │           ├── light-desktop.png
+│   │           ├── dark-desktop.png
+│   │           └── light-mobile.png
+│   ├── precision/
 │   │   ├── README.md
 │   │   ├── design.md
 │   │   ├── effects.md
@@ -107,6 +126,7 @@ interface-atlas/
 │   ├── README.md
 │   ├── catalog.mjs
 │   ├── validate-editorial.mjs
+│   ├── validate-precision.mjs
 │   ├── validate-swiss.mjs
 │   └── build-preview-site.mjs
 ├── assets/
@@ -138,7 +158,7 @@ The shared knowledge layer holds cross-theme decisions. Adapters hold framework-
 
 Every entry distinguishes retained source values, referenced concepts, and Atlas proposals. Preserve creators, original URLs, source revisions, applicable licenses, and adaptation notes in generated project documents.
 
-See [the source registry](references/SOURCES.md), [Editorial's provenance](themes/editorial/sources.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+See [the source registry](references/SOURCES.md), the provenance records for [Editorial](themes/editorial/sources.md), [Swiss](themes/swiss/sources.md), and [Precision](themes/precision/sources.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
 Interface Atlas's [logo family and hero artwork](assets/brand/README.md) are original project assets created with AI assistance. The Atlas identity belongs to the library; individual themes retain their own visual direction and source credits.
 

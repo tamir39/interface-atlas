@@ -40,6 +40,44 @@
       }
     },
     {
+      "id": "precision",
+      "name": "Precision",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "basis": "original-atlas-synthesis",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "compact",
+        "adaptations": [
+          "comfortable"
+        ]
+      },
+      "fit_types": [
+        "agent-workspace",
+        "operations-dashboard",
+        "admin-interface",
+        "developer-tool",
+        "review-queue"
+      ],
+      "motion_character": "understated-productive",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "carbon@c9b1f79128df93d79e7a65ced3ad1bed5709c7cc+primer@7f5303d803986887187d86dcebaeda22a4dc6823",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/precision/README.md",
+        "design": "themes/precision/design.md",
+        "sources": "themes/precision/sources.md",
+        "effects": "themes/precision/effects.md",
+        "motion": "themes/precision/motion.md"
+      }
+    },
+    {
       "id": "swiss",
       "name": "Swiss",
       "revision": "0.1.0-draft",
