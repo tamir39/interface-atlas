@@ -81,7 +81,7 @@
           {
             "family": "Segoe UI",
             "custom": false,
-            "glyphCount": 131
+            "glyphCount": 129
           }
         ],
         ".technical": [
@@ -95,7 +95,7 @@
           {
             "family": "Segoe UI",
             "custom": false,
-            "glyphCount": 40
+            "glyphCount": 39
           }
         ]
       }
@@ -2292,7 +2292,7 @@
   "node": "v24.14.1",
   "testedFiles": {
     "index.html": "c5e47bc5cd058200f50616b03b6de79649d5d7c521686d9ca05d2192b245904f",
-    "styles.css": "9d744dc7cb51e0b85dd1fcb66f1fcf0557b2879414d0f6e1553196f80f7a215e",
+    "styles.css": "11d164c3a2a5ded382e0fdc85692dc0b82727d3918e0b074eb952eed0fae8811",
     "preview.js": "22a87a0cdc65a88cf74fd6fe19b20628c9fe607537243ecf12d54865316dca5a"
   },
   "limits": [
@@ -2306,7 +2306,7 @@
       {
         "family": "Segoe UI",
         "custom": false,
-        "glyphCount": 131
+        "glyphCount": 129
       }
     ],
     ".technical": [
@@ -2320,7 +2320,7 @@
       {
         "family": "Segoe UI",
         "custom": false,
-        "glyphCount": 40
+        "glyphCount": 39
       }
     ]
   }

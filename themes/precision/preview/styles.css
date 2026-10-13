@@ -58,7 +58,7 @@ h5[tabindex='-1']:focus { outline: 3px solid var(--focus); outline-offset: 3px; 
 .eyebrow, .small-label { font-size: .75rem; font-weight: 600; line-height: 1.5; color: var(--muted); }
 .eyebrow { letter-spacing: .06em; text-transform: uppercase; }
 .small-label { letter-spacing: .025em; }
-.preview-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(290px, 340px); gap: 64px; padding-block: 48px; align-items: start; }
+.preview-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 380px); gap: 64px; padding-block: 48px; align-items: start; }
 .intro-copy .eyebrow { margin-block-end: 12px; }
 .intro-description { max-width: 55ch; color: var(--muted); margin-block: 20px 24px; }
 .action-group { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; }

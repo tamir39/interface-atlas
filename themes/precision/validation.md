@@ -45,7 +45,7 @@ The validator tests the repository preview files. The [Pages builder](../../site
 
 ## Corrections and remaining coverage
 
-Review aligned the introduction's maximum heading size to 40px, comfortable component padding to 24px, and detail-heading focus offset to 3px. Independent review also corrected the connection toggle to retain its accessible label across pressed states, with explicit recovery instructions. Final recorded checks ran after these changes and repository text normalization.
+Review aligned the introduction's maximum heading size to 40px, comfortable component padding to 24px, and detail-heading focus offset to 3px. Independent review also corrected the connection toggle to retain its accessible label across pressed states, with explicit recovery instructions. Final deployed visual inspection identified a clipped Comfortable option in the desktop preferences panel; the panel was widened to preserve its label. Final recorded checks ran after these changes and repository text normalization.
 
 Each consuming project still needs actual licensed font packages, representative content, supported browsers, native zoom, complete keyboard paths, screen-reader announcements, focus clipping, touch-device behavior, selection/hover/unavailable states, and any implemented overlay or effect checks.
 
