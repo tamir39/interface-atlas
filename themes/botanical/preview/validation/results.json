@@ -1,0 +1,7111 @@
+{
+  "checks": [
+    {
+      "name": "Four original design notes, default preferences, synchronized empty reading list, live status regions, and explained disabled export",
+      "passed": true,
+      "details": {
+        "notes": {
+          "room": {
+            "title": "Give the quiet parts a place",
+            "summary": "Use open space to make a small number of choices feel intentional.",
+            "topic": "composition"
+          },
+          "edge": {
+            "title": "A border can be a meeting place",
+            "summary": "Treat the transition between two surfaces as part of the composition.",
+            "topic": "composition"
+          },
+          "patina": {
+            "title": "Let materials keep their character",
+            "summary": "Choose a useful contrast in texture before adding another color.",
+            "topic": "materials"
+          },
+          "sequence": {
+            "title": "Draw the walk before the planting",
+            "summary": "Begin with a sequence of views, pauses, and decisions along a route.",
+            "topic": "process"
+          }
+        },
+        "specimenFields": [
+          {
+            "id": "specimen-label",
+            "type": "input",
+            "value": "A courtyard for quiet conversations, shared meals, and an unhurried afternoon"
+          },
+          {
+            "id": "specimen-study",
+            "type": "select",
+            "value": "Courtyard composition"
+          }
+        ],
+        "emptyExplanation": [
+          {
+            "id": "list-explanation",
+            "visible": true,
+            "text": "Kept notes stay on this page until reload. Export their titles, summaries, and credits as a Markdown file."
+          },
+          {
+            "id": "list-empty",
+            "visible": true,
+            "text": "Your list is empty. Use “Keep note” beside an idea you want to revisit."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light/dark × comfortable/compact × 320/390/768/1280/1440 reflow, opaque HTML text/control boundaries, 24/16px actual specimen density, and 44px targets",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "boundaryIds": [
+          "appearance",
+          "density",
+          "note-search",
+          "note-topic",
+          "specimen-label",
+          "specimen-study"
+        ],
+        "measuredDensities": {
+          "comfortable": {
+            "height": 1187.859375,
+            "padding": {
+              "blockStart": 24,
+              "blockEnd": 24,
+              "inlineStart": 24,
+              "inlineEnd": 24
+            }
+          },
+          "compact": {
+            "height": 1171.859375,
+            "padding": {
+              "blockStart": 16,
+              "blockEnd": 16,
+              "inlineStart": 16,
+              "inlineEnd": 16
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip link focuses main; every native fictional studio disclosure opens and closes by keyboard",
+      "passed": true,
+      "details": {
+        "cases": [
+          "courtyard-brief",
+          "terrace-brief",
+          "path-brief"
+        ]
+      }
+    },
+    {
+      "name": "Search and every topic filter show matching notes; empty search has status and recovers through keyboard reset",
+      "passed": true,
+      "details": {
+        "emptyContrast": {
+          "checked": 171,
+          "opaqueChecked": 171,
+          "minimum": 6.85,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 55,
+            "disabledTextSamples": 5,
+            "unrenderedTextSamples": 72,
+            "visuallyHiddenTextSamples": 1
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-search",
+              "sample": "input",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-topic",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            },
+            {
+              "id": "specimen-study",
+              "sample": "select",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Inspect focuses the article heading; Back restores the visible trigger or search when filtered out, preserving filters and selected detail",
+      "passed": true,
+      "details": {
+        "detailContrast": {
+          "checked": 197,
+          "opaqueChecked": 197,
+          "minimum": 6.23,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 55,
+            "disabledTextSamples": 5,
+            "unrenderedTextSamples": 37,
+            "visuallyHiddenTextSamples": 9
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-search",
+              "sample": "input",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-topic",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            },
+            {
+              "id": "specimen-study",
+              "sample": "select",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Card/detail Keep note visible labels and actual ARIA names remain stable, aria-pressed stays synchronized, keyboard toggles preserve focus, and repeated actions cannot duplicate notes",
+      "passed": true,
+      "details": {
+        "listContrast": {
+          "checked": 208,
+          "opaqueChecked": 208,
+          "minimum": 6.23,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 55,
+            "disabledTextSamples": 2,
+            "unrenderedTextSamples": 38,
+            "visuallyHiddenTextSamples": 9
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-search",
+              "sample": "input",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "note-topic",
+              "sample": "select",
+              "ratio": 4.88,
+              "fillRatio": 5.87,
+              "adjacentRatio": 4.88,
+              "required": 3
+            },
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            },
+            {
+              "id": "specimen-study",
+              "sample": "select",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            }
+          ]
+        },
+        "accessibleNames": {
+          "room": "Keep note: Give the quiet parts a place",
+          "edge": "Keep note: A border can be a meeting place",
+          "patina": "Keep note: Let materials keep their character",
+          "sequence": "Keep note: Draw the walk before the planting"
+        }
+      }
+    },
+    {
+      "name": "Actual local Markdown download has the expected filename, selected titles/topics/full summaries in fixed order, source/creator credits and fictional/local/no-agent disclaimers, omitting unselected note content",
+      "passed": true,
+      "details": {
+        "filename": "botanical-reading-list.md",
+        "bytes": 1125,
+        "sha256": "5c8cd9cdf3e5a3772ba3a10caa7c40cc3c791891e2bd799a45043a47b4d93954",
+        "selected": [
+          "room",
+          "sequence"
+        ],
+        "omitted": [
+          "edge",
+          "patina"
+        ],
+        "contentScope": "Titles, topics, summaries, and credits; full articles remain in the preview."
+      }
+    },
+    {
+      "name": "Remove and Clear announce changes, keep focus meaningful after controls disappear or disable, and restore explained disabled export",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System follows live OS appearance; explicit appearance, density, and motion persist; local reading list and filters reset on reload",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off make feedback immediate and remove press transforms",
+      "passed": true,
+      "details": {
+        "reduced": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        },
+        "motionOff": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        }
+      }
+    },
+    {
+      "name": "Forced-colors focus retains a 3px outline with 5px offset",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize actually doubles the body sample and reflows at 640px; separate from untested native browser zoom",
+      "passed": true,
+      "details": {
+        "width": 640,
+        "scroll": 640,
+        "beforeResize": 16,
+        "afterResize": 32
+      }
+    },
+    {
+      "name": "Actual local sans, serif, mono, and Vietnamese glyph families recorded through Chromium CDP",
+      "passed": true,
+      "details": {
+        ".intro-description": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 118
+          }
+        ],
+        "#type-display": [
+          {
+            "family": "Georgia",
+            "custom": false,
+            "glyphCount": 15
+          },
+          {
+            "family": "Georgia",
+            "custom": false,
+            "glyphCount": 15
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 78
+          }
+        ],
+        "[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 80
+          }
+        ]
+      }
+    },
+    {
+      "name": "Entity-escaped HTML-like note fixture stays literal in the actual reading-list renderer/search and is escaped in the real Markdown download",
+      "passed": true,
+      "details": {
+        "title": "A <em>clear</em> title",
+        "summary": "<img src=x onerror=\"window.botanicalInjected=true\"> Read this as text.",
+        "bytes": 1005
+      }
+    },
+    {
+      "name": "Blocked, invalid, and malformed storage retain defaults, usable preferences, note inspection, and local reading-list actions",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript exposes all four full design notes and native studio disclosures; runtime controls stay disabled and Back stays hidden; native specimen fields remain usable; HTML text/control contrast passes",
+      "passed": true,
+      "details": {
+        "contrast": {
+          "checked": 216,
+          "opaqueChecked": 216,
+          "minimum": 6.85,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 55,
+            "disabledTextSamples": 29,
+            "unrenderedTextSamples": 2,
+            "visuallyHiddenTextSamples": 4
+          },
+          "controlBorders": [
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            },
+            {
+              "id": "specimen-study",
+              "sample": "select",
+              "ratio": 5.87,
+              "fillRatio": 5.87,
+              "adjacentRatio": 5.87,
+              "required": 3
+            }
+          ]
+        },
+        "disabledRuntimeControls": 16,
+        "usableNativeSpecimenFields": [
+          "specimen-label",
+          "specimen-study"
+        ]
+      }
+    },
+    {
+      "name": "No browser runtime errors, external requests, or failed preview resources",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 249.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 240,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 240,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 319.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 312.81,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 310,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 310,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 512,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 326.41,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 326.41,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 308.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 672,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 672,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 435.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 772.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 552,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 552,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 552,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 452.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.34,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 812.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 572,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 572,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 572,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 249.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 256,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 256,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 256,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 319.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 312.81,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 326,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 326,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 326,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 512,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 326.41,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 326.41,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 308.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 688,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 688,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 688,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 435.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 772.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 560,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 560,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 560,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 5.04,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 3.81,
+            "fillRatio": 4.67,
+            "adjacentRatio": 3.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 4.67,
+            "fillRatio": 4.67,
+            "adjacentRatio": 4.67,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 452.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.34,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 812.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 580,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 580,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 580,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 249.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 240,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 240,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 319.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 312.81,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 310,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 310,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 512,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 326.41,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 326.41,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 308.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 672,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 672,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 435.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 772.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 552,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 552,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 552,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 452.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.34,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 812.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 572,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 572,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 572,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 240,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 249.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 249.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 249.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 242.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 256,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 256,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 256,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 288,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 310,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 319.63,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 319.63,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 319.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 312.81,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 312.81,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 326,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 326,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 326,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 358,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 248,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 512,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 361.63,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 672,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 326.41,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 326.41,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 308.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 308.41,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 688,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 688,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 688,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 720,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 209.7,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 435.41,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 336,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 772.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 371.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 371.44,
+          "height": 58.34
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 560,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 560,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 560,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 426.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 196,
+        "opaqueChecked": 196,
+        "minimum": 6.23,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 55,
+          "disabledTextSamples": 5,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 9
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-search",
+            "sample": "input",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "note-topic",
+            "sample": "select",
+            "ratio": 4.88,
+            "fillRatio": 5.87,
+            "adjacentRatio": 4.88,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          },
+          {
+            "id": "specimen-study",
+            "sample": "select",
+            "ratio": 5.87,
+            "fillRatio": 5.87,
+            "adjacentRatio": 5.87,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 140.27,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 218.22,
+          "height": 45.78
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 452.44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 87.39,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 214.94,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 204.8,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.33,
+          "height": 48.69
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 349.34,
+          "height": 48.69
+        },
+        {
+          "id": "note-search",
+          "via": "control",
+          "width": 812.41,
+          "height": 49.17
+        },
+        {
+          "id": "note-topic",
+          "via": "control",
+          "width": 230,
+          "height": 45.78
+        },
+        {
+          "id": "reset-filters",
+          "via": "control",
+          "width": 111.22,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-room",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-edge",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "edge",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-patina",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "patina",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "inspect-note-sequence",
+          "via": "control",
+          "width": 385.75,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 84.14,
+          "height": 44
+        },
+        {
+          "id": "sequence",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "back-to-note-room",
+          "via": "control",
+          "width": 146.86,
+          "height": 44
+        },
+        {
+          "id": "room",
+          "via": "control",
+          "width": 101.69,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 580,
+          "height": 49.17
+        },
+        {
+          "id": "specimen-study",
+          "via": "control",
+          "width": 580,
+          "height": 45.78
+        },
+        {
+          "id": "input",
+          "via": "associated label",
+          "width": 580,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 441.91,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "9fe7163650f717d71a6f318a20cd27b7d97bdcb72cedda514e49f8c1b2d5dd50",
+    "styles.css": "f52745bf827e08cf26cd6c34894ffc0a9a4a7370c478c42813b6ed5fd8d0314b",
+    "preview.js": "88f06108e6487222c753c66aa92554d876ba6f7e82130e4408839c89f74b9941"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing. Native specimen inputs/selects/checkboxes remain usable without JavaScript; only runtime preferences, filters, and reading-list actions require it.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input/textarea boundaries against their fill and adjacent background. Each layout must include nonzero opaque HTML text and every preference/filter/specimen field boundary. SVG artwork, disabled controls, placeholders, text selection, native popup menus, checkbox glyph internals, and backgrounds with images are outside this check; exclusions and unsupported samples are recorded.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "44px target samples include enabled native controls, associated checkbox labels, summary controls, button-styled links, article title/Read links, section/document navigation, and the Atlas brand. Contextual inline source links are excluded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "validatorSha256": "9a0ab53b4f20f09e1b4c02591bb6a3d2c1b633302b2b29f83f65fa79d8fc0654",
+  "playwright": "1.62.1",
+  "renderedFonts": {
+    ".intro-description": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 118
+      }
+    ],
+    "#type-display": [
+      {
+        "family": "Georgia",
+        "custom": false,
+        "glyphCount": 15
+      },
+      {
+        "family": "Georgia",
+        "custom": false,
+        "glyphCount": 15
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 78
+      }
+    ],
+    "[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 80
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "filename": "light-desktop.png",
+      "appearance": "light",
+      "width": 1440,
+      "section": "#studio",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "dark-desktop.png",
+      "appearance": "dark",
+      "width": 1440,
+      "section": "#reading-room",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "light-mobile.png",
+      "appearance": "light",
+      "width": 390,
+      "section": "#reading-room",
+      "scope": "1000px viewport from the reading-room start"
+    }
+  ],
+  "passed": true
+}

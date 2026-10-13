@@ -2,6 +2,45 @@
   "schema_version": 1,
   "themes": [
     {
+      "id": "botanical",
+      "name": "Botanical",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "basis": "adapted-from-tamir39-portfolio",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "boutique-site",
+        "lifestyle-brand",
+        "narrative-portfolio",
+        "publication",
+        "creative-studio",
+        "reading-workspace"
+      ],
+      "motion_character": "gentle-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "6f9bfc6119f0e71dee04b675fbf59b8482aa9c74",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/botanical/README.md",
+        "design": "themes/botanical/design.md",
+        "sources": "themes/botanical/sources.md",
+        "effects": "themes/botanical/effects.md",
+        "motion": "themes/botanical/motion.md"
+      }
+    },
+    {
       "id": "editorial",
       "name": "Editorial",
       "revision": "0.1.0-draft",

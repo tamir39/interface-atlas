@@ -35,6 +35,7 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R27 | [Neobrutalism components](https://www.neobrutalism.dev/docs) | Samuel Breznjak / @ekmas and contributors | Additional Play comparison: outlined surfaces, offset shadows, and component states | Pinned repository MIT; no components imported. Current September 2026 direction is light-only; Atlas Play retains its own portfolio source appearances. |
 | R28 | [Interactive Hero Backgrounds](https://21st.dev/@ravikatiyar162/components/interactive-hero-backgrounds) | Ravi Katiyar | Optional Play sphere-interaction inspiration recorded by Tamir's portfolio | Implementation reuse terms unverified; no external effect code imported. |
 | R29 | [W3C WAI Forms Tutorial](https://www.w3.org/WAI/tutorials/forms/notifications/) | W3C WAI; Education and Outreach Working Group and contributors | Form errors, associated help, review, and understandable feedback | Conceptual guidance; no tutorial prose or sample code copied. |
+| R30 | [Interactive Contour Lines Shader Background](https://21st.dev/@kedhareswer/components/isoline-bloom) | Kedhareswer Naidu / @kedhareswer | Optional Botanical contour-artwork inspiration, recorded as Isoline Bloom by the portfolio | Listing states MIT; exact implementation package/notices must be verified before import. No shader or external effect code imported. |
 
 ## Material used in this pilot
 
@@ -48,9 +49,11 @@ Precision is an original Atlas synthesis rather than a portfolio extraction. Its
 
 Play's [source record](../themes/play/sources.md) pins Tamir's portfolio at `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74` and the additional Neobrutalism comparison at `3306a802724874a85f93079702b2795370a279d4`. R27 is an Atlas study reference, not proof that Tamir used the library. R28 retains the portfolio's effect-inspiration credit; R29 informs Atlas's original brief-builder behavior. The preview includes no external effect implementation, tutorial code, or font files.
 
+Botanical's [source record](../themes/botanical/sources.md) pins Tamir's palette, type roles, geometry, and source behavior at `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. R30 preserves the optional contour reference's creator and current title; it does not identify that creator as the author of the complete theme. The studio composition, field notes, reading-list behavior, and export are original Atlas work. No external effect or font software is included.
+
 The optional path-effect inspiration is [Floating Paths](https://21st.dev/@bundui/components/floating-paths), credited to Bundui.io. External component implementation terms are unresolved. No external effect code is included.
 
-Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), [Precision](../themes/precision/sources.md), and [Play](../themes/play/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
+Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), [Precision](../themes/precision/sources.md), [Play](../themes/play/sources.md), and [Botanical](../themes/botanical/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
 
 R16 and R17 inform theme guidance. R19 informs [shared Agent Experience](../knowledge/agent-experience.md) and the [dashboard example](../examples/agent-operations-dashboard/design.md).
 

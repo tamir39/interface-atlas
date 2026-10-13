@@ -20,6 +20,12 @@ The additional Neobrutalism comparison credits **Samuel Breznjak**, whose pinned
 
 The optional [Interactive Hero Backgrounds](https://21st.dev/@ravikatiyar162/components/interactive-hero-backgrounds) inspiration is credited to **Ravi Katiyar**. Its implementation reuse terms remain unverified. Play's preview uses original static artwork and does not import the reference effect. W3C WAI's form guidance informs Atlas's original error, review, and feedback proposals; no tutorial prose or sample code is reproduced.
 
+## Botanical source and references
+
+Botanical adapts Tamir's portfolio direction at source revision `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. Its [source record](themes/botanical/sources.md) separates retained values, original Atlas composition and notes, and optional inspiration. No portfolio implementation license was found; no source code, artwork, or font files are imported.
+
+The optional [Interactive Contour Lines Shader Background](https://21st.dev/@kedhareswer/components/isoline-bloom), recorded as Isoline Bloom in the portfolio, is credited to **Kedhareswer Naidu / @kedhareswer**. Its listing states MIT; any future implementation import must verify the exact package's license, copyright, dependencies, and notices. Botanical's preview uses original static vector artwork and includes no external shader or Canvas implementation. W3C guidance informs the original reading-list controls and status feedback; no tutorial prose or code is copied.
+
 ## Precision reference sources
 
 Precision is an original Atlas theme prepared for Tamir with Codex AI assistance, informed by **IBM's Carbon team and contributors** and **GitHub's Primer team and contributors**. It is not an official Carbon or Primer theme. [Precision's provenance record](themes/precision/sources.md) distinguishes referenced concepts, pinned repository evidence, and original Atlas decisions.

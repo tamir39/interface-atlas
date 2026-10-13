@@ -67,6 +67,16 @@ node tools/validate-play.mjs --module /path/to/playwright/index.mjs --browser /p
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Play's validation record](../themes/play/validation.md) for evidence and limits. No brief is uploaded and no agent is started by the local demonstration.
 
+## Optional Botanical browser checks
+
+Botanical has repeatable checks for responsive layout, preferences, native studio disclosures, field-note filtering, reading focus, local reading-list selection, and actual Markdown download contents:
+
+```sh
+node tools/validate-botanical.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Botanical's validation record](../themes/botanical/validation.md) for evidence and limits. The exported file contains original illustrative notes selected in the local preview; it is not a generated project design or agent execution.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:
