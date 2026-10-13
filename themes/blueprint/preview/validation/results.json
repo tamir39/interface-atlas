@@ -1,0 +1,6312 @@
+{
+  "checks": [
+    {
+      "name": "Five conceptual preparation nodes, four readable labeled relationships, default preferences, stable grid toggle, current detail, and native specimen fields",
+      "passed": true,
+      "details": {
+        "nodeOrder": [
+          "brief",
+          "catalog",
+          "assembler",
+          "design",
+          "review"
+        ],
+        "relationships": [
+          [
+            "Project brief",
+            "Provides context and constraints",
+            "Design preparation"
+          ],
+          [
+            "Theme catalog",
+            "Provides selected, credited design knowledge",
+            "Design preparation"
+          ],
+          [
+            "Design preparation",
+            "Defines the project's design decisions",
+            "Project design.md"
+          ],
+          [
+            "Project design.md",
+            "Presents decisions and open questions for review",
+            "Human review"
+          ]
+        ],
+        "columnHeadings": [
+          "From",
+          "Relationship",
+          "To"
+        ],
+        "detailNames": {
+          "brief": "Project brief",
+          "catalog": "Theme catalog",
+          "assembler": "Design preparation",
+          "design": "Project design.md",
+          "review": "Human review"
+        },
+        "specimenFields": [
+          {
+            "id": "specimen-label",
+            "type": "input",
+            "inputType": "text",
+            "value": "A shared interface library for a bilingual project preparation workspace"
+          },
+          {
+            "id": "specimen-kind",
+            "type": "select",
+            "inputType": "select-one",
+            "value": "Project input"
+          },
+          {
+            "id": "specimen-annotations",
+            "type": "input",
+            "inputType": "checkbox",
+            "value": "on"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light/dark × comfortable/compact × 320/390/768/1280/1440 reflow, opaque HTML text/control boundaries, actual 24/16px density, and 44px targets",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "boundaryIds": [
+          "appearance",
+          "density",
+          "presentation",
+          "specimen-label",
+          "specimen-kind"
+        ],
+        "measuredDensities": {
+          "comfortable": {
+            "height": 1098.046875,
+            "padding": {
+              "blockStart": 24,
+              "blockEnd": 24,
+              "inlineStart": 24,
+              "inlineEnd": 24
+            }
+          },
+          "compact": {
+            "height": 1082.046875,
+            "padding": {
+              "blockStart": 16,
+              "blockEnd": 16,
+              "inlineStart": 16,
+              "inlineEnd": 16
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip link focuses main and all three native studio disclosures open and close by keyboard",
+      "passed": true,
+      "details": {
+        "cases": [
+          "briefs-library",
+          "briefs-map",
+          "briefs-review"
+        ]
+      }
+    },
+    {
+      "name": "Every node Inspect focuses its article heading; every Back restores its corresponding link while preserving detail",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Outline/Diagram and grid-off/on preserve nondefault assembler detail, current node, control focus, and every relationship; stable ARIA toggle name and rendered decoration verified",
+      "passed": true,
+      "details": {
+        "outlineContrast": {
+          "checked": 222,
+          "opaqueChecked": 222,
+          "minimum": 6.97,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 64,
+            "disabledTextSamples": 2,
+            "unrenderedTextSamples": 53,
+            "visuallyHiddenTextSamples": 0,
+            "nativeCheckboxGlyphBoundaries": 2
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "presentation",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "specimen-kind",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            }
+          ]
+        },
+        "diagramOffContrast": {
+          "checked": 221,
+          "opaqueChecked": 221,
+          "minimum": 6.97,
+          "skipped": [
+            {
+              "selector": "span.toggle-mark",
+              "text": "✓",
+              "reason": "Hidden, translucent, or image background"
+            }
+          ],
+          "excluded": {
+            "svgElements": 64,
+            "disabledTextSamples": 2,
+            "unrenderedTextSamples": 53,
+            "visuallyHiddenTextSamples": 0,
+            "nativeCheckboxGlyphBoundaries": 2
+          },
+          "controlBorders": [
+            {
+              "id": "appearance",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "density",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "presentation",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "specimen-kind",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            }
+          ]
+        },
+        "gridOnStyle": [
+          {
+            "element": "workspace",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          },
+          {
+            "element": "map-frame",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          },
+          {
+            "element": "system-map-wrap",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "linear-gradient(rgba(138, 183, 255, 0.07) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(138, 183, 255, 0.07) 1px, rgba(0, 0, 0, 0) 1px)",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          }
+        ],
+        "gridOffStyle": [
+          {
+            "element": "workspace",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          },
+          {
+            "element": "map-frame",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          },
+          {
+            "element": "system-map-wrap",
+            "layers": [
+              {
+                "pseudo": "",
+                "image": "none",
+                "opacity": "1",
+                "display": "block",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::before",
+                "image": "linear-gradient(rgba(138, 183, 255, 0.07) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(138, 183, 255, 0.07) 1px, rgba(0, 0, 0, 0) 1px)",
+                "opacity": "1",
+                "display": "none",
+                "visibility": "visible"
+              },
+              {
+                "pseudo": "::after",
+                "image": "none",
+                "opacity": "1",
+                "display": "inline",
+                "visibility": "visible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Previous/Next follow fixed order, focus headings and disable at ends in Outline/grid-off; Reset restores default Diagram/grid-on/brief and focuses the first Inspect link",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System follows live OS appearance; explicit appearance/density/motion persist; nondefault workspace presentation, grid, and current detail reset on reload",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Live reduced-motion and explicit motion-off make feedback immediate and remove press transforms",
+      "passed": true,
+      "details": {
+        "reduced": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        },
+        "motionOff": {
+          "duration": "0s",
+          "animation": "none",
+          "pressTransform": "none"
+        }
+      }
+    },
+    {
+      "name": "Forced-colors focus retains a 3px outline with 5px offset",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS text resize actually doubles the body sample and reflows at 640px; separate from untested native browser zoom",
+      "passed": true,
+      "details": {
+        "width": 640,
+        "scroll": 640,
+        "beforeResize": 16,
+        "afterResize": 32
+      }
+    },
+    {
+      "name": "Actual local body, technical-heading, mono-label, and Vietnamese glyph families recorded through Chromium CDP",
+      "passed": true,
+      "details": {
+        ".intro-description": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 125
+          }
+        ],
+        "#type-display": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 25
+          }
+        ],
+        ".technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 106
+          }
+        ],
+        "[lang=\"vi\"]": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 86
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valid direct article URLs preserve their named detail on reload; live valid fragments focus headings; Reset clears the fragment and invalid initial fragments fall back to brief",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Blocked, invalid, and malformed storage retain defaults and usable preferences, presentation/grid choices, and node inspection",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "No-JavaScript exposes all five full details and relationships, usable native Inspect anchors and studio disclosures; only runtime controls disable and Back hides; native specimen fields remain usable",
+      "passed": true,
+      "details": {
+        "contrast": {
+          "checked": 256,
+          "opaqueChecked": 256,
+          "minimum": 6.97,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 64,
+            "disabledTextSamples": 15,
+            "unrenderedTextSamples": 5,
+            "visuallyHiddenTextSamples": 0,
+            "nativeCheckboxGlyphBoundaries": 1
+          },
+          "controlBorders": [
+            {
+              "id": "specimen-label",
+              "sample": "input",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            },
+            {
+              "id": "specimen-kind",
+              "sample": "select",
+              "ratio": 5.07,
+              "fillRatio": 5.07,
+              "adjacentRatio": 5.07,
+              "required": 3
+            }
+          ]
+        },
+        "disabledRuntimeControls": 8,
+        "usableNativeSpecimenFields": [
+          "specimen-label",
+          "specimen-kind",
+          "specimen-annotations"
+        ]
+      }
+    },
+    {
+      "name": "No browser runtime errors, external requests or failed preview resources; source and validator hashes remain unchanged during verification",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 109.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 238,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 143.52,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 156.48,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 144.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 308,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 308,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 470,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 670,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 670,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 670,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 543,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 543,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 109.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 254,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 254,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 254,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 143.52,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 156.48,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 144.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 324,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 324,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 470,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 686,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 686,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 551,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 5.32,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4,
+            "fillRatio": 4,
+            "adjacentRatio": 4,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 551,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 109.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 238,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 143.52,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 156.48,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 144.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 308,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 308,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 470,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 670,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 670,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 670,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 543,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 543,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 238,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 246,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 109.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 254,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 254,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 254,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 308,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 316,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 143.52,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 156.48,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 144.13,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 324,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 324,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 221,
+        "opaqueChecked": 221,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 52,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 228,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 470,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 382.81,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 686,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 686,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 686,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 551,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 220,
+        "opaqueChecked": 220,
+        "minimum": 6.97,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 64,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 53,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "presentation",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-label",
+            "sample": "input",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.07,
+            "fillRatio": 5.07,
+            "adjacentRatio": 5.07,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "a",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 164,
+          "height": 45
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 342,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 64.86,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 136,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 210.95,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 194.72,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.67,
+          "height": 44
+        },
+        {
+          "id": "summary",
+          "via": "control",
+          "width": 328.66,
+          "height": 44
+        },
+        {
+          "id": "presentation",
+          "via": "control",
+          "width": 192,
+          "height": 45
+        },
+        {
+          "id": "show-grid",
+          "via": "control",
+          "width": 126.28,
+          "height": 44
+        },
+        {
+          "id": "reset-workspace",
+          "via": "control",
+          "width": 139.23,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-brief",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-catalog",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-assembler",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-design",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "inspect-node-review",
+          "via": "control",
+          "width": 64.06,
+          "height": 44
+        },
+        {
+          "id": "next-node",
+          "via": "control",
+          "width": 100.5,
+          "height": 44
+        },
+        {
+          "id": "back-to-node-brief",
+          "via": "control",
+          "width": 99.14,
+          "height": 44
+        },
+        {
+          "id": "specimen-label",
+          "via": "control",
+          "width": 551,
+          "height": 47.59
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 45
+        },
+        {
+          "id": "specimen-annotations",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.84,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 144.27,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 130,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 127.19,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 121.02,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 103.2,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 125.92,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 95.7,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 126.97,
+          "height": 44
+        },
+        {
+          "id": "a",
+          "via": "control",
+          "width": 96.25,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "b1605b566e2658ae7b741fd97de70a2e539eaa22fdd2809d3b11cf665d2e07dc",
+    "styles.css": "2e965924cd83c433653ffd73adb1a46c34308c19a4e803ed2cf9046a45d0c763",
+    "preview.js": "2d226ef16d6bdc504ea293dde715c1e3ace8b0122c9e2a924336391ca82945c3"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing. Native specimen inputs/selects/checkboxes remain usable without JavaScript; only runtime preferences, presentation/grid/reset, and detail-navigation buttons require it.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input/textarea boundaries against their fill and adjacent background. Each layout must include nonzero opaque HTML text and every preference/presentation/specimen field boundary. SVG artwork, disabled controls, placeholders, text selection, native popup menus, checkbox glyph internals, and backgrounds with images are outside this check; exclusions and unsupported samples are recorded.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "44px target samples include enabled native controls, associated checkbox labels, summary controls, button-styled links, node Inspect links, section/document navigation, and the Atlas brand. Contextual inline source links are excluded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "validatorSha256": "1856ce50259afac7d46acca40da0914fef70849503ad9328443c656d2a1aad86",
+  "playwright": "1.62.1",
+  "renderedFonts": {
+    ".intro-description": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 125
+      }
+    ],
+    "#type-display": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 25
+      }
+    ],
+    ".technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 106
+      }
+    ],
+    "[lang=\"vi\"]": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 86
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "filename": "light-desktop.png",
+      "appearance": "light",
+      "width": 1440,
+      "section": "#studio",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "dark-desktop.png",
+      "appearance": "dark",
+      "width": 1440,
+      "section": "#workspace",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "light-mobile.png",
+      "appearance": "light",
+      "width": 390,
+      "section": "#workspace",
+      "scope": "1000px viewport from the workspace start"
+    }
+  ],
+  "passed": true
+}

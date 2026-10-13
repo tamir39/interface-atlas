@@ -2,6 +2,45 @@
   "schema_version": 1,
   "themes": [
     {
+      "id": "blueprint",
+      "name": "Blueprint",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "basis": "adapted-from-tamir39-portfolio",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "engineering-studio",
+        "developer-documentation",
+        "systems-portfolio",
+        "technical-product",
+        "architecture-explorer",
+        "agent-operations"
+      ],
+      "motion_character": "precise-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "6f9bfc6119f0e71dee04b675fbf59b8482aa9c74",
+      "reviewed_on": "2026-10-13",
+      "documents": {
+        "readme": "themes/blueprint/README.md",
+        "design": "themes/blueprint/design.md",
+        "sources": "themes/blueprint/sources.md",
+        "effects": "themes/blueprint/effects.md",
+        "motion": "themes/blueprint/motion.md"
+      }
+    },
+    {
       "id": "botanical",
       "name": "Botanical",
       "revision": "0.1.0-draft",

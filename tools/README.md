@@ -77,6 +77,16 @@ node tools/validate-botanical.mjs --module /path/to/playwright/index.mjs --brows
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Botanical's validation record](../themes/botanical/validation.md) for evidence and limits. The exported file contains original illustrative notes selected in the local preview; it is not a generated project design or agent execution.
 
+## Optional Blueprint browser checks
+
+Blueprint has repeatable checks for responsive layout, preferences, native studio disclosures, diagram/outline presentation, labeled relationships, stable grid toggles, and node inspection with deliberate focus entry and return:
+
+```sh
+node tools/validate-blueprint.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Blueprint's validation record](../themes/blueprint/validation.md) for evidence and limits. The fixed conceptual diagram generates no project design and starts no agent.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:
