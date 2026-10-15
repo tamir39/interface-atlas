@@ -87,6 +87,16 @@ node tools/validate-blueprint.mjs --module /path/to/playwright/index.mjs --brows
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Blueprint's validation record](../themes/blueprint/validation.md) for evidence and limits. The fixed conceptual diagram generates no project design and starts no agent.
 
+## Optional Pulse browser checks
+
+Pulse has repeatable checks for responsive layout, preferences, native program disclosures, stable selection controls, local plan ordering, overlap errors, focus recovery, review invalidation, and an explicitly played finite motion study:
+
+```sh
+node tools/validate-pulse.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Pulse's validation record](../themes/pulse/validation.md) for evidence and limits. The example books no sessions, submits no plan, and runs no agent.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

@@ -195,6 +195,44 @@
       }
     },
     {
+      "id": "pulse",
+      "name": "Pulse",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "basis": "original-atlas-synthesis",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "creative-event",
+        "campaign-site",
+        "launch-page",
+        "community-program",
+        "schedule-planner"
+      ],
+      "motion_character": "deliberate-and-bounded",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "open-props@f39ab7c377a0e047f930982e3611bbc95254a260",
+      "reviewed_on": "2026-10-15",
+      "documents": {
+        "readme": "themes/pulse/README.md",
+        "design": "themes/pulse/design.md",
+        "sources": "themes/pulse/sources.md",
+        "effects": "themes/pulse/effects.md",
+        "motion": "themes/pulse/motion.md"
+      }
+    },
+    {
       "id": "swiss",
       "name": "Swiss",
       "revision": "0.1.0-draft",

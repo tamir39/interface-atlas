@@ -40,9 +40,19 @@ Precision is an original Atlas theme prepared for Tamir with Codex AI assistance
 
 The inspected [Carbon LICENSE](https://github.com/carbon-design-system/carbon/blob/c9b1f79128df93d79e7a65ced3ad1bed5709c7cc/LICENSE) is Apache-2.0; the [Primer React LICENSE](https://github.com/primer/react/blob/7f5303d803986887187d86dcebaeda22a4dc6823/LICENSE) is MIT. No covered implementation is imported. Those software terms do not provide blanket permission to copy website prose, brand assets, screenshots, or separately licensed font files. Precision's palette, geometry, preview code, and fictional run data are original Atlas proposals.
 
+## Pulse reference sources
+
+Pulse is an original Atlas synthesis for Tamir with Codex AI assistance. Its palette, typography scale, geometry, poster artwork, fictional program, planning behavior, and finite motion study are Atlas proposals. It is not extracted from the portfolio or an official Open Props theme. [Pulse's source record](themes/pulse/sources.md) separates authorship, referenced concepts, and reuse scopes.
+
+**Adam Argyle and Open Props contributors** are credited for adaptive-token and opt-in-motion concepts. The pinned [Open Props LICENSE](https://github.com/argyleink/open-props/blob/f39ab7c377a0e047f930982e3611bbc95254a260/LICENSE) is MIT, copyright 2021 Adam Argyle. No library styles, components, token files, or animations are imported.
+
+**Kayce Basques and Rachel Andrew** are credited for [web.dev's animation guidance](https://web.dev/articles/animations-guide). Its page content states CC BY 4.0 and code samples Apache 2.0; Atlas references the transform/opacity and measured-optimization concepts without copying samples, prose, or images. The preview's 150ms feedback and 600ms motion study are independent Atlas choices and do not establish measured rendering performance.
+
 ## Fonts
 
 Selected font families are Manrope (Mikhail Sharanda), DM Serif Display (Colophon Foundry), and JetBrains Mono (JetBrains, Philipp Nurullin, Konstantin Bulenkov).
+
+Pulse names **Barlow and Barlow Condensed**, designed principally by **Jeremy Tribby**; the upstream project also credits **Nguyễn Hồng Nhung** for Vietnamese design. The [Barlow](https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt) and [Barlow Condensed](https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt) font-package notices identify the Barlow Project Authors and SIL Open Font License 1.1. No font software is included; exact notices must accompany any future redistribution.
 
 Precision names **IBM Plex Sans and IBM Plex Mono**, credited to **Mike Abbink, Paul van der Laan and Pieter van Rosmalen of Bold Monday, and the credited Plex team contributors**. The pinned [IBM Plex license](https://github.com/IBM/plex/blob/763c36ef9117782905ae010056dfbe8fd2653a25/LICENSE.txt) is SIL Open Font License 1.1. The preview includes no font software; exact package notices must accompany any future font redistribution.
 

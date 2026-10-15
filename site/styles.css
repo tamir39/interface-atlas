@@ -104,6 +104,13 @@ h1 em { color: var(--action); }
 .blueprint-study svg { inline-size: 5rem; block-size: 5rem; fill: none; stroke: var(--blueprint-accent); stroke-width: 1.5; }
 .blueprint-study-grid { opacity: .12; stroke-width: 1; }
 .blueprint-study-guide { stroke-dasharray: 3 3; }
+.pulse-card { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: center; }
+.pulse-card .card-meta { grid-column: 1 / -1; }
+.pulse-study { display: grid; grid-template-columns: minmax(0, 1fr) 5rem; align-items: center; gap: .75rem; min-block-size: 14rem; margin-block: 1.5rem; padding: 1.5rem; border-radius: 12px; color: #f5f8ee; background: #10140d; }
+.pulse-study-index { font-size: .75rem; color: #bec9ae; }
+.pulse-study p { margin-block-start: .75rem; font: 700 clamp(2rem, 4vw, 3.5rem)/1.05 Impact, 'Arial Narrow', sans-serif; letter-spacing: -.015em; text-transform: uppercase; }
+.pulse-study svg { inline-size: 5rem; block-size: 7rem; fill: #c4f047; }
+.pulse-study-white { fill: #f5f8ee; }
 .brand-card .card-meta { grid-column: 1 / -1; }
 .brand-study { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); background: var(--tile); color: var(--tile-ink); }
 .brand-study svg { inline-size: 96px; block-size: 96px; flex: 0 0 96px; fill: var(--tile-accent); }
@@ -122,7 +129,7 @@ h1 em { color: var(--action); }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; padding-block: 1.75rem 2rem; border-block-start: 1px solid var(--divider); color: var(--muted); font-size: .8125rem; }
 .site-footer a { display: inline-flex; align-items: center; gap: .5rem; min-block-size: 44px; padding-block: .5rem; }
 @media (max-width: 48rem) {
-  .cover-copy, .preview-grid, .reading-note, .brand-card { grid-template-columns: 1fr; }
+  .cover-copy, .preview-grid, .reading-note, .brand-card, .pulse-card { grid-template-columns: 1fr; }
   .cover-copy { gap: 1.5rem; }
   .cover-intro { max-inline-size: 52ch; }
   .reading-note { gap: 1.25rem; }

@@ -1,6 +1,6 @@
 # Research source registry
 
-Reviewed on 2026-10-13. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by theme-specific study sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
+Updated on 2026-10-15; individual inspection dates remain in each theme source record. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by theme-specific study sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
 
 Repository license notes refer to inspected repository material. Website prose, illustrations, trademarks, commercial components, and separately licensed assets may have different terms. Preserve the terms for the actual material selected.
 
@@ -38,6 +38,8 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R30 | [Interactive Contour Lines Shader Background](https://21st.dev/@kedhareswer/components/isoline-bloom) | Kedhareswer Naidu / @kedhareswer | Optional Botanical contour-artwork inspiration, recorded as Isoline Bloom by the portfolio | Listing states MIT; exact implementation package/notices must be verified before import. No shader or external effect code imported. |
 | R31 | [Wireframe Forms Cylinders](https://21st.dev/@mengto/components/wireframe-forms/wireframe-forms-cylinders) | ThreeUI by Meng To | Optional Blueprint wireframe-artwork inspiration recorded by Tamir's portfolio | Listing states MIT; exact selected implementation and notices require verification. No renderer or external code imported. |
 | R32 | [C4 diagram notation](https://c4model.com/diagrams/notation) | Simon Brown, creator of the C4 model | Diagram scope, key, and explicit relationship labels for Blueprint's original inspector | Official website/example diagrams state CC BY 4.0. Concepts referenced; no prose or example drawings copied, no C4-compliance claim. |
+| R33 | [Barlow type family](https://github.com/jpt/barlow) | Jeremy Tribby; upstream credits Nguyễn Hồng Nhung for Vietnamese design; Barlow Project Authors | Pulse's body and condensed-display font roles | Selected Google Fonts packages state SIL OFL 1.1. No font files imported; preserve the exact package notices before future redistribution. |
+| R34 | [How to create high-performance CSS animations](https://web.dev/articles/animations-guide) | Kayce Basques and Rachel Andrew, published by web.dev | Pulse's transform/opacity motion and cautious optimization concepts | Page content CC BY 4.0, code samples Apache 2.0. Concepts referenced; no prose, images, or code samples copied. |
 
 ## Material used in this pilot
 
@@ -55,9 +57,11 @@ Botanical's [source record](../themes/botanical/sources.md) pins Tamir's palette
 
 Blueprint's [source record](../themes/blueprint/sources.md) pins Tamir's technical direction at `6f9bfc6119f0e71dee04b675fbf59b8482aa9c74`. R31 preserves ThreeUI/Meng To's optional inspiration role; R32 is an additional Atlas reference, not evidence of a source used by Tamir. The engineering studio, vector artwork, conceptual preparation diagram, and local inspector are original Atlas work. No external effect or font software is included.
 
+Pulse's [source record](../themes/pulse/sources.md) records an original Atlas synthesis informed by R10's adaptive custom-property and motion-eligibility concepts at Open Props revision `f39ab7c377a0e047f930982e3611bbc95254a260`. R33 supplies font credits and package terms; R34 supplies a separate performance-guidance reference. Pulse's colors, timings, artwork, program fixtures, and local planning rules are Atlas proposals. No portfolio extraction, token package, animation library, font software, or tutorial code is imported.
+
 The optional path-effect inspiration is [Floating Paths](https://21st.dev/@bundui/components/floating-paths), credited to Bundui.io. External component implementation terms are unresolved. No external effect code is included.
 
-Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), [Precision](../themes/precision/sources.md), [Play](../themes/play/sources.md), [Botanical](../themes/botanical/sources.md), and [Blueprint](../themes/blueprint/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
+Font designers and package license evidence are recorded in the theme source records for [Editorial](../themes/editorial/sources.md), [Swiss](../themes/swiss/sources.md), [Precision](../themes/precision/sources.md), [Play](../themes/play/sources.md), [Botanical](../themes/botanical/sources.md), [Blueprint](../themes/blueprint/sources.md), and [Pulse](../themes/pulse/sources.md), and in [third-party notices](../THIRD_PARTY_NOTICES.md).
 
 R16 and R17 inform theme guidance. R19 informs [shared Agent Experience](../knowledge/agent-experience.md) and the [dashboard example](../examples/agent-operations-dashboard/design.md).
 
