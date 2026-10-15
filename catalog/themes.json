@@ -118,6 +118,45 @@
       }
     },
     {
+      "id": "gallery",
+      "name": "Gallery",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "basis": "original-atlas-synthesis",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "image-portfolio",
+        "collection-site",
+        "design-catalog",
+        "architecture-site",
+        "lookbook",
+        "boutique-storefront"
+      ],
+      "motion_character": "quiet-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "atlas-gallery-research-2026-10-15",
+      "reviewed_on": "2026-10-15",
+      "documents": {
+        "readme": "themes/gallery/README.md",
+        "design": "themes/gallery/design.md",
+        "sources": "themes/gallery/sources.md",
+        "effects": "themes/gallery/effects.md",
+        "motion": "themes/gallery/motion.md"
+      }
+    },
+    {
       "id": "play",
       "name": "Play",
       "revision": "0.1.0-draft",

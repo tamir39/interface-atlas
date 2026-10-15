@@ -1,0 +1,6270 @@
+{
+  "checks": [
+    {
+      "name": "Three original study identities, static anchors, stable native view names/pressed states, default preferences and native specimen fields",
+      "passed": true,
+      "details": {
+        "titles": {
+          "vessel": "Vessel study",
+          "seat": "Seat study",
+          "room": "Room study"
+        },
+        "specimenFields": [
+          {
+            "id": "specimen-name",
+            "type": "input",
+            "inputType": "text",
+            "value": "A quiet relationship between forms"
+          },
+          {
+            "id": "specimen-kind",
+            "type": "select",
+            "inputType": "select-one",
+            "value": "Objects and spaces"
+          },
+          {
+            "id": "specimen-context",
+            "type": "input",
+            "inputType": "checkbox",
+            "value": "on"
+          }
+        ]
+      }
+    },
+    {
+      "name": "20 appearance/density/width layouts, all expected boundaries, opaque text contrast, 44px targets, 16px mobile fields and actual 24→16px specimen inset",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "boundaryIds": [
+          "appearance",
+          "density",
+          "search",
+          "category",
+          "specimen-name",
+          "specimen-kind"
+        ],
+        "measuredDensities": {
+          "comfortable": {
+            "height": 921.78125,
+            "padding": {
+              "blockStart": 24,
+              "blockEnd": 24,
+              "inlineStart": 24,
+              "inlineEnd": 24
+            }
+          },
+          "compact": {
+            "height": 905.78125,
+            "padding": {
+              "blockStart": 16,
+              "blockEnd": 16,
+              "inlineStart": 16,
+              "inlineEnd": 16
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip/Inspect/Return focus and three ordinary native view controls preserve focus with stable contextual accessible names and pressed states",
+      "passed": true,
+      "details": {
+        "viewNames": {
+          "vessel": "- button \"Show Vessel study\"",
+          "seat": "- button \"Show Seat study\"",
+          "room": "- button \"Show Room study\""
+        }
+      }
+    },
+    {
+      "name": "Search is case-insensitive, combined filter has a reachable empty state, Clear restores all with search focus, selection survives filters and hidden-opener Return explains recovery",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Actual local media retain declared natural dimensions, informative alternatives, visible captions/creator context and unchanged color treatment",
+      "passed": true,
+      "details": {
+        "media": [
+          {
+            "id": "",
+            "src": "assets/room-study.png",
+            "alt": "AI-generated architectural study of a plaster alcove with a timber bench, tree, rug, and ceramic vessels in daylight.",
+            "width": 1536,
+            "height": 1024,
+            "loading": "auto",
+            "naturalWidth": 1536,
+            "naturalHeight": 1024,
+            "filter": "none",
+            "objectFit": "contain"
+          },
+          {
+            "id": "",
+            "src": "assets/vessel-study.png",
+            "alt": "AI-generated still life of a matte chalk-colored ceramic vessel.",
+            "width": 1024,
+            "height": 1536,
+            "loading": "lazy",
+            "naturalWidth": 1024,
+            "naturalHeight": 1536,
+            "filter": "none",
+            "objectFit": "fill"
+          },
+          {
+            "id": "",
+            "src": "assets/seat-study.png",
+            "alt": "AI-generated design study of an unbranded oak stool.",
+            "width": 1254,
+            "height": 1254,
+            "loading": "lazy",
+            "naturalWidth": 1254,
+            "naturalHeight": 1254,
+            "filter": "none",
+            "objectFit": "fill"
+          },
+          {
+            "id": "",
+            "src": "assets/room-study.png",
+            "alt": "AI-generated plaster alcove with a timber bench, tree, rug, and ceramic vessels in daylight.",
+            "width": 1536,
+            "height": 1024,
+            "loading": "lazy",
+            "naturalWidth": 1536,
+            "naturalHeight": 1024,
+            "filter": "none",
+            "objectFit": "fill"
+          },
+          {
+            "id": "image-vessel",
+            "src": "assets/vessel-study.png",
+            "alt": "AI-generated portrait still life of a matte chalk ceramic vessel, with a rounded body and soft natural shadows.",
+            "width": 1024,
+            "height": 1536,
+            "loading": "lazy",
+            "naturalWidth": 1024,
+            "naturalHeight": 1536,
+            "filter": "none",
+            "objectFit": "contain"
+          },
+          {
+            "id": "image-seat",
+            "src": "assets/seat-study.png",
+            "alt": "AI-generated square composition featuring an unbranded oak stool with visible wood grain and simple joinery.",
+            "width": 1254,
+            "height": 1254,
+            "loading": "lazy",
+            "naturalWidth": 1254,
+            "naturalHeight": 1254,
+            "filter": "none",
+            "objectFit": "contain"
+          },
+          {
+            "id": "image-room",
+            "src": "assets/room-study.png",
+            "alt": "AI-generated landscape study of a plaster alcove with a timber bench, tree, rug, and ceramic vessels, shaped by daylight.",
+            "width": 1536,
+            "height": 1024,
+            "loading": "lazy",
+            "naturalWidth": 1536,
+            "naturalHeight": 1024,
+            "filter": "none",
+            "objectFit": "contain"
+          }
+        ],
+        "articleMetadata": {
+          "vessel": {
+            "alt": "AI-generated portrait still life of a matte chalk ceramic vessel, with a rounded body and soft natural shadows.",
+            "width": 599,
+            "height": 760,
+            "intrinsicWidth": "1024",
+            "intrinsicHeight": "1536",
+            "naturalWidth": 1024,
+            "naturalHeight": 1536,
+            "objectFit": "contain",
+            "caption": "01 / Vessel studyAI-generated illustration · Interface Atlas"
+          },
+          "seat": {
+            "alt": "AI-generated square composition featuring an unbranded oak stool with visible wood grain and simple joinery.",
+            "width": 599,
+            "height": 599,
+            "intrinsicWidth": "1254",
+            "intrinsicHeight": "1254",
+            "naturalWidth": 1254,
+            "naturalHeight": 1254,
+            "objectFit": "contain",
+            "caption": "02 / Seat studyAI-generated illustration · Interface Atlas"
+          },
+          "room": {
+            "alt": "AI-generated landscape study of a plaster alcove with a timber bench, tree, rug, and ceramic vessels, shaped by daylight.",
+            "width": 599,
+            "height": 399,
+            "intrinsicWidth": "1536",
+            "intrinsicHeight": "1024",
+            "naturalWidth": 1536,
+            "naturalHeight": 1024,
+            "objectFit": "contain",
+            "caption": "03 / Room studyAI-generated illustration · Interface Atlas · Same image as the hero"
+          }
+        }
+      }
+    },
+    {
+      "name": "System follows live device appearance, explicit preference overrides it, only appearance/density/motion persist and search/category/selection reset on reload",
+      "passed": true,
+      "details": {
+        "saved": {
+          "appearance": "light",
+          "density": "compact",
+          "motion": "off"
+        }
+      }
+    },
+    {
+      "name": "Only 180ms color/background/border feedback is proposed, no automatic animation runs, reduced/off are immediate and image selection remains usable",
+      "passed": true,
+      "details": {
+        "feedback": "0.18s",
+        "feedbackProperties": [
+          "color",
+          "background-color",
+          "border-color"
+        ],
+        "reduced": {
+          "duration": "0s",
+          "animation": "none",
+          "transform": "none"
+        },
+        "off": {
+          "duration": "0s",
+          "animation": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "Forced-colors focus retains 3px outline and 5px offset",
+      "passed": true,
+      "details": {
+        "width": "3px",
+        "offset": "5px",
+        "color": "rgb(26, 235, 255)"
+      }
+    },
+    {
+      "name": "200% CSS root sizing actually doubles body sample and reflows at 640px; native browser zoom untested",
+      "passed": true,
+      "details": {
+        "width": 640,
+        "scroll": 640,
+        "beforeResize": 16,
+        "afterResize": 32
+      }
+    },
+    {
+      "name": "Actual local body/display/technical/Vietnamese platform-font glyph families recorded",
+      "passed": true,
+      "details": {
+        "#type-body": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 148
+          }
+        ],
+        "#type-display": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 19
+          }
+        ],
+        "#type-technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 99
+          }
+        ],
+        "#type-vietnamese": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 99
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blocked/invalid/malformed storage preserves usable defaults, preferences and inspection",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Real work-fragment arrival reveals the matching article, live valid hash navigation focuses its heading, invalid fragments fall back and fragment-free reload resets selection",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Injected long English/Vietnamese card titles and captions remain complete at 320/768/1440 with reachable nonoverlapping Inspect actions; actual hero text stays off imagery at 768/1280",
+      "passed": true,
+      "details": {
+        "heroSamples": [
+          {
+            "width": 768,
+            "image": {
+              "left": 396,
+              "right": 736,
+              "top": 766,
+              "bottom": 992.65625
+            },
+            "overlaps": []
+          },
+          {
+            "width": 1280,
+            "image": {
+              "left": 656,
+              "right": 1232,
+              "top": 681,
+              "bottom": 1065
+            },
+            "overlaps": []
+          }
+        ],
+        "stressSamples": [
+          {
+            "width": 320,
+            "samples": [
+              {
+                "id": "vessel",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 185,
+                    "scrollWidth": 185,
+                    "clientHeight": 240,
+                    "scrollHeight": 241
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "seat",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 185,
+                    "scrollWidth": 185,
+                    "clientHeight": 240,
+                    "scrollHeight": 241
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "room",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 185,
+                    "scrollWidth": 185,
+                    "clientHeight": 240,
+                    "scrollHeight": 241
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 280,
+                    "scrollWidth": 280,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              }
+            ]
+          },
+          {
+            "width": 768,
+            "samples": [
+              {
+                "id": "vessel",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 180,
+                    "scrollWidth": 180,
+                    "clientHeight": 240,
+                    "scrollHeight": 241
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 275,
+                    "scrollWidth": 275,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 275,
+                    "scrollWidth": 275,
+                    "clientHeight": 84,
+                    "scrollHeight": 84
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "seat",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 241,
+                    "scrollWidth": 241,
+                    "clientHeight": 180,
+                    "scrollHeight": 181
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 336,
+                    "scrollWidth": 336,
+                    "clientHeight": 63,
+                    "scrollHeight": 63
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 336,
+                    "scrollWidth": 336,
+                    "clientHeight": 63,
+                    "scrollHeight": 63
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "room",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 172,
+                    "scrollWidth": 172,
+                    "clientHeight": 270,
+                    "scrollHeight": 271
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 581,
+                    "scrollWidth": 581,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 581,
+                    "scrollWidth": 581,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "samples": [
+              {
+                "id": "vessel",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 428,
+                    "scrollWidth": 428,
+                    "clientHeight": 160,
+                    "scrollHeight": 161
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 523,
+                    "scrollWidth": 523,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 523,
+                    "scrollWidth": 523,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "seat",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 545,
+                    "scrollWidth": 545,
+                    "clientHeight": 120,
+                    "scrollHeight": 121
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 640,
+                    "scrollWidth": 640,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 640,
+                    "scrollWidth": 640,
+                    "clientHeight": 42,
+                    "scrollHeight": 42
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              },
+              {
+                "id": "room",
+                "textSamples": [
+                  {
+                    "text": "A longer study of everyday objects and quiet relationships · Hình dáng, chất liệu và ánh sáng trong không gian sống",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 436,
+                    "scrollWidth": 436,
+                    "clientHeight": 160,
+                    "scrollHeight": 161
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 982,
+                    "scrollWidth": 982,
+                    "clientHeight": 21,
+                    "scrollHeight": 21
+                  },
+                  {
+                    "text": "AI-generated illustrative composition with complete material context and source credit · Nghiên cứu hình dáng và ánh sáng, giữ đầy đủ chú thích và nguồn gốc",
+                    "clamp": "none",
+                    "overflow": "clip",
+                    "clientWidth": 982,
+                    "scrollWidth": 982,
+                    "clientHeight": 21,
+                    "scrollHeight": 21
+                  }
+                ],
+                "inspect": {
+                  "width": 78.625,
+                  "height": 44
+                },
+                "overlaps": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "A real delayed image keeps a reserved box/alternative/caption, then completes; switching work first prevents stale completion from replacing current metadata/status/focus",
+      "passed": true,
+      "details": {
+        "loadingBox": {
+          "x": 48,
+          "y": 87.375,
+          "width": 599.0625,
+          "height": 760
+        },
+        "loadedBox": {
+          "x": 48,
+          "y": 208.375,
+          "width": 599.0625,
+          "height": 760
+        },
+        "loadingAlt": "AI-generated portrait still life of a matte chalk ceramic vessel, with a rounded body and soft natural shadows.",
+        "delayedRequests": 1
+      }
+    },
+    {
+      "name": "Injected real image request failure preserves alt/caption/credit and readable error; explicit keyboard Retry makes the same asset request succeed and recovers focus",
+      "passed": true,
+      "details": {
+        "abortedCount": 1,
+        "retriedCount": 1,
+        "failureText": "Vessel study image could not be loaded. Its description and image credit are still available. Retry to request the same image again.",
+        "contrast": {
+          "light": {
+            "checked": 159,
+            "opaqueChecked": 159,
+            "minimum": 5.17,
+            "skipped": [],
+            "excluded": {
+              "svgElements": 4,
+              "disabledTextSamples": 2,
+              "unrenderedTextSamples": 37,
+              "visuallyHiddenTextSamples": 0,
+              "nativeCheckboxGlyphBoundaries": 2
+            },
+            "controlBorders": [
+              {
+                "id": "appearance",
+                "sample": "select",
+                "ratio": 3.4,
+                "fillRatio": 4.13,
+                "adjacentRatio": 3.4,
+                "required": 3
+              },
+              {
+                "id": "density",
+                "sample": "select",
+                "ratio": 3.4,
+                "fillRatio": 4.13,
+                "adjacentRatio": 3.4,
+                "required": 3
+              },
+              {
+                "id": "search",
+                "sample": "input",
+                "ratio": 3.89,
+                "fillRatio": 4.13,
+                "adjacentRatio": 3.89,
+                "required": 3
+              },
+              {
+                "id": "category",
+                "sample": "select",
+                "ratio": 3.89,
+                "fillRatio": 4.13,
+                "adjacentRatio": 3.89,
+                "required": 3
+              },
+              {
+                "id": "specimen-name",
+                "sample": "input",
+                "ratio": 4.27,
+                "fillRatio": 4.27,
+                "adjacentRatio": 4.27,
+                "required": 3
+              },
+              {
+                "id": "specimen-kind",
+                "sample": "select",
+                "ratio": 4.27,
+                "fillRatio": 4.27,
+                "adjacentRatio": 4.27,
+                "required": 3
+              }
+            ]
+          },
+          "dark": {
+            "checked": 159,
+            "opaqueChecked": 159,
+            "minimum": 7.79,
+            "skipped": [],
+            "excluded": {
+              "svgElements": 4,
+              "disabledTextSamples": 2,
+              "unrenderedTextSamples": 37,
+              "visuallyHiddenTextSamples": 0,
+              "nativeCheckboxGlyphBoundaries": 2
+            },
+            "controlBorders": [
+              {
+                "id": "appearance",
+                "sample": "select",
+                "ratio": 4.46,
+                "fillRatio": 5.21,
+                "adjacentRatio": 4.46,
+                "required": 3
+              },
+              {
+                "id": "density",
+                "sample": "select",
+                "ratio": 4.46,
+                "fillRatio": 5.21,
+                "adjacentRatio": 4.46,
+                "required": 3
+              },
+              {
+                "id": "search",
+                "sample": "input",
+                "ratio": 5.21,
+                "fillRatio": 5.21,
+                "adjacentRatio": 5.81,
+                "required": 3
+              },
+              {
+                "id": "category",
+                "sample": "select",
+                "ratio": 5.21,
+                "fillRatio": 5.21,
+                "adjacentRatio": 5.81,
+                "required": 3
+              },
+              {
+                "id": "specimen-name",
+                "sample": "input",
+                "ratio": 5.21,
+                "fillRatio": 5.21,
+                "adjacentRatio": 5.21,
+                "required": 3
+              },
+              {
+                "id": "specimen-kind",
+                "sample": "select",
+                "ratio": 5.21,
+                "fillRatio": 5.21,
+                "adjacentRatio": 5.21,
+                "required": 3
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "No JavaScript retains all three collection/detail figures and real anchors, metadata and editable native specimens; runtime controls remain unavailable",
+      "passed": true,
+      "details": {
+        "disabledControls": [
+          {
+            "id": "appearance",
+            "disabled": true
+          },
+          {
+            "id": "density",
+            "disabled": true
+          },
+          {
+            "id": "motion",
+            "disabled": true
+          },
+          {
+            "id": "search",
+            "disabled": true
+          },
+          {
+            "id": "category",
+            "disabled": true
+          },
+          {
+            "id": "view-vessel",
+            "disabled": true
+          },
+          {
+            "id": "view-seat",
+            "disabled": true
+          },
+          {
+            "id": "view-room",
+            "disabled": true
+          }
+        ],
+        "contrast": {
+          "checked": 183,
+          "opaqueChecked": 183,
+          "minimum": 7.79,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 4,
+            "disabledTextSamples": 10,
+            "unrenderedTextSamples": 5,
+            "visuallyHiddenTextSamples": 0,
+            "nativeCheckboxGlyphBoundaries": 1
+          },
+          "controlBorders": [
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 5.21,
+              "fillRatio": 5.21,
+              "adjacentRatio": 5.21,
+              "required": 3
+            },
+            {
+              "id": "specimen-kind",
+              "sample": "select",
+              "ratio": 5.21,
+              "fillRatio": 5.21,
+              "adjacentRatio": 5.21,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Ordinary resources/runtime clean; deliberate image failures retained separately; six native/media source hashes and validator hash unchanged",
+      "passed": true,
+      "details": {
+        "intentionalFailures": [
+          {
+            "purpose": "injected-image-failure",
+            "url": "http://127.0.0.1:65025/assets/vessel-study.png",
+            "failure": "net::ERR_FAILED"
+          }
+        ]
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 280,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 230,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 230,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 230,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 350,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 300,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 300,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 300,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 352,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 341,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 311,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 311,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 311,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 821,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 543,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 981,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 623,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 623,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 623,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 280,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 246,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 350,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 316,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 352,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 341,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 319,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 319,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 319,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 821,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 551,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 5.17,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 3.4,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.4,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 3.89,
+            "fillRatio": 4.27,
+            "adjacentRatio": 3.89,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.27,
+            "fillRatio": 4.27,
+            "adjacentRatio": 4.27,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 981,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 631,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 631,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 631,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 280,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 230,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 230,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 230,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 350,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 300,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 300,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 300,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 352,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 341,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 311,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 311,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 311,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 821,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 543,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 543,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 981,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 623,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 623,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 623,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 280,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 246,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 246,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 280,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 310,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 350,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 316,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 316,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 350,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 168,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 352,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 341,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 319,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 319,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 319,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 291.55,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 821,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 551,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 551,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 483.56,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 158,
+        "opaqueChecked": 158,
+        "minimum": 7.79,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 4,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 37,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 2
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.46,
+            "fillRatio": 5.21,
+            "adjacentRatio": 4.46,
+            "required": 3
+          },
+          {
+            "id": "search",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "category",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.81,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 5.21,
+            "fillRatio": 5.21,
+            "adjacentRatio": 5.21,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 142.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 183,
+          "height": 44
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 382,
+          "height": 44
+        },
+        {
+          "id": "#study",
+          "via": "control",
+          "width": 60.05,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 61.7,
+          "height": 44
+        },
+        {
+          "id": "#viewer",
+          "via": "control",
+          "width": 76.56,
+          "height": 44
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 135.77,
+          "height": 44
+        },
+        {
+          "id": "#credits",
+          "via": "control",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "#collection",
+          "via": "control",
+          "width": 191.63,
+          "height": 44
+        },
+        {
+          "id": "search",
+          "via": "control",
+          "width": 981,
+          "height": 46.39
+        },
+        {
+          "id": "category",
+          "via": "control",
+          "width": 240,
+          "height": 44
+        },
+        {
+          "id": "inspect-vessel",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-seat",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "inspect-room",
+          "via": "control",
+          "width": 78.63,
+          "height": 44
+        },
+        {
+          "id": "view-vessel",
+          "via": "control",
+          "width": 159.7,
+          "height": 44
+        },
+        {
+          "id": "view-seat",
+          "via": "control",
+          "width": 131.61,
+          "height": 44
+        },
+        {
+          "id": "view-room",
+          "via": "control",
+          "width": 141.41,
+          "height": 44
+        },
+        {
+          "id": "back-vessel",
+          "via": "control",
+          "width": 171,
+          "height": 44
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 631,
+          "height": 46.39
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 631,
+          "height": 44
+        },
+        {
+          "id": "specimen-context",
+          "via": "associated label",
+          "width": 631,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "assets/README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../swiss/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "../../pulse/preview/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 554.67,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "0d7f0daad2efbbb517da86e6ea26f4a24840d7a12c2006782f8eeba6448414f4",
+    "styles.css": "992ba5770238b3e5725d531939614f0b5c2f4782d898fe0f23bc83244cde8bcf",
+    "preview.js": "092215bd37303044a6cfd9b7439d3c8acb780a3c64764b05cb6423bd4b18e499",
+    "assets/vessel-study.png": "ad52f4004b5bff7483f9b68aac76a10b4e6322a174bdeaa15082fc07087f64aa",
+    "assets/seat-study.png": "207d80b9d0ba13e27d1b7de0558a7ad3f5896868222e8c2b939951f276a1e951",
+    "assets/room-study.png": "08e9aef8bf744a2a02a22c5ce5e527a14e8fa2a451faee7c22d34e3a99f1869b"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, image-delivery performance, or real backend testing. Static collection/detail links and specimen fields remain usable without JavaScript; search, category filtering, preferences and inline selection require it. No cart, real products, checkout, shortlist or agent actions.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input/textarea boundaries against their fill and adjacent background. Each layout must include nonzero opaque HTML text and every preference/search/category/specimen field boundary. SVG artwork, disabled controls, placeholders, text selection, native popup menus, checkbox glyph internals, and backgrounds with images are outside this check; exclusions and unsupported samples are recorded.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "44px target samples include enabled native controls, associated checkbox labels, summary controls, button-styled links, inspection/return links, section/document navigation and Atlas brand. Contextual inline source links are excluded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "validatorSha256": "5b471ee802dbedb4297c2ca8f7b168f0232eeb6d1259a3d35ac1581a9c1e0ad6",
+  "playwright": "1.62.1",
+  "renderedFonts": {
+    "#type-body": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 148
+      }
+    ],
+    "#type-display": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 19
+      }
+    ],
+    "#type-technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 99
+      }
+    ],
+    "#type-vietnamese": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 99
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "filename": "light-desktop.png",
+      "appearance": "light",
+      "width": 1440,
+      "section": "#collection",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "dark-desktop.png",
+      "appearance": "dark",
+      "width": 1440,
+      "section": "#viewer",
+      "scope": "Complete section"
+    },
+    {
+      "filename": "light-mobile.png",
+      "appearance": "light",
+      "width": 390,
+      "section": "#collection",
+      "scope": "1000px viewport from collection start"
+    }
+  ],
+  "injectedResourceFailures": [
+    {
+      "purpose": "injected-image-failure",
+      "url": "http://127.0.0.1:65025/assets/vessel-study.png",
+      "failure": "net::ERR_FAILED"
+    }
+  ],
+  "passed": true
+}

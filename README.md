@@ -11,7 +11,7 @@ A frontend UI/UX knowledge library for preparing project-specific design documen
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load the library when preparing or deliberately revising that document.
 
-**Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, and Pulse are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner. All seven theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md).
+**Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, and Gallery are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery. All eight theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md).
 
 ## Start here
 
@@ -32,6 +32,7 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 - [Botanical](themes/botanical/README.md): earthy color, serif display, asymmetric corners, soft elevation, and a calm reading/collection flow.
 - [Blueprint](themes/blueprint/README.md): cobalt drafting lines, technical typography, modest corners, offset shadows, and a diagram/outline inspection flow.
 - [Pulse](themes/pulse/README.md): lime and ink, condensed display type, poster composition, deliberate motion, and a local planning flow with conflict recovery.
+- [Gallery](themes/gallery/README.md): image-led composition, quiet sans typography, unboxed media, mixed aspect ratios, and contextual inspection with loading/error recovery.
 - [Portfolio example](examples/portfolio/design.md): expressive presentation and case-study reading.
 - [Agent operations dashboard example](examples/agent-operations-dashboard/design.md): compact layouts and human-agent interaction.
 - [Example notes](examples/README.md): assumptions and how to adapt the examples.
@@ -42,8 +43,9 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 - [Live Botanical preview](https://tamir39.github.io/interface-atlas/themes/botanical/preview/): a fictional studio, design field notes, a local reading list, and Markdown export. [Preview notes](themes/botanical/preview/README.md) explain scope and offline use.
 - [Live Blueprint preview](https://tamir39.github.io/interface-atlas/themes/blueprint/preview/): a fictional engineering studio, diagram/outline views, labeled relationships, and node inspection. [Preview notes](themes/blueprint/preview/README.md) explain scope and offline use.
 - [Live Pulse preview](https://tamir39.github.io/interface-atlas/themes/pulse/preview/): a fictional event program, temporary session plan, overlap review, and optional motion study. [Preview notes](themes/pulse/preview/README.md) explain scope and offline use.
+- [Live Gallery preview](https://tamir39.github.io/interface-atlas/themes/gallery/preview/): a fictional collection, three AI-generated illustrative studies, search/category filtering, inline inspection, and image retry. [Preview notes](themes/gallery/preview/README.md) explain scope and offline use.
 - [Live logo gallery](https://tamir39.github.io/interface-atlas/assets/brand/preview.html): nine logo variants, small-size comparisons, and light/dark README heroes.
-- Validation evidence: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), and [Pulse](themes/pulse/validation.md), with checks performed and remaining coverage.
+- Validation evidence: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), and [Gallery](themes/gallery/validation.md), with checks performed and remaining coverage.
 - [Preparation workflow evaluation](examples/workflow-evaluation/README.md): one fresh journal brief and the self-contained design document it produced.
 
 ## Structure
@@ -102,6 +104,29 @@ interface-atlas/
 │   │       ├── index.html
 │   │       ├── styles.css
 │   │       ├── preview.js
+│   │       └── validation/
+│   │           ├── results.json
+│   │           ├── light-desktop.png
+│   │           ├── dark-desktop.png
+│   │           └── light-mobile.png
+│   ├── gallery/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── effects.md
+│   │   ├── motion.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── preview.js
+│   │       ├── assets/
+│   │       │   ├── README.md
+│   │       │   ├── manifest.json
+│   │       │   ├── vessel-study.png
+│   │       │   ├── seat-study.png
+│   │       │   └── room-study.png
 │   │       └── validation/
 │   │           ├── results.json
 │   │           ├── light-desktop.png
@@ -207,6 +232,7 @@ interface-atlas/
 │   ├── validate-play.mjs
 │   ├── validate-precision.mjs
 │   ├── validate-pulse.mjs
+│   ├── validate-gallery.mjs
 │   ├── validate-swiss.mjs
 │   └── build-preview-site.mjs
 ├── assets/
@@ -238,9 +264,11 @@ The shared knowledge layer holds cross-theme decisions. Adapters hold framework-
 
 Every entry distinguishes retained source values, referenced concepts, and Atlas proposals. Preserve creators, original URLs, source revisions, applicable licenses, and adaptation notes in generated project documents.
 
-See [the source registry](references/SOURCES.md), the provenance records for [Editorial](themes/editorial/sources.md), [Swiss](themes/swiss/sources.md), [Precision](themes/precision/sources.md), [Play](themes/play/sources.md), [Botanical](themes/botanical/sources.md), [Blueprint](themes/blueprint/sources.md), and [Pulse](themes/pulse/sources.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+See [the source registry](references/SOURCES.md), the provenance records for [Editorial](themes/editorial/sources.md), [Swiss](themes/swiss/sources.md), [Precision](themes/precision/sources.md), [Play](themes/play/sources.md), [Botanical](themes/botanical/sources.md), [Blueprint](themes/blueprint/sources.md), [Pulse](themes/pulse/sources.md), and [Gallery](themes/gallery/sources.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
 Interface Atlas's [logo family and hero artwork](assets/brand/README.md) are original project assets created with AI assistance. The Atlas identity belongs to the library; individual themes retain their own visual direction and source credits.
+
+Gallery includes three AI-generated photography-style illustrations of fictional studies, created with the built-in image-generation tool for this preview. Their [asset record](themes/gallery/preview/assets/README.md) preserves the exact prompts, method, intrinsic sizes and hashes. They are illustrative media, not documentary photography or real product evidence.
 
 No third-party implementation code, font binaries, or artwork is included in this pilot. Atlas's own publishing license is not yet selected; individual source terms remain separate.
 

@@ -97,6 +97,16 @@ node tools/validate-pulse.mjs --module /path/to/playwright/index.mjs --browser /
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Pulse's validation record](../themes/pulse/validation.md) for evidence and limits. The example books no sessions, submits no plan, and runs no agent.
 
+## Optional Gallery browser checks
+
+Gallery has repeatable checks for responsive layout, preferences, original image dimensions and metadata, collection search/category filters, stable view controls, inline inspection/focus recovery, and actual delayed/failed image requests with retry and stale-completion isolation:
+
+```sh
+node tools/validate-gallery.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as the other preview checks. Read [Gallery's validation record](../themes/gallery/validation.md) for actual evidence and limits. The fictional collection supplies no cart, checkout, real product availability, or agent execution. Intentionally injected image failures are recorded separately from ordinary resource health.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

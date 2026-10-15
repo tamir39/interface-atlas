@@ -1,0 +1,35 @@
+[
+  {
+    "id": "room",
+    "file": "room-study.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2491682,
+    "sha256": "08e9aef8bf744a2a02a22c5ce5e527a14e8fa2a451faee7c22d34e3a99f1869b",
+    "method": "built-in image_gen.imagegen",
+    "created_on": "2026-10-15",
+    "prompt": "Use case: photorealistic-natural. Asset type: original illustrative image for Interface Atlas Gallery theme, no actual property or real event. Create a photorealistic editorial architectural still life of a quiet fictional room: chalk-white plaster alcove, pale stone floor, a single low unbranded oak bench, soft daylight from a tall out-of-frame window, subtle natural shadows and believable tactile textures. Calm warm neutral materials with generous uncluttered negative space. Wide landscape composition, ideally1536x1024, view at human eye level; all objects comfortably inside the frame. This is a fictional design study, not a copy of an existing architect's room or a famous design object. No people, lettering, logos, watermark, interface, collage, or decorative border."
+  },
+  {
+    "id": "vessel",
+    "file": "vessel-study.png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2424007,
+    "sha256": "ad52f4004b5bff7483f9b68aac76a10b4e6322a174bdeaa15082fc07087f64aa",
+    "method": "built-in image_gen.imagegen",
+    "created_on": "2026-10-15",
+    "prompt": "Use case: product-mockup. Asset type: original illustrative image for Interface Atlas Gallery theme, a fictional object study rather than a real product listing. Photorealistic editorial still life of a single sculptural unbranded matte chalk ceramic vessel with a broad rounded body and short subtly irregular neck, on a warm pale stone plinth with taupe plaster backdrop. Quiet directional daylight, soft elongated shadow, visible fine ceramic grain and slight handmade imperfections. Portrait composition, ideally1024x1536; show the full vessel with generous margins on all sides. Design an ordinary original vessel without copying a known artist or branded product. No flowers, people, letters, logos, watermark, price, UI, collage, or decorative border."
+  },
+  {
+    "id": "seat",
+    "file": "seat-study.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2087105,
+    "sha256": "207d80b9d0ba13e27d1b7de0558a7ad3f5896868222e8c2b939951f276a1e951",
+    "method": "built-in image_gen.imagegen",
+    "created_on": "2026-10-15",
+    "prompt": "Use case: product-mockup. Asset type: original illustrative image for Interface Atlas Gallery theme, a fictional furniture study rather than an actual product. Photorealistic editorial studio photograph of a simple original unbranded pale-oak stool: solid softly rounded rectangular seat and four straight square legs with modest joinery, natural wood grain, on a light gray mineral floor against a muted gray-green wall. Three-quarter view, gentle lateral daylight, believable contact shadow, serene clean composition. Square composition, ideally1024x1024; full stool entirely visible with ample breathing room. Avoid resemblance to iconic designer furniture. No people, lettering, logos, watermark, price, UI, collage, or decorative border."
+  }
+]

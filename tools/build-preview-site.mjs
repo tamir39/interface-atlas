@@ -18,10 +18,13 @@ const files = [
   ['site/index.html', 'index.html'],
   ['site/styles.css', 'styles.css'],
   ...brandFiles.map((name) => [`assets/brand/${name}`, `assets/brand/${name}`]),
-  ...['editorial', 'swiss', 'precision', 'play', 'botanical', 'blueprint', 'pulse'].flatMap((theme) =>
+  ...['editorial', 'swiss', 'precision', 'play', 'botanical', 'blueprint', 'pulse', 'gallery'].flatMap((theme) =>
     ['index.html', 'styles.css', 'preview.js'].map((name) => [
       `themes/${theme}/preview/${name}`, `themes/${theme}/preview/${name}`,
     ])),
+  ...['vessel-study.png', 'seat-study.png', 'room-study.png'].map((name) => [
+    `themes/gallery/preview/assets/${name}`, `themes/gallery/preview/assets/${name}`,
+  ]),
 ];
 
 function inside(parent, child) {

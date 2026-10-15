@@ -48,9 +48,21 @@ Pulse is an original Atlas synthesis for Tamir with Codex AI assistance. Its pal
 
 **Kayce Basques and Rachel Andrew** are credited for [web.dev's animation guidance](https://web.dev/articles/animations-guide). Its page content states CC BY 4.0 and code samples Apache 2.0; Atlas references the transform/opacity and measured-optimization concepts without copying samples, prose, or images. The preview's 150ms feedback and 600ms motion study are independent Atlas choices and do not establish measured rendering performance.
 
+## Gallery reference sources
+
+Gallery is an original Atlas synthesis for Tamir with Codex AI assistance. Its image-led composition, quiet sans hierarchy, palette, geometry, filtering, inline inspection, and media recovery are Atlas proposals. [Gallery sources](themes/gallery/sources.md) distinguish references from independent implementation.
+
+**Shopify** is credited for its theme design/performance guidance and the Dawn/Horizon presentation references. The inspected [Dawn license](https://github.com/Shopify/dawn/blob/258f00f64365e2018ca4c62778a6bf55a5d3cd18/LICENSE.md) and [Horizon license](https://github.com/Shopify/horizon/blob/dfad90d87be2408de52636315069fc998da28c9e/LICENSE.md) contain Shopify-specific use/distribution restrictions; they are not plain MIT. Their copyright notices identify Shopify Inc., 2021-present for Dawn and 2025-present for Horizon. No Shopify code, markup, tokens, listing screenshot, photograph, or brand asset is imported. Website and asset terms remain separate from those software notices.
+
+**Mat Marquis** is credited for the web.dev Learn Images course, with its separately named input/review contributors. Content is identified as CC BY 4.0 and code samples Apache 2.0. **W3C WAI/EOWG**, Images Tutorial editors **Eric Eggert and Shadi Abou-Zahra**, update editor **Brian Elton**, and **WHATWG contributors** are credited for image semantics, alternatives, and source-selection guidance. Concepts are referenced without copying prose, samples, or images; W3C document-specific terms remain applicable.
+
+The three retained photography-style studies were generated for this preview with the **built-in image_gen.imagegen tool**, under Tamir/Codex creative direction. They depict fictional objects/spaces, carry no named photographer attribution, and do not establish real products, manufacture, properties, or commercial claims. The [asset provenance record](themes/gallery/preview/assets/README.md) and [manifest](themes/gallery/preview/assets/manifest.json) contain prompts, method, dimensions, bytes and hashes; the original PNGs are retained unchanged. Atlas publishing terms remain undecided.
+
 ## Fonts
 
 Selected font families are Manrope (Mikhail Sharanda), DM Serif Display (Colophon Foundry), and JetBrains Mono (JetBrains, Philipp Nurullin, Konstantin Bulenkov).
+
+Gallery names **Inter**, designed by **Rasmus Andersson**. The pinned [upstream Inter license](https://github.com/rsms/inter/blob/353b61b9f4430d5f420d56605a6e7993e0941470/LICENSE.txt) states SIL OFL 1.1 and copyright 2016 The Inter Project Authors; the observed Google Fonts OFL file states copyright 2020 while its metadata states 2016. These are separate inspected notices, not a merged copyright record. No font files are included; preserve the exact chosen package notices before redistribution.
 
 Pulse names **Barlow and Barlow Condensed**, designed principally by **Jeremy Tribby**; the upstream project also credits **Nguyễn Hồng Nhung** for Vietnamese design. The [Barlow](https://raw.githubusercontent.com/google/fonts/main/ofl/barlow/OFL.txt) and [Barlow Condensed](https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt) font-package notices identify the Barlow Project Authors and SIL Open Font License 1.1. No font software is included; exact notices must accompany any future redistribution.
 
