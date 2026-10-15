@@ -113,6 +113,18 @@ h1 em { color: var(--action); }
 .gallery-study img { display: block; inline-size: 100%; block-size: 12rem; object-fit: contain; }
 .gallery-study span { font-size: .75rem; color: #596057; }
 .gallery-study p { margin-block-start: .75rem; font: 400 clamp(1.5rem, 3vw, 2.5rem)/1.1 "Segoe UI", Arial, sans-serif; letter-spacing: -.035em; }
+.layered-card { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; align-items: center; }
+.layered-card .card-meta { grid-column: 1 / -1; }
+.layered-study { --layered-page: #eaf2f1; --layered-low: #dfebe9; --layered-tint: #d5eae5; --layered-raised: #fff; --layered-ink: #172f2c; --layered-muted: #405e58; display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.8fr); gap: .75rem; min-block-size: 15rem; margin-block: 1.5rem; padding: .75rem; border-radius: 24px; background: var(--layered-page); color: var(--layered-ink); }
+.layered-study-rail { display: grid; align-content: start; gap: .75rem; padding: .75rem .5rem; border-radius: 18px; background: var(--layered-low); font-size: .6875rem; overflow-wrap: anywhere; }
+.layered-study-rail > span { padding: .35rem .5rem; }
+.layered-study-current { border-radius: 999px; background: var(--layered-tint); font-weight: 700; }
+.layered-study-content { min-inline-size: 0; padding: .5rem; }
+.layered-study-content > span { color: var(--layered-muted); font-size: .75rem; }
+.layered-study-content > p { margin-block: .5rem 1rem; font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 600; line-height: 1.15; letter-spacing: -.035em; }
+.layered-study-panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.layered-study-panels span { padding: .75rem; border-radius: 12px; background: var(--layered-raised); font-size: .6875rem; overflow-wrap: anywhere; }
+.layered-study-panels strong { font-weight: 500; color: var(--layered-muted); }
 .brand-card .card-meta { grid-column: 1 / -1; }
 .brand-study { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 3vw, 2rem); background: var(--tile); color: var(--tile-ink); }
 .brand-study svg { inline-size: 96px; block-size: 96px; flex: 0 0 96px; fill: var(--tile-accent); }
@@ -131,7 +143,7 @@ h1 em { color: var(--action); }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; padding-block: 1.75rem 2rem; border-block-start: 1px solid var(--divider); color: var(--muted); font-size: .8125rem; }
 .site-footer a { display: inline-flex; align-items: center; gap: .5rem; min-block-size: 44px; padding-block: .5rem; }
 @media (max-width: 48rem) {
-  .cover-copy, .preview-grid, .reading-note, .brand-card { grid-template-columns: 1fr; }
+  .cover-copy, .preview-grid, .reading-note, .brand-card, .layered-card { grid-template-columns: 1fr; }
   .cover-copy { gap: 1.5rem; }
   .cover-intro { max-inline-size: 52ch; }
   .reading-note { gap: 1.25rem; }
@@ -142,6 +154,7 @@ h1 em { color: var(--action); }
   .brand-study { flex-wrap: wrap; text-align: center; }
 }
 @media (prefers-color-scheme: dark) {
+  .layered-study { --layered-page: #101c1c; --layered-low: #172626; --layered-tint: #294c46; --layered-raised: #273c3b; --layered-ink: #e7f3ef; --layered-muted: #b4cec5; }
   .cover-art img { outline-color: oklch(1 0 0 / .1); }
   .swiss-study { background: #171716; color: #faf6ed; border-color: #ff8978; }
   .swiss-number { background: #ff8978; color: #35160f; }

@@ -1,0 +1,6249 @@
+{
+  "checks": [
+    {
+      "name": "Three fixed fictional projects, true sample task counts, native anchor/current semantics, defaults, static edit contract and usable specimen fields",
+      "passed": true,
+      "details": {
+        "titles": {
+          "reading": "Reading corner",
+          "studio": "Studio refresh",
+          "weekend": "Weekend walk"
+        },
+        "initialTasks": {
+          "reading": [
+            true,
+            false,
+            false
+          ],
+          "studio": [
+            true,
+            true,
+            false
+          ],
+          "weekend": [
+            false,
+            false,
+            false
+          ]
+        },
+        "nativeContract": {
+          "tag": "DIALOG",
+          "tabindex": null,
+          "labelledBy": "editor-title",
+          "describedBy": "editor-description",
+          "formNoValidate": true,
+          "required": true,
+          "maxLength": 60,
+          "autofocus": true
+        },
+        "specimenFields": [
+          {
+            "id": "specimen-name",
+            "tag": "input",
+            "type": "text",
+            "value": "A little room for a good idea"
+          },
+          {
+            "id": "specimen-kind",
+            "tag": "select",
+            "type": "select-one",
+            "value": "Personal project"
+          },
+          {
+            "id": "specimen-notes",
+            "tag": "input",
+            "type": "checkbox",
+            "value": "on"
+          }
+        ]
+      }
+    },
+    {
+      "name": "20 responsive appearance/density layouts, opaque text and enabled field boundaries, 44px targets, mobile field text and actual specimen-only 24→16px inset",
+      "passed": true,
+      "details": {
+        "combinations": 20,
+        "boundaryIds": [
+          "appearance",
+          "density",
+          "project-search",
+          "project-category",
+          "specimen-name",
+          "specimen-kind"
+        ],
+        "measuredDensities": {
+          "comfortable": {
+            "height": 1015.53125,
+            "padding": {
+              "blockStart": 24,
+              "blockEnd": 24,
+              "inlineStart": 24,
+              "inlineEnd": 24
+            }
+          },
+          "compact": {
+            "height": 999.53125,
+            "padding": {
+              "blockStart": 16,
+              "blockEnd": 16,
+              "inlineStart": 16,
+              "inlineEnd": 16
+            }
+          }
+        },
+        "densityScope": {
+          "comfortable": {
+            "reading": {
+              "width": 370.65625,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "studio": {
+              "width": 370.671875,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "weekend": {
+              "width": 370.65625,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "project-reading": {
+              "width": 1144,
+              "height": 469.578125,
+              "padding": "32px",
+              "radius": "24px",
+              "fontSize": "16px"
+            }
+          },
+          "compact": {
+            "reading": {
+              "width": 370.65625,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "studio": {
+              "width": 370.671875,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "weekend": {
+              "width": 370.65625,
+              "height": 346.578125,
+              "padding": "24px",
+              "radius": "24px",
+              "fontSize": "16px"
+            },
+            "project-reading": {
+              "width": 1144,
+              "height": 469.578125,
+              "padding": "32px",
+              "radius": "24px",
+              "fontSize": "16px"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Keyboard skip and native project anchors, contextual accessible names, combined case-insensitive filters, empty-state recovery and independently visible current workspace",
+      "passed": true,
+      "details": {
+        "openingNames": {
+          "reading": "- link \"Open Reading corner\":\n  - /url: \"#project-reading\"\n  - text: Open",
+          "studio": "- link \"Open Studio refresh\":\n  - /url: \"#project-studio\"\n  - text: Open",
+          "weekend": "- link \"Open Weekend walk\":\n  - /url: \"#project-weekend\"\n  - text: Open"
+        }
+      }
+    },
+    {
+      "name": "Native task toggles are reversible and independent per project with truthful repeated/aggregate counts; Enter in Search preserves the same document, current project and local task edits",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "One native modal enters title focus, cycles dialog controls bidirectionally without background controls (Chromium includes one document-viewport step), blocks background focus and discards on Escape/Cancel with opener restoration",
+      "passed": true,
+      "details": {
+        "tabOrder": [
+          "project-priority",
+          "cancel-project",
+          "save-project",
+          "document-viewport",
+          "project-title",
+          "project-priority",
+          "cancel-project",
+          "save-project",
+          "document-viewport",
+          "project-title"
+        ],
+        "reverseOrder": [
+          "document-viewport",
+          "save-project",
+          "cancel-project",
+          "project-priority",
+          "project-title",
+          "document-viewport",
+          "save-project",
+          "cancel-project",
+          "project-priority",
+          "project-title"
+        ],
+        "modalState": {
+          "modal": true,
+          "backgroundInertByBehavior": true,
+          "title": "project-title"
+        }
+      }
+    },
+    {
+      "name": "Whitespace, overlength and invalid-priority failures preserve committed project atomically, remain in the modal, identify associated inline errors and focus a linked correction summary",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Opaque native modal and linked-error states retain text/boundary contrast, 44px actions and unclipped layouts at four widths in both appearances",
+      "passed": true,
+      "details": {
+        "modalSamples": [
+          {
+            "appearance": "light",
+            "width": 320,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 7.09,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 7.54,
+                  "fillRatio": 7.54,
+                  "adjacentRatio": 7.54,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.96,
+                  "fillRatio": 4.96,
+                  "adjacentRatio": 4.96,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 172,
+                "height": 51.19
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 232,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 232,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 232,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 232,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 282,
+              "viewportWidth": 320,
+              "clientWidth": 280,
+              "scrollWidth": 280
+            }
+          },
+          {
+            "appearance": "light",
+            "width": 390,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 7.09,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 7.54,
+                  "fillRatio": 7.54,
+                  "adjacentRatio": 7.54,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.96,
+                  "fillRatio": 4.96,
+                  "adjacentRatio": 4.96,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 242,
+                "height": 51.19
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 302,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 302,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 352,
+              "viewportWidth": 390,
+              "clientWidth": 350,
+              "scrollWidth": 350
+            }
+          },
+          {
+            "appearance": "light",
+            "width": 768,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 7.09,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 7.54,
+                  "fillRatio": 7.54,
+                  "adjacentRatio": 7.54,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.96,
+                  "fillRatio": 4.96,
+                  "adjacentRatio": 4.96,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 294.66,
+                "height": 44
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 560,
+              "viewportWidth": 768,
+              "clientWidth": 558,
+              "scrollWidth": 558
+            }
+          },
+          {
+            "appearance": "light",
+            "width": 1280,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 7.09,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 7.54,
+                  "fillRatio": 7.54,
+                  "adjacentRatio": 7.54,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.96,
+                  "fillRatio": 4.96,
+                  "adjacentRatio": 4.96,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 294.66,
+                "height": 44
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 560,
+              "viewportWidth": 1280,
+              "clientWidth": 558,
+              "scrollWidth": 558
+            }
+          },
+          {
+            "appearance": "dark",
+            "width": 320,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 6.93,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 6.93,
+                  "fillRatio": 6.93,
+                  "adjacentRatio": 6.93,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.69,
+                  "fillRatio": 4.69,
+                  "adjacentRatio": 4.69,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 172,
+                "height": 51.19
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 232,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 232,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 232,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 232,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 282,
+              "viewportWidth": 320,
+              "clientWidth": 280,
+              "scrollWidth": 280
+            }
+          },
+          {
+            "appearance": "dark",
+            "width": 390,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 6.93,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 6.93,
+                  "fillRatio": 6.93,
+                  "adjacentRatio": 6.93,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.69,
+                  "fillRatio": 4.69,
+                  "adjacentRatio": 4.69,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 242,
+                "height": 51.19
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 302,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 302,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 352,
+              "viewportWidth": 390,
+              "clientWidth": 350,
+              "scrollWidth": 350
+            }
+          },
+          {
+            "appearance": "dark",
+            "width": 768,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 6.93,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 6.93,
+                  "fillRatio": 6.93,
+                  "adjacentRatio": 6.93,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.69,
+                  "fillRatio": 4.69,
+                  "adjacentRatio": 4.69,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 294.66,
+                "height": 44
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 560,
+              "viewportWidth": 768,
+              "clientWidth": 558,
+              "scrollWidth": 558
+            }
+          },
+          {
+            "appearance": "dark",
+            "width": 1280,
+            "contrast": {
+              "checked": 13,
+              "opaqueChecked": 13,
+              "minimum": 6.93,
+              "skipped": [],
+              "excluded": {
+                "svgElements": 0,
+                "disabledTextSamples": 0,
+                "unrenderedTextSamples": 0,
+                "visuallyHiddenTextSamples": 0,
+                "nativeCheckboxGlyphBoundaries": 11
+              },
+              "controlBorders": [
+                {
+                  "id": "project-title",
+                  "sample": "input",
+                  "ratio": 6.93,
+                  "fillRatio": 6.93,
+                  "adjacentRatio": 6.93,
+                  "required": 3
+                },
+                {
+                  "id": "project-priority",
+                  "sample": "select",
+                  "ratio": 4.69,
+                  "fillRatio": 4.69,
+                  "adjacentRatio": 4.69,
+                  "required": 3
+                }
+              ]
+            },
+            "targets": [
+              {
+                "id": "#project-title",
+                "via": "control",
+                "width": 294.66,
+                "height": 44
+              },
+              {
+                "id": "project-title",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "project-priority",
+                "via": "control",
+                "width": 494,
+                "height": 48
+              },
+              {
+                "id": "cancel-project",
+                "via": "control",
+                "width": 81.83,
+                "height": 50
+              },
+              {
+                "id": "save-project",
+                "via": "control",
+                "width": 122.92,
+                "height": 50
+              }
+            ],
+            "sizing": {
+              "width": 560,
+              "viewportWidth": 1280,
+              "clientWidth": 558,
+              "scrollWidth": 558
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Save trims and atomically reflects title/priority/names without changing tasks, reapplies preserved filters and restores visible detail opener; Revert restores only current project and focuses its heading",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "System appearance follows live device changes, explicit appearance overrides, and reload resets temporary projects/tasks/filters while exactly three global preferences persist",
+      "passed": true,
+      "details": {
+        "stored": {
+          "appearance": "light",
+          "density": "compact",
+          "motion": "off"
+        }
+      }
+    },
+    {
+      "name": "Only 160ms color/background/border feedback is configured; no automatic or modal animation; reduced/off states are immediate and workspace remains usable",
+      "passed": true,
+      "details": {
+        "feedback": {
+          "duration": "0.16s",
+          "properties": "background-color, border-color, color"
+        },
+        "reduced": {
+          "duration": "0s",
+          "animation": "none",
+          "transform": "none"
+        },
+        "off": {
+          "duration": "0s",
+          "animation": "none",
+          "transform": "none"
+        }
+      }
+    },
+    {
+      "name": "Forced-colors focus remains explicit; actual 200% CSS text doubles body specimen and keeps page/modal actions available without horizontal page overflow; native browser zoom untested",
+      "passed": true,
+      "details": {
+        "focus": {
+          "visible": true,
+          "width": "3px",
+          "offset": "3px",
+          "color": "rgb(26, 235, 255)"
+        },
+        "resize": {
+          "width": 640,
+          "scroll": 640
+        },
+        "beforeResize": 16,
+        "afterResize": 32,
+        "modalResize": {
+          "width": 560,
+          "viewport": 640,
+          "client": 558,
+          "scroll": 558
+        }
+      }
+    },
+    {
+      "name": "Actual local body/display/technical/Vietnamese font glyph families recorded; CSS family declaration is not intended-webfont rendering evidence",
+      "passed": true,
+      "details": {
+        "#type-body": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 145
+          }
+        ],
+        "#type-display": [
+          {
+            "family": "Segoe UI Semibold",
+            "custom": false,
+            "glyphCount": 20
+          }
+        ],
+        "#type-technical": [
+          {
+            "family": "Consolas",
+            "custom": false,
+            "glyphCount": 78
+          }
+        ],
+        "#type-vietnamese": [
+          {
+            "family": "Segoe UI",
+            "custom": false,
+            "glyphCount": 87
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blocked, invalid-choice and malformed preference storage preserve usable defaults, appearance controls, project/task flow and editing; failed storage has truthful persistence feedback",
+      "passed": true,
+      "details": {
+        "storageSamples": [
+          {
+            "mode": "blocked",
+            "note": "Preferences apply for this visit; this browser is not saving them."
+          },
+          {
+            "mode": "invalid",
+            "note": "Only these preview preferences are saved in this browser."
+          },
+          {
+            "mode": "malformed",
+            "note": "Only these preview preferences are saved in this browser."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Initial and live project fragments reveal and focus the matching article; unrelated fragments fall back safely; fresh fragment-free visits reset selection",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "A real edited Vietnamese title retains complete wrapping and accessible actions at 320/768/1440 without text clipping or page overflow",
+      "passed": true,
+      "details": {
+        "longTitle": "Góc đọc sách và những ý tưởng nhỏ trong ngày nhiều ánh sáng",
+        "longSamples": [
+          {
+            "width": 320,
+            "samples": [
+              {
+                "width": 236,
+                "height": 81,
+                "clientWidth": 236,
+                "scrollWidth": 236,
+                "clientHeight": 81,
+                "scrollHeight": 81,
+                "overflow": "clip",
+                "clamp": "none"
+              },
+              {
+                "width": 240,
+                "height": 140,
+                "clientWidth": 240,
+                "scrollWidth": 240,
+                "clientHeight": 140,
+                "scrollHeight": 141,
+                "overflow": "clip",
+                "clamp": "none"
+              }
+            ]
+          },
+          {
+            "width": 768,
+            "samples": [
+              {
+                "width": 300,
+                "height": 54,
+                "clientWidth": 300,
+                "scrollWidth": 300,
+                "clientHeight": 54,
+                "scrollHeight": 54,
+                "overflow": "clip",
+                "clamp": "none"
+              },
+              {
+                "width": 514.75,
+                "height": 70,
+                "clientWidth": 515,
+                "scrollWidth": 515,
+                "clientHeight": 70,
+                "scrollHeight": 71,
+                "overflow": "clip",
+                "clamp": "none"
+              }
+            ]
+          },
+          {
+            "width": 1440,
+            "samples": [
+              {
+                "width": 318.65625,
+                "height": 54,
+                "clientWidth": 319,
+                "scrollWidth": 319,
+                "clientHeight": 54,
+                "scrollHeight": 54,
+                "overflow": "clip",
+                "clamp": "none"
+              },
+              {
+                "width": 792.0625,
+                "height": 35,
+                "clientWidth": 792,
+                "scrollWidth": 792,
+                "clientHeight": 35,
+                "scrollHeight": 36,
+                "overflow": "clip",
+                "clamp": "none"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Missing and throwing native modal API disable all Edit actions with an explanation while filtering, task mutation, counts and native project navigation remain usable",
+      "passed": true,
+      "details": {
+        "unavailableSamples": [
+          {
+            "mode": "absent",
+            "disabled": [
+              true,
+              true,
+              true
+            ],
+            "note": "Project editing is unavailable in this browser. You can still browse projects and update the sample tasks."
+          },
+          {
+            "mode": "throw",
+            "disabled": [
+              true,
+              true,
+              true
+            ],
+            "note": "Project editing is unavailable in this browser. You can still browse projects and update the sample tasks."
+          }
+        ]
+      }
+    },
+    {
+      "name": "No JavaScript preserves all three static project articles, native anchors, truthful task states and editable specimen fields; all 20 runtime controls remain disabled",
+      "passed": true,
+      "details": {
+        "noJsControls": [
+          {
+            "id": "appearance",
+            "disabled": true
+          },
+          {
+            "id": "density",
+            "disabled": true
+          },
+          {
+            "id": "motion",
+            "disabled": true
+          },
+          {
+            "id": "project-search",
+            "disabled": true
+          },
+          {
+            "id": "project-category",
+            "disabled": true
+          },
+          {
+            "id": "reading",
+            "disabled": true
+          },
+          {
+            "id": "task-reading-0",
+            "disabled": true
+          },
+          {
+            "id": "task-reading-1",
+            "disabled": true
+          },
+          {
+            "id": "task-reading-2",
+            "disabled": true
+          },
+          {
+            "id": "reading",
+            "disabled": true
+          },
+          {
+            "id": "studio",
+            "disabled": true
+          },
+          {
+            "id": "task-studio-0",
+            "disabled": true
+          },
+          {
+            "id": "task-studio-1",
+            "disabled": true
+          },
+          {
+            "id": "task-studio-2",
+            "disabled": true
+          },
+          {
+            "id": "studio",
+            "disabled": true
+          },
+          {
+            "id": "weekend",
+            "disabled": true
+          },
+          {
+            "id": "task-weekend-0",
+            "disabled": true
+          },
+          {
+            "id": "task-weekend-1",
+            "disabled": true
+          },
+          {
+            "id": "task-weekend-2",
+            "disabled": true
+          },
+          {
+            "id": "weekend",
+            "disabled": true
+          }
+        ],
+        "contrast": {
+          "checked": 165,
+          "opaqueChecked": 165,
+          "minimum": 5.67,
+          "skipped": [],
+          "excluded": {
+            "svgElements": 28,
+            "disabledTextSamples": 10,
+            "unrenderedTextSamples": 20,
+            "visuallyHiddenTextSamples": 0,
+            "nativeCheckboxGlyphBoundaries": 1
+          },
+          "controlBorders": [
+            {
+              "id": "specimen-name",
+              "sample": "input",
+              "ratio": 4.69,
+              "fillRatio": 4.69,
+              "adjacentRatio": 5.54,
+              "required": 3
+            },
+            {
+              "id": "specimen-kind",
+              "sample": "select",
+              "ratio": 4.69,
+              "fillRatio": 4.69,
+              "adjacentRatio": 5.54,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Native resources and runtime remain clean, no external requests, and all three preview files plus validator retain their tested hashes",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "layouts": [
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 256,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 128.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 119.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 326,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 163.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 154.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 180.53,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 117.55,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 108.38,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 147.78,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 171.75,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 432,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 312,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 312,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 696,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 568,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 568,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 856,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 648,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 648,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 256,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 128.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 119.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 256,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 256,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 326,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 163.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 154.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 326,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 326,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 180.53,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 117.55,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 108.38,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 147.78,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 171.75,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 432,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 320,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 320,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 696,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 576,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 576,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "light",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.65,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.36,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.36,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.76,
+            "fillRatio": 4.96,
+            "adjacentRatio": 4.76,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 856,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 656,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 656,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 256,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 128.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 119.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 326,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 163.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 154.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 180.53,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 117.55,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 108.38,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 147.78,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 171.75,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 432,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 312,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 312,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 696,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 568,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 568,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "comfortable",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 856,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 648,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 648,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 320,
+      "scroll": 320,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 256,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 128.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 119.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 256,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 240,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 240,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 256,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 256,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 288,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 390,
+      "scroll": 390,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 173,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 326,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 163.58,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 154.42,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 326,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 310,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 310,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 326,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 326,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 358,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 768,
+      "scroll": 768,
+      "contrast": {
+        "checked": 144,
+        "opaqueChecked": 144,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 48,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 180.53,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 117.55,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 108.38,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 147.78,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 171.75,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 432,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 351.11,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 320,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 320,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 275.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1280,
+      "scroll": 1280,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 696,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 497.77,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 576,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 576,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 467.2,
+          "height": 48
+        }
+      ]
+    },
+    {
+      "appearance": "dark",
+      "density": "compact",
+      "width": 1440,
+      "scroll": 1440,
+      "contrast": {
+        "checked": 148,
+        "opaqueChecked": 148,
+        "minimum": 5.67,
+        "skipped": [],
+        "excluded": {
+          "svgElements": 28,
+          "disabledTextSamples": 3,
+          "unrenderedTextSamples": 44,
+          "visuallyHiddenTextSamples": 0,
+          "nativeCheckboxGlyphBoundaries": 11
+        },
+        "controlBorders": [
+          {
+            "id": "appearance",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "density",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 6.99,
+            "required": 3
+          },
+          {
+            "id": "project-search",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "project-category",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-name",
+            "sample": "input",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          },
+          {
+            "id": "specimen-kind",
+            "sample": "select",
+            "ratio": 4.69,
+            "fillRatio": 4.69,
+            "adjacentRatio": 5.54,
+            "required": 3
+          }
+        ]
+      },
+      "targets": [
+        {
+          "id": "../../../README.md",
+          "via": "control",
+          "width": 144.44,
+          "height": 44
+        },
+        {
+          "id": "appearance",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "density",
+          "via": "control",
+          "width": 194,
+          "height": 48
+        },
+        {
+          "id": "motion",
+          "via": "associated label",
+          "width": 228.25,
+          "height": 44
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 56
+        },
+        {
+          "id": "#overview",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#project-details",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#specimen",
+          "via": "control",
+          "width": 192,
+          "height": 48.39
+        },
+        {
+          "id": "#projects",
+          "via": "control",
+          "width": 205.92,
+          "height": 50
+        },
+        {
+          "id": "project-search",
+          "via": "control",
+          "width": 856,
+          "height": 48
+        },
+        {
+          "id": "project-category",
+          "via": "control",
+          "width": 224,
+          "height": 48
+        },
+        {
+          "id": "#project-reading",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-studio",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "#project-weekend",
+          "via": "control",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "button",
+          "via": "control",
+          "width": 117.25,
+          "height": 50
+        },
+        {
+          "id": "task-reading-0",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-1",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "task-reading-2",
+          "via": "associated label",
+          "width": 586.66,
+          "height": 56
+        },
+        {
+          "id": "specimen-name",
+          "via": "control",
+          "width": 656,
+          "height": 48
+        },
+        {
+          "id": "specimen-kind",
+          "via": "control",
+          "width": 656,
+          "height": 48
+        },
+        {
+          "id": "specimen-notes",
+          "via": "associated label",
+          "width": 206.77,
+          "height": 44
+        },
+        {
+          "id": "../sources.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../design.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "README.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../validation.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../../THIRD_PARTY_NOTICES.md",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../editorial/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "../../precision/preview/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        },
+        {
+          "id": "https://tamir39.github.io/interface-atlas/",
+          "via": "control",
+          "width": 531.2,
+          "height": 48
+        }
+      ]
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "testedFiles": {
+    "index.html": "4029d247a198d17b963b326277b5aea59c1c5cbcc23f0ee8084f3ac5a6baa026",
+    "styles.css": "7a7751e0e00f1e6bce48ba2cf49f861999e45e22d90b78423551257519f5acad",
+    "preview.js": "edad9d104fa68fd44ea0eda985f13c5cc95de33cca03d1cb719bba71d04af340"
+  },
+  "limits": [
+    "No screen-reader, touch-device, native browser zoom, or real backend testing. All three static project details, links and specimen fields remain usable without JavaScript; filters, preferences, task mutation and editing require it. No real account, cloud sync, agent action, backend or simulated network.",
+    "Contrast samples are rendered HTML text composited over solid backgrounds and enabled select/text-input/textarea boundaries against their fill and adjacent background. Each layout must include nonzero opaque HTML text and every visible preference/search/category/specimen field boundary; dialog states scope measurements to the opaque native modal. SVG artwork, disabled controls, placeholders, text selection, native popup menus, checkbox glyph internals, and backgrounds with images are outside this check; exclusions and unsupported samples are recorded.",
+    "Fallback font families are recorded from Chromium. Named webfont files are not distributed or loaded.",
+    "44px target samples include enabled native controls, associated checkbox labels, summary controls, button-styled links, project-opening links, section/document navigation and Atlas brand. Contextual inline source links are excluded.",
+    "The temporary verification server exposes only the preview directory. Links to neighboring Atlas documents are checked separately, not followed here."
+  ],
+  "validatorSha256": "b1915e21324face358ee266c4b699d2a5c8f8f4094dcffa90a07bc7a27bc5501",
+  "playwright": "1.62.1",
+  "renderedFonts": {
+    "#type-body": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 145
+      }
+    ],
+    "#type-display": [
+      {
+        "family": "Segoe UI Semibold",
+        "custom": false,
+        "glyphCount": 20
+      }
+    ],
+    "#type-technical": [
+      {
+        "family": "Consolas",
+        "custom": false,
+        "glyphCount": 78
+      }
+    ],
+    "#type-vietnamese": [
+      {
+        "family": "Segoe UI",
+        "custom": false,
+        "glyphCount": 87
+      }
+    ]
+  },
+  "screenshots": [
+    {
+      "filename": "light-desktop.png",
+      "appearance": "light",
+      "width": 1440,
+      "scope": "1000px initial workspace viewport"
+    },
+    {
+      "filename": "dark-desktop.png",
+      "appearance": "dark",
+      "width": 1440,
+      "scope": "1000px viewport with native modal validation errors"
+    },
+    {
+      "filename": "light-mobile.png",
+      "appearance": "light",
+      "width": 390,
+      "scope": "1000px viewport from first project card"
+    }
+  ],
+  "passed": true
+}

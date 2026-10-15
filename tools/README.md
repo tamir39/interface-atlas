@@ -107,6 +107,16 @@ node tools/validate-gallery.mjs --module /path/to/playwright/index.mjs --browser
 
 It uses the same optional dependencies and output conventions as the other preview checks. Read [Gallery's validation record](../themes/gallery/validation.md) for actual evidence and limits. The fictional collection supplies no cart, checkout, real product availability, or agent execution. Intentionally injected image failures are recorded separately from ordinary resource health.
 
+## Optional Layered browser checks
+
+Layered has repeatable checks for responsive composition, preferences, project filtering, actual task counts, native modal focus and containment, atomic title/priority editing, linked inline errors, cancellation, and per-project revert:
+
+```sh
+node tools/validate-layered.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/results
+```
+
+It uses the same optional dependencies and output conventions as other preview checks. Read [Layered's validation record](../themes/layered/validation.md) for actual evidence and limits. No account, cloud save, collaborative update, backend command, or agent execution occurs; only preview preferences persist.
+
 ## Live preview site
 
 The [preview builder](build-preview-site.mjs) uses Node.js 20 or newer with no installed packages to assemble the allowlisted static assets for GitHub Pages:

@@ -58,9 +58,19 @@ Gallery is an original Atlas synthesis for Tamir with Codex AI assistance. Its i
 
 The three retained photography-style studies were generated for this preview with the **built-in image_gen.imagegen tool**, under Tamir/Codex creative direction. They depict fictional objects/spaces, carry no named photographer attribution, and do not establish real products, manufacture, properties, or commercial claims. The [asset provenance record](themes/gallery/preview/assets/README.md) and [manifest](themes/gallery/preview/assets/manifest.json) contain prompts, method, dimensions, bytes and hashes; the original PNGs are retained unchanged. Atlas publishing terms remain undecided.
 
+## Layered reference sources
+
+Layered is an original Atlas synthesis for Tamir (Phi Vuong Tuong Tam) with Codex AI assistance. Its teal/petrol palette, opaque tonal hierarchy, geometric sans scale, rounded geometry, native HTML navigation, fictional planning workspace, editing behavior, and timing values are independent Atlas proposals. [Layered sources](themes/layered/sources.md) distinguish concept references, software license evidence, and original implementation.
+
+**Google / Material Design team and contributors** are credited for Material 3 surface roles, shape, states, and adaptive-layout concepts. **Microsoft / Fluent Design team and contributors** are credited for Fluent 2 solid-material and elevation concepts. The inspected [Material Web license](https://github.com/material-components/material-web/blob/5a95667bb70ca5be8785b762fb0303737c3b4ac1/LICENSE) is Apache 2.0, copyright 2018–2023 Google, Inc.; its repository records maintenance mode. The inspected [Fluent UI software license](https://github.com/microsoft/fluentui/blob/93e324f72f0e187ff6a7e5f70ebf929d9b2212a2/LICENSE) is MIT, copyright Microsoft Corporation; assets such as fonts/icons can have separate terms. These software licenses do not establish blanket website prose, screenshots, or brand-asset reuse permission. No upstream source code, token ramp, prose, screenshot, logo, icon package, or other asset is imported. Layered claims no official Material/Fluent implementation, conformance, or endorsement.
+
+**W3C WAI/APG and EOWG contributors**, form tutorial editors **Eric Eggert and Shadi Abou-Zahra**, and **WHATWG contributors** are credited for dialog, focus, form-notification, and native HTML concepts. Document-specific terms remain separate; no tutorial prose or example code is copied. Error-summary heading focus and all local workflow rules are Atlas choices.
+
 ## Fonts
 
 Selected font families are Manrope (Mikhail Sharanda), DM Serif Display (Colophon Foundry), and JetBrains Mono (JetBrains, Philipp Nurullin, Konstantin Bulenkov).
+
+Layered names **Plus Jakarta Sans**, designed by **Gumpita Rahayu of Tokotype**. **6616 Studio** commissioned the original family for Jakarta Provincial Government’s +Jakarta City of Collaboration identity; designer and commissioner are distinct roles. The pinned [upstream OFL notice](https://github.com/tokotype/PlusJakartaSans/blob/18d1cd2f7ea10481919d2f05c1f7064b7307fc26/OFL.txt) states copyright 2020 The Plus Jakarta Sans Project Authors and SIL OFL 1.1. Layered only names a local family with system fallbacks; no font software is included. Preserve the actual chosen package notices before later redistribution.
 
 Gallery names **Inter**, designed by **Rasmus Andersson**. The pinned [upstream Inter license](https://github.com/rsms/inter/blob/353b61b9f4430d5f420d56605a6e7993e0941470/LICENSE.txt) states SIL OFL 1.1 and copyright 2016 The Inter Project Authors; the observed Google Fonts OFL file states copyright 2020 while its metadata states 2016. These are separate inspected notices, not a merged copyright record. No font files are included; preserve the exact chosen package notices before redistribution.
 

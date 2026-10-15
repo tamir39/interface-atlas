@@ -157,6 +157,44 @@
       }
     },
     {
+      "id": "layered",
+      "name": "Layered",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "basis": "original-atlas-synthesis",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "density": {
+        "default": "comfortable",
+        "adaptations": [
+          "compact"
+        ]
+      },
+      "fit_types": [
+        "consumer-app",
+        "personal-planner",
+        "learning-workspace",
+        "team-project-space",
+        "settings-interface"
+      ],
+      "motion_character": "quiet-and-restrained",
+      "decorative_effects": "optional",
+      "implementation_dependency": "none-required",
+      "source_revision": "atlas-layered-research-2026-10-15",
+      "reviewed_on": "2026-10-15",
+      "documents": {
+        "readme": "themes/layered/README.md",
+        "design": "themes/layered/design.md",
+        "sources": "themes/layered/sources.md",
+        "effects": "themes/layered/effects.md",
+        "motion": "themes/layered/motion.md"
+      }
+    },
+    {
       "id": "play",
       "name": "Play",
       "revision": "0.1.0-draft",
