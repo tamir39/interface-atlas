@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Request list</title>
+<style>body{font:1rem system-ui;background:white;color:#17202a;padding:1rem}button,select{font:inherit}:focus-visible{outline:3px solid #1463bc;outline-offset:3px}</style>
+<main><h1>Requests</h1><form id="filters" aria-label="Request filters">
+<label>Attention <select id="attention"><option value="all">All</option><option value="needed">Needed</option></select></label>
+<label>Status <select id="status"><option value="all">All</option><option value="open">Open</option><option value="done">Done</option></select></label>
+<button id="clear-filters" type="button">Clear filters</button>
+</form><ul id="requests"></ul></main>
+<script>
+const records=[{name:'Door repair',attention:'needed',status:'open'},{name:'Lamp replaced',attention:'none',status:'done'}];
+const attention=document.querySelector('#attention');
+const status=document.querySelector('#status');
+const list=document.querySelector('#requests');
+function render(){list.replaceChildren(...records.filter(r=>(attention.value==='all'||r.attention===attention.value)&&(status.value==='all'||r.status===status.value)).map(r=>{const li=document.createElement('li');li.textContent=r.name;return li;}));}
+attention.addEventListener('change',render);
+status.addEventListener('change',render);
+document.querySelector('#clear-filters').addEventListener('click',()=>{attention.value='all';status.value='all';render();});
+render();
+</script></html>

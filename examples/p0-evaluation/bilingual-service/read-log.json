@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "note": "Fresh-context trial with revised P0 input. Logged before display. Excerpts record exact returned bytes/hash plus full source identity. No token/cost/runtime evidence.",
+  "reads": [
+    {
+      "order": 1,
+      "scope": "trial-input",
+      "path": "brief.md",
+      "purpose": "Read immutable trial brief",
+      "selector": "full",
+      "utf8Bytes": 2540,
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+      "sourceFileBytes": 2540,
+      "sourceFileSha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+    },
+    {
+      "order": 2,
+      "scope": "repository",
+      "path": "AGENTS.md",
+      "purpose": "Read repository instructions",
+      "selector": "full",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20",
+      "sourceFileBytes": 1597,
+      "sourceFileSha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "order": 3,
+      "scope": "repository",
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Read required design workflow",
+      "selector": "full",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d",
+      "sourceFileBytes": 2638,
+      "sourceFileSha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "order": 4,
+      "scope": "repository",
+      "path": "knowledge/README.md",
+      "purpose": "Select relevant P0 knowledge routes",
+      "selector": "full",
+      "utf8Bytes": 2249,
+      "sha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07",
+      "sourceFileBytes": 2249,
+      "sourceFileSha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07"
+    },
+    {
+      "order": 5,
+      "scope": "repository",
+      "path": "catalog/themes.json",
+      "purpose": "Discover candidate themes by suitability",
+      "selector": "full",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6",
+      "sourceFileBytes": 10070,
+      "sourceFileSha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "order": 7,
+      "scope": "repository",
+      "path": "themes/botanical/README.md",
+      "purpose": "Assess approachable studio theme fit and limits",
+      "selector": "full",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "sourceFileBytes": 5554,
+      "sourceFileSha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "concurrentGroup": "candidate-readmes-1"
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/layered/README.md",
+      "purpose": "Assess comfortable form-oriented theme fit and limits",
+      "selector": "full",
+      "utf8Bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "sourceFileBytes": 6705,
+      "sourceFileSha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "concurrentGroup": "candidate-readmes-1",
+      "reconstructedFromReturnedMetadata": true
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/editorial/README.md",
+      "purpose": "Assess restrained studio theme fit and limits",
+      "selector": "full",
+      "utf8Bytes": 4591,
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "sourceFileBytes": 4591,
+      "sourceFileSha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "concurrentGroup": "candidate-readmes-1"
+    },
+    {
+      "order": 8,
+      "scope": "repository",
+      "path": "themes/layered/README.md",
+      "purpose": "Re-log candidate after concurrent helper write collision",
+      "selector": "full",
+      "utf8Bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "sourceFileBytes": 6705,
+      "sourceFileSha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+    },
+    {
+      "order": 9,
+      "scope": "repository",
+      "path": "themes/layered/design.md",
+      "purpose": "Read sole selected theme concrete design rules",
+      "selector": "full",
+      "utf8Bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0",
+      "sourceFileBytes": 15292,
+      "sourceFileSha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "order": 10,
+      "scope": "repository",
+      "path": "themes/layered/sources.md",
+      "purpose": "Record selected theme creators versions and reuse terms",
+      "selector": "full",
+      "utf8Bytes": 14276,
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e",
+      "sourceFileBytes": 14276,
+      "sourceFileSha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+    },
+    {
+      "order": 11,
+      "scope": "repository",
+      "path": "themes/layered/motion.md",
+      "purpose": "Resolve restrained control and reduced motion behavior",
+      "selector": "full",
+      "utf8Bytes": 3136,
+      "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b",
+      "sourceFileBytes": 3136,
+      "sourceFileSha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+    },
+    {
+      "order": 12,
+      "scope": "repository",
+      "path": "themes/layered/effects.md",
+      "purpose": "Choose only relevant tonal planes and elevation",
+      "selector": "full",
+      "utf8Bytes": 3491,
+      "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824",
+      "sourceFileBytes": 3491,
+      "sourceFileSha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+    },
+    {
+      "order": 13,
+      "scope": "repository",
+      "path": "templates/project-design.md",
+      "purpose": "Read unchanged project design outline",
+      "selector": "full",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8",
+      "sourceFileBytes": 2301,
+      "sourceFileSha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    },
+    {
+      "order": 14,
+      "scope": "repository",
+      "path": "themes/layered/design.md",
+      "purpose": "Read complete selected design after prior combined output truncation",
+      "selector": "full",
+      "utf8Bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0",
+      "sourceFileBytes": 15292,
+      "sourceFileSha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "order": 15,
+      "scope": "repository",
+      "path": "themes/layered/sources.md",
+      "purpose": "Read complete selected provenance after prior combined output truncation",
+      "selector": "full",
+      "utf8Bytes": 14276,
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e",
+      "sourceFileBytes": 14276,
+      "sourceFileSha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+    },
+    {
+      "order": 16,
+      "scope": "repository",
+      "path": "knowledge/state-and-recovery.md",
+      "purpose": "Resolve draft ownership durability failure and cross-document boundaries",
+      "selector": "full",
+      "utf8Bytes": 17723,
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51",
+      "sourceFileBytes": 17723,
+      "sourceFileSha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+    },
+    {
+      "order": 17,
+      "scope": "repository",
+      "path": "knowledge/forms-and-navigation.md",
+      "purpose": "Resolve multilingual branching review history validation and dirty exit rules",
+      "selector": "full",
+      "utf8Bytes": 18930,
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b",
+      "sourceFileBytes": 18930,
+      "sourceFileSha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+    },
+    {
+      "order": 18,
+      "scope": "repository",
+      "path": "knowledge/uncertain-outcomes.md",
+      "purpose": "Resolve accepted rejected and unconfirmed submission with explicit external gates",
+      "selector": "full",
+      "utf8Bytes": 18322,
+      "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10",
+      "sourceFileBytes": 18322,
+      "sourceFileSha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+    },
+    {
+      "order": 19,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Select source cards for actual form state and uncertain-outcome rules",
+      "selector": "toc",
+      "utf8Bytes": 1954,
+      "sha256": "10105a77ecd98628d29a8c5dfec42e2eb637e03373c08c7891147733906e3549",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 20,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Credit exact validation and input guidance selected for this proposal",
+      "selector": "ids:F01,F02,F04,F06,F07,F08,F09,F10",
+      "utf8Bytes": 15,
+      "sha256": "0d04b0892d270649b55ea98b61ca7d6fd7763c09e6ddf4c4fa2d1480471a291d",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 21,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Read corrected cards for input validation summary status and disabled semantics; previous excerpt contained no metadata",
+      "selector": "ids:F01,F02,F04,F06,F07,F08,F09,F10",
+      "utf8Bytes": 9492,
+      "sha256": "8104a8ba37edfbd0994171c0da560df5d5a67fca43de9383a294e02003a9e697",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 22,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Credit branching review history unload and protocol references used in proposed contract",
+      "selector": "ids:F14,F16,F17,F19,F20,F22,F23,UO-HTTP,UO-FETCH",
+      "utf8Bytes": 12183,
+      "sha256": "1c0ffce80c3989b3312e3e08260f183fea8a8df47421e85691676e31aa1feb78",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    }
+  ],
+  "loggingCorrections": [
+    {
+      "issue": "Original concurrent candidate helper calls raced their read-modify-write log update; original Layered metadata was lost from disk.",
+      "correction": "Original Layered read reconstructed from returned metadata; the subsequent actual Layered reread remains recorded separately. All later helper calls were sequential. The array presents this concurrent group in display order, not disk-read order.",
+      "concurrentGroup": "candidate-readmes-1",
+      "exactDiskReadOrder": "unavailable",
+      "reportedHelperOrders": [
+        7,
+        6,
+        6
+      ]
+    },
+    {
+      "issue": "First ids selector returned only eight hash characters separated by LF (15 bytes), supplying no source metadata.",
+      "correction": "Preserved as actual read order 20; corrected selector reads at orders 21 and 22 supply the source cards."
+    }
+  ]
+}

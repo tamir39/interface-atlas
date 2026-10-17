@@ -1,0 +1,33 @@
+{
+  "note": "Portable derived paths; original raw log hash retained in evidence.json.",
+  "reads": [
+    {
+      "path": "probes/s01/design.md",
+      "purpose": "Read supplied toolbar design requirements",
+      "bytes": 482,
+      "sha256": "526c4bc8186abefe761ec40568b2a7e8cc1ca728fc436bdd84b7c4d6d9f5db83",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s01/index.html",
+      "purpose": "Inspect existing request-list toolbar before focused implementation",
+      "bytes": 1293,
+      "sha256": "6eaaadaf8c83b1970eb05eb1f45371b8c357d6649c34943874963d60fe7df37f",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s01/index.html",
+      "purpose": "Verify final toolbar in local Edge with native keyboard input",
+      "bytes": 1482,
+      "sha256": "bb9fe4a9327125334ab202ab4ddab19d883e2d55f9076eafe1ba32cd81701e20",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s01/index.html",
+      "purpose": "Execute toolbar script against a minimal DOM after browser endpoint failure",
+      "bytes": 1482,
+      "sha256": "bb9fe4a9327125334ab202ab4ddab19d883e2d55f9076eafe1ba32cd81701e20",
+      "mode": "whole"
+    }
+  ]
+}

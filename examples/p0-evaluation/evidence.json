@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "status": "Reviewed document proposals; no skills or product implementation",
+  "reviewDate": "2026-10-15",
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "authorship": "Tamir (Phi Vuong Tuong Tam), with Codex AI assistance",
+  "method": {
+    "protocol": "protocol.md",
+    "reviewedKnowledgeVersion": "0.2-draft",
+    "knowledgeFindings": 6,
+    "uniqueProjectFirstPassFindings": 7,
+    "correctionPasses": 1,
+    "independentReviewClosures": "K01–K06 and CP01–CP03/SF01–SF03/BS01 confirmed closed by original reviewers; no exhaustive or runtime claim",
+    "generationRoute": "Existing unchanged skill plus explicit knowledge-index access, not automatic skill discovery",
+    "comparisonLimits": [
+      "Consumer/storefront familiar briefs and counterexamples in supplied chapters; not held-out",
+      "Fresh agents, extra inputs and revised wording vary; no causal or statistical claim",
+      "Bilingual service has no previous generated baseline",
+      "File/excerpt bytes include repetitions, tiny failed excerpts and material potentially truncated by tool presentation; not tokens/cost"
+    ],
+    "instrumentation": [
+      "Per-trial log races during initial concurrent candidate reads; returned metadata reconstructed, exact within-group read order unavailable",
+      "Source-card selector initially returned hash-character lines; failed emissions retained and correct bounded reads repeated",
+      "Private helper corrected to lock writes and extract complete cards; no repository runtime/helper implementation added",
+      "Initial temporary raw review snapshot unavailable; pre-review four-file identities reconstructed from original P0 evidence"
+    ],
+    "baselineCapture": "Reconstructed pre-review hashes for four changed files from preserved initial P0 evidence; all other files captured after chapter review and before fresh generation. Initial temporary raw snapshot no longer available."
+  },
+  "generationInputs": [
+    {
+      "path": "AGENTS.md",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "path": "catalog/themes.json",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "path": "knowledge/README.md",
+      "utf8Bytes": 2249,
+      "sha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07"
+    },
+    {
+      "path": "knowledge/forms-and-navigation.md",
+      "utf8Bytes": 18930,
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+    },
+    {
+      "path": "knowledge/state-and-recovery.md",
+      "utf8Bytes": 17723,
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+    },
+    {
+      "path": "knowledge/uncertain-outcomes.md",
+      "utf8Bytes": 18322,
+      "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+    },
+    {
+      "path": "references/p0-research.md",
+      "utf8Bytes": 59847,
+      "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "path": "templates/project-design.md",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    },
+    {
+      "path": "themes/botanical/README.md",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+    },
+    {
+      "path": "themes/editorial/README.md",
+      "utf8Bytes": 4591,
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a"
+    },
+    {
+      "path": "themes/gallery/README.md",
+      "utf8Bytes": 6100,
+      "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b"
+    },
+    {
+      "path": "themes/gallery/design.md",
+      "utf8Bytes": 17395,
+      "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+    },
+    {
+      "path": "themes/gallery/effects.md",
+      "utf8Bytes": 3269,
+      "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276"
+    },
+    {
+      "path": "themes/gallery/motion.md",
+      "utf8Bytes": 3173,
+      "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8"
+    },
+    {
+      "path": "themes/gallery/sources.md",
+      "utf8Bytes": 13653,
+      "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+    },
+    {
+      "path": "themes/layered/README.md",
+      "utf8Bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+    },
+    {
+      "path": "themes/layered/design.md",
+      "utf8Bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "path": "themes/layered/effects.md",
+      "utf8Bytes": 3491,
+      "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+    },
+    {
+      "path": "themes/layered/motion.md",
+      "utf8Bytes": 3136,
+      "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+    },
+    {
+      "path": "themes/layered/sources.md",
+      "utf8Bytes": 14276,
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+    }
+  ],
+  "knowledgeRevision": {
+    "before": [
+      {
+        "path": "knowledge/forms-and-navigation.md",
+        "utf8Bytes": 17250,
+        "sha256": "28541a3bb0cf40672c111d61527d38a4e94db8f6246b02b4aed2a7565f38bbd1"
+      },
+      {
+        "path": "knowledge/state-and-recovery.md",
+        "utf8Bytes": 15196,
+        "sha256": "2ae3390ca74327ec16aa25173d9df2b04a9fbac14fd33d4b43d63fa8ca085bcd"
+      },
+      {
+        "path": "knowledge/uncertain-outcomes.md",
+        "utf8Bytes": 15672,
+        "sha256": "feee04db4aeb759a9a249f45ceb9efb8add60a9bc5fde4e5ee98af5c9047755c"
+      },
+      {
+        "path": "references/p0-research.md",
+        "utf8Bytes": 57297,
+        "sha256": "a11279a0e0291d3419ab230d681fd72e52bf15219f8a75c6264ddefc3c2e341a"
+      }
+    ],
+    "after": [
+      {
+        "path": "knowledge/forms-and-navigation.md",
+        "utf8Bytes": 18930,
+        "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+      },
+      {
+        "path": "knowledge/state-and-recovery.md",
+        "utf8Bytes": 17723,
+        "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+      },
+      {
+        "path": "knowledge/uncertain-outcomes.md",
+        "utf8Bytes": 18322,
+        "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+      },
+      {
+        "path": "references/p0-research.md",
+        "utf8Bytes": 59847,
+        "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+      }
+    ]
+  },
+  "trials": [
+    {
+      "id": "consumer-app",
+      "theme": "layered",
+      "repositoryReadOperations": 16,
+      "uniqueRepositoryFiles": 14,
+      "returnedRepositoryBytes": 115164,
+      "briefReadBytes": 2174,
+      "knowledgeBytes": 38902,
+      "knowledgeChapters": [
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md"
+      ],
+      "artifacts": {
+        "brief.md": {
+          "utf8Bytes": 2174,
+          "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10",
+          "whitespaceWords": 301
+        },
+        "first-draft.md": {
+          "utf8Bytes": 20696,
+          "sha256": "7280c45cb8798afe0088bd5fda4def15e5e9637a2a6217235d2baff0d2e8f3e8",
+          "whitespaceWords": 2735
+        },
+        "design.md": {
+          "utf8Bytes": 23096,
+          "sha256": "ed73c78e9d4c89bd5d909f7d435ec2abe0aa22c275694a1aef40fcbde3568313",
+          "whitespaceWords": 3056
+        },
+        "evaluation.md": {
+          "utf8Bytes": 11238,
+          "sha256": "a6bd5abb04e8ad17f38a063b1d3a51592ab2701a204b79b3cc751cf8297a0947",
+          "whitespaceWords": 1490
+        },
+        "read-log.json": {
+          "utf8Bytes": 11024,
+          "sha256": "5178141749e1e36de0cc5bda426f56847d32fac19cf045ab11d8e968fb0d0243"
+        }
+      },
+      "loggingExceptions": "See original log/evaluation disclosures",
+      "oldBaseline": {
+        "id": "consumer-app",
+        "theme": "layered",
+        "generationSourceFiles": 10,
+        "generationSourceBytes": 67137,
+        "reviewAdditionalRepoContentReads": 0,
+        "initialDesign": {
+          "path": "consumer-app/design.md",
+          "bytes": 18678,
+          "sha256": "6dabdbd02517606d4b798b07830b934d914c18395c21765aff4d08015f4c3e0f"
+        },
+        "reviewedDesign": {
+          "bytes": 21165,
+          "whitespaceWords": 2883,
+          "sha256": "e03c8960266b6d2778142871f35862a51e1652a9e5722fb3dbd61c8768eabafa"
+        },
+        "loggingCaveat": "First two metadata entries recorded immediately after initial content load; later entries recorded before output."
+      },
+      "initialFrozenArtifacts": [
+        {
+          "path": "consumer-app/brief.md",
+          "bytes": 2174,
+          "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+        },
+        {
+          "path": "consumer-app/first-draft.md",
+          "bytes": 20696,
+          "sha256": "7280c45cb8798afe0088bd5fda4def15e5e9637a2a6217235d2baff0d2e8f3e8"
+        },
+        {
+          "path": "consumer-app/design.md",
+          "bytes": 20696,
+          "sha256": "7280c45cb8798afe0088bd5fda4def15e5e9637a2a6217235d2baff0d2e8f3e8"
+        },
+        {
+          "path": "consumer-app/evaluation.md",
+          "bytes": 9548,
+          "sha256": "d6044dba6ddec25f327041cf1ca4d0658338168a290eff9787de4e98a9497638"
+        },
+        {
+          "path": "consumer-app/read-log.json",
+          "bytes": 11024,
+          "sha256": "5178141749e1e36de0cc5bda426f56847d32fac19cf045ab11d8e968fb0d0243"
+        }
+      ],
+      "currentArtifacts": "See artifacts and per-trial files; evaluation.md preserves original author map followed by root review",
+      "readingScopeQualification": "Exact emitted contents/hashes reconstructed and checked; concurrent first-read sequence incomplete, C12 Partial"
+    },
+    {
+      "id": "storefront",
+      "theme": "gallery",
+      "repositoryReadOperations": 20,
+      "uniqueRepositoryFiles": 16,
+      "returnedRepositoryBytes": 165891,
+      "briefReadBytes": 2428,
+      "knowledgeBytes": 57224,
+      "knowledgeChapters": [
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/uncertain-outcomes.md"
+      ],
+      "artifacts": {
+        "brief.md": {
+          "utf8Bytes": 2428,
+          "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb",
+          "whitespaceWords": 326
+        },
+        "first-draft.md": {
+          "utf8Bytes": 23782,
+          "sha256": "2a09f7741753f5334288616f554f64c3a4882205b2637a7cfb8527f9377c3c97",
+          "whitespaceWords": 3186
+        },
+        "design.md": {
+          "utf8Bytes": 26714,
+          "sha256": "ee984e1a672b34bfb0d80cecb55a2da51793ee5dd3397ad14e399f65098b19e2",
+          "whitespaceWords": 3570
+        },
+        "evaluation.md": {
+          "utf8Bytes": 12989,
+          "sha256": "3dcaf6909e5b72b304a5b7501f6a3a5286aec65f005c4926d26df0ece1071d50",
+          "whitespaceWords": 1692
+        },
+        "read-log.json": {
+          "utf8Bytes": 10630,
+          "sha256": "0349a3246ac04a7ff2e56fea16dc5aab8ce5d87fad33153f26fb44de3add47f3"
+        }
+      },
+      "loggingExceptions": "See original log/evaluation disclosures",
+      "oldBaseline": {
+        "id": "storefront",
+        "theme": "gallery",
+        "generationSourceFiles": 10,
+        "generationSourceBytes": 67072,
+        "reviewAdditionalRepoContentReads": 0,
+        "initialDesign": {
+          "path": "storefront/design.md",
+          "bytes": 20258,
+          "sha256": "fde3ba27cd1487d1b901fd8da84606ef6bcc1109ff75a47b505786c4dd9211ef"
+        },
+        "reviewedDesign": {
+          "bytes": 22729,
+          "whitespaceWords": 2847,
+          "sha256": "be39c96ff9fbad6349e2671f873d1aa9125592d033b1a05fd5ff5a49c2d0df7f"
+        },
+        "loggingCaveat": "Timestamped metadata recorded at each content read before output."
+      },
+      "initialFrozenArtifacts": [
+        {
+          "path": "storefront/brief.md",
+          "bytes": 2428,
+          "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+        },
+        {
+          "path": "storefront/first-draft.md",
+          "bytes": 23782,
+          "sha256": "2a09f7741753f5334288616f554f64c3a4882205b2637a7cfb8527f9377c3c97"
+        },
+        {
+          "path": "storefront/design.md",
+          "bytes": 23782,
+          "sha256": "2a09f7741753f5334288616f554f64c3a4882205b2637a7cfb8527f9377c3c97"
+        },
+        {
+          "path": "storefront/evaluation.md",
+          "bytes": 11284,
+          "sha256": "babc250f42a8140ac149f4d2945ebe72afe4c5256c0af6a8381ff457e16091c6"
+        },
+        {
+          "path": "storefront/read-log.json",
+          "bytes": 10630,
+          "sha256": "0349a3246ac04a7ff2e56fea16dc5aab8ce5d87fad33153f26fb44de3add47f3"
+        }
+      ],
+      "currentArtifacts": "See artifacts and per-trial files; evaluation.md preserves original author map followed by root review",
+      "readingScopeQualification": "Exact emitted contents/hashes reconstructed and checked; concurrent first-read sequence incomplete, C12 Partial"
+    },
+    {
+      "id": "bilingual-service",
+      "theme": "layered",
+      "repositoryReadOperations": 22,
+      "uniqueRepositoryFiles": 16,
+      "returnedRepositoryBytes": 186792,
+      "briefReadBytes": 2540,
+      "knowledgeBytes": 57224,
+      "knowledgeChapters": [
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/uncertain-outcomes.md"
+      ],
+      "artifacts": {
+        "brief.md": {
+          "utf8Bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+          "whitespaceWords": 326
+        },
+        "first-draft.md": {
+          "utf8Bytes": 22389,
+          "sha256": "4770e8c650e10c303b6faf6d4f7d8384e76661e660df3c45f28a7748e2d574ce",
+          "whitespaceWords": 2995
+        },
+        "design.md": {
+          "utf8Bytes": 23685,
+          "sha256": "1f6f2617496e957e0475e9997b333650f83c9cb6fd385ece5d4e4e15f8338d1e",
+          "whitespaceWords": 3148
+        },
+        "evaluation.md": {
+          "utf8Bytes": 8932,
+          "sha256": "40b12d4cba9acc2da3eedd5ba9be858fe9bbc0e9951e5133a65e94782a0376ef",
+          "whitespaceWords": 1192
+        },
+        "read-log.json": {
+          "utf8Bytes": 11618,
+          "sha256": "5d8bea5504ed909f0e22da36c87e92cf6282528d1145892bc004fde99f1b0925"
+        }
+      },
+      "loggingExceptions": [
+        {
+          "issue": "Original concurrent candidate helper calls raced their read-modify-write log update; original Layered metadata was lost from disk.",
+          "correction": "Original Layered read reconstructed from returned metadata; the subsequent actual Layered reread remains recorded separately. All later helper calls were sequential. The array presents this concurrent group in display order, not disk-read order.",
+          "concurrentGroup": "candidate-readmes-1",
+          "exactDiskReadOrder": "unavailable",
+          "reportedHelperOrders": [
+            7,
+            6,
+            6
+          ]
+        },
+        {
+          "issue": "First ids selector returned only eight hash characters separated by LF (15 bytes), supplying no source metadata.",
+          "correction": "Preserved as actual read order 20; corrected selector reads at orders 21 and 22 supply the source cards."
+        }
+      ],
+      "oldBaseline": null,
+      "initialFrozenArtifacts": [
+        {
+          "path": "bilingual-service/brief.md",
+          "bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+        },
+        {
+          "path": "bilingual-service/first-draft.md",
+          "bytes": 22389,
+          "sha256": "4770e8c650e10c303b6faf6d4f7d8384e76661e660df3c45f28a7748e2d574ce"
+        },
+        {
+          "path": "bilingual-service/design.md",
+          "bytes": 22389,
+          "sha256": "4770e8c650e10c303b6faf6d4f7d8384e76661e660df3c45f28a7748e2d574ce"
+        },
+        {
+          "path": "bilingual-service/evaluation.md",
+          "bytes": 7682,
+          "sha256": "8c49948b115252660c606b1892fb1cba825a629661d25fb102b9f370c29ba183"
+        },
+        {
+          "path": "bilingual-service/read-log.json",
+          "bytes": 11618,
+          "sha256": "5d8bea5504ed909f0e22da36c87e92cf6282528d1145892bc004fde99f1b0925"
+        }
+      ],
+      "currentArtifacts": "See artifacts and per-trial files; evaluation.md preserves original author map followed by root review",
+      "readingScopeQualification": "Exact emitted contents/hashes reconstructed and checked; concurrent first-read sequence incomplete, C12 Partial"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "utf8Bytes": 13917,
+      "sha256": "37a405135f0bbe888c39d07b896db4b822f16f180b33766f5b3476f9e9b2d734"
+    },
+    {
+      "path": "bilingual-service/brief.md",
+      "utf8Bytes": 2540,
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+    },
+    {
+      "path": "bilingual-service/design.md",
+      "utf8Bytes": 23685,
+      "sha256": "1f6f2617496e957e0475e9997b333650f83c9cb6fd385ece5d4e4e15f8338d1e"
+    },
+    {
+      "path": "bilingual-service/evaluation.md",
+      "utf8Bytes": 8932,
+      "sha256": "40b12d4cba9acc2da3eedd5ba9be858fe9bbc0e9951e5133a65e94782a0376ef"
+    },
+    {
+      "path": "bilingual-service/first-draft.md",
+      "utf8Bytes": 22389,
+      "sha256": "4770e8c650e10c303b6faf6d4f7d8384e76661e660df3c45f28a7748e2d574ce"
+    },
+    {
+      "path": "bilingual-service/read-log.json",
+      "utf8Bytes": 11618,
+      "sha256": "5d8bea5504ed909f0e22da36c87e92cf6282528d1145892bc004fde99f1b0925"
+    },
+    {
+      "path": "consumer-app/brief.md",
+      "utf8Bytes": 2174,
+      "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+    },
+    {
+      "path": "consumer-app/design.md",
+      "utf8Bytes": 23096,
+      "sha256": "ed73c78e9d4c89bd5d909f7d435ec2abe0aa22c275694a1aef40fcbde3568313"
+    },
+    {
+      "path": "consumer-app/evaluation.md",
+      "utf8Bytes": 11238,
+      "sha256": "a6bd5abb04e8ad17f38a063b1d3a51592ab2701a204b79b3cc751cf8297a0947"
+    },
+    {
+      "path": "consumer-app/first-draft.md",
+      "utf8Bytes": 20696,
+      "sha256": "7280c45cb8798afe0088bd5fda4def15e5e9637a2a6217235d2baff0d2e8f3e8"
+    },
+    {
+      "path": "consumer-app/read-log.json",
+      "utf8Bytes": 11024,
+      "sha256": "5178141749e1e36de0cc5bda426f56847d32fac19cf045ab11d8e968fb0d0243"
+    },
+    {
+      "path": "protocol.md",
+      "utf8Bytes": 5882,
+      "sha256": "aa295ab7fef3a9abf85fb6b53503be87aefacb8663ff33784eac04ac9cc973d2"
+    },
+    {
+      "path": "review-findings.md",
+      "utf8Bytes": 5479,
+      "sha256": "e5dee669d28486e0f06133bb380ed328863fcdee14621cde01a2640cf15e6043"
+    },
+    {
+      "path": "storefront/brief.md",
+      "utf8Bytes": 2428,
+      "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+    },
+    {
+      "path": "storefront/design.md",
+      "utf8Bytes": 26714,
+      "sha256": "ee984e1a672b34bfb0d80cecb55a2da51793ee5dd3397ad14e399f65098b19e2"
+    },
+    {
+      "path": "storefront/evaluation.md",
+      "utf8Bytes": 12989,
+      "sha256": "3dcaf6909e5b72b304a5b7501f6a3a5286aec65f005c4926d26df0ece1071d50"
+    },
+    {
+      "path": "storefront/first-draft.md",
+      "utf8Bytes": 23782,
+      "sha256": "2a09f7741753f5334288616f554f64c3a4882205b2637a7cfb8527f9377c3c97"
+    },
+    {
+      "path": "storefront/read-log.json",
+      "utf8Bytes": 10630,
+      "sha256": "0349a3246ac04a7ff2e56fea16dc5aab8ce5d87fad33153f26fb44de3add47f3"
+    },
+    {
+      "path": "trial-findings.json",
+      "utf8Bytes": 3616,
+      "sha256": "92274a9afc6217e544a5023fc0168f3094999c4f05a329e8841042c02eb99146"
+    }
+  ],
+  "scope": {
+    "baselineFileCount": 197,
+    "allowedExistingPaths": [
+      "README.md",
+      "examples/README.md",
+      "knowledge/state-and-recovery.md",
+      "knowledge/forms-and-navigation.md",
+      "knowledge/uncertain-outcomes.md",
+      "references/SOURCES.md",
+      "references/p0-research.md",
+      "references/p0-review.md"
+    ],
+    "unchangedBaselineFiles": 189,
+    "unchangedCanonicalSha256": "ad875cd1aa72f7cdf20dc25c8c0c3bc4db62484d672584a2fe9e05f4c400b500",
+    "aggregateMethod": "Sorted baseline path, TAB, lowercase SHA-256, LF, excluding eight allowed existing paths",
+    "protectedChecks": [
+      {
+        "path": "references/p0-evidence.json",
+        "utf8Bytes": 6155,
+        "sha256": "c1c6487a79c40538a130a5bb1d0911c8a5afeaf02e85bf115d0959972fd7f0f3"
+      },
+      {
+        "path": "skills/prepare-frontend-design/SKILL.md",
+        "utf8Bytes": 2638,
+        "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+      },
+      {
+        "path": "templates/project-design.md",
+        "utf8Bytes": 2301,
+        "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+      }
+    ]
+  },
+  "performed": [
+    "Primary-source-bound chapter review and six corrections before generation",
+    "Three fresh-context selectively loaded design-document trials",
+    "Root independent reading plus one independent reviewer per trial",
+    "One preserved first-pass/recorded correction pass and closure review",
+    "Input/artifact hash, text normalization and protected-scope checks"
+  ],
+  "notPerformed": [
+    "Skill/template implementation or edits",
+    "Theme/catalog/preview/tool/workflow implementation",
+    "UI, browser, keyboard, assistive-technology, storage or network tests",
+    "Actual service/provider integration, payment or submission",
+    "Token/billing/latency, usability or causal improvement measurements",
+    "Commit, push, merge or deployment"
+  ],
+  "pending": [
+    "User review of results before any skill change",
+    "Actual project input/contract gates in each reviewed design",
+    "Future implementation and browser/AT/service evidence"
+  ],
+  "validation": {
+    "status": "Documentation and integrity checks passed; runtime not tested",
+    "checks": {
+      "newArtifacts": 20,
+      "normalizedHashedArtifacts": 19,
+      "immutableFirstDrafts": 3,
+      "unchangedPriorBriefs": 2,
+      "recoverableOriginalAuthorMaps": 3,
+      "exactGenerationInputFiles": 21,
+      "exactLoggedRepositoryReadOperations": 58,
+      "documentationLocalLinks": 637,
+      "externalURLSyntaxTargets": 664,
+      "checkedSectionFragments": 26,
+      "protectedBaselineFiles": 189,
+      "unchangedPriorAssessmentArtifacts": 14,
+      "themeCatalog": "9 themes match metadata",
+      "gitDiffCheck": "Passed"
+    },
+    "limits": [
+      "URL syntax/existence checks do not prove external reachability",
+      "Concurrent read order remains unavailable; C12 Partial",
+      "Historical P0 evidence unchanged and records initial snapshot, not current chapter hashes",
+      "No browser/AT/storage/provider, usability or token-cost validation"
+    ]
+  }
+}

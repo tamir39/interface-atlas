@@ -23,6 +23,17 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this workflow.
 
+## Prepare or review a project
+
+- [Prepare frontend design](skills/prepare-frontend-design/SKILL.md) creates or deliberately revises a self-contained project design.md. It routes general UI/UX, accessibility/responsive behavior and applicable state, form, outcome or agent questions through [selected knowledge](knowledge/README.md).
+- [Review frontend design](skills/review-frontend-design/SKILL.md) is opt-in. Invoke it explicitly as `$review-frontend-design` where registered, or ask an agent to use that file by path. It reports evidence-backed findings and coverage without implementing fixes. Its Codex metadata disables implicit invocation; actual discovery depends on the consuming host.
+
+These are repository workflows: preserve the Atlas directory layout when using their shared references. This change does not install them globally. Normal implementation should use the consuming project's documents. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
+
+The [updated skill trials](examples/skill-evaluation/README.md) record generation, explicit review, source-reading scope and remaining evidence limits.
+
+Git preserves exact bytes for the recorded skill-trial artifacts and retained license files, so their source hashes remain verifiable across platforms.
+
 ## Themes and examples
 
 - [Editorial](themes/editorial/README.md): reusable identity, visual rules, optional effects, motion, and provenance.
@@ -49,6 +60,11 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 - [Live logo gallery](https://tamir39.github.io/interface-atlas/assets/brand/preview.html): nine logo variants, small-size comparisons, and light/dark README heroes.
 - Validation evidence: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), and [Layered](themes/layered/validation.md), with checks performed and remaining coverage.
 - [Preparation workflow evaluation](examples/workflow-evaluation/README.md): one fresh journal brief and the self-contained design document it produced.
+- [Nine-theme coverage and design trials](examples/coverage-evaluation/README.md): 54 visual-fit judgments, consumer/storefront design documents, reading logs, review findings, and the proposed knowledge/skills roadmap.
+- [P0 knowledge drafts](knowledge/README.md): state ownership, durable recovery, forms, navigation and uncertain outcomes, with [source credits](references/p0-research.md) and a [desk review](references/p0-review.md). The original research stage; selected guidance is now used by the preparation and opt-in review workflows.
+
+- [P0 review and fresh design trials](examples/p0-evaluation/README.md): six knowledge corrections, three preserved first drafts, seven project corrections, reading scope and remaining gates. Historical evaluation before these skill updates.
+- [Frontend and UI/UX skill research](references/skill-research.md): preparation, design review, accessibility/responsive behavior, Agent Experience and general UI/UX; compared reading scope, creators, licenses and proposed adaptations. Research only.
 
 ## Structure
 
@@ -223,14 +239,77 @@ interface-atlas/
 │   └── themes.json
 ├── knowledge/
 │   ├── README.md
-│   └── agent-experience.md
+│   ├── ui-ux-design.md
+│   ├── accessibility-and-responsive.md
+│   ├── agent-experience.md
+│   ├── state-and-recovery.md
+│   ├── forms-and-navigation.md
+│   └── uncertain-outcomes.md
 ├── skills/
-│   └── prepare-frontend-design/
-│       └── SKILL.md
+│   ├── prepare-frontend-design/
+│   │   └── SKILL.md
+│   └── review-frontend-design/
+│       ├── SKILL.md
+│       ├── references/
+│       │   └── state-transitions.md
+│       └── agents/
+│           └── openai.yaml
 ├── templates/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── skill-evaluation/
+│   │   ├── README.md
+│   │   ├── protocol.md
+│   │   ├── review-findings.md
+│   │   ├── evidence.json
+│   │   ├── consumer-app/
+│   │   ├── storefront/
+│   │   ├── bilingual-service/
+│   │   ├── bilingual-service-rerun/
+│   │   ├── agent-operations/
+│   │   └── scope-probes/
+│   ├── p0-evaluation/
+│   │   ├── README.md
+│   │   ├── protocol.md
+│   │   ├── review-findings.md
+│   │   ├── trial-findings.json
+│   │   ├── evidence.json
+│   │   ├── consumer-app/
+│   │   │   ├── brief.md
+│   │   │   ├── first-draft.md
+│   │   │   ├── design.md
+│   │   │   ├── evaluation.md
+│   │   │   └── read-log.json
+│   │   ├── storefront/
+│   │   │   ├── brief.md
+│   │   │   ├── first-draft.md
+│   │   │   ├── design.md
+│   │   │   ├── evaluation.md
+│   │   │   └── read-log.json
+│   │   └── bilingual-service/
+│   │       ├── brief.md
+│   │       ├── first-draft.md
+│   │       ├── design.md
+│   │       ├── evaluation.md
+│   │       └── read-log.json
+│   ├── coverage-evaluation/
+│   │   ├── README.md
+│   │   ├── matrix.md
+│   │   ├── matrix.json
+│   │   ├── protocol.md
+│   │   ├── evidence.json
+│   │   ├── skills-roadmap.md
+│   │   ├── consumer-app/
+│   │   │   ├── brief.md
+│   │   │   ├── design.md
+│   │   │   ├── evaluation.md
+│   │   │   └── read-log.json
+│   │   └── storefront/
+│   │       ├── brief.md
+│   │       ├── design.md
+│   │       ├── evaluation.md
+│   │       └── read-log.json
 │   ├── portfolio/
 │   │   └── design.md
 │   ├── agent-operations-dashboard/
@@ -239,7 +318,19 @@ interface-atlas/
 │       ├── README.md
 │       └── design.md
 ├── references/
-│   └── SOURCES.md
+│   ├── SOURCES.md
+│   ├── p0-research.md
+│   ├── p0-review.md
+│   ├── p0-evidence.json
+│   ├── skill-research.md
+│   ├── skill-research.json
+│   ├── skill-adaptations.md
+│   └── licenses/
+│       ├── jakub-krehel-MIT.txt
+│       ├── julien-thibeaut-MIT.txt
+│       ├── ghaida-intent-CC0.txt
+│       ├── mohit-aggarwal-MIT.txt
+│       └── burhan-sebin-MIT.txt
 ├── adapters/
 │   └── README.md
 ├── tools/

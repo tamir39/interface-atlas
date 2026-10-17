@@ -1,0 +1,3297 @@
+{
+  "schemaVersion": 1,
+  "status": "research-proposal-no-implementation",
+  "inspectedDate": "2026-10-17",
+  "credits": "Original comparison by Tamir (Phi Vuong Tuong Tam), with Codex AI assistance; upstream creators credited per record.",
+  "scope": {
+    "shortlistedSkillEntryFiles": 23,
+    "inspectedSkillEntryFilesIncludingIntentSupport": 25,
+    "commandProfiles": 5,
+    "guidanceReferences": 2,
+    "independentPublisherRepositories": 12,
+    "optionalSiblingEntries": "Intent Evaluate and master Intent are measured support, not additional shortlisted entries.",
+    "noUpstreamCodeExecuted": true,
+    "noSkillsInstalled": true,
+    "noSkillTemplateThemeRuntimeChanges": true,
+    "privateSourceCache": "Raw upstream files are retained only in private research staging; this repository contains comparison prose and metadata, not vendored source.",
+    "limits": "Bounded primary-source comparison; not exhaustive, no outcome benchmark. Artifact presence/hashes do not prove every cached support file received a full semantic review."
+  },
+  "measurement": {
+    "entry": "Pinned raw-file bytes independently rechecked from private cache; whitespace words count the whole UTF-8 file including front matter/code.",
+    "references": "Entry, required fixed references, conditional branches, optional siblings and dynamic output are separate. Described fixed profiles are not total execution context.",
+    "excluded": "Skill discovery metadata, research license/README reads, project files, browser media/results, tool instructions/output, delegated responses, runtime data and transcripts are not measured task totals.",
+    "notMeasured": "Tokens, billing, latency, design quality, real-user effectiveness, conformance or runtime safety."
+  },
+  "candidates": [
+    {
+      "id": "stitch-design-md",
+      "name": "Stitch design-md",
+      "kind": "skill-entry",
+      "family": "google-labs-code/stitch-skills",
+      "areas": [
+        "project-design-preparation"
+      ],
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "repo": "google-labs-code/stitch-skills",
+      "sourcePath": "plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Google Labs Code and Stitch Skills contributors; no individual author established for these files",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/LICENSE",
+        "scope": "Root LICENSE; no nearer license found for the selected skill paths in the recursive tree",
+        "notice": "Retain license and applicable attribution/NOTICE material with redistributed source or adaptations; mark modifications. No notice file found at this pin.",
+        "limits": "Does not grant rights in separately fetched project assets, fonts, or screenshots. The README describes this repository as not an officially supported Google product."
+      },
+      "reading": {
+        "entryBytes": 7654,
+        "entryWords": 1073,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": "Runtime project source, screen HTML and screenshots vary by project.",
+        "method": "Raw pinned UTF-8 bytes; whitespace-delimited words, including front matter and code. This is not tokenizer usage or measured task cost.",
+        "mandatoryRemoteReferences": [
+          {
+            "url": "https://stitch.withgoogle.com/docs/learn/prompting/",
+            "bytes": null,
+            "status": "Explicit prerequisite; web page returned no readable text on 2026-10-17."
+          }
+        ],
+        "mandatoryLocalTotalBytes": 7654,
+        "caveats": "7,654 bytes is only the local entry. A prerequisite remote guide plus runtime screen/project material remains unmeasured. The local example is optional, not a mandatory dependency."
+      },
+      "entryPath": "plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "entrySHA256": "eb15f44646528f3a087ce023329ae699c1b6e803662af68338e1eb1c0406b59b",
+      "sourceFileSHA256": "eb15f44646528f3a087ce023329ae699c1b6e803662af68338e1eb1c0406b59b",
+      "atlasAssessment": "Existing-screen visual inventory; optional Stitch branch."
+    },
+    {
+      "id": "stitch-extract-design-md",
+      "name": "Stitch extract-design-md",
+      "kind": "skill-entry",
+      "family": "google-labs-code/stitch-skills",
+      "areas": [
+        "project-design-preparation"
+      ],
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "repo": "google-labs-code/stitch-skills",
+      "sourcePath": "plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Google Labs Code and Stitch Skills contributors; no individual author established for these files",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/LICENSE",
+        "scope": "Root LICENSE; no nearer license found for the selected skill paths in the recursive tree",
+        "notice": "Retain license and applicable attribution/NOTICE material with redistributed source or adaptations; mark modifications. No notice file found at this pin.",
+        "limits": "Does not grant rights in separately fetched project assets, fonts, or screenshots. The README describes this repository as not an officially supported Google product."
+      },
+      "reading": {
+        "entryBytes": 14078,
+        "entryWords": 2055,
+        "mandatoryReferenceBytes": {
+          "min": 9674,
+          "max": 12197
+        },
+        "mandatoryPaths": [
+          "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+          "Exactly one matching reference: plugins/stitch-design/skills/extract-design-md/references/angular.md | plugins/stitch-design/skills/extract-design-md/references/plain-css.md | plugins/stitch-design/skills/extract-design-md/references/react-tailwind.md | plugins/stitch-design/skills/extract-design-md/references/svelte.md | plugins/stitch-design/skills/extract-design-md/references/vue.md"
+        ],
+        "optionalProfile": "Runtime project source, screen HTML and screenshots vary by project.",
+        "method": "Raw pinned UTF-8 bytes; whitespace-delimited words, including front matter and code. This is not tokenizer usage or measured task cost.",
+        "mandatoryLocalTotalBytes": {
+          "min": 23752,
+          "max": 26275
+        },
+        "routes": [
+          {
+            "framework": "angular",
+            "paths": [
+              "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+              "plugins/stitch-design/skills/extract-design-md/references/angular.md"
+            ],
+            "totalBytes": 26275
+          },
+          {
+            "framework": "plain-css",
+            "paths": [
+              "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+              "plugins/stitch-design/skills/extract-design-md/references/plain-css.md"
+            ],
+            "totalBytes": 25029
+          },
+          {
+            "framework": "react-tailwind",
+            "paths": [
+              "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+              "plugins/stitch-design/skills/extract-design-md/references/react-tailwind.md"
+            ],
+            "totalBytes": 25621
+          },
+          {
+            "framework": "svelte",
+            "paths": [
+              "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+              "plugins/stitch-design/skills/extract-design-md/references/svelte.md"
+            ],
+            "totalBytes": 23752
+          },
+          {
+            "framework": "vue",
+            "paths": [
+              "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+              "plugins/stitch-design/skills/extract-design-md/references/vue.md"
+            ],
+            "totalBytes": 24115
+          }
+        ],
+        "caveats": "The range selects one framework guide; reading all five is not required. Project code and optional linked skills are additional variable context."
+      },
+      "entryPath": "plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "entrySHA256": "f9c32b30acd9fea3dba7306bf38e3a859f49c1f27bcf44f9cf16d3a60a730276",
+      "sourceFileSHA256": "f9c32b30acd9fea3dba7306bf38e3a859f49c1f27bcf44f9cf16d3a60a730276",
+      "atlasAssessment": "Existing-source design extraction; preserve observations."
+    },
+    {
+      "id": "anthropic-frontend-design",
+      "name": "Frontend Design",
+      "kind": "skill-entry",
+      "family": "anthropics/skills",
+      "areas": [
+        "general UI/UX",
+        "creative frontend",
+        "compact design plan",
+        "self-critique"
+      ],
+      "sourceURL": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+      "repo": "anthropics/skills",
+      "sourcePath": "skills/frontend-design/SKILL.md",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Anthropic; no individual author named in the inspected skill or skill-local license.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+        "scope": "Explicit skill-local LICENSE.txt named by this SKILL.md. Do not generalize across the repository: README distinguishes Apache examples from source-available document skills; root LICENSE URL returned 404 at this pin.",
+        "notice": "Retain license and relevant copyright/attribution; mark modified files. Skill-local license has no named copyright appendix.",
+        "limits": "No trademark grant; warranty disclaimers. This determination covers frontend-design, not all anthropics/skills content."
+      },
+      "reading": {
+        "entryBytes": 9390,
+        "entryWords": 1516,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "fixedClosureBytes": 9390,
+        "profile": "Complete entry; no additional mandatory bundled reference reads.",
+        "optionalProfile": "Names a typography book as guidance but does not instruct loading it. Project brief, implementation, assets and screenshots have unknown size.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "No script or bundled database in the inspected skill directory. The guide's compactness is a reading-size observation only."
+      },
+      "entryPath": "skills/frontend-design/SKILL.md",
+      "entrySHA256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "sourceFileSHA256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "atlasAssessment": "Optional creative direction; respect chosen identity."
+    },
+    {
+      "id": "impeccable",
+      "name": "Impeccable",
+      "kind": "skill-entry",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "general UI/UX",
+        "workflow routing",
+        "design systems",
+        "creative frontend"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/SKILL.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/SKILL.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "mandatoryReferenceBytes": 3336,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/routing.md"
+        ],
+        "fixedClosureBytes": 14995,
+        "profile": "No-argument context-aware command menu; `context` runtime output excluded.",
+        "optionalProfile": {
+          "newWorkDirectBytes": 61778,
+          "craftFloorBeforeUIEditBytes": 5502,
+          "initWhenProductContextMissingBytes": 11766,
+          "operateReferenceBytes": 4145,
+          "details": "Command-specific branches load different playbooks. New-work is not a single closed read: it delegates, calls runtime tools and conditionally links additional reference documents."
+        },
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "atlasAssessment": "Study selected command contracts; avoid importing the engine."
+    },
+    {
+      "id": "impeccable-document",
+      "name": "Impeccable document",
+      "kind": "command-profile",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "prepare project DESIGN.md",
+        "extract design system"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/document.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/reference/document.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryPath": ".agents/skills/impeccable/SKILL.md",
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "commandDocBytes": 27523,
+        "commandDocWords": 3844,
+        "mandatoryReferenceBytes": 27523,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/document.md"
+        ],
+        "fixedClosureBytes": 39182,
+        "profile": "Scan mode selected: +27,523 mandatory playbook bytes. Seed mode additionally directs init (11,766) if PRODUCT.md is missing and new-work (61,778); its transitive and runtime branches are not a closed fixed total.",
+        "optionalProfile": "Only the selected fixed branch is counted. Other branch requirements described in profile are conditional mandatory material, not optional instructions to ignore.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "531d2b6c8c9affc7b794de7904905ff9b73962b986968fd1e90273eb26930b6e",
+      "atlasAssessment": "Adapt extraction and evidence rules first; map output to Atlas's existing design.md schema. Keep scan versus new-system seed paths distinct."
+    },
+    {
+      "id": "impeccable-shape",
+      "name": "Impeccable shape",
+      "kind": "command-profile",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "design/flow planning",
+        "discovery",
+        "interaction states"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/shape.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/reference/shape.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryPath": ".agents/skills/impeccable/SKILL.md",
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "commandDocBytes": 3547,
+        "commandDocWords": 524,
+        "mandatoryReferenceBytes": 3547,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/shape.md"
+        ],
+        "fixedClosureBytes": 15206,
+        "profile": "Precisely specified established-world brief selected: +3,547 playbook bytes. New-surface visual choice additionally loads new-work (61,778), and may need init (11,766); branch output and further linked reads vary.",
+        "optionalProfile": "Only the selected fixed branch is counted. Other branch requirements described in profile are conditional mandatory material, not optional instructions to ignore.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23",
+      "atlasAssessment": "Reuse the brief fields and state discovery; align question policy with existing user context. Treat shape as a command profile within Impeccable."
+    },
+    {
+      "id": "impeccable-critique",
+      "name": "Impeccable critique",
+      "kind": "command-profile",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "design/flow review",
+        "heuristics",
+        "cognitive load",
+        "persona walkthrough"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/critique.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/reference/critique.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryPath": ".agents/skills/impeccable/SKILL.md",
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "commandDocBytes": 48958,
+        "commandDocWords": 7488,
+        "mandatoryReferenceBytes": 48958,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/critique.md"
+        ],
+        "fixedClosureBytes": 60617,
+        "profile": "Web review selected: +48,958 playbook bytes. Ignore file if present, browser skill/tool instructions, project material, runtime context/detector output and agent transcripts have unknown size.",
+        "optionalProfile": "Only the selected fixed branch is counted. Other branch requirements described in profile are conditional mandatory material, not optional instructions to ignore.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "c210c9506877c6c8d88880a337fddd95d4315daf70ed6bc631ee6520481f1a0c",
+      "atlasAssessment": "Prefer a narrower Atlas review contract preserving independent evidence and specific findings; make tooling/persistence/questions explicit choices under Atlas policy. Never call its scores usability-study results."
+    },
+    {
+      "id": "impeccable-audit",
+      "name": "Impeccable audit",
+      "kind": "command-profile",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "accessibility",
+        "responsive",
+        "technical quality audit"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/audit.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/reference/audit.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryPath": ".agents/skills/impeccable/SKILL.md",
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "commandDocBytes": 9250,
+        "commandDocWords": 1279,
+        "mandatoryReferenceBytes": 9250,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/audit.md"
+        ],
+        "fixedClosureBytes": 20909,
+        "profile": "Web reporting-only profile selected: +9,250 playbook bytes. Native alternative playbook is 8,326 bytes, replacing web audit; runtime project material remains unknown.",
+        "optionalProfile": "Only the selected fixed branch is counted. Other branch requirements described in profile are conditional mandatory material, not optional instructions to ignore.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "4b726d8f13ca1dbb82ca8179cbfefca8c53c13766fef4d7b8870f5d4324da2d6",
+      "atlasAssessment": "Use as a first-pass technical review checklist and route findings to specialist validation. Preserve reporting-only boundary unless fixes are requested."
+    },
+    {
+      "id": "impeccable-adapt",
+      "name": "Impeccable adapt",
+      "kind": "command-profile",
+      "family": "pbakaus/impeccable",
+      "areas": [
+        "responsive",
+        "device/input adaptation",
+        "content and navigation"
+      ],
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/adapt.md",
+      "repo": "pbakaus/impeccable",
+      "sourcePath": ".agents/skills/impeccable/reference/adapt.md",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Paul Bakaus (Copyright 2025); repository README identifies Anthropic frontend-design as the project's starting point. Native reference derivations separately credit ehmo.",
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+        "scope": "Selected web SKILL.md and command reference documents: root LICENSE applies; no per-file alternate license declaration observed in inspected entries. Native derivative references carry separate third-party provenance.",
+        "notice": "Copyright 2025 Paul Bakaus. Preserve LICENSE, modification notices and applicable attribution/NOTICE on redistribution. NOTICE.md credits ehmo/platform-design-skills under MIT for iOS/Android references.",
+        "limits": "No trademark grant; license warranty disclaimers. Root Apache label must not erase native references' original MIT attribution.",
+        "noticeURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md"
+      },
+      "reading": {
+        "entryPath": ".agents/skills/impeccable/SKILL.md",
+        "entryBytes": 11659,
+        "entryWords": 1577,
+        "commandDocBytes": 11313,
+        "commandDocWords": 1585,
+        "mandatoryReferenceBytes": 16815,
+        "mandatoryPaths": [
+          ".agents/skills/impeccable/reference/adapt.md",
+          ".agents/skills/impeccable/reference/craft-floor.md"
+        ],
+        "fixedClosureBytes": 28474,
+        "profile": "Web editing profile selected: +11,313 playbook +5,502 craft-floor =16,815 mandatory fixed reference bytes. Native alternative adapt is 3,910 bytes before platform-specific context.",
+        "optionalProfile": "Only the selected fixed branch is counted. Other branch requirements described in profile are conditional mandatory material, not optional instructions to ignore.",
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Exact fixed file sum for the named profile, not total execution context. Runtime `context` loads project PRODUCT.md/DESIGN.md/surface brief and can direct further loading; their sizes are unknown. Reading-byte counts do not establish token usage, billing, speed or design quality."
+      },
+      "entryPath": ".agents/skills/impeccable/SKILL.md",
+      "entrySHA256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "sourceFileSHA256": "9807cdc112b8bcbdeff9cd2516cda4d07129f1d47f29df4d57645344f34950c1",
+      "atlasAssessment": "Keep as an opt-in adaptation workflow with explicit source/target contexts, responsive acceptance examples and specialist a11y checks."
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI/UX Pro Max",
+      "kind": "skill-entry",
+      "family": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "areas": [
+        "general UI/UX",
+        "design system generation",
+        "a11y/responsive guidance",
+        "stack-specific UI"
+      ],
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "sourcePath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Next Level Builder; root MIT copyright is 2024 Next Level Builder.",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/LICENSE",
+        "scope": "Repository project/software/documentation license; selected SKILL.md has no alternate license declaration. External recommended assets retain their own terms.",
+        "notice": "Include copyright and MIT permission notice in copies or substantial portions.",
+        "limits": "No warranty. Root MIT does not relicense font binaries or icon packages recommended by the skill. Bundled metadata lists Google Fonts family licenses/designers and separate upstream sources."
+      },
+      "reading": {
+        "entryBytes": 15969,
+        "entryWords": 2118,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "fixedClosureBytes": 15969,
+        "profile": "Web/task default entry. Required local search returns variable output; no upstream code executed during research.",
+        "optionalProfile": {
+          "quickReferenceBytes": 24526,
+          "quickReferencePath": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+          "conditionalMandatoryNativePreDeliveryBytes": 10909,
+          "conditionalMandatoryNativePreDeliveryPath": ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+          "nativeFixedClosureBytes": 26878,
+          "bundledSourceDataFiles": 39,
+          "bundledSourceDataBytes": 3093030,
+          "bundledSourceDataScope": "All 17 files directly in src/ui-ux-pro-max/data plus 22 stack CSVs. Source tree is the documented data source of truth; not a byte measurement of every generated distribution copy.",
+          "dataInventory": "ui-pro-max-data-manifest.json",
+          "scriptSourceBytes": 9373,
+          "details": "CSV/JSON files and Python source are not mandatory agent prose reads; the local engine searches them. Generated design-system/search output, persisted MASTER/page overrides and private project context have unknown size."
+        },
+        "method": "Raw pinned HTTP response bytes saved without re-encoding; strict UTF-8 decode; whitespace words = regex \\S+ over complete file including frontmatter/code. SHA-256 evidence manifest. Fixed reference sums exclude entry itself, runtime output, project files, screenshots, tool prompts and agent transcripts.",
+        "caveats": "Do not equate bundled database size with context loaded. Search results must be checked for product/platform fit; the skill now explicitly forbids fabricating missing matches."
+      },
+      "entryPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "entrySHA256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "sourceFileSHA256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9",
+      "atlasAssessment": "Optional lookup; verify matches and asset terms."
+    },
+    {
+      "id": "vercel-web-design-guidelines",
+      "name": "Web Design Guidelines",
+      "kind": "skill-entry",
+      "family": "vercel-web-interface-guidelines",
+      "areas": [
+        "source UI review",
+        "accessibility",
+        "responsive/layout",
+        "performance",
+        "UX copy",
+        "navigation/state"
+      ],
+      "sourceURL": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+      "repo": "vercel-labs/agent-skills",
+      "sourcePath": "skills/web-design-guidelines/SKILL.md",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Vercel (entry metadata author: vercel); Vercel Labs (remote rule copyright). No sole individual creator inferred.",
+      "license": {
+        "notice": [
+          "No copyright or full MIT text found in the pinned agent-skills recursive tree.",
+          "Remote: Copyright (c) 2025 Vercel Labs."
+        ],
+        "name": "MIT: entry declared by README; remote rules have separate complete MIT license",
+        "scope": "SKILL.md declaration in agent-skills README; mandatory command.md is independently covered by web-interface-guidelines/LICENSE.",
+        "limits": [
+          "MIT notice retention applies when copying substantial licensed material. Preserve the remote repository LICENSE with vendored command.md.",
+          "Before redistributing the entry, retain README declaration and resolve the missing full parent notice rather than inventing a copyright holder."
+        ],
+        "referenceLicenseURL": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+        "url": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md#license"
+      },
+      "reading": {
+        "entryBytes": 1231,
+        "entryWords": 176,
+        "mandatoryReferenceBytes": 8055,
+        "mandatoryPaths": [
+          "vercel-labs/web-interface-guidelines@434b7f91364665f2f733b310ec54809bf8f37937/command.md"
+        ],
+        "optionalProfile": [
+          {
+            "status": "Alternative generation guides, not fetched by this skill; excluded from review closure.",
+            "path": "web-interface-guidelines/README.md and AGENTS.md"
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "Upstream fetches mutable main on every invocation. This measurement pins entry and remote rule separately; future fetch size and behavior can change.",
+          "Static snapshot total: 9286 bytes; review target source is additional. WebFetch/network capability required upstream."
+        ]
+      },
+      "entryPath": "skills/web-design-guidelines/SKILL.md",
+      "entrySHA256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "sourceFileSHA256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "atlasAssessment": "Quick preflight; add task/evidence detail."
+    },
+    {
+      "id": "ibelick-baseline-ui",
+      "name": "baseline-ui",
+      "kind": "skill-entry",
+      "family": "ibelick-ui-skills",
+      "areas": [
+        "UI cleanup",
+        "layout",
+        "typography",
+        "interactions",
+        "motion"
+      ],
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/baseline-ui/SKILL.md",
+      "repo": "ibelick/ui-skills",
+      "sourcePath": "skills/baseline-ui/SKILL.md",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Julien Thibeaut (ibelick), credited by repository LICENSE.",
+      "license": {
+        "notice": "Copyright (c) 2026 Julien Thibeaut",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked third-party component libraries, npm tools and external specs have their own licenses; repository MIT does not relicense them."
+        ],
+        "scope": "Repository SKILL.md and included local Markdown reference files; no conflicting file-level notice found in inspected paths.",
+        "url": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 3419,
+        "entryWords": 508,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "status": "Implementation dependencies, not mandatory external reading; not installed or executed.",
+            "dependency": "Tailwind CSS, cn/clsx/tailwind-merge; accessible primitives; motion/react when JS animation required; tw-animate-css suggested.",
+            "bytes": null
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": []
+      },
+      "entryPath": "skills/baseline-ui/SKILL.md",
+      "entrySHA256": "fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
+      "sourceFileSHA256": "fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f",
+      "atlasAssessment": "Selected UI hygiene; omit universal aesthetic/stack bans."
+    },
+    {
+      "id": "ibelick-fixing-accessibility",
+      "name": "fixing-accessibility",
+      "kind": "skill-entry",
+      "family": "ibelick-ui-skills",
+      "areas": [
+        "accessibility",
+        "forms",
+        "keyboard/focus",
+        "semantics"
+      ],
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-accessibility/SKILL.md",
+      "repo": "ibelick/ui-skills",
+      "sourcePath": "skills/fixing-accessibility/SKILL.md",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Julien Thibeaut (ibelick), credited by repository LICENSE.",
+      "license": {
+        "notice": "Copyright (c) 2026 Julien Thibeaut",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked third-party component libraries, npm tools and external specs have their own licenses; repository MIT does not relicense them."
+        ],
+        "scope": "Repository SKILL.md and included local Markdown reference files; no conflicting file-level notice found in inspected paths.",
+        "url": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 4718,
+        "entryWords": 734,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "Self-contained local Markdown checklist; no mandatory fetched rule file or bundled reference. Project source and observed tool output are additional."
+        ]
+      },
+      "entryPath": "skills/fixing-accessibility/SKILL.md",
+      "entrySHA256": "549261e8a53b53a1a20c0ddbf736821e5fc0876ad82eee76e0efab8e9ee9dadf",
+      "sourceFileSHA256": "549261e8a53b53a1a20c0ddbf736821e5fc0876ad82eee76e0efab8e9ee9dadf",
+      "atlasAssessment": "Small source triage, not comprehensive conformance."
+    },
+    {
+      "id": "ibelick-fixing-motion-performance",
+      "name": "fixing-motion-performance",
+      "kind": "skill-entry",
+      "family": "ibelick-ui-skills",
+      "areas": [
+        "motion performance",
+        "measurement",
+        "scroll",
+        "rendering layers"
+      ],
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-motion-performance/SKILL.md",
+      "repo": "ibelick/ui-skills",
+      "sourcePath": "skills/fixing-motion-performance/SKILL.md",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Julien Thibeaut (ibelick), credited by repository LICENSE.",
+      "license": {
+        "notice": "Copyright (c) 2026 Julien Thibeaut",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked third-party component libraries, npm tools and external specs have their own licenses; repository MIT does not relicense them."
+        ],
+        "scope": "Repository SKILL.md and included local Markdown reference files; no conflicting file-level notice found in inspected paths.",
+        "url": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 5565,
+        "entryWords": 832,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "Self-contained local Markdown checklist; no mandatory fetched rule file or bundled reference. Project source and observed tool output are additional."
+        ]
+      },
+      "entryPath": "skills/fixing-motion-performance/SKILL.md",
+      "entrySHA256": "0a2d654902bc04263ce68c8c02967ef03f17b482e855360a5463211d99d7baa9",
+      "sourceFileSHA256": "0a2d654902bc04263ce68c8c02967ef03f17b482e855360a5463211d99d7baa9",
+      "atlasAssessment": "Targeted animation diagnosis with measured evidence."
+    },
+    {
+      "id": "ibelick-improve-ui",
+      "name": "improve-ui",
+      "kind": "skill-entry",
+      "family": "ibelick-ui-skills",
+      "areas": [
+        "general UI/UX review",
+        "design-system drift",
+        "design handoff",
+        "responsive presentation"
+      ],
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/improve-ui/SKILL.md",
+      "repo": "ibelick/ui-skills",
+      "sourcePath": "skills/improve-ui/SKILL.md",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Julien Thibeaut (ibelick), credited by repository LICENSE.",
+      "license": {
+        "notice": "Copyright (c) 2026 Julien Thibeaut",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked third-party component libraries, npm tools and external specs have their own licenses; repository MIT does not relicense them."
+        ],
+        "scope": "Repository SKILL.md and included local Markdown reference files; no conflicting file-level notice found in inspected paths.",
+        "url": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 7830,
+        "entryWords": 1114,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/improve-ui/references/plan-template.md",
+            "trigger": "Mandatory when a selected finding is turned into an implementation plan; not required for audit-only mode.",
+            "bytes": 1590,
+            "words": 227
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "Audit-only fixed skill reading: 7830 bytes. Planning profile: 9420 bytes; target project evidence additional.",
+          "Reading governing DESIGN.md and repository guidance is required if present; target-dependent, not measured here."
+        ]
+      },
+      "entryPath": "skills/improve-ui/SKILL.md",
+      "entrySHA256": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a",
+      "sourceFileSHA256": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a",
+      "atlasAssessment": "Contract/evidence/correction review and optional handoff."
+    },
+    {
+      "id": "ibelick-create-design-md",
+      "name": "create-design-md",
+      "kind": "skill-entry",
+      "family": "ibelick-ui-skills",
+      "areas": [
+        "DESIGN.md preparation",
+        "repository design-language extraction",
+        "URL reconstruction",
+        "design tokens"
+      ],
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/create-design-md/SKILL.md",
+      "repo": "ibelick/ui-skills",
+      "sourcePath": "skills/create-design-md/SKILL.md",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Julien Thibeaut (ibelick), credited by repository LICENSE.",
+      "license": {
+        "notice": "Copyright (c) 2026 Julien Thibeaut",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked third-party component libraries, npm tools and external specs have their own licenses; repository MIT does not relicense them."
+        ],
+        "scope": "Repository SKILL.md and included local Markdown reference files; no conflicting file-level notice found in inspected paths.",
+        "url": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 16208,
+        "entryWords": 2344,
+        "mandatoryReferenceBytes": null,
+        "mandatoryPaths": [
+          "Dynamic runtime output: npx @google/design.md spec"
+        ],
+        "optionalProfile": [
+          {
+            "status": "spec, lint, export and update diff output are dynamic; none executed during research.",
+            "dependency": "Node/npm; @google/design.md CLI; repo file tools; rendered browser and computed CSS for URL mode",
+            "bytes": null
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No bundled reference Markdown. Required dynamic spec and validation output cannot be measured from SKILL.md; complete closure unknown.",
+          "Do not interpret entryBytes as total task context or infer token cost.",
+          "Current source path verified in pinned archive; no installation command was executed."
+        ],
+        "knownStaticMandatoryReferenceBytes": 0
+      },
+      "entryPath": "skills/create-design-md/SKILL.md",
+      "entrySHA256": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed",
+      "sourceFileSHA256": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed",
+      "atlasAssessment": "Source-aware preparation; keep Atlas output contract."
+    },
+    {
+      "id": "jakub-better-interface",
+      "name": "better-interface",
+      "kind": "skill-entry",
+      "family": "jakub-better-interface",
+      "areas": [
+        "holistic UI/UX review",
+        "review orchestration",
+        "evidence and verification"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-interface/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-interface/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 8871,
+        "entryWords": 1453,
+        "mandatoryReferenceBytes": 62126,
+        "mandatoryPaths": [
+          "skills/better-interface/review-format.md",
+          "skills/better-accessibility/SKILL.md",
+          "skills/better-layout/SKILL.md",
+          "skills/better-writing/SKILL.md",
+          "skills/better-typography/SKILL.md",
+          "skills/better-colors/SKILL.md",
+          "skills/better-ui/SKILL.md"
+        ],
+        "optionalProfile": [
+          {
+            "path": "skills/better-accessibility/focus-and-keyboard.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 6495
+          },
+          {
+            "path": "skills/better-accessibility/forms.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 3491
+          },
+          {
+            "path": "skills/better-accessibility/hit-areas.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 3262
+          },
+          {
+            "path": "skills/better-accessibility/motion-and-zoom.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 2436
+          },
+          {
+            "path": "skills/better-accessibility/screen-readers.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 4633
+          },
+          {
+            "path": "skills/better-accessibility/semantics-and-aria.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 4636
+          },
+          {
+            "path": "skills/better-layout/grouping-and-alignment.md",
+            "trigger": "Topic-relevant better-layout recipe; inspect when implicated by review scope.",
+            "bytes": 3936
+          },
+          {
+            "path": "skills/better-layout/spacing-and-adaptivity.md",
+            "trigger": "Topic-relevant better-layout recipe; inspect when implicated by review scope.",
+            "bytes": 5834
+          },
+          {
+            "path": "skills/better-writing/patterns.md",
+            "trigger": "Topic-relevant better-writing recipe; inspect when implicated by review scope.",
+            "bytes": 2845
+          },
+          {
+            "path": "skills/better-typography/choosing-fonts.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 2142
+          },
+          {
+            "path": "skills/better-typography/css-cheat-sheet.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 4288
+          },
+          {
+            "path": "skills/better-typography/details-and-accessibility.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 3339
+          },
+          {
+            "path": "skills/better-typography/spacing-and-sizing.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 2234
+          },
+          {
+            "path": "skills/better-typography/variable-fonts-and-opentype.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 3468
+          },
+          {
+            "path": "skills/better-typography/wrapping-and-punctuation.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 1618
+          },
+          {
+            "path": "skills/better-colors/color-formats.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 4565
+          },
+          {
+            "path": "skills/better-colors/color-usage.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 5292
+          },
+          {
+            "path": "skills/better-colors/contrast.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 3949
+          },
+          {
+            "path": "skills/better-colors/palette-generation.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 6096
+          },
+          {
+            "path": "skills/better-colors/palette-structure.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 4923
+          },
+          {
+            "path": "skills/better-colors/token-naming.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 5853
+          },
+          {
+            "path": "skills/better-ui/animations.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 4923
+          },
+          {
+            "path": "skills/better-ui/enter-exit.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3596
+          },
+          {
+            "path": "skills/better-ui/icon-transitions.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 2647
+          },
+          {
+            "path": "skills/better-ui/icons.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3963
+          },
+          {
+            "path": "skills/better-ui/performance.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 2265
+          },
+          {
+            "path": "skills/better-ui/surfaces.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3584
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "Mandatory static minimum is six owner entries (60000 bytes) plus report format (2126 bytes). Owner references are topic-routed, not all unconditionally loaded; a comprehensive all-topic review may require all 106313 additional recipe bytes.",
+          "Phrase taking each owner references can be read conservatively as all applicable references; full local Markdown closure is 177310 bytes across 35 files, excluding metadata.",
+          "Separate interface-review handoff, project guidelines/source and browser/tool results have dynamic additional size.",
+          "All seven installed local entries differ by hash from pinned upstream. Local revisions/author edits are not attributed as exact upstream copies."
+        ],
+        "fixedEntryPlusMandatoryBytes": 70997,
+        "allTopicReferenceBytes": 106313,
+        "fullLocalFamilyMarkdownBytes": 177310
+      },
+      "entryPath": "skills/better-interface/SKILL.md",
+      "entrySHA256": "23416fef4d08e0417927b6eb6763b7b08ed832451abfb9e26ea699262a28abcb",
+      "sourceFileSHA256": "23416fef4d08e0417927b6eb6763b7b08ed832451abfb9e26ea699262a28abcb",
+      "atlasAssessment": "Broad review option; narrow routing for small tasks."
+    },
+    {
+      "id": "jakub-better-accessibility",
+      "name": "better-accessibility",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "accessibility",
+        "WCAG-related review",
+        "keyboard/focus",
+        "forms",
+        "motion/zoom"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-accessibility/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-accessibility/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 11068,
+        "entryWords": 1668,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-accessibility/focus-and-keyboard.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 6495
+          },
+          {
+            "path": "skills/better-accessibility/forms.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 3491
+          },
+          {
+            "path": "skills/better-accessibility/hit-areas.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 3262
+          },
+          {
+            "path": "skills/better-accessibility/motion-and-zoom.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 2436
+          },
+          {
+            "path": "skills/better-accessibility/screen-readers.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 4633
+          },
+          {
+            "path": "skills/better-accessibility/semantics-and-aria.md",
+            "trigger": "Topic-relevant better-accessibility recipe; inspect when implicated by review scope.",
+            "bytes": 4636
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 24953
+      },
+      "entryPath": "skills/better-accessibility/SKILL.md",
+      "entrySHA256": "df0cafe0e75a08548cf46a2a430f46c198e7e0ee9d46bdf7884c2afefb44b70e",
+      "sourceFileSHA256": "df0cafe0e75a08548cf46a2a430f46c198e7e0ee9d46bdf7884c2afefb44b70e",
+      "atlasAssessment": "Semantics, keyboard, focus, errors and zoom."
+    },
+    {
+      "id": "jakub-better-layout",
+      "name": "better-layout",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "responsive layout",
+        "reading order",
+        "RTL",
+        "localization",
+        "progressive disclosure"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-layout/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-layout/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 8420,
+        "entryWords": 1198,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-layout/grouping-and-alignment.md",
+            "trigger": "Topic-relevant better-layout recipe; inspect when implicated by review scope.",
+            "bytes": 3936
+          },
+          {
+            "path": "skills/better-layout/spacing-and-adaptivity.md",
+            "trigger": "Topic-relevant better-layout recipe; inspect when implicated by review scope.",
+            "bytes": 5834
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 9770
+      },
+      "entryPath": "skills/better-layout/SKILL.md",
+      "entrySHA256": "8c5883ccb23c27c39b7c58d101154ff35e032410e0dc4794be9ab7fe070c2297",
+      "sourceFileSHA256": "8c5883ccb23c27c39b7c58d101154ff35e032410e0dc4794be9ab7fe070c2297",
+      "atlasAssessment": "Hierarchy, grouping, content order, responsive and RTL."
+    },
+    {
+      "id": "jakub-better-ui",
+      "name": "better-ui",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "UI polish",
+        "motion",
+        "surfaces",
+        "icons",
+        "interaction states"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-ui/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-ui/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 11140,
+        "entryWords": 1663,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-ui/animations.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 4923
+          },
+          {
+            "path": "skills/better-ui/enter-exit.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3596
+          },
+          {
+            "path": "skills/better-ui/icon-transitions.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 2647
+          },
+          {
+            "path": "skills/better-ui/icons.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3963
+          },
+          {
+            "path": "skills/better-ui/performance.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 2265
+          },
+          {
+            "path": "skills/better-ui/surfaces.md",
+            "trigger": "Topic-relevant better-ui recipe; inspect when implicated by review scope.",
+            "bytes": 3584
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 20978
+      },
+      "entryPath": "skills/better-ui/SKILL.md",
+      "entrySHA256": "fb9807bb5c59a3ca9d4a27b25f56b36e5596251d280fb30c4b7f2ff8b6f4fe2d",
+      "sourceFileSHA256": "fb9807bb5c59a3ca9d4a27b25f56b36e5596251d280fb30c4b7f2ff8b6f4fe2d",
+      "atlasAssessment": "Surface/icon/state/motion details after core flow decisions."
+    },
+    {
+      "id": "jakub-better-typography",
+      "name": "better-typography",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "typography",
+        "text wrapping",
+        "content stress",
+        "font rendering",
+        "bidi"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-typography/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-typography/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 12260,
+        "entryWords": 1790,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-typography/choosing-fonts.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 2142
+          },
+          {
+            "path": "skills/better-typography/css-cheat-sheet.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 4288
+          },
+          {
+            "path": "skills/better-typography/details-and-accessibility.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 3339
+          },
+          {
+            "path": "skills/better-typography/spacing-and-sizing.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 2234
+          },
+          {
+            "path": "skills/better-typography/variable-fonts-and-opentype.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 3468
+          },
+          {
+            "path": "skills/better-typography/wrapping-and-punctuation.md",
+            "trigger": "Topic-relevant better-typography recipe; inspect when implicated by review scope.",
+            "bytes": 1618
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 17089
+      },
+      "entryPath": "skills/better-typography/SKILL.md",
+      "entrySHA256": "e60ca6467ba60e68f95ed2d2cfa35f2a850d96ef2a0c0d3fcfcfd9510e51f184",
+      "sourceFileSHA256": "e60ca6467ba60e68f95ed2d2cfa35f2a850d96ef2a0c0d3fcfcfd9510e51f184",
+      "atlasAssessment": "Type hierarchy, wrapping, script and font behavior."
+    },
+    {
+      "id": "jakub-better-colors",
+      "name": "better-colors",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "color systems",
+        "tokens",
+        "contrast measurement",
+        "themes",
+        "gamut"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-colors/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-colors/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 7692,
+        "entryWords": 1261,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-colors/color-formats.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 4565
+          },
+          {
+            "path": "skills/better-colors/color-usage.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 5292
+          },
+          {
+            "path": "skills/better-colors/contrast.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 3949
+          },
+          {
+            "path": "skills/better-colors/palette-generation.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 6096
+          },
+          {
+            "path": "skills/better-colors/palette-structure.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 4923
+          },
+          {
+            "path": "skills/better-colors/token-naming.md",
+            "trigger": "Topic-relevant better-colors recipe; inspect when implicated by review scope.",
+            "bytes": 5853
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 30678
+      },
+      "entryPath": "skills/better-colors/SKILL.md",
+      "entrySHA256": "e74f1c413a4094dc2a73fb0baa0da2241465e01d593b0257ba995500df9b0068",
+      "sourceFileSHA256": "e74f1c413a4094dc2a73fb0baa0da2241465e01d593b0257ba995500df9b0068",
+      "atlasAssessment": "Semantic roles, appearances, gamut and resolved contrast."
+    },
+    {
+      "id": "jakub-better-writing",
+      "name": "better-writing",
+      "kind": "domain-owner",
+      "family": "jakub-better-interface",
+      "areas": [
+        "UX writing",
+        "flows",
+        "errors",
+        "empty states",
+        "localization"
+      ],
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-writing/SKILL.md",
+      "repo": "jakubkrehel/skills",
+      "sourcePath": "skills/better-writing/SKILL.md",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Jakub Krehel, credited by repository LICENSE; README connects the work to his personal site and Interfaces magazine.",
+      "license": {
+        "notice": "Copyright (c) 2026 Jakub Krehel",
+        "limits": [
+          "Retain copyright and permission notice in copies or substantial adaptations.",
+          "Linked standards, libraries and author sites retain their own licenses; repo MIT does not relicense them."
+        ],
+        "scope": "Repository skill entries and bundled local Markdown recipes/report format; no conflicting file-level notices found in inspected paths.",
+        "url": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+        "name": "MIT"
+      },
+      "reading": {
+        "entryBytes": 9420,
+        "entryWords": 1556,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": [
+          {
+            "path": "skills/better-writing/patterns.md",
+            "trigger": "Topic-relevant better-writing recipe; inspect when implicated by review scope.",
+            "bytes": 2845
+          }
+        ],
+        "method": "Exact pinned source file bytes; strict UTF-8 decode; words are .NET regex \\S+ matches including YAML, Markdown and code. Static reference bytes counted separately and deduplicated by path. License/README, project inputs, browser data, tools and runtime responses are excluded. No token, cost, performance or quality estimate.",
+        "caveats": [
+          "No unconditional Read all references directive in this owner entry. Linked recipes are task-conditional; all are measured in optionalProfile. A broad domain review may require them all.",
+          "Peer skills are named as rule owners; cross-domain work can add their entries/recipes. Project/runtime evidence is additional.",
+          "Installed local entry has a different hash; do not conflate its provenance or wording with this pinned upstream source."
+        ],
+        "topicReferenceBytes": 2845
+      },
+      "entryPath": "skills/better-writing/SKILL.md",
+      "entrySHA256": "ef6843cbfcbafa62614b1a6e012c0b1ab6fd33eee0bdd84123cf49fe275c3a31",
+      "sourceFileSHA256": "ef6843cbfcbafa62614b1a6e012c0b1ab6fd33eee0bdd84123cf49fe275c3a31",
+      "atlasAssessment": "Task labels, terminology, errors and recovery copy."
+    },
+    {
+      "id": "pm-human-in-the-loop-design",
+      "name": "Human-in-the-Loop Design",
+      "kind": "skill-entry",
+      "family": "mohitagw15856/pm-claude-skills",
+      "areas": [
+        "human-agent design",
+        "approval UX",
+        "escalation",
+        "audit requirements"
+      ],
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/skills/human-in-the-loop-design/SKILL.md",
+      "repo": "mohitagw15856/pm-claude-skills",
+      "sourcePath": "skills/human-in-the-loop-design/SKILL.md",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Mohit Aggarwal; copyright (c) 2026 Mohit Aggarwal",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/LICENSE",
+        "scope": "Root license covers repository software and associated documentation, including the inspected skill and fetched local supporting files; no different notice appears in those inspected files. This is not a complete repository-wide third-party license audit.",
+        "notice": "Copyright (c) 2026 Mohit Aggarwal",
+        "limits": "Include copyright and permission notice in copies/substantial portions. As-is/no warranty; external linked materials and third-party rights are not cleared by this notice."
+      },
+      "reading": {
+        "entryBytes": 6182,
+        "entryWords": 952,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": {
+          "path": "SKILLSPEC.md",
+          "bytes": 7899,
+          "condition": "Entry mentions §5 Execution-block pattern for per-skill gates; not an unconditional prerequisite for approval UX design. Other agent-spec skill is a sibling integration, not counted."
+        },
+        "method": "Pinned raw.githubusercontent.com downloads; UTF-8 byte count with .NET UTF8.GetByteCount(ReadAllText), whitespace-delimited words using regex \\S+. Markdown, frontmatter, inline examples and code are included. measurements.json records SHA-256 hashes. No upstream scripts executed.",
+        "caveats": "Entry-only approval design profile. Product action inventory, consequences, volume, approver roles and evidence must come from Atlas context. No runtime/tool dependencies in the entry."
+      },
+      "entryPath": "skills/human-in-the-loop-design/SKILL.md",
+      "entrySHA256": "1f3cfe065cba176578af6da1efc2146d8297b700bcccf7dc8c839afa3cc673fa",
+      "sourceFileSHA256": "1f3cfe065cba176578af6da1efc2146d8297b700bcccf7dc8c839afa3cc673fa",
+      "atlasAssessment": "Focused human approval decisions; validate heuristics."
+    },
+    {
+      "id": "sebin-human-in-the-loop",
+      "name": "Human in the Loop",
+      "kind": "skill-entry",
+      "family": "seb1n/awesome-ai-agent-skills",
+      "areas": [
+        "human-agent design",
+        "decision packages",
+        "approval binding",
+        "failure recovery"
+      ],
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/SKILL.md",
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "sourcePath": "agent-engineering/human-in-the-loop/SKILL.md",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Burhan Sebin; copyright (c) 2026 Burhan Sebin",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/LICENSE",
+        "scope": "Root license covers repository software and associated documentation, including the inspected skill and fetched local supporting files; no different notice appears in those inspected files. This is not a complete repository-wide third-party license audit.",
+        "notice": "Copyright (c) 2026 Burhan Sebin",
+        "limits": "Include copyright and permission notice in copies/substantial portions. As-is/no warranty; external linked materials and third-party rights are not cleared by this notice."
+      },
+      "reading": {
+        "entryBytes": 10087,
+        "entryWords": 1331,
+        "mandatoryReferenceBytes": 6255,
+        "mandatoryPaths": [
+          "agent-engineering/human-in-the-loop/references/gate-design-guide.md"
+        ],
+        "optionalProfile": {
+          "name": "Machine-readable policy",
+          "paths": [
+            {
+              "path": "agent-engineering/human-in-the-loop/assets/approval-policy-template.json",
+              "bytes": 2608
+            },
+            {
+              "path": "agent-engineering/human-in-the-loop/scripts/validate_gate_policy.py",
+              "bytes": 23155
+            }
+          ],
+          "additionalBytes": 25763,
+          "condition": "Entry says start from template when machine-readable policy helps and validate with this script. Script downloaded and statically inspected as text only, not executed."
+        },
+        "method": "Pinned raw.githubusercontent.com downloads; UTF-8 byte count with .NET UTF8.GetByteCount(ReadAllText), whitespace-delimited words using regex \\S+. Markdown, frontmatter, inline examples and code are included. measurements.json records SHA-256 hashes. No upstream scripts executed.",
+        "caveats": "16,342 bytes entry + required guide; conditional policy artifacts add 25,763 bytes. Guide links to external NIST resources but does not require loading all of them. Static research cannot certify runtime gate safety."
+      },
+      "entryPath": "agent-engineering/human-in-the-loop/SKILL.md",
+      "entrySHA256": "4228420ef0d7da23c0567b4e0728f587ba2f51d15904952b7d64d4e8aed35eb1",
+      "sourceFileSHA256": "4228420ef0d7da23c0567b4e0728f587ba2f51d15904952b7d64d4e8aed35eb1",
+      "atlasAssessment": "Secondary lens for consequential control contracts."
+    },
+    {
+      "id": "intent-journey",
+      "name": "Journey — Design with Intent",
+      "kind": "skill-entry",
+      "family": "ghaida/intent",
+      "areas": [
+        "general UX",
+        "user flows",
+        "cross-channel journeys",
+        "responsive interaction",
+        "recovery"
+      ],
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/journey/SKILL.md",
+      "repo": "ghaida/intent",
+      "sourcePath": "skills/journey/SKILL.md",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Ghaida Zahran, named author in .claude-plugin/plugin.json; Design with Intent",
+      "license": {
+        "name": "CC0-1.0 Universal",
+        "url": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/LICENSE",
+        "scope": "Root CC0 dedication and plugin metadata identify the repository's authored content, including inspected journey/evaluate/intent entries. Does not clear third-party linked sources or rights outside the affirmer's rights.",
+        "notice": "CC0 contains no attribution condition; retain Ghaida Zahran / Design with Intent credit as provenance.",
+        "limits": "CC0 excludes trademark and patent rights, provides no warranties, and does not clear other persons' rights."
+      },
+      "reading": {
+        "entryBytes": 30586,
+        "entryWords": 4315,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": {
+          "name": "Flow evaluation sibling (not automatically loaded)",
+          "paths": [
+            {
+              "path": "skills/evaluate/SKILL.md",
+              "bytes": 27737,
+              "words": 4068
+            },
+            {
+              "path": "skills/intent/SKILL.md",
+              "bytes": 44149,
+              "words": 6389
+            }
+          ],
+          "additionalBytes": 71886,
+          "condition": "Evaluate refers to the Intent anti-pattern catalog, which README locates in the master intent entry. Journey itself contains its flow guidance inline. Specialist siblings are routed by need rather than unconditional reads."
+        },
+        "method": "Pinned raw.githubusercontent.com downloads; UTF-8 byte count with .NET UTF8.GetByteCount(ReadAllText), whitespace-delimited words using regex \\S+. Markdown, frontmatter, inline examples and code are included. measurements.json records SHA-256 hashes. No upstream scripts executed.",
+        "caveats": "Journey v1.7.1. Entry includes substantial HTML/CSS output boilerplate. Figma output conditionally requires /figma-use and a connected Figma tool; pencil output needs pencil MCP. Those external tool/skill costs are unavailable. HTML/markdown flow planning has no such service requirement."
+      },
+      "entryPath": "skills/journey/SKILL.md",
+      "entrySHA256": "f709575dcd9a72cdb3ba8e4616b644193af340c133a3bd757cac85a928569142",
+      "sourceFileSHA256": "f709575dcd9a72cdb3ba8e4616b644193af340c133a3bd757cac85a928569142",
+      "atlasAssessment": "General user flows, interruption, decisions and return."
+    },
+    {
+      "id": "alireza-ux-researcher-designer",
+      "name": "UX Researcher & Designer",
+      "kind": "skill-entry",
+      "family": "alirezarezvani/claude-skills",
+      "areas": [
+        "general UX",
+        "research planning",
+        "journey mapping",
+        "usability testing",
+        "research synthesis"
+      ],
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/SKILL.md",
+      "repo": "alirezarezvani/claude-skills",
+      "sourcePath": "product-team/skills/ux-researcher-designer/SKILL.md",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Alireza Rezvani; copyright (c) 2025 Alireza Rezvani",
+      "license": {
+        "name": "MIT",
+        "url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/LICENSE",
+        "scope": "Root license covers repository software and associated documentation, including the inspected skill and fetched local supporting files; no different notice appears in those inspected files. This is not a complete repository-wide third-party license audit.",
+        "notice": "Copyright (c) 2025 Alireza Rezvani",
+        "limits": "Include copyright and permission notice in copies/substantial portions. As-is/no warranty; external linked materials and third-party rights are not cleared by this notice."
+      },
+      "reading": {
+        "entryBytes": 12007,
+        "entryWords": 1740,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": {
+          "profiles": [
+            {
+              "name": "Journey workflow",
+              "requiredReferenceBytes": 18102,
+              "path": "product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md",
+              "entryPlusRouteBytes": 30109
+            },
+            {
+              "name": "Usability workflow",
+              "requiredReferenceBytes": 11932,
+              "path": "product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md",
+              "entryPlusRouteBytes": 23939
+            },
+            {
+              "name": "Persona or synthesis workflow",
+              "requiredReferenceBytes": 11644,
+              "path": "product-team/skills/ux-researcher-designer/references/persona-methodology.md",
+              "entryPlusRouteBytes": 23651
+            }
+          ],
+          "otherFetched": [
+            {
+              "path": "product-team/skills/ux-researcher-designer/references/example-personas.md",
+              "bytes": 11990
+            },
+            {
+              "path": "product-team/skills/ux-researcher-designer/scripts/persona_generator.py",
+              "bytes": 24561
+            }
+          ],
+          "scriptCondition": "Entry persona workflow calls the generator. This research did not run it. CLI uses bundled synthetic data; library function can receive real data from a caller, which is a different integration."
+        },
+        "method": "Pinned raw.githubusercontent.com downloads; UTF-8 byte count with .NET UTF8.GetByteCount(ReadAllText), whitespace-delimited words using regex \\S+. Markdown, frontmatter, inline examples and code are included. measurements.json records SHA-256 hashes. No upstream scripts executed.",
+        "caveats": "41,678 is the union of three workflow-required guides, not an unconditional per-invocation load. No baseline mandatory read before selecting a workflow. Related UI-design-system and product-manager skills are external sibling integrations, not measured here. No hosted service needed for prose methods; optional script uses Python standard library.",
+        "conditionalReferenceUnionBytes": 41678,
+        "conditionalReferencePaths": [
+          "product-team/skills/ux-researcher-designer/references/persona-methodology.md",
+          "product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md",
+          "product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md"
+        ]
+      },
+      "entryPath": "product-team/skills/ux-researcher-designer/SKILL.md",
+      "entrySHA256": "e19ce820e246bf34834e99ea361afcf93fb780ffbb2a4248b32a9947ae4a43ca",
+      "sourceFileSHA256": "e19ce820e246bf34834e99ea361afcf93fb780ffbb2a4248b32a9947ae4a43ca",
+      "atlasAssessment": "Selective research/testing methods; exclude synthetic evidence."
+    },
+    {
+      "id": "ai-first-saas-interface",
+      "name": "AI-First SaaS Interface Architect",
+      "kind": "skill-entry",
+      "family": "marketingskills/ai-first-saas-interface",
+      "areas": [
+        "human-agent design",
+        "mixed initiative",
+        "proposals",
+        "uncertainty",
+        "progress",
+        "memory controls",
+        "recovery"
+      ],
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/SKILL.md",
+      "repo": "marketingskills/ai-first-saas-interface",
+      "sourcePath": "SKILL.md",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Repository owner marketingskills; no individual author or copyright holder was identified in the inspected entry or supporting files.",
+      "license": {
+        "name": "No explicit reuse license found in inspected artifacts",
+        "url": "https://github.com/marketingskills/ai-first-saas-interface/tree/42c76d040956924e3a72f25a98277f04342338d8",
+        "scope": "Pinned root listing contains SKILL.md, templates and examples; root LICENSE and README.md raw downloads returned 404. Inspected entry and nine support files give no license grant.",
+        "notice": "No notice or grant identified. Credit repository owner when discussing the source; that does not establish copying permission.",
+        "limits": "Comparison/link reference only. Do not vendor, translate, adapt, redistribute or install as reusable Atlas content without a license grant or permission."
+      },
+      "reading": {
+        "entryBytes": 39456,
+        "entryWords": 5712,
+        "mandatoryReferenceBytes": 0,
+        "mandatoryPaths": [],
+        "optionalProfile": {
+          "name": "Nine conditional supporting files",
+          "additionalBytes": 43726,
+          "paths": [
+            {
+              "path": "templates/ai_first_interface_spec.md",
+              "bytes": 6300
+            },
+            {
+              "path": "templates/ai_first_onboarding_playbook.md",
+              "bytes": 8807
+            },
+            {
+              "path": "templates/onboarding_journey_map.md",
+              "bytes": 6238
+            },
+            {
+              "path": "templates/modality_decision_matrix.md",
+              "bytes": 1992
+            },
+            {
+              "path": "templates/human_ai_responsibility_map.md",
+              "bytes": 1656
+            },
+            {
+              "path": "templates/evaluation_rubric.md",
+              "bytes": 3618
+            },
+            {
+              "path": "templates/pattern_library.md",
+              "bytes": 6960
+            },
+            {
+              "path": "examples/ai_native_saas_review_example.md",
+              "bytes": 4086
+            },
+            {
+              "path": "examples/ai_first_onboarding_example.md",
+              "bytes": 4069
+            }
+          ],
+          "condition": "Entry says load when requested output needs more structure, so these are conditional rather than an unconditional entry burden."
+        },
+        "method": "Pinned raw.githubusercontent.com downloads; UTF-8 byte count with .NET UTF8.GetByteCount(ReadAllText), whitespace-delimited words using regex \\S+. Markdown, frontmatter, inline examples and code are included. measurements.json records SHA-256 hashes. No upstream scripts executed.",
+        "caveats": "Research evidence only, not an installation recommendation. Entry is self-contained. No SDK or hosted service is required in the text; output-specific tools are implementation choices. No empirical effectiveness validation was located in inspected artifacts."
+      },
+      "entryPath": "SKILL.md",
+      "entrySHA256": "bc35aba9d3cd0a106d33d7dfb4ce36e87afa80424a0bfbb1ad0f7a441f73f5db",
+      "sourceFileSHA256": "bc35aba9d3cd0a106d33d7dfb4ce36e87afa80424a0bfbb1ad0f7a441f73f5db",
+      "atlasAssessment": "Linked comparison only; no adaptation recommendation."
+    },
+    {
+      "id": "microsoft-hax",
+      "name": "Microsoft HAX Toolkit / Guidelines for Human-AI Interaction",
+      "kind": "guidance-reference",
+      "family": null,
+      "areas": [
+        "human-agent interaction",
+        "capability expectations",
+        "correction",
+        "user control",
+        "experience lifecycle"
+      ],
+      "sourceURL": "https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/",
+      "repo": null,
+      "sourcePath": null,
+      "commit": null,
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Microsoft Research and Aether HAX Toolkit collaboration; site copyright Microsoft 2026",
+      "license": {
+        "name": "Website guidance; reusable skill license not assessed",
+        "url": "https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/",
+        "scope": "Linked reference guidance, not an inspected SKILL.md package.",
+        "notice": "Credit Microsoft HAX Toolkit and link primary pages.",
+        "limits": "No claim of permission to bundle the website, workbook, patterns, screenshots or full text as an Atlas skill."
+      },
+      "reading": {
+        "entryBytes": null,
+        "entryWords": null,
+        "mandatoryReferenceBytes": null,
+        "mandatoryPaths": [],
+        "optionalProfile": "18 guidelines, design library, workbook and patterns are navigable web resources, not measured local skill references.",
+        "method": "Official website inspection",
+        "caveats": "No Git revision or complete downloaded artifact measured. Live website may change."
+      },
+      "entryPath": null,
+      "atlasAssessment": "Link as primary guidance and write original, Atlas-specific questions; do not label HAX itself an installable skill."
+    },
+    {
+      "id": "google-pair",
+      "name": "Google PAIR People + AI Guidebook",
+      "kind": "guidance-reference",
+      "family": null,
+      "areas": [
+        "user needs",
+        "mental models",
+        "explainability",
+        "uncertainty",
+        "feedback/control",
+        "graceful failure"
+      ],
+      "sourceURL": "https://pair.withgoogle.com/guidebook/",
+      "repo": null,
+      "sourcePath": null,
+      "commit": null,
+      "inspectedDate": "2026-10-17",
+      "creatorCredit": "Google People + AI Research (PAIR)",
+      "license": {
+        "name": "Website guidance; reusable skill license not assessed",
+        "url": "https://pair.withgoogle.com/guidebook/",
+        "scope": "Linked reference guidance, not an inspected SKILL.md package.",
+        "notice": "Credit Google PAIR People + AI Guidebook and link relevant chapters.",
+        "limits": "No claim of permission to bundle guidebook chapters, worksheets, screenshots or a translated/repackaged skill."
+      },
+      "reading": {
+        "entryBytes": null,
+        "entryWords": null,
+        "mandatoryReferenceBytes": null,
+        "mandatoryPaths": [],
+        "optionalProfile": "Relevant live chapters: Mental Models; Explainability + Trust; Feedback + Control; Errors + Graceful Failure.",
+        "method": "Official website inspection",
+        "caveats": "No pinned Git artifact or complete local reading size; current website content is dynamic."
+      },
+      "entryPath": null,
+      "atlasAssessment": "Use linked primary chapters to support original Atlas research/design questions. Keep empirical observations separate from hypothetical personas and heuristic critiques."
+    }
+  ],
+  "artifacts": [
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/LICENSE",
+      "bytes": 1072,
+      "whitespaceWords": 169,
+      "sha256": "a20126646f93d32a8989c3cf4772d59194f405034f7babe7daebeac22b8ab151"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/references/example-personas.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/example-personas.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/example-personas.md",
+      "bytes": 11990,
+      "whitespaceWords": 1618,
+      "sha256": "e2f8d8a65f3c1c4d4be0edc03db3e382592b03c51946bdcba610984da99e9750"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/journey-mapping-guide.md",
+      "bytes": 18102,
+      "whitespaceWords": 1775,
+      "sha256": "27059750646dfbbc036dd5d647df70d63591afa1a5454de3326fb9ad672b81ac"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/references/persona-methodology.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/persona-methodology.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/persona-methodology.md",
+      "bytes": 11644,
+      "whitespaceWords": 1612,
+      "sha256": "a31e7a35880af5d7768f337f165dab9168a88016fed91e39f187cfa9c2fc1e5f"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/references/usability-testing-frameworks.md",
+      "bytes": 11932,
+      "whitespaceWords": 1642,
+      "sha256": "0a71d1fc59676df7d005f6bdc42e09ed94e924b6ef98837f5877f0bf3fc31676"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/scripts/persona_generator.py",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/scripts/persona_generator.py",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/scripts/persona_generator.py",
+      "bytes": 24561,
+      "whitespaceWords": 1924,
+      "sha256": "1bf61ff38178e605e5d553262b02e4942a52a18292c88eddb6326f82b57d2b70"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "product-team/skills/ux-researcher-designer/SKILL.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/product-team/skills/ux-researcher-designer/SKILL.md",
+      "bytes": 12007,
+      "whitespaceWords": 1740,
+      "sha256": "e19ce820e246bf34834e99ea361afcf93fb780ffbb2a4248b32a9947ae4a43ca"
+    },
+    {
+      "repo": "alirezarezvani/claude-skills",
+      "commit": "19392f7a08264ed00486a251f5b2098321771f94",
+      "path": "README.md",
+      "sourceURL": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/README.md",
+      "rawURL": "https://raw.githubusercontent.com/alirezarezvani/claude-skills/19392f7a08264ed00486a251f5b2098321771f94/README.md",
+      "bytes": 26216,
+      "whitespaceWords": 3034,
+      "sha256": "f7a1b881bc5abf370e6eb83eaf1a34488b9595a6464de7613d1ec6207acb8195"
+    },
+    {
+      "repo": "anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "path": "README.md",
+      "sourceURL": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/README.md",
+      "rawURL": "https://raw.githubusercontent.com/anthropics/skills/dbd4588f9e1033efb41dad4bef2f7947c8993d44/README.md",
+      "bytes": 5552,
+      "whitespaceWords": 708,
+      "sha256": "2fb9c4cc026366ea6e21c60cb23c908a4d27c62071819cc06beffaac102d0694"
+    },
+    {
+      "repo": "anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "path": "skills/frontend-design/LICENSE.txt",
+      "sourceURL": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+      "rawURL": "https://raw.githubusercontent.com/anthropics/skills/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt",
+      "bytes": 10174,
+      "whitespaceWords": 1413,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "repo": "anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "path": "skills/frontend-design/SKILL.md",
+      "sourceURL": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/anthropics/skills/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md",
+      "bytes": 9390,
+      "whitespaceWords": 1516,
+      "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": ".claude-plugin/plugin.json",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/.claude-plugin/plugin.json",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/.claude-plugin/plugin.json",
+      "bytes": 677,
+      "whitespaceWords": 62,
+      "sha256": "ef32b458aee5be62abd41188af91094cd2e51fed56dd8b1f6f6fbc97849cee6f"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/LICENSE",
+      "bytes": 7048,
+      "whitespaceWords": 1066,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": "README.md",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/README.md",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/README.md",
+      "bytes": 9264,
+      "whitespaceWords": 1217,
+      "sha256": "3af474821d7fe06d85b93a4d1506d5b47e159552b90244fc08e73c42d25861d7"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": "skills/evaluate/SKILL.md",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/evaluate/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/evaluate/SKILL.md",
+      "bytes": 27737,
+      "whitespaceWords": 4068,
+      "sha256": "6a6c70fdaa17342489786ad397332c8267b19497a076bc392408203c7ed50107"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": "skills/intent/SKILL.md",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/intent/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/intent/SKILL.md",
+      "bytes": 44149,
+      "whitespaceWords": 6389,
+      "sha256": "09f0fab19467a5e7b42998a9f5eb8312e19bef5ab5ef31520b7ee52d4d1564bd"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "path": "skills/journey/SKILL.md",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/journey/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ghaida/intent/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/journey/SKILL.md",
+      "bytes": 30586,
+      "whitespaceWords": 4315,
+      "sha256": "f709575dcd9a72cdb3ba8e4616b644193af340c133a3bd757cac85a928569142"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/LICENSE",
+      "bytes": 11273,
+      "whitespaceWords": 1581,
+      "sha256": "b4133a55232c0996713349891dc55469d46a16ec027c033c9e4108b2149abb42"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/examples/DESIGN.md",
+      "bytes": 6960,
+      "whitespaceWords": 859,
+      "sha256": "9a14478effd073d9fefc1f0e1084aab299078603d248406f1381462cd5a01c26"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/references/angular.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/angular.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/angular.md",
+      "bytes": 5237,
+      "whitespaceWords": 603,
+      "sha256": "d43ea54ae1fb25d72f4d2ae28df73bf3c16b92d9da35a6638f5aa572ceeff8b3"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/references/plain-css.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/plain-css.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/plain-css.md",
+      "bytes": 3991,
+      "whitespaceWords": 497,
+      "sha256": "a4e7a8efa8d8d7b33a214a4b146263bb029ba4ead478305436e7bb7ebeace80a"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/references/react-tailwind.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/react-tailwind.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/react-tailwind.md",
+      "bytes": 4583,
+      "whitespaceWords": 626,
+      "sha256": "9b48abffd0240e7721edaa1526674699fbaaab5838efb5fac0276b7e5efc8e15"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/references/svelte.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/svelte.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/svelte.md",
+      "bytes": 2714,
+      "whitespaceWords": 336,
+      "sha256": "f17530d1f2274ef5a8764355c979c992fe5c64a88a03270b69f43099fc117b9b"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/references/vue.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/vue.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/references/vue.md",
+      "bytes": 3077,
+      "whitespaceWords": 382,
+      "sha256": "df8f4d1e166e4cca4d01a60f28a1ecf35ce45787669a79008ea0cad1ec709f9f"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-design/skills/extract-design-md/SKILL.md",
+      "bytes": 14078,
+      "whitespaceWords": 2055,
+      "sha256": "f9c32b30acd9fea3dba7306bf38e3a859f49c1f27bcf44f9cf16d3a60a730276"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-utilities/skills/design-md/examples/DESIGN.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/examples/DESIGN.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/examples/DESIGN.md",
+      "bytes": 10844,
+      "whitespaceWords": 1458,
+      "sha256": "e856ef5f910f564f3b25a20720e9c74a0691e407e5d0bd8e0abf97b2b7225a24"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-utilities/skills/design-md/README.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/README.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/README.md",
+      "bytes": 1273,
+      "whitespaceWords": 162,
+      "sha256": "d8f3d639cf202f82e4f916600be16d3bf22d6ffc55c228d15cb93662612dc4e9"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "bytes": 7654,
+      "whitespaceWords": 1073,
+      "sha256": "eb15f44646528f3a087ce023329ae699c1b6e803662af68338e1eb1c0406b59b"
+    },
+    {
+      "repo": "google-labs-code/stitch-skills",
+      "commit": "0337446dadde6f8c94210444e2aa9d546126480f",
+      "path": "README.md",
+      "sourceURL": "https://github.com/google-labs-code/stitch-skills/blob/0337446dadde6f8c94210444e2aa9d546126480f/README.md",
+      "rawURL": "https://raw.githubusercontent.com/google-labs-code/stitch-skills/0337446dadde6f8c94210444e2aa9d546126480f/README.md",
+      "bytes": 11076,
+      "whitespaceWords": 1328,
+      "sha256": "350b366bf9880cacf9a37447c89248a158d0d96ea6054beac15842877c164a12"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+      "bytes": 1072,
+      "whitespaceWords": 169,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "README.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/README.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/README.md",
+      "bytes": 2751,
+      "whitespaceWords": 345,
+      "sha256": "7ea926a6072e5dc0e3617f49d24092ce38b04dd854c4cbb47a1e12791ab4f28f"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "skills/baseline-ui/SKILL.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/baseline-ui/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/baseline-ui/SKILL.md",
+      "bytes": 3419,
+      "whitespaceWords": 508,
+      "sha256": "fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "skills/create-design-md/SKILL.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/create-design-md/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/create-design-md/SKILL.md",
+      "bytes": 16208,
+      "whitespaceWords": 2344,
+      "sha256": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "skills/fixing-accessibility/SKILL.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-accessibility/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-accessibility/SKILL.md",
+      "bytes": 4718,
+      "whitespaceWords": 734,
+      "sha256": "549261e8a53b53a1a20c0ddbf736821e5fc0876ad82eee76e0efab8e9ee9dadf"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "skills/fixing-motion-performance/SKILL.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-motion-performance/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-motion-performance/SKILL.md",
+      "bytes": 5565,
+      "whitespaceWords": 832,
+      "sha256": "0a2d654902bc04263ce68c8c02967ef03f17b482e855360a5463211d99d7baa9"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "path": "skills/improve-ui/SKILL.md",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/improve-ui/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/ibelick/ui-skills/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/improve-ui/SKILL.md",
+      "bytes": 7830,
+      "whitespaceWords": 1114,
+      "sha256": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+      "bytes": 1069,
+      "whitespaceWords": 169,
+      "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "README.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/README.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/README.md",
+      "bytes": 3796,
+      "whitespaceWords": 425,
+      "sha256": "7669cf85687ee18110ab9ce350f863071ed975c52d8892d4584e0c876a0acd1d"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-accessibility/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-accessibility/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-accessibility/SKILL.md",
+      "bytes": 11068,
+      "whitespaceWords": 1668,
+      "sha256": "df0cafe0e75a08548cf46a2a430f46c198e7e0ee9d46bdf7884c2afefb44b70e"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-colors/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-colors/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-colors/SKILL.md",
+      "bytes": 7692,
+      "whitespaceWords": 1261,
+      "sha256": "e74f1c413a4094dc2a73fb0baa0da2241465e01d593b0257ba995500df9b0068"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-interface/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-interface/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-interface/SKILL.md",
+      "bytes": 8871,
+      "whitespaceWords": 1453,
+      "sha256": "23416fef4d08e0417927b6eb6763b7b08ed832451abfb9e26ea699262a28abcb"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-layout/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-layout/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-layout/SKILL.md",
+      "bytes": 8420,
+      "whitespaceWords": 1198,
+      "sha256": "8c5883ccb23c27c39b7c58d101154ff35e032410e0dc4794be9ab7fe070c2297"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-typography/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-typography/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-typography/SKILL.md",
+      "bytes": 12260,
+      "whitespaceWords": 1790,
+      "sha256": "e60ca6467ba60e68f95ed2d2cfa35f2a850d96ef2a0c0d3fcfcfd9510e51f184"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-ui/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-ui/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-ui/SKILL.md",
+      "bytes": 11140,
+      "whitespaceWords": 1663,
+      "sha256": "fb9807bb5c59a3ca9d4a27b25f56b36e5596251d280fb30c4b7f2ff8b6f4fe2d"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "path": "skills/better-writing/SKILL.md",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-writing/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/jakubkrehel/skills/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-writing/SKILL.md",
+      "bytes": 9420,
+      "whitespaceWords": 1556,
+      "sha256": "ef6843cbfcbafa62614b1a6e012c0b1ab6fd33eee0bdd84123cf49fe275c3a31"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "examples/ai_first_onboarding_example.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/examples/ai_first_onboarding_example.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/examples/ai_first_onboarding_example.md",
+      "bytes": 4069,
+      "whitespaceWords": 648,
+      "sha256": "0887ded64518ba300f14b05a43367585c11712119b42f245cd6b3d8657e4ad4f"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "examples/ai_native_saas_review_example.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/examples/ai_native_saas_review_example.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/examples/ai_native_saas_review_example.md",
+      "bytes": 4086,
+      "whitespaceWords": 625,
+      "sha256": "aa2eeed4eeb35a3ed0c5a8ec8b9576ce216d308eda2231ad5352cc68162321cf"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "SKILL.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/SKILL.md",
+      "bytes": 39456,
+      "whitespaceWords": 5712,
+      "sha256": "bc35aba9d3cd0a106d33d7dfb4ce36e87afa80424a0bfbb1ad0f7a441f73f5db"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/ai_first_interface_spec.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/ai_first_interface_spec.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/ai_first_interface_spec.md",
+      "bytes": 6300,
+      "whitespaceWords": 1126,
+      "sha256": "acebc3d47e9b3bddde36f8d9f12c1da2649496f3db97973ac5f5f2fcb2179caa"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/ai_first_onboarding_playbook.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/ai_first_onboarding_playbook.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/ai_first_onboarding_playbook.md",
+      "bytes": 8807,
+      "whitespaceWords": 1551,
+      "sha256": "4f7f768171dc383f90d31839230f097520f79f1b44cfc8f934c1185916d7860b"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/evaluation_rubric.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/evaluation_rubric.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/evaluation_rubric.md",
+      "bytes": 3618,
+      "whitespaceWords": 594,
+      "sha256": "c1eb6e858e90a3ac326013f60e4b049d4f21cdc3f3728f44ff3537c060ee6dfa"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/human_ai_responsibility_map.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/human_ai_responsibility_map.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/human_ai_responsibility_map.md",
+      "bytes": 1656,
+      "whitespaceWords": 270,
+      "sha256": "9f16e4e449cb5a29ab7678e84941f3bcc290840ebe45febe55f526bb852c5053"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/modality_decision_matrix.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/modality_decision_matrix.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/modality_decision_matrix.md",
+      "bytes": 1992,
+      "whitespaceWords": 343,
+      "sha256": "60f1fb197f5b751cc804c2b80a0ba058d7053cb65740a6f47b9cf1a163224d9f"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/onboarding_journey_map.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/onboarding_journey_map.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/onboarding_journey_map.md",
+      "bytes": 6238,
+      "whitespaceWords": 1179,
+      "sha256": "441afb5a37cf8b3eb23c6c5665fd220d3ec8dbd7e640ed0cb42169cbe594f39b"
+    },
+    {
+      "repo": "marketingskills/ai-first-saas-interface",
+      "commit": "42c76d040956924e3a72f25a98277f04342338d8",
+      "path": "templates/pattern_library.md",
+      "sourceURL": "https://github.com/marketingskills/ai-first-saas-interface/blob/42c76d040956924e3a72f25a98277f04342338d8/templates/pattern_library.md",
+      "rawURL": "https://raw.githubusercontent.com/marketingskills/ai-first-saas-interface/42c76d040956924e3a72f25a98277f04342338d8/templates/pattern_library.md",
+      "bytes": 6960,
+      "whitespaceWords": 906,
+      "sha256": "77473836a3a499ffa117f4c20b4f741c71ed26d200337574d07e3fd7a70cd058"
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/mohitagw15856/pm-claude-skills/921e015321cdcf7c48ad85f40eeaf5ba68c89433/LICENSE",
+      "bytes": 1071,
+      "whitespaceWords": 169,
+      "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd"
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "path": "README.md",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/README.md",
+      "rawURL": "https://raw.githubusercontent.com/mohitagw15856/pm-claude-skills/921e015321cdcf7c48ad85f40eeaf5ba68c89433/README.md",
+      "bytes": 25393,
+      "whitespaceWords": 2420,
+      "sha256": "b115023884387c0ea791eb33506c625505aead87d40d4e773a3c7e44dcdd0cca"
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "path": "skills/human-in-the-loop-design/SKILL.md",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/skills/human-in-the-loop-design/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/mohitagw15856/pm-claude-skills/921e015321cdcf7c48ad85f40eeaf5ba68c89433/skills/human-in-the-loop-design/SKILL.md",
+      "bytes": 6182,
+      "whitespaceWords": 952,
+      "sha256": "1f3cfe065cba176578af6da1efc2146d8297b700bcccf7dc8c839afa3cc673fa"
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "path": "SKILLSPEC.md",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/SKILLSPEC.md",
+      "rawURL": "https://raw.githubusercontent.com/mohitagw15856/pm-claude-skills/921e015321cdcf7c48ad85f40eeaf5ba68c89433/SKILLSPEC.md",
+      "bytes": 7899,
+      "whitespaceWords": 1121,
+      "sha256": "e533f292ade9118af3288937ee5e63c2719cba069ac7cf9c233ceda2bcc71c1a"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/references/pro-rules.md",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/references/pro-rules.md",
+      "bytes": 10909,
+      "whitespaceWords": 1685,
+      "sha256": "d28442d61c310b49c054a4ea736f89fb3008beebdbbc38c4b3a540b8f7fadf23"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      "bytes": 24526,
+      "whitespaceWords": 3503,
+      "sha256": "0609bc7c89dacb40472465d8fc14257b56b2c43439660fc8d6fa3b8c022e1876"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": ".claude/skills/ui-ux-pro-max/scripts/search.py",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/scripts/search.py",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/scripts/search.py",
+      "bytes": 9373,
+      "whitespaceWords": 811,
+      "sha256": "d54e648fe0ec2932cac66684220cc17be4bd4b4eba1d23d3195d509d398db374"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "bytes": 15969,
+      "whitespaceWords": 2118,
+      "sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/LICENSE",
+      "bytes": 1075,
+      "whitespaceWords": 170,
+      "sha256": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "README.md",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/README.md",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/README.md",
+      "bytes": 37924,
+      "whitespaceWords": 4056,
+      "sha256": "a12a95b7ce7d4ea88908e1ccf09b16a8a16d851d267228e954d1981da9c3dde2"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/app-interface.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/app-interface.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/app-interface.csv",
+      "bytes": 11046,
+      "whitespaceWords": 1038,
+      "sha256": "331e7cf2c0b222d80c566c5f255c63cb339f65bfd02e471a720f28e4864a9f08"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/catalog-summary.json",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/catalog-summary.json",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/catalog-summary.json",
+      "bytes": 2392,
+      "whitespaceWords": 224,
+      "sha256": "6638da97231c07fb5cef3cd9d3ce483ca7b2f9748980f8c27490eb03968d8894"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/charts.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/charts.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/charts.csv",
+      "bytes": 23365,
+      "whitespaceWords": 2857,
+      "sha256": "4115cf1120680f2cedef0676cb648f30c7ef4699e2a947535d4113e71ed3b12a"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/colors.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/colors.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/colors.csv",
+      "bytes": 37940,
+      "whitespaceWords": 1724,
+      "sha256": "8162429222bce22df62b564085946a30d07cc9722c58d0a3a494bd0d1d00841c"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/data-provenance.json",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/data-provenance.json",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/data-provenance.json",
+      "bytes": 36686,
+      "whitespaceWords": 2746,
+      "sha256": "e82fb33ed49375a300e93d9c11ccd1c1493c999e84ee7ee295e527634786e2e0"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/google-font-licenses.json",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/google-font-licenses.json",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/google-font-licenses.json",
+      "bytes": 433127,
+      "whitespaceWords": 36154,
+      "sha256": "35688523f2955795caa1a47c53b83099e60c1708461476f9cc3a050cf3b0148a"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/google-fonts.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/google-fonts.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/google-fonts.csv",
+      "bytes": 747241,
+      "whitespaceWords": 67214,
+      "sha256": "1c8c3b2ea1faf6a1012da463756def8b3889db33f2226f0343bb4daa80307d03"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/icons.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/icons.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/icons.csv",
+      "bytes": 57945,
+      "whitespaceWords": 6131,
+      "sha256": "50816c6012030178195a16ee481ebf58b47bd985d70e8ec58886cc83f6eddafc"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/landing.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/landing.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/landing.csv",
+      "bytes": 25449,
+      "whitespaceWords": 3045,
+      "sha256": "9a2edd3bb676c2a58f00ade7a062e285222d4297bfd847c8d5b056f0dbbf52d0"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/motion.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/motion.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/motion.csv",
+      "bytes": 14679,
+      "whitespaceWords": 1787,
+      "sha256": "381affe8df8ea1f66fbbda2598827f9f54299107bbe6a1b4e9b68f6b62091ceb"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+      "bytes": 823933,
+      "whitespaceWords": 65267,
+      "sha256": "2399325233b277b5c97a80e6a5e8941154f5d057beee4e7613db87c87d700236"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/products.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/products.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/products.csv",
+      "bytes": 75623,
+      "whitespaceWords": 8551,
+      "sha256": "42473f75e8dde5987bdf89ce55d8c168091b80a356cae691dd60247d80720b70"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/react-performance.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/react-performance.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/react-performance.csv",
+      "bytes": 15080,
+      "whitespaceWords": 1584,
+      "sha256": "3d925802539abac5afeb63ae8aa1960b7229ad271b3a47caed40ab2d97ad0734"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/angular.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/angular.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/angular.csv",
+      "bytes": 19863,
+      "whitespaceWords": 1666,
+      "sha256": "704be83f2bad30c7e6de01afb113ffa01e0c458762f48b7102f31ba2367b5553"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/astro.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/astro.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/astro.csv",
+      "bytes": 14591,
+      "whitespaceWords": 1121,
+      "sha256": "2c2f55fadaafc05e04cc321c8194a1a28b656e6757fe2ba316f41b16428299c6"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/avalonia.csv",
+      "bytes": 27327,
+      "whitespaceWords": 2004,
+      "sha256": "442fca14675a020683473e7e49f08abb27b9df0765c80efe54aef61f1a4ac258"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/flutter.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/flutter.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/flutter.csv",
+      "bytes": 14192,
+      "whitespaceWords": 942,
+      "sha256": "64dba0ac17349f28bce517a0f5f48c54d9ed2e487ec0c0258303463b382f41a0"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+      "bytes": 16551,
+      "whitespaceWords": 1165,
+      "sha256": "d05a581d20af57b8ca0104a6d31d90a07c437d500662a96c3029fc2f9a4678ee"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/javafx.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/javafx.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/javafx.csv",
+      "bytes": 33577,
+      "whitespaceWords": 2618,
+      "sha256": "2e819b8d5abdd23ad4dae0991650fdb57af497aabd68b37463aa9c442944c869"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+      "bytes": 12295,
+      "whitespaceWords": 689,
+      "sha256": "699de218b286948eaec7d15767b6e1350ee299167e49bf476d82e3ff58724e0a"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/laravel.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/laravel.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/laravel.csv",
+      "bytes": 20163,
+      "whitespaceWords": 1757,
+      "sha256": "854ea4daa5fc61292d22235ad33b49ba3fe22423c3de8d3cb03758ffed3b59f9"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nextjs.csv",
+      "bytes": 18687,
+      "whitespaceWords": 1478,
+      "sha256": "ecd2c27b2ea0127d203ae726060efcdd7335b5e83f96b99e4f3befbbfeebd5a4"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+      "bytes": 28700,
+      "whitespaceWords": 2295,
+      "sha256": "fce682a338cfcdbf35d318d20e5befbe7b5d81b05abc37f87677a6d9cde84dc6"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+      "bytes": 23014,
+      "whitespaceWords": 1777,
+      "sha256": "3d9b54ed2d151bd9c86e9e5609b8a6f88a00c4c52fa601a30af96c49b2c4d176"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/react-native.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/react-native.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/react-native.csv",
+      "bytes": 14049,
+      "whitespaceWords": 1072,
+      "sha256": "ba31dd9c0c04da6bc02a74448bf121f9c0728ae5ba3b4d47b487778b0a1135b5"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/react.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/react.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/react.csv",
+      "bytes": 21166,
+      "whitespaceWords": 1746,
+      "sha256": "4dd176a9787e5c6306b5df94158d75955adcdc6edab41ce5286641a5842303c1"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/shadcn.csv",
+      "bytes": 23184,
+      "whitespaceWords": 1726,
+      "sha256": "e56cfde5b74907836ac3582a4779d5b7f3d206a702ab81b8669a1b668c3eeb51"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/svelte.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/svelte.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/svelte.csv",
+      "bytes": 15078,
+      "whitespaceWords": 1260,
+      "sha256": "f6e379ba802941ba26b01d4ffbe3cd39120f2587659a1d93851c707f66bc13db"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/swiftui.csv",
+      "bytes": 15323,
+      "whitespaceWords": 1306,
+      "sha256": "bdd9231ff3ad658f4e7c063e1eb49df2fd09ac8d90631a86df899b39833b9623"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/threejs.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/threejs.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/threejs.csv",
+      "bytes": 46769,
+      "whitespaceWords": 5362,
+      "sha256": "155d583b9c64da0df4b6c6cb060c02eab222505e0734d6353da02c9e2b5d982b"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/uno.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/uno.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/uno.csv",
+      "bytes": 30091,
+      "whitespaceWords": 2318,
+      "sha256": "a0474363e4225b5367214d5675fd3e075f137026f9500f0d04357882ef4f6d48"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/uwp.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/uwp.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/uwp.csv",
+      "bytes": 24692,
+      "whitespaceWords": 1750,
+      "sha256": "c409f08c1fbba1f1029f1acaa554e7b4471cc85517a5751c9f2e62465badcd5c"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/vue.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/vue.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/vue.csv",
+      "bytes": 12813,
+      "whitespaceWords": 964,
+      "sha256": "b655f1ebb9dff2652d15981f31b1784c8a6d4759efd2815a14f3088257569f95"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/winui.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/winui.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/winui.csv",
+      "bytes": 27890,
+      "whitespaceWords": 1953,
+      "sha256": "e676dc1c13ee6c205c40b0746f1335150a346c7a49a0616d2545bc3d2c930c85"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/stacks/wpf.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/wpf.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/stacks/wpf.csv",
+      "bytes": 24158,
+      "whitespaceWords": 1720,
+      "sha256": "9781a9950b20333637b30a02e498b7efca21b618a3eeb8665836f3ac6e974da7"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/styles.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/styles.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/styles.csv",
+      "bytes": 149478,
+      "whitespaceWords": 14147,
+      "sha256": "a93a4d9d7025856575d7b7583bda020be9043013432c5af7c58af9dbdfb206b7"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/typography.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/typography.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/typography.csv",
+      "bytes": 49997,
+      "whitespaceWords": 3590,
+      "sha256": "321fc446e89024488ebae96dda93efc4d2307bd8bddb240857ad51364f6782c8"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/ui-reasoning.csv",
+      "bytes": 77360,
+      "whitespaceWords": 6604,
+      "sha256": "f0774dd741cecdad5eec842034bd6d5e9ea50e9f220a1910069748daa0bb8e9a"
+    },
+    {
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "56ea9cf174ed86786187daa9de0e6247cb0747e4",
+      "path": "src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "sourceURL": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "rawURL": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/56ea9cf174ed86786187daa9de0e6247cb0747e4/src/ui-ux-pro-max/data/ux-guidelines.csv",
+      "bytes": 27516,
+      "whitespaceWords": 2931,
+      "sha256": "ff81ec613f70ba9fc3fcce52dbe4ae35d44b2079dbe6dc066d2d6e38c28facd5"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/adapt.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/adapt.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/adapt.md",
+      "bytes": 11313,
+      "whitespaceWords": 1585,
+      "sha256": "9807cdc112b8bcbdeff9cd2516cda4d07129f1d47f29df4d57645344f34950c1"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/adapt.native.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/adapt.native.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/adapt.native.md",
+      "bytes": 3910,
+      "whitespaceWords": 597,
+      "sha256": "2455a2613e1fa29b986521c73cbad9424ccda70ef6cbe505779dbca5e16272a2"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/audit.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/audit.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/audit.md",
+      "bytes": 9250,
+      "whitespaceWords": 1279,
+      "sha256": "4b726d8f13ca1dbb82ca8179cbfefca8c53c13766fef4d7b8870f5d4324da2d6"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/audit.native.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/audit.native.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/audit.native.md",
+      "bytes": 8326,
+      "whitespaceWords": 1164,
+      "sha256": "2898eff507738f9102107809e671df3e69f889dee30073030fe96fb2483d8ea3"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/craft-floor.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/craft-floor.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/craft-floor.md",
+      "bytes": 5502,
+      "whitespaceWords": 883,
+      "sha256": "52b523e92b76daff71be2ec8c732c374c670f8d03e1296388738e581479ec1bb"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/critique.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/critique.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/critique.md",
+      "bytes": 48958,
+      "whitespaceWords": 7488,
+      "sha256": "c210c9506877c6c8d88880a337fddd95d4315daf70ed6bc631ee6520481f1a0c"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/document.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/document.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/document.md",
+      "bytes": 27523,
+      "whitespaceWords": 3844,
+      "sha256": "531d2b6c8c9affc7b794de7904905ff9b73962b986968fd1e90273eb26930b6e"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/init.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/init.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/init.md",
+      "bytes": 11766,
+      "whitespaceWords": 1793,
+      "sha256": "51349b3a32c7f907102dd680d8e2df9da27082caf46ee15c673be7ce14a5363b"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/new-work.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/new-work.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/new-work.md",
+      "bytes": 61778,
+      "whitespaceWords": 9637,
+      "sha256": "c2eb99db2f30598ef0d2e2f7163bb8a62ca2e5524de42a784b0d1f7117b1800f"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/operate.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/operate.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/operate.md",
+      "bytes": 4145,
+      "whitespaceWords": 611,
+      "sha256": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/routing.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/routing.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/routing.md",
+      "bytes": 3336,
+      "whitespaceWords": 503,
+      "sha256": "77ae09542fbc10aa4e8b119d6fd19359908a47c13c30068d6a150bfdb50e3e10"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/reference/shape.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/shape.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/reference/shape.md",
+      "bytes": 3547,
+      "whitespaceWords": 524,
+      "sha256": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": ".agents/skills/impeccable/SKILL.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/.agents/skills/impeccable/SKILL.md",
+      "bytes": 11659,
+      "whitespaceWords": 1577,
+      "sha256": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/LICENSE",
+      "bytes": 10766,
+      "whitespaceWords": 1496,
+      "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "NOTICE.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/NOTICE.md",
+      "bytes": 503,
+      "whitespaceWords": 56,
+      "sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "README.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/README.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/README.md",
+      "bytes": 29582,
+      "whitespaceWords": 3979,
+      "sha256": "256b85659e13ffd7f5aba978f83bc91677d7439967283744d71cb0b082bb81a3"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/adapt.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/adapt.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/adapt.md",
+      "bytes": 11330,
+      "whitespaceWords": 1585,
+      "sha256": "004b339416187222206adee5ff08ef1fa9bc346d4ceba2932f770d640449ec6d"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/adapt.native.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/adapt.native.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/adapt.native.md",
+      "bytes": 3927,
+      "whitespaceWords": 597,
+      "sha256": "f7f0ba948cbce75cdbb86836c4479b86cffbfaf6afe4a5a7c8f129807070a68d"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/audit.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/audit.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/audit.md",
+      "bytes": 8559,
+      "whitespaceWords": 1205,
+      "sha256": "b715832f7288e57d46581fdc9874e4df1a08430ea683462e17a2493e878adb5c"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/audit.native.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/audit.native.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/audit.native.md",
+      "bytes": 7652,
+      "whitespaceWords": 1090,
+      "sha256": "152f2523b4961f84ebd0cc7ea6fbf4e4300e9e1d26e82bd2bb5b6eb2d95bd9d8"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/craft-floor.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/craft-floor.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/craft-floor.md",
+      "bytes": 7136,
+      "whitespaceWords": 1002,
+      "sha256": "e4bfdb63ede878d6326831efbe76b98d3e63a4327088607dfd8b1589559c76de"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/critique.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/critique.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/critique.md",
+      "bytes": 48194,
+      "whitespaceWords": 7404,
+      "sha256": "f2ece6380e378ab644d0508adf10e213eb2d6e241e3d7339727fb8e61cd2d39b"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/document.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/document.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/document.md",
+      "bytes": 27397,
+      "whitespaceWords": 3822,
+      "sha256": "aca6d5ea0770131b8f97a3feb68e1bd3cc536b1ef2e7d05bb0c2c1c9c96c68d3"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/init.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/init.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/init.md",
+      "bytes": 11640,
+      "whitespaceWords": 1771,
+      "sha256": "72a41672b391085738ded0ab3cf8235866dab15fc931f9e2b43c914c3ece915f"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/new-work.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/new-work.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/new-work.md",
+      "bytes": 63517,
+      "whitespaceWords": 9829,
+      "sha256": "366acd1f81172f41da16f81fc5f0d9555ce1d7f80c810d5274478171cf6a3406"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/operate.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/operate.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/operate.md",
+      "bytes": 5200,
+      "whitespaceWords": 680,
+      "sha256": "e5bf4980c547e60b091f82f38d0eec4cc3ab85610b4b15ec8f1d86584f9eb404"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/routing.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/routing.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/routing.md",
+      "bytes": 3319,
+      "whitespaceWords": 503,
+      "sha256": "051540914d74dd64608a0f455c7135e5e6d47948c756290883501f01b6f3cd7d"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/reference/shape.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/shape.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/reference/shape.md",
+      "bytes": 3547,
+      "whitespaceWords": 524,
+      "sha256": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23"
+    },
+    {
+      "repo": "pbakaus/impeccable",
+      "commit": "6af45ac9a5eb8792f033d3242f52e99812fd91fa",
+      "path": "skill/SKILL.src.md",
+      "sourceURL": "https://github.com/pbakaus/impeccable/blob/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/SKILL.src.md",
+      "rawURL": "https://raw.githubusercontent.com/pbakaus/impeccable/6af45ac9a5eb8792f033d3242f52e99812fd91fa/skill/SKILL.src.md",
+      "bytes": 12356,
+      "whitespaceWords": 1638,
+      "sha256": "cb182d7e9c5b4abf39ed6c480a3e4c2a3ce8ddea7691a3f146809751d7e95447"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "agent-engineering/human-in-the-loop/assets/approval-policy-template.json",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/assets/approval-policy-template.json",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/assets/approval-policy-template.json",
+      "bytes": 2608,
+      "whitespaceWords": 174,
+      "sha256": "f6247009077c0d4854654a4bc0b00996dbcf1507966175a350c68d1a03e1a5af"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "bytes": 6255,
+      "whitespaceWords": 878,
+      "sha256": "d5072b3802c21f6d705054a37bf704c1ecb67d60e365281912a5b7bfe2cedc02"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "agent-engineering/human-in-the-loop/scripts/validate_gate_policy.py",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/scripts/validate_gate_policy.py",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/scripts/validate_gate_policy.py",
+      "bytes": 23155,
+      "whitespaceWords": 2100,
+      "sha256": "94601c38b7285db13a5f67015064617526a046a8be7ab878dbf5baeb75f2f728"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "agent-engineering/human-in-the-loop/SKILL.md",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/SKILL.md",
+      "bytes": 10087,
+      "whitespaceWords": 1331,
+      "sha256": "4228420ef0d7da23c0567b4e0728f587ba2f51d15904952b7d64d4e8aed35eb1"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/LICENSE",
+      "bytes": 1069,
+      "whitespaceWords": 169,
+      "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "path": "README.md",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/README.md",
+      "rawURL": "https://raw.githubusercontent.com/seb1n/awesome-ai-agent-skills/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/README.md",
+      "bytes": 22412,
+      "whitespaceWords": 2185,
+      "sha256": "1fc0d552e3688f2c4f419d2d25e614dda6f4d899cd224ecb71e4bddad4aabd29"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "path": "README.md",
+      "sourceURL": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/README.md",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/agent-skills/063bee94c3f4df8453406c830b0a7df0f2860278/README.md",
+      "bytes": 7838,
+      "whitespaceWords": 1023,
+      "sha256": "7c02f64b08fc6c4eef03c01d64f3e2ed478193ccfcbd14edba379abe23304651"
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "sourceURL": "https://github.com/vercel-labs/agent-skills/blob/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/agent-skills/063bee94c3f4df8453406c830b0a7df0f2860278/skills/web-design-guidelines/SKILL.md",
+      "bytes": 1231,
+      "whitespaceWords": 176,
+      "sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+    },
+    {
+      "repo": "vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "path": "AGENTS.md",
+      "sourceURL": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/AGENTS.md",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/434b7f91364665f2f733b310ec54809bf8f37937/AGENTS.md",
+      "bytes": 7995,
+      "whitespaceWords": 1077,
+      "sha256": "35411b4a2dcfa651fd33706a92cc860947364b521643107fbf3116abe3826d44"
+    },
+    {
+      "repo": "vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "path": "command.md",
+      "sourceURL": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/434b7f91364665f2f733b310ec54809bf8f37937/command.md",
+      "bytes": 8055,
+      "whitespaceWords": 1049,
+      "sha256": "d246b026f4f29b5823a9cc857f9edf3d2507002e055e32040cadeaf3b38e0234"
+    },
+    {
+      "repo": "vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "path": "LICENSE",
+      "sourceURL": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/434b7f91364665f2f733b310ec54809bf8f37937/LICENSE",
+      "bytes": 1068,
+      "whitespaceWords": 169,
+      "sha256": "6cd1609c9c12233507cdd2ce0d32e9a721e3c27494951be06b90090deeeb7af2"
+    },
+    {
+      "repo": "vercel-labs/web-interface-guidelines",
+      "commit": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "path": "README.md",
+      "sourceURL": "https://github.com/vercel-labs/web-interface-guidelines/blob/434b7f91364665f2f733b310ec54809bf8f37937/README.md",
+      "rawURL": "https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/434b7f91364665f2f733b310ec54809bf8f37937/README.md",
+      "bytes": 19239,
+      "whitespaceWords": 2394,
+      "sha256": "eda7dfa9998215267c7f920475d1773ea4129cb08ed088276ca598dd45d20aa5"
+    }
+  ],
+  "officialDocumentation": [
+    {
+      "name": "OpenAI skill activation",
+      "url": "https://developers.openai.com/plugins/concepts/skills",
+      "inspectedDate": "2026-10-17",
+      "kind": "live-reference",
+      "copiedSource": false
+    },
+    {
+      "name": "OpenAI selective-loading guidance",
+      "creator": "Eric Provencher / OpenAI",
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "publishedDate": "2026-09-11",
+      "inspectedDate": "2026-10-17",
+      "kind": "live-reference",
+      "copiedSource": false
+    }
+  ],
+  "unmeasured": [
+    {
+      "url": "https://stitch.withgoogle.com/docs/learn/prompting/",
+      "status": "Explicit skill prerequisite; web fetch returned no readable page text."
+    }
+  ]
+}

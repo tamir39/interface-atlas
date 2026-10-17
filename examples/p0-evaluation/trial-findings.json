@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-15",
+  "reviewMethod": "Root read all first drafts and author maps; independent reviewers checked each brief/first draft/protocol. Seven P2 project-document findings, followed by one root correction pass; no original draft modified.",
+  "findings": [
+    {
+      "id": "CP01",
+      "trial": "consumer-app",
+      "priority": "P2",
+      "criterion": [
+        "C06",
+        "T01"
+      ],
+      "heading": "Forms, editing, and navigation",
+      "issue": "Create editor lacks stable target and update semantics after A succeeds while B remains dirty.",
+      "correction": "Reserve target identity per editor; bind post-create edits to that record and use Save changes, preserving original completion identity/date."
+    },
+    {
+      "id": "CP02",
+      "trial": "consumer-app",
+      "priority": "P2",
+      "criterion": [
+        "C04",
+        "C05",
+        "T05"
+      ],
+      "heading": "Forms, editing, and navigation",
+      "issue": "Durable draft Discard does not retire queued autosaves or define failure.",
+      "correction": "Transactionally retire non-reused draft identity at completion; reject old autosaves, retain failure context and distinguish temporary-only discard."
+    },
+    {
+      "id": "CP03",
+      "trial": "consumer-app",
+      "priority": "P2",
+      "criterion": [
+        "C07",
+        "T05"
+      ],
+      "heading": "Storage failures, deletion, and recovery",
+      "issue": "Plan removal and Undo lack focus targets.",
+      "correction": "If still in the affected context, focus next/previous/Week after remove and restored entry after Undo; failures retain trigger/context."
+    },
+    {
+      "id": "SF01",
+      "trial": "storefront",
+      "priority": "P2",
+      "criterion": [
+        "C06",
+        "T03",
+        "T10"
+      ],
+      "heading": "Inputs, component states, and feedback",
+      "issue": "Repeated Add to existing variant has no merge/range semantics.",
+      "correction": "One line per stable variant; add requested amount to current acknowledged quantity with candidate revision checks; reject excessive result without clamp."
+    },
+    {
+      "id": "SF02",
+      "trial": "storefront",
+      "priority": "P2",
+      "criterion": [
+        "C05",
+        "T08",
+        "T09"
+      ],
+      "heading": "Quote review and hosted checkout",
+      "issue": "Earlier-attempt matching reply and observation ordering are implicit.",
+      "correction": "Accept authoritative same-action/payload/quote evidence under service ordering; prevent regression; add ordering to G2."
+    },
+    {
+      "id": "SF03",
+      "trial": "storefront",
+      "priority": "P2",
+      "criterion": [
+        "C06",
+        "T07",
+        "T08",
+        "T10"
+      ],
+      "heading": "Quote review and hosted checkout",
+      "issue": "Hosted return and browser re-entry have no concrete reconciliation/landing flow.",
+      "correction": "G2 defines return reference/method; recover original action, reconcile on return or restored page, preserve current cart and gate overlaps; define contextual focus."
+    },
+    {
+      "id": "BS01",
+      "trial": "bilingual-service",
+      "priority": "P2",
+      "criterion": [
+        "C05",
+        "T07",
+        "T08",
+        "T10"
+      ],
+      "heading": "8. Submission, uncertain outcomes and external gates",
+      "issue": "Dispatch names G1/G5 while recovery decision remains separately optional G2.",
+      "correction": "Dispatch also requires explicit G2 capability decision, with acknowledged identity/independent discovery or approved, accurately limited reduced capability."
+    }
+  ]
+}

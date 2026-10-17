@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-17",
+  "method": "Root adjudication of independently reported, supported document omissions; first drafts retained byte-for-byte.",
+  "corrections": [
+    {
+      "id": "IR01",
+      "case": "consumer-app",
+      "anchor": "End-to-end editing, practice and recovery",
+      "firstDraftSHA256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+      "reviewedDesignSHA256": "70b3f1c3192871c35403f78d1a6f1215fb67f15fa7d4f769e4431e2bf82446b4",
+      "change": "**Draft retirement:** Every editor/session draft has a non-reused identity and an active/retired eligibility record within the same atomic storage boundary as its writes. Discard retires that identity and removes its retained text in one transaction. Every queued, resumed or other-tab draft writer must check active eligibility and the expected draft revision inside its write transaction; a retired or obsolete writer cannot recreate the draft. Serialize work at that boundary: a writer committed before retirement is removed by discard; a writer arriving after retirement is rejected. A successful Finish atomically writes the unique completion, retires that practice draft identity and removes its text. Do not reuse a retired identity when starting another editor/session. A failed discard or Finish leaves the active draft and its recovery context available and makes no success claim. Engineering must verify the proposed atomic scope and retirement retention against the browser/storage contract before enabling durable behavior.",
+      "requiredTrace": "Exercise queued autosave after Discard and Finish, including an older tab; verify no retired draft returns and failure preserves the active draft.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR02",
+      "case": "storefront",
+      "anchor": "Authoritative review and checkout handoff",
+      "firstDraftSHA256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "reviewedDesignSHA256": "1a4dc12622de61c34ecad478445bc50069806e23d476d9910540cd98392fa3e3",
+      "change": "**Observation reconciliation:** Before live checkout, the service owner must supply authoritative observation ordering/version semantics, including how original-action lookup works when a returned session/operation mapping cannot be retained. Do not infer freshness from response arrival order or client clocks. Correlate action and immutable payload first, then apply only evidence permitted to supersede the current observation under that contract. Keep confirmed outcome/reference history; demonstrably older evidence cannot regress it, reopen an obsolete hosted URL, or repeat purchased-cart adjustments. Associate each permitted cart reconciliation with the authoritative effect identity so it applies once while preserving later additions. If authorized observations contradict and cannot be reliably ordered, retain both with their provenance, preserve the known confirmed evidence, display **Conflicting checkout information — reconciliation required**, and keep new/overlapping effects blocked until supported authoritative reconciliation resolves the conflict. No terminal-state model or recovery endpoint is invented.",
+      "requiredTrace": "Exercise late pending/rejected/hosted-URL observations after a confirmed outcome, unordered contradictions and duplicate cart reconciliation.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR03",
+      "case": "bilingual-service",
+      "anchor": "Submission, uncertain outcomes and contract gates",
+      "firstDraftSHA256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "reviewedDesignSHA256": "9fd74ef58595171c5a161fe32cc47ff820515f8cec1f1ce784bbf68c6d690ec4",
+      "change": "**Receipt observation reconciliation:** The service owner must define authoritative observation ordering/version semantics, or explicitly declare ordering unavailable, before dispatch is enabled. Correlate each observation to the original action and immutable payload; arrival order and client clocks confer no authority. Preserve confirmed receipt/reference and action history. Demonstrably older successful observations cannot replace a newer accepted result, hide its reference or enable correction/retry based on an obsolete rejection. When authorized observations contradict without reliable order, preserve their provenance alongside the known receipt, show **Conflicting request information — reconciliation required**, and offer only a supported status/reconciliation action. Keep the existing no-overlap and retry gates while unresolved. This does not assert a monotonic service model or equate receipt with completion of the requested service.",
+      "requiredTrace": "Exercise a late successful pending/rejected observation after receipt, an unordered contradiction and re-entry while reconciliation remains unresolved.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR04",
+      "case": "agent-operations",
+      "anchor": "Proposal review and changing intent",
+      "firstDraftSHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "reviewedDesignSHA256": "a614608d71db1c0623a3cb147b4ed56f77d210b6f3ea66f3064a79956b00f49f",
+      "change": "**Persisted rejection:** Treat Reject as a version-bound decision action with actor/authority, immutable proposal ID/version, stable decision identity and its own attempt/outcome record. Before dispatch, meet the same acknowledged recovery-identity or independently authorized discovery gate as other durable effects. Show **Rejection requested** while pending. A lost reply, timeout or unknown application yields **Rejection outcome unknown**, retaining its identity and supported lookup; reserve **Rejection not recorded** for authoritative evidence of non-application or a proven pre-dispatch failure. While rejection is pending/unknown, block conflicting Confirm and repeated Reject for that proposal across entry points and tabs through the service contract. A confirmed rejection retires the reviewed candidate, updates attention/history and prevents confirmation of that version. A proven non-application can return to review only after current authority/revisions are rechecked. Reopening a rejected proposal requires an explicit newly eligible review path supported by the owner; local navigation cannot revive it. Rejection never cancels previously dispatched execution. Decision/execution owners must define conflict ordering, atomic eligibility, duplicate scope/retention and recovery before enabling persisted rejection or conflicting confirmation.",
+      "requiredTrace": "Exercise reject lost reply, Reject/Confirm overlap, confirmed-rejection candidate retirement and re-entry with unresolved rejection.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR06",
+      "case": "bilingual-service-rerun",
+      "kind": "supported finding",
+      "priority": "P2",
+      "anchor": "Language delivery and switching",
+      "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+      "change": "**Latest language request:** Track committed interface language, latest requested language and a non-reused local request generation separately. Every new choice retires earlier switch requests. Only the still-current generation may commit a complete pack, change the selected value/title/document language, replace pending/error feedback or announce completion. While loading, retain the committed interface and expose the requested language plus pending status at the selector. Choosing the already committed language retires pending switches, clears their feedback and keeps that interface without waiting for a loader. A failure of the current request restores the committed selection and offers a retry for that choice; a later new choice retires that retry context too. Obsolete success may populate a pack cache but cannot change the interface or announce completion; obsolete failure produces no error or retry. Answers, validation identifiers, branch and editing/return context remain untouched.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR07",
+      "case": "bilingual-service-rerun",
+      "kind": "supported finding",
+      "priority": "P2",
+      "anchor": "Typography, layout, and appearance",
+      "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+      "change": "**Retained focus indicator:** Visible keyboard focus uses a 3px Ink outline with 5px offset: #293d2f in Light and #f3edda in Dark. In forced colors use system Highlight. Apply it to links, native form controls, language/appearance selectors and guarded unavailable actions; prevent clipping by panels, scrolling ancestors or adjacent content. Programmatic focus destinations must remain visibly identifiable. Verify the actual outline against every adjacent surface, including selected-service tints; this is a concrete retained proposal, not rendered evidence.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    },
+    {
+      "id": "IR05",
+      "case": "bilingual-service-rerun",
+      "kind": "open-contract clarification",
+      "priority": null,
+      "anchor": "Submission evidence and external contract gates",
+      "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+      "change": "**Ordering contract clarification:** Before enabling Send, the service owner must define authoritative observation ordering/revision semantics or explicitly state their absence. Match immutable action/candidate first; response arrival and client clocks do not establish freshness. Preserve confirmed receipt/reference and action history; provably older evidence cannot replace them. If matching authoritative observations contradict without reliable order, retain both with provenance, display **Conflicting request information — reconciliation required**, and keep repeat effects unavailable until a supported authoritative reconciliation resolves the conflict. This makes the existing gated dependency concrete without asserting service monotonicity or a new endpoint.",
+      "validation": "Document correction inspected; no implementation trace executed."
+    }
+  ],
+  "rerunAdjudication": {
+    "materialFindings": [
+      "IR06",
+      "IR07"
+    ],
+    "openContractClarification": "IR05",
+    "reason": "Reviewer treated ordering as an already gated external input; root accepts that distinction and makes it explicit as clarification rather than counting another supported defect.",
+    "rootMisses": "Independent review identified missing focus values and racing language-pack requests that root initial observations did not identify."
+  }
+}

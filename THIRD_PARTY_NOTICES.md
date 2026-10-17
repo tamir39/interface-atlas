@@ -1,6 +1,6 @@
 # Third-party credits and reuse status
 
-This pilot includes original Atlas documentation, retained design values from Tamir's portfolio, and links to external references. It does not include third-party implementation code, font binaries, or artwork.
+This library includes original Atlas documentation, retained design values from Tamir's portfolio, attributed workflow-method adaptations, and links to external references. It retains selected upstream license notices, without third-party implementation code, font binaries or artwork.
 
 The [Interface Atlas logo family and README hero artwork](assets/brand/README.md) are original SVG geometry and compositions created for this project with AI assistance. They contain no imported third-party logo, stock illustration, or embedded font files. Their ownership and usage notes are separate from individual theme source records.
 
@@ -66,6 +66,18 @@ Layered is an original Atlas synthesis for Tamir (Phi Vuong Tuong Tam) with Code
 
 **W3C WAI/APG and EOWG contributors**, form tutorial editors **Eric Eggert and Shadi Abou-Zahra**, and **WHATWG contributors** are credited for dialog, focus, form-notification, and native HTML concepts. Document-specific terms remain separate; no tutorial prose or example code is copied. Error-summary heading focus and all local workflow rules are Atlas choices.
 
+## Shared P0 knowledge references
+
+The [state/recovery, forms/navigation and uncertain-outcomes drafts](knowledge/README.md) are original Atlas synthesis for **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. Their policy tables, worksheets, copy and fictional cases are Atlas proposals. Detailed credits, dates, versions and limits are in the [P0 source ledger](references/p0-research.md); the [desk review](references/p0-review.md) does not establish implemented behavior.
+
+**W3C WAI/EOWG and Accessibility Guidelines Working Group contributors**, tutorial editors **Eric Eggert and Shadi Abou-Zahra**, the credited WCAG/APG/ARIA editors, and **Steve Becker** with former IndexedDB editors **Ali Alabbas and Joshua Bell** are credited for their respective work. WCAG's dated Recommendation links the [W3C Document License 2023](https://www.w3.org/copyright/document-license-2023/). Cited WAI/APG guidance and the IndexedDB draft link the [Software and Document License 2023](https://www.w3.org/copyright/software-license-2023/); WAI-ARIA 1.2 instead links its [2015 version](https://www.w3.org/copyright/software-license-2015/). Document status, license and required notices must be checked per artifact before future copying. No specification prose or tutorial code is reproduced here.
+
+**Anne van Kesteren**, the credited HTML maintainers and **WHATWG contributors** are credited for Storage, HTML and Fetch. Their notices distinguish [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) document terms from BSD 3-Clause for portions incorporated into source code. This research incorporates no external code or source passages. **Thomas Steiner**, **Philip Walton**, **Pete LePage**, original-version contributor **Chris Wilson**, and the separately credited reviewers are acknowledged for official Google developer guidance; its page-content CC BY 4.0 and sample-code Apache 2.0 scopes remain separate. **Sihui Liu** is credited for WebKit's version-scoped storage policy; blog-copying terms are unresolved and not inferred from software licensing.
+
+The **GOV.UK Design System team / Government Digital Service** is credited for comparative service patterns, with **Crown copyright**. Its footer identifies [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except as stated; direct full-text retrieval returned HTTP 403 in this research. No GOV.UK prose, implementation, visual identity or assets are copied. These service conventions are not universal WCAG requirements.
+
+**Roy T. Fielding, Mark Nottingham and Julian Reschke**, editors of [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html), and the **IETF / IETF Trust** are credited for HTTP semantics. The RFC applies BCP 78 and the [Trust Legal Provisions](https://trustee.ietf.org/documents/trust-legal-provisions/tlp-5/), with separate Code Component terms and a legacy-material modification caveat. No RFC text or code is extracted or modified as a replacement standard. Source authors do not endorse Atlas, and their terms do not choose Atlas's own publishing license.
+
 ## Fonts
 
 Selected font families are Manrope (Mikhail Sharanda), DM Serif Display (Colophon Foundry), and JetBrains Mono (JetBrains, Philipp Nurullin, Konstantin Bulenkov).
@@ -92,3 +104,11 @@ Retain original author credits for referenced concepts. If code, assets, font fi
 The external Floating Paths component is credited to Bundui.io; its implementation reuse terms remain unverified. Design directory and Design Prompts links are references, not a claimed license to copy their contents.
 
 Swiss references Massimo Vignelli's *The Vignelli Canon* (book design with Beatriz Cifuentes), hosted by RIT's Vignelli Center, and MoMA's Helvetica history crediting Max Miedinger and Edouard Hoffmann. No book pages, museum artwork, or Helvetica font software is included; these are conceptual and historical references. The optional Kinetic Grid reference is published by SatoriUI under `@satoriui`. Its listing states MIT; a future implementation import must verify the exact package's license and notices. Swiss's reference preview includes original static artwork and copies no external effect implementation.
+
+## Frontend workflow method adaptations
+
+The updated preparation workflow, opt-in frontend design review and selective UI/UX knowledge are original Atlas synthesis for **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. They selectively adapt domain ownership and UI/UX lenses from **Jakub Krehel**; governing-design evidence, source-aware handoff and focused accessibility methods from **Julien Thibeaut / ibelick**; journey, decision, interruption/return and bounded walkthrough reasoning from **Ghaida Zahran / Design with Intent**; and human action/approval and exact-proposal/recovery questions from **Mohit Aggarwal** and **Burhan Sebin**.
+
+The [adaptation record](references/skill-adaptations.md) identifies exact revisions, source paths, changes and limits. Unmodified license texts are retained for [Jakub](references/licenses/jakub-krehel-MIT.txt), [Julien](references/licenses/julien-thibeaut-MIT.txt), [Mohit](references/licenses/mohit-aggarwal-MIT.txt) and [Burhan](references/licenses/burhan-sebin-MIT.txt) under MIT, and [Ghaida](references/licenses/ghaida-intent-CC0.txt) under CC0-1.0 Universal. No upstream runtime, code, hooks, tool schemas or assets are imported.
+
+Microsoft HAX and Google PAIR are linked conceptual guidance; no webpages or assets are reproduced. Other researched skill packages remain comparisons. Linked materials retain their own terms, source creators do not endorse Atlas, and **Atlas's publishing license remains undecided**.

@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 2,
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "note": "Fresh-context trial with revised P0 input. Logged helper excerpts preserve exact returned bytes/hash plus full source identity. The initial concurrent candidate group suffered a shared-log collision; recoveryEvents retains original duplicate helper orders and reconstructed presentation order, not exact first-read sequencing. No unbroken contemporaneous log is claimed. Later reads were sequential. No token/cost/runtime evidence.",
+  "reads": [
+    {
+      "order": 1,
+      "scope": "trial-input",
+      "path": "brief.md",
+      "purpose": "Read immutable consumer app brief",
+      "selector": "full",
+      "utf8Bytes": 2174,
+      "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10",
+      "sourceFileBytes": 2174,
+      "sourceFileSha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+    },
+    {
+      "order": 2,
+      "scope": "repository",
+      "path": "AGENTS.md",
+      "purpose": "Read repository trial instructions",
+      "selector": "full",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20",
+      "sourceFileBytes": 1597,
+      "sourceFileSha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "order": 3,
+      "scope": "repository",
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Apply repository frontend design preparation workflow",
+      "selector": "full",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d",
+      "sourceFileBytes": 2638,
+      "sourceFileSha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "order": 4,
+      "scope": "repository",
+      "path": "catalog/themes.json",
+      "purpose": "Select small candidate set for calm text-first learner app",
+      "selector": "full",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6",
+      "sourceFileBytes": 10070,
+      "sourceFileSha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "order": 5,
+      "scope": "repository",
+      "path": "themes/layered/README.md",
+      "purpose": "Assess consumer planner theme fit",
+      "selector": "full",
+      "utf8Bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "sourceFileBytes": 6705,
+      "sourceFileSha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "sequenceKind": "reconstructed-presentation-order",
+      "helperReportedOrder": 5
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/botanical/README.md",
+      "purpose": "Assess calm reading-oriented theme alternative",
+      "selector": "full",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "sourceFileBytes": 5554,
+      "sourceFileSha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "sequenceKind": "reconstructed-presentation-order",
+      "helperReportedOrder": 5
+    },
+    {
+      "order": 7,
+      "scope": "repository",
+      "path": "knowledge/README.md",
+      "purpose": "Choose pertinent P0 chapters without broad loading",
+      "selector": "full",
+      "utf8Bytes": 2249,
+      "sha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07",
+      "sourceFileBytes": 2249,
+      "sourceFileSha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07"
+    },
+    {
+      "order": 8,
+      "scope": "repository",
+      "path": "templates/project-design.md",
+      "purpose": "Use repository project design outline",
+      "selector": "full",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8",
+      "sourceFileBytes": 2301,
+      "sourceFileSha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    },
+    {
+      "order": 9,
+      "scope": "repository",
+      "path": "themes/layered/design.md",
+      "purpose": "Use exact Layered tokens typography geometry and state rules",
+      "selector": "full",
+      "utf8Bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0",
+      "sourceFileBytes": 15292,
+      "sourceFileSha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "order": 10,
+      "scope": "repository",
+      "path": "themes/layered/sources.md",
+      "purpose": "Preserve Layered conceptual sources font credits versions and terms",
+      "selector": "full",
+      "utf8Bytes": 14276,
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e",
+      "sourceFileBytes": 14276,
+      "sourceFileSha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+    },
+    {
+      "order": 11,
+      "scope": "repository",
+      "path": "themes/layered/motion.md",
+      "purpose": "Select minimal feedback with reduced-motion alternatives",
+      "selector": "full",
+      "utf8Bytes": 3136,
+      "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b",
+      "sourceFileBytes": 3136,
+      "sourceFileSha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+    },
+    {
+      "order": 12,
+      "scope": "repository",
+      "path": "themes/layered/effects.md",
+      "purpose": "Bound opaque surfaces and optional editor elevation",
+      "selector": "full",
+      "utf8Bytes": 3491,
+      "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824",
+      "sourceFileBytes": 3491,
+      "sourceFileSha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+    },
+    {
+      "order": 13,
+      "scope": "repository",
+      "path": "knowledge/state-and-recovery.md",
+      "purpose": "Resolve same-browser durability damaged storage undo and conflicts",
+      "selector": "full",
+      "utf8Bytes": 17723,
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51",
+      "sourceFileBytes": 17723,
+      "sourceFileSha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+    },
+    {
+      "order": 14,
+      "scope": "repository",
+      "path": "knowledge/forms-and-navigation.md",
+      "purpose": "Resolve form validation dirty exits keyboard focus and browser navigation",
+      "selector": "full",
+      "utf8Bytes": 18930,
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b",
+      "sourceFileBytes": 18930,
+      "sourceFileSha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+    },
+    {
+      "order": 15,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Choose provenance cards for relevant state and form guidance",
+      "selector": "toc",
+      "utf8Bytes": 1954,
+      "sha256": "10105a77ecd98628d29a8c5dfec42e2eb637e03373c08c7891147733906e3549",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 16,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Retain selected storage forms navigation and interruption source identities",
+      "selector": "ids:P0-STATE-01,P0-STATE-03,F01,F06,F13,F20,F23",
+      "utf8Bytes": 13,
+      "sha256": "487e84f0a3538e5f679c3bffc319e38145a1d53de77961d5e3b6c350446d12ba",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 17,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Retry selected provenance cards after selector repair; prior excerpt had no metadata",
+      "selector": "ids:P0-STATE-01,P0-STATE-03,F01,F06,F13,F20,F23",
+      "utf8Bytes": 9235,
+      "sha256": "29ff689d33ad36d5d8343b272647f7b57bde80b949ef1efacba7efb81776e88b",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    }
+  ],
+  "recoveryEvents": [
+    {
+      "kind": "concurrent-helper-log-write-collision",
+      "concurrentPaths": [
+        "themes/layered/README.md",
+        "themes/botanical/README.md",
+        "knowledge/README.md",
+        "templates/project-design.md"
+      ],
+      "sequencingLimit": "The records below preserve displayed tool result presentation order only. Their duplicate helper order values do not establish exact first-read sequencing.",
+      "displayedRecords": [
+        {
+          "reconstructedPresentationOrder": 5,
+          "helperReportedRecord": {
+            "order": 5,
+            "scope": "repository",
+            "path": "themes/layered/README.md",
+            "purpose": "Assess consumer planner theme fit",
+            "selector": "full",
+            "utf8Bytes": 6705,
+            "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+            "sourceFileBytes": 6705,
+            "sourceFileSha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+          }
+        },
+        {
+          "reconstructedPresentationOrder": 6,
+          "helperReportedRecord": {
+            "order": 5,
+            "scope": "repository",
+            "path": "themes/botanical/README.md",
+            "purpose": "Assess calm reading-oriented theme alternative",
+            "selector": "full",
+            "utf8Bytes": 5554,
+            "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+            "sourceFileBytes": 5554,
+            "sourceFileSha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+          }
+        }
+      ],
+      "failedBeforeDisplay": [
+        {
+          "path": "knowledge/README.md",
+          "purpose": "Choose pertinent P0 chapters without broad loading",
+          "error": "Shared-log JSON parse error; no repository content displayed"
+        },
+        {
+          "path": "templates/project-design.md",
+          "purpose": "Use repository project design outline",
+          "error": "Shared-log JSON parse error; no repository content displayed"
+        }
+      ],
+      "recovery": "Removed trailing invalid JSON, retained exact displayed records, renumbered Botanical continuation slot to 6 while preserving its reported order 5 here. Retried index/template sequentially as records 7 and 8."
+    },
+    {
+      "kind": "source-card-selector-returned-no-metadata",
+      "readOrder": 16,
+      "outcome": "Actual returned excerpt was seven hash lines, 13 bytes. It supplied no credit, terms or source metadata and was not used as provenance.",
+      "recoveryReadOrder": 17,
+      "recovery": "Parent repaired the helper selector; selected cards were reread sequentially without bypassing the helper."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Review state-transition boundaries
+
+Use for persistent editing, consequential remote actions or human-agent decisions. Choose applicable traces; do not add those capabilities to a static surface. These are original Atlas review questions grounded in the existing P0 chapters, not new platform or service guarantees.
+
+Trace a concrete candidate through its draft, queued work, acknowledgement, current authority and next user action. Read the governing project rules first; use the linked sections to resolve a specific question. Check both the declared behavior and every path that can bypass its boundary.
+
+| When applicable | Trace to reconcile in the document | Selective reference |
+| --- | --- | --- |
+| A save can overlap newer editing | An old candidate completes after a newer draft exists: which exact candidate becomes acknowledged, which editing remains dirty, and can a create become a duplicate rather than an update? | [Save snapshots](../../../knowledge/state-and-recovery.md#save-snapshots-and-completion) |
+| Work is discarded, removed, finalized or replaced while writes remain queued | The destructive change succeeds, then obsolete work arrives. What makes every writer reject the retired draft/object identity or generation? A deletion acknowledgement alone does not retire an old writer. What is retained if retirement fails? | [Replacement and stale writers](../../../knowledge/state-and-recovery.md#replacement-and-stale-writers), [dirty exit](../../../knowledge/forms-and-navigation.md#modal-editing-and-dirty-exit) |
+| A remote request or retry can outlive its screen | The effect may occur without a reply, then the user returns or changes intent. How is the original action found, and what gates a new or repeated effect? | [Dispatch and changed intent](../../../knowledge/uncertain-outcomes.md#dispatch-and-changed-intent), [safe recovery](../../../knowledge/uncertain-outcomes.md#safe-retry-and-recovery) |
+| Observations or attempts may arrive late | An older matching observation arrives after a newer result, or observations contradict. What identity/payload and service-defined ordering can qualify evidence? What preserves confirmed history and exposes a contradiction when ordering is unavailable? A failed refresh rule alone does not settle late successful responses. | [Cancellation and stale evidence](../../../knowledge/uncertain-outcomes.md#cancellation-and-stale-evidence) |
+| A person reviews a changing proposal | Scope or target changes before application. Which reviewed version is authorized, what revalidates it at execution, and what must be reviewed again? | [Agent control questions](../../../knowledge/agent-experience.md#resolve-project-control-questions) |
+
+A future-test list names work still to do; it does not supply the behavior an implementer needs. Distinguish an explicit capability gate with an owner from an omitted local decision or an unconditional promise behind that gate. Do not invent ordering, atomicity, retention or cancellation support. Report a bounded missing rule only when the trace exposes a material task or recovery consequence; an alternative coherent design can close it.
+
+For every finding, try the strongest counterexample in the document before reporting it. Keep proposed fixes separate from the unmodified review input. Source/method credits and retained notices remain in [the adaptation record](../../../references/skill-adaptations.md).

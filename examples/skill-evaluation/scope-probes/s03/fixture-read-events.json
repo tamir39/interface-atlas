@@ -1,0 +1,26 @@
+{
+  "note": "Portable derived paths; original raw log hash retained in evidence.json.",
+  "reads": [
+    {
+      "path": "probes/s03/design.md",
+      "purpose": "Locate the single control-label typo for the requested correction",
+      "bytes": 207,
+      "SHA256": "c11307455bcce16a28514187e8065bd9907444af7565d98b08fda094e5d95e41",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s03/design.md",
+      "purpose": "Apply only the requested control-label spelling correction",
+      "bytes": 207,
+      "SHA256": "c11307455bcce16a28514187e8065bd9907444af7565d98b08fda094e5d95e41",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s03/design.md",
+      "purpose": "Verify the written file equals the original with only the requested typo replaced",
+      "bytes": 208,
+      "SHA256": "7358d3baded476882b9795b2e5709ad53bfdda8fdc2950061816e87a336c4b82",
+      "mode": "whole"
+    }
+  ]
+}

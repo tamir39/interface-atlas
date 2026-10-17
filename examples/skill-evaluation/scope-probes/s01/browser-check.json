@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "checks": [],
+  "error": "Edge did not expose a DevTools endpoint",
+  "cleanup": {
+    "confirmed": true,
+    "profilePath": "C:\\Users\\PC\\.codex\\visualizations\\2026\\10\\12\\01a13103-a26d-7172-81af-e67e7cee6101\\interface-atlas-skill-implementation-2026-10-17\\runs\\probe-s01\\browser-profile",
+    "profileExists": false,
+    "matchingProcesses": [],
+    "processesStoppedDuringCleanupConfirmation": [],
+    "inspection": "Get-CimInstance for Edge and Node command lines containing this probe's exact temporary profile; elevated read-only inspection succeeded after default inspection was denied.",
+    "helpers": "The browser-check Node helper exited with code 1, and the subsequent DOM-check Node helper exited with code 0.",
+    "notes": "No matching process or temporary profile remained. No additional process termination or profile removal was needed, and no pre-existing user browser or unrelated process was stopped."
+  }
+}

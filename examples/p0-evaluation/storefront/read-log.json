@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 2,
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "note": "Fresh-context trial with revised P0 input. Logged before display. Excerpts record exact returned bytes/hash plus full source identity. No token/cost/runtime evidence. Candidate README helper calls raced; two overwritten entries were reconstructed from their exact returned metadata. Exact first-read order within the concurrent group is unavailable; display order is recorded separately. Later reads are sequential.",
+  "reads": [
+    {
+      "order": 1,
+      "scope": "trial-input",
+      "path": "brief.md",
+      "purpose": "Read immutable storefront project requirements",
+      "selector": "full",
+      "utf8Bytes": 2428,
+      "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb",
+      "sourceFileBytes": 2428,
+      "sourceFileSha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+    },
+    {
+      "order": 2,
+      "scope": "repository",
+      "path": "AGENTS.md",
+      "purpose": "Read repository authoring constraints",
+      "selector": "full",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20",
+      "sourceFileBytes": 1597,
+      "sourceFileSha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "order": 3,
+      "scope": "repository",
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Read unchanged frontend design workflow",
+      "selector": "full",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d",
+      "sourceFileBytes": 2638,
+      "sourceFileSha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "order": 4,
+      "scope": "repository",
+      "path": "knowledge/README.md",
+      "purpose": "Route relevant P0 knowledge chapters",
+      "selector": "full",
+      "utf8Bytes": 2249,
+      "sha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07",
+      "sourceFileBytes": 2249,
+      "sourceFileSha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07"
+    },
+    {
+      "order": 5,
+      "scope": "repository",
+      "path": "catalog/themes.json",
+      "purpose": "Compare theme fit before candidate selection",
+      "selector": "full",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6",
+      "sourceFileBytes": 10070,
+      "sourceFileSha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/gallery/README.md",
+      "purpose": "Assess image-led boutique storefront fit",
+      "selector": "full",
+      "utf8Bytes": 6100,
+      "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b",
+      "sourceFileBytes": 6100,
+      "sourceFileSha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b",
+      "displayOrder": 6,
+      "concurrentReadGroup": "candidate-readmes",
+      "firstReadOrderWithinGroup": null
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/botanical/README.md",
+      "purpose": "Compare calm lifestyle-brand alternative",
+      "selector": "full",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "sourceFileBytes": 5554,
+      "sourceFileSha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "displayOrder": 7,
+      "concurrentReadGroup": "candidate-readmes",
+      "firstReadOrderWithinGroup": null
+    },
+    {
+      "order": 6,
+      "scope": "repository",
+      "path": "themes/editorial/README.md",
+      "purpose": "Compare boutique editorial alternative",
+      "selector": "full",
+      "utf8Bytes": 4591,
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "sourceFileBytes": 4591,
+      "sourceFileSha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "displayOrder": 8,
+      "concurrentReadGroup": "candidate-readmes",
+      "firstReadOrderWithinGroup": null
+    },
+    {
+      "order": 9,
+      "scope": "repository",
+      "path": "themes/gallery/design.md",
+      "purpose": "Load selected Gallery visual specification",
+      "selector": "full",
+      "utf8Bytes": 17395,
+      "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4",
+      "sourceFileBytes": 17395,
+      "sourceFileSha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+    },
+    {
+      "order": 10,
+      "scope": "repository",
+      "path": "themes/gallery/sources.md",
+      "purpose": "Preserve Gallery creators credits and reuse boundaries",
+      "selector": "full",
+      "utf8Bytes": 13653,
+      "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a",
+      "sourceFileBytes": 13653,
+      "sourceFileSha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+    },
+    {
+      "order": 11,
+      "scope": "repository",
+      "path": "themes/gallery/motion.md",
+      "purpose": "Resolve restrained feedback and reduced motion",
+      "selector": "full",
+      "utf8Bytes": 3173,
+      "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8",
+      "sourceFileBytes": 3173,
+      "sourceFileSha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8"
+    },
+    {
+      "order": 12,
+      "scope": "repository",
+      "path": "themes/gallery/effects.md",
+      "purpose": "Resolve accurate imagery and permissible framing",
+      "selector": "full",
+      "utf8Bytes": 3269,
+      "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276",
+      "sourceFileBytes": 3269,
+      "sourceFileSha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276"
+    },
+    {
+      "order": 13,
+      "scope": "repository",
+      "path": "templates/project-design.md",
+      "purpose": "Use unchanged adaptable project design outline",
+      "selector": "full",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8",
+      "sourceFileBytes": 2301,
+      "sourceFileSha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    },
+    {
+      "order": 14,
+      "scope": "repository",
+      "path": "themes/gallery/sources.md",
+      "purpose": "Recover source section omitted by combined output truncation",
+      "selector": "full",
+      "utf8Bytes": 13653,
+      "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a",
+      "sourceFileBytes": 13653,
+      "sourceFileSha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+    },
+    {
+      "order": 15,
+      "scope": "repository",
+      "path": "knowledge/state-and-recovery.md",
+      "purpose": "Resolve recoverable guest cart and storage boundaries",
+      "selector": "full",
+      "utf8Bytes": 17723,
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51",
+      "sourceFileBytes": 17723,
+      "sourceFileSha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+    },
+    {
+      "order": 16,
+      "scope": "repository",
+      "path": "knowledge/forms-and-navigation.md",
+      "purpose": "Resolve variant quantity cart editing and route recovery",
+      "selector": "full",
+      "utf8Bytes": 18930,
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b",
+      "sourceFileBytes": 18930,
+      "sourceFileSha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+    },
+    {
+      "order": 17,
+      "scope": "repository",
+      "path": "knowledge/uncertain-outcomes.md",
+      "purpose": "Resolve authoritative price quotes and unknown checkout recovery",
+      "selector": "full",
+      "utf8Bytes": 18322,
+      "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10",
+      "sourceFileBytes": 18322,
+      "sourceFileSha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+    },
+    {
+      "order": 18,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Select bounded provenance cards for storefront P0 decisions",
+      "selector": "toc",
+      "utf8Bytes": 1954,
+      "sha256": "10105a77ecd98628d29a8c5dfec42e2eb637e03373c08c7891147733906e3549",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 19,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Read scoped storage and outcome provenance evidence",
+      "selector": "ids:P0-STATE-01,P0-STATE-02,P0-STATE-03,P0-STATE-06,UO-HTTP,UO-FETCH",
+      "utf8Bytes": 11,
+      "sha256": "3b23ab1d5efccc995670341c33dccbc96247892a6587bfb82b02f184d25f91b5",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 20,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Read fixed bounded storage and outcome source cards",
+      "selector": "ids:P0-STATE-01,P0-STATE-02,P0-STATE-03,P0-STATE-06,UO-HTTP,UO-FETCH",
+      "utf8Bytes": 11097,
+      "sha256": "163959c2bee4ed8eca50dfed6d66bef01fbf254c59fc78c34d26bea3e07fe352",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    },
+    {
+      "order": 21,
+      "scope": "repository",
+      "path": "references/p0-research.md",
+      "purpose": "Read bounded input modal navigation and feedback provenance",
+      "selector": "ids:F01,F02,F04,F06,F08,F10,F12,F13,F20,F25",
+      "utf8Bytes": 11611,
+      "sha256": "3397c7ca8bda4b0cf9a6d104ddeb5bf1788343a331bea0ec013681023ea8f1b0",
+      "sourceFileBytes": 59847,
+      "sourceFileSha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+    }
+  ],
+  "recoveryNotes": [
+    {
+      "group": "candidate-readmes",
+      "reason": "Concurrent helper calls raced on the same JSON log; all three successful displayed outputs returned order 6. Two overwritten records were reconstructed from exact returned helper metadata. First-read ordering inside the group is unavailable.",
+      "displayOrder": [
+        "themes/gallery/README.md",
+        "themes/botanical/README.md",
+        "themes/editorial/README.md"
+      ],
+      "originalReturnedOrder": 6
+    }
+  ]
+}

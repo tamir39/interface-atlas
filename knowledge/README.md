@@ -1,9 +1,18 @@
 # Shared knowledge
 
-This layer holds cross-theme guidance. Read only documents relevant to the project brief.
+Use this index to select guidance for preparing or explicitly reviewing a project's design. Start from the brief or a concrete review question. Read applicable sections and their dependencies/credits; do not load every chapter, source registry or upstream skill bundle. Routine implementation normally uses the project's self-contained documents.
 
-- [Agent Experience](agent-experience.md): useful when the interface exposes agent activity, decisions, or operator controls.
+| Chapter | Select when there is a decision about | Scope |
+| --- | --- | --- |
+| [General UI/UX design](ui-ux-design.md) | User goals, task/content structure, journeys, hierarchy, layout, typography, semantic color, UX writing or validation questions | Cross-theme planning/review; use relevant sections for unresolved decisions |
+| [Accessibility and responsive behavior](accessibility-and-responsive.md) | Names/semantics, keyboard/focus, errors/status, zoom/reflow, content order, touch/input differences, language/RTL or appearance checks | Task-scoped decisions and evidence; not a conformance certificate |
+| [State ownership and durable recovery](state-and-recovery.md) | Drafts/records, persistence, reload recovery, concurrent edits, migration, reset or import/export | P0 knowledge draft; select actual state capabilities |
+| [Forms and navigation](forms-and-navigation.md) | Editable inputs, validation, modal editing, branching/review, dirty exit, Back/Forward or save/resume | P0 knowledge draft; choose relevant flow sections |
+| [Uncertain outcomes](uncertain-outcomes.md) | Remote effects, lost replies, repeat submission, retry, cancellation or reconciliation | P0 knowledge draft; requires project/service facts and gates |
+| [Agent Experience](agent-experience.md) | Human-facing agent work, proposals, progress, intervention or control | Lifecycle principles and contract questions; no agent runtime implementation |
 
-Editorial's initial accessibility, typography, layout, effects, and motion decisions are documented in its [theme package](../themes/editorial/README.md). Extract additional shared guidance when multiple themes need it, retaining its source evidence rather than duplicating entire theme documents.
+Theme identity, values, effects and motion remain in the chosen theme package. Shared guides resolve cross-theme decisions. Select by feature: a static portfolio need not load persistence or remote outcomes; a local practice app should not acquire agent/backend flows; a remote branching form may need all three P0 chapters. An existing resolved design can need only one relevant section for a narrow revision.
 
-Project documents should resolve relevant shared guidance into concrete rules so implementation agents do not need to reopen the whole library.
+Turn selected guidance into explicit project values, behaviors and open contracts in design.md. Do not make the consuming project repeatedly load Atlas. Separate observations, inherited design rules, new proposals and unsupported capabilities. Source inspection, heuristic review, browser checks, assistive-technology checks and user research are different evidence.
+
+The P0 drafts retain their [source ledger](../references/p0-research.md), [earlier review](../references/p0-review.md), and [trial history](../examples/p0-evaluation/README.md). They are now routed by the updated preparation and opt-in review workflows; their draft status does not imply production behavior was validated. [Skill adaptation credits](../references/skill-adaptations.md) record the new guides' creator/license mappings and retained notices. The [research comparison](../references/skill-research.md) is optional background, not a required skill read.

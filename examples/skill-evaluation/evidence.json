@@ -1,0 +1,2197 @@
+{
+  "date": "2026-10-17",
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "status": "Local qualitative document trial; no commit, push, deployment or global skill installation.",
+  "sourcePhases": {
+    "initial": {
+      "date": "2026-10-17",
+      "status": "frozen-before-generation",
+      "sourceFiles": [
+        {
+          "path": "AGENTS.md",
+          "bytes": 1978,
+          "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd"
+        },
+        {
+          "path": "catalog/themes.json",
+          "bytes": 10070,
+          "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+        },
+        {
+          "path": "examples/skill-evaluation/agent-operations/brief.md",
+          "bytes": 2734,
+          "sha256": "cd5a86a4dded2135e88c6c5c0cbb755bb8a5b507913222ca719cf3f9a9d1d4db"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service/brief.md",
+          "bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+        },
+        {
+          "path": "examples/skill-evaluation/consumer-app/brief.md",
+          "bytes": 2174,
+          "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+        },
+        {
+          "path": "examples/skill-evaluation/storefront/brief.md",
+          "bytes": 2428,
+          "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+        },
+        {
+          "path": "knowledge/accessibility-and-responsive.md",
+          "bytes": 5852,
+          "sha256": "fcde6775c47577cc3626e38cf1512755fd56b92ca6cb1312990ca92562da266d"
+        },
+        {
+          "path": "knowledge/agent-experience.md",
+          "bytes": 4037,
+          "sha256": "537070f888f79c8b9d31abf3f9b5d3c27925b754f2ee7573bafdc94f24cd4f91"
+        },
+        {
+          "path": "knowledge/forms-and-navigation.md",
+          "bytes": 18930,
+          "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+        },
+        {
+          "path": "knowledge/README.md",
+          "bytes": 3153,
+          "sha256": "8169d4b9e7ffceba01c109ad969f6437293cd3f2e0b83b498939710085176700"
+        },
+        {
+          "path": "knowledge/state-and-recovery.md",
+          "bytes": 17723,
+          "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+        },
+        {
+          "path": "knowledge/ui-ux-design.md",
+          "bytes": 6962,
+          "sha256": "ef7048339a733068b3f2241ddcacce7cc682cb65c748f723000465fc883f5152"
+        },
+        {
+          "path": "knowledge/uncertain-outcomes.md",
+          "bytes": 18322,
+          "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+        },
+        {
+          "path": "references/licenses/burhan-sebin-MIT.txt",
+          "bytes": 1069,
+          "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2"
+        },
+        {
+          "path": "references/licenses/ghaida-intent-CC0.txt",
+          "bytes": 7048,
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "references/licenses/jakub-krehel-MIT.txt",
+          "bytes": 1069,
+          "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f"
+        },
+        {
+          "path": "references/licenses/julien-thibeaut-MIT.txt",
+          "bytes": 1072,
+          "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+        },
+        {
+          "path": "references/licenses/mohit-aggarwal-MIT.txt",
+          "bytes": 1071,
+          "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd"
+        },
+        {
+          "path": "references/p0-research.md",
+          "bytes": 59847,
+          "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+        },
+        {
+          "path": "references/skill-adaptations.md",
+          "bytes": 9744,
+          "sha256": "02a8801225a921eab3cb081b933df803de06118ec6c38b78fdd01968b364e1fd"
+        },
+        {
+          "path": "skills/prepare-frontend-design/SKILL.md",
+          "bytes": 3820,
+          "sha256": "71804c65b66564565c65e8485f4239c6d7c24709070c08ce9c92f0b74f9477f3"
+        },
+        {
+          "path": "skills/review-frontend-design/agents/openai.yaml",
+          "bytes": 164,
+          "sha256": "22f312caaa58ac78308f681d5f5620141ae80549f817b54273455165b78fdf82"
+        },
+        {
+          "path": "skills/review-frontend-design/SKILL.md",
+          "bytes": 4027,
+          "sha256": "5086738dcc5db5d7f8be5ff077a6d241900c10bfa00260278cdedad53ad57ad7"
+        },
+        {
+          "path": "templates/project-design.md",
+          "bytes": 2835,
+          "sha256": "2abbf0a6b8acbc98064b883c26e5de4ee1bfecd7ab043e793981a09c7622d0e2"
+        },
+        {
+          "path": "themes/blueprint/design.md",
+          "bytes": 13173,
+          "sha256": "4a32980eebbb3ba36953d785a6f8dc5ee9654adebf692e7824327f76a2dfd258"
+        },
+        {
+          "path": "themes/blueprint/effects.md",
+          "bytes": 4888,
+          "sha256": "5191189db2e66c5d12d85a1cf0e47c080d7d3802e098e21613cd9370762dd7d8"
+        },
+        {
+          "path": "themes/blueprint/motion.md",
+          "bytes": 3675,
+          "sha256": "110cf978626f0a3828e7e6cbf5a466220cfe7a6310ed51de4a50b6dd9380785c"
+        },
+        {
+          "path": "themes/blueprint/README.md",
+          "bytes": 5535,
+          "sha256": "c8edb5cdd3a165bb041dac901cdd2030db2bbd0d5b6d1f629097ef5f1f10434f"
+        },
+        {
+          "path": "themes/blueprint/sources.md",
+          "bytes": 10122,
+          "sha256": "fd3b7987ba9a2091fd26c7ffb070a733abe19c67b0482a9ff98f7e2fa10cda8b"
+        },
+        {
+          "path": "themes/botanical/design.md",
+          "bytes": 12482,
+          "sha256": "57bb978940f0c2c98532603e40eb0207045672af715b09fdc59e9c5ef11b7f32"
+        },
+        {
+          "path": "themes/botanical/effects.md",
+          "bytes": 4468,
+          "sha256": "4ca27538a20c803301ce8818bdd36a76fd66bfe812c8a185b7324ca8a7f3b8d3"
+        },
+        {
+          "path": "themes/botanical/motion.md",
+          "bytes": 3909,
+          "sha256": "a52d30dd05ad54dcc43f5b74d8c32bc721b11c3bec5ff330e43bc3510b81631f"
+        },
+        {
+          "path": "themes/botanical/README.md",
+          "bytes": 5554,
+          "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+        },
+        {
+          "path": "themes/botanical/sources.md",
+          "bytes": 10743,
+          "sha256": "7e83b712a5e8803d673df95d85fab997f602c8906c76c4ac9691f12ccce193a2"
+        },
+        {
+          "path": "themes/editorial/design.md",
+          "bytes": 8351,
+          "sha256": "21eb98f496099ee5b000509335b113660762c368c0d3402db2951abb5714646f"
+        },
+        {
+          "path": "themes/editorial/effects.md",
+          "bytes": 3330,
+          "sha256": "83f4c1baaad94e6a4c4efca8a01a5b8802d7e2c53e6068e4944721a97b20f4ee"
+        },
+        {
+          "path": "themes/editorial/motion.md",
+          "bytes": 3260,
+          "sha256": "1652760dcf1c81dd5a9a3dba28f6b91fa94ab14122203f46366bd8fd32515f2e"
+        },
+        {
+          "path": "themes/editorial/README.md",
+          "bytes": 4591,
+          "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a"
+        },
+        {
+          "path": "themes/editorial/sources.md",
+          "bytes": 7738,
+          "sha256": "1d9a2221a3171807717b2d5e350d30f8cd9f6eaaa78ff023e2fe457cee8a9f88"
+        },
+        {
+          "path": "themes/gallery/design.md",
+          "bytes": 17395,
+          "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+        },
+        {
+          "path": "themes/gallery/effects.md",
+          "bytes": 3269,
+          "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276"
+        },
+        {
+          "path": "themes/gallery/motion.md",
+          "bytes": 3173,
+          "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8"
+        },
+        {
+          "path": "themes/gallery/README.md",
+          "bytes": 6100,
+          "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b"
+        },
+        {
+          "path": "themes/gallery/sources.md",
+          "bytes": 13653,
+          "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+        },
+        {
+          "path": "themes/layered/design.md",
+          "bytes": 15292,
+          "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+        },
+        {
+          "path": "themes/layered/effects.md",
+          "bytes": 3491,
+          "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+        },
+        {
+          "path": "themes/layered/motion.md",
+          "bytes": 3136,
+          "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+        },
+        {
+          "path": "themes/layered/README.md",
+          "bytes": 6705,
+          "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+        },
+        {
+          "path": "themes/layered/sources.md",
+          "bytes": 14276,
+          "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+        },
+        {
+          "path": "themes/play/design.md",
+          "bytes": 14510,
+          "sha256": "1c61915f458713a36ac6b5979efade888cc6010fd2e0e1f2cf029bd3d3501b60"
+        },
+        {
+          "path": "themes/play/effects.md",
+          "bytes": 4884,
+          "sha256": "d79d4d639031dead74b75cfb0ce390f15e241eaf2508ed8a7f037f893f8dae79"
+        },
+        {
+          "path": "themes/play/motion.md",
+          "bytes": 4916,
+          "sha256": "15ab5e636c8ed708e973a4bba8e39cf8c2031968285a615b40ef5245f94a923e"
+        },
+        {
+          "path": "themes/play/README.md",
+          "bytes": 5568,
+          "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859"
+        },
+        {
+          "path": "themes/play/sources.md",
+          "bytes": 11131,
+          "sha256": "79fbf6530901d58cc97be3c34e153b6e26c59136e3ba3fd66ab50074e8bfecd3"
+        },
+        {
+          "path": "themes/precision/design.md",
+          "bytes": 12936,
+          "sha256": "07599482c9917b76e455e4aa576a8d09aed7b609810595a92259b810b4876831"
+        },
+        {
+          "path": "themes/precision/effects.md",
+          "bytes": 2953,
+          "sha256": "4554c0de6385e719b5a6210a066ddc46472c5a416d338ba5e0a47fccd226a3a6"
+        },
+        {
+          "path": "themes/precision/motion.md",
+          "bytes": 2920,
+          "sha256": "772a39507a286bf2e150fb999779761e04530368154dfabbbfa0a1ad95f02dee"
+        },
+        {
+          "path": "themes/precision/README.md",
+          "bytes": 5418,
+          "sha256": "d494d06256df2bce73d84bcee445157b802bde4f9b20f87a05cc91e0aa45be79"
+        },
+        {
+          "path": "themes/precision/sources.md",
+          "bytes": 10663,
+          "sha256": "d90ceb2013b1f9a9227fee9df00b168289c63786ce6a3d5d06a187f995796b72"
+        },
+        {
+          "path": "themes/pulse/design.md",
+          "bytes": 14487,
+          "sha256": "7bb46304f0303675df634a61f47c67bdb4f998223a754ff4a9cdcb1c8f2ceca0"
+        },
+        {
+          "path": "themes/pulse/effects.md",
+          "bytes": 3186,
+          "sha256": "97447c96ca9e07605d3ffad913bb341098126e046ff46aaa3adad037d57ee62e"
+        },
+        {
+          "path": "themes/pulse/motion.md",
+          "bytes": 3865,
+          "sha256": "9db8e393b00bc2b3962981cd1046b32c15c67c9b53518b67e649bb9e25e1ad02"
+        },
+        {
+          "path": "themes/pulse/README.md",
+          "bytes": 6054,
+          "sha256": "b8e5c3ad970d241bcc5036d593fdc52b8b49c79d635e141df77adfe9d9b8861b"
+        },
+        {
+          "path": "themes/pulse/sources.md",
+          "bytes": 9257,
+          "sha256": "2a42a5f476de903592b16ad2f85d2668a0b8918d1d96a9e0815461949d2bbf29"
+        },
+        {
+          "path": "themes/swiss/design.md",
+          "bytes": 11021,
+          "sha256": "39bfd13042911294cd5c8793eca12249a632f5e83ba64f7c89105125c4fea46d"
+        },
+        {
+          "path": "themes/swiss/effects.md",
+          "bytes": 4334,
+          "sha256": "61615cff92295a4c5458f0972232ca70d596641649cfb92e878bcac4b09647dc"
+        },
+        {
+          "path": "themes/swiss/motion.md",
+          "bytes": 3504,
+          "sha256": "436a4c07741aca4cee4d7b7eb9b70e5ed8475a25dcd834b6b8105ef24243f231"
+        },
+        {
+          "path": "themes/swiss/README.md",
+          "bytes": 5121,
+          "sha256": "8c2d4d44eadb22172ef0ae1d832cddcbc95918c20060b23214a8f5514312be38"
+        },
+        {
+          "path": "themes/swiss/sources.md",
+          "bytes": 10620,
+          "sha256": "12652d6935bc5cd06a5e8b614e6935c9254c84a739b47f19dd1f2e8514dda9aa"
+        }
+      ],
+      "wrappers": [
+        {
+          "id": "consumer-app",
+          "path": "prompts/consumer-app.txt",
+          "bytes": 2277,
+          "sha256": "80c8010affe29478d9c12b0b36969b164187c0fc2b24217041eb1646c76c3b38"
+        },
+        {
+          "id": "storefront",
+          "path": "prompts/storefront.txt",
+          "bytes": 2271,
+          "sha256": "5959d9bb1742661d7431be58550d109f8d3070fdbf8bd3aa5b52433eb699b7f3"
+        },
+        {
+          "id": "bilingual-service",
+          "path": "prompts/bilingual-service.txt",
+          "bytes": 2292,
+          "sha256": "3e81dacfda2dd9afaabc5d898df80a9545f969f7b3bc7d2ba58f6b6c248eef50"
+        },
+        {
+          "id": "agent-operations",
+          "path": "prompts/agent-operations.txt",
+          "bytes": 2289,
+          "sha256": "3f98592320c92bced6059178b2e9e5b6fddf0c86aecbcdd1fe1418f846781f8e"
+        }
+      ],
+      "reader": {
+        "path": "trial-read.mjs",
+        "bytes": 3067,
+        "sha256": "0fe327e09f71112009361b1c8601a0c2255ad4f6bcb1fbd987690c9de1f8b233"
+      },
+      "initialPublishedFiles": [
+        "knowledge/accessibility-and-responsive.md",
+        "knowledge/agent-experience.md",
+        "knowledge/README.md",
+        "knowledge/ui-ux-design.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "skills/review-frontend-design/agents/openai.yaml",
+        "skills/review-frontend-design/SKILL.md",
+        "templates/project-design.md",
+        "references/licenses/burhan-sebin-MIT.txt",
+        "references/licenses/ghaida-intent-CC0.txt",
+        "references/licenses/jakub-krehel-MIT.txt",
+        "references/licenses/julien-thibeaut-MIT.txt",
+        "references/licenses/mohit-aggarwal-MIT.txt",
+        "references/skill-adaptations.md",
+        "AGENTS.md",
+        "THIRD_PARTY_NOTICES.md",
+        "references/SOURCES.md",
+        "examples/skill-evaluation/consumer-app/brief.md",
+        "examples/skill-evaluation/storefront/brief.md",
+        "examples/skill-evaluation/bilingual-service/brief.md",
+        "examples/skill-evaluation/agent-operations/brief.md",
+        "examples/skill-evaluation/protocol.md"
+      ]
+    },
+    "reviewRefinement": {
+      "date": "2026-10-17",
+      "reason": "Initial broad reviews missed independently recorded state-boundary handoff findings; added conditional state-transition profile, with no preparation or first-draft change.",
+      "initialReviewSkillSHA256": "5086738dcc5db5d7f8be5ff077a6d241900c10bfa00260278cdedad53ad57ad7",
+      "finalReviewSkillSHA256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08",
+      "initialReports": [
+        {
+          "path": "runs/review-known/consumer-app-review.md",
+          "bytes": 5113,
+          "sha256": "05643fde8ac8a84f9c3331b20a8be5351d6b10b83921d10b96858263cd138d81"
+        },
+        {
+          "path": "runs/review-known/storefront-review.md",
+          "bytes": 5704,
+          "sha256": "59af8da4fe8d84851551529bb03076eb4b5fc5cc6c1ea9aa36753967c59ed04a"
+        },
+        {
+          "path": "runs/review-known/bilingual-service-review.md",
+          "bytes": 5969,
+          "sha256": "b64bd34e992abe0b0a24b8f4ad9627023000f678a971aea3ce2ab384882b6116"
+        }
+      ],
+      "sourceFiles": [
+        {
+          "path": "AGENTS.md",
+          "bytes": 1978,
+          "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd"
+        },
+        {
+          "path": "catalog/themes.json",
+          "bytes": 10070,
+          "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+        },
+        {
+          "path": "examples/skill-evaluation/agent-operations/brief.md",
+          "bytes": 2734,
+          "sha256": "cd5a86a4dded2135e88c6c5c0cbb755bb8a5b507913222ca719cf3f9a9d1d4db"
+        },
+        {
+          "path": "examples/skill-evaluation/agent-operations/first-draft.md",
+          "bytes": 26623,
+          "sha256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service/brief.md",
+          "bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "bytes": 27452,
+          "sha256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e"
+        },
+        {
+          "path": "examples/skill-evaluation/consumer-app/brief.md",
+          "bytes": 2174,
+          "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+        },
+        {
+          "path": "examples/skill-evaluation/consumer-app/first-draft.md",
+          "bytes": 22194,
+          "sha256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871"
+        },
+        {
+          "path": "examples/skill-evaluation/storefront/brief.md",
+          "bytes": 2428,
+          "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+        },
+        {
+          "path": "examples/skill-evaluation/storefront/first-draft.md",
+          "bytes": 24627,
+          "sha256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740"
+        },
+        {
+          "path": "knowledge/accessibility-and-responsive.md",
+          "bytes": 5852,
+          "sha256": "fcde6775c47577cc3626e38cf1512755fd56b92ca6cb1312990ca92562da266d"
+        },
+        {
+          "path": "knowledge/agent-experience.md",
+          "bytes": 4037,
+          "sha256": "537070f888f79c8b9d31abf3f9b5d3c27925b754f2ee7573bafdc94f24cd4f91"
+        },
+        {
+          "path": "knowledge/forms-and-navigation.md",
+          "bytes": 18930,
+          "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+        },
+        {
+          "path": "knowledge/README.md",
+          "bytes": 3153,
+          "sha256": "8169d4b9e7ffceba01c109ad969f6437293cd3f2e0b83b498939710085176700"
+        },
+        {
+          "path": "knowledge/state-and-recovery.md",
+          "bytes": 17723,
+          "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+        },
+        {
+          "path": "knowledge/ui-ux-design.md",
+          "bytes": 6962,
+          "sha256": "ef7048339a733068b3f2241ddcacce7cc682cb65c748f723000465fc883f5152"
+        },
+        {
+          "path": "knowledge/uncertain-outcomes.md",
+          "bytes": 18322,
+          "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+        },
+        {
+          "path": "references/licenses/burhan-sebin-MIT.txt",
+          "bytes": 1069,
+          "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2"
+        },
+        {
+          "path": "references/licenses/ghaida-intent-CC0.txt",
+          "bytes": 7048,
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "references/licenses/jakub-krehel-MIT.txt",
+          "bytes": 1069,
+          "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f"
+        },
+        {
+          "path": "references/licenses/julien-thibeaut-MIT.txt",
+          "bytes": 1072,
+          "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+        },
+        {
+          "path": "references/licenses/mohit-aggarwal-MIT.txt",
+          "bytes": 1071,
+          "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd"
+        },
+        {
+          "path": "references/p0-research.md",
+          "bytes": 59847,
+          "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+        },
+        {
+          "path": "references/skill-adaptations.md",
+          "bytes": 9744,
+          "sha256": "02a8801225a921eab3cb081b933df803de06118ec6c38b78fdd01968b364e1fd"
+        },
+        {
+          "path": "skills/prepare-frontend-design/SKILL.md",
+          "bytes": 3820,
+          "sha256": "71804c65b66564565c65e8485f4239c6d7c24709070c08ce9c92f0b74f9477f3"
+        },
+        {
+          "path": "skills/review-frontend-design/agents/openai.yaml",
+          "bytes": 164,
+          "sha256": "22f312caaa58ac78308f681d5f5620141ae80549f817b54273455165b78fdf82"
+        },
+        {
+          "path": "skills/review-frontend-design/references/state-transitions.md",
+          "bytes": 3429,
+          "sha256": "fae5800603dc5f698b2db71103980dc4b3efd7ab4b4393ce38d4e70c1d7b372e"
+        },
+        {
+          "path": "skills/review-frontend-design/SKILL.md",
+          "bytes": 4364,
+          "sha256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08"
+        },
+        {
+          "path": "templates/project-design.md",
+          "bytes": 2835,
+          "sha256": "2abbf0a6b8acbc98064b883c26e5de4ee1bfecd7ab043e793981a09c7622d0e2"
+        },
+        {
+          "path": "themes/blueprint/design.md",
+          "bytes": 13173,
+          "sha256": "4a32980eebbb3ba36953d785a6f8dc5ee9654adebf692e7824327f76a2dfd258"
+        },
+        {
+          "path": "themes/blueprint/effects.md",
+          "bytes": 4888,
+          "sha256": "5191189db2e66c5d12d85a1cf0e47c080d7d3802e098e21613cd9370762dd7d8"
+        },
+        {
+          "path": "themes/blueprint/motion.md",
+          "bytes": 3675,
+          "sha256": "110cf978626f0a3828e7e6cbf5a466220cfe7a6310ed51de4a50b6dd9380785c"
+        },
+        {
+          "path": "themes/blueprint/README.md",
+          "bytes": 5535,
+          "sha256": "c8edb5cdd3a165bb041dac901cdd2030db2bbd0d5b6d1f629097ef5f1f10434f"
+        },
+        {
+          "path": "themes/blueprint/sources.md",
+          "bytes": 10122,
+          "sha256": "fd3b7987ba9a2091fd26c7ffb070a733abe19c67b0482a9ff98f7e2fa10cda8b"
+        },
+        {
+          "path": "themes/botanical/design.md",
+          "bytes": 12482,
+          "sha256": "57bb978940f0c2c98532603e40eb0207045672af715b09fdc59e9c5ef11b7f32"
+        },
+        {
+          "path": "themes/botanical/effects.md",
+          "bytes": 4468,
+          "sha256": "4ca27538a20c803301ce8818bdd36a76fd66bfe812c8a185b7324ca8a7f3b8d3"
+        },
+        {
+          "path": "themes/botanical/motion.md",
+          "bytes": 3909,
+          "sha256": "a52d30dd05ad54dcc43f5b74d8c32bc721b11c3bec5ff330e43bc3510b81631f"
+        },
+        {
+          "path": "themes/botanical/README.md",
+          "bytes": 5554,
+          "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+        },
+        {
+          "path": "themes/botanical/sources.md",
+          "bytes": 10743,
+          "sha256": "7e83b712a5e8803d673df95d85fab997f602c8906c76c4ac9691f12ccce193a2"
+        },
+        {
+          "path": "themes/editorial/design.md",
+          "bytes": 8351,
+          "sha256": "21eb98f496099ee5b000509335b113660762c368c0d3402db2951abb5714646f"
+        },
+        {
+          "path": "themes/editorial/effects.md",
+          "bytes": 3330,
+          "sha256": "83f4c1baaad94e6a4c4efca8a01a5b8802d7e2c53e6068e4944721a97b20f4ee"
+        },
+        {
+          "path": "themes/editorial/motion.md",
+          "bytes": 3260,
+          "sha256": "1652760dcf1c81dd5a9a3dba28f6b91fa94ab14122203f46366bd8fd32515f2e"
+        },
+        {
+          "path": "themes/editorial/README.md",
+          "bytes": 4591,
+          "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a"
+        },
+        {
+          "path": "themes/editorial/sources.md",
+          "bytes": 7738,
+          "sha256": "1d9a2221a3171807717b2d5e350d30f8cd9f6eaaa78ff023e2fe457cee8a9f88"
+        },
+        {
+          "path": "themes/gallery/design.md",
+          "bytes": 17395,
+          "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+        },
+        {
+          "path": "themes/gallery/effects.md",
+          "bytes": 3269,
+          "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276"
+        },
+        {
+          "path": "themes/gallery/motion.md",
+          "bytes": 3173,
+          "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8"
+        },
+        {
+          "path": "themes/gallery/README.md",
+          "bytes": 6100,
+          "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b"
+        },
+        {
+          "path": "themes/gallery/sources.md",
+          "bytes": 13653,
+          "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+        },
+        {
+          "path": "themes/layered/design.md",
+          "bytes": 15292,
+          "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+        },
+        {
+          "path": "themes/layered/effects.md",
+          "bytes": 3491,
+          "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+        },
+        {
+          "path": "themes/layered/motion.md",
+          "bytes": 3136,
+          "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+        },
+        {
+          "path": "themes/layered/README.md",
+          "bytes": 6705,
+          "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+        },
+        {
+          "path": "themes/layered/sources.md",
+          "bytes": 14276,
+          "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+        },
+        {
+          "path": "themes/play/design.md",
+          "bytes": 14510,
+          "sha256": "1c61915f458713a36ac6b5979efade888cc6010fd2e0e1f2cf029bd3d3501b60"
+        },
+        {
+          "path": "themes/play/effects.md",
+          "bytes": 4884,
+          "sha256": "d79d4d639031dead74b75cfb0ce390f15e241eaf2508ed8a7f037f893f8dae79"
+        },
+        {
+          "path": "themes/play/motion.md",
+          "bytes": 4916,
+          "sha256": "15ab5e636c8ed708e973a4bba8e39cf8c2031968285a615b40ef5245f94a923e"
+        },
+        {
+          "path": "themes/play/README.md",
+          "bytes": 5568,
+          "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859"
+        },
+        {
+          "path": "themes/play/sources.md",
+          "bytes": 11131,
+          "sha256": "79fbf6530901d58cc97be3c34e153b6e26c59136e3ba3fd66ab50074e8bfecd3"
+        },
+        {
+          "path": "themes/precision/design.md",
+          "bytes": 12936,
+          "sha256": "07599482c9917b76e455e4aa576a8d09aed7b609810595a92259b810b4876831"
+        },
+        {
+          "path": "themes/precision/effects.md",
+          "bytes": 2953,
+          "sha256": "4554c0de6385e719b5a6210a066ddc46472c5a416d338ba5e0a47fccd226a3a6"
+        },
+        {
+          "path": "themes/precision/motion.md",
+          "bytes": 2920,
+          "sha256": "772a39507a286bf2e150fb999779761e04530368154dfabbbfa0a1ad95f02dee"
+        },
+        {
+          "path": "themes/precision/README.md",
+          "bytes": 5418,
+          "sha256": "d494d06256df2bce73d84bcee445157b802bde4f9b20f87a05cc91e0aa45be79"
+        },
+        {
+          "path": "themes/precision/sources.md",
+          "bytes": 10663,
+          "sha256": "d90ceb2013b1f9a9227fee9df00b168289c63786ce6a3d5d06a187f995796b72"
+        },
+        {
+          "path": "themes/pulse/design.md",
+          "bytes": 14487,
+          "sha256": "7bb46304f0303675df634a61f47c67bdb4f998223a754ff4a9cdcb1c8f2ceca0"
+        },
+        {
+          "path": "themes/pulse/effects.md",
+          "bytes": 3186,
+          "sha256": "97447c96ca9e07605d3ffad913bb341098126e046ff46aaa3adad037d57ee62e"
+        },
+        {
+          "path": "themes/pulse/motion.md",
+          "bytes": 3865,
+          "sha256": "9db8e393b00bc2b3962981cd1046b32c15c67c9b53518b67e649bb9e25e1ad02"
+        },
+        {
+          "path": "themes/pulse/README.md",
+          "bytes": 6054,
+          "sha256": "b8e5c3ad970d241bcc5036d593fdc52b8b49c79d635e141df77adfe9d9b8861b"
+        },
+        {
+          "path": "themes/pulse/sources.md",
+          "bytes": 9257,
+          "sha256": "2a42a5f476de903592b16ad2f85d2668a0b8918d1d96a9e0815461949d2bbf29"
+        },
+        {
+          "path": "themes/swiss/design.md",
+          "bytes": 11021,
+          "sha256": "39bfd13042911294cd5c8793eca12249a632f5e83ba64f7c89105125c4fea46d"
+        },
+        {
+          "path": "themes/swiss/effects.md",
+          "bytes": 4334,
+          "sha256": "61615cff92295a4c5458f0972232ca70d596641649cfb92e878bcac4b09647dc"
+        },
+        {
+          "path": "themes/swiss/motion.md",
+          "bytes": 3504,
+          "sha256": "436a4c07741aca4cee4d7b7eb9b70e5ed8475a25dcd834b6b8105ef24243f231"
+        },
+        {
+          "path": "themes/swiss/README.md",
+          "bytes": 5121,
+          "sha256": "8c2d4d44eadb22172ef0ae1d832cddcbc95918c20060b23214a8f5514312be38"
+        },
+        {
+          "path": "themes/swiss/sources.md",
+          "bytes": 10620,
+          "sha256": "12652d6935bc5cd06a5e8b614e6935c9254c84a739b47f19dd1f2e8514dda9aa"
+        }
+      ],
+      "prompts": [
+        {
+          "path": "prompts/review-known-v2.txt",
+          "bytes": 1998,
+          "sha256": "0da442f0ed68504d6219f2db4ef23e5f420740d67195dda3beea7392527d5842"
+        },
+        {
+          "path": "prompts/review-operations-v2.txt",
+          "bytes": 1330,
+          "sha256": "63bfc6a611002cac6c032ae8ce818d32dbc15409b0758b7871b9b69787b085f7"
+        }
+      ],
+      "reader": {
+        "path": "trial-read-v2.mjs",
+        "sha256": "7615c0a5489758d38b704533fef44417cc2f924c85aafba18168b6b56f8a7382"
+      },
+      "status": "frozen-before-review-v2-dispatch"
+    },
+    "preparationRefinement": {
+      "date": "2026-10-17",
+      "reason": "Bilingual first pass reread nine whole files solely for normalized provenance fingerprints (110921 returned source bytes). Added metadata-only identity guidance and reader mode, then reran the affected case.",
+      "initialPreparationSHA256": "71804c65b66564565c65e8485f4239c6d7c24709070c08ce9c92f0b74f9477f3",
+      "finalPreparationSHA256": "d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40",
+      "sourceFiles": [
+        {
+          "path": "AGENTS.md",
+          "bytes": 1978,
+          "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd"
+        },
+        {
+          "path": "catalog/themes.json",
+          "bytes": 10070,
+          "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+        },
+        {
+          "path": "examples/skill-evaluation/agent-operations/brief.md",
+          "bytes": 2734,
+          "sha256": "cd5a86a4dded2135e88c6c5c0cbb755bb8a5b507913222ca719cf3f9a9d1d4db"
+        },
+        {
+          "path": "examples/skill-evaluation/agent-operations/first-draft.md",
+          "bytes": 26623,
+          "sha256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service/brief.md",
+          "bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "bytes": 27452,
+          "sha256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e"
+        },
+        {
+          "path": "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "bytes": 2540,
+          "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+        },
+        {
+          "path": "examples/skill-evaluation/consumer-app/brief.md",
+          "bytes": 2174,
+          "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+        },
+        {
+          "path": "examples/skill-evaluation/consumer-app/first-draft.md",
+          "bytes": 22194,
+          "sha256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871"
+        },
+        {
+          "path": "examples/skill-evaluation/storefront/brief.md",
+          "bytes": 2428,
+          "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+        },
+        {
+          "path": "examples/skill-evaluation/storefront/first-draft.md",
+          "bytes": 24627,
+          "sha256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740"
+        },
+        {
+          "path": "knowledge/accessibility-and-responsive.md",
+          "bytes": 5852,
+          "sha256": "fcde6775c47577cc3626e38cf1512755fd56b92ca6cb1312990ca92562da266d"
+        },
+        {
+          "path": "knowledge/agent-experience.md",
+          "bytes": 4037,
+          "sha256": "537070f888f79c8b9d31abf3f9b5d3c27925b754f2ee7573bafdc94f24cd4f91"
+        },
+        {
+          "path": "knowledge/forms-and-navigation.md",
+          "bytes": 18930,
+          "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+        },
+        {
+          "path": "knowledge/README.md",
+          "bytes": 3153,
+          "sha256": "8169d4b9e7ffceba01c109ad969f6437293cd3f2e0b83b498939710085176700"
+        },
+        {
+          "path": "knowledge/state-and-recovery.md",
+          "bytes": 17723,
+          "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+        },
+        {
+          "path": "knowledge/ui-ux-design.md",
+          "bytes": 6962,
+          "sha256": "ef7048339a733068b3f2241ddcacce7cc682cb65c748f723000465fc883f5152"
+        },
+        {
+          "path": "knowledge/uncertain-outcomes.md",
+          "bytes": 18322,
+          "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+        },
+        {
+          "path": "references/licenses/burhan-sebin-MIT.txt",
+          "bytes": 1069,
+          "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2"
+        },
+        {
+          "path": "references/licenses/ghaida-intent-CC0.txt",
+          "bytes": 7048,
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "references/licenses/jakub-krehel-MIT.txt",
+          "bytes": 1069,
+          "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f"
+        },
+        {
+          "path": "references/licenses/julien-thibeaut-MIT.txt",
+          "bytes": 1072,
+          "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+        },
+        {
+          "path": "references/licenses/mohit-aggarwal-MIT.txt",
+          "bytes": 1071,
+          "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd"
+        },
+        {
+          "path": "references/p0-research.md",
+          "bytes": 59847,
+          "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e"
+        },
+        {
+          "path": "references/skill-adaptations.md",
+          "bytes": 9744,
+          "sha256": "02a8801225a921eab3cb081b933df803de06118ec6c38b78fdd01968b364e1fd"
+        },
+        {
+          "path": "skills/prepare-frontend-design/SKILL.md",
+          "bytes": 3990,
+          "sha256": "d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40"
+        },
+        {
+          "path": "skills/review-frontend-design/agents/openai.yaml",
+          "bytes": 164,
+          "sha256": "22f312caaa58ac78308f681d5f5620141ae80549f817b54273455165b78fdf82"
+        },
+        {
+          "path": "skills/review-frontend-design/references/state-transitions.md",
+          "bytes": 3429,
+          "sha256": "fae5800603dc5f698b2db71103980dc4b3efd7ab4b4393ce38d4e70c1d7b372e"
+        },
+        {
+          "path": "skills/review-frontend-design/SKILL.md",
+          "bytes": 4364,
+          "sha256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08"
+        },
+        {
+          "path": "templates/project-design.md",
+          "bytes": 2835,
+          "sha256": "2abbf0a6b8acbc98064b883c26e5de4ee1bfecd7ab043e793981a09c7622d0e2"
+        },
+        {
+          "path": "themes/blueprint/design.md",
+          "bytes": 13173,
+          "sha256": "4a32980eebbb3ba36953d785a6f8dc5ee9654adebf692e7824327f76a2dfd258"
+        },
+        {
+          "path": "themes/blueprint/effects.md",
+          "bytes": 4888,
+          "sha256": "5191189db2e66c5d12d85a1cf0e47c080d7d3802e098e21613cd9370762dd7d8"
+        },
+        {
+          "path": "themes/blueprint/motion.md",
+          "bytes": 3675,
+          "sha256": "110cf978626f0a3828e7e6cbf5a466220cfe7a6310ed51de4a50b6dd9380785c"
+        },
+        {
+          "path": "themes/blueprint/README.md",
+          "bytes": 5535,
+          "sha256": "c8edb5cdd3a165bb041dac901cdd2030db2bbd0d5b6d1f629097ef5f1f10434f"
+        },
+        {
+          "path": "themes/blueprint/sources.md",
+          "bytes": 10122,
+          "sha256": "fd3b7987ba9a2091fd26c7ffb070a733abe19c67b0482a9ff98f7e2fa10cda8b"
+        },
+        {
+          "path": "themes/botanical/design.md",
+          "bytes": 12482,
+          "sha256": "57bb978940f0c2c98532603e40eb0207045672af715b09fdc59e9c5ef11b7f32"
+        },
+        {
+          "path": "themes/botanical/effects.md",
+          "bytes": 4468,
+          "sha256": "4ca27538a20c803301ce8818bdd36a76fd66bfe812c8a185b7324ca8a7f3b8d3"
+        },
+        {
+          "path": "themes/botanical/motion.md",
+          "bytes": 3909,
+          "sha256": "a52d30dd05ad54dcc43f5b74d8c32bc721b11c3bec5ff330e43bc3510b81631f"
+        },
+        {
+          "path": "themes/botanical/README.md",
+          "bytes": 5554,
+          "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+        },
+        {
+          "path": "themes/botanical/sources.md",
+          "bytes": 10743,
+          "sha256": "7e83b712a5e8803d673df95d85fab997f602c8906c76c4ac9691f12ccce193a2"
+        },
+        {
+          "path": "themes/editorial/design.md",
+          "bytes": 8351,
+          "sha256": "21eb98f496099ee5b000509335b113660762c368c0d3402db2951abb5714646f"
+        },
+        {
+          "path": "themes/editorial/effects.md",
+          "bytes": 3330,
+          "sha256": "83f4c1baaad94e6a4c4efca8a01a5b8802d7e2c53e6068e4944721a97b20f4ee"
+        },
+        {
+          "path": "themes/editorial/motion.md",
+          "bytes": 3260,
+          "sha256": "1652760dcf1c81dd5a9a3dba28f6b91fa94ab14122203f46366bd8fd32515f2e"
+        },
+        {
+          "path": "themes/editorial/README.md",
+          "bytes": 4591,
+          "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a"
+        },
+        {
+          "path": "themes/editorial/sources.md",
+          "bytes": 7738,
+          "sha256": "1d9a2221a3171807717b2d5e350d30f8cd9f6eaaa78ff023e2fe457cee8a9f88"
+        },
+        {
+          "path": "themes/gallery/design.md",
+          "bytes": 17395,
+          "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+        },
+        {
+          "path": "themes/gallery/effects.md",
+          "bytes": 3269,
+          "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276"
+        },
+        {
+          "path": "themes/gallery/motion.md",
+          "bytes": 3173,
+          "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8"
+        },
+        {
+          "path": "themes/gallery/README.md",
+          "bytes": 6100,
+          "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b"
+        },
+        {
+          "path": "themes/gallery/sources.md",
+          "bytes": 13653,
+          "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a"
+        },
+        {
+          "path": "themes/layered/design.md",
+          "bytes": 15292,
+          "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+        },
+        {
+          "path": "themes/layered/effects.md",
+          "bytes": 3491,
+          "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824"
+        },
+        {
+          "path": "themes/layered/motion.md",
+          "bytes": 3136,
+          "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+        },
+        {
+          "path": "themes/layered/README.md",
+          "bytes": 6705,
+          "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+        },
+        {
+          "path": "themes/layered/sources.md",
+          "bytes": 14276,
+          "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+        },
+        {
+          "path": "themes/play/design.md",
+          "bytes": 14510,
+          "sha256": "1c61915f458713a36ac6b5979efade888cc6010fd2e0e1f2cf029bd3d3501b60"
+        },
+        {
+          "path": "themes/play/effects.md",
+          "bytes": 4884,
+          "sha256": "d79d4d639031dead74b75cfb0ce390f15e241eaf2508ed8a7f037f893f8dae79"
+        },
+        {
+          "path": "themes/play/motion.md",
+          "bytes": 4916,
+          "sha256": "15ab5e636c8ed708e973a4bba8e39cf8c2031968285a615b40ef5245f94a923e"
+        },
+        {
+          "path": "themes/play/README.md",
+          "bytes": 5568,
+          "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859"
+        },
+        {
+          "path": "themes/play/sources.md",
+          "bytes": 11131,
+          "sha256": "79fbf6530901d58cc97be3c34e153b6e26c59136e3ba3fd66ab50074e8bfecd3"
+        },
+        {
+          "path": "themes/precision/design.md",
+          "bytes": 12936,
+          "sha256": "07599482c9917b76e455e4aa576a8d09aed7b609810595a92259b810b4876831"
+        },
+        {
+          "path": "themes/precision/effects.md",
+          "bytes": 2953,
+          "sha256": "4554c0de6385e719b5a6210a066ddc46472c5a416d338ba5e0a47fccd226a3a6"
+        },
+        {
+          "path": "themes/precision/motion.md",
+          "bytes": 2920,
+          "sha256": "772a39507a286bf2e150fb999779761e04530368154dfabbbfa0a1ad95f02dee"
+        },
+        {
+          "path": "themes/precision/README.md",
+          "bytes": 5418,
+          "sha256": "d494d06256df2bce73d84bcee445157b802bde4f9b20f87a05cc91e0aa45be79"
+        },
+        {
+          "path": "themes/precision/sources.md",
+          "bytes": 10663,
+          "sha256": "d90ceb2013b1f9a9227fee9df00b168289c63786ce6a3d5d06a187f995796b72"
+        },
+        {
+          "path": "themes/pulse/design.md",
+          "bytes": 14487,
+          "sha256": "7bb46304f0303675df634a61f47c67bdb4f998223a754ff4a9cdcb1c8f2ceca0"
+        },
+        {
+          "path": "themes/pulse/effects.md",
+          "bytes": 3186,
+          "sha256": "97447c96ca9e07605d3ffad913bb341098126e046ff46aaa3adad037d57ee62e"
+        },
+        {
+          "path": "themes/pulse/motion.md",
+          "bytes": 3865,
+          "sha256": "9db8e393b00bc2b3962981cd1046b32c15c67c9b53518b67e649bb9e25e1ad02"
+        },
+        {
+          "path": "themes/pulse/README.md",
+          "bytes": 6054,
+          "sha256": "b8e5c3ad970d241bcc5036d593fdc52b8b49c79d635e141df77adfe9d9b8861b"
+        },
+        {
+          "path": "themes/pulse/sources.md",
+          "bytes": 9257,
+          "sha256": "2a42a5f476de903592b16ad2f85d2668a0b8918d1d96a9e0815461949d2bbf29"
+        },
+        {
+          "path": "themes/swiss/design.md",
+          "bytes": 11021,
+          "sha256": "39bfd13042911294cd5c8793eca12249a632f5e83ba64f7c89105125c4fea46d"
+        },
+        {
+          "path": "themes/swiss/effects.md",
+          "bytes": 4334,
+          "sha256": "61615cff92295a4c5458f0972232ca70d596641649cfb92e878bcac4b09647dc"
+        },
+        {
+          "path": "themes/swiss/motion.md",
+          "bytes": 3504,
+          "sha256": "436a4c07741aca4cee4d7b7eb9b70e5ed8475a25dcd834b6b8105ef24243f231"
+        },
+        {
+          "path": "themes/swiss/README.md",
+          "bytes": 5121,
+          "sha256": "8c2d4d44eadb22172ef0ae1d832cddcbc95918c20060b23214a8f5514312be38"
+        },
+        {
+          "path": "themes/swiss/sources.md",
+          "bytes": 10620,
+          "sha256": "12652d6935bc5cd06a5e8b614e6935c9254c84a739b47f19dd1f2e8514dda9aa"
+        }
+      ],
+      "prompt": {
+        "path": "prompts/bilingual-service-rerun.txt",
+        "bytes": 2427,
+        "sha256": "cc7dc15e447dfde0cb1b610d9d1a0b15bc741bf2f12fe021069143382fc187dc"
+      },
+      "reader": {
+        "path": "trial-read-v3.mjs",
+        "sha256": "835a0571352f205ab8fe8176db14a14ce7f5e334fd0540c18d4446ef1eea54e4"
+      },
+      "status": "frozen-before-affected-generation-rerun"
+    },
+    "rerunReview": {
+      "date": "2026-10-17",
+      "status": "frozen-before-review-dispatch",
+      "firstDraft": {
+        "case": "bilingual-service-rerun",
+        "date": "2026-10-17",
+        "bytes": 26837,
+        "words": 3549,
+        "sha256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+        "designAtDeliverySHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+        "briefSHA256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+      },
+      "prompt": {
+        "path": "prompts/review-service-rerun.txt",
+        "bytes": 1342,
+        "sha256": "97c3aeb0c2e42689d1a7837a178252f64cebc92756414b05c32e1f1fd5ecb268"
+      }
+    }
+  },
+  "probeFreeze": {
+    "date": "2026-10-17",
+    "status": "frozen-before-dispatch",
+    "fixtures": [
+      {
+        "path": "probes/s01/design.md",
+        "bytes": 482,
+        "sha256": "526c4bc8186abefe761ec40568b2a7e8cc1ca728fc436bdd84b7c4d6d9f5db83"
+      },
+      {
+        "path": "probes/s01/index.html",
+        "bytes": 1293,
+        "sha256": "6eaaadaf8c83b1970eb05eb1f45371b8c357d6649c34943874963d60fe7df37f"
+      },
+      {
+        "path": "probes/s02/brief.md",
+        "bytes": 445,
+        "sha256": "a4474ff3cacbb6819015d752271a0602ec44583b9f93a617bdad32667a12a1c2"
+      },
+      {
+        "path": "probes/s02/evidence.md",
+        "bytes": 380,
+        "sha256": "529075b90214ead844d3a2fc83404fe05c74cd190313914790568e05bfd816df"
+      },
+      {
+        "path": "probes/s02/design.md",
+        "bytes": 1178,
+        "sha256": "0f16419f37a8e5731440d767516ef3fe3c29b0acfe9b14d5e673879c6a70ad1f"
+      },
+      {
+        "path": "probes/s03/design.md",
+        "bytes": 207,
+        "sha256": "c11307455bcce16a28514187e8065bd9907444af7565d98b08fda094e5d95e41"
+      }
+    ],
+    "prompts": [
+      {
+        "id": "s01",
+        "path": "prompts/probe-s01.txt",
+        "bytes": 2247,
+        "sha256": "b9e00e5f3561e5c3e3665b9c6dcf510ffd48b06edafb8952e0ff11d189622438"
+      },
+      {
+        "id": "s02",
+        "path": "prompts/probe-s02.txt",
+        "bytes": 2290,
+        "sha256": "a912d5b49814431cd65f819335f16070d4da24df02d964aa8f30f7f3d791efa3"
+      },
+      {
+        "id": "s03",
+        "path": "prompts/probe-s03.txt",
+        "bytes": 2134,
+        "sha256": "ce190542164fecfb5e2192cdb67626f8165508415a1a5517280b72df0b6ea478"
+      }
+    ],
+    "expectationsSHA256": "02a8d1fbbf959b4097c1541b932eb3f35f7b85f7a447731e3882cf7592667f7e"
+  },
+  "caseIdentities": [
+    {
+      "case": "consumer-app",
+      "date": "2026-10-17",
+      "bytes": 22194,
+      "words": 2922,
+      "sha256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+      "designAtDeliverySHA256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+      "firstDraftLFNormalizedSHA256": "992ef6579cf55e2d928862bcc3537eb2566f52dad3404558a7b9ec32f25ff378",
+      "reviewedDesignSHA256": "70b3f1c3192871c35403f78d1a6f1215fb67f15fa7d4f769e4431e2bf82446b4",
+      "reviewedDesignBytes": 23742,
+      "reading": {
+        "run": "consumer-app",
+        "snapshot": "frozen-source",
+        "events": 43,
+        "contentReads": 43,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 122162,
+        "briefBytes": 2174,
+        "projectInputBytes": 2174,
+        "atlasContentBytes": 119988,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2174,
+          "selected-theme-and-candidates": 47395,
+          "conditional-knowledge": 40993,
+          "provenance": 9744
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "catalog/themes.json",
+          "themes/layered/README.md",
+          "themes/botanical/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "templates/project-design.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "1eda465892680c814529cbb811ad1bb027dfcbe799af8e085a097173608eba2d",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    },
+    {
+      "case": "storefront",
+      "date": "2026-10-17",
+      "bytes": 24627,
+      "words": 3172,
+      "sha256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "designAtDeliverySHA256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "firstDraftLFNormalizedSHA256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "reviewedDesignSHA256": "1a4dc12622de61c34ecad478445bc50069806e23d476d9910540cd98392fa3e3",
+      "reviewedDesignBytes": 26304,
+      "reading": {
+        "run": "storefront",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 19,
+        "returnedContentBytes": 140065,
+        "briefBytes": 2428,
+        "projectInputBytes": 2428,
+        "atlasContentBytes": 137637,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2428,
+          "selected-theme-and-candidates": 50466,
+          "conditional-knowledge": 51333,
+          "provenance": 13982
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "catalog/themes.json",
+          "themes/gallery/README.md",
+          "themes/botanical/README.md",
+          "themes/editorial/README.md",
+          "themes/gallery/design.md",
+          "themes/gallery/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "themes/gallery/motion.md",
+          "references/skill-adaptations.md",
+          "references/p0-research.md"
+        ],
+        "logSHA256": "6f51002e3bea255137a057b5e965f023e4c7cbe14f67b7fa71083bbbffd2f52a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    },
+    {
+      "case": "bilingual-service",
+      "date": "2026-10-17",
+      "bytes": 27452,
+      "words": 3565,
+      "sha256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "designAtDeliverySHA256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "firstDraftLFNormalizedSHA256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "reviewedDesignSHA256": "9fd74ef58595171c5a161fe32cc47ff820515f8cec1f1ce784bbf68c6d690ec4",
+      "reviewedDesignBytes": 28925,
+      "reading": {
+        "run": "bilingual-service",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 230262,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 227722,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 33388,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 7640,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 76963,
+          "conditional-knowledge": 108354,
+          "provenance": 16729
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "14c56d8aa719fc5488042b53556992524f888b0edbfec8973d7f92555031c517",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    },
+    {
+      "case": "agent-operations",
+      "date": "2026-10-17",
+      "bytes": 26623,
+      "words": 3380,
+      "sha256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "designAtDeliverySHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "firstDraftLFNormalizedSHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "reviewedDesignSHA256": "a614608d71db1c0623a3cb147b4ed56f77d210b6f3ea66f3064a79956b00f49f",
+      "reviewedDesignBytes": 28542,
+      "reading": {
+        "run": "agent-operations",
+        "snapshot": "frozen-source",
+        "events": 45,
+        "contentReads": 45,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 120256,
+        "briefBytes": 2734,
+        "projectInputBytes": 2734,
+        "atlasContentBytes": 117522,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2734,
+          "selected-theme-and-candidates": 29017,
+          "conditional-knowledge": 59664,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/agent-operations/brief.md",
+          "catalog/themes.json",
+          "themes/precision/README.md",
+          "themes/precision/design.md",
+          "themes/precision/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/agent-experience.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "9a2a58c724353353d72df0d5ed8e8e2ccc4e95b17ecb1976630f6bec0ae3223c",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    },
+    {
+      "case": "bilingual-service-rerun",
+      "date": "2026-10-17",
+      "bytes": 26837,
+      "words": 3549,
+      "sha256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "designAtDeliverySHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "briefSHA256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+      "firstDraftLFNormalizedSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+      "reviewedDesignBytes": 29737,
+      "reading": {
+        "run": "bilingual-service-rerun",
+        "snapshot": "frozen-source-v3",
+        "events": 68,
+        "contentReads": 52,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 119804,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 117264,
+        "metadataReads": 16,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3990,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 41052,
+          "conditional-knowledge": 47201,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/botanical/design.md",
+          "themes/botanical/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "91598cf728739890d8af551886a409a2ead28a19c2de8ceb2ecf4bbc33b9488e",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    }
+  ],
+  "reading": {
+    "date": "2026-10-17",
+    "runs": [
+      {
+        "run": "consumer-app",
+        "snapshot": "frozen-source",
+        "events": 43,
+        "contentReads": 43,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 122162,
+        "briefBytes": 2174,
+        "projectInputBytes": 2174,
+        "atlasContentBytes": 119988,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2174,
+          "selected-theme-and-candidates": 47395,
+          "conditional-knowledge": 40993,
+          "provenance": 9744
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "catalog/themes.json",
+          "themes/layered/README.md",
+          "themes/botanical/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "templates/project-design.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "1eda465892680c814529cbb811ad1bb027dfcbe799af8e085a097173608eba2d",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "storefront",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 19,
+        "returnedContentBytes": 140065,
+        "briefBytes": 2428,
+        "projectInputBytes": 2428,
+        "atlasContentBytes": 137637,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2428,
+          "selected-theme-and-candidates": 50466,
+          "conditional-knowledge": 51333,
+          "provenance": 13982
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "catalog/themes.json",
+          "themes/gallery/README.md",
+          "themes/botanical/README.md",
+          "themes/editorial/README.md",
+          "themes/gallery/design.md",
+          "themes/gallery/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "themes/gallery/motion.md",
+          "references/skill-adaptations.md",
+          "references/p0-research.md"
+        ],
+        "logSHA256": "6f51002e3bea255137a057b5e965f023e4c7cbe14f67b7fa71083bbbffd2f52a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "bilingual-service",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 230262,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 227722,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 33388,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 7640,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 76963,
+          "conditional-knowledge": 108354,
+          "provenance": 16729
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "14c56d8aa719fc5488042b53556992524f888b0edbfec8973d7f92555031c517",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "agent-operations",
+        "snapshot": "frozen-source",
+        "events": 45,
+        "contentReads": 45,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 120256,
+        "briefBytes": 2734,
+        "projectInputBytes": 2734,
+        "atlasContentBytes": 117522,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2734,
+          "selected-theme-and-candidates": 29017,
+          "conditional-knowledge": 59664,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/agent-operations/brief.md",
+          "catalog/themes.json",
+          "themes/precision/README.md",
+          "themes/precision/design.md",
+          "themes/precision/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/agent-experience.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "9a2a58c724353353d72df0d5ed8e8e2ccc4e95b17ecb1976630f6bec0ae3223c",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-known",
+        "snapshot": "frozen-source",
+        "events": 23,
+        "contentReads": 23,
+        "uniqueContentFiles": 13,
+        "returnedContentBytes": 108646,
+        "briefBytes": 7142,
+        "projectInputBytes": 81415,
+        "atlasContentBytes": 27231,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 4027,
+          "project-input": 81415,
+          "conditional-knowledge": 18073
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "examples/skill-evaluation/consumer-app/first-draft.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "examples/skill-evaluation/storefront/first-draft.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "knowledge/README.md",
+          "knowledge/accessibility-and-responsive.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md"
+        ],
+        "logSHA256": "acebaa05c731f4e374aa335c0e790ee47a1af776d3eb3426797f53eb079c7927",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "probe-s02",
+        "snapshot": "frozen-source",
+        "events": 21,
+        "contentReads": 21,
+        "uniqueContentFiles": 8,
+        "returnedContentBytes": 31236,
+        "briefBytes": 0,
+        "projectInputBytes": 0,
+        "atlasContentBytes": 31236,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "skill-or-profile": 4027,
+          "routing-and-template": 3153,
+          "conditional-knowledge": 19212,
+          "provenance": 4844
+        },
+        "paths": [
+          "skills/review-frontend-design/SKILL.md",
+          "knowledge/README.md",
+          "knowledge/agent-experience.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "1d2c4f831956233af3fd19808e3cce5ef9021dadf2a13ca13f1a63b7c7b6080a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-known-v2",
+        "snapshot": "frozen-source-v2",
+        "events": 22,
+        "contentReads": 22,
+        "uniqueContentFiles": 15,
+        "returnedContentBytes": 112559,
+        "briefBytes": 7142,
+        "projectInputBytes": 81415,
+        "atlasContentBytes": 31144,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 81415,
+          "conditional-knowledge": 13376,
+          "provenance": 4844
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "examples/skill-evaluation/consumer-app/first-draft.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "examples/skill-evaluation/storefront/first-draft.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "91e8124a55782bf2c8dfeaa53c82cc7fb16be88b57274e54152262c25da821fb",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-operations",
+        "snapshot": "frozen-source-v2",
+        "events": 17,
+        "contentReads": 17,
+        "uniqueContentFiles": 10,
+        "returnedContentBytes": 54704,
+        "briefBytes": 2734,
+        "projectInputBytes": 32169,
+        "atlasContentBytes": 22535,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 32169,
+          "conditional-knowledge": 9611
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/agent-operations/first-draft.md",
+          "examples/skill-evaluation/agent-operations/brief.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/agent-experience.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/accessibility-and-responsive.md"
+        ],
+        "logSHA256": "0f7f58fa16de5e64755f559279c2224b475c55bf6f7b6a2c7aba1f0cf4fa856a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "bilingual-service-rerun",
+        "snapshot": "frozen-source-v3",
+        "events": 68,
+        "contentReads": 52,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 119804,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 117264,
+        "metadataReads": 16,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3990,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 41052,
+          "conditional-knowledge": 47201,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/botanical/design.md",
+          "themes/botanical/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "91598cf728739890d8af551886a409a2ead28a19c2de8ceb2ecf4bbc33b9488e",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-service-rerun",
+        "snapshot": "frozen-source-v3",
+        "events": 21,
+        "contentReads": 21,
+        "uniqueContentFiles": 11,
+        "returnedContentBytes": 87837,
+        "briefBytes": 2540,
+        "projectInputBytes": 56214,
+        "atlasContentBytes": 31623,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 26837,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 56214,
+          "conditional-knowledge": 11195,
+          "selected-theme-and-candidates": 1302,
+          "provenance": 6202
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "themes/botanical/design.md",
+          "knowledge/uncertain-outcomes.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "bfde2b9a0bad276d0e196db2003dd212ff660954a60d32c8e08aaaaa5ea82266",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    ],
+    "historical": [
+      {
+        "case": "consumer-app",
+        "atlasContentBytes": 115164,
+        "readLogSHA256": "5178141749e1e36de0cc5bda426f56847d32fac19cf045ab11d8e968fb0d0243",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      },
+      {
+        "case": "storefront",
+        "atlasContentBytes": 165891,
+        "readLogSHA256": "0349a3246ac04a7ff2e56fea16dc5aab8ce5d87fad33153f26fb44de3add47f3",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      },
+      {
+        "case": "bilingual-service",
+        "atlasContentBytes": 186792,
+        "readLogSHA256": "5d8bea5504ed909f0e22da36c87e92cf6282528d1145892bc004fde99f1b0925",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      }
+    ]
+  },
+  "initialIndependentRootObservations": {
+    "status": "independent initial observations before reading skill-produced reviews",
+    "date": "2026-10-17",
+    "findings": [
+      {
+        "id": "IR01",
+        "trial": "consumer-app",
+        "severity": "medium",
+        "location": "End-to-end editing, practice and recovery; Local state and acknowledgement contract",
+        "trigger": "A queued autosave for draft D remains when Discard removes D, or Finish commits and removes D; the old autosave later executes in the same store generation.",
+        "issue": "The document requires deletion acknowledgement and global generation checks for reset, but does not retire a discarded/finalized draft identity or make every autosave reject its retirement. A queued autosave can recreate abandoned work after a successful discard/finalization.",
+        "correction": "Retire each draft/session identity transactionally on discard/finalization, reject obsolete sequence/retired identity at every draft writer, retain failure context, and never reuse a retired identity.",
+        "historicalRegression": "CP02 remains; generation retirement for whole-store reset does not close per-draft retirement."
+      },
+      {
+        "id": "IR02",
+        "trial": "storefront",
+        "severity": "medium",
+        "location": "Authoritative review and checkout handoff; External contract gates and owners",
+        "trigger": "An older checkout attempt/status response arrives after newer authoritative same-action evidence, or two matching observations contradict each other.",
+        "issue": "Matching action/payload and lookup consistency/history are mentioned, but an accepted-evidence ordering/nonregression rule and service ordering gate are absent. Arrival order alone could replace a newer confirmed result or discard valid earlier-attempt evidence.",
+        "correction": "Specify action/payload/quote binding, service-defined observation ordering and handling of earlier-attempt evidence; retain confirmed history on refresh failure and show conflict when contradictory observations cannot be ordered.",
+        "historicalRegression": "SF02 remains partial."
+      },
+      {
+        "id": "IR03",
+        "trial": "bilingual-service",
+        "severity": "medium",
+        "location": "Submission, uncertain outcomes and contract gates",
+        "trigger": "An older or contradictory same-action receipt/progress/rejection arrives after a newer confirmed receipt.",
+        "issue": "Failed status lookup cannot erase a receipt, but delayed successful observations lack a service-ordering/nonregression policy. The versioned service contract omits an explicit ordering capability decision.",
+        "correction": "Bind accepted observations to the frozen action/payload and documented ordering; preserve confirmed history, do not infer order from arrival/client clocks, and gate or surface contradictory unorderable evidence.",
+        "historicalRegression": "Additional T09 diagnostic; historical BS01 dispatch recovery gate is now explicit."
+      }
+    ],
+    "notes": [
+      "These are document handoff findings, not observed runtime failures.",
+      "Consumer CP01's edit-during-explicit-save path is avoided by proposed brief input freeze; CP03's inline remove/Undo is replaced by batch plan save. Do not count these as validation of the old patterns.",
+      "Storefront repeated Add combines same stable ID subject to bounds and conflict reapplication of a delta; historical SF01 is substantially covered. Hosted-return evidence and original-action recovery are described, while exact provider return mapping remains an open gate."
+    ]
+  },
+  "corrections": {
+    "date": "2026-10-17",
+    "method": "Root adjudication of independently reported, supported document omissions; first drafts retained byte-for-byte.",
+    "corrections": [
+      {
+        "id": "IR01",
+        "case": "consumer-app",
+        "anchor": "End-to-end editing, practice and recovery",
+        "firstDraftSHA256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+        "reviewedDesignSHA256": "70b3f1c3192871c35403f78d1a6f1215fb67f15fa7d4f769e4431e2bf82446b4",
+        "change": "**Draft retirement:** Every editor/session draft has a non-reused identity and an active/retired eligibility record within the same atomic storage boundary as its writes. Discard retires that identity and removes its retained text in one transaction. Every queued, resumed or other-tab draft writer must check active eligibility and the expected draft revision inside its write transaction; a retired or obsolete writer cannot recreate the draft. Serialize work at that boundary: a writer committed before retirement is removed by discard; a writer arriving after retirement is rejected. A successful Finish atomically writes the unique completion, retires that practice draft identity and removes its text. Do not reuse a retired identity when starting another editor/session. A failed discard or Finish leaves the active draft and its recovery context available and makes no success claim. Engineering must verify the proposed atomic scope and retirement retention against the browser/storage contract before enabling durable behavior.",
+        "requiredTrace": "Exercise queued autosave after Discard and Finish, including an older tab; verify no retired draft returns and failure preserves the active draft.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR02",
+        "case": "storefront",
+        "anchor": "Authoritative review and checkout handoff",
+        "firstDraftSHA256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+        "reviewedDesignSHA256": "1a4dc12622de61c34ecad478445bc50069806e23d476d9910540cd98392fa3e3",
+        "change": "**Observation reconciliation:** Before live checkout, the service owner must supply authoritative observation ordering/version semantics, including how original-action lookup works when a returned session/operation mapping cannot be retained. Do not infer freshness from response arrival order or client clocks. Correlate action and immutable payload first, then apply only evidence permitted to supersede the current observation under that contract. Keep confirmed outcome/reference history; demonstrably older evidence cannot regress it, reopen an obsolete hosted URL, or repeat purchased-cart adjustments. Associate each permitted cart reconciliation with the authoritative effect identity so it applies once while preserving later additions. If authorized observations contradict and cannot be reliably ordered, retain both with their provenance, preserve the known confirmed evidence, display **Conflicting checkout information — reconciliation required**, and keep new/overlapping effects blocked until supported authoritative reconciliation resolves the conflict. No terminal-state model or recovery endpoint is invented.",
+        "requiredTrace": "Exercise late pending/rejected/hosted-URL observations after a confirmed outcome, unordered contradictions and duplicate cart reconciliation.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR03",
+        "case": "bilingual-service",
+        "anchor": "Submission, uncertain outcomes and contract gates",
+        "firstDraftSHA256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+        "reviewedDesignSHA256": "9fd74ef58595171c5a161fe32cc47ff820515f8cec1f1ce784bbf68c6d690ec4",
+        "change": "**Receipt observation reconciliation:** The service owner must define authoritative observation ordering/version semantics, or explicitly declare ordering unavailable, before dispatch is enabled. Correlate each observation to the original action and immutable payload; arrival order and client clocks confer no authority. Preserve confirmed receipt/reference and action history. Demonstrably older successful observations cannot replace a newer accepted result, hide its reference or enable correction/retry based on an obsolete rejection. When authorized observations contradict without reliable order, preserve their provenance alongside the known receipt, show **Conflicting request information — reconciliation required**, and offer only a supported status/reconciliation action. Keep the existing no-overlap and retry gates while unresolved. This does not assert a monotonic service model or equate receipt with completion of the requested service.",
+        "requiredTrace": "Exercise a late successful pending/rejected observation after receipt, an unordered contradiction and re-entry while reconciliation remains unresolved.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR04",
+        "case": "agent-operations",
+        "anchor": "Proposal review and changing intent",
+        "firstDraftSHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+        "reviewedDesignSHA256": "a614608d71db1c0623a3cb147b4ed56f77d210b6f3ea66f3064a79956b00f49f",
+        "change": "**Persisted rejection:** Treat Reject as a version-bound decision action with actor/authority, immutable proposal ID/version, stable decision identity and its own attempt/outcome record. Before dispatch, meet the same acknowledged recovery-identity or independently authorized discovery gate as other durable effects. Show **Rejection requested** while pending. A lost reply, timeout or unknown application yields **Rejection outcome unknown**, retaining its identity and supported lookup; reserve **Rejection not recorded** for authoritative evidence of non-application or a proven pre-dispatch failure. While rejection is pending/unknown, block conflicting Confirm and repeated Reject for that proposal across entry points and tabs through the service contract. A confirmed rejection retires the reviewed candidate, updates attention/history and prevents confirmation of that version. A proven non-application can return to review only after current authority/revisions are rechecked. Reopening a rejected proposal requires an explicit newly eligible review path supported by the owner; local navigation cannot revive it. Rejection never cancels previously dispatched execution. Decision/execution owners must define conflict ordering, atomic eligibility, duplicate scope/retention and recovery before enabling persisted rejection or conflicting confirmation.",
+        "requiredTrace": "Exercise reject lost reply, Reject/Confirm overlap, confirmed-rejection candidate retirement and re-entry with unresolved rejection.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR06",
+        "case": "bilingual-service-rerun",
+        "kind": "supported finding",
+        "priority": "P2",
+        "anchor": "Language delivery and switching",
+        "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+        "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+        "change": "**Latest language request:** Track committed interface language, latest requested language and a non-reused local request generation separately. Every new choice retires earlier switch requests. Only the still-current generation may commit a complete pack, change the selected value/title/document language, replace pending/error feedback or announce completion. While loading, retain the committed interface and expose the requested language plus pending status at the selector. Choosing the already committed language retires pending switches, clears their feedback and keeps that interface without waiting for a loader. A failure of the current request restores the committed selection and offers a retry for that choice; a later new choice retires that retry context too. Obsolete success may populate a pack cache but cannot change the interface or announce completion; obsolete failure produces no error or retry. Answers, validation identifiers, branch and editing/return context remain untouched.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR07",
+        "case": "bilingual-service-rerun",
+        "kind": "supported finding",
+        "priority": "P2",
+        "anchor": "Typography, layout, and appearance",
+        "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+        "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+        "change": "**Retained focus indicator:** Visible keyboard focus uses a 3px Ink outline with 5px offset: #293d2f in Light and #f3edda in Dark. In forced colors use system Highlight. Apply it to links, native form controls, language/appearance selectors and guarded unavailable actions; prevent clipping by panels, scrolling ancestors or adjacent content. Programmatic focus destinations must remain visibly identifiable. Verify the actual outline against every adjacent surface, including selected-service tints; this is a concrete retained proposal, not rendered evidence.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      },
+      {
+        "id": "IR05",
+        "case": "bilingual-service-rerun",
+        "kind": "open-contract clarification",
+        "priority": null,
+        "anchor": "Submission evidence and external contract gates",
+        "firstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+        "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+        "change": "**Ordering contract clarification:** Before enabling Send, the service owner must define authoritative observation ordering/revision semantics or explicitly state their absence. Match immutable action/candidate first; response arrival and client clocks do not establish freshness. Preserve confirmed receipt/reference and action history; provably older evidence cannot replace them. If matching authoritative observations contradict without reliable order, retain both with provenance, display **Conflicting request information — reconciliation required**, and keep repeat effects unavailable until a supported authoritative reconciliation resolves the conflict. This makes the existing gated dependency concrete without asserting service monotonicity or a new endpoint.",
+        "validation": "Document correction inspected; no implementation trace executed."
+      }
+    ],
+    "rerunAdjudication": {
+      "materialFindings": [
+        "IR06",
+        "IR07"
+      ],
+      "openContractClarification": "IR05",
+      "reason": "Reviewer treated ordering as an already gated external input; root accepts that distinction and makes it explicit as clarification rather than counting another supported defect.",
+      "rootMisses": "Independent review identified missing focus values and racing language-pack requests that root initial observations did not identify."
+    }
+  },
+  "probeRawLogIdentities": [
+    {
+      "probe": "s01",
+      "bytes": 1410,
+      "sha256": "8c33f186c47736e0146ed5a71ee10efd0885e81cf6a24f98ff2e52ce5befbd3b"
+    },
+    {
+      "probe": "s02",
+      "bytes": 999,
+      "sha256": "0c847ab879e3e6a0bbf792c63941f01e495d25d977eed22186316602a6eddab8"
+    },
+    {
+      "probe": "s03",
+      "bytes": 1038,
+      "sha256": "9921f6959af3679e6542e51a069f4620bf7d76f58a035241bdbfef2e57bf8765"
+    }
+  ],
+  "checks": {
+    "skillSyntax": {
+      "validator": "System skill-creator quick_validate.py",
+      "results": [
+        {
+          "name": "prepare-frontend-design",
+          "bytes": 3990,
+          "status": "Skill is valid!"
+        },
+        {
+          "name": "review-frontend-design",
+          "bytes": 4364,
+          "status": "Skill is valid!"
+        }
+      ],
+      "reviewImplicitInvocation": false,
+      "parser": "Private PyYAML 6.0.3; PyPI wheel SHA-256 verified, no project/global install",
+      "scope": "Syntax and metadata, not actual host discovery."
+    },
+    "catalog": {
+      "command": "node tools/catalog.mjs --check",
+      "result": "Catalog matches metadata for 9 themes."
+    }
+  },
+  "limits": [
+    "Three known regression briefs; new fictional operations brief is not a blind generalization benchmark.",
+    "Grouped known-case review shares context; all raw source identities and actual selectors retained.",
+    "Embedded historical examples exist inside selected P0 sections; their linked outputs were not loaded as product evidence.",
+    "Content bytes are emitted by logged reader; not proof of comprehension, physical I/O, tokens, billing or latency.",
+    "Initial bilingual provenance rereads and initial review misses retained.",
+    "No actual product implementation, service/storage, browser/AT/user, translation or rendering verification.",
+    "Scope probe Node VM checks succeeded; Edge browser attempt failed before assertions.",
+    "Host installation/automatic discovery not exercised.",
+    "Initial consumer first-draft has its delivered final CRLF; raw and LF-normalized identities distinguish Git normalization."
+  ],
+  "rerunIndependentRootObservations": {
+    "date": "2026-10-17",
+    "status": "Root document observations frozen before reading independent rerun review",
+    "case": "bilingual-service-rerun",
+    "theme": "Botanical",
+    "findings": [
+      {
+        "id": "IR05",
+        "priority": "Medium",
+        "location": "Submission evidence and external contract gates",
+        "issue": "The last paragraph requires delayed evidence to obey service ordering and not regress confirmed evidence, but no explicit rule covers successful observations that contradict and cannot be ordered. The pre-enable contract list does not explicitly require ordering semantics or define their unavailability.",
+        "counterevidence": "The draft already states non-regression, versioned tested service contract, truthful unknown outcomes, no-overlap and supported reconciliation. This is a narrower remaining contract/design omission than the initial service draft, not an observed runtime defect.",
+        "correction": "Require authoritative ordering semantics or declared unavailability; retain receipt and contradictory evidence with provenance, present unresolved inconsistency, and gate repeats until supported reconciliation. Do not infer order from arrival/client clock."
+      }
+    ],
+    "openQuestionNotCountedAsFinding": "Original-action lookup after later operation-mapping persistence failure could be clearer. The design gates actual recovery contract and admits no baseline reload guarantee; inspect the implemented capability and evidence before calling this an additional defect."
+  },
+  "reviewLogBoundaryNote": {
+    "run": "review-service-rerun",
+    "note": "One reader-owned whole first-draft read for the later bounded correction check appended to this log before a separate follow-up log was requested. It remains in the raw log and total returned bytes; the review report was not rewritten.",
+    "followupPurpose": "Compare unchanged draft bytes with staged corrections for bounded follow-up only",
+    "followupContentBytes": 26837
+  },
+  "reviewReportDerivation": {
+    "case": "bilingual-service-rerun",
+    "originalSHA256": "710ef01f15a6114e505cbc56d425054c3ee28c68eff30282b56cc5e929724fc4",
+    "originalPath": "bilingual-service-rerun/review-original.md",
+    "derivedPath": "bilingual-service-rerun/review.md",
+    "change": "Only known repository-root links converted to portable relative targets; original report retained."
+  }
+}

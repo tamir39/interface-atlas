@@ -1,0 +1,1497 @@
+{
+  "generatedAt": "2026-10-17T07:18:48.135Z",
+  "root": "D:/Projects/InterfaceAtlas",
+  "readOnlyRepositoryAudit": true,
+  "sourceSnapshots": [
+    {
+      "file": "AGENTS.md",
+      "bytes": 1978,
+      "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd"
+    },
+    {
+      "file": "README.md",
+      "bytes": 22830,
+      "sha256": "1ca84d083d053b7a85f1b56385c966fca4a0eb6bc5eeded020b57a38b1cc8be0"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 19593,
+      "sha256": "79ed23323f4e797cbb242eb4d4a229885a1f0057571c9fa14f4f2ef49697aaad"
+    },
+    {
+      "file": "skills/prepare-frontend-design/SKILL.md",
+      "bytes": 3990,
+      "sha256": "d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40"
+    },
+    {
+      "file": "skills/review-frontend-design/SKILL.md",
+      "bytes": 4364,
+      "sha256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08"
+    },
+    {
+      "file": "skills/review-frontend-design/agents/openai.yaml",
+      "bytes": 164,
+      "sha256": "22f312caaa58ac78308f681d5f5620141ae80549f817b54273455165b78fdf82"
+    },
+    {
+      "file": "skills/review-frontend-design/references/state-transitions.md",
+      "bytes": 3429,
+      "sha256": "fae5800603dc5f698b2db71103980dc4b3efd7ab4b4393ce38d4e70c1d7b372e"
+    },
+    {
+      "file": "knowledge/README.md",
+      "bytes": 3153,
+      "sha256": "8169d4b9e7ffceba01c109ad969f6437293cd3f2e0b83b498939710085176700"
+    },
+    {
+      "file": "knowledge/ui-ux-design.md",
+      "bytes": 6962,
+      "sha256": "ef7048339a733068b3f2241ddcacce7cc682cb65c748f723000465fc883f5152"
+    },
+    {
+      "file": "knowledge/accessibility-and-responsive.md",
+      "bytes": 5852,
+      "sha256": "fcde6775c47577cc3626e38cf1512755fd56b92ca6cb1312990ca92562da266d"
+    },
+    {
+      "file": "knowledge/agent-experience.md",
+      "bytes": 4037,
+      "sha256": "537070f888f79c8b9d31abf3f9b5d3c27925b754f2ee7573bafdc94f24cd4f91"
+    },
+    {
+      "file": "templates/project-design.md",
+      "bytes": 2835,
+      "sha256": "2abbf0a6b8acbc98064b883c26e5de4ee1bfecd7ab043e793981a09c7622d0e2"
+    },
+    {
+      "file": "references/skill-adaptations.md",
+      "bytes": 9744,
+      "sha256": "02a8801225a921eab3cb081b933df803de06118ec6c38b78fdd01968b364e1fd"
+    }
+  ],
+  "licenseChecks": [
+    {
+      "file": "references/licenses/jakub-krehel-MIT.txt",
+      "upstreamRepo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "expectedBytes": 1069,
+      "actualBytes": 1069,
+      "expectedSHA256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
+      "actualSHA256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
+      "pass": true
+    },
+    {
+      "file": "references/licenses/julien-thibeaut-MIT.txt",
+      "upstreamRepo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "expectedBytes": 1072,
+      "actualBytes": 1072,
+      "expectedSHA256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b",
+      "actualSHA256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b",
+      "pass": true
+    },
+    {
+      "file": "references/licenses/ghaida-intent-CC0.txt",
+      "upstreamRepo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "expectedBytes": 7048,
+      "actualBytes": 7048,
+      "expectedSHA256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "actualSHA256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "pass": true
+    },
+    {
+      "file": "references/licenses/mohit-aggarwal-MIT.txt",
+      "upstreamRepo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "expectedBytes": 1071,
+      "actualBytes": 1071,
+      "expectedSHA256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd",
+      "actualSHA256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd",
+      "pass": true
+    },
+    {
+      "file": "references/licenses/burhan-sebin-MIT.txt",
+      "upstreamRepo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "expectedBytes": 1069,
+      "actualBytes": 1069,
+      "expectedSHA256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2",
+      "actualSHA256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2",
+      "pass": true
+    }
+  ],
+  "historicalLedger": {
+    "expectedSHA256": "3498dbf98f7e76841d4304a72b36c68356e1b364d932a809d186fb6e984f9ba7",
+    "actualSHA256": "3498dbf98f7e76841d4304a72b36c68356e1b364d932a809d186fb6e984f9ba7",
+    "pass": true
+  },
+  "documentedPins": [
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "full40": true,
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "full40": true,
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "full40": true,
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "full40": true,
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "full40": true,
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "full40": true,
+      "stagedVerificationMatch": true
+    }
+  ],
+  "selectedSources": [
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-interface/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-accessibility/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-layout/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-writing/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-typography/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-colors/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-ui/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/create-design-md/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/improve-ui/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/fixing-accessibility/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "sourcePath": "skills/journey/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "sourcePath": "skills/evaluate/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "sourcePath": "skills/human-in-the-loop-design/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "sourcePath": "agent-engineering/human-in-the-loop/SKILL.md",
+      "stagedVerificationMatch": true
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "sourcePath": "agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "stagedVerificationMatch": true
+    }
+  ],
+  "implicitReviewDisabled": true,
+  "localLinks": [
+    {
+      "source": "README.md",
+      "target": "catalog/themes.json",
+      "resolved": "catalog/themes.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "skills/prepare-frontend-design/SKILL.md",
+      "resolved": "skills/prepare-frontend-design/SKILL.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "assets/brand/README.md",
+      "resolved": "assets/brand/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/editorial/validation.md",
+      "resolved": "themes/editorial/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/swiss/validation.md",
+      "resolved": "themes/swiss/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/precision/validation.md",
+      "resolved": "themes/precision/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/play/validation.md",
+      "resolved": "themes/play/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/botanical/validation.md",
+      "resolved": "themes/botanical/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/blueprint/validation.md",
+      "resolved": "themes/blueprint/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/pulse/validation.md",
+      "resolved": "themes/pulse/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/validation.md",
+      "resolved": "themes/gallery/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/layered/validation.md",
+      "resolved": "themes/layered/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "catalog/themes.json",
+      "resolved": "catalog/themes.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "skills/prepare-frontend-design/SKILL.md",
+      "resolved": "skills/prepare-frontend-design/SKILL.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "skills/prepare-frontend-design/SKILL.md",
+      "resolved": "skills/prepare-frontend-design/SKILL.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "knowledge/README.md",
+      "resolved": "knowledge/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "skills/review-frontend-design/SKILL.md",
+      "resolved": "skills/review-frontend-design/SKILL.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/skill-research.md",
+      "resolved": "references/skill-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/skill-evaluation/README.md",
+      "resolved": "examples/skill-evaluation/README.md",
+      "exists": false,
+      "anchorExists": null,
+      "expectedPending": true
+    },
+    {
+      "source": "README.md",
+      "target": "themes/editorial/README.md",
+      "resolved": "themes/editorial/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/swiss/README.md",
+      "resolved": "themes/swiss/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/precision/README.md",
+      "resolved": "themes/precision/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/play/README.md",
+      "resolved": "themes/play/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/botanical/README.md",
+      "resolved": "themes/botanical/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/blueprint/README.md",
+      "resolved": "themes/blueprint/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/pulse/README.md",
+      "resolved": "themes/pulse/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/README.md",
+      "resolved": "themes/gallery/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/layered/README.md",
+      "resolved": "themes/layered/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/portfolio/design.md",
+      "resolved": "examples/portfolio/design.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/agent-operations-dashboard/design.md",
+      "resolved": "examples/agent-operations-dashboard/design.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/README.md",
+      "resolved": "examples/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/editorial/preview/README.md",
+      "resolved": "themes/editorial/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/swiss/preview/README.md",
+      "resolved": "themes/swiss/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/precision/preview/README.md",
+      "resolved": "themes/precision/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/play/preview/README.md",
+      "resolved": "themes/play/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/botanical/preview/README.md",
+      "resolved": "themes/botanical/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/blueprint/preview/README.md",
+      "resolved": "themes/blueprint/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/pulse/preview/README.md",
+      "resolved": "themes/pulse/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/preview/README.md",
+      "resolved": "themes/gallery/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/layered/preview/README.md",
+      "resolved": "themes/layered/preview/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/editorial/validation.md",
+      "resolved": "themes/editorial/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/swiss/validation.md",
+      "resolved": "themes/swiss/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/precision/validation.md",
+      "resolved": "themes/precision/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/play/validation.md",
+      "resolved": "themes/play/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/botanical/validation.md",
+      "resolved": "themes/botanical/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/blueprint/validation.md",
+      "resolved": "themes/blueprint/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/pulse/validation.md",
+      "resolved": "themes/pulse/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/validation.md",
+      "resolved": "themes/gallery/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/layered/validation.md",
+      "resolved": "themes/layered/validation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/workflow-evaluation/README.md",
+      "resolved": "examples/workflow-evaluation/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/coverage-evaluation/README.md",
+      "resolved": "examples/coverage-evaluation/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "knowledge/README.md",
+      "resolved": "knowledge/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/p0-research.md",
+      "resolved": "references/p0-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/p0-review.md",
+      "resolved": "references/p0-review.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "examples/p0-evaluation/README.md",
+      "resolved": "examples/p0-evaluation/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/skill-research.md",
+      "resolved": "references/skill-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "references/SOURCES.md",
+      "resolved": "references/SOURCES.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/editorial/sources.md",
+      "resolved": "themes/editorial/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/swiss/sources.md",
+      "resolved": "themes/swiss/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/precision/sources.md",
+      "resolved": "themes/precision/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/play/sources.md",
+      "resolved": "themes/play/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/botanical/sources.md",
+      "resolved": "themes/botanical/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/blueprint/sources.md",
+      "resolved": "themes/blueprint/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/pulse/sources.md",
+      "resolved": "themes/pulse/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/sources.md",
+      "resolved": "themes/gallery/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/layered/sources.md",
+      "resolved": "themes/layered/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "THIRD_PARTY_NOTICES.md",
+      "resolved": "THIRD_PARTY_NOTICES.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "assets/brand/README.md",
+      "resolved": "assets/brand/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "themes/gallery/preview/assets/README.md",
+      "resolved": "themes/gallery/preview/assets/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "tools/README.md",
+      "resolved": "tools/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "tools/README.md",
+      "resolved": "tools/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "site/README.md",
+      "resolved": "site/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "assets/brand/hero-dark.svg",
+      "resolved": "assets/brand/hero-dark.svg",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "README.md",
+      "target": "assets/brand/hero-light.svg",
+      "resolved": "assets/brand/hero-light.svg",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "assets/brand/README.md",
+      "resolved": "assets/brand/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/editorial/sources.md",
+      "resolved": "themes/editorial/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/SOURCES.md",
+      "resolved": "references/SOURCES.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/swiss/sources.md",
+      "resolved": "themes/swiss/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/play/sources.md",
+      "resolved": "themes/play/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/botanical/sources.md",
+      "resolved": "themes/botanical/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/blueprint/sources.md",
+      "resolved": "themes/blueprint/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/precision/sources.md",
+      "resolved": "themes/precision/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/pulse/sources.md",
+      "resolved": "themes/pulse/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/gallery/sources.md",
+      "resolved": "themes/gallery/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/gallery/preview/assets/README.md",
+      "resolved": "themes/gallery/preview/assets/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/gallery/preview/assets/manifest.json",
+      "resolved": "themes/gallery/preview/assets/manifest.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "themes/layered/sources.md",
+      "resolved": "themes/layered/sources.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "knowledge/README.md",
+      "resolved": "knowledge/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/p0-research.md",
+      "resolved": "references/p0-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/p0-review.md",
+      "resolved": "references/p0-review.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/licenses/jakub-krehel-MIT.txt",
+      "resolved": "references/licenses/jakub-krehel-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/licenses/julien-thibeaut-MIT.txt",
+      "resolved": "references/licenses/julien-thibeaut-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/licenses/mohit-aggarwal-MIT.txt",
+      "resolved": "references/licenses/mohit-aggarwal-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/licenses/burhan-sebin-MIT.txt",
+      "resolved": "references/licenses/burhan-sebin-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "target": "references/licenses/ghaida-intent-CC0.txt",
+      "resolved": "references/licenses/ghaida-intent-CC0.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/prepare-frontend-design/SKILL.md",
+      "target": "../../catalog/themes.json",
+      "resolved": "catalog/themes.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/prepare-frontend-design/SKILL.md",
+      "target": "../../knowledge/README.md",
+      "resolved": "knowledge/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/prepare-frontend-design/SKILL.md",
+      "target": "../../templates/project-design.md",
+      "resolved": "templates/project-design.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/prepare-frontend-design/SKILL.md",
+      "target": "../../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/SKILL.md",
+      "target": "../../knowledge/README.md",
+      "resolved": "knowledge/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/SKILL.md",
+      "target": "references/state-transitions.md",
+      "resolved": "skills/review-frontend-design/references/state-transitions.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/SKILL.md",
+      "target": "../../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/state-and-recovery.md#save-snapshots-and-completion",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/state-and-recovery.md#replacement-and-stale-writers",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/forms-and-navigation.md#modal-editing-and-dirty-exit",
+      "resolved": "knowledge/forms-and-navigation.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/uncertain-outcomes.md#dispatch-and-changed-intent",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/uncertain-outcomes.md#safe-retry-and-recovery",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/uncertain-outcomes.md#cancellation-and-stale-evidence",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../knowledge/agent-experience.md#resolve-project-control-questions",
+      "resolved": "knowledge/agent-experience.md",
+      "exists": true,
+      "anchorExists": true,
+      "expectedPending": false
+    },
+    {
+      "source": "skills/review-frontend-design/references/state-transitions.md",
+      "target": "../../../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "ui-ux-design.md",
+      "resolved": "knowledge/ui-ux-design.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "accessibility-and-responsive.md",
+      "resolved": "knowledge/accessibility-and-responsive.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "state-and-recovery.md",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "forms-and-navigation.md",
+      "resolved": "knowledge/forms-and-navigation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "uncertain-outcomes.md",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "agent-experience.md",
+      "resolved": "knowledge/agent-experience.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "../references/p0-research.md",
+      "resolved": "references/p0-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "../references/p0-review.md",
+      "resolved": "references/p0-review.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "../examples/p0-evaluation/README.md",
+      "resolved": "examples/p0-evaluation/README.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "../references/skill-research.md",
+      "resolved": "references/skill-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/ui-ux-design.md",
+      "target": "state-and-recovery.md",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/ui-ux-design.md",
+      "target": "forms-and-navigation.md",
+      "resolved": "knowledge/forms-and-navigation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/ui-ux-design.md",
+      "target": "uncertain-outcomes.md",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/ui-ux-design.md",
+      "target": "accessibility-and-responsive.md",
+      "resolved": "knowledge/accessibility-and-responsive.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/ui-ux-design.md",
+      "target": "../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/accessibility-and-responsive.md",
+      "target": "forms-and-navigation.md",
+      "resolved": "knowledge/forms-and-navigation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/accessibility-and-responsive.md",
+      "target": "state-and-recovery.md",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/accessibility-and-responsive.md",
+      "target": "uncertain-outcomes.md",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/accessibility-and-responsive.md",
+      "target": "../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/agent-experience.md",
+      "target": "forms-and-navigation.md",
+      "resolved": "knowledge/forms-and-navigation.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/agent-experience.md",
+      "target": "state-and-recovery.md",
+      "resolved": "knowledge/state-and-recovery.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/agent-experience.md",
+      "target": "uncertain-outcomes.md",
+      "resolved": "knowledge/uncertain-outcomes.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/agent-experience.md",
+      "target": "../examples/agent-operations-dashboard/design.md",
+      "resolved": "examples/agent-operations-dashboard/design.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "knowledge/agent-experience.md",
+      "target": "../references/skill-adaptations.md",
+      "resolved": "references/skill-adaptations.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "skill-research.md",
+      "resolved": "references/skill-research.md",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "skill-research.json",
+      "resolved": "references/skill-research.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/",
+      "resolved": "references/licenses",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/jakub-krehel-MIT.txt",
+      "resolved": "references/licenses/jakub-krehel-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/julien-thibeaut-MIT.txt",
+      "resolved": "references/licenses/julien-thibeaut-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/ghaida-intent-CC0.txt",
+      "resolved": "references/licenses/ghaida-intent-CC0.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/mohit-aggarwal-MIT.txt",
+      "resolved": "references/licenses/mohit-aggarwal-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/burhan-sebin-MIT.txt",
+      "resolved": "references/licenses/burhan-sebin-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "skill-research.json",
+      "resolved": "references/skill-research.json",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/jakub-krehel-MIT.txt",
+      "resolved": "references/licenses/jakub-krehel-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/julien-thibeaut-MIT.txt",
+      "resolved": "references/licenses/julien-thibeaut-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/ghaida-intent-CC0.txt",
+      "resolved": "references/licenses/ghaida-intent-CC0.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/mohit-aggarwal-MIT.txt",
+      "resolved": "references/licenses/mohit-aggarwal-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    },
+    {
+      "source": "references/skill-adaptations.md",
+      "target": "licenses/burhan-sebin-MIT.txt",
+      "resolved": "references/licenses/burhan-sebin-MIT.txt",
+      "exists": true,
+      "anchorExists": null,
+      "expectedPending": false
+    }
+  ],
+  "summary": {
+    "licenses": 5,
+    "licenseFailures": 0,
+    "localLinks": 151,
+    "missingLocalTargets": [],
+    "missingAnchors": [],
+    "expectedPendingTargets": [
+      {
+        "source": "README.md",
+        "target": "examples/skill-evaluation/README.md",
+        "resolved": "examples/skill-evaluation/README.md",
+        "exists": false,
+        "anchorExists": null,
+        "expectedPending": true
+      }
+    ],
+    "invalidOrUnverifiedPins": [],
+    "selectedSourcePaths": 15,
+    "unverifiedSelectedSourcePaths": []
+  },
+  "limits": [
+    "Local Markdown inline links and HTML src/srcset/href were checked; no live external URL availability was tested.",
+    "Markdown anchors use a heading-slug approximation; each linked heading was additionally inspected for the review state profile.",
+    "Pins and license bytes were compared with existing staged verification, not fetched from upstream again.",
+    "The historical ledger was hashed, not reread for a new research or legal audit.",
+    "The skill-evaluation README may still be pending publication, as instructed by the parent task."
+  ]
+}

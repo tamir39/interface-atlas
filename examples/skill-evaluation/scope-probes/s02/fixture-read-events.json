@@ -1,0 +1,26 @@
+{
+  "note": "Portable derived paths; original raw log hash retained in evidence.json.",
+  "reads": [
+    {
+      "path": "probes/s02/brief.md",
+      "purpose": "Review supplied brief.md against project requirements",
+      "bytes": 445,
+      "SHA256": "a4474ff3cacbb6819015d752271a0602ec44583b9f93a617bdad32667a12a1c2",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s02/design.md",
+      "purpose": "Review supplied design.md against project requirements",
+      "bytes": 1178,
+      "SHA256": "0f16419f37a8e5731440d767516ef3fe3c29b0acfe9b14d5e673879c6a70ad1f",
+      "mode": "whole"
+    },
+    {
+      "path": "probes/s02/evidence.md",
+      "purpose": "Review supplied evidence.md against project requirements",
+      "bytes": 380,
+      "SHA256": "529075b90214ead844d3a2fc83404fe05c74cd190313914790568e05bfd816df",
+      "mode": "whole"
+    }
+  ]
+}

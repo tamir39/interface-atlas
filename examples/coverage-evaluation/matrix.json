@@ -1,0 +1,1206 @@
+{
+  "schema_version": 1,
+  "assessment": "Interface Atlas visual-fit and reusable-knowledge coverage",
+  "date": "2026-10-15",
+  "repository": "D:/Projects/InterfaceAtlas",
+  "starting_revision": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "scope": {
+    "original_families": 5,
+    "consumer_subcase_is_separate_original_family": false,
+    "consumer_subcase_parent": "SaaS/application family; comparison is intentionally separate from agent operations",
+    "theme_count": 9,
+    "visual_judgment_count": 54,
+    "repo_edits": false,
+    "network_writes": false,
+    "browsers_launched": false,
+    "skills_implemented": false,
+    "external_browsing": false,
+    "actual_billing_or_token_benchmark": false
+  },
+  "rubric": {
+    "Strong": "The whole visual language fits the brief; normal project decisions and component/flow work can preserve its identity.",
+    "Adapt": "A coherent fit remains possible with explicit density, type-role, grouping or media adaptations while distinctive identity is retained.",
+    "Strained": "The brief opposes key compositional or tonal traits; making it fit would suppress enough defining traits that another existing theme is a better starting point.",
+    "separation": "Visual fit does not rate flow completeness, conversion, usability, accessibility conformance or implementation readiness. A Strong storefront rating does not mean variants/cart/checkout exist."
+  },
+  "families": [
+    {
+      "id": "architecture_publication",
+      "label": "Architecture portfolio / publication",
+      "scope": "Original family 1: independent architecture portfolio/publication; English + Vietnamese; image-rich reading and case studies."
+    },
+    {
+      "id": "agent_operations",
+      "label": "SaaS / agent operations",
+      "scope": "Original family 2: compact run queue/list-detail; status, connection, pending commands and human intervention."
+    },
+    {
+      "id": "homeware_storefront",
+      "label": "Design-led homeware storefront",
+      "scope": "Original family 3: image-heavy collections/PDP, variants, cart and checkout."
+    },
+    {
+      "id": "creative_learning",
+      "label": "Creative community / learning",
+      "scope": "Original family 4: workshops, enrollment, capacity, progress, discussion and moderation."
+    },
+    {
+      "id": "service_application",
+      "label": "Restrained bilingual service application",
+      "scope": "Original family 5: multi-step forms, save/resume, review/edit and uncertain submission outcomes."
+    },
+    {
+      "id": "consumer_practice",
+      "label": "Consumer practice planner (SaaS subcase)",
+      "scope": "Separate subcase inside the SaaS/application family: calm, approachable personal practice planner; lesson browse, bookmarks, progress, notes and durable local saves; no agents or accounts."
+    }
+  ],
+  "visual_fit": [
+    {
+      "theme": "blueprint",
+      "identity": "Cobalt drafting lines, cool paper, mono heading accents, small corners and selective offset shadows.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Adapt",
+          "reason": "Drafting structure suits architectural process and evidence; keep mono and grids around short hierarchy while photographs and bilingual long reading gain room.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Adapt",
+          "reason": "Technical labels, small corners and explicit structure survive a compact list-detail adaptation; comfortable inspector composition is not already a run queue.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strained",
+          "reason": "Technical grids and mono-led drafting compete with material imagery and domestic browsing; making imagery dominant would sideline much of its identity.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Measured structure can support creative methods and workshop material; soften the display role and make learner discussion/progress ordinary sans task regions.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Adapt",
+          "reason": "Precise blue controls and ordered sections can support forms; mono emphasis and drafting decoration need a limited role in the restrained bilingual journey.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strained",
+          "reason": "Its technical drafting tone is a poor match for calm personal practice; suppressing mono/grid/cobalt emphasis would remove the most distinctive language.",
+          "evidence": [
+            "themes/blueprint/README.md",
+            "themes/blueprint/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "botanical",
+      "identity": "Earthy greens, warm paper, expressive serif headings, asymmetric rounded corners and selective soft shadows.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Strong",
+          "reason": "Warm reading surfaces and serif-led narrative suit architecture/material stories; organic geometry remains visible around generous imagery and case studies.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Strained",
+          "reason": "Asymmetric soft geometry and expressive reading rhythm work against a compact operational queue; broad reductions to type, shadow and spacing would dilute identity.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strong",
+          "reason": "Earthy material color, comfortable composition and organic geometry naturally support homeware stories and image-heavy products without changing their character.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Warm typography and grouped activities fit a creative learning community; add a calmer task hierarchy for recurring progress, enrollment and discussion.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Adapt",
+          "reason": "Warm restrained forms are plausible, but repeated asymmetric corners and expressive serif headings need a smaller role in long procedural work.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strong",
+          "reason": "Gentle color, generous reading rhythm and friendly geometry suit lessons and personal notes; task groupings can preserve the same calm visual language.",
+          "evidence": [
+            "themes/botanical/README.md",
+            "themes/botanical/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "editorial",
+      "identity": "Warm paper, muted lavender, readable sans text with expressive serif accents, rounded geometry and restrained transitions.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Strong",
+          "reason": "Reading hierarchy, warm surfaces and expressive accents suit bilingual case studies and publication rhythm; image groups can remain unboxed within that structure.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Adapt",
+          "reason": "Warm neutral layers remain identifiable after compact spacing and geometry changes; use sans operational text and reserve serif for a small overview role.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strong",
+          "reason": "Calm boutique presentation, ample imagery and considered product stories fit homeware; lavender and serif accents can remain secondary to the objects.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Reading-led course and discussion content fit, while enrollment and progress need an application hierarchy and smaller expressive headings.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strong",
+          "reason": "Calm surfaces, readable labels and modest expressive accents suit a restrained service journey while preserving warmth across review and correction screens.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strong",
+          "reason": "Warm rounded surfaces and readable text suit approachable lesson browsing and notes; a restrained serif accent can remain without making daily tasks ornamental.",
+          "evidence": [
+            "themes/editorial/README.md",
+            "themes/editorial/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "gallery",
+      "identity": "Image-determined composition, quiet sans type, generous whitespace, unboxed media, off-image captions and nearly square flat controls.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Strong",
+          "reason": "Large views, details and caption discipline directly suit architecture; bounded sans reading passages can carry bilingual case studies without displacing media.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Strained",
+          "reason": "Image-led scale and whitespace offer little for repeated run comparison; a dense state-and-evidence shell would abandon its primary compositional logic.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strong",
+          "reason": "Media-first collections, complete-object inspection, quiet metadata and natural material colors fit homeware directly; commerce behavior remains a separate gap.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Workshops and creative contributions can lead with imagery; progress and discussion need compact supporting task regions without turning everything into cards.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strained",
+          "reason": "A predominantly textual multi-step application has too little meaningful media to retain Gallery's core identity; neutral form chrome alone is not Gallery.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strained",
+          "reason": "The brief centers practice state and notes rather than a visual collection; making it a planner would marginalize its defining image-led composition.",
+          "evidence": [
+            "themes/gallery/README.md",
+            "themes/gallery/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "layered",
+      "identity": "Purposeful opaque tonal planes, friendly geometric sans, comfortable rounded shapes and selective elevation for temporary editing.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Adapt",
+          "reason": "An application-like index can organize a publication, but case-study reading and imagery need flatter, less pane-driven regions to keep the work prominent.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Adapt",
+          "reason": "Tonal hierarchy and contextual editing survive a compact working adaptation; a genuinely dense queue requires revised spacing and stronger state organization.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strained",
+          "reason": "Persistent application planes and rounded containers compete with the image-led product comparison; suppressing them would erase much of the direction.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Strong",
+          "reason": "Friendly task groups, contextual material and spacious working regions suit recurring learning, progress and participation with the same visual identity.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strong",
+          "reason": "Opaque planes and coherent rounded controls clearly separate form work, supporting context and review; the calm application tone survives a multi-step journey.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strong",
+          "reason": "The spacious consumer workspace, friendly type and contextual editor directly match personal lessons, practice progress and notes without an operations tone.",
+          "evidence": [
+            "themes/layered/README.md",
+            "themes/layered/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "play",
+      "identity": "Warm cream/deep violet, colorful supporting panels, bold sans type, rounded forms and selected hard offset shadows.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Adapt",
+          "reason": "A creative architecture practice can retain tactile accents, but image-rich reading needs quieter surfaces and a smaller heading/shadow role.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Strained",
+          "reason": "Bold tactile panels and large rounded expressive hierarchy impose too much weight on a compact run queue; removing them would change the visual language.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Adapt",
+          "reason": "Tactile geometry can suit playful design objects; use hard shadows selectively so product images and variant choices retain visual priority.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Strong",
+          "reason": "Encouraging bold type, colorful activity groups and tactile controls naturally fit creative workshops and learning while keeping content readable.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strained",
+          "reason": "Hard offset shadows, strong color blocks and expressive scale conflict with the requested restraint; major suppression would produce a different direction.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Adapt",
+          "reason": "Warmth and comfortable controls feel approachable, but a calm daily practice workspace needs fewer colored panels and carefully limited hard shadows.",
+          "evidence": [
+            "themes/play/README.md",
+            "themes/play/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "precision",
+      "identity": "Cool neutral layers, blue action, compact aligned data, modest sans hierarchy, 4px geometry and flat resting surfaces.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Adapt",
+          "reason": "A rigorous architecture index and factual case studies can keep flat alignment and neutral type; expand media and reading space beyond the operational default.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Strong",
+          "reason": "Compact aligned queue/detail structure, modest type and separate state copy directly fit repeated operational work with its full identity intact.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strained",
+          "reason": "Data-first compact comparison and operational blue chrome give little room to material imagery; a homeware composition would replace the core density and hierarchy.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Clear progress and enrollment records fit the ordered structure, but learner-facing community and workshops need a more comfortable composition and less console emphasis.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strong",
+          "reason": "Modest sans hierarchy, clear grouping and explicit actions support restrained procedural forms; comfortable spacing can retain the flat precise character.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Adapt",
+          "reason": "Reliable quiet structure can support practice state, but expand the compact rhythm and reduce technical metadata to achieve the requested approachability.",
+          "evidence": [
+            "themes/precision/README.md",
+            "themes/precision/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "pulse",
+      "identity": "Condensed display headings, lime against ink, angled poster geometry, generous campaign spacing and stable ordinary-width controls.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Strained",
+          "reason": "Campaign poster emphasis is poorly aligned with sustained bilingual reading and architecture documentation; containing it to a tiny header would weaken identity.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Strained",
+          "reason": "Poster scale and angled lime composition add noise to repeated compact operations; reducing them enough would leave only an accent palette.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strained",
+          "reason": "It can launch a collection, but repeated homeware browsing and PDP comparison need quieter product-led composition that sidelines its campaign identity.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Workshop discovery and program promotion fit its energy; a full learning platform needs quieter recurring learner/progress/discussion regions behind bounded poster moments.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strained",
+          "reason": "Condensed poster emphasis and angled campaign art conflict with the brief's procedural restraint, especially around bilingual forms and uncertain outcomes.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Strained",
+          "reason": "Campaign energy and bold display hierarchy work against calm personal practice; toning them down far enough would remove the direction's key character.",
+          "evidence": [
+            "themes/pulse/README.md",
+            "themes/pulse/design.md"
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "swiss",
+      "identity": "Confident sans hierarchy, shared alignment, paper/charcoal, structural rules, restrained red and nearly square flat geometry.",
+      "judgments": [
+        {
+          "family": "architecture_publication",
+          "rating": "Strong",
+          "reason": "Aligned project indexes, precise imagery/caption placement and confident sans hierarchy naturally support architecture and bilingual publication reading.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        },
+        {
+          "family": "agent_operations",
+          "rating": "Adapt",
+          "reason": "Flat small-corner geometry and aligned metadata retain identity in compact work; reduce large display scale and define a true list-detail information hierarchy.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        },
+        {
+          "family": "homeware_storefront",
+          "rating": "Strong",
+          "reason": "Disciplined grids, quiet paper surfaces and square geometry suit modern homeware comparison while objects provide the color and material character.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        },
+        {
+          "family": "creative_learning",
+          "rating": "Adapt",
+          "reason": "Clear curriculum and discussion hierarchy fit; use comfortable repeated task groups and limit large typographic/rule emphasis so participation remains inviting.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        },
+        {
+          "family": "service_application",
+          "rating": "Strong",
+          "reason": "Explicit alignment, flat controls and readable sans labels directly support restrained bilingual forms, review and correction without changing the theme.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        },
+        {
+          "family": "consumer_practice",
+          "rating": "Adapt",
+          "reason": "Predictable hierarchy and flat geometry suit daily tasks, but reduce assertive display/rules and use a comfortable pace to feel approachable.",
+          "evidence": [
+            "themes/swiss/README.md",
+            "themes/swiss/design.md"
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence_layers": [
+    {
+      "id": "existing_preview",
+      "meaning": "Original local reference implementations as described by preview notes and previously recorded Chromium checks. This assessment did not launch or rerun them."
+    },
+    {
+      "id": "theme_guidance",
+      "meaning": "Proposed visual/component rules in theme design documents. These are specification guidance, not proof of every consuming flow."
+    },
+    {
+      "id": "existing_project_proposal",
+      "meaning": "Hypothetical portfolio/operations examples and the bilingual journal workflow output; unimplemented specifications, not reusable production capabilities."
+    },
+    {
+      "id": "new_project_proposal",
+      "meaning": "Consumer/storefront trials being prepared separately in the parent task; no content from those trials was used to score visual fit here."
+    },
+    {
+      "id": "missing_shared_knowledge",
+      "meaning": "Reusable framework-independent treatment absent from knowledge/, even where a theme/example contains useful related decisions."
+    }
+  ],
+  "existing_previews": [
+    {
+      "theme": "blueprint",
+      "demonstrated": "Five fixed conceptual nodes; Diagram/Outline, relationship table, inline inspect, return/traverse/reset and fragment links.",
+      "does_not_supply": "Run queue, live architecture/telemetry, model generation, agent commands, durable workspace state."
+    },
+    {
+      "theme": "botanical",
+      "demonstrated": "Four readable fictional notes; search/topic filters, contextual reading, temporary Keep list, remove/clear and real local Markdown download request.",
+      "does_not_supply": "Durable saved list, sync, reading notes/progress, production publication or enrollment."
+    },
+    {
+      "theme": "editorial",
+      "demonstrated": "Fictional portfolio and four local runs; filters, detail context, request versus simulated cancellation acknowledgement.",
+      "does_not_supply": "Actual agent APIs, routes, decisions/retries, reconnection or production telemetry."
+    },
+    {
+      "theme": "gallery",
+      "demonstrated": "Three generated-image works; filters, native fragment/inline inspection, off-image captions, real image load/error/retry and retained context.",
+      "does_not_supply": "Products, variants, price/stock truth, cart, checkout, responsive image derivative pipeline."
+    },
+    {
+      "theme": "layered",
+      "demonstrated": "Three projects/nine sample tasks; filtering, computed counts, native modal validation, local Save/Cancel/Escape and project-specific Revert.",
+      "does_not_supply": "Durable project/task saves, lessons/bookmarks/notes, accounts, collaboration or synchronization."
+    },
+    {
+      "theme": "play",
+      "demonstrated": "Fictional creative projects and local brief validation, stable review snapshot, edit, pending request and manual acknowledgement.",
+      "does_not_supply": "Multi-step save/resume, real submission, unknown outcome recovery, enrollment or backend duplicate protection."
+    },
+    {
+      "theme": "precision",
+      "demonstrated": "Four sample runs, compact queue/detail, filtering, cancellation pending/acknowledgement and local disconnection freshness simulation.",
+      "does_not_supply": "Real agent commands, actual stream recovery, high-volume updates, permission or backend acknowledgement guarantees."
+    },
+    {
+      "theme": "pulse",
+      "demonstrated": "Six fixed sample sessions; selection, overlap checking, review invalidation and local focus recovery; separate explicit finite decorative study.",
+      "does_not_supply": "Enrollment, real dates/timezones, capacity/waitlist, payment, durable plan or calendar integration."
+    },
+    {
+      "theme": "swiss",
+      "demonstrated": "Fictional studio/publication briefs and one local proposal with pending versus acknowledged accept/reject; execution remains Not started.",
+      "does_not_supply": "Production proposals/versioning, execution, publishing, backend decisions or durable review history."
+    }
+  ],
+  "family_coverage": [
+    {
+      "family": "architecture_publication",
+      "existing_preview": "Gallery media/caption/recovery; Editorial/Swiss portfolio-reading layouts; Botanical article/list behavior. All local bounded fixtures.",
+      "theme_guidance": "Gallery image ratios/crops/credits and 65ch reading; Editorial/Swiss/Botanical typography and reflow. Named-font Vietnamese coverage remains project work.",
+      "existing_project_proposal": "examples/workflow-evaluation/design.md gives bilingual routes/translation availability, versioned local saves and untimed per-item undo; not implemented.",
+      "missing_shared": "Conditional publishing/localization/media delivery plus durable local collections guidance. No need for a new architecture theme."
+    },
+    {
+      "family": "agent_operations",
+      "existing_preview": "Precision is closest: compact run list/detail, command pending versus acknowledgement, independent connection freshness. Editorial and Swiss cover smaller local state slices.",
+      "theme_guidance": "Precision aligned data/density plus knowledge/agent-experience.md; the existing dashboard proposal adds state dimensions, changed proposals, uncertainty and stable attention.",
+      "existing_project_proposal": "examples/agent-operations-dashboard/design.md specifies production-facing behaviors but explicitly reports no implementation/backend tests.",
+      "missing_shared": "Expand concrete state-contract examples only when reused: versioned proposals, event ordering/freshness, uncertain commands and stream recovery. Existing shared agent principles already cover the essential conceptual distinction."
+    },
+    {
+      "family": "homeware_storefront",
+      "existing_preview": "Gallery proves collection inspection and media-state recovery only; no commerce specimen exists.",
+      "theme_guidance": "Image-led art direction, no recoloring, accurate full-object views and native component basics are present.",
+      "existing_project_proposal": "No storefront design document exists in the inspected repository at the pinned revision. Parent trial is new proposed work.",
+      "missing_shared": "Variant identity/availability, truthful money/stock, cart ownership/persistence, asynchronous item updates, price/stock reconciliation, checkout boundary and unknown order outcomes."
+    },
+    {
+      "family": "creative_learning",
+      "existing_preview": "Pulse local session selection/overlap checking; Play form/review; Layered task counts/editor and Botanical reading. None is a learning/community product.",
+      "theme_guidance": "Suitable visual directions and bounded selection/review/editing contracts exist; whole enrollment/progress/social model is absent.",
+      "existing_project_proposal": "No complete learning/community product specification exists in inspected examples.",
+      "missing_shared": "Authoritative enrollment/capacity/waitlists, durable progress semantics, access changes, timezones, discussion/report/moderation roles and recovery. Treat booking and community behavior as conditional modules."
+    },
+    {
+      "family": "service_application",
+      "existing_preview": "Play validation/review/edit/pending acknowledgement; Layered local modal correction; Swiss decision request/receipt separation.",
+      "theme_guidance": "Visible labels, linked errors, input preservation, readable review and focus rules are present across themes.",
+      "existing_project_proposal": "No complete multi-step bilingual service application exists in inspected examples.",
+      "missing_shared": "Step/branch model, draft ownership/versioning, durable save/resume and session expiry, review-to-field edit return, server validation and uncertain submission/duplicate prevention without assuming an agent."
+    },
+    {
+      "family": "consumer_practice",
+      "existing_preview": "Layered task/editor/count primitives and Botanical browse/Keep-list primitives. Both deliberately lose domain state on reload.",
+      "theme_guidance": "Layered directly supplies the comfortable application visual language; no agent guidance is relevant to this no-agent brief.",
+      "existing_project_proposal": "The journal proposal supplies related local durable-set/undo reasoning; no consumer practice app exists in inspected examples. Parent trial is new proposed work.",
+      "missing_shared": "Versioned local state for bookmarks/progress/notes, truthful durable versus session-only outcomes, malformed/quota-blocked storage, cross-tab reconciliation, recovery/undo and unavailable lesson identities."
+    }
+  ],
+  "shared_gaps": [
+    {
+      "priority": "P1",
+      "id": "local_state",
+      "title": "Local durable state and recovery",
+      "why": "Repeated across journal saves, consumer bookmarks/progress/notes, draft forms and carts. Existing proposals contain useful reasoning but preview persistence is preferences-only.",
+      "existing_seed": "Journal proposal versioned IDs, session-only fallback, untimed per-item undo and cross-tab conflicts; Layered draft versus committed local state.",
+      "future_artifact": "A conditional framework-independent knowledge page and a preparation prompt selector, with focused failure fixtures.",
+      "limits": "Do not add accounts, cloud sync, offline guarantees or agent semantics by default."
+    },
+    {
+      "priority": "P1",
+      "id": "commerce",
+      "title": "Commerce task contracts",
+      "why": "Largest wholly uncovered product-flow family; strong Gallery/Botanical/Editorial/Swiss visual fit does not supply commercial truth or transactions.",
+      "existing_seed": "Gallery media treatment and collection inspection only.",
+      "future_artifact": "A commerce knowledge module covering variants, cart persistence/reconciliation, authoritative price/stock, checkout handoff and uncertain submission; researched separately before implementation.",
+      "limits": "Use actual commerce provider boundaries; never imply inventory reservation or successful payment from local UI."
+    },
+    {
+      "priority": "P1",
+      "id": "forms_async",
+      "title": "Multi-step forms and uncertain outcomes",
+      "why": "Needed for the service brief and reusable for checkout/enrollment; current Play flow has no draft resume or actual asynchronous request.",
+      "existing_seed": "Play stable review snapshot and pending acknowledgement; Layered error summary/draft separation; agent guidance distinguishes requests from outcomes.",
+      "future_artifact": "Conditional multi-step/draft/review guidance plus a general request/outcome recovery contract that does not require agents.",
+      "limits": "Separate local save, accepted request, confirmed submission and unknown outcome; do not fabricate remote guarantees."
+    },
+    {
+      "priority": "P2",
+      "id": "learning_community",
+      "title": "Learning, enrollment and community state",
+      "why": "Workshop scheduling primitives do not model enrollment capacity, persisted progress, participant access or moderation.",
+      "existing_seed": "Pulse interval selection/review; Layered sample tasks; Play encouraging activity grouping.",
+      "future_artifact": "Separate small modules for enrollment/scheduling and learning/community records, loaded only when those features occur.",
+      "limits": "A capacity/permission change needs authoritative product semantics; this is not supplied by a theme."
+    },
+    {
+      "priority": "P2",
+      "id": "content_language_media",
+      "title": "Bilingual publishing and production media",
+      "why": "Both the architecture brief and bilingual service journey need translation availability, real diacritics and long labels; Gallery's images lack responsive derivatives.",
+      "existing_seed": "Journal proposal bilingual routing and content IDs; Gallery crop/alt/credit/load guidance and explicit PNG delivery limit.",
+      "future_artifact": "Extract repeated content/translation/media rules rather than duplicating theme specs; validate selected actual font packages and representative assets.",
+      "limits": "One fallback Vietnamese specimen does not certify full glyph coverage or editorial quality; dimensions alone do not prove performance."
+    },
+    {
+      "priority": "P3",
+      "id": "agent_details",
+      "title": "Concrete operational contract examples",
+      "why": "Shared agent principles already exist, but the detailed dashboard proposal is the only place containing several reusable operational decisions.",
+      "existing_seed": "knowledge/agent-experience.md, Precision preview and hypothetical dashboard design.",
+      "future_artifact": "Careful extraction of reusable proposal identity, freshness, late events and uncertainty patterns after another real operations brief needs them.",
+      "limits": "Keep backend capability assumptions project-specific; do not turn these into mandatory universal UI sections."
+    },
+    {
+      "priority": "P3",
+      "id": "evaluation",
+      "title": "Independent preparation and conformance evidence",
+      "why": "Existing validation concerns bounded previews; only one historical fresh generation evaluation is documented, initially with one theme. Fresh consumer/storefront trials will improve selection evidence but remain documents.",
+      "existing_seed": "Workflow-evaluation report, existing validators and explicit draft status.",
+      "future_artifact": "Use blind brief comparisons and a fixed checklist for completeness, unsupported assumptions and reading scope; render consuming products only when separately authorized.",
+      "limits": "No usability, conversion, production reliability, billing or token benchmark is established by this assessment."
+    }
+  ],
+  "prism": {
+    "necessary_for_current_briefs": false,
+    "reason": "Each original family and the consumer subcase has at least one Strong visual starting point. Gallery and Layered already address the two most relevant newer visual needs. The unmet requirements are reusable product-state/flow knowledge and evidence, not an uncovered visual language.",
+    "reconsider_when": "A concrete brief requires a distinct whole composition, typography, geometry, material and interaction tone that cannot be retained coherently by these nine. A new accent palette or missing checkout behavior is insufficient justification.",
+    "definition_limit": "No independent Prism specification was supplied to this assessment; necessity is assessed against the briefs, not an invented Prism identity."
+  },
+  "roadmap": [
+    {
+      "order": 1,
+      "action": "Complete and independently review consumer/storefront document trials; merge their specific omissions with this matrix before authorizing skill changes."
+    },
+    {
+      "order": 2,
+      "action": "Prioritize local-state, commerce and general form/submission knowledge modules; start from repeated decisions, keep source evidence and product assumptions explicit."
+    },
+    {
+      "order": 3,
+      "action": "Extend the existing preparation workflow with conditional routing to those modules only after approval; do not create one skill per theme or make agent/backend flows universal."
+    },
+    {
+      "order": 4,
+      "action": "Add learning/community and bilingual/media modules when their repeated needs warrant them; keep concrete agent examples a targeted lower-priority extraction."
+    },
+    {
+      "order": 5,
+      "action": "Re-run document trials against the changed preparation workflow and report exact read scope, completeness and unsupported assumptions. Choose named-font/browser or service validation separately for implemented products."
+    }
+  ],
+  "limitations": [
+    "Repository read-only assessment at the pinned revision; no repo edits, browser launch, network write, external browsing or skill implementation.",
+    "Existing validation reports/JSON summaries are historical bounded Chromium evidence; no tests or renders were rerun. No screen-reader, native zoom, full localization, usability/conversion or production-flow conformance is asserted.",
+    "File byte counts and hashes are audit metadata only. No actual billing or token benchmark was performed or inferred."
+  ],
+  "parent_integrity_cross_check": {
+    "source": "Parent task message, 2026-10-15; separate read-only hash comparison.",
+    "result": "All nine retained records contain 20 layouts. All 30 recorded native/media file hashes match current inputs; all five recorded validator hashes match. This is integrity checking of existing evidence, not a fresh 180-layout test run.",
+    "legacy_fields": "Editorial, Swiss and Precision omit top-level passed and validatorSha256; Play omits validatorSha256. Missing fields are not failures."
+  },
+  "read_manifest": [
+    {
+      "path": "AGENTS.md",
+      "purpose": "Repository independence, read order, provenance and validation boundaries.",
+      "scope": "full",
+      "utf8_bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "path": "catalog/themes.json",
+      "purpose": "Discover all nine themes and draft metadata before theme reads.",
+      "scope": "full",
+      "utf8_bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "path": "themes/blueprint/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 5535,
+      "sha256": "c8edb5cdd3a165bb041dac901cdd2030db2bbd0d5b6d1f629097ef5f1f10434f"
+    },
+    {
+      "path": "themes/blueprint/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 13173,
+      "sha256": "4a32980eebbb3ba36953d785a6f8dc5ee9654adebf692e7824327f76a2dfd258"
+    },
+    {
+      "path": "themes/blueprint/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 10886,
+      "sha256": "1b16eded01acbc10748c4ea7d83f2995db0beaa92ada3646b8dc64b93587486c"
+    },
+    {
+      "path": "themes/blueprint/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 8747,
+      "sha256": "6e68e81b1645abecaf73aa69d983ca3400fa8899475c196ce2ea9c232ca3ad99"
+    },
+    {
+      "path": "themes/blueprint/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 142595,
+      "sha256": "d3c78bf878170e1c87292c449edc624f38759f01a9dc839fb06da5a11a722981"
+    },
+    {
+      "path": "themes/botanical/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+    },
+    {
+      "path": "themes/botanical/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 12482,
+      "sha256": "57bb978940f0c2c98532603e40eb0207045672af715b09fdc59e9c5ef11b7f32"
+    },
+    {
+      "path": "themes/botanical/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 10869,
+      "sha256": "b6418f8f60ff5ec3cb9c40fc399c8d79ce5f94f5c4077328162ef34d816d7218"
+    },
+    {
+      "path": "themes/botanical/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 9071,
+      "sha256": "95b98d57223e99353929f4abd1446f20382c05a83ba39b4c19cf75d5e94b3d4a"
+    },
+    {
+      "path": "themes/botanical/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 159361,
+      "sha256": "36dd448d3facb36b26bd8cce65f1d8e9adcadc633f7b0cf31452927c30ad8cbc"
+    },
+    {
+      "path": "themes/editorial/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 4591,
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a"
+    },
+    {
+      "path": "themes/editorial/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 8351,
+      "sha256": "21eb98f496099ee5b000509335b113660762c368c0d3402db2951abb5714646f"
+    },
+    {
+      "path": "themes/editorial/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 6503,
+      "sha256": "8aa19d8ad506df76fc3937ff1f073a3a998067062507156b753790e8b2fa9c10"
+    },
+    {
+      "path": "themes/editorial/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 6848,
+      "sha256": "e1e927cc0b957f700b995b333bc6868c6946f02f9437724fcd8cf0dbc446a526"
+    },
+    {
+      "path": "themes/editorial/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 19881,
+      "sha256": "74462bee5d039240f512cf1e4e2947fa64665dea65618ce87e8d98f176a3eb47"
+    },
+    {
+      "path": "themes/gallery/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 6100,
+      "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b"
+    },
+    {
+      "path": "themes/gallery/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "full",
+      "utf8_bytes": 17395,
+      "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4"
+    },
+    {
+      "path": "themes/gallery/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 11427,
+      "sha256": "918b487238820a7cf14483061497e5fbd6cac3d00c16fbfdec2bfe7539baaeff"
+    },
+    {
+      "path": "themes/gallery/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 10689,
+      "sha256": "c07342891f73c8b5ecfae5db38896638592529026c446bc2283d419dd5b84b65"
+    },
+    {
+      "path": "themes/gallery/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 156309,
+      "sha256": "fc1d039ebd96b949d8cead2af3850f6195f826957cc62aef532cc77dd752fced"
+    },
+    {
+      "path": "themes/layered/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+    },
+    {
+      "path": "themes/layered/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "full",
+      "utf8_bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "path": "themes/layered/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 12716,
+      "sha256": "26f750307bda51fabfe1b6029bba34cede93bcfa2e27683d5a8dbc2a40ca6137"
+    },
+    {
+      "path": "themes/layered/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 10525,
+      "sha256": "78f374fb0ac713bb1a9ce01099b0452ffc263f12cd37418e4cfa6b8bd746a90b"
+    },
+    {
+      "path": "themes/layered/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 152799,
+      "sha256": "03b616101e6537683e5b8a893080e47e3e1d8448575fc81b574415e79a218214"
+    },
+    {
+      "path": "themes/play/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 5568,
+      "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859"
+    },
+    {
+      "path": "themes/play/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 14510,
+      "sha256": "1c61915f458713a36ac6b5979efade888cc6010fd2e0e1f2cf029bd3d3501b60"
+    },
+    {
+      "path": "themes/play/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 9754,
+      "sha256": "c01d01d6e7f03e7bb671712fd2a56eb7d8768c983891a2967cc55f1e17225245"
+    },
+    {
+      "path": "themes/play/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 8038,
+      "sha256": "2d142c287de5e9fcbf8a9134a40125469ee0def84a893c4141b70ad93d7eb193"
+    },
+    {
+      "path": "themes/play/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 136750,
+      "sha256": "8b475a94e5017c10a9ecc6ac88de6c96f33c71f1277ede7221b8bd605178817c"
+    },
+    {
+      "path": "themes/precision/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 5418,
+      "sha256": "d494d06256df2bce73d84bcee445157b802bde4f9b20f87a05cc91e0aa45be79"
+    },
+    {
+      "path": "themes/precision/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 12936,
+      "sha256": "07599482c9917b76e455e4aa576a8d09aed7b609810595a92259b810b4876831"
+    },
+    {
+      "path": "themes/precision/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 7751,
+      "sha256": "1d612ee2a1e3b8b92f11763602ef2b50f84dd7437cd9c0fa2b0248397fb04b2d"
+    },
+    {
+      "path": "themes/precision/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 7307,
+      "sha256": "09e098330c1989d7a51009dbb6020f7997d0a787fa8fce28bd6b3916ba36fd01"
+    },
+    {
+      "path": "themes/precision/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 51759,
+      "sha256": "4100e148bff2a6a36fc01af4a7256bd8da22f8ef03973b573d497d7f6e1f136e"
+    },
+    {
+      "path": "themes/pulse/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 6054,
+      "sha256": "b8e5c3ad970d241bcc5036d593fdc52b8b49c79d635e141df77adfe9d9b8861b"
+    },
+    {
+      "path": "themes/pulse/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 14487,
+      "sha256": "7bb46304f0303675df634a61f47c67bdb4f998223a754ff4a9cdcb1c8f2ceca0"
+    },
+    {
+      "path": "themes/pulse/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 9549,
+      "sha256": "3477074f91041b35f1c0e7389503843d23ae6c5144f9b1dce866239a3fdea08b"
+    },
+    {
+      "path": "themes/pulse/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 9486,
+      "sha256": "b6453c1e1548738df00bd0a9136c7c865f3cb98388f768db0787349354fd2580"
+    },
+    {
+      "path": "themes/pulse/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 162741,
+      "sha256": "b8d9206476d7c5e579637cb4b605df86263da7ddbe27e511680073ca09c3cf4a"
+    },
+    {
+      "path": "themes/swiss/README.md",
+      "purpose": "Whole visual identity, suitability and declared limitations.",
+      "scope": "full",
+      "utf8_bytes": 5121,
+      "sha256": "8c2d4d44eadb22172ef0ae1d832cddcbc95918c20060b23214a8f5514312be38"
+    },
+    {
+      "path": "themes/swiss/design.md",
+      "purpose": "Resolve visual-language fit and distinguish proposed component rules from functional coverage.",
+      "scope": "selected sections: Typography and hierarchy; Spacing/layout/density; Components where present; Geometry/elevation where present",
+      "utf8_bytes": 11021,
+      "sha256": "39bfd13042911294cd5c8793eca12249a632f5e83ba64f7c89105125c4fea46d"
+    },
+    {
+      "path": "themes/swiss/preview/README.md",
+      "purpose": "Existing preview behavior, persistence boundary, font and product-flow exclusions.",
+      "scope": "full",
+      "utf8_bytes": 6395,
+      "sha256": "ad66692a6f091b6c8ac130fea744c4a3aaa3aeb975594e916f331ed0016d2ba9"
+    },
+    {
+      "path": "themes/swiss/validation.md",
+      "purpose": "Historical rendered/interaction evidence and stated limitations; no rerun.",
+      "scope": "full",
+      "utf8_bytes": 6460,
+      "sha256": "8821460959a1372452b33c654bcab435638d3d1b5a92a2b8a19044dcb492957a"
+    },
+    {
+      "path": "themes/swiss/preview/validation/results.json",
+      "purpose": "Read retained metadata: check/layout counts, browser/node, passed where present and recorded native/media hashes.",
+      "scope": "selected metadata only; not every sample/check result",
+      "utf8_bytes": 19303,
+      "sha256": "2ce5eed75c34f657bcd8a4264967734911a49284826eca85a5e68cdd98f79d3f"
+    },
+    {
+      "path": "knowledge/README.md",
+      "purpose": "Inventory of actual shared knowledge rather than inferred coverage.",
+      "scope": "full",
+      "utf8_bytes": 681,
+      "sha256": "89a62a53d8ed08a6287ce8cc6682d06f621e2e5d5df0905ae62ccfe2b73d18b7"
+    },
+    {
+      "path": "knowledge/agent-experience.md",
+      "purpose": "Existing shared agent principles and scope.",
+      "scope": "full",
+      "utf8_bytes": 1988,
+      "sha256": "df378f31305855ead33745125f9c933824829db4fcb7beae071d1dffeb5484c5"
+    },
+    {
+      "path": "examples/README.md",
+      "purpose": "Explicit hypothetical and unimplemented status of existing project examples.",
+      "scope": "full",
+      "utf8_bytes": 1262,
+      "sha256": "52a7ef61d3933fd2f23d1aecec94cec669bb3c2ac89ee18e12321595b58e202d"
+    },
+    {
+      "path": "examples/workflow-evaluation/README.md",
+      "purpose": "Historical journal trial's reading scope, evaluation and limitations.",
+      "scope": "full",
+      "utf8_bytes": 6512,
+      "sha256": "ae1798d9ae9c460a5403cadb8bbbafbe6873c445626e22d5e43b7074fd50cc39"
+    },
+    {
+      "path": "examples/workflow-evaluation/design.md",
+      "purpose": "Existing unimplemented bilingual/local-save/undo proposal and concrete reusable seeds.",
+      "scope": "full",
+      "utf8_bytes": 19553,
+      "sha256": "dc6fe949e18613bb34b1bf5440a385e7a4aa911b1e297b656686b63df9654dec"
+    },
+    {
+      "path": "examples/agent-operations-dashboard/design.md",
+      "purpose": "Detailed but unimplemented operations state/command/freshness proposal.",
+      "scope": "full",
+      "utf8_bytes": 15031,
+      "sha256": "6a4aafd2b0b09a8beb2dfbfc41a76f3965be58921a682b2e4eb2683423c601f1"
+    },
+    {
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Current conditional preparation instructions; assessed only, not executed or changed.",
+      "scope": "full",
+      "utf8_bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "path": "templates/project-design.md",
+      "purpose": "Existing project specification prompts and persistence/recovery reminders.",
+      "scope": "full",
+      "utf8_bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    }
+  ],
+  "read_manifest_definition": "utf8_bytes is the exact raw UTF-8 file length including any BOM; SHA-256 covers the same full file even where inspected content scope was selective.",
+  "read_file_count": 55,
+  "read_utf8_bytes": 1396445.0
+}

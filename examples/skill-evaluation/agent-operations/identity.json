@@ -1,0 +1,53 @@
+{
+  "case": "agent-operations",
+  "date": "2026-10-17",
+  "bytes": 26623,
+  "words": 3380,
+  "sha256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+  "designAtDeliverySHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+  "firstDraftLFNormalizedSHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+  "reviewedDesignSHA256": "a614608d71db1c0623a3cb147b4ed56f77d210b6f3ea66f3064a79956b00f49f",
+  "reviewedDesignBytes": 28542,
+  "reading": {
+    "run": "agent-operations",
+    "snapshot": "frozen-source",
+    "events": 45,
+    "contentReads": 45,
+    "uniqueContentFiles": 16,
+    "returnedContentBytes": 120256,
+    "briefBytes": 2734,
+    "projectInputBytes": 2734,
+    "atlasContentBytes": 117522,
+    "metadataReads": 0,
+    "failedReads": 0,
+    "repeatedExactSelectionBytes": 0,
+    "categories": {
+      "routing-and-template": 18036,
+      "skill-or-profile": 3820,
+      "project-input": 2734,
+      "selected-theme-and-candidates": 29017,
+      "conditional-knowledge": 59664,
+      "provenance": 6985
+    },
+    "paths": [
+      "AGENTS.md",
+      "skills/prepare-frontend-design/SKILL.md",
+      "examples/skill-evaluation/agent-operations/brief.md",
+      "catalog/themes.json",
+      "themes/precision/README.md",
+      "themes/precision/design.md",
+      "themes/precision/sources.md",
+      "knowledge/README.md",
+      "templates/project-design.md",
+      "knowledge/ui-ux-design.md",
+      "knowledge/state-and-recovery.md",
+      "knowledge/forms-and-navigation.md",
+      "knowledge/uncertain-outcomes.md",
+      "knowledge/agent-experience.md",
+      "knowledge/accessibility-and-responsive.md",
+      "references/skill-adaptations.md"
+    ],
+    "logSHA256": "9a2a58c724353353d72df0d5ed8e8e2ccc4e95b17ecb1976630f6bec0ae3223c",
+    "replay": "all recorded source and returned identities verified against matching frozen phase"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "verifiedDate": "2026-10-17",
+  "method": "Read-only SHA-256 and byte-size comparison against existing references/skill-research.json; unmodified license-byte copies; no upstream execution or installation",
+  "historicalLedgerSHA256": "3498dbf98f7e76841d4304a72b36c68356e1b364d932a809d186fb6e984f9ba7",
+  "verifiedArtifacts": [
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "LICENSE",
+      "bytes": 1069,
+      "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/LICENSE",
+      "stagedLicense": "references/licenses/jakub-krehel-MIT.txt"
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-interface/SKILL.md",
+      "bytes": 8871,
+      "sha256": "23416fef4d08e0417927b6eb6763b7b08ed832451abfb9e26ea699262a28abcb",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-interface/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-accessibility/SKILL.md",
+      "bytes": 11068,
+      "sha256": "df0cafe0e75a08548cf46a2a430f46c198e7e0ee9d46bdf7884c2afefb44b70e",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-accessibility/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-layout/SKILL.md",
+      "bytes": 8420,
+      "sha256": "8c5883ccb23c27c39b7c58d101154ff35e032410e0dc4794be9ab7fe070c2297",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-layout/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-writing/SKILL.md",
+      "bytes": 9420,
+      "sha256": "ef6843cbfcbafa62614b1a6e012c0b1ab6fd33eee0bdd84123cf49fe275c3a31",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-writing/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-typography/SKILL.md",
+      "bytes": 12260,
+      "sha256": "e60ca6467ba60e68f95ed2d2cfa35f2a850d96ef2a0c0d3fcfcfd9510e51f184",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-typography/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-colors/SKILL.md",
+      "bytes": 7692,
+      "sha256": "e74f1c413a4094dc2a73fb0baa0da2241465e01d593b0257ba995500df9b0068",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-colors/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "jakubkrehel/skills",
+      "commit": "4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63",
+      "sourcePath": "skills/better-ui/SKILL.md",
+      "bytes": 11140,
+      "sha256": "fb9807bb5c59a3ca9d4a27b25f56b36e5596251d280fb30c4b7f2ff8b6f4fe2d",
+      "sourceURL": "https://github.com/jakubkrehel/skills/blob/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills/better-ui/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "LICENSE",
+      "bytes": 1072,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/LICENSE",
+      "stagedLicense": "references/licenses/julien-thibeaut-MIT.txt"
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/create-design-md/SKILL.md",
+      "bytes": 16208,
+      "sha256": "adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/create-design-md/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/improve-ui/SKILL.md",
+      "bytes": 7830,
+      "sha256": "fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/improve-ui/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "sourcePath": "LICENSE",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/LICENSE",
+      "stagedLicense": "references/licenses/ghaida-intent-CC0.txt"
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "sourcePath": "skills/journey/SKILL.md",
+      "bytes": 30586,
+      "sha256": "f709575dcd9a72cdb3ba8e4616b644193af340c133a3bd757cac85a928569142",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/journey/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "sourcePath": "LICENSE",
+      "bytes": 1071,
+      "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/LICENSE",
+      "stagedLicense": "references/licenses/mohit-aggarwal-MIT.txt"
+    },
+    {
+      "repo": "mohitagw15856/pm-claude-skills",
+      "commit": "921e015321cdcf7c48ad85f40eeaf5ba68c89433",
+      "sourcePath": "skills/human-in-the-loop-design/SKILL.md",
+      "bytes": 6182,
+      "sha256": "1f3cfe065cba176578af6da1efc2146d8297b700bcccf7dc8c839afa3cc673fa",
+      "sourceURL": "https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/skills/human-in-the-loop-design/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "sourcePath": "LICENSE",
+      "bytes": 1069,
+      "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/LICENSE",
+      "stagedLicense": "references/licenses/burhan-sebin-MIT.txt"
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "sourcePath": "agent-engineering/human-in-the-loop/SKILL.md",
+      "bytes": 10087,
+      "sha256": "4228420ef0d7da23c0567b4e0728f587ba2f51d15904952b7d64d4e8aed35eb1",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "seb1n/awesome-ai-agent-skills",
+      "commit": "75865a5d037a4cdaa7f409a4ec14ab9b0292920b",
+      "sourcePath": "agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "bytes": 6255,
+      "sha256": "d5072b3802c21f6d705054a37bf704c1ecb67d60e365281912a5b7bfe2cedc02",
+      "sourceURL": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/references/gate-design-guide.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "ibelick/ui-skills",
+      "commit": "f18d13077d6e3841821ea0a36526c0fd44a570b5",
+      "sourcePath": "skills/fixing-accessibility/SKILL.md",
+      "bytes": 4718,
+      "sha256": "549261e8a53b53a1a20c0ddbf736821e5fc0876ad82eee76e0efab8e9ee9dadf",
+      "sourceURL": "https://github.com/ibelick/ui-skills/blob/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills/fixing-accessibility/SKILL.md",
+      "stagedLicense": null
+    },
+    {
+      "repo": "ghaida/intent",
+      "commit": "3fc38dff381ce0e4dec8f52c97c3e37abd95e10e",
+      "sourcePath": "skills/evaluate/SKILL.md",
+      "bytes": 27737,
+      "sha256": "6a6c70fdaa17342489786ad397332c8267b19497a076bc392408203c7ed50107",
+      "sourceURL": "https://github.com/ghaida/intent/blob/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills/evaluate/SKILL.md",
+      "stagedLicense": null
+    }
+  ]
+}

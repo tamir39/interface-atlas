@@ -1,0 +1,2394 @@
+{
+  "date": "2026-10-17",
+  "baselineFiles": 219,
+  "intendedExistingChanges": [
+    ".gitattributes",
+    "AGENTS.md",
+    "examples/README.md",
+    "knowledge/agent-experience.md",
+    "knowledge/README.md",
+    "README.md",
+    "references/SOURCES.md",
+    "skills/prepare-frontend-design/SKILL.md",
+    "templates/project-design.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "protectedBaselineFiles": 209,
+  "protectedMismatches": [],
+  "newFiles": [
+    "examples/skill-evaluation/agent-operations/brief.md",
+    "examples/skill-evaluation/agent-operations/design.md",
+    "examples/skill-evaluation/agent-operations/evaluation.md",
+    "examples/skill-evaluation/agent-operations/first-draft.md",
+    "examples/skill-evaluation/agent-operations/identity.json",
+    "examples/skill-evaluation/agent-operations/read-events.jsonl",
+    "examples/skill-evaluation/agent-operations/review.md",
+    "examples/skill-evaluation/bilingual-service/brief.md",
+    "examples/skill-evaluation/bilingual-service/design.md",
+    "examples/skill-evaluation/bilingual-service/evaluation.md",
+    "examples/skill-evaluation/bilingual-service/first-draft.md",
+    "examples/skill-evaluation/bilingual-service/identity.json",
+    "examples/skill-evaluation/bilingual-service/initial-review.md",
+    "examples/skill-evaluation/bilingual-service/read-events.jsonl",
+    "examples/skill-evaluation/bilingual-service/review.md",
+    "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+    "examples/skill-evaluation/bilingual-service-rerun/design.md",
+    "examples/skill-evaluation/bilingual-service-rerun/evaluation.md",
+    "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+    "examples/skill-evaluation/bilingual-service-rerun/identity.json",
+    "examples/skill-evaluation/bilingual-service-rerun/read-events.jsonl",
+    "examples/skill-evaluation/bilingual-service-rerun/review-original.md",
+    "examples/skill-evaluation/bilingual-service-rerun/review.md",
+    "examples/skill-evaluation/consumer-app/brief.md",
+    "examples/skill-evaluation/consumer-app/design.md",
+    "examples/skill-evaluation/consumer-app/evaluation.md",
+    "examples/skill-evaluation/consumer-app/first-draft.md",
+    "examples/skill-evaluation/consumer-app/identity.json",
+    "examples/skill-evaluation/consumer-app/initial-review.md",
+    "examples/skill-evaluation/consumer-app/read-events.jsonl",
+    "examples/skill-evaluation/consumer-app/review.md",
+    "examples/skill-evaluation/corrections.json",
+    "examples/skill-evaluation/evidence.json",
+    "examples/skill-evaluation/execution/preparation-initial.txt",
+    "examples/skill-evaluation/execution/prompts.json",
+    "examples/skill-evaluation/execution/reader-initial.mjs",
+    "examples/skill-evaluation/execution/reader-metadata-refinement.mjs",
+    "examples/skill-evaluation/execution/reader-review-refinement.mjs",
+    "examples/skill-evaluation/execution/review-initial.txt",
+    "examples/skill-evaluation/integrity.json",
+    "examples/skill-evaluation/protocol.md",
+    "examples/skill-evaluation/README.md",
+    "examples/skill-evaluation/review-findings.md",
+    "examples/skill-evaluation/reviews/bilingual-rerun-correction-check-original.md",
+    "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+    "examples/skill-evaluation/reviews/correction-check.md",
+    "examples/skill-evaluation/reviews/review-known-read-events.jsonl",
+    "examples/skill-evaluation/reviews/review-known-v2-read-events.jsonl",
+    "examples/skill-evaluation/reviews/review-operations-read-events.jsonl",
+    "examples/skill-evaluation/reviews/review-service-rerun-read-events.jsonl",
+    "examples/skill-evaluation/reviews/workflow-and-credits-audit.md",
+    "examples/skill-evaluation/reviews/workflow-and-credits-checks.json",
+    "examples/skill-evaluation/scope-probes/expectations.md",
+    "examples/skill-evaluation/scope-probes/s01/after/design.md",
+    "examples/skill-evaluation/scope-probes/s01/after/index.html",
+    "examples/skill-evaluation/scope-probes/s01/before/design.md",
+    "examples/skill-evaluation/scope-probes/s01/before/index.html",
+    "examples/skill-evaluation/scope-probes/s01/browser-check.json",
+    "examples/skill-evaluation/scope-probes/s01/checks.json",
+    "examples/skill-evaluation/scope-probes/s01/fixture-read-events.json",
+    "examples/skill-evaluation/scope-probes/s01/report.md",
+    "examples/skill-evaluation/scope-probes/s02/after/brief.md",
+    "examples/skill-evaluation/scope-probes/s02/after/design.md",
+    "examples/skill-evaluation/scope-probes/s02/after/evidence.md",
+    "examples/skill-evaluation/scope-probes/s02/atlas-read-events.jsonl",
+    "examples/skill-evaluation/scope-probes/s02/before/brief.md",
+    "examples/skill-evaluation/scope-probes/s02/before/design.md",
+    "examples/skill-evaluation/scope-probes/s02/before/evidence.md",
+    "examples/skill-evaluation/scope-probes/s02/fixture-read-events.json",
+    "examples/skill-evaluation/scope-probes/s02/report.md",
+    "examples/skill-evaluation/scope-probes/s03/after/design.md",
+    "examples/skill-evaluation/scope-probes/s03/before/design.md",
+    "examples/skill-evaluation/scope-probes/s03/fixture-read-events.json",
+    "examples/skill-evaluation/scope-probes/s03/report.md",
+    "examples/skill-evaluation/source-verification.json",
+    "examples/skill-evaluation/storefront/brief.md",
+    "examples/skill-evaluation/storefront/design.md",
+    "examples/skill-evaluation/storefront/evaluation.md",
+    "examples/skill-evaluation/storefront/first-draft.md",
+    "examples/skill-evaluation/storefront/identity.json",
+    "examples/skill-evaluation/storefront/initial-review.md",
+    "examples/skill-evaluation/storefront/read-events.jsonl",
+    "examples/skill-evaluation/storefront/review.md",
+    "knowledge/accessibility-and-responsive.md",
+    "knowledge/ui-ux-design.md",
+    "references/licenses/burhan-sebin-MIT.txt",
+    "references/licenses/ghaida-intent-CC0.txt",
+    "references/licenses/jakub-krehel-MIT.txt",
+    "references/licenses/julien-thibeaut-MIT.txt",
+    "references/licenses/mohit-aggarwal-MIT.txt",
+    "references/skill-adaptations.md",
+    "skills/review-frontend-design/agents/openai.yaml",
+    "skills/review-frontend-design/references/state-transitions.md",
+    "skills/review-frontend-design/SKILL.md"
+  ],
+  "unexpectedNew": [],
+  "frozenInputChecks": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd",
+      "pass": true
+    },
+    {
+      "path": "catalog/themes.json",
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/agent-operations/brief.md",
+      "sha256": "cd5a86a4dded2135e88c6c5c0cbb755bb8a5b507913222ca719cf3f9a9d1d4db",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/agent-operations/first-draft.md",
+      "sha256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/bilingual-service/brief.md",
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/bilingual-service/first-draft.md",
+      "sha256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/consumer-app/brief.md",
+      "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/consumer-app/first-draft.md",
+      "sha256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/storefront/brief.md",
+      "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb",
+      "pass": true
+    },
+    {
+      "path": "examples/skill-evaluation/storefront/first-draft.md",
+      "sha256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "pass": true
+    },
+    {
+      "path": "knowledge/accessibility-and-responsive.md",
+      "sha256": "fcde6775c47577cc3626e38cf1512755fd56b92ca6cb1312990ca92562da266d",
+      "pass": true
+    },
+    {
+      "path": "knowledge/agent-experience.md",
+      "sha256": "537070f888f79c8b9d31abf3f9b5d3c27925b754f2ee7573bafdc94f24cd4f91",
+      "pass": true
+    },
+    {
+      "path": "knowledge/forms-and-navigation.md",
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b",
+      "pass": true
+    },
+    {
+      "path": "knowledge/README.md",
+      "sha256": "8169d4b9e7ffceba01c109ad969f6437293cd3f2e0b83b498939710085176700",
+      "pass": true
+    },
+    {
+      "path": "knowledge/state-and-recovery.md",
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51",
+      "pass": true
+    },
+    {
+      "path": "knowledge/ui-ux-design.md",
+      "sha256": "ef7048339a733068b3f2241ddcacce7cc682cb65c748f723000465fc883f5152",
+      "pass": true
+    },
+    {
+      "path": "knowledge/uncertain-outcomes.md",
+      "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/burhan-sebin-MIT.txt",
+      "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/ghaida-intent-CC0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/jakub-krehel-MIT.txt",
+      "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/julien-thibeaut-MIT.txt",
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/mohit-aggarwal-MIT.txt",
+      "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd",
+      "pass": true
+    },
+    {
+      "path": "references/p0-research.md",
+      "sha256": "748e63871954d1b781aec8d0e1eecb96b64c73420b30b23fe0ca621a38815b5e",
+      "pass": true
+    },
+    {
+      "path": "references/skill-adaptations.md",
+      "sha256": "02a8801225a921eab3cb081b933df803de06118ec6c38b78fdd01968b364e1fd",
+      "pass": true
+    },
+    {
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "sha256": "d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40",
+      "pass": true
+    },
+    {
+      "path": "skills/review-frontend-design/agents/openai.yaml",
+      "sha256": "22f312caaa58ac78308f681d5f5620141ae80549f817b54273455165b78fdf82",
+      "pass": true
+    },
+    {
+      "path": "skills/review-frontend-design/references/state-transitions.md",
+      "sha256": "fae5800603dc5f698b2db71103980dc4b3efd7ab4b4393ce38d4e70c1d7b372e",
+      "pass": true
+    },
+    {
+      "path": "skills/review-frontend-design/SKILL.md",
+      "sha256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08",
+      "pass": true
+    },
+    {
+      "path": "templates/project-design.md",
+      "sha256": "2abbf0a6b8acbc98064b883c26e5de4ee1bfecd7ab043e793981a09c7622d0e2",
+      "pass": true
+    },
+    {
+      "path": "themes/blueprint/design.md",
+      "sha256": "4a32980eebbb3ba36953d785a6f8dc5ee9654adebf692e7824327f76a2dfd258",
+      "pass": true
+    },
+    {
+      "path": "themes/blueprint/effects.md",
+      "sha256": "5191189db2e66c5d12d85a1cf0e47c080d7d3802e098e21613cd9370762dd7d8",
+      "pass": true
+    },
+    {
+      "path": "themes/blueprint/motion.md",
+      "sha256": "110cf978626f0a3828e7e6cbf5a466220cfe7a6310ed51de4a50b6dd9380785c",
+      "pass": true
+    },
+    {
+      "path": "themes/blueprint/README.md",
+      "sha256": "c8edb5cdd3a165bb041dac901cdd2030db2bbd0d5b6d1f629097ef5f1f10434f",
+      "pass": true
+    },
+    {
+      "path": "themes/blueprint/sources.md",
+      "sha256": "fd3b7987ba9a2091fd26c7ffb070a733abe19c67b0482a9ff98f7e2fa10cda8b",
+      "pass": true
+    },
+    {
+      "path": "themes/botanical/design.md",
+      "sha256": "57bb978940f0c2c98532603e40eb0207045672af715b09fdc59e9c5ef11b7f32",
+      "pass": true
+    },
+    {
+      "path": "themes/botanical/effects.md",
+      "sha256": "4ca27538a20c803301ce8818bdd36a76fd66bfe812c8a185b7324ca8a7f3b8d3",
+      "pass": true
+    },
+    {
+      "path": "themes/botanical/motion.md",
+      "sha256": "a52d30dd05ad54dcc43f5b74d8c32bc721b11c3bec5ff330e43bc3510b81631f",
+      "pass": true
+    },
+    {
+      "path": "themes/botanical/README.md",
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "pass": true
+    },
+    {
+      "path": "themes/botanical/sources.md",
+      "sha256": "7e83b712a5e8803d673df95d85fab997f602c8906c76c4ac9691f12ccce193a2",
+      "pass": true
+    },
+    {
+      "path": "themes/editorial/design.md",
+      "sha256": "21eb98f496099ee5b000509335b113660762c368c0d3402db2951abb5714646f",
+      "pass": true
+    },
+    {
+      "path": "themes/editorial/effects.md",
+      "sha256": "83f4c1baaad94e6a4c4efca8a01a5b8802d7e2c53e6068e4944721a97b20f4ee",
+      "pass": true
+    },
+    {
+      "path": "themes/editorial/motion.md",
+      "sha256": "1652760dcf1c81dd5a9a3dba28f6b91fa94ab14122203f46366bd8fd32515f2e",
+      "pass": true
+    },
+    {
+      "path": "themes/editorial/README.md",
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "pass": true
+    },
+    {
+      "path": "themes/editorial/sources.md",
+      "sha256": "1d9a2221a3171807717b2d5e350d30f8cd9f6eaaa78ff023e2fe457cee8a9f88",
+      "pass": true
+    },
+    {
+      "path": "themes/gallery/design.md",
+      "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4",
+      "pass": true
+    },
+    {
+      "path": "themes/gallery/effects.md",
+      "sha256": "35922a5ae65b4ac9b93afcef508eb7e91ad95182d26f4cb422ed1d7dfca1a276",
+      "pass": true
+    },
+    {
+      "path": "themes/gallery/motion.md",
+      "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8",
+      "pass": true
+    },
+    {
+      "path": "themes/gallery/README.md",
+      "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b",
+      "pass": true
+    },
+    {
+      "path": "themes/gallery/sources.md",
+      "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a",
+      "pass": true
+    },
+    {
+      "path": "themes/layered/design.md",
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0",
+      "pass": true
+    },
+    {
+      "path": "themes/layered/effects.md",
+      "sha256": "da5e0e7e273b884f923f52d8a775584b99d9b8f720e5708d3a790e33c53f7824",
+      "pass": true
+    },
+    {
+      "path": "themes/layered/motion.md",
+      "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b",
+      "pass": true
+    },
+    {
+      "path": "themes/layered/README.md",
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7",
+      "pass": true
+    },
+    {
+      "path": "themes/layered/sources.md",
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e",
+      "pass": true
+    },
+    {
+      "path": "themes/play/design.md",
+      "sha256": "1c61915f458713a36ac6b5979efade888cc6010fd2e0e1f2cf029bd3d3501b60",
+      "pass": true
+    },
+    {
+      "path": "themes/play/effects.md",
+      "sha256": "d79d4d639031dead74b75cfb0ce390f15e241eaf2508ed8a7f037f893f8dae79",
+      "pass": true
+    },
+    {
+      "path": "themes/play/motion.md",
+      "sha256": "15ab5e636c8ed708e973a4bba8e39cf8c2031968285a615b40ef5245f94a923e",
+      "pass": true
+    },
+    {
+      "path": "themes/play/README.md",
+      "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859",
+      "pass": true
+    },
+    {
+      "path": "themes/play/sources.md",
+      "sha256": "79fbf6530901d58cc97be3c34e153b6e26c59136e3ba3fd66ab50074e8bfecd3",
+      "pass": true
+    },
+    {
+      "path": "themes/precision/design.md",
+      "sha256": "07599482c9917b76e455e4aa576a8d09aed7b609810595a92259b810b4876831",
+      "pass": true
+    },
+    {
+      "path": "themes/precision/effects.md",
+      "sha256": "4554c0de6385e719b5a6210a066ddc46472c5a416d338ba5e0a47fccd226a3a6",
+      "pass": true
+    },
+    {
+      "path": "themes/precision/motion.md",
+      "sha256": "772a39507a286bf2e150fb999779761e04530368154dfabbbfa0a1ad95f02dee",
+      "pass": true
+    },
+    {
+      "path": "themes/precision/README.md",
+      "sha256": "d494d06256df2bce73d84bcee445157b802bde4f9b20f87a05cc91e0aa45be79",
+      "pass": true
+    },
+    {
+      "path": "themes/precision/sources.md",
+      "sha256": "d90ceb2013b1f9a9227fee9df00b168289c63786ce6a3d5d06a187f995796b72",
+      "pass": true
+    },
+    {
+      "path": "themes/pulse/design.md",
+      "sha256": "7bb46304f0303675df634a61f47c67bdb4f998223a754ff4a9cdcb1c8f2ceca0",
+      "pass": true
+    },
+    {
+      "path": "themes/pulse/effects.md",
+      "sha256": "97447c96ca9e07605d3ffad913bb341098126e046ff46aaa3adad037d57ee62e",
+      "pass": true
+    },
+    {
+      "path": "themes/pulse/motion.md",
+      "sha256": "9db8e393b00bc2b3962981cd1046b32c15c67c9b53518b67e649bb9e25e1ad02",
+      "pass": true
+    },
+    {
+      "path": "themes/pulse/README.md",
+      "sha256": "b8e5c3ad970d241bcc5036d593fdc52b8b49c79d635e141df77adfe9d9b8861b",
+      "pass": true
+    },
+    {
+      "path": "themes/pulse/sources.md",
+      "sha256": "2a42a5f476de903592b16ad2f85d2668a0b8918d1d96a9e0815461949d2bbf29",
+      "pass": true
+    },
+    {
+      "path": "themes/swiss/design.md",
+      "sha256": "39bfd13042911294cd5c8793eca12249a632f5e83ba64f7c89105125c4fea46d",
+      "pass": true
+    },
+    {
+      "path": "themes/swiss/effects.md",
+      "sha256": "61615cff92295a4c5458f0972232ca70d596641649cfb92e878bcac4b09647dc",
+      "pass": true
+    },
+    {
+      "path": "themes/swiss/motion.md",
+      "sha256": "436a4c07741aca4cee4d7b7eb9b70e5ed8475a25dcd834b6b8105ef24243f231",
+      "pass": true
+    },
+    {
+      "path": "themes/swiss/README.md",
+      "sha256": "8c2d4d44eadb22172ef0ae1d832cddcbc95918c20060b23214a8f5514312be38",
+      "pass": true
+    },
+    {
+      "path": "themes/swiss/sources.md",
+      "sha256": "12652d6935bc5cd06a5e8b614e6935c9254c84a739b47f19dd1f2e8514dda9aa",
+      "pass": true
+    }
+  ],
+  "initialReviewReportsUnchanged": 3,
+  "licenseChecks": [
+    {
+      "path": "references/licenses/jakub-krehel-MIT.txt",
+      "bytes": 1069,
+      "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/julien-thibeaut-MIT.txt",
+      "bytes": 1072,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/ghaida-intent-CC0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/mohit-aggarwal-MIT.txt",
+      "bytes": 1071,
+      "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd",
+      "pass": true
+    },
+    {
+      "path": "references/licenses/burhan-sebin-MIT.txt",
+      "bytes": 1069,
+      "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2",
+      "pass": true
+    }
+  ],
+  "links": {
+    "checked": 234,
+    "broken": [],
+    "results": [
+      {
+        "from": "examples/README.md",
+        "destination": "portfolio/design.md",
+        "target": "examples/portfolio/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "agent-operations-dashboard/design.md",
+        "target": "examples/agent-operations-dashboard/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "../themes/editorial/preview/README.md",
+        "target": "themes/editorial/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "../themes/editorial/README.md",
+        "target": "themes/editorial/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "workflow-evaluation/README.md",
+        "target": "examples/workflow-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "coverage-evaluation/README.md",
+        "target": "examples/coverage-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "coverage-evaluation/skills-roadmap.md",
+        "target": "examples/coverage-evaluation/skills-roadmap.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "p0-evaluation/README.md",
+        "target": "examples/p0-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/README.md",
+        "destination": "skill-evaluation/README.md",
+        "target": "examples/skill-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/agent-experience.md",
+        "destination": "forms-and-navigation.md",
+        "target": "knowledge/forms-and-navigation.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/agent-experience.md",
+        "destination": "state-and-recovery.md",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/agent-experience.md",
+        "destination": "uncertain-outcomes.md",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/agent-experience.md",
+        "destination": "../examples/agent-operations-dashboard/design.md",
+        "target": "examples/agent-operations-dashboard/design.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/agent-experience.md",
+        "destination": "../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "ui-ux-design.md",
+        "target": "knowledge/ui-ux-design.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "accessibility-and-responsive.md",
+        "target": "knowledge/accessibility-and-responsive.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "state-and-recovery.md",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "forms-and-navigation.md",
+        "target": "knowledge/forms-and-navigation.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "uncertain-outcomes.md",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "agent-experience.md",
+        "target": "knowledge/agent-experience.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "../references/p0-research.md",
+        "target": "references/p0-research.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "../references/p0-review.md",
+        "target": "references/p0-review.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "../examples/p0-evaluation/README.md",
+        "target": "examples/p0-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/README.md",
+        "destination": "../references/skill-research.md",
+        "target": "references/skill-research.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "catalog/themes.json",
+        "target": "catalog/themes.json",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "skills/prepare-frontend-design/SKILL.md",
+        "target": "skills/prepare-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "assets/brand/README.md",
+        "target": "assets/brand/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/editorial/validation.md",
+        "target": "themes/editorial/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/swiss/validation.md",
+        "target": "themes/swiss/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/precision/validation.md",
+        "target": "themes/precision/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/play/validation.md",
+        "target": "themes/play/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/botanical/validation.md",
+        "target": "themes/botanical/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/blueprint/validation.md",
+        "target": "themes/blueprint/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/pulse/validation.md",
+        "target": "themes/pulse/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/validation.md",
+        "target": "themes/gallery/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/layered/validation.md",
+        "target": "themes/layered/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "catalog/themes.json",
+        "target": "catalog/themes.json",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "skills/prepare-frontend-design/SKILL.md",
+        "target": "skills/prepare-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "skills/prepare-frontend-design/SKILL.md",
+        "target": "skills/prepare-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "skills/review-frontend-design/SKILL.md",
+        "target": "skills/review-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/skill-research.md",
+        "target": "references/skill-research.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/skill-evaluation/README.md",
+        "target": "examples/skill-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/editorial/README.md",
+        "target": "themes/editorial/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/swiss/README.md",
+        "target": "themes/swiss/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/precision/README.md",
+        "target": "themes/precision/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/play/README.md",
+        "target": "themes/play/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/botanical/README.md",
+        "target": "themes/botanical/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/blueprint/README.md",
+        "target": "themes/blueprint/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/pulse/README.md",
+        "target": "themes/pulse/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/README.md",
+        "target": "themes/gallery/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/layered/README.md",
+        "target": "themes/layered/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/portfolio/design.md",
+        "target": "examples/portfolio/design.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/agent-operations-dashboard/design.md",
+        "target": "examples/agent-operations-dashboard/design.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/README.md",
+        "target": "examples/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/editorial/preview/README.md",
+        "target": "themes/editorial/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/swiss/preview/README.md",
+        "target": "themes/swiss/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/precision/preview/README.md",
+        "target": "themes/precision/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/play/preview/README.md",
+        "target": "themes/play/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/botanical/preview/README.md",
+        "target": "themes/botanical/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/blueprint/preview/README.md",
+        "target": "themes/blueprint/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/pulse/preview/README.md",
+        "target": "themes/pulse/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/preview/README.md",
+        "target": "themes/gallery/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/layered/preview/README.md",
+        "target": "themes/layered/preview/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/editorial/validation.md",
+        "target": "themes/editorial/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/swiss/validation.md",
+        "target": "themes/swiss/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/precision/validation.md",
+        "target": "themes/precision/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/play/validation.md",
+        "target": "themes/play/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/botanical/validation.md",
+        "target": "themes/botanical/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/blueprint/validation.md",
+        "target": "themes/blueprint/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/pulse/validation.md",
+        "target": "themes/pulse/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/validation.md",
+        "target": "themes/gallery/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/layered/validation.md",
+        "target": "themes/layered/validation.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/workflow-evaluation/README.md",
+        "target": "examples/workflow-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/coverage-evaluation/README.md",
+        "target": "examples/coverage-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/p0-research.md",
+        "target": "references/p0-research.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/p0-review.md",
+        "target": "references/p0-review.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "examples/p0-evaluation/README.md",
+        "target": "examples/p0-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/skill-research.md",
+        "target": "references/skill-research.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "references/SOURCES.md",
+        "target": "references/SOURCES.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/editorial/sources.md",
+        "target": "themes/editorial/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/swiss/sources.md",
+        "target": "themes/swiss/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/precision/sources.md",
+        "target": "themes/precision/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/play/sources.md",
+        "target": "themes/play/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/botanical/sources.md",
+        "target": "themes/botanical/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/blueprint/sources.md",
+        "target": "themes/blueprint/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/pulse/sources.md",
+        "target": "themes/pulse/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/sources.md",
+        "target": "themes/gallery/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/layered/sources.md",
+        "target": "themes/layered/sources.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "THIRD_PARTY_NOTICES.md",
+        "target": "THIRD_PARTY_NOTICES.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "assets/brand/README.md",
+        "target": "assets/brand/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "themes/gallery/preview/assets/README.md",
+        "target": "themes/gallery/preview/assets/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "tools/README.md",
+        "target": "tools/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "tools/README.md",
+        "target": "tools/README.md",
+        "pass": true
+      },
+      {
+        "from": "README.md",
+        "destination": "site/README.md",
+        "target": "site/README.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/editorial/sources.md",
+        "target": "themes/editorial/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/swiss/sources.md",
+        "target": "themes/swiss/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/precision/sources.md",
+        "target": "themes/precision/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/play/sources.md",
+        "target": "themes/play/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/botanical/sources.md",
+        "target": "themes/botanical/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/blueprint/sources.md",
+        "target": "themes/blueprint/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/pulse/sources.md",
+        "target": "themes/pulse/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/gallery/sources.md",
+        "target": "themes/gallery/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/gallery/preview/assets/README.md",
+        "target": "themes/gallery/preview/assets/README.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/layered/sources.md",
+        "target": "themes/layered/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/editorial/sources.md",
+        "target": "themes/editorial/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/swiss/sources.md",
+        "target": "themes/swiss/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/precision/sources.md",
+        "target": "themes/precision/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/play/sources.md",
+        "target": "themes/play/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/botanical/sources.md",
+        "target": "themes/botanical/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/blueprint/sources.md",
+        "target": "themes/blueprint/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/pulse/sources.md",
+        "target": "themes/pulse/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/gallery/sources.md",
+        "target": "themes/gallery/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../themes/layered/sources.md",
+        "target": "themes/layered/sources.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../THIRD_PARTY_NOTICES.md",
+        "target": "THIRD_PARTY_NOTICES.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../knowledge/agent-experience.md",
+        "target": "knowledge/agent-experience.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../examples/agent-operations-dashboard/design.md",
+        "target": "examples/agent-operations-dashboard/design.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "p0-research.md",
+        "target": "references/p0-research.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "p0-review.md",
+        "target": "references/p0-review.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "../examples/p0-evaluation/README.md",
+        "target": "examples/p0-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "references/SOURCES.md",
+        "destination": "skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "skills/prepare-frontend-design/SKILL.md",
+        "destination": "../../catalog/themes.json",
+        "target": "catalog/themes.json",
+        "pass": true
+      },
+      {
+        "from": "skills/prepare-frontend-design/SKILL.md",
+        "destination": "../../knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "skills/prepare-frontend-design/SKILL.md",
+        "destination": "../../templates/project-design.md",
+        "target": "templates/project-design.md",
+        "pass": true
+      },
+      {
+        "from": "skills/prepare-frontend-design/SKILL.md",
+        "destination": "../../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "assets/brand/README.md",
+        "target": "assets/brand/README.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/editorial/sources.md",
+        "target": "themes/editorial/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/SOURCES.md",
+        "target": "references/SOURCES.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/swiss/sources.md",
+        "target": "themes/swiss/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/play/sources.md",
+        "target": "themes/play/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/botanical/sources.md",
+        "target": "themes/botanical/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/blueprint/sources.md",
+        "target": "themes/blueprint/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/precision/sources.md",
+        "target": "themes/precision/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/pulse/sources.md",
+        "target": "themes/pulse/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/gallery/sources.md",
+        "target": "themes/gallery/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/gallery/preview/assets/README.md",
+        "target": "themes/gallery/preview/assets/README.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/gallery/preview/assets/manifest.json",
+        "target": "themes/gallery/preview/assets/manifest.json",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "themes/layered/sources.md",
+        "target": "themes/layered/sources.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/p0-research.md",
+        "target": "references/p0-research.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/p0-review.md",
+        "target": "references/p0-review.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/licenses/jakub-krehel-MIT.txt",
+        "target": "references/licenses/jakub-krehel-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/licenses/julien-thibeaut-MIT.txt",
+        "target": "references/licenses/julien-thibeaut-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/licenses/mohit-aggarwal-MIT.txt",
+        "target": "references/licenses/mohit-aggarwal-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/licenses/burhan-sebin-MIT.txt",
+        "target": "references/licenses/burhan-sebin-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "destination": "references/licenses/ghaida-intent-CC0.txt",
+        "target": "references/licenses/ghaida-intent-CC0.txt",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/bilingual-service-rerun/review.md",
+        "destination": "first-draft.md#language-delivery-and-switching",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/bilingual-service-rerun/review.md",
+        "destination": "first-draft.md#task-structure-and-theme-rationale",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/bilingual-service-rerun/review.md",
+        "destination": "first-draft.md#typography-layout-and-appearance",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/bilingual-service-rerun/review.md",
+        "destination": "../../../themes/botanical/design.md#appearance-and-accessibility",
+        "target": "themes/botanical/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "../../skills/prepare-frontend-design/SKILL.md",
+        "target": "skills/prepare-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "../../skills/review-frontend-design/SKILL.md",
+        "target": "skills/review-frontend-design/SKILL.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "../../knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "review-findings.md",
+        "target": "examples/skill-evaluation/review-findings.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "reviews/correction-check.md",
+        "target": "examples/skill-evaluation/reviews/correction-check.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "reviews/bilingual-rerun-correction-check.md",
+        "target": "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "consumer-app/initial-review.md",
+        "target": "examples/skill-evaluation/consumer-app/initial-review.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "consumer-app/design.md",
+        "target": "examples/skill-evaluation/consumer-app/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "storefront/design.md",
+        "target": "examples/skill-evaluation/storefront/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "bilingual-service/design.md",
+        "target": "examples/skill-evaluation/bilingual-service/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "agent-operations/design.md",
+        "target": "examples/skill-evaluation/agent-operations/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "bilingual-service-rerun/design.md",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "evidence.json",
+        "target": "examples/skill-evaluation/evidence.json",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "reviews/review-service-rerun-read-events.jsonl",
+        "target": "examples/skill-evaluation/reviews/review-service-rerun-read-events.jsonl",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "scope-probes/s01/report.md",
+        "target": "examples/skill-evaluation/scope-probes/s01/report.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "scope-probes/s02/report.md",
+        "target": "examples/skill-evaluation/scope-probes/s02/report.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "scope-probes/s03/report.md",
+        "target": "examples/skill-evaluation/scope-probes/s03/report.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "reviews/workflow-and-credits-audit.md",
+        "target": "examples/skill-evaluation/reviews/workflow-and-credits-audit.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "integrity.json",
+        "target": "examples/skill-evaluation/integrity.json",
+        "pass": true,
+        "note": "Self-reference; this checker writes the target after successful checks."
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "protocol.md",
+        "target": "examples/skill-evaluation/protocol.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "execution/prompts.json",
+        "target": "examples/skill-evaluation/execution/prompts.json",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/README.md",
+        "destination": "../../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "protocol.md",
+        "target": "examples/skill-evaluation/protocol.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "consumer-app/first-draft.md#end-to-end-editing-practice-and-recovery",
+        "target": "examples/skill-evaluation/consumer-app/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "consumer-app/design.md#end-to-end-editing-practice-and-recovery",
+        "target": "examples/skill-evaluation/consumer-app/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "storefront/first-draft.md#authoritative-review-and-checkout-handoff",
+        "target": "examples/skill-evaluation/storefront/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "storefront/design.md#authoritative-review-and-checkout-handoff",
+        "target": "examples/skill-evaluation/storefront/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service/first-draft.md#submission-uncertain-outcomes-and-contract-gates",
+        "target": "examples/skill-evaluation/bilingual-service/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service/design.md#submission-uncertain-outcomes-and-contract-gates",
+        "target": "examples/skill-evaluation/bilingual-service/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "agent-operations/first-draft.md#proposal-review-and-changing-intent",
+        "target": "examples/skill-evaluation/agent-operations/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "agent-operations/design.md#proposal-review-and-changing-intent",
+        "target": "examples/skill-evaluation/agent-operations/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service-rerun/first-draft.md#language-delivery-and-switching",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service-rerun/design.md#language-delivery-and-switching",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service-rerun/first-draft.md#typography-layout-and-appearance",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "bilingual-service-rerun/design.md#typography-layout-and-appearance",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "evidence.json",
+        "target": "examples/skill-evaluation/evidence.json",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/review-findings.md",
+        "destination": "../p0-evaluation/README.md",
+        "target": "examples/p0-evaluation/README.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+        "destination": "../bilingual-service-rerun/design.md",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+        "destination": "../bilingual-service-rerun/design.md#language-delivery-and-switching",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+        "destination": "../bilingual-service-rerun/design.md#typography-layout-and-appearance",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "examples/skill-evaluation/reviews/bilingual-rerun-correction-check.md",
+        "destination": "../bilingual-service-rerun/design.md#submission-evidence-and-external-contract-gates",
+        "target": "examples/skill-evaluation/bilingual-service-rerun/design.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/accessibility-and-responsive.md",
+        "destination": "forms-and-navigation.md",
+        "target": "knowledge/forms-and-navigation.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/accessibility-and-responsive.md",
+        "destination": "state-and-recovery.md",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/accessibility-and-responsive.md",
+        "destination": "uncertain-outcomes.md",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/accessibility-and-responsive.md",
+        "destination": "../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/ui-ux-design.md",
+        "destination": "state-and-recovery.md",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/ui-ux-design.md",
+        "destination": "forms-and-navigation.md",
+        "target": "knowledge/forms-and-navigation.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/ui-ux-design.md",
+        "destination": "uncertain-outcomes.md",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/ui-ux-design.md",
+        "destination": "accessibility-and-responsive.md",
+        "target": "knowledge/accessibility-and-responsive.md",
+        "pass": true
+      },
+      {
+        "from": "knowledge/ui-ux-design.md",
+        "destination": "../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "skill-research.md",
+        "target": "references/skill-research.md",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "skill-research.json",
+        "target": "references/skill-research.json",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/",
+        "target": "references/licenses",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/jakub-krehel-MIT.txt",
+        "target": "references/licenses/jakub-krehel-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/julien-thibeaut-MIT.txt",
+        "target": "references/licenses/julien-thibeaut-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/ghaida-intent-CC0.txt",
+        "target": "references/licenses/ghaida-intent-CC0.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/mohit-aggarwal-MIT.txt",
+        "target": "references/licenses/mohit-aggarwal-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/burhan-sebin-MIT.txt",
+        "target": "references/licenses/burhan-sebin-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "skill-research.json",
+        "target": "references/skill-research.json",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/jakub-krehel-MIT.txt",
+        "target": "references/licenses/jakub-krehel-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/julien-thibeaut-MIT.txt",
+        "target": "references/licenses/julien-thibeaut-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/ghaida-intent-CC0.txt",
+        "target": "references/licenses/ghaida-intent-CC0.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/mohit-aggarwal-MIT.txt",
+        "target": "references/licenses/mohit-aggarwal-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "references/skill-adaptations.md",
+        "destination": "licenses/burhan-sebin-MIT.txt",
+        "target": "references/licenses/burhan-sebin-MIT.txt",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/state-and-recovery.md#save-snapshots-and-completion",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/state-and-recovery.md#replacement-and-stale-writers",
+        "target": "knowledge/state-and-recovery.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/forms-and-navigation.md#modal-editing-and-dirty-exit",
+        "target": "knowledge/forms-and-navigation.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/uncertain-outcomes.md#dispatch-and-changed-intent",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/uncertain-outcomes.md#safe-retry-and-recovery",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/uncertain-outcomes.md#cancellation-and-stale-evidence",
+        "target": "knowledge/uncertain-outcomes.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../knowledge/agent-experience.md#resolve-project-control-questions",
+        "target": "knowledge/agent-experience.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/references/state-transitions.md",
+        "destination": "../../../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/SKILL.md",
+        "destination": "../../knowledge/README.md",
+        "target": "knowledge/README.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/SKILL.md",
+        "destination": "references/state-transitions.md",
+        "target": "skills/review-frontend-design/references/state-transitions.md",
+        "pass": true
+      },
+      {
+        "from": "skills/review-frontend-design/SKILL.md",
+        "destination": "../../references/skill-adaptations.md",
+        "target": "references/skill-adaptations.md",
+        "pass": true
+      }
+    ]
+  },
+  "caseIdentities": [
+    {
+      "case": "consumer-app",
+      "rawFirstDraftSHA256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+      "reviewedDesignSHA256": "70b3f1c3192871c35403f78d1a6f1215fb67f15fa7d4f769e4431e2bf82446b4",
+      "pass": true
+    },
+    {
+      "case": "storefront",
+      "rawFirstDraftSHA256": "d46132076797659c73cb970e1ce1e951e36c560c60782d3f82df7df6f1567740",
+      "reviewedDesignSHA256": "1a4dc12622de61c34ecad478445bc50069806e23d476d9910540cd98392fa3e3",
+      "pass": true
+    },
+    {
+      "case": "bilingual-service",
+      "rawFirstDraftSHA256": "444dc23156407dcff5709d8b92f141adc7e694dc54c00349d14cd1324ebcdb3e",
+      "reviewedDesignSHA256": "9fd74ef58595171c5a161fe32cc47ff820515f8cec1f1ce784bbf68c6d690ec4",
+      "pass": true
+    },
+    {
+      "case": "agent-operations",
+      "rawFirstDraftSHA256": "9917961ae81f1463aa0b4973706aa0c958004b2911537e3b68d6ce941a917a5f",
+      "reviewedDesignSHA256": "a614608d71db1c0623a3cb147b4ed56f77d210b6f3ea66f3064a79956b00f49f",
+      "pass": true
+    },
+    {
+      "case": "bilingual-service-rerun",
+      "rawFirstDraftSHA256": "d0134fbf8f9e2a732eee254043862532e9cfb7718b479cb73d78ecee15e06ee0",
+      "reviewedDesignSHA256": "e6ccaecdd8bf0181f0d6cf050e63fd5945291d67416c532d7e95e21602fb4a46",
+      "pass": true
+    }
+  ],
+  "readReplay": {
+    "date": "2026-10-17",
+    "runs": [
+      {
+        "run": "consumer-app",
+        "snapshot": "frozen-source",
+        "events": 43,
+        "contentReads": 43,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 122162,
+        "briefBytes": 2174,
+        "projectInputBytes": 2174,
+        "atlasContentBytes": 119988,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2174,
+          "selected-theme-and-candidates": 47395,
+          "conditional-knowledge": 40993,
+          "provenance": 9744
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "catalog/themes.json",
+          "themes/layered/README.md",
+          "themes/botanical/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "templates/project-design.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "1eda465892680c814529cbb811ad1bb027dfcbe799af8e085a097173608eba2d",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "storefront",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 19,
+        "returnedContentBytes": 140065,
+        "briefBytes": 2428,
+        "projectInputBytes": 2428,
+        "atlasContentBytes": 137637,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2428,
+          "selected-theme-and-candidates": 50466,
+          "conditional-knowledge": 51333,
+          "provenance": 13982
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "catalog/themes.json",
+          "themes/gallery/README.md",
+          "themes/botanical/README.md",
+          "themes/editorial/README.md",
+          "themes/gallery/design.md",
+          "themes/gallery/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "themes/gallery/motion.md",
+          "references/skill-adaptations.md",
+          "references/p0-research.md"
+        ],
+        "logSHA256": "6f51002e3bea255137a057b5e965f023e4c7cbe14f67b7fa71083bbbffd2f52a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "bilingual-service",
+        "snapshot": "frozen-source",
+        "events": 54,
+        "contentReads": 54,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 230262,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 227722,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 33388,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 7640,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 76963,
+          "conditional-knowledge": 108354,
+          "provenance": 16729
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/layered/design.md",
+          "themes/layered/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "14c56d8aa719fc5488042b53556992524f888b0edbfec8973d7f92555031c517",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "agent-operations",
+        "snapshot": "frozen-source",
+        "events": 45,
+        "contentReads": 45,
+        "uniqueContentFiles": 16,
+        "returnedContentBytes": 120256,
+        "briefBytes": 2734,
+        "projectInputBytes": 2734,
+        "atlasContentBytes": 117522,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3820,
+          "project-input": 2734,
+          "selected-theme-and-candidates": 29017,
+          "conditional-knowledge": 59664,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/agent-operations/brief.md",
+          "catalog/themes.json",
+          "themes/precision/README.md",
+          "themes/precision/design.md",
+          "themes/precision/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/agent-experience.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "9a2a58c724353353d72df0d5ed8e8e2ccc4e95b17ecb1976630f6bec0ae3223c",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-known",
+        "snapshot": "frozen-source",
+        "events": 23,
+        "contentReads": 23,
+        "uniqueContentFiles": 13,
+        "returnedContentBytes": 108646,
+        "briefBytes": 7142,
+        "projectInputBytes": 81415,
+        "atlasContentBytes": 27231,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 4027,
+          "project-input": 81415,
+          "conditional-knowledge": 18073
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "examples/skill-evaluation/consumer-app/first-draft.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "examples/skill-evaluation/storefront/first-draft.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "knowledge/README.md",
+          "knowledge/accessibility-and-responsive.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/uncertain-outcomes.md"
+        ],
+        "logSHA256": "acebaa05c731f4e374aa335c0e790ee47a1af776d3eb3426797f53eb079c7927",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "probe-s02",
+        "snapshot": "frozen-source",
+        "events": 21,
+        "contentReads": 21,
+        "uniqueContentFiles": 8,
+        "returnedContentBytes": 31236,
+        "briefBytes": 0,
+        "projectInputBytes": 0,
+        "atlasContentBytes": 31236,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "skill-or-profile": 4027,
+          "routing-and-template": 3153,
+          "conditional-knowledge": 19212,
+          "provenance": 4844
+        },
+        "paths": [
+          "skills/review-frontend-design/SKILL.md",
+          "knowledge/README.md",
+          "knowledge/agent-experience.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "1d2c4f831956233af3fd19808e3cce5ef9021dadf2a13ca13f1a63b7c7b6080a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-known-v2",
+        "snapshot": "frozen-source-v2",
+        "events": 22,
+        "contentReads": 22,
+        "uniqueContentFiles": 15,
+        "returnedContentBytes": 112559,
+        "briefBytes": 7142,
+        "projectInputBytes": 81415,
+        "atlasContentBytes": 31144,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 81415,
+          "conditional-knowledge": 13376,
+          "provenance": 4844
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/consumer-app/brief.md",
+          "examples/skill-evaluation/consumer-app/first-draft.md",
+          "examples/skill-evaluation/storefront/brief.md",
+          "examples/skill-evaluation/storefront/first-draft.md",
+          "examples/skill-evaluation/bilingual-service/brief.md",
+          "examples/skill-evaluation/bilingual-service/first-draft.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "91e8124a55782bf2c8dfeaa53c82cc7fb16be88b57274e54152262c25da821fb",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-operations",
+        "snapshot": "frozen-source-v2",
+        "events": 17,
+        "contentReads": 17,
+        "uniqueContentFiles": 10,
+        "returnedContentBytes": 54704,
+        "briefBytes": 2734,
+        "projectInputBytes": 32169,
+        "atlasContentBytes": 22535,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 32169,
+          "conditional-knowledge": 9611
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/agent-operations/first-draft.md",
+          "examples/skill-evaluation/agent-operations/brief.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/agent-experience.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/accessibility-and-responsive.md"
+        ],
+        "logSHA256": "0f7f58fa16de5e64755f559279c2224b475c55bf6f7b6a2c7aba1f0cf4fa856a",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "bilingual-service-rerun",
+        "snapshot": "frozen-source-v3",
+        "events": 68,
+        "contentReads": 52,
+        "uniqueContentFiles": 17,
+        "returnedContentBytes": 119804,
+        "briefBytes": 2540,
+        "projectInputBytes": 2540,
+        "atlasContentBytes": 117264,
+        "metadataReads": 16,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 0,
+        "categories": {
+          "routing-and-template": 18036,
+          "skill-or-profile": 3990,
+          "project-input": 2540,
+          "selected-theme-and-candidates": 41052,
+          "conditional-knowledge": 47201,
+          "provenance": 6985
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/prepare-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "catalog/themes.json",
+          "themes/botanical/README.md",
+          "themes/layered/README.md",
+          "themes/play/README.md",
+          "themes/botanical/design.md",
+          "themes/botanical/sources.md",
+          "knowledge/README.md",
+          "templates/project-design.md",
+          "knowledge/ui-ux-design.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/state-and-recovery.md",
+          "knowledge/uncertain-outcomes.md",
+          "knowledge/accessibility-and-responsive.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "91598cf728739890d8af551886a409a2ead28a19c2de8ceb2ecf4bbc33b9488e",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      },
+      {
+        "run": "review-service-rerun",
+        "snapshot": "frozen-source-v3",
+        "events": 21,
+        "contentReads": 21,
+        "uniqueContentFiles": 11,
+        "returnedContentBytes": 87837,
+        "briefBytes": 2540,
+        "projectInputBytes": 56214,
+        "atlasContentBytes": 31623,
+        "metadataReads": 0,
+        "failedReads": 0,
+        "repeatedExactSelectionBytes": 26837,
+        "categories": {
+          "routing-and-template": 5131,
+          "skill-or-profile": 7793,
+          "project-input": 56214,
+          "conditional-knowledge": 11195,
+          "selected-theme-and-candidates": 1302,
+          "provenance": 6202
+        },
+        "paths": [
+          "AGENTS.md",
+          "skills/review-frontend-design/SKILL.md",
+          "examples/skill-evaluation/bilingual-service-rerun/brief.md",
+          "examples/skill-evaluation/bilingual-service-rerun/first-draft.md",
+          "skills/review-frontend-design/references/state-transitions.md",
+          "knowledge/README.md",
+          "knowledge/forms-and-navigation.md",
+          "knowledge/accessibility-and-responsive.md",
+          "themes/botanical/design.md",
+          "knowledge/uncertain-outcomes.md",
+          "references/skill-adaptations.md"
+        ],
+        "logSHA256": "bfde2b9a0bad276d0e196db2003dd212ff660954a60d32c8e08aaaaa5ea82266",
+        "replay": "all recorded source and returned identities verified against matching frozen phase"
+      }
+    ],
+    "historical": [
+      {
+        "case": "consumer-app",
+        "atlasContentBytes": 115164,
+        "readLogSHA256": "5178141749e1e36de0cc5bda426f56847d32fac19cf045ab11d8e968fb0d0243",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      },
+      {
+        "case": "storefront",
+        "atlasContentBytes": 165891,
+        "readLogSHA256": "0349a3246ac04a7ff2e56fea16dc5aab8ce5d87fad33153f26fb44de3add47f3",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      },
+      {
+        "case": "bilingual-service",
+        "atlasContentBytes": 186792,
+        "readLogSHA256": "5d8bea5504ed909f0e22da36c87e92cf6282528d1145892bc004fde99f1b0925",
+        "limits": "Historical logging recovery/correction metadata limits direct comparison; these are recorded returned bytes, not tokens or cost."
+      }
+    ]
+  },
+  "checks": {
+    "skillValidator": "Both final skills passed quick_validate.py; metadata explicit-only Boolean checked.",
+    "catalog": "Catalog matches metadata for 9 themes.",
+    "trackedWhitespace": "git diff --check passed; source-only earlier checks preserved, final diff checked at handoff."
+  },
+  "limits": "Local raw-byte/hash/selector/link checks. Markdown anchor slug approximation, no HTTP availability, host discovery, runtime, AT or usability verification."
+}

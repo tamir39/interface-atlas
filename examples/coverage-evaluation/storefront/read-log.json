@@ -1,0 +1,88 @@
+{
+  "trial": "Form & Field storefront",
+  "startingCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "repository": "D:/Projects/InterfaceAtlas",
+  "measurement": "UTF-8 source bytes and SHA-256; no token or billing measurement",
+  "reads": [
+    {
+      "order": 1,
+      "path": "AGENTS.md",
+      "purpose": "Read repository instructions before selecting or drafting the trial.",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20",
+      "readAtUtc": "2026-10-15T06:20:04.0953403Z"
+    },
+    {
+      "order": 2,
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Read mandatory design-document preparation workflow and source constraints.",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d",
+      "readAtUtc": "2026-10-15T06:20:04.1801109Z"
+    },
+    {
+      "order": 3,
+      "path": "catalog/themes.json",
+      "purpose": "Select only 2–3 plausible storefront themes from catalog metadata.",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6",
+      "readAtUtc": "2026-10-15T06:20:11.3886785Z"
+    },
+    {
+      "order": 4,
+      "path": "themes/gallery/README.md",
+      "purpose": "Assess image-led boutique storefront fit and limitations.",
+      "utf8Bytes": 6100,
+      "sha256": "4d4f34adbfa1122b0784cadca13830bf68030200027dd63e0d02cb27e4dae72b",
+      "readAtUtc": "2026-10-15T06:20:19.9035661Z"
+    },
+    {
+      "order": 5,
+      "path": "themes/botanical/README.md",
+      "purpose": "Assess calm lifestyle-brand alternative and limitations.",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a",
+      "readAtUtc": "2026-10-15T06:20:19.9493068Z"
+    },
+    {
+      "order": 6,
+      "path": "themes/editorial/README.md",
+      "purpose": "Assess design-led boutique/publication alternative and limitations.",
+      "utf8Bytes": 4591,
+      "sha256": "7a896189c75143cfa1e11a664f8843524ee12f957b3967877e6537de4a446b1a",
+      "readAtUtc": "2026-10-15T06:20:19.9563824Z"
+    },
+    {
+      "order": 7,
+      "path": "themes/gallery/design.md",
+      "purpose": "Resolve exact Gallery tokens, typography, geometry, image rules, component states, and appearance pairings.",
+      "utf8Bytes": 17395,
+      "sha256": "e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4",
+      "readAtUtc": "2026-10-15T06:20:36.4295354Z"
+    },
+    {
+      "order": 8,
+      "path": "themes/gallery/sources.md",
+      "purpose": "Preserve source creators, pinned revisions, notices, and reuse boundaries.",
+      "utf8Bytes": 13653,
+      "sha256": "0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a",
+      "readAtUtc": "2026-10-15T06:20:36.5153787Z"
+    },
+    {
+      "order": 9,
+      "path": "themes/gallery/motion.md",
+      "purpose": "Specify bounded commerce feedback and reduced-motion alternatives without assuming an animation runtime.",
+      "utf8Bytes": 3173,
+      "sha256": "e98e7874a0c7d8ef4236c03298b4c63278f9834cb2fb263e9f8d368631cdd4c8",
+      "readAtUtc": "2026-10-15T06:20:36.5244288Z"
+    },
+    {
+      "order": 10,
+      "path": "templates/project-design.md",
+      "purpose": "Use the authorized project-document outline and identify required state, evidence, and handoff fields.",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8",
+      "readAtUtc": "2026-10-15T06:20:36.5321116Z"
+    }
+  ]
+}

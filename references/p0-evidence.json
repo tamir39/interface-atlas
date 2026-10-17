@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "status": "Draft knowledge for user review; no skill or runtime implementation",
+  "inspectedDate": "2026-10-15",
+  "baseCommit": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "baselineNote": "Input included previously uncommitted coverage-evaluation artifacts plus README.md and examples/README.md changes; those assessment artifacts are preserved.",
+  "authorship": "Original Atlas synthesis by Tamir (Phi Vuong Tuong Tam), with Codex AI assistance",
+  "sourceEvidence": {
+    "technicalGuidancePageRecords": 34,
+    "registryGroups": [
+      "R17",
+      "R29",
+      "R42",
+      "R43",
+      "R44",
+      "R45",
+      "R46",
+      "R47",
+      "R48",
+      "R49",
+      "R50",
+      "R51",
+      "R52"
+    ],
+    "ledger": "references/p0-research.md",
+    "notes": "Technical/guidance page records are not independent studies; terms/credit inspections excluded from that count. Living sources and historic vendor guidance have recorded version/inspection limits."
+  },
+  "artifacts": [
+    {
+      "path": "README.md",
+      "utf8Bytes": 19217,
+      "sha256": "e68909904223c9acc1178adf0553b96f73dda570674f85fe3dc2e2339f5e908c"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "utf8Bytes": 18040,
+      "sha256": "fa3d47b5c5401c5d5cee3059bc25a8cb175c20b37486f822426ac3d609d32bdc"
+    },
+    {
+      "path": "knowledge/README.md",
+      "utf8Bytes": 2249,
+      "sha256": "2fb5d179ac10e9dba6c9775bfbb809b2c3a99865c042d75c0411e56fc967bd07"
+    },
+    {
+      "path": "knowledge/forms-and-navigation.md",
+      "utf8Bytes": 17250,
+      "sha256": "28541a3bb0cf40672c111d61527d38a4e94db8f6246b02b4aed2a7565f38bbd1",
+      "whitespaceWords": 2127
+    },
+    {
+      "path": "knowledge/state-and-recovery.md",
+      "utf8Bytes": 15196,
+      "sha256": "2ae3390ca74327ec16aa25173d9df2b04a9fbac14fd33d4b43d63fa8ca085bcd",
+      "whitespaceWords": 1985
+    },
+    {
+      "path": "knowledge/uncertain-outcomes.md",
+      "utf8Bytes": 15672,
+      "sha256": "feee04db4aeb759a9a249f45ceb9efb8add60a9bc5fde4e5ee98af5c9047755c",
+      "whitespaceWords": 2123
+    },
+    {
+      "path": "references/SOURCES.md",
+      "utf8Bytes": 21759,
+      "sha256": "107b890d51866605cdb0f8b85897f724823dde8657cf16a2e0feb06fcaec85db"
+    },
+    {
+      "path": "references/p0-research.md",
+      "utf8Bytes": 57297,
+      "sha256": "a11279a0e0291d3419ab230d681fd72e52bf15219f8a75c6264ddefc3c2e341a"
+    },
+    {
+      "path": "references/p0-review.md",
+      "utf8Bytes": 11035,
+      "sha256": "28f948e74c5b421238aad2c7be62485f33afd59beb2e886ef39f7e4cdcc2ff9a"
+    }
+  ],
+  "scope": {
+    "baselineFiles": 191,
+    "unchangedFiles": 187,
+    "unchangedCanonicalSha256": "7e315c0148decbfde38cbe0a2adc2a72d60d164269f6a92907024ae76271241a",
+    "aggregateMethod": "SHA-256 of sorted unchanged repo-relative path, TAB, lowercase SHA-256, LF. Unchanged set is the baseline files outside the ten allowed paths.",
+    "allowedPaths": [
+      "README.md",
+      "THIRD_PARTY_NOTICES.md",
+      "knowledge/README.md",
+      "knowledge/state-and-recovery.md",
+      "knowledge/forms-and-navigation.md",
+      "knowledge/uncertain-outcomes.md",
+      "references/SOURCES.md",
+      "references/p0-research.md",
+      "references/p0-review.md",
+      "references/p0-evidence.json"
+    ],
+    "protectedInputs": [
+      {
+        "path": "examples/coverage-evaluation/consumer-app/design.md",
+        "bytes": 21165,
+        "sha256": "e03c8960266b6d2778142871f35862a51e1652a9e5722fb3dbd61c8768eabafa"
+      },
+      {
+        "path": "examples/coverage-evaluation/storefront/design.md",
+        "bytes": 22729,
+        "sha256": "be39c96ff9fbad6349e2671f873d1aa9125592d033b1a05fd5ff5a49c2d0df7f"
+      },
+      {
+        "path": "skills/prepare-frontend-design/SKILL.md",
+        "bytes": 2638,
+        "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+      },
+      {
+        "path": "templates/project-design.md",
+        "bytes": 2301,
+        "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+      }
+    ]
+  },
+  "performed": [
+    "Primary-source and document-specific terms inspection",
+    "Desk review against preserved consumer/storefront trial findings",
+    "Fresh bilingual service-form desk scenario",
+    "Independent draft reviews; delayed same-action reply correction incorporated",
+    "Document normalization, staged-copy integrity and unchanged-input scope audit"
+  ],
+  "notPerformed": [
+    "New browser or storage experiments",
+    "Keyboard or assistive-technology runs",
+    "Backend/provider integration or real transactions",
+    "Usability study or cost measurement",
+    "Regeneration of trial design documents",
+    "Skill/template/theme/catalog/preview/tool/workflow changes",
+    "Commit, push, merge or publication"
+  ],
+  "pending": [
+    "User review of chapter boundaries and proposed decisions",
+    "Concrete consuming-project schema/capacity/conflict/navigation/service contracts",
+    "Authorized generation comparison before any skill implementation",
+    "Relevant browser, assistive-technology and real-service evidence after implementation"
+  ],
+  "validation": {
+    "status": "Documentation checks passed; no runtime conclusions",
+    "checks": {
+      "catalog": "9 themes match metadata",
+      "documentationLinks": {
+        "local": 587,
+        "urlAndReferenceTargets": 605,
+        "note": "Existence/URL syntax only, not remote reachability"
+      },
+      "newDocumentFragments": 11,
+      "chapterCitationsRecorded": 42,
+      "sourceRegistryIDs": 52,
+      "normalizedArtifactHashes": 9,
+      "unchangedBaselineFiles": 187,
+      "priorCoverage": "14 artifacts, 13 artifact hashes, 20 trial input hashes, 54 judgments, 30 recorded historic input hashes; existing skill/template unchanged",
+      "gitDiffCheck": "Passed"
+    },
+    "reviewCorrections": [
+      "Earlier transport-attempt evidence may resolve the same logical action when authoritative and ordered",
+      "Strict durability remains a hint, not a universal loss-free guarantee",
+      "HTML localStorage locking warning identified as informative introduction"
+    ]
+  }
+}

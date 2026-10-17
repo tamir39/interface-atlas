@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "method": "Node VM with minimal DOM",
+  "checks": [
+    "Native type=button labelled Clear filters follows Status",
+    "Initial full request list renders",
+    "Attention filter narrows list",
+    "Combined attention/status filters produce expected empty list",
+    "Clear resets both filters and restores full list without changing active control",
+    "Repeated clearing works after status-only filtering"
+  ],
+  "limits": "Native browser keyboard behavior and visual focus outline were not verified; Edge did not expose a DevTools endpoint."
+}

@@ -1,0 +1,13 @@
+# Relay Desk — fictional agent-operations trial brief
+
+New input, 2026-10-17. This is a design-document exercise, not a working service or a request to implement one.
+
+Relay Desk is a responsive internal workspace for a small facilities support team. An operator reviews incoming maintenance requests, identifies items needing attention, and considers an assistant's suggested queue and assignee changes. The desired interface should help the operator understand the request, inspect supporting information, decide what to do, and later understand what actually happened. Use a calm, concise voice and an English interface.
+
+Required journeys: scan a small request list; filter by attention needed and status; open request details; inspect a proposed change and its stated reasons/evidence; adjust the proposed scope or reject it; confirm a reviewed proposal; follow ongoing work; request cancellation when useful; leave and return to an unresolved item. An operator may change a proposal while its review is open, and the upstream request may also change. Distinguish pending decisions from items that are merely still running. No chart, chat interface or approval inbox separate from the request list is required.
+
+The product goal includes applying a confirmed queue/assignee change through an external service-desk integration. This is desired behavior, not an established integration capability. A command reply or status update can be delayed or lost, including after a confirm or cancel request; a reload or connection loss can interrupt observation. The operator needs understandable choices and truthful status in these situations. Do not assume that sending a cancellation request means the work has stopped or that every completed effect can be reversed.
+
+Supplied inputs are this fictional task brief and Atlas design references. No real users/research, request data, API, execution engine, identity or permission model, approval policy, cancellation/rollback contract, event ordering, recovery lookup, persistence contract, support channel, brand assets, font files or stack is supplied. Label local product decisions as proposals. Give unresolved external capabilities clear owners/inputs and enablement gates; do not invent endpoints, successful actions or backend guarantees. Do not choose a model or agent framework.
+
+Prepare a self-contained project design.md, with task/information structure, concrete visual rules, relevant states and recovery decisions, phone-to-desktop behavior, keyboard/focus, Light/Dark/System and reduced motion. Keep human-facing Agent Experience relevant to these tasks. Theme choice is open. Preserve evidence limits and propose feasible future validation without claiming it happened.

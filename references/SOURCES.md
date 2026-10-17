@@ -1,6 +1,6 @@
 # Research source registry
 
-Updated on 2026-10-15; individual inspection dates remain in each theme source record. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by theme-specific study sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
+Updated on 2026-10-15; individual inspection dates remain in each theme or shared-knowledge source record. These external candidates cover theme discovery, design documentation, foundations, and Agent Experience. The initial twenty references are supplemented by theme-specific and shared P0 study sources. A listing here does not mean its contents were imported or its every asset is cleared for reuse.
 
 Repository license notes refer to inspected repository material. Website prose, illustrations, trademarks, commercial components, and separately licensed assets may have different terms. Preserve the terms for the actual material selected.
 
@@ -49,6 +49,17 @@ Repository license notes refer to inspected repository material. Website prose, 
 | R41 | [Plus Jakarta Sans](https://github.com/tokotype/PlusJakartaSans) | Gumpita Rahayu of Tokotype; Plus Jakarta Sans Project Authors | Layered geometric sans roles; commissioning context separately credited | SIL OFL 1.1, copyright 2020 Project Authors at inspected pin. No font files included. |
 | R42 | [HTML dialog standard](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element) | WHATWG contributors | Layered native modal lifecycle and background interaction | Living-standard conceptual reference; no prose or sample code copied. |
 
+| R43 | [WHATWG Storage Standard](https://storage.spec.whatwg.org/) | Anne van Kesteren / WHATWG and contributors | Persistence permission, best-effort storage and estimated quota | Inspected commit 23f38d8feaf530b9787822e067a7eb6f953af322; CC BY 4.0 document, separate BSD 3-Clause code-incorporation terms. Concepts only. |
+| R44 | [HTML Web storage](https://html.spec.whatwg.org/multipage/webstorage.html) | WHATWG maintainers and contributors | localStorage concurrency warning and access/write errors | Living Standard inspected 2026-10-15; informative introduction distinguished from normative API. Concepts only. |
+| R45 | [Indexed Database API 3.0](https://www.w3.org/TR/2025/WD-IndexedDB-3-20250813/) | Steve Becker, editor; W3C Web Applications Working Group; former editors credited in ledger | Transaction completion, durability hints, scopes and upgrades | Published Working Draft 2025-08-13, not Recommendation; W3C Software and Document License 2023. No text/code imported. |
+| R46 | [Chrome durability guidance](https://developer.chrome.com/blog/indexeddb-durability-mode-now-defaults-to-relaxed) and [page lifecycle](https://developer.chrome.com/docs/web-platform/page-lifecycle-api) | Thomas Steiner and Philip Walton; Google / Chrome for Developers | Vendor-version durability and unload limits | Page content CC BY 4.0 except as noted; samples Apache 2.0. Referenced concepts, no samples/media copied. |
+| R47 | [WebKit storage policy](https://webkit.org/blog/14403/updates-to-storage-policy/) | Sihui Liu / WebKit | Version-scoped quota, eviction and persistence guidance | Blog-copying permission unresolved; software LGPL/BSD does not establish blog terms. Factual reference only. |
+| R48 | [Persistent storage](https://web.dev/articles/persistent-storage) | Pete LePage; original-version credit Chris Wilson; Google / web.dev | Meaningful persistence-request timing and denial paths | Historic guidance inspected 2026-10-15; CC BY 4.0 content, Apache 2.0 samples except as noted. Concepts only. |
+| R49 | [GOV.UK Design System](https://design-system.service.gov.uk/) | GOV.UK Design System team / Government Digital Service; Crown copyright | Error-summary focus, check answers and contextual Back comparison | Footer OGL v3 except as noted; primary license page retrieval returned 403. No implementation, text or assets imported. |
+| R50 | [RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) | Roy T. Fielding, Mark Nottingham, Julian Reschke, editors; IETF | Safe/idempotent semantics, acceptance, conditions, conflicts and retry delay | STD 97, June 2022; IETF Trust/BCP 78, separate Code Component terms and legacy modification caveat. Concepts only. |
+| R51 | [WHATWG Fetch Standard](https://fetch.spec.whatwg.org/) | Anne van Kesteren / WHATWG and contributors | Client abort/network observations and remote-uncertainty boundary | Inspected commit e9460d1b22ead1c6a72eeac37fb2ec0dc01aeb1d; CC BY 4.0 document, separate BSD 3-Clause code-incorporation terms. No code copied. |
+| R52 | [HTML forms](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html), [history](https://html.spec.whatwg.org/multipage/nav-history-apis.html) and [unload](https://html.spec.whatwg.org/multipage/browsing-the-web.html) | WHATWG and contributors | Disabled/submitted controls, interactive validation order, history restoration and unload checks | Living Standard inspected 2026-10-15; document and code terms separate. No code/prose imported. |
+
 ## Material used in this pilot
 
 Editorial's source implementation is maintained by Tamir / Phi Vuong Tuong Tam in [Tamir39Portfolio](https://github.com/tamir39/tamir39-portfolio), inspected locally at revision 166f44091a58a68d74096bc44defceb99243ba4e. Its detailed [provenance record](../themes/editorial/sources.md) identifies retained values and Atlas proposals.
@@ -77,8 +88,25 @@ Font designers and package license evidence are recorded in the theme source rec
 
 R16 and R17 inform theme guidance. R19 informs [shared Agent Experience](../knowledge/agent-experience.md) and the [dashboard example](../examples/agent-operations-dashboard/design.md).
 
+## Shared P0 research
+
+The [P0 source ledger](p0-research.md) preserves page-level creators/editors, exact URLs, inspected revisions/dates, normative versus informative status, observed terms and claim limits for the [draft knowledge chapters](../knowledge/README.md). R17, R29 and R42 are reused alongside R43–R52. These are original Atlas syntheses, not imported standards or component implementations. The [desk review](p0-review.md) records unresolved project contracts and future evidence; no skills are implemented by this research.
+
+The [P0 review and fresh document trials](../examples/p0-evaluation/README.md) record revision 0.2-draft, additional inspected HTML/IndexedDB/HTTP sections, first-pass findings and corrections. They implement no skills.
+
 ## Adding evidence
 
 Record the creator or published credit, original URL, accessed date, version/commit, applicable reuse terms, and the specific material used. Distinguish copied content, referenced concepts, and Atlas changes. Keep source inspection, numerical checks, rendered validation, and reuse clearance separate.
 
 When a source credit or license is unresolved, retain that uncertainty; do not fill the gap with an inferred creator or blanket permission.
+
+## Frontend workflow method adaptations
+
+| ID | Source | Credited creator | Material used | Terms and adaptation scope |
+| --- | --- | --- | --- | --- |
+| R53 | [better-interface and domain owners](https://github.com/jakubkrehel/skills/tree/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63/skills) | Jakub Krehel | Selective task/domain ownership and UI/UX, accessibility, layout, writing, type/color and polish lenses | MIT, copyright 2026 Jakub Krehel. Pinned paths, adapted boundaries and retained full notice in [skill adaptations](skill-adaptations.md). No upstream runtime/code/assets imported. |
+| R54 | [create-design-md, improve-ui and fixing-accessibility](https://github.com/ibelick/ui-skills/tree/f18d13077d6e3841821ea0a36526c0fd44a570b5/skills) | Julien Thibeaut / ibelick | Governing-design evidence, evidence-backed review, source-aware handoff and focused names/semantics inspection | MIT, copyright 2026 Julien Thibeaut. [Adaptation record and full notice](skill-adaptations.md); external CLI/schema and linked packages are excluded. |
+| R55 | [Journey and Evaluate — Design with Intent](https://github.com/ghaida/intent/tree/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e/skills) | Ghaida Zahran / Design with Intent | User tasks, decisions, alternative paths, interruption/return and bounded walkthroughs | CC0-1.0 Universal; creator credit retained as provenance. [Adaptation record and full text](skill-adaptations.md); no full Intent/Evaluate catalog imported or third-party linked rights inferred. |
+| R56 | [Human-in-the-Loop Design](https://github.com/mohitagw15856/pm-claude-skills/blob/921e015321cdcf7c48ad85f40eeaf5ba68c89433/skills/human-in-the-loop-design/SKILL.md) | Mohit Aggarwal | Human action scope, consequence, intervention and approval-design questions | MIT, copyright 2026 Mohit Aggarwal. [Adaptation record and full notice](skill-adaptations.md); no universal budgets, risk tiers or runtime guarantees adopted. |
+| R57 | [Human in the Loop and gate-design guide](https://github.com/seb1n/awesome-ai-agent-skills/tree/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop) | Burhan Sebin | Exact proposal/target, authority, evidence, uncertainty and recovery questions | MIT, copyright 2026 Burhan Sebin. [Adaptation record and full notice](skill-adaptations.md); no policy schema, validator or runtime enforcement imported. |
+| R58 | [People + AI Guidebook](https://pair.withgoogle.com/guidebook/) | Google PAIR | Linked primary guidance for human-facing agent expectations, steering and recovery | Inspected 2026-10-17; concepts referenced in original Atlas questions. No webpage prose/assets reproduced; website redistribution terms not assessed. |

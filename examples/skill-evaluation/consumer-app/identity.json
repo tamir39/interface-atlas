@@ -1,0 +1,53 @@
+{
+  "case": "consumer-app",
+  "date": "2026-10-17",
+  "bytes": 22194,
+  "words": 2922,
+  "sha256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+  "designAtDeliverySHA256": "57b177f8bbc33c21f356c118f84f66a0580836be9bca26e34aa4c58160a22871",
+  "firstDraftLFNormalizedSHA256": "992ef6579cf55e2d928862bcc3537eb2566f52dad3404558a7b9ec32f25ff378",
+  "reviewedDesignSHA256": "70b3f1c3192871c35403f78d1a6f1215fb67f15fa7d4f769e4431e2bf82446b4",
+  "reviewedDesignBytes": 23742,
+  "reading": {
+    "run": "consumer-app",
+    "snapshot": "frozen-source",
+    "events": 43,
+    "contentReads": 43,
+    "uniqueContentFiles": 16,
+    "returnedContentBytes": 122162,
+    "briefBytes": 2174,
+    "projectInputBytes": 2174,
+    "atlasContentBytes": 119988,
+    "metadataReads": 0,
+    "failedReads": 0,
+    "repeatedExactSelectionBytes": 0,
+    "categories": {
+      "routing-and-template": 18036,
+      "skill-or-profile": 3820,
+      "project-input": 2174,
+      "selected-theme-and-candidates": 47395,
+      "conditional-knowledge": 40993,
+      "provenance": 9744
+    },
+    "paths": [
+      "AGENTS.md",
+      "skills/prepare-frontend-design/SKILL.md",
+      "examples/skill-evaluation/consumer-app/brief.md",
+      "catalog/themes.json",
+      "themes/layered/README.md",
+      "themes/botanical/README.md",
+      "themes/play/README.md",
+      "themes/layered/design.md",
+      "themes/layered/sources.md",
+      "knowledge/README.md",
+      "knowledge/ui-ux-design.md",
+      "knowledge/state-and-recovery.md",
+      "knowledge/forms-and-navigation.md",
+      "knowledge/accessibility-and-responsive.md",
+      "templates/project-design.md",
+      "references/skill-adaptations.md"
+    ],
+    "logSHA256": "1eda465892680c814529cbb811ad1bb027dfcbe799af8e085a097173608eba2d",
+    "replay": "all recorded source and returned identities verified against matching frozen phase"
+  }
+}

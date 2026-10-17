@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "repository": "D:/Projects/InterfaceAtlas",
+  "repositoryRevision": "782159e8e2510933c76989ff9fd9546d282c62cd",
+  "note": "AGENTS.md and required skill were loaded immediately before log initialization; subsequent content reads append before output. UTF8 byte counts and SHA256 cover the exact file bytes including any BOM or CRLF.",
+  "files": [
+    {
+      "order": 1,
+      "path": "AGENTS.md",
+      "purpose": "Repository scope and provenance instructions",
+      "utf8Bytes": 1597,
+      "sha256": "3076cd9635d9d1b09ddb048eb92f5c40ce1d878e5216ca6ce3486e535ed69d20"
+    },
+    {
+      "order": 2,
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "purpose": "Required selective-reading workflow",
+      "utf8Bytes": 2638,
+      "sha256": "f3cddf9c54b013693f073b88dc7427cd590c89bafdd1a7c89f2bb75faf0de04d"
+    },
+    {
+      "order": 3,
+      "path": "catalog/themes.json",
+      "purpose": "Candidate discovery and comparison",
+      "utf8Bytes": 10070,
+      "sha256": "05a01cdb0d31f8a716df714bde6c7c323112110d1f6f2eac4aca7976a760fdd6"
+    },
+    {
+      "order": 4,
+      "path": "themes/layered/README.md",
+      "purpose": "Candidate fit: personal learning and planner interactions",
+      "utf8Bytes": 6705,
+      "sha256": "85906f68b11d38dfc26e8d2327d47eb0513890dc5bf2636c1d65fa643bf4edf7"
+    },
+    {
+      "order": 5,
+      "path": "themes/botanical/README.md",
+      "purpose": "Candidate comparison: calm reading workspace",
+      "utf8Bytes": 5554,
+      "sha256": "e4e77ba00888c4d1f93597fcd9f03a35b5dcb66ebe5d5912214715dff6181f9a"
+    },
+    {
+      "order": 6,
+      "path": "themes/play/README.md",
+      "purpose": "Candidate comparison: learning product with approachable identity",
+      "utf8Bytes": 5568,
+      "sha256": "ec85b3378ec2d5b2c0b23f03bab61af12a5ebba31b95c20816eb92de6a022859"
+    },
+    {
+      "order": 7,
+      "path": "themes/layered/design.md",
+      "purpose": "Selected theme actual tokens, typography, geometry, components and states",
+      "utf8Bytes": 15292,
+      "sha256": "50b367846e908348f66705e76c78b474888d7ba7ab1e69c365c6858c404f76c0"
+    },
+    {
+      "order": 8,
+      "path": "themes/layered/sources.md",
+      "purpose": "Selected theme source pins, creator credits, license and inherited-concept boundaries",
+      "utf8Bytes": 14276,
+      "sha256": "b7609231849d8be5e6343ff97d0ee199c15b87039bf7ebc1d82500f387baa37e"
+    },
+    {
+      "order": 9,
+      "path": "themes/layered/motion.md",
+      "purpose": "Brief requires reduced-motion and non-motion feedback",
+      "utf8Bytes": 3136,
+      "sha256": "41d682c22e3cd5c17dd9ad02f62e0f21effc5ecd68c709f7330a2b09cb85530b"
+    },
+    {
+      "order": 10,
+      "path": "templates/project-design.md",
+      "purpose": "Required adaptable project outline and completeness checks",
+      "utf8Bytes": 2301,
+      "sha256": "97fe5e6cbd0e7d51bb970f868700808ab90c311d51aa3af43a80def3383146c8"
+    }
+  ]
+}

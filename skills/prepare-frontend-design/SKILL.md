@@ -1,36 +1,34 @@
 ---
 name: prepare-frontend-design
-description: Prepare or deliberately revise project frontend design documents using Interface Atlas themes and relevant UI/UX knowledge. Use for design setup or specification changes, not routine implementation of an existing project design.
+description: Prepare or deliberately revise a project's frontend design.md using Atlas themes and selected UI/UX knowledge. Use for design planning or specification changes, not routine implementation.
 ---
 
 # Prepare frontend design
 
-Produce a self-contained project design.md that fits the user's requirements, preserves source credits, and distinguishes inherited rules from project adaptations.
+Produce a self-contained project design.md from the brief and available evidence. Respect the user's theme, scope, output mode and project location. Resolve this Atlas repository from the skill's location; do not confuse it with the consuming project.
 
-## Read selectively
+## Establish the design
 
-Resolve this repository root from this skill's location.
+Identify users, essential tasks, content, supported contexts and constraints. Separate supplied facts, observations, proposed decisions and missing inputs. For an existing interface, inspect its governing design document and relevant source or supplied rendered evidence before proposing changes. Repeated code literals alone do not establish intended design rules.
 
-Start with [the catalog](../../catalog/themes.json). Read candidate theme READMEs for suitability, reasons, and limitations. Respect an explicit theme choice; assess adaptations without replacing it silently.
+Use [the catalog](../../catalog/themes.json) and candidate theme READMEs to assess fit. Read the selected theme's design.md and sources.md. Preserve an explicit selection; explain needed adaptations. Load motion.md or effects.md only for effects actually chosen. Do not select a stack, backend or additional feature merely to fill the document.
 
-Load the selected theme's design.md and sources.md. Read its motion.md or effects.md only when relevant. Read [Agent Experience](../../knowledge/agent-experience.md) when the product exposes agent work or controls. Framework adapters are optional.
+## Load only relevant knowledge
 
-Do not load every theme or shared document. Routine project work should use that project's documents.
+Use [the knowledge index](../../knowledge/README.md) as the topic router. Select material for a concrete project decision; an existing, resolved project rule does not need a fresh survey. Read relevant sections, including dependencies and source credits, rather than every chapter or upstream skill family.
 
-## Resolve project decisions
+For a new design or unresolved UX decisions, use the general UI/UX guide to connect user goals, information structure, journeys, hierarchy and writing to the chosen visual direction. Route stateful editing to state/recovery and forms/navigation, remote effects to uncertain outcomes, accessibility or adaptive questions to their guide, and human-facing agent work to Agent Experience. Do not add agent, commerce, account or remote-action requirements to unrelated projects. Adapters are conditional on a concrete stack need.
 
-Use the supplied brief and existing project evidence. Identify relevant users, tasks, content, constraints, languages, appearances, supported capabilities, and unknowns.
+## Make the handoff actionable
 
-When relevant to the brief, resolve state ownership and persistence, recovery/undo, translation availability and glyph coverage, and media loading and asset credits. Keep these decisions conditional; do not add account, backend, or agent flows to projects that do not need them.
+Use [the project template](../../templates/project-design.md) as an adaptable outline; omit irrelevant sections. Resolve chosen rules into exact values, semantic pairings, content order, labels, component states and end-to-end task transitions. For applicable flows, name state owners, acknowledgement boundaries, interruption/re-entry, failure recovery and the user's next useful action. External capabilities need an identified input/owner and implementation gate, rather than a fictional endpoint or guarantee.
 
-Retain useful theme rules and explain changes to density, typography, geometry, states, motion, and effects. Keep proposed values and unconfirmed product capabilities explicit.
+Retain useful theme rules and explain project adaptations. Record open research questions as questions; heuristic reasoning or synthetic examples are not observed user evidence. Include enough detail for implementation to use the project's documents without reopening Atlas. Add companion documents only when they materially help.
 
-Use [the project template](../../templates/project-design.md) as an adaptable outline. The [examples](../../examples/README.md) illustrate different adaptations; their assumptions are not universal requirements.
+## Preserve evidence and credits
 
-Include the exact values and behavior needed for implementation rather than references requiring the whole library to be reopened. Add separate project documents only when needed.
+Record the used Atlas/theme revision, selected source creators and URLs, applicable terms/notices, and which values or methods were retained or adapted. For an uncommitted Atlas snapshot, identify that limit and relevant file hashes instead of implying HEAD contains the changes. Propagate relevant chapter credits and [adaptation notices](../../references/skill-adaptations.md); full license texts are redistribution records, not required reading on every invocation.
 
-## Preserve provenance and evidence
+Use existing read records or metadata-only hashing for source identities. Do not reread source content solely to calculate a fingerprint or populate a provenance table.
 
-Credit original creators and sources; retain source and theme revisions, reuse terms, required notices, and adaptation notes. A palette's numerical contrast results do not prove the whole interface accessible. Label outstanding rendered or behavioral checks.
-
-Follow the user's requested output mode. If they ask for discussion or a chat draft, do not write files. When file creation is authorized, use their chosen project location.
+Separate performed document, rendered, keyboard, assistive-technology and service checks from future checks. A contrast calculation does not validate an interface. Reconcile contradictions in the draft, then deliver in the requested mode; do not automatically invoke a separate review or implement the product.
