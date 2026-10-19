@@ -5,11 +5,11 @@ description: Review a frontend design document or supplied interface evidence wh
 
 # Review frontend design
 
-Review the requested artifact or interface against its brief and governing project decisions. This is an opt-in workflow, not a required step for ordinary frontend edits or preparation. Resolve this Atlas repository from the skill's location. A review alone does not authorize changing project files, replacing its theme, or implementing corrections.
+Review the requested artifact or interface against its brief and governing project decisions. This is an opt-in workflow, not a required step for ordinary frontend edits or preparation. Locate Atlas through the shared-resource links below; keep the library distinct from the consuming project. A review alone does not authorize changing project files, replacing its theme, or implementing corrections.
 
 ## Choose the evidence and scope
 
-Start with the brief, project design.md and supplied evidence. For document review, assess whether decisions are complete and consistent; do not describe a proposed behavior as observed. When source or rendered review is requested, inspect the relevant implementation or page and record what was actually exercised. Missing browser/tool/service access is a coverage limit, not a passing result.
+Start with the brief, relevant project design documents and supplied evidence. A source or rendered review can proceed without design.md; use available project rules and evidence, and distinguish inferred intent from established requirements. For document review, assess whether decisions are complete and consistent; do not describe a proposed behavior as observed. When source or rendered review is requested, inspect the relevant implementation or page and record what was actually exercised. Missing browser/tool/service access is a coverage limit, not a passing result.
 
 Do not reload the theme catalog or all source libraries for a project that already has a design contract. Use [the knowledge index](../../knowledge/README.md) to load only the chapter/section needed for an actual review question. Open selected theme rules when checking inheritance or a concrete contradiction. Read relevant source credits when propagating methods; do not load the research ledger or every license text by default.
 
@@ -20,6 +20,8 @@ Trace the essential user paths, including relevant empty, invalid, pending, inte
 For persistent edits, remote effects or changing human-agent proposals, use the [state-transition review profile](references/state-transitions.md) to trace applicable acknowledgement, retirement, re-entry and late-evidence boundaries. Select its relevant traces rather than treating a future-test list as a completed behavior contract.
 
 For each candidate issue, identify the governing requirement or supported usability concern, the exact document/source location or observed state, a reproducible trigger, and the consequence for a user task. Check nearby rules and alternative paths for counterevidence before reporting it. Distinguish a standard requirement, project contract, source heuristic and aesthetic preference. A legitimate theme choice is not a defect merely because another skill prefers a different style.
+
+Use compatible craft guidance such as better-ui only when relevant and available. Explicit user choices and governing project design/accessibility rules take precedence over generic polish values. A disagreement with a fixed heuristic alone does not establish a defect; consolidate applicable craft findings into this review instead of automatically producing a second report.
 
 Prioritize by task impact and recoverability. Consolidate duplicate symptoms under their cause. A documented external dependency may be an open contract rather than a contradiction; flag an unsupported promise or an ungated dependent action. Keep unknown service behavior unknown. Do not use invented participants, synthetic personas, a numerical design score or source inspection as proof of usability, accessibility conformance or successful execution.
 

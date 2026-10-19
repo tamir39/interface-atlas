@@ -1,7 +1,7 @@
 # {{project_name}} design
 
 Status: {{draft_or_validated_with_evidence}}
-Theme: {{theme_id_and_revision}}
+Design direction: {{project_system_or_supplied_or_custom_or_atlas_theme_and_revision}}
 Source snapshot: {{source_repository_and_revision}}
 
 Use this as an adaptable outline. Omit irrelevant sections; separate supplied facts, observed evidence, project proposals and missing inputs.
@@ -12,7 +12,7 @@ Describe users, essential tasks, real constraints, supported capabilities and un
 
 ## User tasks, content and design rationale
 
-State the primary outcomes, information structure and task/content priorities. Explain how hierarchy, terminology, density and the chosen theme support those tasks. Distinguish observed user evidence from hypotheses; identify meaningful validation questions.
+State the primary outcomes, information structure and task/content priorities. Explain how hierarchy, terminology, density and the chosen design direction support those tasks. Distinguish observed user evidence from hypotheses; identify meaningful validation questions.
 
 ## Color contract
 
@@ -41,6 +41,8 @@ Resolve required behavior into concrete project rules. Select optional effects e
 ## Validation
 
 Record performed document/source/browser/keyboard/assistive-technology/service/user checks separately from future checks and unresolved inputs. Do not infer rendered or usability validation from calculations or a heuristic review.
+
+Record Atlas theme identity/revision only when one is inherited. For a project-owned or custom direction, record that origin and the actual references used instead.
 
 ## Source credits and adaptations
 

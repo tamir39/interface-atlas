@@ -5,7 +5,7 @@ description: Implement or revise a bounded frontend feature using the project's 
 
 # Implement frontend UI
 
-Turn the requested frontend change into working interface behavior. Resolve this Atlas repository from the skill's location and keep it distinct from the consuming project. Start with the user's request, governing project instructions, relevant design documents and affected implementation.
+Turn the requested frontend change into working interface behavior. Locate Atlas through the shared-resource links below; keep the library distinct from the consuming project. Start with the user's request, governing project instructions, relevant design documents and affected implementation.
 
 ## Establish the bounded change
 
@@ -18,6 +18,8 @@ Identify the user action and observable result, affected routes/components, and 
 Use the project's self-contained rules first. Open [the knowledge index](../../knowledge/README.md) only when an unresolved decision needs Atlas guidance, then select relevant sections and their credits. Do not load the catalog, every theme, upstream skill bundles, research ledger or historical trials for a routine implementation.
 
 Route hierarchy, layout, writing, typography or component mapping to general UI/UX; implicated semantics, keyboard/focus, reflow, input or appearance to accessibility/responsive guidance. Stateful edits may need state/recovery or forms/navigation; remote effects may need uncertain outcomes. Agent Experience applies when the product actually exposes agent work. Read the selected theme's effects or motion rules only when those choices are relevant and unresolved. Resolve needed guidance into the implementation or existing project handoff so later edits do not repeat the survey.
+
+Use compatible craft guidance such as better-ui only when relevant and available. Explicit user choices and governing project design/accessibility rules take precedence over generic polish values; do not import another skill's fixed motion, shape or effect values when they conflict. Keep any additional guidance within this task rather than automatically launching a second review or loading every domain.
 
 ## Implement the task and its states
 

@@ -15,9 +15,9 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 ## Start here
 
-1. Read [the theme catalog](catalog/themes.json) to find candidates.
-2. Read a candidate's README for its identity, project suitability, and limitations.
-3. Load its design rules and only the effects, motion, and shared knowledge needed for the project.
+1. Start with the brief and the project's existing or supplied design direction. When choosing an Atlas theme, read [the theme catalog](catalog/themes.json) to find candidates.
+2. For an Atlas candidate, read its README for identity, suitability and limitations. Preserve a project-owned direction or develop a custom one when appropriate.
+3. Load inherited theme rules and only the effects, motion and shared knowledge needed for unresolved project decisions.
 4. Create a self-contained project design.md with explicit adaptations and source credits.
 5. Use that project's documents for normal implementation work. Return to Atlas for deliberate design changes.
 
@@ -25,13 +25,15 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 
 ## Prepare, implement or review a project
 
-- [Prepare frontend design](skills/prepare-frontend-design/SKILL.md) creates or deliberately revises a self-contained project design.md. It routes general UI/UX, accessibility/responsive behavior and applicable state, form, outcome or agent questions through [selected knowledge](knowledge/README.md).
+- [Prepare frontend design](skills/prepare-frontend-design/SKILL.md) creates or deliberately revises a self-contained project design.md from a project-owned, supplied, custom or Atlas direction. It routes general UI/UX, accessibility/responsive behavior and applicable state, form, outcome or agent questions through [selected knowledge](knowledge/README.md).
 - [Implement frontend UI](skills/implement-frontend-ui/SKILL.md) turns a bounded request into working frontend code, follows the project's stack and design, loads only guidance needed for unresolved decisions, and verifies the changed user path. It can handle a small task without generating design.md. This is an original Atlas workflow, not a discovered upstream skill.
 - [Review frontend design](skills/review-frontend-design/SKILL.md) is opt-in. Invoke it explicitly as `$review-frontend-design` where registered, or ask an agent to use that file by path. It reports evidence-backed findings and coverage without implementing fixes. Its Codex metadata disables implicit invocation; actual discovery depends on the consuming host.
 
 The [real frontend implementation trial](examples/implementation-evaluation/README.md) records the new skill adding collection search to the live hub, its selected source reads, browser checks and limits.
 
-These are repository workflows: preserve the Atlas directory layout when using their shared references. This change does not install them globally. Implementation uses the consuming project's documents first; it does not reload the theme library by default. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
+These workflows share Atlas resources. Preserve the Atlas directory layout when using repository references; standalone global installations must also retain the shared library and preserve or remap its links. Copying only the three skill folders leaves those references incomplete. Implementation uses the consuming project's documents first; it does not reload the theme library by default. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
+
+Use available craft guidance such as `better-ui` selectively alongside the applicable workflow. Explicit user choices and the project's design, accessibility and motion contracts govern conflicting polish defaults. Preparation, implementation and opt-in review remain separate tasks; a small polish change does not require all three.
 
 The [updated skill trials](examples/skill-evaluation/README.md) record generation, explicit review, source-reading scope and remaining evidence limits. The [reference and craft rerun](examples/reference-craft-evaluation/README.md) exercises the A–D additions on the three existing briefs.
 
