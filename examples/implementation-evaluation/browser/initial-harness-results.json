@@ -1,0 +1,36 @@
+{
+  "node": "v24.14.1",
+  "browser": "153.0.8010.12",
+  "testedFiles": {
+    "index.html": "5044524b0347d9cc700b340a10e7fe646f3d580fe2941a5983c15b59a3b5059b",
+    "styles.css": "88a85b6df843c0524c03585a6d26ca93e543ed964d44dfa4b14f98707db9c8f4",
+    "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+  },
+  "validatorSha256": "684683c056eea6ac49ccc8211d78c00c1c037bbc52229d839de78df79d8da913",
+  "checks": [
+    {
+      "name": "Published hub initializes all nine themes and a separate identity card; native search has a visible label and polite result count",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Search matches trimmed case-insensitive name and visible description substrings, preserves order and restores all nine when input clears",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "screenshots": [],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "failedResources": [],
+  "limits": [
+    "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+    "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+    "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+  ],
+  "passed": false,
+  "failure": {
+    "message": "page.waitForFunction: Timeout 30000ms exceeded.",
+    "stack": "page.waitForFunction: Timeout 30000ms exceeded.\n    at cards (C:\\Users\\PC\\.codex\\visualizations\\2026\\10\\12\\01a13103-a26d-7172-81af-e67e7cee6101\\interface-atlas-implementation-2026-10-20\\publish\\tools\\validate-site.mjs:70:16)\n    at fill (C:\\Users\\PC\\.codex\\visualizations\\2026\\10\\12\\01a13103-a26d-7172-81af-e67e7cee6101\\interface-atlas-implementation-2026-10-20\\publish\\tools\\validate-site.mjs:88:11)\n    at async file:///C:/Users/PC/.codex/visualizations/2026/10/12/01a13103-a26d-7172-81af-e67e7cee6101/interface-atlas-implementation-2026-10-20/publish/tools/validate-site.mjs:106:5"
+  }
+}

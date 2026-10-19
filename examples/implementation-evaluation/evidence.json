@@ -1,0 +1,76 @@
+{
+  "evaluatedOn": "2026-10-20",
+  "baselineCommit": "7635612f69b4b1bcc6dd31b12f241da3a29e6811",
+  "kind": "one independent real frontend implementation; no comparative effectiveness claim",
+  "skill": {
+    "path": "skills/implement-frontend-ui/SKILL.md",
+    "bytes": 4751,
+    "words": 618,
+    "sha256": "d9b7c793e6ac746bfe0f515ae7bf6ed5d81bc926b3edc859bb3fd83993e73c85"
+  },
+  "reading": {
+    "scope": "fresh implementer manual source inspections only; excludes root/review context, tool executions, browser resources and automatic platform context",
+    "events": 11,
+    "returnedBytes": 72266,
+    "uniqueSourceBytes": 61500,
+    "knowledgeReturnedBytes": 11915,
+    "uniqueSources": [
+      {
+        "path": "skills/implement-frontend-ui/SKILL.md",
+        "bytes": 4751,
+        "sha256": "d9b7c793e6ac746bfe0f515ae7bf6ed5d81bc926b3edc859bb3fd83993e73c85"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 1978,
+        "sha256": "c796bf765c2752241ad47ef0a1e7ee4e1c0bec57ad68f87b85a123716aeed8dd"
+      },
+      {
+        "path": "site/README.md",
+        "bytes": 7251,
+        "sha256": "83267c2e2cfa29ed623a67e8a1b2d1c46808ed2f246cc58d43c6016f7487355e"
+      },
+      {
+        "path": "site/index.html",
+        "bytes": 13886,
+        "sha256": "7139f88e468e1dd6884f773c0a307de9fb7faf1546bc443660758a8b9eeee4c1"
+      },
+      {
+        "path": "site/styles.css",
+        "bytes": 16071,
+        "sha256": "07f4d12ad191d06533d1d7222f4a66bef8481d21e9e0a2aa30a516642d9cf5bf"
+      },
+      {
+        "path": "tools/build-preview-site.mjs",
+        "bytes": 5648,
+        "sha256": "23c6772fd6e0da0b7b75aa98cac37f536c3446785db42189295045795190dd09"
+      },
+      {
+        "path": "knowledge/README.md",
+        "bytes": 3950,
+        "sha256": "1f36c03535baf55c8667b4b37f6b2705424a510c7199983963bfd5c28574a2b2"
+      },
+      {
+        "path": "knowledge/accessibility-and-responsive.md",
+        "bytes": 7965,
+        "sha256": "57e53cd66e79c67e8fb689a28846845c3f5aaca486d4310e203353c1085d8db3"
+      }
+    ],
+    "isTokenMeasurement": false
+  },
+  "results": {
+    "implementerGroupsPassed": 12,
+    "independentTrialGroupsPassed": 12,
+    "implementationCorrectionsAfterFirstSuccessfulPatch": 0,
+    "skillCorrectionsAfterTrial": 0,
+    "inputPackRepair": "Two exact baseline linked Markdown examples restored; no placeholders or builder weakening.",
+    "testHarnessCorrections": "Windows import correction in scratch implementer harness; label/substring expectation corrections in independent harness; preserved records distinguish these from product defects."
+  },
+  "limits": [
+    "One bounded static feature in headless Chromium on Windows; no cross-framework or comparative skill trial.",
+    "No screen-reader or other assistive technology, other browser engine, native zoom/text enlargement or observed user study.",
+    "No real backend involved; existing theme behavior is unchanged and not re-audited.",
+    "Skill stored as a repository workflow with shared relative references, not globally installed or host-discovery tested.",
+    "Read byte counts are not tokens, savings, or complete model-context measurements."
+  ]
+}

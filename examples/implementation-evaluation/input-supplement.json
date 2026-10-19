@@ -1,0 +1,15 @@
+{
+  "reason": "Baseline Markdown targets needed by unchanged published preview links were omitted from the initial source pack. Exact repository files supplied after the first builder failure; no placeholders or feature changes.",
+  "files": [
+    {
+      "path": "examples/portfolio/design.md",
+      "bytes": 11766,
+      "sha256": "f88ede420839bc482a6b6be48ce197d184c5fa2494d76172f04947f966648d05"
+    },
+    {
+      "path": "examples/agent-operations-dashboard/design.md",
+      "bytes": 15031,
+      "sha256": "6a4aafd2b0b09a8beb2dfbfc41a76f3965be58921a682b2e4eb2683423c601f1"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "artifacts": [
+    {
+      "path": "brief.md",
+      "bytes": 1070,
+      "sha256": "c1b8fd8bf8c03f4e88481673bb58631b9d4fe1d0e2d4443aea50d25d9b123af5"
+    },
+    {
+      "path": "browser/desktop-light.png",
+      "bytes": 52908,
+      "sha256": "804eac571b7840000c1fbf912856e26cf72826895af7c6eb24ae4845a76ecbab"
+    },
+    {
+      "path": "browser/desktop-no-results.png",
+      "bytes": 81035,
+      "sha256": "07012795d8d91f37bbc8db2bd6f67be09346f0a61282d1e570deb9574268fe31"
+    },
+    {
+      "path": "browser/implementer-check.mjs",
+      "bytes": 9347,
+      "sha256": "bdfb41d2b6b99aa931f7ea946b4cd4de956c65478bf237e097b5ebc395f0f05c"
+    },
+    {
+      "path": "browser/implementer-results.json",
+      "bytes": 2588,
+      "sha256": "303b9ad2acfae5b418f338f84c62a97d756482d321bf10f32307c06c37fa6397"
+    },
+    {
+      "path": "browser/initial-harness-results.json",
+      "bytes": 2101,
+      "sha256": "aa92ea239a742e888343ed9843741bb15c805712091bfcbb1664c0dac5ae0402"
+    },
+    {
+      "path": "browser/mobile-dark.png",
+      "bytes": 37634,
+      "sha256": "e4025c795cf63c993bc7751ce041e133ac1447f9f44f766166dc32b43e2ec427"
+    },
+    {
+      "path": "browser/mobile-forced-colors.png",
+      "bytes": 31514,
+      "sha256": "c9583504f6638e979ea2e47a24e04b761a6bec6120d6ed65e53bf6c0a3029e57"
+    },
+    {
+      "path": "browser/mobile-light.png",
+      "bytes": 37116,
+      "sha256": "8c63c14431a191af7015e5fc32a7f00ad58476eee61ebfe2e3a4905e0061f06e"
+    },
+    {
+      "path": "browser/results.json",
+      "bytes": 5743,
+      "sha256": "3c18c57ade729206cdafad715a1de391c90b7b721e65c2f38362f7cf628f64b4"
+    },
+    {
+      "path": "browser/trial-results.json",
+      "bytes": 5743,
+      "sha256": "3c18c57ade729206cdafad715a1de391c90b7b721e65c2f38362f7cf628f64b4"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 3170,
+      "sha256": "20b71f3a58fa7687a2d4f2f942bd167abb5a978229d52edc3a8a27bc0c740a8c"
+    },
+    {
+      "path": "harness-adjustments.json",
+      "bytes": 836,
+      "sha256": "49fd5ea822e14ce8011136f13c83fb752b3b5491ea221599e7b803bf73808a6b"
+    },
+    {
+      "path": "implementation-report.md",
+      "bytes": 7291,
+      "sha256": "43d44fa4b11196c48fae041bab2a429133dccd1077925647b1910db26363c042"
+    },
+    {
+      "path": "input-supplement.json",
+      "bytes": 594,
+      "sha256": "1c3b60b3e340cec30c1b8240a352aebc42b21b20213be77c7ffa06becfb2391e"
+    },
+    {
+      "path": "read-events.jsonl",
+      "bytes": 1932,
+      "sha256": "ac58b0809bc74cb74857a3dec9cf11eae9b48954d7521bcc30f653c949778adc"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5395,
+      "sha256": "3fdc3c216d12393ccf8e0acd09da0af07ebe0ee2e9a91c662db990579da16f79"
+    },
+    {
+      "path": "release-checks.json",
+      "bytes": 2933,
+      "sha256": "a839b0f228e6c769e2bbd93cf47e1e5d16d5429e5cf07c814465adc966d7d5b7"
+    },
+    {
+      "path": "release-formatting.json",
+      "bytes": 13399,
+      "sha256": "008075dabac3191271d4a35177fbcb996d34cabcef051b58bee255c24851b437"
+    },
+    {
+      "path": "skill-review.md",
+      "bytes": 5008,
+      "sha256": "144873fcdbde0dc7d434e2fe3a414f2ab9df10ed726c1bd12d0ca3238eb2bbf9"
+    },
+    {
+      "path": "source-review.md",
+      "bytes": 4382,
+      "sha256": "269706f46c8c9c6bd4d204c1c5011b9b2e66c6916167cfb5938e8cf0de512dd5"
+    },
+    {
+      "path": "source-snapshot.json",
+      "bytes": 21698,
+      "sha256": "9f88e0456732005926da94a5969e47bc8a8c173da96eb778a79dddf1573788ef"
+    }
+  ]
+}

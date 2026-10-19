@@ -1,0 +1,3 @@
+interface:
+  display_name: "Implement frontend UI"
+  short_description: "Build bounded frontend tasks with focused checks"

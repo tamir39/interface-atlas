@@ -14,6 +14,12 @@ Gallery is an [original Atlas synthesis](../themes/gallery/sources.md) informed 
 
 Layered is an [original Atlas synthesis](../themes/layered/sources.md) informed by Material 3 tonal roles, Fluent 2 solid surfaces and depth, Plus Jakarta Sans, and W3C/WHATWG interaction guidance. Its fictional planning workspace demonstrates task counts, preserved filter/detail context, native modal editing, correction, cancellation, and per-project revert. It imports no Material/Fluent implementation or assets and stores only preview preferences.
 
+## Collection search
+
+The hub enhances its nine theme entries with a labeled text search. Results update as visitors type, matching a literal substring in the visible theme name or description, without case sensitivity or surrounding query whitespace. Matching entries retain their original order and preview links. The visible count reports matching themes out of nine; the logo gallery stays visible and is excluded from that count.
+
+An unmatched query shows a recovery message. **Clear search** restores all themes and returns keyboard focus to the search field; Enter keeps the visitor on the collection. The controls stack at narrow widths, use the hub's existing light/dark tokens, and expose the count as a polite status. Search adds no motion, dependencies, network requests, or persistence, and reload starts with all themes. The search controls appear only after the script initializes; without JavaScript or if it fails to load, all nine themes and the logo gallery remain browsable.
+
 ## Build locally
 
 Use Node.js 20 or newer:
@@ -24,7 +30,7 @@ node tools/build-preview-site.mjs
 
 The builder creates a fresh `_site` directory and requires no dependency installation. Open `_site/index.html` in a browser or serve `_site` with a local static server. `_site` is ignored by Git. To build again, choose a fresh destination with `--output <directory>` or remove the previous build yourself; the tool never clears an existing directory.
 
-Only an explicit file list is published: the landing page, its stylesheet, eleven brand SVGs, the brand gallery HTML, three preview files for each of Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered, and Gallery's three original PNG studies (45 files including .nojekyll). Markdown documents, source code tools, validation artifacts, and Git metadata are excluded. In the copied HTML, local Markdown document links become GitHub links to `main`; the original repo files keep their portable local links. The build checks that linked documents and published local assets exist, rejects symbolic links, and rejects references outside the relevant root. New theme previews must opt in to the file list in [the builder](../tools/build-preview-site.mjs).
+Only an explicit file list is published: the landing page, its stylesheet and search script, eleven brand SVGs, the brand gallery HTML, three preview files for each of Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered, and Gallery's three original PNG studies (46 files including .nojekyll). Markdown documents, source code tools, validation artifacts, and Git metadata are excluded. In the copied HTML, local Markdown document links become GitHub links to `main`; the original repo files keep their portable local links. The build checks that linked documents and published local assets exist, rejects symbolic links, and rejects references outside the relevant root. New theme previews must opt in to the file list in [the builder](../tools/build-preview-site.mjs).
 
 ## Deploy
 

@@ -1,0 +1,17 @@
+{
+  "changes": [
+    {
+      "kind": "harness assumption correction before first execution",
+      "reason": "The meaningful visible label Find a theme is valid for the user task; accept it rather than requiring the word search in that label."
+    },
+    {
+      "kind": "coverage addition",
+      "reason": "Retain one desktop screenshot alongside the three mobile appearance captures."
+    },
+    {
+      "kind": "failed test expectation corrected",
+      "reason": "The first independent browser suite wrongly expected Draft and Order. to return no themes. They legitimately occur in Blueprint drafting and Editorial reading order. respectively. Expectations now retain those valid matches while rejecting extra badge/artwork matches. The failed result is preserved; product code did not change."
+    }
+  ],
+  "productChanges": []
+}

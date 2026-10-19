@@ -5,11 +5,11 @@
 
 # Interface Atlas
 
-A frontend UI/UX knowledge library for preparing project-specific design documents.
+A frontend UI/UX knowledge library for preparing project-specific design documents and implementing focused frontend changes.
 
-[Live previews](https://tamir39.github.io/interface-atlas/) · [Explore themes](catalog/themes.json) · [Prepare a project design](skills/prepare-frontend-design/SKILL.md) · [Logo kit](assets/brand/README.md)
+[Live previews](https://tamir39.github.io/interface-atlas/) · [Explore themes](catalog/themes.json) · [Prepare a project design](skills/prepare-frontend-design/SKILL.md) · [Implement frontend UI](skills/implement-frontend-ui/SKILL.md) · [Logo kit](assets/brand/README.md)
 
-Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load the library when preparing or deliberately revising that document.
+Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load selected library guidance when preparing or deliberately revising that document. For a bounded frontend change, the implementation skill starts from your project's own rules and code.
 
 **Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery; Layered adds a spacious planning workspace with tonal surfaces, native editing, and scoped recovery. All nine theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), [Layered](themes/layered/validation.md).
 
@@ -23,12 +23,15 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this workflow.
 
-## Prepare or review a project
+## Prepare, implement or review a project
 
 - [Prepare frontend design](skills/prepare-frontend-design/SKILL.md) creates or deliberately revises a self-contained project design.md. It routes general UI/UX, accessibility/responsive behavior and applicable state, form, outcome or agent questions through [selected knowledge](knowledge/README.md).
+- [Implement frontend UI](skills/implement-frontend-ui/SKILL.md) turns a bounded request into working frontend code, follows the project's stack and design, loads only guidance needed for unresolved decisions, and verifies the changed user path. It can handle a small task without generating design.md. This is an original Atlas workflow, not a discovered upstream skill.
 - [Review frontend design](skills/review-frontend-design/SKILL.md) is opt-in. Invoke it explicitly as `$review-frontend-design` where registered, or ask an agent to use that file by path. It reports evidence-backed findings and coverage without implementing fixes. Its Codex metadata disables implicit invocation; actual discovery depends on the consuming host.
 
-These are repository workflows: preserve the Atlas directory layout when using their shared references. This change does not install them globally. Normal implementation should use the consuming project's documents. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
+The [real frontend implementation trial](examples/implementation-evaluation/README.md) records the new skill adding collection search to the live hub, its selected source reads, browser checks and limits.
+
+These are repository workflows: preserve the Atlas directory layout when using their shared references. This change does not install them globally. Implementation uses the consuming project's documents first; it does not reload the theme library by default. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
 
 The [updated skill trials](examples/skill-evaluation/README.md) record generation, explicit review, source-reading scope and remaining evidence limits. The [reference and craft rerun](examples/reference-craft-evaluation/README.md) exercises the A–D additions on the three existing briefs.
 
@@ -249,6 +252,10 @@ interface-atlas/
 │   ├── forms-and-navigation.md
 │   └── uncertain-outcomes.md
 ├── skills/
+│   ├── implement-frontend-ui/
+│   │   ├── SKILL.md
+│   │   └── agents/
+│   │       └── openai.yaml
 │   ├── prepare-frontend-design/
 │   │   └── SKILL.md
 │   └── review-frontend-design/
@@ -261,6 +268,11 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── implementation-evaluation/
+│   │   ├── README.md
+│   │   ├── brief.md
+│   │   ├── evidence.json
+│   │   └── browser/
 │   ├── reference-craft-evaluation/
 │   │   ├── README.md
 │   │   ├── protocol.md
@@ -350,6 +362,7 @@ interface-atlas/
 ├── tools/
 │   ├── README.md
 │   ├── catalog.mjs
+│   ├── validate-site.mjs
 │   ├── validate-blueprint.mjs
 │   ├── validate-botanical.mjs
 │   ├── validate-editorial.mjs
@@ -373,7 +386,8 @@ interface-atlas/
 ├── site/
 │   ├── README.md
 │   ├── index.html
-│   └── styles.css
+│   ├── styles.css
+│   └── search.js
 └── .github/
     └── workflows/
         └── preview-pages.yml

@@ -8,6 +8,7 @@
   <title>Interface Atlas · Live previews</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script src="search.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#previews">Skip to previews</a>
@@ -32,6 +33,21 @@
     </section>
     <section id="previews" class="previews" aria-labelledby="previews-title" tabindex="-1">
       <div class="section-heading"><div><p class="eyebrow">Open the work</p><h2 id="previews-title">From principles to pixels.</h2></div><p>Nine visual directions to explore, with the decisions and sources behind each.</p></div>
+      <form class="collection-search" role="search" aria-label="Theme collection" hidden>
+        <div class="search-field">
+          <label for="theme-search">Find a theme</label>
+          <div class="search-controls">
+            <input id="theme-search" type="search" autocomplete="off" aria-describedby="search-hint" placeholder="e.g. typography">
+            <button id="search-clear" type="button" disabled>Clear search</button>
+          </div>
+          <p id="search-hint" class="search-hint">Search by name or description.</p>
+        </div>
+        <p id="search-count" class="search-count" role="status" aria-atomic="true">9 of 9 themes shown</p>
+      </form>
+      <div class="search-empty" hidden>
+        <h3>No themes match your search.</h3>
+        <p>Try another word, or clear the search to browse all nine themes.</p>
+      </div>
       <div class="preview-grid">
         <article class="preview-card editorial-card">
           <div class="card-meta"><span class="eyebrow">01 / Theme</span><span class="tag">Draft</span></div>

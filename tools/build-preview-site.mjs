@@ -17,6 +17,7 @@ const brandFiles = [
 const files = [
   ['site/index.html', 'index.html'],
   ['site/styles.css', 'styles.css'],
+  ['site/search.js', 'search.js'],
   ...brandFiles.map((name) => [`assets/brand/${name}`, `assets/brand/${name}`]),
   ...['editorial', 'swiss', 'precision', 'play', 'botanical', 'blueprint', 'pulse', 'gallery', 'layered'].flatMap((theme) =>
     ['index.html', 'styles.css', 'preview.js'].map((name) => [

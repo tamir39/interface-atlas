@@ -1,0 +1,187 @@
+{
+  "node": "v24.14.1",
+  "browser": "153.0.8010.12",
+  "testedFiles": {
+    "index.html": "5044524b0347d9cc700b340a10e7fe646f3d580fe2941a5983c15b59a3b5059b",
+    "styles.css": "88a85b6df843c0524c03585a6d26ca93e543ed964d44dfa4b14f98707db9c8f4",
+    "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+  },
+  "validatorSha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b",
+  "checks": [
+    {
+      "name": "Published hub initializes all nine themes and a separate identity card; native search has a visible label and polite result count",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Search matches trimmed case-insensitive name and visible description substrings, preserves order and restores all nine when input clears",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Matching uses visible theme names/descriptions without extra badge, decorative-study, CTA or brand matches; literal markup produces zero results without execution",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Clear recovers from zero results, resets count and query, and returns focus to the search field",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "A native-search clear input event restores all themes, including the grid-displayed Layered card",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Keyboard tab order reaches search, Clear and the matching preview link without visiting hidden theme links",
+      "passed": true,
+      "details": {
+        "focus": {
+          "visible": true,
+          "style": "solid",
+          "width": "3px"
+        },
+        "linkedTheme": {
+          "tag": "A",
+          "href": "themes/swiss/preview/",
+          "text": "Swiss ↗"
+        }
+      }
+    },
+    {
+      "name": "mobile-light matches and zero-results states fit a 320px viewport with usable native controls",
+      "passed": true,
+      "details": {
+        "reflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "zeroReflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "controls": {
+          "width": 288,
+          "height": 48.375,
+          "color": "rgb(51, 43, 73)",
+          "background": "rgb(255, 255, 255)"
+        },
+        "clearBounds": {
+          "x": 16,
+          "y": 925.265625,
+          "width": 288,
+          "height": 48
+        }
+      }
+    },
+    {
+      "name": "mobile-dark matches and zero-results states fit a 320px viewport with usable native controls",
+      "passed": true,
+      "details": {
+        "reflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "zeroReflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "controls": {
+          "width": 288,
+          "height": 48.375,
+          "color": "rgb(244, 237, 229)",
+          "background": "rgb(38, 32, 46)"
+        },
+        "clearBounds": {
+          "x": 16,
+          "y": 925.265625,
+          "width": 288,
+          "height": 48
+        }
+      }
+    },
+    {
+      "name": "mobile-forced-colors matches and zero-results states fit a 320px viewport with usable native controls",
+      "passed": true,
+      "details": {
+        "reflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "zeroReflow": {
+          "width": 320,
+          "scroll": 320
+        },
+        "controls": {
+          "width": 288,
+          "height": 48.375,
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(0, 0, 0)"
+        },
+        "clearBounds": {
+          "x": 16,
+          "y": 925.65625,
+          "width": 288,
+          "height": 48
+        }
+      }
+    },
+    {
+      "name": "javascript-disabled preserves all nine theme links and identity while runtime-only controls are hidden or disabled",
+      "passed": true,
+      "details": {
+        "deadControls": 0,
+        "themeLinks": [
+          "themes/editorial/preview/",
+          "themes/swiss/preview/",
+          "themes/precision/preview/",
+          "themes/play/preview/",
+          "themes/botanical/preview/",
+          "themes/blueprint/preview/",
+          "themes/pulse/preview/",
+          "themes/gallery/preview/",
+          "themes/layered/preview/"
+        ]
+      }
+    },
+    {
+      "name": "script-blocked preserves all nine theme links and identity while runtime-only controls are hidden or disabled",
+      "passed": true,
+      "details": {
+        "deadControls": 0,
+        "themeLinks": [
+          "themes/editorial/preview/",
+          "themes/swiss/preview/",
+          "themes/precision/preview/",
+          "themes/play/preview/",
+          "themes/botanical/preview/",
+          "themes/blueprint/preview/",
+          "themes/pulse/preview/",
+          "themes/gallery/preview/",
+          "themes/layered/preview/"
+        ]
+      }
+    },
+    {
+      "name": "Published subpath resources load without runtime errors, external requests or ordinary failed resources",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "screenshots": [
+    "desktop-light.png",
+    "mobile-light.png",
+    "mobile-dark.png",
+    "mobile-forced-colors.png"
+  ],
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "failedResources": [],
+  "limits": [
+    "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+    "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+    "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+  ],
+  "passed": true
+}

@@ -1,0 +1,75 @@
+{
+  "checkedOn": "2026-10-20",
+  "node": "v24.14.1",
+  "checks": [
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "result": "Catalog matches 9 themes."
+    },
+    {
+      "command": "node --check site/search.js; node --check tools/validate-site.mjs; node --check tools/build-preview-site.mjs",
+      "passed": true
+    },
+    {
+      "command": "skill-creator/scripts/quick_validate.py skills/implement-frontend-ui",
+      "passed": true,
+      "environment": "Bundled Python; PyYAML 6.0.3 installed only in task scratch validation-vendor, not repository/global runtime."
+    },
+    {
+      "command": "node tools/build-preview-site.mjs --output <fresh-release-site>",
+      "passed": true,
+      "result": "46 allowlisted files, existing asset/document/path checks preserved."
+    },
+    {
+      "command": "node tools/validate-site.mjs --site <fresh-release-site> --module <installed-playwright> --browser <installed-chromium> --output <fresh-release-evidence>",
+      "passed": true,
+      "browser": "153.0.8010.12",
+      "groups": 12,
+      "result": "Final repository build, not just isolated candidate; hashes in browser/results.json."
+    }
+  ],
+  "sources": [
+    {
+      "path": "skills/implement-frontend-ui/SKILL.md",
+      "bytes": 4751,
+      "sha256": "d9b7c793e6ac746bfe0f515ae7bf6ed5d81bc926b3edc859bb3fd83993e73c85"
+    },
+    {
+      "path": "skills/implement-frontend-ui/agents/openai.yaml",
+      "bytes": 123,
+      "sha256": "5cdfcff55f7b9d022c53b08b003380c7ae9159c1941a18776574e07ce4e02dfb"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 14782,
+      "sha256": "86414d51dea9ecc37e78c85bdee6f308780724dd6be886216ae2126c5aba8016"
+    },
+    {
+      "path": "site/styles.css",
+      "bytes": 17890,
+      "sha256": "88a85b6df843c0524c03585a6d26ca93e543ed964d44dfa4b14f98707db9c8f4"
+    },
+    {
+      "path": "site/search.js",
+      "bytes": 1799,
+      "sha256": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+    },
+    {
+      "path": "tools/build-preview-site.mjs",
+      "bytes": 5683,
+      "sha256": "b9eaebbc8c69f54017501ca5b9e63fcea491858904f8bb304cf3198144ff2c7b"
+    },
+    {
+      "path": "tools/validate-site.mjs",
+      "bytes": 15222,
+      "sha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b"
+    }
+  ],
+  "limits": [
+    "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+    "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+    "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+  ],
+  "release": "Git staged whitespace/integrity checks and push/merge/deployment are subsequent release actions, reported in the completion message rather than predicted here."
+}

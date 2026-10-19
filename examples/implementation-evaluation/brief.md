@@ -1,0 +1,5 @@
+# Real frontend task: Atlas collection search
+
+Add a text search to the existing Interface Atlas live preview hub so visitors can find a theme by its visible name or description. Keep the nine theme entries in their current order and preserve the visual direction, preview links and always-visible logo gallery. Show the current number of matching themes and a useful no-results message with a clear recovery action. Make the controls usable with keyboard and at narrow widths, and keep every theme browsable if JavaScript is unavailable or the script fails to load. Matching is case-insensitive, ignores surrounding whitespace and treats the query as literal text. Search is temporary page state; do not add persistence, external requests or dependencies.
+
+Implement in the existing static stack, include the enhancement in the published build, and document its behavior. There is no separate project design.md for this bounded change; existing source and site maintenance notes govern appearance and build. Do not create a new design document or change theme entries.

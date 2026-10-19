@@ -32,6 +32,7 @@ h1, h2, h3 { line-height: 1.15; text-wrap: balance; }
 a { color: var(--action); text-underline-offset: .25em; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid var(--action); outline-offset: 5px; border-radius: 2px; }
+input:focus-visible, button:focus-visible { outline: 3px solid var(--action); outline-offset: 3px; }
 svg, img { display: block; max-inline-size: 100%; }
 img { block-size: auto; }
 em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
@@ -60,6 +61,23 @@ h1 em { color: var(--action); }
 .section-heading { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 1.5rem 3rem; margin-block-end: 1.75rem; }
 .section-heading h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -.035em; margin-block-start: .75rem; font-weight: 600; }
 .section-heading > p { max-inline-size: 32ch; color: var(--muted); font-size: .9375rem; }
+.collection-search { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .75rem 2rem; margin-block-end: 1.5rem; }
+.search-field { min-inline-size: 0; max-inline-size: 40rem; }
+.search-field label { display: block; font-weight: 600; font-size: .9375rem; }
+.search-controls { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .75rem; margin-block-start: .5rem; }
+.search-controls input, .search-controls button { min-block-size: 48px; padding: .65rem 1rem; border: 1px solid var(--muted); border-radius: .5rem; font: inherit; }
+.search-controls input { min-inline-size: 0; inline-size: 100%; background: var(--surface); color: var(--ink); }
+.search-controls input::placeholder { color: var(--muted); opacity: 1; }
+.search-controls button { background: var(--surface); color: var(--action); font-size: .875rem; font-weight: 600; cursor: pointer; }
+.search-controls button:hover:not(:disabled) { text-decoration: underline; }
+.search-controls button:disabled { color: var(--muted); border-color: var(--divider); cursor: default; }
+.search-hint, .search-count { color: var(--muted); font-size: .875rem; }
+.search-hint { margin-block-start: .5rem; }
+.search-count { align-self: center; }
+.search-empty { padding: 1.5rem; margin-block-end: 1.5rem; border: 1px solid var(--divider); border-radius: 1rem; background: var(--surface); }
+.search-empty h3 { font-size: 1.25rem; font-weight: 600; }
+.search-empty p { margin-block-start: .5rem; color: var(--muted); }
+.collection-search[hidden], .search-empty[hidden], .preview-card[hidden] { display: none; }
 .preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
 .preview-card { min-inline-size: 0; background: var(--surface); border: 1px solid var(--divider); border-radius: 1rem; padding: 1.5rem; }
 .card-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; }
@@ -143,12 +161,14 @@ h1 em { color: var(--action); }
 .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; padding-block: 1.75rem 2rem; border-block-start: 1px solid var(--divider); color: var(--muted); font-size: .8125rem; }
 .site-footer a { display: inline-flex; align-items: center; gap: .5rem; min-block-size: 44px; padding-block: .5rem; }
 @media (max-width: 48rem) {
+  .collection-search { grid-template-columns: 1fr; }
   .cover-copy, .preview-grid, .reading-note, .brand-card, .layered-card { grid-template-columns: 1fr; }
   .cover-copy { gap: 1.5rem; }
   .cover-intro { max-inline-size: 52ch; }
   .reading-note { gap: 1.25rem; }
 }
 @media (max-width: 26rem) {
+  .search-controls { grid-template-columns: 1fr; }
   .preview-card { padding: 1rem; }
   .theme-study, .brand-study { padding: 1rem; }
   .brand-study { flex-wrap: wrap; text-align: center; }
@@ -164,7 +184,7 @@ h1 em { color: var(--action); }
   .botanical-study { --botanical-paper: #101d17; --botanical-ink: #f3edda; --botanical-muted: #b7c9b6; --botanical-leaf: #23392c; --botanical-earth: #343729; }
 }
 @media (forced-colors: active) {
-  a:focus-visible { outline-color: Highlight; }
+  a:focus-visible, input:focus-visible, button:focus-visible { outline-color: Highlight; }
   .preview-card, .pilot { border-color: CanvasText; }
   .button { border: 1px solid ButtonText; }
   .identity svg, .brand-study svg { fill: CanvasText; }

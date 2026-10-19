@@ -4,11 +4,11 @@ Interface Atlas is an independent frontend UI/UX knowledge library. Do not impor
 
 ## Reading scope
 
-- Use Atlas when preparing or deliberately revising frontend project design documents, or when the user explicitly requests design review.
+- Use Atlas for frontend design preparation, bounded frontend implementation through implement-frontend-ui, or explicitly requested design review.
 - For preparation, start from the brief and catalog/themes.json, then selected theme READMEs. For review, start from the project document and supplied evidence.
 - Read detailed theme rules, optional motion/effects, and shared knowledge only when relevant. The knowledge index routes general UI/UX, accessibility/responsive behavior, state, forms, remote outcomes and Agent Experience.
 - review-frontend-design is opt-in; review does not automatically run preparation or implement fixes.
-- For normal project implementation, prefer that project's self-contained design documents.
+- For implementation, start from the consuming project's request, design documents and affected source. Use implement-frontend-ui to coordinate the bounded change; load shared knowledge only for unresolved decisions. A small task does not require a new design.md or preparation/review pass.
 
 ## Structure and provenance
 

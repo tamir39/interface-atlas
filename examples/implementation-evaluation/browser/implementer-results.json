@@ -1,0 +1,65 @@
+{
+  "browser": "153.0.8010.12",
+  "results": [
+    {
+      "name": "Initial enhanced collection",
+      "result": "passed",
+      "detail": "All nine themes in original order, logo visible, count 9/9; labeled controls enabled only after initialization."
+    },
+    {
+      "name": "Name, case and surrounding whitespace",
+      "result": "passed",
+      "detail": "Mixed-case padded Swiss query returns only Swiss; count 1/9 and logo remains visible."
+    },
+    {
+      "name": "Description matching and order",
+      "result": "passed",
+      "detail": "Typography returns Editorial, Swiss and Gallery in original order; the Layered description matches independently."
+    },
+    {
+      "name": "Literal input and no-results state",
+      "result": "passed",
+      "detail": "Regex punctuation is literal; a period matches descriptions, while a regex-shaped string and markup produce zero results without insertion."
+    },
+    {
+      "name": "Keyboard recovery",
+      "result": "passed",
+      "detail": "Tab reaches Clear search with a visible focus outline; Enter restores all nine themes and returns focus to the input."
+    },
+    {
+      "name": "Enter, reload and link preservation",
+      "result": "passed",
+      "detail": "Enter does not submit/navigate; reload clears the query; preview and logo hrefs remain unchanged."
+    },
+    {
+      "name": "Published preview navigation",
+      "result": "passed",
+      "detail": "The filtered Swiss preview link loads its built theme page on localhost."
+    },
+    {
+      "name": "Narrow light appearance",
+      "result": "passed",
+      "detail": "At 320 CSS px, controls stack, input/button are at least 48 px tall, search and empty state fit, no horizontal page overflow, clear restores results."
+    },
+    {
+      "name": "Narrow dark appearance",
+      "result": "passed",
+      "detail": "At 320 CSS px, controls stack, input/button are at least 48 px tall, search and empty state fit, no horizontal page overflow, clear restores results."
+    },
+    {
+      "name": "Script disabled fallback",
+      "result": "passed",
+      "detail": "All nine themes and the logo card are visible with inactive search hidden; a theme preview link remains usable."
+    },
+    {
+      "name": "Script blocked fallback",
+      "result": "passed",
+      "detail": "All nine themes and the logo card are visible with inactive search hidden; a theme preview link remains usable."
+    },
+    {
+      "name": "Browser runtime errors",
+      "result": "passed",
+      "detail": "No uncaught page errors during the enhanced flow."
+    }
+  ]
+}

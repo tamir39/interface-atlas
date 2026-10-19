@@ -126,3 +126,14 @@ node tools/build-preview-site.mjs
 ```
 
 See [site/README.md](../site/README.md) for output handling, deployment, and documentation links. The checked-in preview files still open locally without a build; GitHub Pages serves a prepared copy.
+
+## Optional hub search checks
+
+Build the preview site into a fresh directory, then exercise the published collection search using an installed Playwright package and Chromium:
+
+```sh
+node tools/build-preview-site.mjs --output /path/to/fresh-site
+node tools/validate-site.mjs --site /path/to/fresh-site --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-results
+```
+
+The output directory must be new. The validator serves the published site on loopback under the GitHub Pages subpath and checks name/description filtering, result counts, empty/Clear recovery, keyboard focus, narrow light/dark/forced-colors layouts, and no-JavaScript/failed-script fallbacks. It closes the browser and server, writing JSON results and screenshots. It does not exercise every theme, another browser engine, assistive technology or observed user usability. The [implementation trial](../examples/implementation-evaluation/README.md) records the first real-task run and limits. No browser dependency is included in the published site.
