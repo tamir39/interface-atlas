@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-10-19T17:30:14.002Z",
+  "case": "storefront",
+  "firstDraft": {
+    "bytes": 24615,
+    "sha256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2"
+  },
+  "designAtHandoff": {
+    "bytes": 24615,
+    "sha256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2"
+  },
+  "identicalAtHandoff": true
+}

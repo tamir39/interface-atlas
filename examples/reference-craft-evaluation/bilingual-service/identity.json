@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-10-19T17:29:02.349Z",
+  "case": "bilingual-service",
+  "firstDraft": {
+    "bytes": 27049,
+    "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033"
+  },
+  "designAtHandoff": {
+    "bytes": 27049,
+    "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033"
+  },
+  "identicalAtHandoff": true
+}

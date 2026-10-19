@@ -30,7 +30,9 @@ See [the preparation skill](skills/prepare-frontend-design/SKILL.md) for this wo
 
 These are repository workflows: preserve the Atlas directory layout when using their shared references. This change does not install them globally. Normal implementation should use the consuming project's documents. [Method credits and retained licenses](references/skill-adaptations.md) stay separate from [the earlier research proposal](references/skill-research.md).
 
-The [updated skill trials](examples/skill-evaluation/README.md) record generation, explicit review, source-reading scope and remaining evidence limits.
+The [updated skill trials](examples/skill-evaluation/README.md) record generation, explicit review, source-reading scope and remaining evidence limits. The [reference and craft rerun](examples/reference-craft-evaluation/README.md) exercises the A–D additions on the three existing briefs.
+
+Selected guidance now includes [reference evaluation and equivalent-task theme comparison](knowledge/design-reference-evaluation.md), [component mapping](knowledge/ui-ux-design.md#translate-the-design-through-components) and a [chosen-motion contract](knowledge/accessibility-and-responsive.md#record-the-chosen-motion-contract). Load only what resolves a current question. [Practical lessons](references/practical-lessons.md) are optional historical document-trial examples for deliberate research/review; they are outside normal project reading. Framework and format adapters remain deferred.
 
 Git preserves exact bytes for the recorded skill-trial artifacts and retained license files, so their source hashes remain verifiable across platforms.
 
@@ -240,6 +242,7 @@ interface-atlas/
 ├── knowledge/
 │   ├── README.md
 │   ├── ui-ux-design.md
+│   ├── design-reference-evaluation.md
 │   ├── accessibility-and-responsive.md
 │   ├── agent-experience.md
 │   ├── state-and-recovery.md
@@ -258,6 +261,15 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── reference-craft-evaluation/
+│   │   ├── README.md
+│   │   ├── protocol.md
+│   │   ├── review-findings.md
+│   │   ├── evidence.json
+│   │   ├── consumer-app/
+│   │   ├── storefront/
+│   │   ├── bilingual-service/
+│   │   └── reference-probe/
 │   ├── skill-evaluation/
 │   │   ├── README.md
 │   │   ├── protocol.md
@@ -325,12 +337,14 @@ interface-atlas/
 │   ├── skill-research.md
 │   ├── skill-research.json
 │   ├── skill-adaptations.md
+│   ├── practical-lessons.md
 │   └── licenses/
 │       ├── jakub-krehel-MIT.txt
 │       ├── julien-thibeaut-MIT.txt
 │       ├── ghaida-intent-CC0.txt
 │       ├── mohit-aggarwal-MIT.txt
-│       └── burhan-sebin-MIT.txt
+│       ├── burhan-sebin-MIT.txt
+│       └── shadcn-MIT.txt
 ├── adapters/
 │   └── README.md
 ├── tools/

@@ -1,0 +1,288 @@
+{
+  "recordedAt": "2026-10-19T17:41:34.612Z",
+  "baseCommit": "83e43077ab5bc5478a6a1d22f1cc4d3ab81cc172",
+  "evidenceLevel": "Qualitative document generation/review, verified emitted-source reading records; no runtime/user/billing result.",
+  "sourceFailures": [],
+  "cases": [
+    {
+      "case": "consumer-app",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 22524,
+        "sha256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654",
+        "words": 2992
+      },
+      "design": {
+        "bytes": 24597,
+        "sha256": "b14abecbf12588068f11b27573d947eef9744cf3240fb9521afd24f262bcdadd",
+        "words": 3266
+      }
+    },
+    {
+      "case": "storefront",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 24615,
+        "sha256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2",
+        "words": 3220
+      },
+      "design": {
+        "bytes": 26740,
+        "sha256": "b99985efd4a7ed9da3c6cf494315b3ff96af984c7983dfa5cea4df266281332a",
+        "words": 3491
+      }
+    },
+    {
+      "case": "bilingual-service",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 27049,
+        "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033",
+        "words": 3573
+      },
+      "design": {
+        "bytes": 27049,
+        "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033",
+        "words": 3573
+      }
+    },
+    {
+      "case": "reference-probe",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 6756,
+        "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363",
+        "words": 911
+      },
+      "design": {
+        "bytes": 6756,
+        "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363",
+        "words": 911
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run": "bilingual-service-gen",
+      "events": 43,
+      "contentReads": 29,
+      "uniqueContentFiles": 17,
+      "returnedBytes": 144219,
+      "atlasBytes": 141679,
+      "projectBytes": 2540,
+      "metadataOperations": 13,
+      "failedReads": [
+        {
+          "path": "references/licenses/jakub-krehel-MIT.txt",
+          "error": "Not an eligible frozen source"
+        }
+      ],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "examples/p0-evaluation/bilingual-service/brief.md",
+        "catalog/themes.json",
+        "themes/botanical/README.md",
+        "themes/layered/README.md",
+        "themes/editorial/README.md",
+        "knowledge/README.md",
+        "themes/botanical/design.md",
+        "themes/botanical/sources.md",
+        "templates/project-design.md",
+        "knowledge/ui-ux-design.md",
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/uncertain-outcomes.md",
+        "knowledge/accessibility-and-responsive.md",
+        "references/skill-adaptations.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "bilingual-service-review",
+      "events": 17,
+      "contentReads": 16,
+      "uniqueContentFiles": 10,
+      "returnedBytes": 56053,
+      "atlasBytes": 26464,
+      "projectBytes": 29589,
+      "metadataOperations": 1,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/review-frontend-design/SKILL.md",
+        "examples/p0-evaluation/bilingual-service/brief.md",
+        "@case/bilingual-service/first-draft.md",
+        "knowledge/README.md",
+        "skills/review-frontend-design/references/state-transitions.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/uncertain-outcomes.md",
+        "knowledge/accessibility-and-responsive.md",
+        "themes/botanical/design.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "consumer-app-gen",
+      "events": 45,
+      "contentReads": 29,
+      "uniqueContentFiles": 16,
+      "returnedBytes": 137080,
+      "atlasBytes": 134906,
+      "projectBytes": 2174,
+      "metadataOperations": 16,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "examples/p0-evaluation/consumer-app/brief.md",
+        "catalog/themes.json",
+        "themes/layered/README.md",
+        "themes/botanical/README.md",
+        "themes/play/README.md",
+        "themes/layered/design.md",
+        "themes/layered/sources.md",
+        "knowledge/README.md",
+        "knowledge/ui-ux-design.md",
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/accessibility-and-responsive.md",
+        "templates/project-design.md",
+        "references/skill-adaptations.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "consumer-app-review",
+      "events": 18,
+      "contentReads": 17,
+      "uniqueContentFiles": 10,
+      "returnedBytes": 53858,
+      "atlasBytes": 26227,
+      "projectBytes": 27631,
+      "metadataOperations": 1,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/review-frontend-design/SKILL.md",
+        "examples/p0-evaluation/consumer-app/brief.md",
+        "@case/consumer-app/first-draft.md",
+        "skills/review-frontend-design/references/state-transitions.md",
+        "knowledge/README.md",
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/accessibility-and-responsive.md",
+        "references/skill-adaptations.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "harness-check-gen",
+      "events": 3,
+      "contentReads": 1,
+      "uniqueContentFiles": 1,
+      "returnedBytes": 736,
+      "atlasBytes": 736,
+      "projectBytes": 0,
+      "metadataOperations": 1,
+      "failedReads": [
+        {
+          "path": "../README.md",
+          "error": "Invalid source path"
+        }
+      ],
+      "contentPaths": [
+        "AGENTS.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "reference-probe-gen",
+      "events": 18,
+      "contentReads": 16,
+      "uniqueContentFiles": 13,
+      "returnedBytes": 58033,
+      "atlasBytes": 55172,
+      "projectBytes": 2861,
+      "metadataOperations": 2,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "@fixture/brief.md",
+        "@fixture/design.md",
+        "@fixture/reference.md",
+        "catalog/themes.json",
+        "themes/editorial/README.md",
+        "themes/editorial/design.md",
+        "themes/editorial/sources.md",
+        "knowledge/README.md",
+        "knowledge/design-reference-evaluation.md",
+        "templates/project-design.md",
+        "references/skill-adaptations.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "storefront-gen",
+      "events": 52,
+      "contentReads": 46,
+      "uniqueContentFiles": 18,
+      "returnedBytes": 133631,
+      "atlasBytes": 131203,
+      "projectBytes": 2428,
+      "metadataOperations": 6,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "examples/p0-evaluation/storefront/brief.md",
+        "catalog/themes.json",
+        "themes/gallery/README.md",
+        "themes/botanical/README.md",
+        "themes/editorial/README.md",
+        "themes/gallery/design.md",
+        "themes/gallery/sources.md",
+        "themes/gallery/motion.md",
+        "knowledge/README.md",
+        "templates/project-design.md",
+        "knowledge/ui-ux-design.md",
+        "knowledge/state-and-recovery.md",
+        "knowledge/forms-and-navigation.md",
+        "knowledge/uncertain-outcomes.md",
+        "knowledge/accessibility-and-responsive.md",
+        "references/skill-adaptations.md"
+      ],
+      "replayFailures": []
+    },
+    {
+      "run": "storefront-review",
+      "events": 18,
+      "contentReads": 17,
+      "uniqueContentFiles": 11,
+      "returnedBytes": 57449,
+      "atlasBytes": 30406,
+      "projectBytes": 27043,
+      "metadataOperations": 1,
+      "failedReads": [],
+      "contentPaths": [
+        "AGENTS.md",
+        "skills/review-frontend-design/SKILL.md",
+        "examples/p0-evaluation/storefront/brief.md",
+        "@case/storefront/first-draft.md",
+        "skills/review-frontend-design/references/state-transitions.md",
+        "knowledge/README.md",
+        "knowledge/state-and-recovery.md",
+        "knowledge/uncertain-outcomes.md",
+        "knowledge/accessibility-and-responsive.md",
+        "references/skill-adaptations.md",
+        "knowledge/forms-and-navigation.md"
+      ],
+      "replayFailures": []
+    }
+  ]
+}

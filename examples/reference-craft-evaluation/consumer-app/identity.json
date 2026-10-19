@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-10-19T17:27:57.412Z",
+  "case": "consumer-app",
+  "firstDraft": {
+    "bytes": 22524,
+    "sha256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654"
+  },
+  "designAtHandoff": {
+    "bytes": 22524,
+    "sha256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654"
+  },
+  "identicalAtHandoff": true
+}

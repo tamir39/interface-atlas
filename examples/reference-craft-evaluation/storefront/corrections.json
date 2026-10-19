@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-20",
+  "evidenceLevel": "Root adjudication and written contract correction only",
+  "firstDraftSHA256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2",
+  "correctedDesignSHA256": "b99985efd4a7ed9da3c6cf494315b3ff96af984c7983dfa5cea4df266281332a",
+  "changes": [
+    {
+      "id": "S02",
+      "reason": "Independent R2 and ROOT-S2: make saved-cart replacement a distinct writer authority.",
+      "before": "with payload schema v1, cart revision, line IDs, quantities, and acknowledged revision.",
+      "after": "with payload schema v1, a non-reused store generation, cart revision, line IDs, quantities, and acknowledged generation/revision.",
+      "limit": "Proposed local data contract, not a verified IndexedDB implementation."
+    },
+    {
+      "id": "S02",
+      "reason": "Independent R2: every writer and acknowledgement participates in the replacement boundary.",
+      "before": "A transaction reads the expected revision, compares, validates, and writes the next revision atomically. A completion acknowledges only its snapshot; later edits remain unsaved.",
+      "after": "A transaction reads the expected generation/revision, compares both, validates, and writes the next revision atomically. A completion acknowledges only its submitted snapshot in the still-active generation; later edits remain unsaved and a retired-generation acknowledgement cannot clean the current draft.",
+      "limit": "Actual transaction/acknowledgement races remain future checks."
+    },
+    {
+      "id": "S02",
+      "reason": "Independent R2: explicit reset success alone does not rule out revision reuse/old writers.",
+      "before": "it must successfully complete before persistence is restored.",
+      "after": "it must atomically install a fresh, non-reused generation before persistence is restored. Every queued save, old-tab write and purchased-snapshot clearing checks active generation/revision. Reset invalidates undispatched old-generation work; delayed writes/acknowledgements cannot restore or clean the replacement. Keep an old tab's intent separate for explicit comparison against current authority, never automatic replay. Failed reset keeps the prior quarantined authority and temporary draft, reports failure and does not activate a fresh generation.",
+      "limit": "No real reset or multi-tab storage trace was executed."
+    },
+    {
+      "id": "S01",
+      "reason": "Independent R1: resolve overlapping same-cart quote refreshes alongside checkout evidence.",
+      "before": "Ignore stale quote responses for changed revisions.",
+      "after": "Each quote refresh also has a local request generation; commit only the still-current request for the unchanged cart revision. Ignore obsolete request completions even when the cart revision is the same. Contracted quote version/freshness and explicit acceptance still govern commercial authority; request arrival order is not service truth.",
+      "limit": "Local request eligibility does not establish actual service freshness."
+    },
+    {
+      "id": "S01",
+      "reason": "Independent R1 and ROOT-S1: action identity and lookup failure policy do not define late successful evidence merging.",
+      "before": "Session deduplication must not be represented as duplicate-payment prevention.",
+      "after": "Session deduplication must not be represented as duplicate-payment prevention. The contract must also supply authoritative observation ordering/finality and hosted-URL validity/replacement semantics before launch. Retain permitted evidence history per action, correlating late creation replies and lookups to the original payload. Apply an observation only under those contracted ordering rules: proven older progress cannot replace newer confirmed evidence or a valid resume target. Arrival order and client clocks are not service authority. If matching observations conflict and cannot be ordered, preserve confirmed history, expose the unresolved inconsistency, and reconcile authoritatively while keeping overlapping effects and any disputed resume URL unavailable. A failed lookup preserves earlier evidence; successful stale or contradictory lookup is not exempt from these rules.",
+      "limit": "Ordering, finality, URL validity and contradiction recovery remain real service-owner gates; this proposes no fabricated guarantee."
+    },
+    {
+      "id": "S01/S02-validation",
+      "reason": "Align future validation with the reset invariant.",
+      "before": "storage denial/quota/invalid/newer data, reload and tab conflicts;",
+      "after": "storage denial/quota/invalid/newer data, reload and tab conflicts; reset against queued saves/old tabs/late acknowledgements;",
+      "limit": "Future verification only."
+    },
+    {
+      "id": "S01/S02-validation",
+      "reason": "Align future validation with successful late-evidence reconciliation.",
+      "before": "variant/quote stale completions;",
+      "after": "variant/quote stale completions including overlapping same-revision reads; late checkout creation/lookup success, unorderable contradiction and obsolete hosted URLs;",
+      "limit": "Future verification only."
+    },
+    {
+      "id": "E01",
+      "reason": "Final static follow-up P3: the initial-generation no-review statement must not deny the later documented review.",
+      "before": "Performed: selective frozen-source reading, candidate comparison, document-level requirement/state reconciliation, and byte identity check for the delivered two design copies. No separate review workflow, UI, service request, browser, keyboard, screen reader, font, network/performance or usability test was run.",
+      "after": "During initial generation, performed: selective frozen-source reading, candidate comparison, document-level requirement/state reconciliation, and byte identity check for the delivered two design copies. A subsequent independent document review and root correction pass produced this corrected handoff; the first draft, review and exact corrections are preserved separately. No UI, service request, browser, keyboard, screen reader, font, network/performance or usability test was run.",
+      "limit": "Reporting correction only; no added product behavior or runtime evidence."
+    }
+  ]
+}

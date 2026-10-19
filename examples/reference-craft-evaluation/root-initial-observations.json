@@ -1,0 +1,58 @@
+{
+  "note": "Root observations frozen before independent review dispatch for the named case; candidate findings, not runtime failures or reviewer ground truth.",
+  "cases": {
+    "consumer-app": {
+      "firstDraftSHA256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654",
+      "candidateFindings": [
+        {
+          "id": "ROOT-C1",
+          "severity": "Medium",
+          "location": "State ownership and persistence; Errors, interruption and recovery; Resume/Discard draft",
+          "trigger": "Recovery-draft autosave is queued, then ordinary Discard draft/Discard changes occurs without a global reset; delayed writer runs afterward.",
+          "consequence": "Document checks store generation and revision but does not explicitly retire the individual discarded draft or require writers to check active eligibility, so discarded work can reappear as recovery data.",
+          "counterevidence": "Non-reused practice identity, version-aware save cleanup, generation checks and atomic reset are explicit. They do not by themselves specify ordinary per-draft discard eligibility.",
+          "correction": "Resolve individual draft retirement or equivalent exclusion at the write authority, including queued writers and failure behavior. Do not impose an unnecessary global reset."
+        }
+      ],
+      "openQuestions": [
+        "Finish A while note B is typed preserves B, but repeated Finish with the same practice ID returns the existing completion. Resolve B's next useful action or choose a bounded immutable Finish interval if the current wording leaves it stranded. Check counterevidence before treating as defect."
+      ]
+    },
+    "storefront": {
+      "firstDraftSHA256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2",
+      "candidateFindings": [
+        {
+          "id": "ROOT-S1",
+          "severity": "Medium",
+          "location": "Hosted checkout handoff and unknown outcomes",
+          "trigger": "Two successful observations of the same checkout action arrive out of order, including old pending evidence or an obsolete ready-session URL after newer confirmed evidence.",
+          "consequence": "Action/cart correlation and preserving failed-lookups do not define same-action successful evidence ordering or unorderable contradiction, permitting regression or an obsolete resume target.",
+          "counterevidence": "Stable identity, duplicate/terminal/recovery contracts and current-cart navigation guards are specified; observation freshness remains separate.",
+          "correction": "Require contract-defined evidence ordering/finality and URL lifetime; retain history, reject proven stale replacements and expose unorderable conflicts without dispatching overlapping effects."
+        },
+        {
+          "id": "ROOT-S2",
+          "severity": "Medium candidate",
+          "location": "Cart ownership and durable recovery; Start a new saved cart",
+          "trigger": "An earlier queued writer remains eligible when an explicit reset creates replacement saved authority with reused revision values.",
+          "consequence": "Revision checks alone lack an explicit non-reused authority identity or equivalent reset exclusion, so old intent may overwrite the new saved cart.",
+          "counterevidence": "Transactions, serialized snapshot saves and a required successful explicit reset are specified. A preserved monotonic revision could suffice, but its reset behavior is not resolved.",
+          "correction": "Specify reset invalidation or equivalent non-reused authority/revision rule for every writer; verify before claiming a stale-write failure."
+        }
+      ],
+      "openQuestions": [
+        "Adding an existing variant says add/merge but leaves combined quantity/key semantics terse; quote revalidation gates actual purchase, so distinguish a bounded clarification from an unsafe checkout claim.",
+        "Appearance write errors fall back to System. Clarify whether a failed preference write preserves an explicit current-visit Light/Dark choice rather than disabling it while storage is unavailable."
+      ]
+    },
+    "bilingual-service": {
+      "firstDraftSHA256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033",
+      "candidateFindings": [],
+      "openQuestions": [
+        "Service ordering and partial outcomes are explicitly a live-enable contract gate; inspect whether any downstream promise bypasses it before treating unspecified ordering as a document defect.",
+        "Translation delivery selects complete static version-matched packs before entry, with immediate language changes. Do not impose asynchronous request-generation machinery solely from historical cases that chose dynamic loading."
+      ],
+      "coverage": "Full first draft read before independent review dispatch. Major task, branch/review/history, memory-only draft, exact focus, static language and remote recovery gates are concrete proposals; no runtime evidence."
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-20",
+  "evidenceLevel": "Root adjudication and written contract correction only",
+  "firstDraftSHA256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654",
+  "correctedDesignSHA256": "b14abecbf12588068f11b27573d947eef9744cf3240fb9521afd24f262bcdadd",
+  "changes": [
+    {
+      "id": "C01",
+      "reason": "Independent review finding 1: resolve editable Finish continuation without inventing another completion or an unrequested note-edit feature.",
+      "before": "Editing may continue during Save; if B follows A, acknowledge A while B stays dirty and the editor stays open.",
+      "after": "Editing may continue during ordinary goal/record Save; if B follows A, acknowledge A while B stays dirty and the editor stays open. Practice Finish uses the explicitly bounded pending interval below instead.",
+      "limit": "This changes the proposed Finish editing policy; it does not validate the original editable-during-Finish flow."
+    },
+    {
+      "id": "C01",
+      "reason": "Independent review finding 1: every reachable Finish state now has a next useful action and no stranded newer note.",
+      "before": "Commit the completion and removal of its submitted draft together. Repeated Finish for the same practice ID returns the existing completion, never a duplicate. On acknowledged success open the completed record and focus **Practice completed**. If a newer note edit exists, remain in the editor and offer viewing the saved candidate separately.",
+      "after": "Finish synchronously captures the current note and enters a bounded pending state before dispatch. Keep its note field temporarily read-only, preserve its value, and explain **Finishing this practice…**; no newer note edit is accepted while that candidate is pending. Repeated activation is guarded. Pending in-app departure offers Wait here or Leave and check on return, never Discard or a cancellation promise; do not navigate a departed view when acknowledgement arrives. Commit the completion and retirement/removal of its submitted practice draft together. Repeated Finish for the same practice ID returns the existing completion, never a duplicate. On acknowledged success while still viewing this practice, open the completed record and focus **Practice completed**. On failure keep the unchanged note/draft, restore editing and offer Retry; after editing, a new candidate may be submitted only when the failed transaction is known not to have committed. Reload/re-entry reads authoritative completion/draft state before offering Finish again.",
+      "limit": "Required practice/note tasks remain; editing is paused only during Finish. Actual UI timing, failure and retry behavior remain untested."
+    },
+    {
+      "id": "C02",
+      "reason": "Independent review finding 2 and ROOT-C1: ordinary discard needs an authority boundary beyond global reset.",
+      "before": "A stale revision rejects the change and preserves its draft:",
+      "after": "Each recovery draft has a non-reused identity and active/retired eligibility in the write authority. Only opening a new editor session registers a fresh active identity; autosave cannot recreate eligibility. Discard draft, Discard changes and route-departure Discard share one checked transition: retire that identity and remove its persisted recovery entry atomically, and invalidate scheduled callbacks. Every writer must check active eligibility at commit, including queued autosave and older tabs. Finish records completion and retires its submitted practice draft in the same transaction. Announce discard/close only after acknowledgement; failed retirement preserves text and context with **Changes were not discarded**, Retry discard and Keep editing. A genuinely memory-only, never-persisted draft can be retired locally without writing an unreadable authority. Global reset still invalidates its whole generation.\r\n\r\nA stale revision rejects the change and preserves its draft:",
+      "limit": "This is a written invariant; queued writers, failed retirement and recovery must still be exercised against an implementation."
+    },
+    {
+      "id": "C01/C02-validation",
+      "reason": "Update future acceptance to match the chosen bounded Finish and per-draft retirement contracts.",
+      "before": "save A/edit B ordering; repeated Finish;",
+      "after": "ordinary Save A/edit B ordering; Finish read-only/pending/failure/retry and reload; repeated Finish; ordinary Discard with delayed/older-tab writers and failed retirement;",
+      "limit": "Future verification only."
+    },
+    {
+      "id": "evidence-note",
+      "reason": "Keep generation evidence distinct from later review/correction history.",
+      "before": "Performed: selective frozen-source reading, requirement-to-section mapping and written consistency reconciliation.",
+      "after": "During initial generation, performed: selective frozen-source reading, requirement-to-section mapping and written consistency reconciliation. This corrected handoff also includes a subsequent independent document review and root correction pass; the first draft, review and exact correction records are preserved separately.",
+      "limit": "No new runtime evidence is implied."
+    }
+  ]
+}

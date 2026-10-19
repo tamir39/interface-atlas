@@ -1,0 +1,8 @@
+Prepare a bounded revision of the supplied project design using the frozen skills/prepare-frontend-design/SKILL.md and @fixture/brief.md. Follow the actual skill's selective reading workflow. Interface Atlas is independent of Twohearts.
+
+Read this wrapper directly. Every Atlas/project/fixture content read must then use the helper sequentially:
+& 'D:/Applications/NodeJs/node.exe' 'C:/Users/PC/.codex/visualizations/2026/10/12/01a13103-a26d-7172-81af-e67e7cee6101/interface-atlas-ad-implementation-2026-10-20/execution/read.mjs' 'reference-probe-gen' 'repository/relative/path-or-@fixture/name.md' --whole _ 'purpose'
+
+Read AGENTS.md, the preparation entry and the fixture brief through it. --headings _, --section 'Exact heading', --range start:end and metadata-only --identity _ are available. Use adequate output tokens; disclose truncation. The helper reads the immutable source snapshot and supplied fixture. Do not read other examples, trial findings, protocol/rubric, research/review drafts, historical lessons or other agent outputs. Do not use web, installed global skills, code/runtime tools or asset binaries. Do not invoke a separate review, install, implement, commit or edit repository files.
+
+Write only C:/Users/PC/.codex/visualizations/2026/10/12/01a13103-a26d-7172-81af-e67e7cee6101/interface-atlas-ad-implementation-2026-10-20/runs/reference-probe/{first-draft.md,design.md,evaluation.md}. Keep first-draft/design byte-identical. A short self-contained revision and disposition are sufficient; do not expand this into a complete new product specification. evaluation.md records material read, decision scope, evidence and remaining checks. Deliver the paths.

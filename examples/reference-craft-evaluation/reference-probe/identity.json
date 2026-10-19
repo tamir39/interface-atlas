@@ -1,0 +1,13 @@
+{
+  "capturedAt": "2026-10-19T17:36:05.824Z",
+  "case": "reference-probe",
+  "firstDraft": {
+    "bytes": 6756,
+    "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363"
+  },
+  "designAtHandoff": {
+    "bytes": 6756,
+    "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363"
+  },
+  "identicalAtHandoff": true
+}

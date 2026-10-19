@@ -1,6 +1,6 @@
 # Focused accessibility and responsive decisions
 
-Status: adaptation draft, 2026-10-17. Original Atlas synthesis by **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. These are conditional planning and review questions, not normative requirements or a conformance assessment. No interface testing is claimed.
+Status: adaptation draft, updated 2026-10-20. Original Atlas synthesis by **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. These are conditional planning and review questions, not normative requirements or a conformance assessment. No interface testing is claimed.
 
 ## Select the relevant questions
 
@@ -37,6 +37,18 @@ Choose breakpoints from observed content needs and supported conditions, then re
 Can people distinguish actions, selections, errors, and status without depending on one visual cue? Which foreground/background pairs actually render, including overlays, images, opacity, and theme modes? Record measured pairs and the project's applicable target; do not guess contrast ratios.
 
 When motion exists, what information or control remains if it is reduced, interrupted, or absent? Does media need text alternatives, captions, or playback controls for this task? Can important feedback be found after a transient message disappears? Keep chosen color, type, and motion values with theme and project decisions.
+
+## Record the chosen motion contract
+
+When motion is chosen, resolve the applicable theme rules into one short project record: purpose and owning component; trigger and static equivalent; repeat, interruption and exit behavior; preference precedence; and performed versus pending checks. Omit a second record if the governing project document already resolves these points.
+
+Name unresolved implementation mappings. A library's reduced-motion option may retain effects that the project makes immediate; inspect the installed version and actual behavior against the chosen policy. Logical completion, accepted actions and necessary focus transfer stay in their existing owners, independent of presentation callbacks.
+
+Use existing CSS when it supports the required behavior. A runtime needs a concrete reason, such as interrupted gestures, presence or shared layout. Record the installed version when relevant. Timings and easing remain theme/project choices; property selection alone is not performance evidence.
+
+Check the selected path, including relevant repeat/reversal, live preference changes and departure during movement. Preserve content and useful controls when presentation is absent or interrupted. Report the exercised environment and limits; source inspection does not establish frame performance or accessibility.
+
+Method credits: existing Atlas [Editorial](../themes/editorial/motion.md)/[Pulse](../themes/pulse/motion.md) proposals, and linked technical guidance from **Matt Perry / Motion team and contributors**, [AI-kit skill](https://github.com/motiondivision/ai-kit/blob/8dc4f7a375f7f5cc32df1aa679b5d19c463651b4/plugins/motion/skills/motion/SKILL.md) at `8dc4f7a375f7f5cc32df1aa679b5d19c463651b4`. AI-kit metadata declares MIT, but a complete notice was not found in the inspected tree. This is original synthesis and references, not redistribution of the upstream skill bundle. The separate core-library license does not resolve that notice gap. See the [inspected source paths and adaptation boundary](../references/skill-adaptations.md#2026-10-20-reference-and-craft-additions).
 
 ## Report evidence at its actual level
 

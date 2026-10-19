@@ -1,0 +1,554 @@
+{
+  "date": "2026-10-20",
+  "baseCommit": "83e43077ab5bc5478a6a1d22f1cc4d3ab81cc172",
+  "evaluatedSourceState": "Uncommitted A-D implementation; individual frozen bytes/hashes identify evaluated sources, not baseCommit alone.",
+  "scope": "A-D shared knowledge implementation and qualitative design-document reruns. Fresh generation/review contexts; no new public skill, adapter, product, install or deployment.",
+  "protocol": "protocol.md",
+  "snapshot": "snapshot.json",
+  "packedFrozenText": "source-snapshot.json",
+  "reading": "read-audit.json",
+  "correctedCases": [
+    "consumer-app",
+    "storefront"
+  ],
+  "supportedContractFindings": [
+    "C01",
+    "C02",
+    "S01",
+    "S02"
+  ],
+  "followUpReportingClarification": {
+    "id": "E01",
+    "disposition": "Closed; see final-review-resolution.md"
+  },
+  "sourcesUnchangedAfterFreeze": true,
+  "currentSourceMismatches": [],
+  "sourceHashesVerified": true,
+  "returnedReadHashesVerified": true,
+  "cases": [
+    {
+      "case": "consumer-app",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 22524,
+        "sha256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654",
+        "words": 2992
+      },
+      "design": {
+        "bytes": 24597,
+        "sha256": "b14abecbf12588068f11b27573d947eef9744cf3240fb9521afd24f262bcdadd",
+        "words": 3266
+      }
+    },
+    {
+      "case": "storefront",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 24615,
+        "sha256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2",
+        "words": 3220
+      },
+      "design": {
+        "bytes": 26740,
+        "sha256": "b99985efd4a7ed9da3c6cf494315b3ff96af984c7983dfa5cea4df266281332a",
+        "words": 3491
+      }
+    },
+    {
+      "case": "bilingual-service",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 27049,
+        "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033",
+        "words": 3573
+      },
+      "design": {
+        "bytes": 27049,
+        "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033",
+        "words": 3573
+      }
+    },
+    {
+      "case": "reference-probe",
+      "originalFirstDraftPreserved": true,
+      "identicalAtHandoff": true,
+      "firstDraft": {
+        "bytes": 6756,
+        "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363",
+        "words": 911
+      },
+      "design": {
+        "bytes": 6756,
+        "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363",
+        "words": 911
+      }
+    }
+  ],
+  "briefChecks": [
+    {
+      "case": "consumer-app",
+      "bytes": 2174,
+      "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10",
+      "preserved": true
+    },
+    {
+      "case": "storefront",
+      "bytes": 2428,
+      "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb",
+      "preserved": true
+    },
+    {
+      "case": "bilingual-service",
+      "bytes": 2540,
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe",
+      "preserved": true
+    }
+  ],
+  "implementation": [
+    {
+      "path": ".gitattributes",
+      "bytes": 637,
+      "sha256": "5f66bcfbfd532cb74f0bfdb4b4745054ddf5fc5970e71d1a53aaab86e717d57c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 24318,
+      "sha256": "e261e9cfb44d488b6ca510f58b01e4cbd4e6931eed55f9619a8fb28a3757e5ce"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 2964,
+      "sha256": "c47b767ff002d4fcf3258b0d732d98a93aa9c339c015c25137d0baf1f66e5082"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 23614,
+      "sha256": "7275c835df283d716a0913906f412e61982eb5df5961acc0b8d488ee2154750c"
+    },
+    {
+      "path": "knowledge/README.md",
+      "bytes": 3950,
+      "sha256": "1f36c03535baf55c8667b4b37f6b2705424a510c7199983963bfd5c28574a2b2"
+    },
+    {
+      "path": "knowledge/design-reference-evaluation.md",
+      "bytes": 3521,
+      "sha256": "35f0c8df850c1ee2355b6e0485523bf07c5c77e686119f108d89f3597b37d8b8"
+    },
+    {
+      "path": "knowledge/ui-ux-design.md",
+      "bytes": 8988,
+      "sha256": "7bfa8b14b2529d599a9a932f1e61832e6d638556bc7684635621ef3ea81112c5"
+    },
+    {
+      "path": "knowledge/accessibility-and-responsive.md",
+      "bytes": 7965,
+      "sha256": "57e53cd66e79c67e8fb689a28846845c3f5aaca486d4310e203353c1085d8db3"
+    },
+    {
+      "path": "references/SOURCES.md",
+      "bytes": 25653,
+      "sha256": "7ca12b2fd1886552fa140e85064f98daab5133642698339414a8d143a44d8a98"
+    },
+    {
+      "path": "references/skill-adaptations.md",
+      "bytes": 19104,
+      "sha256": "6ef8c8770361bc95f57ac91803d470153ee95ea901df8ea4bfd309391db7fc50"
+    },
+    {
+      "path": "references/practical-lessons.md",
+      "bytes": 5807,
+      "sha256": "9792aff306edc873d5e33bc42cdf2a004f67fa921fa13d3aabdd00c2fd71b739"
+    },
+    {
+      "path": "references/licenses/shadcn-MIT.txt",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "bytes": 3990,
+      "sha256": "d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40"
+    },
+    {
+      "path": "skills/review-frontend-design/SKILL.md",
+      "bytes": 4364,
+      "sha256": "a8aa6e00cb9055b067c9ae91ca972ebe5d422ab697768f54a7084c99e862ba08"
+    },
+    {
+      "path": "adapters/README.md",
+      "bytes": 580,
+      "sha256": "28f8eba16ae23001f6aad223af80d258343aee3aa268ff9d79b251a7a96f6095"
+    }
+  ],
+  "skillDirectories": [
+    "prepare-frontend-design",
+    "review-frontend-design"
+  ],
+  "adapterEntries": [
+    "README.md"
+  ],
+  "actorNames": {
+    "generation": [
+      "ad_consumer_generation",
+      "ad_storefront_generation",
+      "ad_bilingual_generation"
+    ],
+    "independentReview": [
+      "ad_consumer_review",
+      "ad_storefront_review",
+      "ad_bilingual_review"
+    ],
+    "referenceProbe": "ad_reference_probe",
+    "followUp": "audit_baseline_lessons",
+    "parent": "root",
+    "note": "Generation/review/probe used fresh fork_turns=none contexts. Follow-up had prior findings and is not a blind trial. No model override."
+  },
+  "limitations": [
+    "Document-covered behavior only; no runtime, browser, storage, service, translation, assistive-technology or user checks.",
+    "One license text read blocked by the frozen allowlist; root procedural clarification did not change recorded rights. Do not infer license-reading avoidance from the restriction.",
+    "Reader allowlist gained a named harness-preflight run after dispatch; trial read/selection logic and eligible source bytes unchanged. See execution/notes.json.",
+    "Synthetic probe is directed and familiar briefs are regressions; no causal effectiveness, recall, billing or performance claim.",
+    "All agents reported complete displayed source output; replay verifies emitted bytes/hashes, not comprehension or the host full skill discovery."
+  ],
+  "artifacts": [
+    {
+      "path": "bilingual-service/brief.md",
+      "bytes": 2540,
+      "sha256": "a5bd0416929ba5d2a500283cf57ed67bc6d1c03c2c4aaa8c3bd9fe71f5ce6ebe"
+    },
+    {
+      "path": "bilingual-service/design.md",
+      "bytes": 27049,
+      "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033"
+    },
+    {
+      "path": "bilingual-service/evaluation.md",
+      "bytes": 7364,
+      "sha256": "c39b11ece6a1e3f0e766fafa0828807591192e78025ef3c1d3ee640728e552dd"
+    },
+    {
+      "path": "bilingual-service/first-draft.md",
+      "bytes": 27049,
+      "sha256": "8c9ac2b7103702d4edfb2d684dc91b6f1220b43eb024f56b200b075dc3c70033"
+    },
+    {
+      "path": "bilingual-service/identity.json",
+      "bytes": 361,
+      "sha256": "2e633a09850b92a9849c9caf82cc395fced272beb9b65a9e0e02d2f30280a6f6"
+    },
+    {
+      "path": "bilingual-service/read-events.jsonl",
+      "bytes": 20163,
+      "sha256": "0806eb35ca3d85b395d61faf3da40e7e5efdfb93d3c27d51c843445124160600"
+    },
+    {
+      "path": "bilingual-service/review-read-events.jsonl",
+      "bytes": 8369,
+      "sha256": "77bb6b3d5bb880afdbd30fe3c58e0f56bf7d3fae625cb068eec6c9e100c86109"
+    },
+    {
+      "path": "bilingual-service/review.md",
+      "bytes": 10810,
+      "sha256": "c10d9742839d2959de6f3eb3aaa14e0f1c27006c3a7e62c8797977b129d0852b"
+    },
+    {
+      "path": "consumer-app/brief.md",
+      "bytes": 2174,
+      "sha256": "8f236706ff34a9008d4c4e77c64fd53bcc545687e0c25452b70a64f1766ffc10"
+    },
+    {
+      "path": "consumer-app/corrections.json",
+      "bytes": 5250,
+      "sha256": "1253099ad46929eb2cc7cf66e9d190b2beba521ddd2e70128011e5972770aac5"
+    },
+    {
+      "path": "consumer-app/design.md",
+      "bytes": 24597,
+      "sha256": "b14abecbf12588068f11b27573d947eef9744cf3240fb9521afd24f262bcdadd"
+    },
+    {
+      "path": "consumer-app/evaluation.md",
+      "bytes": 10013,
+      "sha256": "ce91610cb563dcc4f0aa55d80498a253f234842e23f2e8940eda4183c395bab6"
+    },
+    {
+      "path": "consumer-app/first-draft.md",
+      "bytes": 22524,
+      "sha256": "59caa756283b720fef853947db79a85d05dc016679b8905668a99e54330a6654"
+    },
+    {
+      "path": "consumer-app/identity.json",
+      "bytes": 356,
+      "sha256": "8f3d26ddd1f782aa34b721f5d81d99d400b11827ad72cdb2cb555fb2d5951af4"
+    },
+    {
+      "path": "consumer-app/read-events.jsonl",
+      "bytes": 20907,
+      "sha256": "8b12733794a49c777d2e31f3d1bdce9707687566b871a82d60b5f580bf2c8003"
+    },
+    {
+      "path": "consumer-app/review-read-events.jsonl",
+      "bytes": 8781,
+      "sha256": "a678417474607e5a69c34b6cf509707eb08443a34e1a9b7f79875a48226202ce"
+    },
+    {
+      "path": "consumer-app/review.md",
+      "bytes": 10722,
+      "sha256": "f93c4f5420e8f8e545d1c21cb5b517f73e332a6dd9cefc07abb1a28ea97a0a35"
+    },
+    {
+      "path": "execution/archive.mjs",
+      "bytes": 5450,
+      "sha256": "b32a3c0ae17139d9eab37e26c85e6d8582eeb5df77c87feb442cff800474c100"
+    },
+    {
+      "path": "execution/audit.mjs",
+      "bytes": 5642,
+      "sha256": "1f10486fbe634b42dfb480c6416275ef4930403f3d37b74e44058c1fe37fb95f"
+    },
+    {
+      "path": "execution/check-implementation.mjs",
+      "bytes": 3585,
+      "sha256": "4aa45d8496ef0a97da6e7c697cf9a98eeb5ae365ca886b05a0e4c789eb3cd549"
+    },
+    {
+      "path": "execution/correct-designs.mjs",
+      "bytes": 11462,
+      "sha256": "5029be85ccdbdf1f0d131b7e2c6068b18b471c34ba0316a86cb561670f74d4a0"
+    },
+    {
+      "path": "execution/freeze.mjs",
+      "bytes": 2311,
+      "sha256": "287fa41065de19cec9fdad480910a971430ed9e4b27fa678d7e6ef13ec9b6c10"
+    },
+    {
+      "path": "execution/harness-check-read-events.jsonl",
+      "bytes": 1045,
+      "sha256": "030d70b075bf7f943a532296d0c38a9d69b790f3af5f7e290f18eac0e835a1b3"
+    },
+    {
+      "path": "execution/make-prompts.mjs",
+      "bytes": 4014,
+      "sha256": "4c6be01d6ae65137a61781c9e3a7052aeba2048481029b044d9cd318e13998f7"
+    },
+    {
+      "path": "execution/manifest.mjs",
+      "bytes": 5272,
+      "sha256": "5df347e9f20f22876438b3ed7d340fcae843e8533c359760c76fbce6e3a80941"
+    },
+    {
+      "path": "execution/notes.json",
+      "bytes": 1807,
+      "sha256": "b60448e2dd811a81c4529c262e4dc308bdc0387090e18f3c9f1e468753bc30d3"
+    },
+    {
+      "path": "execution/prompts/bilingual-service-gen.txt",
+      "bytes": 2429,
+      "sha256": "d0222f924e48fa720d999bb78f0eeb7cee80f66904bd5fd361ebc1567d48cc0e"
+    },
+    {
+      "path": "execution/prompts/bilingual-service-review.txt",
+      "bytes": 2295,
+      "sha256": "ce34e584950fa6616d6ee8c1edcbdb30f5a2e23d4ba923109d6b0c1c8626e4ff"
+    },
+    {
+      "path": "execution/prompts/consumer-app-gen.txt",
+      "bytes": 2414,
+      "sha256": "8d3d5a217dc0e5e90c95bfb4d43702a9a97a4603c59db43a4791eab77473fe8c"
+    },
+    {
+      "path": "execution/prompts/consumer-app-review.txt",
+      "bytes": 2280,
+      "sha256": "3dd5e1fb792f244d078e77e4fe0e633d861d7f4a8e414f46e2e721dc6c01251f"
+    },
+    {
+      "path": "execution/prompts/reference-probe-gen.txt",
+      "bytes": 1679,
+      "sha256": "0ba5fb2411b7116fc4f05e2f78e1da5c6e2fd184e345fa856113282a5cfb9f34"
+    },
+    {
+      "path": "execution/prompts/storefront-gen.txt",
+      "bytes": 2408,
+      "sha256": "d786dc28a7d6c0f05ce0d01f81faff7ef4486c9cb96af7da2f7e00dc60484fe9"
+    },
+    {
+      "path": "execution/prompts/storefront-review.txt",
+      "bytes": 2274,
+      "sha256": "8980c544faac0492ac9cdba75a9c915434b996625876b914a5eafbd4b1559947"
+    },
+    {
+      "path": "execution/prompts.json",
+      "bytes": 17353,
+      "sha256": "e8eb9b0be69e3e52428890cac9af0483f9dce678e922bdb6fb92ea88b834a005"
+    },
+    {
+      "path": "execution/read-at-dispatch.mjs",
+      "bytes": 4923,
+      "sha256": "95f2dda281fad50bfedc6751ffe9332f171471edac80c15f995200a342d13052"
+    },
+    {
+      "path": "execution/read.mjs",
+      "bytes": 4937,
+      "sha256": "69b58c0a4d104dc0dc62d58446882e9fe44aeb17e75716a4a23e3f7412785304"
+    },
+    {
+      "path": "execution/stage-navigation.mjs",
+      "bytes": 4870,
+      "sha256": "e85255d5c4201a04f3f4d404c8e6ce20c19dfab1c54b3e1c2919e1b2f5ee412a"
+    },
+    {
+      "path": "final-review-resolution.md",
+      "bytes": 1989,
+      "sha256": "0446692e7256f985e4f1109ae5e612006a01f0522e2905367bdf95e9e5a44876"
+    },
+    {
+      "path": "final-review.md",
+      "bytes": 8302,
+      "sha256": "4e7097578558e401abc7b3f0e0f2a279cbcea16cb9810e7f3a24ad6a7632c0ca"
+    },
+    {
+      "path": "implementation-checks.json",
+      "bytes": 372,
+      "sha256": "ebf1f52fd6a513734d6569d1d4d877906373fd59ec7408c7e4bf73ae7528909b"
+    },
+    {
+      "path": "protocol.md",
+      "bytes": 5694,
+      "sha256": "e5ef8fb9b34128ec484ec0f64ee3d2ba140c12d3f8479593b7a1bc467ec0b32d"
+    },
+    {
+      "path": "read-audit.json",
+      "bytes": 8868,
+      "sha256": "f7f7483fdc27ad23ee0129bb7fa53017cddd1e9984f81927debff7371636f7a6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9610,
+      "sha256": "0e0fbdf689823d27c8ab3452baeb0326cfe713284dc3ac92efb426084107928b"
+    },
+    {
+      "path": "reference-probe/brief.md",
+      "bytes": 795,
+      "sha256": "ed1925baca841511fd35dfa36966107951940fbf09b282f6b9ef48c9731c00cd"
+    },
+    {
+      "path": "reference-probe/design.md",
+      "bytes": 6756,
+      "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363"
+    },
+    {
+      "path": "reference-probe/evaluation.md",
+      "bytes": 4122,
+      "sha256": "e216cbaab6fc2ff9f8441311876ee8aa90c44b5597290635c3efd56ae9ae7a3d"
+    },
+    {
+      "path": "reference-probe/first-draft.md",
+      "bytes": 6756,
+      "sha256": "5be64f0db6d00cc859afcb0a14f8c485de5639ad29fef5df922c78bc627ca363"
+    },
+    {
+      "path": "reference-probe/identity.json",
+      "bytes": 357,
+      "sha256": "6e426300a4fe9858ada88e8251578b82d2461e8d025a762912f42864c7915049"
+    },
+    {
+      "path": "reference-probe/inputs/brief.md",
+      "bytes": 795,
+      "sha256": "ed1925baca841511fd35dfa36966107951940fbf09b282f6b9ef48c9731c00cd"
+    },
+    {
+      "path": "reference-probe/inputs/design.md",
+      "bytes": 1059,
+      "sha256": "1cc605feadcc5bb51b9d0e665517e65d2c4a5cebc67af6db8c27bb0692e67dc3"
+    },
+    {
+      "path": "reference-probe/inputs/reference.md",
+      "bytes": 1007,
+      "sha256": "7d68356fed3bca0a073411a1397a5cffa886f0839455c4faa231ad10c1a2b657"
+    },
+    {
+      "path": "reference-probe/read-events.jsonl",
+      "bytes": 8076,
+      "sha256": "b63fda6ba8d7c5b055e57de257cdf9116311bfa9cf9d67e4bb069c6cfbb854d9"
+    },
+    {
+      "path": "release-formatting.json",
+      "bytes": 11481,
+      "sha256": "19a88d4a182660ee393d2b1c5ce8b70ed2608c64f9f4c060aa555216a9730216"
+    },
+    {
+      "path": "review-findings.md",
+      "bytes": 7072,
+      "sha256": "970007c940c47b44678a4586bc218f71ff8c68f6a7e186bcda7b43d3b75a23e4"
+    },
+    {
+      "path": "root-initial-observations.json",
+      "bytes": 5004,
+      "sha256": "d5186d9b122f4b9dfaea003ed50d51593eb510e9ed5b5b4334ed75538789a683"
+    },
+    {
+      "path": "snapshot.json",
+      "bytes": 10571,
+      "sha256": "6f53cbfffbd3554400e12ed63177951ac909852635655884a05988714970d0bb"
+    },
+    {
+      "path": "source-snapshot.json",
+      "bytes": 488876,
+      "sha256": "ae8d24bca977e4f58ae753baf358aad915ef9915c6fbd963b459fa212834dbf3"
+    },
+    {
+      "path": "storefront/brief.md",
+      "bytes": 2428,
+      "sha256": "d6a9d535afdc44beab372a9ee1a079b08e143fe2a2ec8152f36e1a24e628bffb"
+    },
+    {
+      "path": "storefront/corrections.json",
+      "bytes": 6274,
+      "sha256": "56b3edb901138939c87d1ea9388dab827b830e2b495ec0db3052fa2bf2a819a6"
+    },
+    {
+      "path": "storefront/design.md",
+      "bytes": 26740,
+      "sha256": "b99985efd4a7ed9da3c6cf494315b3ff96af984c7983dfa5cea4df266281332a"
+    },
+    {
+      "path": "storefront/evaluation.md",
+      "bytes": 7292,
+      "sha256": "3e3f6ab2cac3baff5bc03e5c48e44056effe43abc6e59b326963b3add59ac0ed"
+    },
+    {
+      "path": "storefront/first-draft.md",
+      "bytes": 24615,
+      "sha256": "2d90ff619702a524db146de4148579f543f9cb74350fc1aa826ab8a53cf26ff2"
+    },
+    {
+      "path": "storefront/identity.json",
+      "bytes": 354,
+      "sha256": "4adaafcfd8c1dddef99fc0750d7a9d855af7d094b7a5202d685756300120a2a2"
+    },
+    {
+      "path": "storefront/read-events.jsonl",
+      "bytes": 25598,
+      "sha256": "3e04f5e42d27c422429de8eee137129784f44ef4465a10cbfbead5a07660acff"
+    },
+    {
+      "path": "storefront/review-read-events.jsonl",
+      "bytes": 8849,
+      "sha256": "9d2149e0ebfaae6cf535f418ad42faad98fda6f76f8bc2885e272d17220c8761"
+    },
+    {
+      "path": "storefront/review.md",
+      "bytes": 12696,
+      "sha256": "b9f7fc7541a91425e2627f6100785cea38aa5cded597da97d0e462a8d7b05606"
+    }
+  ],
+  "releaseFormatting": {
+    "record": "release-formatting.json",
+    "scope": "Two follow-up report EOFs only; exact original text and hashes retained.",
+    "originalReportHashesPreserved": true
+  }
+}

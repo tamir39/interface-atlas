@@ -1,6 +1,6 @@
 # UI/UX design decisions
 
-Status: adaptation draft, 2026-10-17. Original Atlas synthesis by **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. No product validation is claimed.
+Status: adaptation draft, updated 2026-10-20. Original Atlas synthesis by **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. No product validation is claimed.
 
 ## Load for a specific design question
 
@@ -42,7 +42,17 @@ Reuse the theme's visual language and the project's current component owners. Re
 
 A different spacing value or typeface is not itself a usability failure. Tie departures to constraints, contradictions, or demonstrated task difficulty. Measure color pairs when needed; a palette image cannot establish rendered contrast. Load [focused accessibility and responsive decisions](accessibility-and-responsive.md) when input methods, assistive technology, content growth, or adaptation affect this task.
 
-Motion is optional. Name its purpose, such as showing a relationship or confirming a transition, and consider repeated use and interruption. Preserve information and controls when motion is reduced or absent. Keep timings and recipes with the theme.
+Motion is optional. Name its purpose, such as showing a relationship or confirming a transition, and consider repeated use and interruption. Preserve information and controls when motion is reduced or absent. Keep timings and recipes with the theme. When the project's motion mapping remains unresolved, use the [chosen motion contract](accessibility-and-responsive.md#record-the-chosen-motion-contract) to resolve the handoff.
+
+## Translate the design through components
+
+When component mapping is unresolved, trace the approved design role to its semantic token, existing component owner, relevant variant and visible state. Record an intentional exception. A matching hex value or component name alone does not establish that the implementation follows the contract.
+
+Use a bounded specimen when it helps resolve the question: only used controls and compositions, realistic content, and consequential states beside the normal case. Label simulated states outside the control's real text. Keep fixture overrides local to the specimen. A pinned focus or hover appearance supports visual inspection; it does not demonstrate keyboard operation, focus transfer or assistive-technology behavior.
+
+Resolve the accepted mapping into project-owned values or stable token references. Verify the relevant real interactions when implementation evidence is available; record missing checks. The sample is optional and need not become an exhaustive component showcase.
+
+Method credit: **shadcn and contributors**, selected [design-system](https://github.com/shadcn-ui/ui/blob/ba1503c64472b82256d9de95e2e62c5901a38e8b/skills/shadcn/design-system.md) and [specimen guidance](https://github.com/shadcn-ui/ui/blob/ba1503c64472b82256d9de95e2e62c5901a38e8b/skills/shadcn/design-system-page.md) at `ba1503c64472b82256d9de95e2e62c5901a38e8b`, MIT, copyright 2023 shadcn. Preserve the [full notice](../references/licenses/shadcn-MIT.txt) with a distributed substantial adaptation. Atlas narrows the method to the existing project; it does not adopt upstream initialization, install-all or automatic stack-selection instructions. Third-party registry assets retain separate terms. See the [adaptation boundary](../references/skill-adaptations.md#2026-10-20-reference-and-craft-additions).
 
 ## Handoff and realistic validation
 

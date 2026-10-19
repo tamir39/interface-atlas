@@ -1,0 +1,128 @@
+# Form & Field design
+
+Status: proposed project design, prepared 2026-10-20; no interface implemented or validated. Theme: Gallery 0.1.0-draft, research identity `atlas-gallery-research-2026-10-15`.
+
+## Requirements and evidence
+
+The supplied brief defines an English, USD, image-led homeware webstore with roughly 50 products. Guests must browse, search/filter, inspect accurate images, choose available color/size and quantity, manage a cart, review authoritative commercial information, and continue to hosted checkout. Same-browser cart recovery is required while storage works. Light, Dark, System, keyboard use, phone-first reflow, connection failures, storage failures, changed prices/stock, and unknown checkout outcomes are in scope.
+
+No user research, real catalog/media, rights records, brand assets, font package, service contract, payment provider, tax rules, or implementation stack is supplied. Everything below beyond those facts is a project proposal. No account, wishlist, loyalty, or agent flow is included. Product claims and commercial guarantees require owner evidence.
+
+## Direction and task structure
+
+Select Gallery after comparing Gallery, Botanical, and Editorial READMEs. Gallery gives accurate object imagery and small off-image captions priority. Botanical's organic geometry and Editorial's expressive serif hierarchy are plausible brand alternatives, but collection comparison is the stronger requirement here. Retain Gallery's flat surfaces, neutral chrome, unaltered media, Inter role, comfortable spacing, and near-square controls. Purchase flows and persistence below are project adaptations; Gallery supplies no commerce model.
+
+Use three primary destinations: All products, Product, and Cart. The landing destination is the collection, with a short studio introduction above it; avoid a tall promotional hero that displaces products. Header order: Form & Field home link, Shop, Cart with total item count. Appearance is a labeled preference in the footer. Product names, option names, prices, and material/dimension/care facts use ordinary selectable text. Do not invent persuasive claims or synthetic testimonials. The proposed success criterion is completing each required guest task and recovering truthfully from interruption; no conversion or task-time result is asserted.
+
+## Color contract
+
+Retain these opaque Gallery pairs. Imagery supplies most color. Text and controls remain outside images on opaque backgrounds.
+
+| Semantic role | Light | Dark |
+| --- | --- | --- |
+| Page | `#f6f4f0` | `#171a17` |
+| Panel | `#ffffff` | `#20241f` |
+| Surface | `#e9e5dd` | `#2b3029` |
+| Ink | `#252823` | `#f2f1e9` |
+| Muted text | `#596057` | `#c3c8ba` |
+| Action | `#634a38` | `#dec6aa` |
+| Action hover | `#473527` | `#efdbc2` |
+| On action | `#ffffff` | `#292117` |
+| Necessary control border | `#787c70` | `#8d9883` |
+| Decorative divider | `#c8c5bd` | `#4a5045` |
+| Selected surface | `#e2dccf` | `#4d473b` |
+| Success foreground | `#325d46` | `#a7d0b3` |
+| Warning foreground | `#745014` | `#ebcf98` |
+| Danger foreground | `#9a3443` | `#f2adb5` |
+| Information foreground | `#305d79` | `#aacee4` |
+
+Use on-action only on action/hover. Use ink on selected surfaces, including selection markers and boundaries. Status roles are foregrounds on page/panel/surface, accompanied by words; they are not arbitrary filled badges. Decorative dividers cannot identify inputs. Gallery reports minimum opaque ink contrast 11.89:1 light/11.73:1 dark across its six neutral backgrounds, muted 5.17:1/7.78:1, and on-action/action 8.18:1/9.64:1. These inherited calculations are not new rendered measurements. Final state combinations target WCAG 2.2 AA text/non-text contrast and require measurement.
+
+## Type, spacing, and geometry
+
+Inter by Rasmus Andersson is the proposed sole family: Inter, Segoe UI, Arial, sans-serif. No font file is supplied. Use normal 400 body/display, 500 labels/product names, 600 important totals. Body and entries: 16px/1.65 and 16px/1.5 respectively; captions/support: 14px/1.5; product-card names: 20px/1.35; H1: `clamp(2.5rem,5vw,4.5rem)`/1.1; H2: `clamp(1.75rem,3vw,3rem)`/1.2. Display tracking is -0.035em; ordinary text remains normal. Use tabular numerals for prices/quantities and a maximum prose measure of 65ch. Display USD as `$48.00`; put “All prices in USD” near commerce content. Actual amounts are backend data.
+
+Retain the 4, 8, 12, 16, 24, 32, 48, 64, 96px spacing scale; 8px label gaps, 12px related controls, 24px card gaps, 48px section gaps on phones and 64px on wider screens. Maximum content width 1280px; gutters 16px below 48rem and 32px above. Media corners 0; controls/panels 4px; no shadows. Targets are at least 44 by 44px. Long names, errors, and amounts wrap without clipping.
+
+## Pages and responsive behavior
+
+Collection order: H1/introduction, labeled Search products field with Search button, filters, applied-filter summary/result count, product grid. Proposed filters are Category, Color, and Size, populated only from real catalog metadata; hide a dimension when absent. Native selects include All. On phones, a native disclosure contains filters and Apply filters; an applied count remains visible when closed. Clear filters resets search and filters and focuses Search. Submitted search matches catalog-defined name/description/category fields case-insensitively. Search/filter semantics and normalization need catalog-owner approval. URL query parameters retain applied criteria across reload, deep links, and Back; typing alone does not create history entries. Show all approximately 50 results without invented pagination, subject to actual payload/performance checks. No results: “No products match these filters” with Clear filters. Catalog failure: retain filters, show Retry collection; cached content is labeled with its last successful check.
+
+Grid proposals: one column below 36rem, two at 36rem, three at 64rem, subject to actual content checks. Card order is 4:5 reserved image frame using contain, product-name link, category, USD price/range, and textual availability. A range is labeled “From” only when catalog semantics justify it. No nested clickable card or hover-only controls. No quick-add bypasses variant inspection.
+
+Product DOM order: breadcrumb/Back to collection, H1, selected image and labeled thumbnails, price/availability, option controls, Quantity, Add to cart, product details and credits. At 64rem the media and purchase regions form two columns in that same reading order; below, they stack. The image uses contain in a square reserved frame; View full-size image is a native link only when a cleared original is supplied. Thumbnails are ordinary buttons with contextual names and `aria-pressed`, not invented tabs. Selection changes immediately without animation. Back restores criteria, scroll, and originating product link focus; if that target vanished, focus the collection heading and explain the change. New client-rendered logical pages focus H1 and update the document title; full document loads retain native navigation. History restoration must not fight native scroll restoration.
+
+Cart order: H1/item count, persistence or conflict notice, item list, commercial changes, quote summary, Continue to checkout. Each line includes image, product link, exact color/size, unit price status, labeled Quantity, Update quantity, line amount status, and “Remove [product and variant]”. Use a stacked list on phones; at 64rem a side-by-side summary is permitted. No fixed footer or sticky purchase bar may obscure content or focus. At 320 CSS px and 400% zoom the page reflows without horizontal page scrolling. Empty cart offers Browse products.
+
+## Product controls and feedback
+
+Color and Size use labeled native selects with a Choose prompt when several values exist. A single valid value may be explicitly selected and displayed. Availability is attached to complete variant identity; unavailable combinations remain discoverable with “Unavailable” text and cannot be added. Changing color never silently substitutes a size: clear an incompatible selection, explain it, and require a new choice. Check results must match the current variant, quantity, and request generation; obsolete completions do not update current availability.
+
+Quantity accepts a positive safe integer. Limits come from service rules, never an invented stock cap. Preserve incomplete typed values until Update quantity/Add is attempted. These forms use one custom validation owner, suppress competing native interactive feedback while retaining input semantics, and run the same checks for click and Enter. Failed submission preserves values, associates errors, and focuses the first invalid field; multiple errors also receive a linked summary. A valid remote rejection is distinct from an unavailable connection.
+
+Add requires a complete variant and successful current availability check; checking or unknown availability keeps the action focusable with guarded `aria-disabled` and a nearby reason. Activation adds/merges that variant into local intent, then announces “Added to cart” with a persistent View cart link; focus stays on Add. This is not a reservation. Pending actions use stable labels, truthful adjacent status, guarded pointer/keyboard/implicit submission, and one polite status region. Storage and commercial acknowledgement are separate.
+## Cart ownership and durable recovery
+
+Browser state owns intended product/variant IDs and quantities, not price, stock, reservations, or purchase status. Catalog observations and images are replaceable cached evidence. Backend commerce owns current prices, stock, quotes and checkout outcomes. Quotes bind to exact cart revision; attempts have independent identities.
+
+Propose a small native IndexedDB CartDraftStore, independent of framework, with payload schema v1, cart revision, line IDs, quantities, and acknowledged revision. Keep payment details out. Apply changes in memory immediately; serialize immutable snapshot saves, coalescing only undispatched writes. A transaction reads the expected revision, compares, validates, and writes the next revision atomically. A completion acknowledges only its snapshot; later edits remain unsaved. Show “Saving cart on this browser”, then “Saved on this browser” after transaction completion. On write failure retain the latest draft and show “Cart changes are only in this tab” plus Retry saving. Never say synced or permanently saved. User clearing, eviction, profile/device loss can remove recovery.
+
+Startup distinguishes loading, valid record, absent record, denied/unavailable access, invalid data, and unknown schema. Load valid intent, then recheck commercial facts; do not remove unknown/discontinued items silently. Absent means no saved cart found. Read errors quarantine the prior record from automatic writes: permit a clearly labeled temporary memory cart, offer Retry storage, and keep checkout gated unless independent recovery is contracted. “Start a new saved cart” is an explicit destructive reset with the affected saved intent explained; it must successfully complete before persistence is restored. Unsupported schema is never silently downgraded. Only v1 is proposed; future migration requires a separately verified preservation/rollback design.
+
+Other-tab revision conflict blocks writes while preserving this tab's draft. An inline comparison offers Use saved cart, or Replace saved cart with this cart after showing exact added/removed/changed lines. Replacement rechecks the reviewed revision inside its write transaction; another change reopens comparison. Broadcast notices are advisory, not locks. Unresolved conflicts block checkout. Removing a line requires no confirmation; after removal focus the next line's quantity, previous line if necessary, or Cart heading when empty. No transient Undo promise is introduced. Storage retry never silently overwrites quarantined or conflicting data.
+
+## Authoritative quote and cart review
+
+Every successful add, committed quantity edit, removal, reload, and return from checkout invalidates current quote acceptance and requests a new quote for the exact cart revision. Quote retrieval may safely be retried as a read; its service contract must establish that it has no commercial effect. Keep editing available. Ignore stale quote responses for changed revisions. During checking, say “Checking prices and availability”; retain prior amounts only as “Previous price/total”, never a current payable total. Offline edits remain usable local intent; Continue to checkout stays unavailable until a current valid quote exists.
+
+The response must identify normalized lines, unit amounts, line amounts, USD, stock/quantity eligibility, quote ID/version, freshness/expiry semantics, and named charges. Do not derive commercial totals from cached cards. Display Items subtotal and each service-defined charge; distinguish known amounts from charges still determined at hosted checkout. Do not label a partial amount Total. The charge/tax presentation remains blocked until the backend supplies exact semantics.
+
+Price changes display old/new unit and summary amounts together and require “Accept updated prices” for that quote/revision. Stock reductions do not clamp quantities automatically: retain requested quantities with the allowed amount and Update quantity. Unavailable lines retain product/variant identity with Remove or product inspection to select another variant. Any further edit/change invalidates acceptance. The initial valid quote is reviewed in Cart; Continue to checkout authorizes only the displayed matching snapshot. Quote expiry triggers recheck, never an invented countdown or reservation claim.
+
+## Hosted checkout handoff and unknown outcomes
+
+Continue to checkout creates or resumes a hosted checkout session; it does not claim payment or order completion. Before dispatch, acknowledge a minimal recovery record containing stable action ID, immutable cart/quote identity, payload fingerprint, preparation time, and local requested state. Track transport attempts separately. Gate dispatch if that retention fails unless a documented independent service discovery mechanism exists. Local retention and session creation are not one transaction.
+
+The commerce owner must contract service-enforced duplicate handling across tabs/retries, key scope/retention, changed-payload rejection, quote validation, authorized status lookup by stable identity, trusted hosted URLs, missing/expired-record meanings, terminal evidence and return behavior. No endpoint, provider, reservation duration, or guarantee is chosen here. Session deduplication must not be represented as duplicate-payment prevention.
+
+While preparing, guard duplicate activation but allow browsing/cart edits. A matching response may navigate only if the active guest request and cart revision still match; otherwise retain the ready session alongside its original snapshot and offer a deliberate Resume checkout link. Edits never cancel an existing attempt. Block a new overlapping checkout action until the prior action is reconciled. Returning to Cart or closing a page does not prove remote cancellation.
+
+After a proposed 12-second local wait, stop the indefinite spinner and show persistent “Checkout status unconfirmed. Check status before starting again”, the action reference, last successful observation and Check status when supported. This threshold proves nothing about delivery. No automatic effect retry. Perform one authorized lookup on visible reconnect/re-entry and permit manual checks, respecting server delay; do not poll hidden pages. If lookup fails, preserve the earlier evidence and label it stale. Missing or expired status remains unknown unless the contract proves otherwise.
+
+Confirmed session creation permits Resume checkout only for its verified snapshot and valid URL. An authoritative rejection explicitly proving no effect permits Review cart and a new action after correction. An accepted/pending action remains unresolved; unknown status retains its reference and blocks repeat checkout. Retry the same action only within verified duplicate-protection retention and unchanged payload; otherwise use the contracted reconciliation route. Unsupported lookup/reconciliation blocks launch of this capability; do not invent a support channel.
+
+On hosted return/reload, recover the action identity and reconcile before enabling checkout. URL success parameters alone prove nothing. Keep the cart through handoff. Only authoritative purchase evidence may mark a purchase complete and clear a matching unchanged purchased snapshot; if the cart changed, preserve it and show purchased versus current items for explicit review. Never manufacture a successful order or erase later intent. An unavailable return lookup retains “unconfirmed”, rather than announcing failure or clearing the cart.
+
+## Media, accessibility, appearance, and motion
+
+Studio/catalog owners supply accurate media per variant, dimensions, view descriptions, creators, rights, alt text, focal points and derivatives. Gallery's generated studies are prohibited as real product photographs. Card/full-object views use contain; atmospheric crops may appear only as separately labeled context with an uncropped accurate view. Appearance never filters, tints or inverts images. Use native img/picture, intrinsic dimensions, responsive sources sized to actual frames, eager visible primary media, and lazy below-fold images. Choose formats/byte budgets after real assets arrive. Failed images preserve frame, title, variant facts and text alternatives with Retry image bound to that asset's real load/error events. Another asset's completion cannot replace current media metadata.
+
+Use native landmarks, one H1, continuous headings, skip link, ordinary links/buttons, and visibly associated labels. Color swatches, if later added, must retain text option names. Focus is an immediate 3px ink outline with 5px offset, unclipped; forced colors uses Highlight. Thumbnail, variant, quantity, filter and checkout tasks require keyboard operation without dragging/hover. Error/status text persists beyond announcements. Test onscreen keyboard, text enlargement, long labels and browser controls for obstruction.
+
+Appearance select offers Light, Dark, System, default System; honor live device changes only in System. Apply valid stored preference before first paint where possible. Preference read/write errors fall back to System without blocking shopping; do not confuse these with cart save status. Optional control color/background/border transitions use 180ms `cubic-bezier(.2,0,0,1)` only when OS permits. Reduced motion makes all feedback immediate and responds to live changes. Images, layout, opacity and scrolling do not animate; no autoplay or entrance hiding. No extra motion control or decorative effect is required. Performance, font rendering, image accuracy and accessibility remain implementation checks.
+
+## Delivery gates and validation
+
+Before commerce implementation, the backend commerce owner supplies a versioned catalog/availability/quote contract and all checkout capabilities above, including finality, expiry, duplicate protection, guest scope and recovery retention. The hosted-checkout integration owner supplies provider-specific handoff, return, accessibility and cancellation facts. The studio content owner supplies the real catalog, media/rights, brand approval and approved charge/legal copy. The frontend owner selects a font package with its notices, confirms browser support/storage migration policy, and tests atomic conflict handling. Unknown capabilities stay unavailable with explanations; no mock response is production evidence.
+
+Performed: selective frozen-source reading, candidate comparison, document-level requirement/state reconciliation, and byte identity check for the delivered two design copies. No separate review workflow, UI, service request, browser, keyboard, screen reader, font, network/performance or usability test was run. Future acceptance covers all required tasks in both appearances/System, 320px/zoom and keyboard/screen reader; missing/long content and image failures; storage denial/quota/invalid/newer data, reload and tab conflicts; save A/edit B races; variant/quote stale completions; price/stock changes; disconnect before/after session creation, lost reply, edited cart, repeated click, lookup failure, expired history and hosted return. Product/service behavior must be tested against contracts, not invented timers. Open questions include actual search fields, filter taxonomy, purchase quantity limits, shipping/tax semantics, imagery adequacy, font package and supported browsers.
+
+## Source credits and adaptations
+
+Used the frozen Interface Atlas preparation skill, catalog, selected theme and task-specific knowledge supplied for this exercise. The brief historically names commit `782159e8e2510933c76989ff9fd9546d282c62cd`; no repository/manifest inspection establishes that all frozen workflow changes belong to that commit. These immutable SHA-256 identities identify relevant used content instead:
+
+| Source | SHA-256 |
+| --- | --- |
+| prepare-frontend-design/SKILL.md | `d5528477be4f87ee4d66591e95176423d95bf2e0427d229e82dffb1b726b7d40` |
+| Gallery design.md | `e8f78bc44de673dcf4b8210f926ba65aacfba654ac3d24cb6e98a6b1d14e06f4` |
+| Gallery sources.md | `0177205325a7a1da178a0c950a976a70a0da796b153c87c93bcbf7196206610a` |
+| State and recovery | `ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51` |
+| Uncertain outcomes | `7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10` |
+
+Gallery's original specification is credited to Tamir (Phi Vuong Tuong Tam), with Codex AI assistance, revision 0.1.0-draft, reviewed 2026-10-15. Retained numerical/visual rules are Atlas proposals; storefront flows above are new project proposals. [Shopify design guidance](https://shopify.dev/docs/storefronts/themes/best-practices/design) and Dawn/Horizon inform concepts only. Gallery imports no theme code/assets; inspected Shopify licenses restrict reuse and are not plain MIT. Atlas publishing terms remain undecided; source links provide no blanket asset/code permission.
+
+Inter designer: Rasmus Andersson; copyright The Inter Project Authors, SIL OFL 1.1. The inherited [upstream pin](https://github.com/rsms/inter/tree/353b61b9f4430d5f420d56605a6e7993e0941470) is distinct from release v4.1 and Google Fonts' dated package notices. Preserve the actual selected package's complete copyright/OFL text, including its stated year; no font is bundled.
+
+Image concepts credit Mat Marquis and Learn Images reviewers Rachel Andrew, Jake Archibald, Barry Pollard, Aaron Forinton, Eric Portis, Zach Leatherman and K.Adam White, [web.dev Prescriptive syntaxes](https://web.dev/learn/images/prescriptive), updated 2023-02-01 (content CC BY 4.0; samples Apache-2.0; none copied). Accessibility/image concepts credit W3C WAI/EOWG, including Eric Eggert, Shadi Abou-Zahra and Brian Elton, [WAI Images](https://www.w3.org/WAI/tutorials/images/); WCAG/APG contributors; CSSWG and WHATWG contributors. Their document-specific terms apply to their material; no prose, diagrams or code are copied.
+
+The selected Atlas UX/accessibility methods credit [Ghaida Zahran's Intent](https://github.com/ghaida/intent/tree/3fc38dff381ce0e4dec8f52c97c3e37abd95e10e) (CC0, task/journey/re-entry), [Jakub Krehel](https://github.com/jakubkrehel/skills/tree/4c66b1fa86e9ab70187b43d7da9b6fdb29f2ef63) (Copyright 2026 Jakub Krehel, MIT, layout/type/writing/accessibility), and [Julien Thibeaut](https://github.com/ibelick/ui-skills/tree/f18d13077d6e3841821ea0a36526c0fd44a570b5) (Copyright 2026 Julien Thibeaut, MIT, governing evidence/native controls). Retain their copyright and permission notices with copies/substantial adaptations of covered material; full notices remain Atlas's `references/licenses/jakub-krehel-MIT.txt` and `julien-thibeaut-MIT.txt`. No upstream skill implementation is imported. Shared state concepts reference [IndexedDB's 2025-08-13 W3C draft](https://www.w3.org/TR/2025/WD-IndexedDB-3-20250813/), editor Steve Becker, WHATWG HTML/Storage, and Thomas Steiner, Pete LePage and Sihui Liu's publisher guidance. Uncertainty concepts credit [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110), editors Roy Fielding, Mark Nottingham and Julian Reschke, and WHATWG Fetch/Anne van Kesteren. These references are inherited Atlas provenance, not fresh verification, endorsement or validated service guarantees.
