@@ -22,7 +22,9 @@ Start with the project's existing rules. When the user requests a visual style o
 
 - [Web Brutalism](web-brutalism/README.md): a draft family entry separating raw, content-first browser conventions from expressive experiments and Neobrutalism. Its original [Open Index specimen](web-brutalism/preview/index.html) and [composition evaluation](../examples/web-brutalism-composition-evaluation/README.md) test one content-first variant across nine bounded theme profiles, with readable HTML before enhancements and actual selected-note downloads.
 
-Only implemented entries appear in the generated catalog. Future research candidates are Flat and Minimalism. They do not yet have Atlas rules or previews. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
+- [Flat Design](flat-design/README.md): a draft family entry for two-dimensional surfaces with explicit affordances. Its original [Next Up task board](flat-design/preview/index.html) and [composition evaluation](../examples/flat-design-composition-evaluation/README.md) test local task creation, completion and filtered focus recovery across nine bounded theme profiles. Source corner values remain while decorative depth is removed; Flat Design is distinct from content reduction.
+
+Only implemented entries appear in the generated catalog. Minimalism remains a research candidate without Atlas rules or a preview. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
 
 ## Package and provenance
 

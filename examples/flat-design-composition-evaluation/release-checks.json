@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-27",
+  "scope": "Flat Design family entry/task-board variant, seven-style discovery, shared generator and hub; prior Agent Experience draft excluded.",
+  "checks": [
+    {
+      "command": "node tools/style-catalog.mjs",
+      "passed": true,
+      "output": "Generated catalog for 7 implemented style(s)."
+    },
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "output": "Catalog matches metadata for 9 theme(s)."
+    },
+    {
+      "command": "node tools/style-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 7 implemented style(s)."
+    },
+    {
+      "command": "node tools/style-tokens.mjs --check",
+      "passed": true,
+      "output": "Verified bounded token projections for 9 themes across 7 styles."
+    },
+    {
+      "command": "node --check tools/style-tokens.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/build-preview-site.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/validate-flat-design.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check styles/flat-design/preview/preview.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "name": "glassmorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neobrutalism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "claymorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neumorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "skeuomorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "web-brutalism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "Relative Markdown links in entry/router/evaluation documents",
+      "passed": true,
+      "documents": 15,
+      "links": 244
+    },
+    {
+      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-flat-site-20261027",
+      "passed": true,
+      "output": "Built 81 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-flat-site-20261027"
+    },
+    {
+      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-flat-site-20261027 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-flat-hub-20261027",
+      "passed": true,
+      "output": "Recorded actual browser results."
+    }
+  ],
+  "style_evidence": {
+    "file": "results.json",
+    "sha256": "52dd7b83882b9220cf9046c2a1d4eb585adc0731138587bd4c65db985538baa1",
+    "base_states": 72,
+    "interaction_contexts": 198,
+    "groups": 15
+  },
+  "hub": {
+    "passed": true,
+    "groups": 12,
+    "testedFiles": {
+      "index.html": "7c3fc039b59a73a295e510ff66504ac60517980484577043386a6183bbedcea3",
+      "styles.css": "58e68b4839dcea78889e629f46afff1b0e4934ce99bef65126d3ebdc83d00e2c",
+      "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+    },
+    "validatorSha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b",
+    "limits": [
+      "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+      "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+      "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+    ]
+  },
+  "passed": true
+}

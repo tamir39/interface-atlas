@@ -159,3 +159,7 @@ The [Skeuomorphism source record](styles/skeuomorphism/sources.md) credits the f
 ## Web Brutalism styling catalog
 
 The [Web Brutalism source record](styles/web-brutalism/sources.md) credits David Bryant Copeland for his authored content-first guidelines and records their CC BY-NC-SA 4.0 terms. Brutalist Websites is a separately inspected directory reference; a sole family inventor, directory curator or founding date is not asserted without primary evidence. No upstream prose, site layout, component code, screenshot or font binary is imported. Atlas's Open Index document, original notes, style recipe and interactions are by Tamir / Phi Vuong Tuong Tam with Codex AI assistance. The preview is one content-first variant; other expressive directions need separate assessment. Atlas's publishing license remains undecided.
+
+## Flat Design references
+
+The [Flat Design source record](styles/flat-design/sources.md) distinguishes NN/g's authored explanations and original signifier research, Designmodo's Flat-UI kit, technical standards, and Atlas's own Next Up implementation. Those source works are referenced rather than copied. Designmodo's inspected kit contains differing license statements across artifacts; this entry imports no kit code, fonts, artwork or covered adaptations, and does not treat a root license as permission for every asset. Historical influences do not establish a sole inventor. The numerical recipe and task-board behavior are original Atlas choices.

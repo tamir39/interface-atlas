@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-motion="off">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An original Flat Design task-board specimen from Interface Atlas. Compare nine bounded theme profiles.">
+<title>Next Up — Flat Design / Interface Atlas</title>
+<link rel="icon" type="image/svg+xml" href="../../../assets/brand/favicon.svg">
+<link rel="stylesheet" href="theme-tokens.css"><link rel="stylesheet" href="styles.css"><script src="preview.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to task board</a>
+<div class="page-shell">
+<header class="page-header">
+<a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home"><svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg><span>Interface Atlas</span></a>
+<nav class="reference-nav" aria-label="Reference"><a href="../../README.md">Style catalog</a><a href="../README.md">Flat Design entry</a></nav>
+</header>
+<main id="main" tabindex="-1">
+<section class="hero" aria-labelledby="page-title">
+<div class="hero-copy"><p class="eyebrow">07 / Flat Design / Working specimen</p><h1 id="page-title">Next Up<span class="title-mark">.</span></h1><p class="lead">A small place for the work in front of you.</p><p class="intro-copy">Choose a priority. Finish one thing. Keep the next step clear.</p><p class="hero-note">Four fictional sample tasks · Page-only state · Reload resets</p></div>
+<div class="flat-art" aria-hidden="true"><div class="art-top"><span class="art-disc"></span><span class="art-bars"><i></i><i></i><i></i></span></div><div class="art-bottom"><span class="art-square"></span><span class="art-half"></span></div></div>
+</section>
+<details class="settings">
+<summary>Theme &amp; appearance <span class="support">/ <span id="theme-label">Editorial</span></span></summary>
+<div class="settings-body"><div class="control-grid">
+<div class="field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial">Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+<div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+<div class="field"><label for="motion">Border feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On — 120ms</option></select></div>
+</div><p id="material-status" class="support">Opaque color planes · light appearance · border feedback off.</p><p class="support">Color roles, type stacks and declared panel/control corners come from the selected profile. This flat treatment removes shadows, gradients, texture and blur. Installed fallback fonts may render.</p></div>
+</details>
+<p id="js-status" class="runtime-note">The four sample tasks are readable below. Interactive settings, completion, filtering and task creation need JavaScript and remain unavailable until initialization succeeds.</p>
+<div class="workspace">
+<section class="board-panel" aria-labelledby="board-heading">
+<div class="board-heading"><div><p class="eyebrow">Your working list</p><h2 id="board-heading">A little progress.</h2></div><p id="task-summary" class="support">3 open · 1 done · 4 total</p></div>
+<div class="board-tools"><div class="field filter-field"><label for="task-filter">Show tasks</label><select id="task-filter" aria-describedby="filter-status" disabled><option value="all">All tasks</option><option value="open">Open tasks</option><option value="done">Done tasks</option></select></div><p id="filter-status" class="support">Showing all 4 tasks in original order.</p></div>
+<p class="task-help support" id="task-help">Check a task to mark it done. Uncheck it to reopen. Priority is a label; it does not reorder the list.</p>
+<ul id="task-list" class="task-list" aria-describedby="task-help">
+<li class="task-item" data-task-id="focus-states" data-priority="high"><label class="task-choice" for="task-focus-states"><input id="task-focus-states" class="task-toggle" type="checkbox" disabled><span class="task-title">Review the toolbar focus states</span></label><p class="task-description">Keep a visible keyboard route through the toolbar.</p><div class="task-meta"><span class="task-priority">High priority</span><span class="task-state">Open</span></div></li>
+<li class="task-item" data-task-id="responsive-navigation" data-priority="normal"><label class="task-choice" for="task-responsive-navigation"><input id="task-responsive-navigation" class="task-toggle" type="checkbox" disabled><span class="task-title">Check the narrow navigation</span></label><p class="task-description">Make room for long labels without hiding the current route.</p><div class="task-meta"><span class="task-priority">Normal priority</span><span class="task-state">Open</span></div></li>
+<li class="task-item" data-task-id="form-errors" data-priority="high"><label class="task-choice" for="task-form-errors"><input id="task-form-errors" class="task-toggle" type="checkbox" disabled><span class="task-title">Write the form error messages</span></label><p class="task-description">Name the problem and give one useful way to fix it.</p><div class="task-meta"><span class="task-priority">High priority</span><span class="task-state">Open</span></div></li>
+<li class="task-item is-done" data-task-id="source-credits" data-priority="low"><label class="task-choice" for="task-source-credits"><input id="task-source-credits" class="task-toggle" type="checkbox" checked disabled><span class="task-title">Keep the source credits together</span></label><p class="task-description">Record the author, source link and reuse terms beside the work.</p><div class="task-meta"><span class="task-priority">Low priority</span><span class="task-state">Done</span></div></li>
+</ul>
+<div id="empty-tasks" class="empty-tasks" hidden><h3>No tasks in this view.</h3><p class="support">Your other tasks are still on this page. Change the view to see them.</p><button id="show-all" class="button secondary-button" type="button" disabled>Show all tasks</button></div>
+</section>
+<section class="composer-panel" aria-labelledby="composer-heading">
+<p class="eyebrow">One next step</p><h2 id="composer-heading">Add a task.</h2><p class="support composer-intro">Keep the title specific enough to act on.</p>
+<form id="add-task-form" novalidate><fieldset id="add-fields" disabled><legend class="sr-only">New task details</legend>
+<div class="field"><label for="task-title">Task title <span class="support">(required)</span></label><input id="task-title" name="title" type="text" required minlength="3" autocomplete="off" aria-describedby="title-help title-error"><p id="title-help" class="support">3–64 characters after trimming spaces.</p><p id="title-error" class="field-error" hidden></p></div>
+<div class="field"><label for="task-priority">Priority</label><select id="task-priority" name="priority"><option value="high">High</option><option value="normal" selected>Normal</option><option value="low">Low</option></select></div>
+<button id="add-task" class="button primary-button" type="submit">Add task <span aria-hidden="true">+</span></button>
+</fieldset></form>
+<p class="support local-boundary">Tasks and form input belong to this open page. Nothing is sent or saved. Reload restores the four sample tasks and clears your additions.</p>
+</section>
+</div>
+<p id="task-status" class="task-status" role="status"></p>
+<section class="about-section" aria-labelledby="about-heading">
+<h2 id="about-heading">A flat surface still needs clear signals.</h2><p class="about-intro">Filled planes group the work. Labels name the actions. Native checkboxes, visible state words and keyboard outlines carry the task without simulated depth.</p>
+<details><summary>What the theme contributes</summary><p id="theme-fit">Editorial contributes its warm palette, serif display stack and declared corners. This treatment replaces selective elevation with opaque filled planes and explicit grouping; it does not reproduce a complete Editorial product.</p><p>All 15 projected variables remain available. Panels use the source card radius; text fields, buttons and selects use the source control radius. Native checkbox glyphs and popup internals remain under browser and system control.</p><p class="font-note"><span>Declared body stack:</span><code id="font-stack">Manrope, "Segoe UI", Arial, sans-serif</code></p><div class="source-links"><a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference</a><a id="theme-credits-link" href="../../../themes/editorial/sources.md">Editorial source &amp; font credits</a></div></details>
+<details><summary>Scope and source credits</summary><p>This is one original Flat Design task-board interpretation by Tamir (Phi Vuong Tuong Tam), with Codex AI assistance. Flat Design does not require square corners, tiny type or an empty page. No outside interface, code, illustration or font file is reproduced.</p><p>Historical context, research authors, source dates and reuse terms belong in the <a href="../sources.md">source record</a>. The <a href="../validation.md">validation record</a> separates this finite specimen from broader theme fit and complete accessibility validation.</p></details>
+</section>
+</main>
+<footer class="page-footer"><p>Next Up / An original Interface Atlas reference task.<br>Draft styling entry · Nine bounded profiles · No account or durable task storage.</p><nav aria-label="Further reading"><a href="../style.md">Flat Design rules</a><a href="../motion.md">Optional motion</a><a href="../../../examples/flat-design-composition-evaluation/README.md">Composition trials</a></nav></footer>
+</div>
+</body>
+</html>

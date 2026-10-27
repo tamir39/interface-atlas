@@ -140,3 +140,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Web Brutalism research and implementation
 
 [Web Brutalism's source dossier](../styles/web-brutalism/sources.md) separates Copeland's authored guidelines and their license from the heterogeneous directory reference, standards facts and original Atlas choices. [The content-first evaluation](../examples/web-brutalism-composition-evaluation/README.md) tests ordinary HTML articles, native fragment/history behavior, optional index filtering and actual selected-note downloads. It does not define every experimental Brutalist site or imply that raw styling establishes usability, performance or accessibility.
+
+## Flat Design family research
+
+[Flat Design sources and credits](../styles/flat-design/sources.md) records source authors/owners, inspected dates, artifact terms and reference boundaries. The entry separates planar styling from Minimalism, Web Brutalism and later depth-bearing variants. Its [Next Up composition evaluation](../examples/flat-design-composition-evaluation/README.md) distinguishes nine source-profile fit judgments, declared depth removal, original-radius preservation and finite browser/task evidence.

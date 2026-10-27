@@ -43,6 +43,48 @@
       }
     },
     {
+      "id": "flat-design",
+      "name": "Flat Design",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "form",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; Kate Moran and Nielsen Norman Group credited for analysis and research, Microsoft for an authored design precedent, Designmodo for Flat UI; no sole creator claimed",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "flat-ui",
+        "two-dimensional-ui"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "consumer-app",
+        "product-dashboard",
+        "service-interface",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-restrained",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/flat-design/README.md",
+        "style": "styles/flat-design/style.md",
+        "sources": "styles/flat-design/sources.md",
+        "motion": "styles/flat-design/motion.md",
+        "validation": "styles/flat-design/validation.md"
+      },
+      "reading_words": {
+        "readme": 339,
+        "style": 1749,
+        "sources": 1061,
+        "motion": 336,
+        "validation": 546
+      }
+    },
+    {
       "id": "glassmorphism",
       "name": "Glassmorphism",
       "revision": "0.1.0-draft",

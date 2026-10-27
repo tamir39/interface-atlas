@@ -162,6 +162,7 @@ node tools/validate-claymorphism.mjs --module /path/to/playwright/index.mjs --br
 node tools/validate-neumorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-soft-results
 node tools/validate-skeuomorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-skeuo-results
 node tools/validate-web-brutalism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-brut-results
+node tools/validate-flat-design.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-flat-results
 ```
 
 See the [style validation record](../styles/glassmorphism/validation.md) and [composition evaluation](../examples/style-composition-evaluation/README.md) for exact coverage and exclusions. Safe rendering of a profile is not proof that glass should replace a theme's default surfaces.
@@ -175,3 +176,5 @@ Neumorphism's [validation record](../styles/neumorphism/validation.md) and [comp
 Skeuomorphism's [validation record](../styles/skeuomorphism/validation.md) and [notebook-variant evaluation](../examples/skeuomorphism-composition-evaluation/README.md) cover opaque paper-face containment, explicit artifact geometry, indexed drafts/applied snapshots, literal text rendering and actual UTF-8 download contents. Fit judgments and numerical evidence apply to this notebook variant. No upstream UI framework, bitmap texture or platform artwork is required.
 
 Web Brutalism's [validation record](../styles/web-brutalism/validation.md) and [content-first evaluation](../examples/web-brutalism-composition-evaluation/README.md) cover authored flat geometry, ordinary document reading before scripts, native fragment/history behavior and actual selected-note downloads. Native checkbox glyphs and popup internals remain user-agent controlled. A passing token profile does not endorse this layout for every theme or every experimental family variant.
+
+Flat Design's [validation record](../styles/flat-design/validation.md) and [task-board evaluation](../examples/flat-design-composition-evaluation/README.md) cover opaque planes, source geometry, explicit task states, local creation/completion and filtered focus recovery. The entry removes decorative depth rather than requiring square corners or reduced content. Native checkbox glyphs and select popup internals remain user-agent controlled.
