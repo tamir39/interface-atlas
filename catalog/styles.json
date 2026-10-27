@@ -123,6 +123,47 @@
         "motion": 457,
         "validation": 450
       }
+    },
+    {
+      "id": "neumorphism",
+      "name": "Neumorphism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "form",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; Jason Kelley credited for naming, Michał Malewicz for explanation and popularization, Oleksandr Plyuto for the influential concept",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "soft-ui",
+        "neuomorphism"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "reading-tools",
+        "personal-tools",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-restrained",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/neumorphism/README.md",
+        "style": "styles/neumorphism/style.md",
+        "sources": "styles/neumorphism/sources.md",
+        "motion": "styles/neumorphism/motion.md",
+        "validation": "styles/neumorphism/validation.md"
+      },
+      "reading_words": {
+        "readme": 343,
+        "style": 1839,
+        "sources": 976,
+        "motion": 440,
+        "validation": 555
+      }
     }
   ]
 }

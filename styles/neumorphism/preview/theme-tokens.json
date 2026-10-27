@@ -1,0 +1,871 @@
+{
+  "schema_version": 1,
+  "interpretation": "Original Atlas token projection. Source theme credits remain authoritative; system fallbacks may render instead of named fonts.",
+  "profiles": [
+    {
+      "id": "blueprint",
+      "name": "Blueprint",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "source": {
+        "file": "themes/blueprint/preview/styles.css",
+        "sha256": "2e965924cd83c433653ffd73adb1a46c34308c19a4e803ed2cf9046a45d0c763",
+        "credits": "themes/blueprint/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--accent"
+        },
+        "--on-primary": {
+          "source": "--on-accent"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--ink"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--body-font"
+        },
+        "--display-font": {
+          "source": "--display-font"
+        },
+        "--mono-font": {
+          "source": "--display-font"
+        },
+        "--card-radius": {
+          "source": "--radius-panel"
+        },
+        "--control-radius": {
+          "source": "--radius-control"
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#f3f7ff",
+          "--surface": "#e4edff",
+          "--raised": "#ffffff",
+          "--ink": "#142e61",
+          "--muted": "#46618d",
+          "--primary": "#1644b8",
+          "--on-primary": "#ffffff",
+          "--border": "#6680ac",
+          "--focus": "#142e61",
+          "--error": "#a23148",
+          "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+          "--display-font": "'JetBrains Mono', Consolas, monospace",
+          "--mono-font": "'JetBrains Mono', Consolas, monospace",
+          "--card-radius": "8px",
+          "--control-radius": "4px"
+        },
+        "dark": {
+          "--page": "#0c1528",
+          "--surface": "#182b48",
+          "--raised": "#12213a",
+          "--ink": "#e7f0ff",
+          "--muted": "#aabbda",
+          "--primary": "#8ab7ff",
+          "--on-primary": "#091d3c",
+          "--border": "#7292c3",
+          "--focus": "#e7f0ff",
+          "--error": "#f2afbd",
+          "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+          "--display-font": "'JetBrains Mono', Consolas, monospace",
+          "--mono-font": "'JetBrains Mono', Consolas, monospace",
+          "--card-radius": "8px",
+          "--control-radius": "4px"
+        }
+      }
+    },
+    {
+      "id": "botanical",
+      "name": "Botanical",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "source": {
+        "file": "themes/botanical/preview/styles.css",
+        "sha256": "f52745bf827e08cf26cd6c34894ffc0a9a4a7370c478c42813b6ed5fd8d0314b",
+        "credits": "themes/botanical/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--ink"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--body-font"
+        },
+        "--display-font": {
+          "source": "--display-font"
+        },
+        "--mono-font": {
+          "source": "--mono-font"
+        },
+        "--card-radius": {
+          "source": "--panel-radius"
+        },
+        "--control-radius": {
+          "source": "--control-radius"
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#f6f5ed",
+          "--surface": "#e5eadc",
+          "--raised": "#fff",
+          "--ink": "#293d2f",
+          "--muted": "#596550",
+          "--primary": "#386046",
+          "--on-primary": "#fff",
+          "--border": "#69795f",
+          "--focus": "#293d2f",
+          "--error": "#943743",
+          "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+          "--display-font": "'DM Serif Display', Georgia, serif",
+          "--mono-font": "'JetBrains Mono', Consolas, monospace",
+          "--card-radius": "32px 8px 32px 8px",
+          "--control-radius": "22px 6px 22px 6px"
+        },
+        "dark": {
+          "--page": "#101d17",
+          "--surface": "#23392c",
+          "--raised": "#192b21",
+          "--ink": "#f3edda",
+          "--muted": "#b7c9b6",
+          "--primary": "#abd0a1",
+          "--on-primary": "#14291a",
+          "--border": "#8aab89",
+          "--focus": "#f3edda",
+          "--error": "#f0b0b5",
+          "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+          "--display-font": "'DM Serif Display', Georgia, serif",
+          "--mono-font": "'JetBrains Mono', Consolas, monospace",
+          "--card-radius": "32px 8px 32px 8px",
+          "--control-radius": "22px 6px 22px 6px"
+        }
+      }
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "source": {
+        "file": "themes/editorial/preview/styles.css",
+        "sha256": "f6e6a1889d4f6de1268c78f6fc4af7513f8fa1f4c5e061a82517911590d4a518",
+        "credits": "themes/editorial/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--text"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--text"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--sans"
+        },
+        "--display-font": {
+          "source": "--serif"
+        },
+        "--mono-font": {
+          "source": "--mono"
+        },
+        "--card-radius": {
+          "source": "--specimen-radius"
+        },
+        "--control-radius": {
+          "source": "--specimen-input-radius"
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#fbf8f5",
+          "--surface": "#eee8f2",
+          "--raised": "#ffffff",
+          "--ink": "#332b49",
+          "--muted": "#655c7e",
+          "--primary": "#493b61",
+          "--on-primary": "#ffffff",
+          "--border": "#8c7d9b",
+          "--focus": "#332b49",
+          "--error": "#9e3349",
+          "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "\"DM Serif Display\", Georgia, \"Times New Roman\", serif",
+          "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
+          "--card-radius": "24px",
+          "--control-radius": "12px"
+        },
+        "dark": {
+          "--page": "#19151e",
+          "--surface": "#2d2536",
+          "--raised": "#231e2b",
+          "--ink": "#f4ede5",
+          "--muted": "#c2b2ce",
+          "--primary": "#c7abe8",
+          "--on-primary": "#24182f",
+          "--border": "#9c87af",
+          "--focus": "#f4ede5",
+          "--error": "#ffb4c1",
+          "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "\"DM Serif Display\", Georgia, \"Times New Roman\", serif",
+          "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
+          "--card-radius": "24px",
+          "--control-radius": "12px"
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "source": {
+        "file": "themes/gallery/preview/styles.css",
+        "sha256": "992ba5770238b3e5725d531939614f0b5c2f4782d898fe0f23bc83244cde8bcf",
+        "credits": "themes/gallery/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--ink"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "font-family"
+        },
+        "--display-font": {
+          "source": "font-family"
+        },
+        "--mono-font": {
+          "source": "Atlas specimen fallback",
+          "interpretation": true
+        },
+        "--card-radius": {
+          "source": ".preview-settings",
+          "interpretation": false
+        },
+        "--control-radius": {
+          "source": "button, select, input[type=\"search\"], input[type=\"text\"]",
+          "interpretation": false
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#f6f4f0",
+          "--surface": "#e9e5dd",
+          "--raised": "#ffffff",
+          "--ink": "#252823",
+          "--muted": "#596057",
+          "--primary": "#634a38",
+          "--on-primary": "#ffffff",
+          "--border": "#787c70",
+          "--focus": "#252823",
+          "--error": "#9a3443",
+          "--theme-font": "Inter, 'Segoe UI', Arial, sans-serif",
+          "--display-font": "Inter, 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "Consolas, monospace",
+          "--card-radius": "4px",
+          "--control-radius": "4px"
+        },
+        "dark": {
+          "--page": "#171a17",
+          "--surface": "#2b3029",
+          "--raised": "#20241f",
+          "--ink": "#f2f1e9",
+          "--muted": "#c3c8ba",
+          "--primary": "#dec6aa",
+          "--on-primary": "#292117",
+          "--border": "#8d9883",
+          "--focus": "#f2f1e9",
+          "--error": "#f2adb5",
+          "--theme-font": "Inter, 'Segoe UI', Arial, sans-serif",
+          "--display-font": "Inter, 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "Consolas, monospace",
+          "--card-radius": "4px",
+          "--control-radius": "4px"
+        }
+      }
+    },
+    {
+      "id": "layered",
+      "name": "Layered",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "source": {
+        "file": "themes/layered/preview/styles.css",
+        "sha256": "7a7751e0e00f1e6bce48ba2cf49f861999e45e22d90b78423551257519f5acad",
+        "credits": "themes/layered/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--raised"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--primary"
+        },
+        "--on-primary": {
+          "source": "--on-primary"
+        },
+        "--border": {
+          "source": "--border"
+        },
+        "--focus": {
+          "source": "--focus"
+        },
+        "--error": {
+          "source": "--error"
+        },
+        "--theme-font": {
+          "source": "font-family"
+        },
+        "--display-font": {
+          "source": "font-family"
+        },
+        "--mono-font": {
+          "source": "Atlas specimen fallback",
+          "interpretation": true
+        },
+        "--card-radius": {
+          "source": ".workspace-sidebar",
+          "interpretation": false
+        },
+        "--control-radius": {
+          "source": ".field input, .field select",
+          "interpretation": false
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#eaf2f1",
+          "--surface": "#f7fbfa",
+          "--raised": "#ffffff",
+          "--ink": "#172f2c",
+          "--muted": "#405e58",
+          "--primary": "#185c50",
+          "--on-primary": "#ffffff",
+          "--border": "#58766e",
+          "--focus": "#6d3b83",
+          "--error": "#972f3a",
+          "--theme-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+          "--mono-font": "Consolas, monospace",
+          "--card-radius": "24px",
+          "--control-radius": "12px"
+        },
+        "dark": {
+          "--page": "#101c1c",
+          "--surface": "#1e3030",
+          "--raised": "#273c3b",
+          "--ink": "#e7f3ef",
+          "--muted": "#b4cec5",
+          "--primary": "#a2d6c5",
+          "--on-primary": "#12382e",
+          "--border": "#8aaba1",
+          "--focus": "#e7b6f4",
+          "--error": "#ffb3be",
+          "--theme-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+          "--mono-font": "Consolas, monospace",
+          "--card-radius": "24px",
+          "--control-radius": "12px"
+        }
+      }
+    },
+    {
+      "id": "play",
+      "name": "Play",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "source": {
+        "file": "themes/play/preview/styles.css",
+        "sha256": "f2f8515e6eed32a717dabf91af2a3ff27e47fbf603ce4834c313ee51fc8e031c",
+        "credits": "themes/play/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--ink"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--font-sans"
+        },
+        "--display-font": {
+          "source": "--font-sans"
+        },
+        "--mono-font": {
+          "source": "--font-mono"
+        },
+        "--card-radius": {
+          "source": "--panel-radius"
+        },
+        "--control-radius": {
+          "source": "--control-radius"
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#fff9e9",
+          "--surface": "#f0e4ff",
+          "--raised": "#ffffff",
+          "--ink": "#2b203d",
+          "--muted": "#665572",
+          "--primary": "#6331a7",
+          "--on-primary": "#ffffff",
+          "--border": "#80658d",
+          "--focus": "#2b203d",
+          "--error": "#9d2438",
+          "--theme-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+          "--display-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+          "--card-radius": "30px",
+          "--control-radius": "14px"
+        },
+        "dark": {
+          "--page": "#1c122c",
+          "--surface": "#342248",
+          "--raised": "#281b3b",
+          "--ink": "#fff4dc",
+          "--muted": "#d2bde3",
+          "--primary": "#e7ef98",
+          "--on-primary": "#242515",
+          "--border": "#b29ac7",
+          "--focus": "#fff4dc",
+          "--error": "#ffb7c5",
+          "--theme-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+          "--display-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+          "--card-radius": "30px",
+          "--control-radius": "14px"
+        }
+      }
+    },
+    {
+      "id": "precision",
+      "name": "Precision",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "source": {
+        "file": "themes/precision/preview/styles.css",
+        "sha256": "11d164c3a2a5ded382e0fdc85692dc0b82727d3918e0b074eb952eed0fae8811",
+        "credits": "themes/precision/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--text"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--focus"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--sans"
+        },
+        "--display-font": {
+          "source": "--sans"
+        },
+        "--mono-font": {
+          "source": "--mono"
+        },
+        "--card-radius": {
+          "source": ".preview-settings",
+          "interpretation": false
+        },
+        "--control-radius": {
+          "source": ".button",
+          "interpretation": false
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#f6f8fb",
+          "--surface": "#eef2f6",
+          "--raised": "#ffffff",
+          "--ink": "#17212f",
+          "--muted": "#526174",
+          "--primary": "#175cd3",
+          "--on-primary": "#ffffff",
+          "--border": "#7a8899",
+          "--focus": "#175cd3",
+          "--error": "#b12a3c",
+          "--theme-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+          "--display-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
+          "--card-radius": "4px",
+          "--control-radius": "4px"
+        },
+        "dark": {
+          "--page": "#0c121c",
+          "--surface": "#1c2a3d",
+          "--raised": "#141e2c",
+          "--ink": "#e9eff7",
+          "--muted": "#aab9cc",
+          "--primary": "#88b7ff",
+          "--on-primary": "#102443",
+          "--border": "#7789a3",
+          "--focus": "#b9d2ff",
+          "--error": "#ffb2bd",
+          "--theme-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+          "--display-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+          "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
+          "--card-radius": "4px",
+          "--control-radius": "4px"
+        }
+      }
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam) with Codex AI assistance",
+      "source": {
+        "file": "themes/pulse/preview/styles.css",
+        "sha256": "7742b7bf79e68f694c8350a512c98a200c4ba56646d47bbe22c077e033e30f3a",
+        "credits": "themes/pulse/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--ink"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--ink"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--body-font"
+        },
+        "--display-font": {
+          "source": "--display-font"
+        },
+        "--mono-font": {
+          "source": "--mono-font"
+        },
+        "--card-radius": {
+          "source": "--panel-radius"
+        },
+        "--control-radius": {
+          "source": "--control-radius"
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#f4f5ef",
+          "--surface": "#e7eadf",
+          "--raised": "#fff",
+          "--ink": "#172013",
+          "--muted": "#53614a",
+          "--primary": "#456b0c",
+          "--on-primary": "#fff",
+          "--border": "#6a7a5a",
+          "--focus": "#172013",
+          "--error": "#982e3e",
+          "--theme-font": "\"Pulse Barlow Local\",\"Segoe UI\",sans-serif",
+          "--display-font": "\"Barlow Condensed\",Impact,\"Arial Narrow\",sans-serif",
+          "--mono-font": "Consolas,\"Liberation Mono\",monospace",
+          "--card-radius": "12px",
+          "--control-radius": "6px"
+        },
+        "dark": {
+          "--page": "#10140d",
+          "--surface": "#242d1c",
+          "--raised": "#191f15",
+          "--ink": "#f5f8ee",
+          "--muted": "#bec9ae",
+          "--primary": "#c4f047",
+          "--on-primary": "#162006",
+          "--border": "#849871",
+          "--focus": "#f5f8ee",
+          "--error": "#f3a9b3",
+          "--theme-font": "\"Pulse Barlow Local\",\"Segoe UI\",sans-serif",
+          "--display-font": "\"Barlow Condensed\",Impact,\"Arial Narrow\",sans-serif",
+          "--mono-font": "Consolas,\"Liberation Mono\",monospace",
+          "--card-radius": "12px",
+          "--control-radius": "6px"
+        }
+      }
+    },
+    {
+      "id": "swiss",
+      "name": "Swiss",
+      "revision": "0.1.0-draft",
+      "creator": "Tamir (Phi Vuong Tuong Tam)",
+      "source": {
+        "file": "themes/swiss/preview/styles.css",
+        "sha256": "c8ff5ac231b254862b2b0259dc150f0d371b1141b88d8c3b263b693b8ac90f2f",
+        "credits": "themes/swiss/sources.md"
+      },
+      "scope": "Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.",
+      "mappings": {
+        "--page": {
+          "source": "--page"
+        },
+        "--surface": {
+          "source": "--surface"
+        },
+        "--raised": {
+          "source": "--panel"
+        },
+        "--ink": {
+          "source": "--text"
+        },
+        "--muted": {
+          "source": "--muted"
+        },
+        "--primary": {
+          "source": "--action"
+        },
+        "--on-primary": {
+          "source": "--on-action"
+        },
+        "--border": {
+          "source": "--control-border"
+        },
+        "--focus": {
+          "source": "--text"
+        },
+        "--error": {
+          "source": "--danger"
+        },
+        "--theme-font": {
+          "source": "--sans"
+        },
+        "--display-font": {
+          "source": "--sans"
+        },
+        "--mono-font": {
+          "source": "--mono"
+        },
+        "--card-radius": {
+          "source": ".project-art",
+          "interpretation": false
+        },
+        "--control-radius": {
+          "source": "input[type=\"text\"], select",
+          "interpretation": false
+        }
+      },
+      "tokens": {
+        "light": {
+          "--page": "#fafaf7",
+          "--surface": "#eeeee8",
+          "--raised": "#fff",
+          "--ink": "#181816",
+          "--muted": "#5b5b53",
+          "--primary": "#b52e21",
+          "--on-primary": "#fff",
+          "--border": "#76766c",
+          "--focus": "#181816",
+          "--error": "#962b32",
+          "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
+          "--card-radius": "2px",
+          "--control-radius": "2px"
+        },
+        "dark": {
+          "--page": "#171716",
+          "--surface": "#2b2a27",
+          "--raised": "#20201e",
+          "--ink": "#faf6ed",
+          "--muted": "#c3beb4",
+          "--primary": "#ff8978",
+          "--on-primary": "#35160f",
+          "--border": "#97948a",
+          "--focus": "#faf6ed",
+          "--error": "#ffb4c1",
+          "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--display-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+          "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
+          "--card-radius": "2px",
+          "--control-radius": "2px"
+        }
+      }
+    }
+  ]
+}

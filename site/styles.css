@@ -227,3 +227,13 @@ h1 em { color: var(--action); }
 .clay-study-face span { display: block; font-size: .75rem; font-weight: 600; line-height: 1.5; }
 .clay-study-face strong { display: block; margin-block: 1.5rem; font-size: clamp(1.75rem, 3vw, 2.75rem); font-weight: 650; line-height: 1.05; letter-spacing: -.045em; }
 @media (forced-colors: active) { .clay-study, .clay-study-pillow, .clay-study-face { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; } }
+
+/* Original Neumorphism collection study: plane, raised surface and text face match. */
+.soft-study { padding: clamp(1.25rem, 4vw, 2rem); min-block-size: 260px; border-radius: 20px; background: #e9eeeb; color: #263b38; display: grid; gap: 1.25rem; }
+.soft-study-surface { padding: 12px; border: 1px solid #7c8b85; border-radius: 20px; background: #e9eeeb; box-shadow: -6px -6px 12px #ffffffb3, 6px 6px 12px #263b3829; }
+.soft-study-face { position: relative; padding: 1.25rem; border-radius: 8px; background: #e9eeeb; color: #263b38; }
+.soft-study-face span { display: block; font-size: .75rem; font-weight: 600; line-height: 1.5; }
+.soft-study-face strong { display: block; margin-block: 1.25rem; font-size: clamp(1.75rem, 3vw, 2.75rem); font-weight: 600; line-height: 1.05; letter-spacing: -.045em; }
+.soft-study-grooves { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.soft-study-grooves span { display: block; height: 12px; background: #e9eeeb; border-radius: 6px; box-shadow: inset 3px 3px 6px #263b3829, inset -3px -3px 6px #ffffffb3; }
+@media (forced-colors: active) { .soft-study, .soft-study-surface, .soft-study-face, .soft-study-grooves span { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; } }

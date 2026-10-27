@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-motion="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original Interface Atlas Neumorphism study: shallow same-material relief and a browser-local reading preset workbench across nine theme identities.">
+  <title>Neumorphism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the reading workbench</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home">
+        <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg>
+        <span>Interface Atlas</span>
+      </a>
+      <nav class="reference-nav" aria-label="Reference pages"><a href="../../README.md">Style catalog</a><a href="../style.md">Style rules <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">Style study / 04</p><h1 id="page-title">Neumorphism<span aria-hidden="true">.</span></h1></div>
+        <div class="intro-copy"><p class="intro-lead">A little relief.<br>A clearer place to read.</p><p>Shallow light and shade lift a surface from its surroundings. The material stays the same; boundaries and words keep the task clear.</p></div>
+      </section>
+
+      <section class="settings-panel" aria-labelledby="settings-title">
+        <div class="settings-heading"><h2 id="settings-title">Shape the study</h2><p class="support">One specimen. Nine theme identities.</p></div>
+        <div class="control-grid">
+          <div class="field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial" selected>Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+          <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+          <div class="field"><label for="motion">Press feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On</option></select></div>
+        </div>
+        <p id="material-status" class="material-status" role="status">Same-material relief · light appearance · press travel off.</p>
+        <p id="js-status" class="support">Reading settings need JavaScript. The sample, reference text, links, and disclosures remain available.</p>
+      </section>
+
+      <section class="quiet-page soft-plane" aria-labelledby="workbench-title">
+        <header class="workbench-heading">
+          <div class="workbench-identity"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true" focusable="false"><path d="M20 10c-4-3-9-3-14-2v23c5-1 10-1 14 2 4-3 9-3 14-2V8c-5-1-10-1-14 2ZM20 10v23M11 15h4M11 20h4M25 15h4M25 20h4"/></svg><div><p class="eyebrow">An original reading workbench</p><h2 id="workbench-title">Quiet page</h2></div></div>
+          <p class="workbench-note">Make room for the words.<br><span class="support">Browser-local example · <span id="theme-label">Editorial</span></span></p>
+        </header>
+
+        <div class="measure-section">
+          <div><p class="eyebrow">01 / Pick a measure</p><h3>A comfortable line.</h3><p class="support">Choose a draft width. <br>Apply it with your other settings.</p></div>
+          <div class="width-options" role="group" aria-label="Draft reading width">
+            <button class="width-option soft-surface" type="button" data-width="45" aria-pressed="false" disabled><span class="soft-face"><span class="measure-number">45<span>ch</span></span><span class="measure-label">Narrow</span><span class="choice-state" aria-hidden="true">Choose draft</span></span></button>
+            <button class="width-option soft-surface" type="button" data-width="60" aria-pressed="true" disabled><span class="soft-face"><span class="measure-number">60<span>ch</span></span><span class="measure-label">Balanced</span><span class="choice-state" aria-hidden="true">✓ Selected</span></span></button>
+            <button class="width-option soft-surface" type="button" data-width="72" aria-pressed="false" disabled><span class="soft-face"><span class="measure-number">72<span>ch</span></span><span class="measure-label">Wide</span><span class="choice-state" aria-hidden="true">Choose draft</span></span></button>
+          </div>
+        </div>
+        <p id="width-status" class="width-status" role="status">60ch selected for the draft. The sample currently uses 60ch.</p>
+
+        <div class="workbench-grid">
+          <section class="reading-settings" aria-labelledby="reading-settings-title">
+            <p class="eyebrow">02 / Tune your page</p><h3 id="reading-settings-title">Your reading settings.</h3>
+            <p class="support">Try a few changes, then apply them to the sample beside you.</p>
+            <form id="reading-form" novalidate>
+              <fieldset id="reading-fields" disabled>
+                <legend class="sr-only">Draft reading settings</legend>
+                <div class="field"><label for="preset-name">Preset name <span class="support">(required)</span></label><input type="text" id="preset-name" name="preset" value="A little room to read" required minlength="3" maxlength="48" aria-describedby="name-hint name-error"><p id="name-hint" class="support">3–48 characters after trimming spaces.</p><p id="name-error" class="field-error" hidden></p></div>
+                <div class="field"><label for="text-size">Text size in pixels <span class="support">(required)</span></label><input type="number" id="text-size" name="size" value="18" min="16" max="24" step="2" required inputmode="numeric" aria-describedby="size-hint size-error"><p id="size-hint" class="support">16–24px, in steps of 2.</p><p id="size-error" class="field-error" hidden></p></div>
+                <div class="field"><label for="line-spacing">Line spacing</label><select id="line-spacing" name="spacing" required aria-describedby="spacing-hint spacing-error"><option value="1.5">1.5 · Close</option><option value="1.75" selected>1.75 · Open</option><option value="2">2 · Generous</option></select><p id="spacing-hint" class="support">Space between lines, relative to text size.</p><p id="spacing-error" class="field-error" hidden></p></div>
+                <div class="form-actions"><button id="apply-button" class="button primary-button" type="submit">Apply reading settings <span aria-hidden="true">→</span></button><button id="reset-button" class="button secondary-button" type="button">Reset example</button></div>
+              </fieldset>
+              <p id="draft-status" class="draft-status" data-state="applied" role="status">Example settings are applied. Changes stay in this page only.</p>
+            </form>
+          </section>
+
+          <section class="reading-shell soft-surface" aria-labelledby="sample-heading">
+            <div class="soft-face reading-face">
+              <div class="sample-meta"><h3 id="sample-heading" class="eyebrow">03 / Reading sample</h3><span class="sample-state">Applied settings</span></div>
+              <dl class="applied-settings"><div><dt>Measure</dt><dd id="applied-width">60ch</dd></div><div><dt>Text</dt><dd id="applied-size">18px</dd></div><div><dt>Spacing</dt><dd id="applied-spacing">1.75</dd></div></dl>
+              <article id="reading-sample" style="max-width: 60ch; font-size: 18px; line-height: 1.75;" aria-labelledby="sample-title">
+                <h4 id="sample-title">A little room to read</h4>
+                <p>There is a shelf beside the window where the small things gather: a smooth stone, a folded map, a cup with a chipped blue rim. None of them asks for attention. Together, they make a place feel familiar.</p>
+                <p>On a quiet morning, the light reaches the shelf before it reaches the table. It moves slowly across the wood. A page turns. Outside, someone stops to fasten a loose shoelace, then carries on.</p>
+                <p>Reading can be like that: a small pause with enough room around it. A line ends, the eye returns, and the next thought is waiting. There is no need to hurry past the space between.</p>
+              </article>
+              <p class="sample-credit">Original Atlas text · width fits the available space</p>
+            </div>
+          </section>
+        </div>
+        <div class="workbench-colophon"><span class="technical">Quiet page / a local, unsaved example</span><a href="#principle">How the relief works <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section id="principle" class="principle-section" aria-labelledby="principle-heading">
+        <div><p class="eyebrow">The material, with boundaries</p><h2 id="principle-heading">One surface.<br>Two directions of light.</h2><p>A raised choice catches light above and shade below. The selected choice turns that relief inward. Words and controls sit on an opaque, unshaded center.</p></div>
+        <div class="principle-notes">
+          <details open><summary>What does the style change?</summary><p>The workbench plane, soft shells, and inner faces share the same opaque theme Surface color. Opposing shadows create shallow relief around a 12px rim. Selected draft width turns the relief inward, with a check, Selected text, pressed semantics, and an Ink outline.</p><p>Soft shells keep the theme’s card corners. Each inner corner is the corresponding outer radius minus 12px, clamped at zero. Ordinary fields and actions retain the theme’s control geometry and separate Raised or Primary fills.</p></details>
+          <details><summary>What comes from the theme?</summary><p>Palette, declared font stacks, and base geometry come from each Atlas theme’s actual preview tokens. This is one limited specimen across nine identities; it does not load nine complete applications.</p><p id="theme-fit">Editorial’s reading palette and type suit this quiet task. Paired inset relief is an explicit departure from its ordinary selective elevation.</p><p class="font-note"><span class="support">Declared body stack:</span><code id="font-stack">'Manrope', 'Segoe UI', Arial, sans-serif</code></p><div class="source-links"><a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference ↗</a><a id="theme-credits-link" href="../../../themes/editorial/sources.md">Editorial source &amp; font credits ↗</a></div></details>
+          <details><summary>What is applied, and what is saved?</summary><p>The width buttons and form edit a draft. Apply reading settings validates the entire draft and updates this sample’s title, text size, line spacing, and maximum line width. Editing leaves the last applied sample visible. Reset example restores both draft and sample.</p><p>Nothing is saved or sent. Reload restores the example. These controls do not change browser, operating-system, or other reading preferences.</p></details>
+          <details><summary>What happens with device preferences?</summary><p>Press feedback starts Off. On adds only 1px of downward press travel with a 120ms transform transition. Reduced motion removes that travel and transition. Shadows change instantly. Forced colors removes shadows while preserving explicit boundaries, selection, errors, and focus. System appearance follows live device changes.</p></details>
+          <details><summary>Where did Neumorphism come from?</summary><p>Jason Kelley is credited with suggesting the name; Michał Malewicz documented and popularized the direction. Oleksandr Plyuto created the influential banking concept. These are distinct contributions, not a sole-inventor claim.</p><p>The layout, reading passage, and interaction code are original Atlas work. The <a href="../sources.md">source notes</a> separate historical references from copied material; no third-party component code or assets are imported.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer"><p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Original Quiet page specimen and reading passage.</p><p>Style references: Jason Kelley, Michał Malewicz, Oleksandr Plyuto.<br>Named fonts use local fallbacks; no external assets load.<br><a href="../../../assets/brand/README.md">Atlas mark credits</a> · <a href="../sources.md">Style sources &amp; distinct credits</a></p><nav aria-label="Neumorphism documentation"><a href="../README.md">Style overview</a><a href="README.md">Preview scope</a><a href="../validation.md">Validation record</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav></footer>
+  </div>
+</body>
+</html>

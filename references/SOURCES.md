@@ -128,3 +128,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Claymorphism research and implementation
 
 [Claymorphism's source dossier](../styles/claymorphism/sources.md) records primary naming and soft-3D antecedent evidence, specifically credited authors/artwork, the pinned clay.css metadata and missing-notice boundary, and accessibility references. No external code or imagery is distributed. [The composition evaluation](../examples/claymorphism-composition-evaluation/README.md) separates source facts, original Atlas shape/depth decisions and actual rendered evidence; opaque content faces keep decorative shading out of text-contrast measurements.
+
+## Neumorphism research and implementation
+
+[Neumorphism's source dossier](../styles/neumorphism/sources.md) records verified primary naming/history sources, authors' distinct roles, date limits, reuse boundaries and accessible-state references. [Its composition evaluation](../examples/neumorphism-composition-evaluation/README.md) distinguishes actual same-surface color/geometry/state checks from source-based fit judgments. The reading-preset workbench is original Atlas code with a local draft/applied boundary; changing shadow direction alone is not treated as a sufficient state cue.
