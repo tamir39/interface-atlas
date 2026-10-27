@@ -132,3 +132,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Neumorphism research and implementation
 
 [Neumorphism's source dossier](../styles/neumorphism/sources.md) records verified primary naming/history sources, authors' distinct roles, date limits, reuse boundaries and accessible-state references. [Its composition evaluation](../examples/neumorphism-composition-evaluation/README.md) distinguishes actual same-surface color/geometry/state checks from source-based fit judgments. The reading-preset workbench is original Atlas code with a local draft/applied boundary; changing shadow direction alone is not treated as a sufficient state cue.
+
+## Skeuomorphism research and implementation
+
+[Skeuomorphism's source dossier](../styles/skeuomorphism/sources.md) records specific primary precedents and author roles, the four-author Star paper, Apple's own named interfaces, Norman's explanations and artifact-specific reuse limits. [The Fieldbook evaluation](../examples/skeuomorphism-composition-evaluation/README.md) tests one notebook variant; it does not establish fit for every instrument-panel or collection metaphor. Original Atlas code supplies the visible actions, page-only draft/applied state and real applied-text download.

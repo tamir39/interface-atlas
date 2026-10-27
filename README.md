@@ -11,7 +11,7 @@ A frontend UI/UX knowledge library for preparing project-specific design documen
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load selected library guidance when preparing or deliberately revising that document. For a bounded frontend change, the implementation skill starts from your project's own rules and code.
 
-**Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md), [Neobrutalism](styles/neobrutalism/README.md), [Claymorphism](styles/claymorphism/README.md), and [Neumorphism](styles/neumorphism/README.md) are optional visual-style entries beside the nine themes. Explore their [live labs](https://tamir39.github.io/interface-atlas/#styles) and [composition guidance](knowledge/theme-style-composition.md). The [Neumorphism trial](examples/neumorphism-composition-evaluation/README.md), alongside the earlier style trials, distinguishes rendered profile evidence from theme fit, same-material scope and independent state cues. Other researched families remain candidates.
+**Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md), [Neobrutalism](styles/neobrutalism/README.md), [Claymorphism](styles/claymorphism/README.md), [Neumorphism](styles/neumorphism/README.md), and [Skeuomorphism](styles/skeuomorphism/README.md) are optional visual-style entries beside the nine themes. Explore their [live labs](https://tamir39.github.io/interface-atlas/#styles) and [composition guidance](knowledge/theme-style-composition.md). The [Skeuomorphism trial](examples/skeuomorphism-composition-evaluation/README.md), alongside earlier style trials, distinguishes its notebook variant's rendered evidence from theme fit, broader family possibilities and real task capabilities. Other researched families remain candidates.
 
 **Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery; Layered adds a spacious planning workspace with tonal surfaces, native editing, and scoped recovery. All nine theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), [Layered](themes/layered/validation.md).
 
@@ -125,7 +125,20 @@ interface-atlas/
 │   │       ├── preview.js
 │   │       ├── theme-tokens.css
 │   │       └── theme-tokens.json
-│   └── neumorphism/
+│   ├── neumorphism/
+│   │   ├── README.md
+│   │   ├── style.md
+│   │   ├── motion.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── preview.js
+│   │       ├── theme-tokens.css
+│   │       └── theme-tokens.json
+│   └── skeuomorphism/
 │       ├── README.md
 │       ├── style.md
 │       ├── motion.md
@@ -328,6 +341,12 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── skeuomorphism-composition-evaluation/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── trials.md
+│   │   ├── results.json
+│   │   └── release-checks.json
 │   ├── neumorphism-composition-evaluation/
 │   │   ├── README.md
 │   │   ├── design.md
@@ -452,6 +471,7 @@ interface-atlas/
 │   ├── validate-glassmorphism.mjs
 │   ├── validate-neobrutalism.mjs
 │   ├── validate-neumorphism.mjs
+│   ├── validate-skeuomorphism.mjs
 │   ├── validate-site.mjs
 │   ├── validate-blueprint.mjs
 │   ├── validate-botanical.mjs

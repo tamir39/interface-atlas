@@ -23,9 +23,13 @@ Read discovery summaries first, then only the selected style rules and source cr
 
 Write the accepted recipe as exact project values and semantic roles. Avoid a runtime dependency on Atlas or an instruction such as “read the glass chapter every time.” For a bounded code change, resolve the relevant rules in code or existing project documents; no new design.md is compulsory.
 
+## Physical-object metaphors
+
+When the chosen style borrows a physical object, record the object, the real operations it supports, and the limits of the analogy. Retain useful digital search, keyboard access and direct actions. State which edits are drafts, which are applied locally, and what persistence or export actually provides. A notebook appearance can suggest durable writing; its controls and copy must make the actual capability clear. [Skeuomorphism](../styles/skeuomorphism/README.md) separates the family grammar from its notebook reference; do not add note-editing or download features to unrelated projects merely to use the style.
+
 ## Evidence and interpretation
 
-Judge suitability separately from rendering. A shared profile can render without overflow and still conflict with a theme's intended default. [Glassmorphism trials](../examples/style-composition-evaluation/README.md), [Neobrutalism trials](../examples/neobrutalism-composition-evaluation/README.md), [Claymorphism trials](../examples/claymorphism-composition-evaluation/README.md) and [Neumorphism trials](../examples/neumorphism-composition-evaluation/README.md) separate preserved profile values, scoped adaptations, default-treatment conflicts and actual browser evidence.
+Judge suitability separately from rendering. A shared profile can render without overflow and still conflict with a theme's intended default. [Glassmorphism trials](../examples/style-composition-evaluation/README.md), [Neobrutalism trials](../examples/neobrutalism-composition-evaluation/README.md), [Claymorphism trials](../examples/claymorphism-composition-evaluation/README.md), [Neumorphism trials](../examples/neumorphism-composition-evaluation/README.md) and [Skeuomorphism trials](../examples/skeuomorphism-composition-evaluation/README.md) separate preserved profile values, scoped adaptations, default-treatment conflicts and actual browser evidence.
 
 For transparent materials, evaluate the composited background, not a foreground/tint pair alone. A solid fallback must retain names, controls, hierarchy and state. Prefer an opaque base and progressive enhancement; media preferences have differing support. Read [Glassmorphism's credited rules](../styles/glassmorphism/style.md) for that material's specific constraints.
 

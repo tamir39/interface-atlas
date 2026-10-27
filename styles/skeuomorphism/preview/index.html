@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-motion="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original Interface Atlas Skeuomorphism study: a bound Fieldbook with local note drafts across nine theme identities.">
+  <title>Skeuomorphism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to Fieldbook</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home"><svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg><span>Interface Atlas</span></a>
+      <nav class="reference-nav" aria-label="Reference pages"><a href="../../README.md">Style catalog</a><a href="../style.md">Style rules <span aria-hidden="true">↗</span></a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">Style study / 05</p><h1 id="page-title">Skeuomorphism<span aria-hidden="true">.</span></h1></div>
+        <div class="intro-copy"><p class="intro-lead">A familiar object.<br> A useful little task.</p><p>A cover, a binding, a stack of pages. Physical clues give a notebook its character; plain words and native controls make it work.</p></div>
+      </section>
+
+      <section class="settings-panel" aria-labelledby="settings-title">
+        <div class="settings-heading"><h2 id="settings-title">Shape the study</h2><p class="support">One Fieldbook. Nine theme identities.</p></div>
+        <div class="control-grid">
+          <div class="field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial" selected>Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+          <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+          <div class="field"><label for="motion">Press feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On</option></select></div>
+        </div>
+        <p id="material-status" class="material-status" role="status">Bound paper study · light appearance · press travel off.</p>
+        <p id="js-status" class="support">Note tools need JavaScript. All four original notes, native links, and disclosures remain readable below.</p>
+      </section>
+
+      <section class="fieldbook-cover" aria-labelledby="fieldbook-title">
+        <div class="fieldbook-face">
+          <header class="fieldbook-heading">
+            <div><p class="eyebrow">An original notebook specimen</p><h2 id="fieldbook-title">Fieldbook</h2><p class="support">Small observations, kept together.</p></div>
+            <div class="book-stamp"><span class="technical">ATLAS / VOL. 05</span><span>4 notes · page memory only</span><span class="support"><span id="theme-label">Editorial</span> identity</span></div>
+          </header>
+          <div class="notebook-grid">
+            <aside class="note-index" aria-labelledby="index-title">
+              <div class="section-label"><h3 id="index-title" class="eyebrow">01 / The index</h3><span class="technical">04 leaves</span></div>
+              <div class="search-controls">
+                <div class="field"><label for="note-search">Search applied notes</label><input id="note-search" type="search" placeholder="Title, text, or tag" aria-describedby="search-hint search-status" disabled><p id="search-hint" class="support">Search uses the applied notes, including their tags.</p></div>
+                <button id="clear-search" class="button secondary-button" type="button" disabled>Clear search</button>
+              </div>
+              <p id="search-status" class="index-status" role="status">All 4 notes in their original order.</p>
+              <div id="note-list" class="note-list" role="group" aria-label="Open a note">
+                <button class="note-option" type="button" data-note-id="window-light" aria-pressed="true" disabled><span class="note-number" aria-hidden="true">01</span><span class="note-title">Window light</span><span class="choice-state" aria-hidden="true">✓ Selected</span></button>
+                <button class="note-option" type="button" data-note-id="corner-shop" aria-pressed="false" disabled><span class="note-number" aria-hidden="true">02</span><span class="note-title">The corner shop</span><span class="choice-state" aria-hidden="true">Open note</span></button>
+                <button class="note-option" type="button" data-note-id="small-route" aria-pressed="false" disabled><span class="note-number" aria-hidden="true">03</span><span class="note-title">The small route</span><span class="choice-state" aria-hidden="true">Open note</span></button>
+                <button class="note-option" type="button" data-note-id="rain-check" aria-pressed="false" disabled><span class="note-number" aria-hidden="true">04</span><span class="note-title">After the rain</span><span class="choice-state" aria-hidden="true">Open note</span></button>
+              </div>
+              <p id="empty-search" class="support" hidden>No applied notes match. Clear search to see all four notes.</p>
+              <p id="context-status" class="context-status" role="status">Open note: 01 · Window light. Changes remain in this page.</p>
+              <div class="local-boundary"><p class="eyebrow">A loose-leaf reminder</p><p>Changes last while this page is open. Apply locally updates it; reload resets the demo and loses every change.</p><p>Download applied text makes a manual copy of one note.</p></div>
+              <a class="fallback-index" href="#static-notes">Read all four notes without JavaScript ↓</a>
+            </aside>
+
+            <div class="paper-page">
+              <div class="binder-rail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <div class="paper-face">
+                <section class="applied-note" aria-labelledby="applied-title">
+                  <div class="section-label"><p class="eyebrow">02 / Applied note</p><span id="opened-note-id" class="technical">LEAF 01</span></div>
+                  <h3 id="applied-title">Window light</h3>
+                  <p id="applied-body">At half past eight, a square of sun reaches the empty chair. By the time the kettle clicks, it has moved to the floor. A useful clock, if you are in no hurry.</p>
+                  <p id="applied-tags" class="note-tags">morning · light</p>
+                </section>
+                <section class="draft-section" aria-labelledby="draft-heading">
+                  <div class="section-label"><h3 id="draft-heading" class="eyebrow">03 / Your working draft</h3><span class="technical">LOCAL ONLY</span></div>
+                  <form id="note-form" novalidate>
+                    <fieldset id="note-fields" disabled>
+                      <legend class="sr-only">Edit the open note draft</legend>
+                      <div class="field"><label for="draft-title">Note title <span class="support">(required)</span></label><input id="draft-title" name="title" value="Window light" required minlength="3" maxlength="48" aria-describedby="title-hint title-error"><p id="title-hint" class="support">3–48 characters after trimming spaces.</p><p id="title-error" class="field-error" hidden></p></div>
+                      <div class="field"><label for="draft-body">Note text <span class="support">(required)</span></label><textarea id="draft-body" name="body" rows="4" required maxlength="240" aria-describedby="body-hint body-error">At half past eight, a square of sun reaches the empty chair. By the time the kettle clicks, it has moved to the floor. A useful clock, if you are in no hurry.</textarea><p id="body-hint" class="support">1–240 characters after trimming spaces. Tags stay with the original note.</p><p id="body-error" class="field-error" hidden></p></div>
+                      <div class="form-actions"><button id="apply-button" class="button primary-button" type="submit">Apply locally <span aria-hidden="true">→</span></button><button id="revert-button" class="button secondary-button" type="button">Revert draft</button></div>
+                    </fieldset>
+                    <p id="draft-status" class="draft-status" data-state="applied" role="status">The draft matches this note’s applied text. Nothing is saved.</p>
+                  </form>
+                  <div class="download-row"><button id="download-button" class="button secondary-button" type="button" aria-describedby="download-hint" disabled>Download applied text <span aria-hidden="true">↓</span></button><p id="download-hint" class="support">Copies the applied note to a .txt file. Apply your draft first to include its changes.</p></div>
+                  <p id="download-status" class="support" role="status"></p>
+                </section>
+                <div class="page-colophon"><span class="technical">FIELD NOTES / ORIGINAL ATLAS TEXT</span><span aria-hidden="true">✦</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="book-colophon"><span class="technical">A bound object, an ordinary form</span><a href="#principle">Look at the construction <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </section>
+
+      <section id="static-notes" class="static-notes" aria-labelledby="static-title">
+        <h2 id="static-title">All four Fieldbook notes</h2><p>These original notes remain available when JavaScript is unavailable. Note tools above stay disabled.</p>
+        <details open id="static-window-light"><summary>01 · Window light</summary><p>At half past eight, a square of sun reaches the empty chair. By the time the kettle clicks, it has moved to the floor. A useful clock, if you are in no hurry.</p><p class="support">morning · light</p></details>
+        <details open id="static-corner-shop"><summary>02 · The corner shop</summary><p>The shopkeeper puts a bowl of water beside the door each morning. No sign explains it. A sparrow lands on the rim, takes a drink, and leaves the arrangement exactly as it was.</p><p class="support">neighborhood · small rituals</p></details>
+        <details open id="static-small-route"><summary>03 · The small route</summary><p>Turn left at the blue gate, then follow the wall until the jasmine begins. The longer route has better shade and one low branch worth remembering.</p><p class="support">walk · route</p></details>
+        <details open id="static-rain-check"><summary>04 · After the rain</summary><p>Three drops hang from the washing line after the rain has stopped. Each holds the whole courtyard upside down. The smallest one lets go first.</p><p class="support">weather · afternoon</p></details>
+      </section>
+
+      <section id="principle" class="principle-section" aria-labelledby="principle-heading">
+        <div><p class="eyebrow">The material has a job</p><h2 id="principle-heading">A little familiarity.<br>A clear boundary.</h2><p>The binding holds an index and a writing page together. Offset edges suggest more leaves beneath. The metaphor helps you locate the note; it never stands in for an action label.</p></div>
+        <div class="principle-notes">
+          <details open><summary>What makes this Skeuomorphism?</summary><p>A solid cover surrounds a bound paper artifact: a separate stack of offset, edged pages, a ruled binding gutter, and four small CSS rings. These physical relationships carry the metaphor beyond a textured flat card.</p><p>The cover keeps the theme’s card geometry. The paper artifact explicitly uses 2px corners. Ordinary fields, actions, and index choices retain their theme geometry. Every word and control rests on an opaque Raised face, above and away from decorative layers.</p></details>
+          <details><summary>What comes from the theme?</summary><p>Palette, declared font stacks, and ordinary card/control corners come from each theme’s actual preview tokens. There is no universal brown paper or leather palette. This finite specimen does not load nine complete applications.</p><p id="theme-fit">Editorial’s reading palette and type suit short notes. The bound notebook construction is an explicit material addition beyond its ordinary selective elevation.</p><p class="font-note"><span class="support">Declared body stack:</span><code id="font-stack">Manrope, "Segoe UI", Arial, sans-serif</code></p><div class="source-links"><a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference ↗</a><a id="theme-credits-link" href="../../../themes/editorial/sources.md">Editorial source &amp; font credits ↗</a></div></details>
+          <details><summary>What is applied, copied, and lost?</summary><p>Each note keeps its own working draft while this page is open. Apply locally validates the title and text, then updates that note’s applied text and searchable index entry. Revert draft restores only the open note’s last applied text.</p><p>Search reads applied titles, text, and tags; it can hide the open note from the index without changing your open note or draft. Clear search restores the original index order. Download applied text creates a real UTF-8 text file of the open note’s applied text, even if its draft has changed.</p><p>No storage, account, backend, or synchronization is involved. Reload resets the entire demo. Applying locally does not create a durable save; a downloaded file is your manual copy.</p></details>
+          <details><summary>What happens with device preferences?</summary><p>Press feedback starts Off. On adds only 1px of downward press travel with a 120ms transform transition. Reduced motion and forced colors remove that travel. No page flips, delay, or drag action is simulated.</p><p>Forced colors removes decorative textures, shadows, rules, and binding chrome. System colors, explicit boundaries, Selected text, pressed semantics, form errors, and keyboard focus remain. System appearance follows live device changes.</p></details>
+          <details><summary>Where does the physical metaphor come from?</summary><p>The Xerox Star team’s office metaphor is a historical precedent for familiar objects in interfaces. Apple’s iBooks is a later bookshelf-and-book example. These are distinct historical references, not a sole-inventor claim or a visual template.</p><p>The Fieldbook layout, notes, CSS material, and interaction code are original Atlas work. No Xerox or Apple interface, screenshot, texture, component code, font file, or other asset is copied. Read the <a href="../sources.md">style source notes</a> for attribution and reuse boundaries.</p></details>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer"><p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Original Fieldbook specimen and four notes.</p><p>Historical references: Xerox Star team; Apple iBooks.<br>Named fonts use local fallbacks; no external assets load.<br><a href="../../../assets/brand/README.md">Atlas mark credits</a> · <a href="../sources.md">Style sources &amp; distinct credits</a></p><nav aria-label="Skeuomorphism documentation"><a href="../README.md">Style overview</a><a href="README.md">Preview scope</a><a href="../validation.md">Validation record</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav></footer>
+  </div>
+</body>
+</html>

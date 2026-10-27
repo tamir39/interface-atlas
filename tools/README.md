@@ -151,7 +151,7 @@ node tools/style-tokens.mjs --check
 
 Style README frontmatter uses scalar fields id, name, revision, status, kind, entry_creator, attribution_summary, basis, motion_character, implementation_dependency, reviewed_on and inline lists aliases, appearances, fit_types. Kind is material, form, composition or metaphor; categories can overlap. Required package files are README.md, style.md and sources.md. Motion and evidence records are discovered when present. Only implemented entries are listed; measured document word counts help selective loading.
 
-The token generator projects selected palette, font-stack and geometry values from existing theme CSS into separate Glassmorphism, Neobrutalism, Claymorphism and Neumorphism shared specimens. Its manifest records source hashes, mappings and credits. It deliberately excludes full layouts, behavior, fonts and most effects. Changed source values or unsupported new themes fail check mode until the projection is deliberately refreshed.
+The token generator projects selected palette, font-stack and geometry values from existing theme CSS into a separate local specimen for every explicitly allowlisted style. Its manifest records source hashes, mappings and credits. It deliberately excludes full layouts, behavior, fonts and most effects. Changed source values or unsupported new themes fail check mode until the projection is deliberately refreshed.
 
 Browser checks use the same optional installed Playwright/Chromium convention:
 
@@ -160,6 +160,7 @@ node tools/validate-glassmorphism.mjs --module /path/to/playwright/index.mjs --b
 node tools/validate-neobrutalism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-neo-results
 node tools/validate-claymorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-clay-results
 node tools/validate-neumorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-soft-results
+node tools/validate-skeuomorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-skeuo-results
 ```
 
 See the [style validation record](../styles/glassmorphism/validation.md) and [composition evaluation](../examples/style-composition-evaluation/README.md) for exact coverage and exclusions. Safe rendering of a profile is not proof that glass should replace a theme's default surfaces.
@@ -169,3 +170,5 @@ Neobrutalism's [validation record](../styles/neobrutalism/validation.md) and [co
 Claymorphism's [validation record](../styles/claymorphism/validation.md) and [composition evaluation](../examples/claymorphism-composition-evaluation/README.md) cover selected rounded-shell overrides, opaque text-face containment, local task states and preference fallbacks. Its theme-token projection stays identical to the other two style previews; shell geometry is an explicit style rule rather than a modification of source tokens. The style previews have independent local runtime files and require no upstream component package.
 
 Neumorphism's [validation record](../styles/neumorphism/validation.md) and [composition evaluation](../examples/neumorphism-composition-evaluation/README.md) cover matching plane/surface/face colors, per-corner derived shielding, native reading-preset constraints, draft/applied continuity and shadow-independent cues. The generated source-profile values stay identical across style previews; explicit style overrides and derived inner geometry remain in each entry. The runtime needs no upstream Soft UI library.
+
+Skeuomorphism's [validation record](../styles/skeuomorphism/validation.md) and [notebook-variant evaluation](../examples/skeuomorphism-composition-evaluation/README.md) cover opaque paper-face containment, explicit artifact geometry, indexed drafts/applied snapshots, literal text rendering and actual UTF-8 download contents. Fit judgments and numerical evidence apply to this notebook variant. No upstream UI framework, bitmap texture or platform artwork is required.

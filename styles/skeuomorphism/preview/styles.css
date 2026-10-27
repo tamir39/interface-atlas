@@ -1,0 +1,217 @@
+/* Original Atlas Fieldbook: cover, separate paper stack, and perimeter binding.
+   Empty decorative layers stay below the opaque Raised content faces. */
+:root { --cover-shadow: 0 12px 25px rgb(0 0 0 / .14); --paper-shadow: 1px 2px 0 rgb(0 0 0 / .12); }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-block: 24px; }
+body { margin: 0; color: var(--ink); background: var(--page); font: 400 1rem/1.6 var(--theme-font, "Segoe UI", Arial, sans-serif); }
+[hidden] { display: none !important; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { line-height: 1.2; overflow-wrap: anywhere; text-wrap: balance; }
+h1, .intro-lead, .fieldbook-heading h2, .applied-note h3, .principle-section h2 { font-family: var(--display-font, var(--theme-font)); }
+a { color: inherit; text-underline-offset: .23em; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+button, input, select, textarea { color: inherit; font: inherit; max-width: 100%; }
+button, select, summary { cursor: pointer; }
+button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 1; cursor: default; }
+button, a, input, select, textarea, summary, [tabindex] { scroll-margin-block: 24px; -webkit-tap-highlight-color: transparent; }
+:focus-visible, [tabindex="-1"]:focus { outline: 3px solid var(--ink); outline-offset: 3px; }
+::selection { color: var(--on-primary); background: var(--primary); }
+section, article, div, aside, form, fieldset { min-width: 0; }
+.page-shell { width: min(1280px, calc(100% - 80px)); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; z-index: 10; inset: 12px auto auto 12px; padding: 10px 16px; min-height: 44px; background: var(--raised); color: var(--ink); border: 1px solid var(--border); transform: translateY(-180%); }
+.skip-link:focus { transform: none; }
+.page-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 32px; min-height: 96px; padding-block: 25px; border-block-end: 1px solid var(--border); }
+.atlas-brand { display: inline-flex; align-items: center; gap: 11px; min-height: 44px; font-size: .9375rem; font-weight: 650; text-decoration: none; }
+.atlas-brand svg { fill: var(--primary); flex-shrink: 0; }
+.reference-nav { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: .8125rem; }
+.reference-nav a { display: inline-flex; gap: 12px; align-items: center; min-height: 44px; }
+.eyebrow { font-size: .6875rem; font-weight: 650; line-height: 1.5; letter-spacing: .105em; text-transform: uppercase; }
+.support { color: var(--muted); font-size: .8125rem; line-height: 1.6; overflow-wrap: anywhere; }
+.technical { font: 400 .625rem/1.6 var(--mono-font, Consolas, monospace); letter-spacing: .035em; overflow-wrap: anywhere; }
+.intro { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, .85fr); align-items: end; gap: 48px; padding-block: 56px 42px; }
+h1 { margin-block-start: 15px; font-size: clamp(1.9rem, 5.2vw, 4.6rem); font-weight: 400; letter-spacing: -.03em; }
+h1 > span { color: var(--primary); }
+.intro-lead { margin-block-end: 16px; font-size: clamp(1.6rem, 2.35vw, 2.15rem); font-weight: 400; letter-spacing: -.02em; line-height: 1.2; }
+.intro-copy > p:last-child { max-width: 43ch; color: var(--muted); font-size: .875rem; }
+.settings-panel { display: grid; grid-template-columns: minmax(160px, .8fr) minmax(0, 2fr); gap: 18px 40px; padding: 26px 28px; background: var(--raised); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.settings-heading h2 { font-size: 1rem; line-height: 1.5; font-weight: 650; }
+.settings-heading .support { margin-block-start: 5px; }
+.control-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 20px; }
+.field { display: grid; align-content: start; gap: 8px; }
+.field label { font-size: .8125rem; line-height: 1.5; font-weight: 600; }
+input, select, textarea { width: 100%; min-width: 0; min-height: 44px; padding: 10px 12px; color: var(--ink); background: var(--raised); border: 1px solid var(--border); border-radius: var(--control-radius); font-size: 1rem; line-height: 1.5; }
+select { padding-inline-end: 28px; }
+textarea { resize: vertical; min-height: 128px; }
+.material-status { grid-column: 1 / -1; border-block-start: 1px solid var(--border); padding-block-start: 14px; font-size: .8125rem; font-weight: 600; }
+#js-status { grid-column: 1 / -1; margin-block-start: -10px; }
+/* Cover is a source-shaped host. Its 18px rim is the only stitched material.
+   The Raised face, at z=1, shields all readable descendants. */
+.fieldbook-cover { position: relative; isolation: isolate; margin-block-start: 40px; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.fieldbook-cover::before { content: ""; position: absolute; z-index: 0; inset: 7px; border: 1px dashed var(--border); border-radius: inherit; box-shadow: var(--cover-shadow); pointer-events: none; }
+.fieldbook-face { position: relative; z-index: 1; padding: 30px; color: var(--ink); background: var(--raised); }
+.fieldbook-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block-end: 27px; border-block-end: 2px solid var(--ink); }
+.fieldbook-heading h2 { margin-block: 3px 7px; font-size: clamp(2.4rem, 4.3vw, 4rem); font-weight: 400; letter-spacing: -.045em; }
+.book-stamp { display: grid; gap: 5px; max-width: 23ch; text-align: end; font-size: .75rem; }
+.notebook-grid { display: grid; grid-template-columns: minmax(220px, .7fr) minmax(0, 1.6fr); align-items: start; gap: 44px; padding-block: 30px 14px; }
+.section-label { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.note-index { padding-block-start: 7px; }
+.search-controls { display: grid; gap: 12px; margin-block-start: 20px; }
+.search-controls > .button { justify-self: start; }
+.index-status { margin-block: 17px; color: var(--muted); font-size: .75rem; line-height: 1.5; }
+.note-list { display: grid; gap: 12px; }
+.note-option { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 0 10px; width: 100%; min-height: 80px; padding: 14px; text-align: start; color: var(--ink); background: var(--raised); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.note-number { grid-row: span 2; padding-block-start: 2px; font: .625rem/1.5 var(--mono-font, monospace); color: var(--muted); }
+.note-title { font-size: .875rem; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; }
+.choice-state { font-size: .6875rem; color: var(--muted); line-height: 1.5; }
+.note-option[aria-pressed="true"] { outline: 2px solid var(--ink); outline-offset: 3px; }
+.note-option[aria-pressed="true"] .choice-state { color: var(--ink); font-weight: 600; }
+.note-option:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.context-status { margin-block-start: 22px; font-size: .75rem; line-height: 1.6; overflow-wrap: anywhere; }
+.context-status[data-hidden="true"] { border-inline-start: 3px solid var(--ink); padding-inline-start: 10px; }
+.local-boundary { margin-block-start: 24px; padding-block-start: 20px; border-block-start: 1px solid var(--border); font-size: .75rem; line-height: 1.7; color: var(--muted); }
+.local-boundary .eyebrow { color: var(--ink); margin-block-end: 9px; }
+.local-boundary p + p { margin-block-start: 9px; }
+.fallback-index { display: inline-block; min-height: 44px; margin-block-start: 16px; font-size: .8125rem; }
+/* The 2px paper shape is an explicit artifact-only override. All offset pages
+   and ruled/binding layers are empty, below .paper-face, and outside its words. */
+.paper-page { position: relative; z-index: 0; isolation: isolate; padding: 12px 12px 12px 36px; color: var(--ink); background: var(--raised); border: 1px solid var(--border); border-radius: 2px; }
+.paper-page::before, .paper-page::after { content: ""; position: absolute; z-index: -1; background: var(--raised); border: 1px solid var(--border); border-radius: 2px; box-shadow: var(--paper-shadow); pointer-events: none; }
+.paper-page::before { inset: 4px -4px -4px 7px; }
+.paper-page::after { z-index: -2; inset: 8px -8px -8px 11px; }
+.binder-rail { position: absolute; z-index: 0; inset: 10px auto 10px 8px; width: 24px; background: repeating-linear-gradient(to bottom, transparent 0, transparent 27px, var(--border) 27px, var(--border) 28px); pointer-events: none; }
+.binder-rail::before { content: ""; position: absolute; inset: 0 auto 0 6px; border-inline-start: 1px solid var(--border); }
+.binder-rail i { position: absolute; left: -13px; width: 34px; height: 12px; border: 1px solid var(--border); border-radius: 5px; background: linear-gradient(to bottom, var(--raised), var(--border) 45%, var(--surface) 55%, var(--raised)); }
+.binder-rail i:nth-child(1) { top: 30px; }
+.binder-rail i:nth-child(2) { top: 29%; }
+.binder-rail i:nth-child(3) { top: 60%; }
+.binder-rail i:nth-child(4) { bottom: 30px; }
+.paper-face { position: relative; z-index: 1; padding: 22px; color: var(--ink); background: var(--raised); border-radius: 2px; }
+.applied-note h3 { margin-block: 25px 16px; font-size: clamp(1.65rem, 2.4vw, 2.25rem); font-weight: 400; letter-spacing: -.02em; }
+#applied-body { max-width: 55ch; font-size: 1rem; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.note-tags { margin-block-start: 19px; color: var(--muted); font: .6875rem/1.5 var(--mono-font, monospace); overflow-wrap: anywhere; }
+.draft-section { margin-block-start: 27px; padding-block-start: 23px; border-block-start: 1px solid var(--border); }
+fieldset { display: grid; gap: 19px; min-width: 0; margin: 20px 0 0; padding: 0; border: 0; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 17px; min-height: 44px; padding: 10px 17px; border: 1px solid var(--border); border-radius: var(--control-radius); font-size: .8125rem; line-height: 1.5; font-weight: 600; text-align: center; overflow-wrap: anywhere; }
+.primary-button { color: var(--on-primary); background: var(--primary); border-color: var(--primary); }
+.secondary-button { color: var(--ink); background: var(--raised); }
+.button:hover, .note-option:hover { text-decoration: underline; text-underline-offset: .2em; }
+.button:active { text-decoration: underline; text-underline-offset: .2em; }
+.draft-status { margin-block-start: 16px; font-size: .75rem; line-height: 1.65; overflow-wrap: anywhere; }
+.draft-status[data-state="draft"] { border-inline-start: 2px solid var(--ink); padding-inline-start: 10px; }
+.draft-status[data-state="error"], .field-error { color: var(--error); }
+.field-error { font-size: .8125rem; }
+input[aria-invalid="true"], textarea[aria-invalid="true"] { border: 2px solid var(--error); }
+.download-row { display: grid; gap: 10px; margin-block-start: 23px; }
+.download-row .button { justify-self: start; }
+#download-status:not(:empty) { margin-block-start: 10px; }
+.page-colophon { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-block-start: 25px; padding-block-start: 14px; border-block-start: 1px solid var(--border); color: var(--muted); }
+.book-colophon { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; margin-block-start: 27px; padding-block-start: 17px; border-block-start: 1px solid var(--border); }
+.book-colophon a { display: inline-flex; align-items: center; gap: 20px; min-height: 44px; font-size: .75rem; }
+.static-notes { margin-block-start: 40px; padding: 24px; background: var(--raised); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.static-notes > p { margin-block: 12px 18px; }
+.static-notes details p + p { margin-block-start: 9px; }
+html[data-ready="true"] .fallback-index { display: none; }
+.principle-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 80px; padding-block: 75px 65px; }
+.principle-section h2 { margin-block: 17px 24px; font-size: clamp(1.7rem, 2.7vw, 2.65rem); font-weight: 400; letter-spacing: -.025em; }
+.principle-section > div > p:last-child { color: var(--muted); max-width: 39ch; font-size: .875rem; }
+details { border-block-end: 1px solid var(--border); }
+summary { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 56px; padding-block: 14px; list-style: none; font-size: .875rem; font-weight: 600; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font: 400 1.25rem/1 var(--theme-font); }
+details[open] summary::after { content: "−"; }
+details > p { margin-block-end: 16px; color: var(--muted); font-size: .8125rem; line-height: 1.8; }
+.font-note { display: grid; gap: 6px; }
+code { font: .75rem/1.7 var(--mono-font, monospace); overflow-wrap: anywhere; color: var(--ink); }
+.source-links { display: flex; flex-wrap: wrap; gap: 0 22px; padding-block-end: 14px; }
+.source-links a { display: inline-flex; align-items: center; min-height: 44px; font-size: .75rem; }
+.page-footer { display: grid; grid-template-columns: 1.1fr 1.3fr .7fr; gap: 30px; padding-block: 32px 40px; border-block-start: 1px solid var(--border); color: var(--muted); font-size: .6875rem; line-height: 1.9; }
+.page-footer strong { color: var(--ink); font-weight: 650; }
+.page-footer nav { display: grid; align-content: start; }
+.page-footer nav a { display: flex; align-items: center; min-height: 44px; }
+html[data-motion="on"] .button, html[data-motion="on"] .note-option { transition: transform 120ms ease; }
+html[data-motion="on"] .button:active, html[data-motion="on"] .note-option:active { transform: translateY(1px); }
+@media (max-width: 1000px) {
+  .page-shell { width: min(1280px, calc(100% - 48px)); }
+  .intro { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 30px; }
+  .settings-panel { grid-template-columns: 1fr; gap: 18px; }
+  .fieldbook-face { padding: 22px; }
+  .notebook-grid { grid-template-columns: minmax(190px, .7fr) minmax(0, 1.5fr); gap: 25px; }
+  .paper-face { padding: 15px; }
+  .principle-section { gap: 40px; }
+}
+@media (max-width: 760px) {
+  .intro { grid-template-columns: 1fr; gap: 25px; padding-block: 35px 30px; }
+  .intro-copy { max-width: 55ch; }
+  .intro-lead br { display: none; }
+  .fieldbook-cover { margin-block-start: 28px; }
+  .fieldbook-face { padding: 18px; }
+  .notebook-grid { grid-template-columns: 1fr; gap: 30px; }
+  .note-list { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .search-controls { grid-template-columns: minmax(0, 1fr) auto; align-items: start; }
+  .search-controls > .button { margin-block-start: 28px; }
+  .local-boundary { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; }
+  .local-boundary .eyebrow { grid-column: 1 / -1; margin: 0; }
+  .local-boundary p + p { margin: 0; }
+  .paper-face { padding: 20px; }
+  .principle-section { grid-template-columns: 1fr; gap: 25px; padding-block: 55px 40px; }
+  .principle-section > div > p:last-child { max-width: 55ch; }
+  .page-footer { grid-template-columns: 1fr 1fr; }
+  .page-footer nav { grid-column: 1 / -1; grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .page-shell { width: calc(100% - 32px); }
+  .page-header { padding-block: 15px; gap: 0 14px; }
+  .reference-nav { gap: 0 20px; }
+  h1 { font-size: clamp(1.85rem, 8.2vw, 2.5rem); }
+  .settings-panel { padding: 19px 16px; }
+  .control-grid { grid-template-columns: 1fr; gap: 15px; }
+  .fieldbook-cover { padding: 18px; }
+  .fieldbook-face { padding: 13px; }
+  .fieldbook-heading { align-items: start; flex-direction: column; gap: 16px; padding-block-end: 20px; }
+  .fieldbook-heading h2 { font-size: 2.6rem; }
+  .book-stamp { max-width: none; text-align: start; gap: 2px; }
+  .note-list { grid-template-columns: 1fr; }
+  .search-controls { grid-template-columns: 1fr; }
+  .search-controls > .button { margin: 0; }
+  .local-boundary { display: block; }
+  .local-boundary .eyebrow { margin-block-end: 9px; }
+  .local-boundary p + p { margin-block-start: 9px; }
+  .paper-face { padding: 12px 3px 10px; }
+  .paper-page { margin-inline: -6px; }
+  .section-label { gap: 6px; }
+  .applied-note h3 { margin-block: 20px 14px; }
+  #applied-body { font-size: .9375rem; line-height: 1.8; }
+  .form-actions { display: grid; }
+  .button { padding-inline: 12px; }
+  .download-row .button { justify-self: stretch; gap: 9px; }
+  .book-colophon { margin-block-start: 24px; gap: 0; }
+  .page-colophon .technical { font-size: .5625rem; }
+  .page-footer { grid-template-columns: 1fr; gap: 20px; }
+  .page-footer nav { grid-column: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-motion="on"] .button, html[data-motion="on"] .note-option { transition: none; }
+  html[data-motion="on"] .button:active, html[data-motion="on"] .note-option:active { transform: none; }
+}
+@media (forced-colors: active) {
+  /* Neutral selection avoids descendant white backplates on Highlight.
+     Explicit system colors also cover theme heading marks and actions. */
+  *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; background-image: none !important; }
+  body, .settings-panel, .fieldbook-cover, .fieldbook-face, .paper-page, .paper-page::before, .paper-page::after, .paper-face, .note-option, .note-option[aria-pressed="true"], .static-notes { forced-color-adjust: none; color: CanvasText; background: Canvas; border-color: CanvasText; }
+  body { --page: Canvas; --surface: Canvas; --raised: Canvas; --ink: CanvasText; --muted: CanvasText; --border: CanvasText; --primary: ButtonFace; --on-primary: ButtonText; --error: CanvasText; }
+  input, select, textarea { forced-color-adjust: none; color: CanvasText; background: Canvas; border-color: CanvasText; }
+  .fieldbook-cover::before, .binder-rail, .paper-page::before, .paper-page::after { display: none; }
+  h1 > span, .atlas-brand svg, .support, .technical, .note-number, .choice-state, .note-option[aria-pressed="true"] .choice-state, .note-tags, .context-status, .local-boundary, .index-status, details > p, code { color: CanvasText; }
+  .atlas-brand svg { fill: CanvasText; }
+  .note-option[aria-pressed="true"] { outline: 2px solid CanvasText; outline-offset: 3px; }
+  .note-option[aria-pressed="true"] .choice-state { text-decoration: underline; text-underline-offset: .2em; }
+  .primary-button, .secondary-button { forced-color-adjust: none; background: ButtonFace; color: ButtonText; border-color: ButtonText; }
+  .field-error, .draft-status[data-state="error"] { color: CanvasText; }
+  .field-error { border-inline-start: 3px solid CanvasText; padding-inline-start: 8px; }
+  input[aria-invalid="true"], textarea[aria-invalid="true"] { border: 2px dashed CanvasText; }
+  :focus-visible, .note-option:focus-visible, [tabindex="-1"]:focus { outline: 3px solid CanvasText; outline-offset: 3px; }
+  html[data-motion="on"] .button, html[data-motion="on"] .note-option { transition: none; }
+  html[data-motion="on"] .button:active, html[data-motion="on"] .note-option:active { transform: none; }
+}

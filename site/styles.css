@@ -237,3 +237,13 @@ h1 em { color: var(--action); }
 .soft-study-grooves { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .soft-study-grooves span { display: block; height: 12px; background: #e9eeeb; border-radius: 6px; box-shadow: inset 3px 3px 6px #263b3829, inset -3px -3px 6px #ffffffb3; }
 @media (forced-colors: active) { .soft-study, .soft-study-surface, .soft-study-face, .soft-study-grooves span { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; } }
+
+/* Original notebook variant study. Binding and paper edges stay outside the opaque face. */
+.skeuo-study { display: grid; place-items: center; min-block-size: 260px; padding: clamp(1rem, 3vw, 1.75rem); border-radius: 12px; background: #e9e4d9; }
+.skeuo-study-cover { position: relative; width: 100%; padding: 16px 16px 16px 36px; border: 1px solid #9b8f79; border-radius: 12px; background: #c8bc9f; box-shadow: 0 8px 18px #39352e26; }
+.skeuo-study-rings { position: absolute; inset-inline-start: 8px; inset-block: 28px; display: flex; flex-direction: column; justify-content: space-around; }
+.skeuo-study-rings span { display: block; width: 20px; height: 10px; border: 2px solid #786d58; border-radius: 999px; background: #e6dfd0; }
+.skeuo-study-page { position: relative; padding: clamp(1rem, 3vw, 1.5rem); border: 1px solid #9b8f79; border-radius: 2px; background: #fffdf7; color: #39352e; box-shadow: 3px 3px 0 #e2d8c6, 6px 6px 0 #a6987e; }
+.skeuo-study-page span { display: block; font-size: .75rem; line-height: 1.5; font-weight: 600; }
+.skeuo-study-page strong { display: block; margin-block: 1.25rem; font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.05; font-weight: 550; letter-spacing: -.04em; overflow-wrap: anywhere; }
+@media (forced-colors: active) { .skeuo-study, .skeuo-study-cover, .skeuo-study-page { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; } .skeuo-study-rings { display: none; } }

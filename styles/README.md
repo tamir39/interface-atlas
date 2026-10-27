@@ -18,7 +18,9 @@ Start with the project's existing rules. When the user requests a visual style o
 
 - [Neumorphism / Soft UI](neumorphism/README.md): a draft, original Atlas interpretation of same-material shallow relief with explicit outlines and state labels. Its [live specimen](neumorphism/preview/index.html) and [composition evaluation](../examples/neumorphism-composition-evaluation/README.md) compare all nine bounded theme profiles and actual reading-preset behavior.
 
-Only implemented entries appear in the generated catalog. Future research candidates are Skeuomorphism, Web Brutalism, Flat and Minimalism. They do not yet have Atlas rules or previews. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
+- [Skeuomorphism](skeuomorphism/README.md): a draft family entry for physical-object metaphors and material rendering. Its original [Fieldbook specimen](skeuomorphism/preview/index.html) and [composition evaluation](../examples/skeuomorphism-composition-evaluation/README.md) test one indexed-notebook variant across nine bounded theme profiles, including local drafts and applied-text downloads. Other variants need their own assessment.
+
+Only implemented entries appear in the generated catalog. Future research candidates are Web Brutalism, Flat and Minimalism. They do not yet have Atlas rules or previews. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
 
 ## Package and provenance
 

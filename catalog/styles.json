@@ -164,6 +164,47 @@
         "motion": 440,
         "validation": 555
       }
+    },
+    {
+      "id": "skeuomorphism",
+      "name": "Skeuomorphism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "metaphor",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; credits specific Xerox Star and Apple interface precedents without assigning a universal inventor",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "skeuomorphic-ui"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "personal-notes",
+        "collections",
+        "reading-tools",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-restrained",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/skeuomorphism/README.md",
+        "style": "styles/skeuomorphism/style.md",
+        "sources": "styles/skeuomorphism/sources.md",
+        "motion": "styles/skeuomorphism/motion.md",
+        "validation": "styles/skeuomorphism/validation.md"
+      },
+      "reading_words": {
+        "readme": 345,
+        "style": 1767,
+        "sources": 1124,
+        "motion": 444,
+        "validation": 547
+      }
     }
   ]
 }
