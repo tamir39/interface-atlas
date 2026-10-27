@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-motion="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original Interface Atlas Neobrutalism specimen: opaque color blocks, bold outlines, and hard shadows across nine theme profiles.">
+  <title>Neobrutalism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the style lab</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home">
+        <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg>
+        <span>Interface Atlas</span>
+      </a>
+      <nav class="reference-nav" aria-label="Reference pages"><a href="../../README.md">Style catalog</a><a href="../style.md">Implementation notes <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="index-mark">S / 02</span> A cross-theme style study</p>
+          <h1 id="page-title">Neobrutalism<span class="title-period">.</span></h1>
+          <p class="intro-lead">Say it clearly.<br>Give it an edge.</p>
+          <p class="intro-description">Opaque color. Unambiguous boundaries. A hard shadow that puts the next action right in front of you.</p>
+          <div class="intro-links"><a href="#specimen">Try the idea board <span aria-hidden="true">↓</span></a><a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <section class="settings-panel hard-surface" aria-labelledby="settings-title">
+          <div class="panel-heading"><h2 id="settings-title">Change the identity.</h2><span class="technical">01—09</span></div>
+          <div class="control-grid">
+            <div class="field theme-field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial">Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+            <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+            <div class="field"><label for="motion">Press feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On</option></select></div>
+          </div>
+          <p id="motion-status" class="settings-status" role="status">Static by default. All state changes have immediate text and boundary feedback.</p>
+          <p id="js-status" class="support">Settings, filtering, inspection, and the local form need JavaScript. All ideas, links, and disclosures remain readable.</p>
+        </section>
+      </section>
+
+      <section id="specimen" class="specimen-section" aria-labelledby="specimen-title">
+        <div class="section-heading"><div><p class="eyebrow">The same work, nine identities</p><h2 id="specimen-title">Make room for a good idea.</h2></div><p class="support">Fictional creative program · <span id="theme-label">Editorial</span><br>Local interactions. Nothing is sent or saved.</p></div>
+        <div class="studio-frame">
+          <header class="studio-bar"><a class="studio-brand" href="#idea-board"><span class="studio-mark" aria-hidden="true">F.</span><span>Fieldnotes<br><span class="brand-detail">Independent ideas, out in the open.</span></span></a><nav aria-label="Specimen sections"><a href="#idea-board">Idea board</a><a href="#brief">Make a brief <span aria-hidden="true">↙</span></a></nav><span class="edition">OPEN STUDIO / 006</span></header>
+          <div class="studio-banner">
+            <div><p class="eyebrow">A small program for curious people</p><p class="banner-title">Good ideas.<br>Real starting points.</p><p class="banner-copy">Four sparks for the next studio session.<br>Pick one. Find its angle. Make it your own.</p></div>
+            <div class="poster-art" aria-hidden="true"><span class="poster-disc"></span><span class="poster-square"></span><span class="poster-arrow">↗</span><span class="poster-label">MAKE<br>SOMETHING.</span></div>
+          </div>
+          <div class="studio-content">
+            <section class="board-panel" id="idea-board" aria-labelledby="board-title">
+              <div class="panel-heading"><div><p class="eyebrow">Start with a spark</p><h3 id="board-title">The idea board</h3></div><span class="count-stamp" aria-label="Four example ideas">04</span></div>
+              <div class="board-filters" role="search" aria-label="Idea board">
+                <div class="field search-field"><label for="idea-filter">Find an idea</label><input id="idea-filter" type="search" placeholder="Try paper or print" autocomplete="off" aria-describedby="filter-hint" disabled></div>
+                <div class="field"><label for="track-filter">Track</label><select id="track-filter" disabled><option value="all">All tracks</option><option value="print">Print</option><option value="talks">Talks</option><option value="workshops">Workshops</option></select></div>
+                <button id="filter-reset" class="button small-button" type="button" disabled>Clear filters</button>
+              </div>
+              <div class="filter-meta"><p id="filter-hint" class="support">Search titles, descriptions, and tracks.</p><p id="filter-count" class="technical" role="status">4 of 4 ideas shown</p></div>
+              <ul class="idea-grid">
+                <li data-idea-item="ink-club"><button class="idea-card hard-surface" type="button" data-idea-id="ink-club" data-track="print" aria-pressed="true" disabled><span class="card-art ink-art" aria-hidden="true"><span class="ink-disc"></span><span class="ink-sheet"></span><span class="art-word">INK<br>CLUB</span></span><span class="card-body"><span class="card-meta"><span>01 / Print</span><span>Edition of 20</span></span><strong class="card-title">Ink club</strong><span class="card-description">One color, a shared press, and a poster worth keeping.</span><span class="card-bottom"><span class="card-state">Selected</span><span aria-hidden="true">↗</span></span></span></button></li>
+                <li data-idea-item="open-table"><button class="idea-card hard-surface" type="button" data-idea-id="open-table" data-track="talks" aria-pressed="false" disabled><span class="card-art table-art" aria-hidden="true"><span class="table-ring"></span><span class="table-block"></span><span class="art-word">OPEN<br>TABLE</span></span><span class="card-body"><span class="card-meta"><span>02 / Talks</span><span>Roundtable</span></span><strong class="card-title">Open table</strong><span class="card-description">A conversation about the unfinished work on your desk.</span><span class="card-bottom"><span class="card-state">Inspect idea</span><span aria-hidden="true">↗</span></span></span></button></li>
+                <li data-idea-item="type-walk"><button class="idea-card hard-surface" type="button" data-idea-id="type-walk" data-track="workshops" aria-pressed="false" disabled><span class="card-art type-art" aria-hidden="true"><span class="type-letter">Aa</span><span class="type-line"></span><span class="type-corner">↗</span></span><span class="card-body"><span class="card-meta"><span>03 / Workshops</span><span>Field session</span></span><strong class="card-title">Type walk</strong><span class="card-description">Find the letters hiding in your everyday surroundings.</span><span class="card-bottom"><span class="card-state">Inspect idea</span><span aria-hidden="true">↗</span></span></span></button></li>
+                <li data-idea-item="paper-radio"><button class="idea-card hard-surface" type="button" data-idea-id="paper-radio" data-track="workshops" aria-pressed="false" disabled><span class="card-art radio-art" aria-hidden="true"><span class="radio-box"><span></span><span></span></span><span class="radio-wave"></span><span class="radio-caption">ON AIR / ON PAPER</span></span><span class="card-body"><span class="card-meta"><span>04 / Workshops</span><span>Listening lab</span></span><strong class="card-title">Paper radio</strong><span class="card-description">Turn a sound, a memory, or a voice into a little zine.</span><span class="card-bottom"><span class="card-state">Inspect idea</span><span aria-hidden="true">↗</span></span></span></button></li>
+              </ul>
+              <div id="empty-state" class="empty-state" hidden><h4>No ideas match these filters.</h4><p>Try another word or clear the filters to see all four starting points.</p><button id="empty-reset" class="button" type="button" disabled>Show all ideas</button></div>
+            </section>
+
+            <aside class="workbench" aria-label="Idea inspection and brief">
+              <section class="inspection-panel hard-surface" aria-labelledby="selection-title"><div class="inspection-header"><p class="eyebrow">On the workbench</p><span class="inspection-mark" aria-hidden="true">↙</span></div><h3 id="selection-title">Ink club</h3><p id="selection-description">Make a one-color poster around something your neighborhood needs more of. Begin with a word, build a strong shape, and leave enough room for the message.</p><dl class="idea-facts"><div><dt>Track</dt><dd id="selection-track">Print</dd></div><div><dt>Starting format</dt><dd id="selection-format">One-color poster</dd></div></dl><p id="selection-status" class="selection-status" role="status">Ink club selected. Use its starting point for your own brief.</p><a class="text-action" href="#brief">Turn a spark into a brief <span aria-hidden="true">↓</span></a></section>
+              <section class="brief-panel hard-surface" id="brief" aria-labelledby="brief-heading"><p class="eyebrow">Make the next step concrete</p><h3 id="brief-heading">Your working brief.</h3><p class="support">Try a title and a direction. Review happens only in this browser.</p><form id="brief-form" novalidate><fieldset id="brief-fields" disabled><legend class="sr-only">Local creative brief</legend><div class="field"><label for="brief-title">Brief title <span class="optional">(required)</span></label><input id="brief-title" name="title" type="text" required minlength="3" maxlength="48" value="More room for making" aria-describedby="brief-hint brief-error"><p id="brief-hint" class="support">Use 3–48 characters after trimming spaces.</p><p id="brief-error" class="field-error" hidden></p></div><div class="field"><label for="brief-track">Creative track</label><select id="brief-track" name="track"><option value="print">Print</option><option value="talks">Talks</option><option value="workshops">Workshops</option></select></div><div class="field"><label for="brief-note">First thought <span class="optional">(optional)</span></label><textarea id="brief-note" name="note" rows="3" maxlength="120" aria-describedby="note-hint">A small poster for the places where people make things together.</textarea><p id="note-hint" class="support">Up to 120 characters.</p></div><div class="form-actions"><button id="review-brief" class="button primary-button" type="submit">Review brief <span aria-hidden="true">↗</span></button><button id="brief-reset" class="button" type="button">Reset example</button></div></fieldset><p id="brief-status" class="brief-status" role="status">Example only. Nothing is sent or saved.</p></form></section>
+            </aside>
+          </div>
+          <div class="studio-colophon"><span>FIELDNOTES / AN OPEN STUDIO SPECIMEN</span><span>Four ideas. One clear next action.</span></div>
+        </div>
+        <p class="stage-caption"><span class="technical">Study 02 / hard edges</span><span>Theme identity supplies color, type, and geometry. The style adds emphatic structure.</span></p>
+      </section>
+
+      <section class="principle-section" id="principle" aria-labelledby="principle-heading"><div class="principle-title"><p class="eyebrow">The rule behind the treatment</p><h2 id="principle-heading">Big character.<br>Clear decisions.</h2><p id="theme-fit" class="fit-note">Editorial: an intentional tension with its quieter reading rhythm. Keep the heavy treatment to short, focused surfaces.</p></div><div class="principle-notes"><details open><summary>What comes from the theme?</summary><p>The nine profiles supply their actual preview palette, declared local font stacks, and corner geometry. This is a selected profile applied to one shared specimen, with explicit style overrides. It does not load a complete theme or prove full theme compatibility. Read the selected theme reference before applying it to a project.</p></details><details><summary>What makes this Neobrutalism?</summary><p>Opaque color blocks, 2px foreground outlines, 4px hard shadows with no blur, and direct typographic hierarchy. The style emphasizes structure without making every surface compete. Detailed reading and form content keep solid, stable backgrounds.</p></details><details><summary>How does press feedback work?</summary><p>Off is the default. On optionally moves a pressed card or button 2px and reduces its shadow from 4px to 2px. Reduced motion disables that movement. Selected labels, borders, and semantic pressed states remain immediate in every setting, including forced colors.</p></details><details><summary>Who is credited?</summary><p>This is an original Atlas specimen. Samuel Breznjak’s <em>Neobrutalism components</em> (ekmas) is credited as an implementation reference, not as the inventor of the style. See <a href="../sources.md">source notes and reuse boundaries</a>, including the selected themes’ provenance.</p></details></div></section>
+    </main>
+    <footer class="page-footer"><p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Original specimen, CSS artwork, and interaction code.</p><p>Implementation reference: Samuel Breznjak / ekmas.<br>No third-party component code or artwork is copied.<br>No remote fonts, images, or scripts are loaded.</p><nav aria-label="Neobrutalism documentation"><a href="../README.md">Style overview</a><a href="../style.md">Style rules</a><a href="README.md">Preview scope</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav></footer>
+  </div>
+</body>
+</html>

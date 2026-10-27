@@ -41,6 +41,47 @@
         "motion": 429,
         "validation": 386
       }
+    },
+    {
+      "id": "neobrutalism",
+      "name": "Neobrutalism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "form",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; Samuel Breznjak credited for a contemporary implementation reference",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "neubrutalism"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "expressive-brand",
+        "consumer-app",
+        "creative-portfolio",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-direct",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/neobrutalism/README.md",
+        "style": "styles/neobrutalism/style.md",
+        "sources": "styles/neobrutalism/sources.md",
+        "motion": "styles/neobrutalism/motion.md",
+        "validation": "styles/neobrutalism/validation.md"
+      },
+      "reading_words": {
+        "readme": 345,
+        "style": 1675,
+        "sources": 1088,
+        "motion": 457,
+        "validation": 450
+      }
     }
   ]
 }

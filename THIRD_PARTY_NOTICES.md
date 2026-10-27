@@ -139,3 +139,7 @@ No additional third-party license text or dependency is introduced. Source creat
 ## Glassmorphism styling catalog
 
 The [Glassmorphism source record](styles/glassmorphism/sources.md) distinguishes Michał Malewicz's 2020 naming/popularization from older Microsoft and Apple/WebKit translucent interfaces, and from current named platform materials. The original Atlas specimen imports no upstream component code, images or font binaries. Its selected theme token projections preserve the existing theme creators and source records through [the generated manifest](styles/glassmorphism/preview/theme-tokens.json). Third-party documentation is referenced and paraphrased, not redistributed. Unknown artwork rights remain unresolved; attribution is not permission. Atlas's publishing license remains undecided.
+
+## Neobrutalism styling catalog
+
+The [Neobrutalism source record](styles/neobrutalism/sources.md) credits Samuel Breznjak / ekmas for the inspected Neobrutalism Components implementation, without assigning him sole invention of the broader style family. Its exact inspected revision and MIT license are recorded there. David Bryant Copeland's separate Web Brutalism guidance has its own CC BY-NC-SA terms and is reference-only. Atlas's preview, recipe and local interactions are original work by Tamir / Phi Vuong Tuong Tam with Codex AI assistance; no third-party component code, imagery or font binaries are imported. Existing theme credits remain in the generated profile manifest. Atlas's publishing license remains undecided.

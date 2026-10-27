@@ -28,3 +28,5 @@ The [implementation workflow trial](implementation-evaluation/README.md) uses th
 ## Visual-style composition
 
 [Glassmorphism composition evaluation](style-composition-evaluation/README.md) compares bounded profiles from all nine current themes, documents default-treatment conflicts and scoped adaptations, and records actual preview checks. Its sample design is an original project proposal, not a production deployment or nine fully revalidated theme applications.
+
+[Neobrutalism composition evaluation](neobrutalism-composition-evaluation/README.md) adds nine bounded theme profiles, selected/error/input-recovery checks and reasoned fit decisions for hard outlines and offset depth. Its original board specimen remains browser-local. A profile pass does not validate the complete themed applications or make a decorative treatment their default.

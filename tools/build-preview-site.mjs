@@ -23,9 +23,10 @@ const files = [
     ['index.html', 'styles.css', 'preview.js'].map((name) => [
       `themes/${theme}/preview/${name}`, `themes/${theme}/preview/${name}`,
     ])),
-  ...['index.html', 'styles.css', 'preview.js', 'theme-tokens.css', 'theme-tokens.json'].map((name) => [
-    `styles/glassmorphism/preview/${name}`, `styles/glassmorphism/preview/${name}`,
-  ]),
+  ...['glassmorphism', 'neobrutalism'].flatMap((style) =>
+    ['index.html', 'styles.css', 'preview.js', 'theme-tokens.css', 'theme-tokens.json'].map((name) => [
+      `styles/${style}/preview/${name}`, `styles/${style}/preview/${name}`,
+    ])),
   ...['vessel-study.png', 'seat-study.png', 'room-study.png'].map((name) => [
     `themes/gallery/preview/assets/${name}`, `themes/gallery/preview/assets/${name}`,
   ]),

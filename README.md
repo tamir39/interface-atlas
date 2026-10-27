@@ -11,7 +11,7 @@ A frontend UI/UX knowledge library for preparing project-specific design documen
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load selected library guidance when preparing or deliberately revising that document. For a bounded frontend change, the implementation skill starts from your project's own rules and code.
 
-**Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md) is the first optional visual-style entry beside the nine themes. Its [interactive preview](styles/glassmorphism/preview/index.html) compares bounded theme profiles; [composition trials](examples/style-composition-evaluation/README.md) distinguish render checks from theme fit. Other researched families remain candidates, not implemented packages.
+**Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md) and [Neobrutalism](styles/neobrutalism/README.md) are optional visual-style entries beside the nine themes. Explore the [Glassmorphism lab](styles/glassmorphism/preview/index.html) or [Neobrutalism lab](styles/neobrutalism/preview/index.html). Their [glass](examples/style-composition-evaluation/README.md) and [neobrutalism](examples/neobrutalism-composition-evaluation/README.md) trials distinguish bounded render checks from theme fit. Other researched families remain candidates.
 
 **Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery; Layered adds a spacious planning workspace with tonal surfaces, native editing, and scoped recovery. All nine theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), [Layered](themes/layered/validation.md).
 
@@ -86,7 +86,20 @@ interface-atlas/
 ├── .gitignore
 ├── styles/
 │   ├── README.md
-│   └── glassmorphism/
+│   ├── glassmorphism/
+│   │   ├── README.md
+│   │   ├── style.md
+│   │   ├── motion.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── preview.js
+│   │       ├── theme-tokens.css
+│   │       └── theme-tokens.json
+│   └── neobrutalism/
 │       ├── README.md
 │       ├── style.md
 │       ├── motion.md
@@ -289,6 +302,12 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── neobrutalism-composition-evaluation/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── trials.md
+│   │   ├── results.json
+│   │   └── release-checks.json
 │   ├── style-composition-evaluation/
 │   │   ├── README.md
 │   │   ├── design.md
@@ -392,6 +411,7 @@ interface-atlas/
 │   ├── style-catalog.mjs
 │   ├── style-tokens.mjs
 │   ├── validate-glassmorphism.mjs
+│   ├── validate-neobrutalism.mjs
 │   ├── validate-site.mjs
 │   ├── validate-blueprint.mjs
 │   ├── validate-botanical.mjs
@@ -454,6 +474,6 @@ The catalog is generated from each named theme's README metadata. Its flat metad
 
 Optional browser checks use an installed Playwright package. They are separate from the dependency-free library and preview; see [tools/README.md](tools/README.md).
 
-The [live preview site](https://tamir39.github.io/interface-atlas/) deploys from `main` through GitHub Pages. Only the landing page, theme previews, and brand assets are published; document links lead back to their GitHub source. See [site maintenance](site/README.md).
+The [live preview site](https://tamir39.github.io/interface-atlas/) deploys from `main` through GitHub Pages. Only the landing page, theme previews, visual-style previews, and brand assets are published; document links lead back to their GitHub source. See [site maintenance](site/README.md).
 
 Interface Atlas is independent of the Twohearts workspace and its product policies.

@@ -98,12 +98,15 @@ for (const theme of catalog.themes) {
     scope: 'Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.',
     mappings: maps, tokens });
 }
-const output = path.join(root, 'styles/glassmorphism/preview');
+const styleIds = ['glassmorphism', 'neobrutalism'];
 const manifest = { schema_version: 1, interpretation: 'Original Atlas token projection. Source theme credits remain authoritative; system fallbacks may render instead of named fonts.', profiles };
-if (!check) await mkdir(output, { recursive: true });
-for (const [name, value] of [['theme-tokens.css', css.join('\n\n') + '\n'], ['theme-tokens.json', JSON.stringify(manifest, null, 2) + '\n']]) {
-  const filename = path.join(output, name);
-  if (check) assert.equal(await readFile(filename, 'utf8'), value, name + ' is stale; run node tools/style-tokens.mjs');
-  else await writeFile(filename, value);
+for (const styleId of styleIds) {
+  const output = path.join(root, 'styles', styleId, 'preview');
+  if (!check) await mkdir(output, { recursive: true });
+  for (const [name, value] of [['theme-tokens.css', css.join('\n\n') + '\n'], ['theme-tokens.json', JSON.stringify(manifest, null, 2) + '\n']]) {
+    const filename = path.join(output, name);
+    if (check) assert.equal(await readFile(filename, 'utf8'), value, styleId + '/' + name + ' is stale; run node tools/style-tokens.mjs');
+    else await writeFile(filename, value);
+  }
 }
-console.log((check ? 'Verified' : 'Generated') + ' bounded token projections for ' + profiles.length + ' themes.');
+console.log((check ? 'Verified' : 'Generated') + ' bounded token projections for ' + profiles.length + ' themes across ' + styleIds.length + ' styles.');

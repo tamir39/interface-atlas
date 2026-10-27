@@ -120,3 +120,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Visual-style research and implementation
 
 [Glassmorphism's source dossier](../styles/glassmorphism/sources.md) records primary naming, historical, platform-material, CSS and accessibility sources with specific creator roles and reuse boundaries. [Style discovery](../styles/README.md) separates implemented entries from future research candidates. [Composition guidance](../knowledge/theme-style-composition.md) and [theme-profile trials](../examples/style-composition-evaluation/README.md) are original Atlas proposals and bounded evidence, not source-authored compatibility claims.
+
+## Neobrutalism research and implementation
+
+[Neobrutalism's source dossier](../styles/neobrutalism/sources.md) records inspected primary references, specific author/implementation roles, a pinned library revision and artifact-specific reuse boundaries. [Its composition evaluation](../examples/neobrutalism-composition-evaluation/README.md) distinguishes original Atlas fit judgments from rendered profile checks. The library author is not presented as a proven inventor of the family; original Atlas code imports no upstream implementation or assets.

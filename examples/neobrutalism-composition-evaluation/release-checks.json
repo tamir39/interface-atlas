@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-27",
+  "scope": "Neobrutalism entry, two-style discovery, shared generator and preview hub; prior Agent Experience draft excluded.",
+  "checks": [
+    {
+      "command": "node tools/style-catalog.mjs",
+      "passed": true,
+      "output": "Generated catalog for 2 implemented style(s)."
+    },
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "output": "Catalog matches metadata for 9 theme(s)."
+    },
+    {
+      "command": "node tools/style-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 2 implemented style(s)."
+    },
+    {
+      "command": "node tools/style-tokens.mjs --check",
+      "passed": true,
+      "output": "Verified bounded token projections for 9 themes across 2 styles."
+    },
+    {
+      "command": "node --check tools/style-tokens.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/validate-neobrutalism.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check styles/neobrutalism/preview/preview.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-neo-site-20261027",
+      "passed": true,
+      "output": "Built 56 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-neo-site-20261027"
+    },
+    {
+      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-neo-site-20261027 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-neo-hub-20261027",
+      "passed": true,
+      "output": "Actual browser results recorded separately."
+    },
+    {
+      "name": "Relative Markdown links in entry/router/evaluation documents",
+      "passed": true,
+      "documents": 15,
+      "links": 203
+    },
+    {
+      "name": "All five Glassmorphism runtime identities remain equal to its published browser evidence",
+      "passed": true
+    }
+  ],
+  "style_evidence": {
+    "file": "results.json",
+    "sha256": "f9db1281972f3dd6753358eb798f2ff61e1620b12209115354e350cfb9d00f1c",
+    "base_states": 72,
+    "interaction_contexts": 144,
+    "groups": 11
+  },
+  "hub": {
+    "passed": true,
+    "groups": 12,
+    "testedFiles": {
+      "index.html": "b1f700480454edc0a422fdbbfae9cfa261812a29c4bb95434c196ef116f70705",
+      "styles.css": "882a532296c9f5cd9f52f2862d8c613d8eddcb1da27ca2da49460ee54538ca03",
+      "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+    },
+    "validatorSha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b",
+    "limits": [
+      "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+      "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+      "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+    ]
+  },
+  "passed": true
+}
