@@ -25,10 +25,14 @@ Write the accepted recipe as exact project values and semantic roles. Avoid a ru
 
 ## Evidence and interpretation
 
-Judge suitability separately from rendering. A shared profile can render without overflow and still conflict with a theme's intended default. [Glassmorphism trials](../examples/style-composition-evaluation/README.md) and [Neobrutalism trials](../examples/neobrutalism-composition-evaluation/README.md) separate preserved profile values, scoped adaptations, default-treatment conflicts and actual browser evidence.
+Judge suitability separately from rendering. A shared profile can render without overflow and still conflict with a theme's intended default. [Glassmorphism trials](../examples/style-composition-evaluation/README.md), [Neobrutalism trials](../examples/neobrutalism-composition-evaluation/README.md) and [Claymorphism trials](../examples/claymorphism-composition-evaluation/README.md) separate preserved profile values, scoped adaptations, default-treatment conflicts and actual browser evidence.
 
 For transparent materials, evaluate the composited background, not a foreground/tint pair alone. A solid fallback must retain names, controls, hierarchy and state. Prefer an opaque base and progressive enhancement; media preferences have differing support. Read [Glassmorphism's credited rules](../styles/glassmorphism/style.md) for that material's specific constraints.
 
-For opaque styles such as [Neobrutalism](../styles/neobrutalism/style.md), contrast and state remain necessary even without compositing. Separate a transient press, persistent selection and keyboard focus; reserve room for hard shadows, and keep state cues when depth or motion is removed.
+For opaque styles such as [Neobrutalism](../styles/neobrutalism/style.md) and [Claymorphism](../styles/claymorphism/style.md), contrast and state remain necessary even without compositing. Separate a transient press, persistent selection and keyboard focus; reserve room for hard shadows, and keep state cues when depth or motion is removed.
+
+If a style deliberately changes geometry, record the selected shape override rather than claiming the source corners were preserved. For shaded materials, keep the evaluated text face opaque and distinguish decorative perimeter shading from the background used by readable content.
+
+When shading or an OS palette changes painting around text, pair computed-color checks with rendered inspection of representative states. The [Claymorphism trial](../examples/claymorphism-composition-evaluation/README.md) exposed unreadable forced-color text backplates despite passing computed pairs; its repaired states were checked visually. This is evidence about that specimen and a reason to inspect similar effects, not an automatic audit requirement for unrelated tasks.
 
 These composition procedures and compatibility classifications are Atlas proposals, not a historical taxonomy or proof of usability. Technical inputs remain attributed in each selected style's sources. Browser checks, manual visual inspection, assistive technology, real services and observed user research are separate evidence.

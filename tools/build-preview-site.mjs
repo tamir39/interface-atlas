@@ -23,7 +23,7 @@ const files = [
     ['index.html', 'styles.css', 'preview.js'].map((name) => [
       `themes/${theme}/preview/${name}`, `themes/${theme}/preview/${name}`,
     ])),
-  ...['glassmorphism', 'neobrutalism'].flatMap((style) =>
+  ...['glassmorphism', 'neobrutalism', 'claymorphism'].flatMap((style) =>
     ['index.html', 'styles.css', 'preview.js', 'theme-tokens.css', 'theme-tokens.json'].map((name) => [
       `styles/${style}/preview/${name}`, `styles/${style}/preview/${name}`,
     ])),

@@ -218,3 +218,12 @@ h1 em { color: var(--action); }
 @media (forced-colors: active) {
   .neobrutalism-section, .neo-study, .neo-study-label, .neo-study-row span { background: Canvas; color: CanvasText; border-color: CanvasText; box-shadow: none; }
 }
+
+/* Original Claymorphism collection study; opaque content covers perimeter shading. */
+.claymorphism-section { border-radius: 28px; }
+.clay-study { display: grid; place-items: center; padding: clamp(1.25rem, 4vw, 2rem); min-block-size: 260px; background: #e8eef0; border-radius: 28px; }
+.clay-study-pillow { width: 100%; padding: 12px; border-radius: 28px; background: #c6d8df; box-shadow: inset 7px 7px 14px #ffffffb3, inset -7px -7px 14px #203d492e, 0 12px 20px #203d4926; }
+.clay-study-face { position: relative; padding: clamp(1rem, 3vw, 1.75rem); border-radius: 16px; background: #f8fbfb; color: #21353e; }
+.clay-study-face span { display: block; font-size: .75rem; font-weight: 600; line-height: 1.5; }
+.clay-study-face strong { display: block; margin-block: 1.5rem; font-size: clamp(1.75rem, 3vw, 2.75rem); font-weight: 650; line-height: 1.05; letter-spacing: -.045em; }
+@media (forced-colors: active) { .clay-study, .clay-study-pillow, .clay-study-face { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; } }

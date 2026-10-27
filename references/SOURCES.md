@@ -124,3 +124,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Neobrutalism research and implementation
 
 [Neobrutalism's source dossier](../styles/neobrutalism/sources.md) records inspected primary references, specific author/implementation roles, a pinned library revision and artifact-specific reuse boundaries. [Its composition evaluation](../examples/neobrutalism-composition-evaluation/README.md) distinguishes original Atlas fit judgments from rendered profile checks. The library author is not presented as a proven inventor of the family; original Atlas code imports no upstream implementation or assets.
+
+## Claymorphism research and implementation
+
+[Claymorphism's source dossier](../styles/claymorphism/sources.md) records primary naming and soft-3D antecedent evidence, specifically credited authors/artwork, the pinned clay.css metadata and missing-notice boundary, and accessibility references. No external code or imagery is distributed. [The composition evaluation](../examples/claymorphism-composition-evaluation/README.md) separates source facts, original Atlas shape/depth decisions and actual rendered evidence; opaque content faces keep decorative shading out of text-contrast measurements.

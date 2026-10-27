@@ -1,0 +1,226 @@
+/* Original Atlas Claymorphism specimen. Theme roles are source-mapped in
+   theme-tokens.css. Only selected clay shells receive the 28 / 12 / 16 geometry. */
+:root {
+  --clay-shadow: 7px 9px 20px rgb(25 28 36 / .12), -5px -5px 15px rgb(255 255 255 / .56), inset 4px 4px 9px rgb(255 255 255 / .72), inset -5px -5px 11px rgb(25 28 36 / .16);
+}
+:root[data-appearance="dark"] {
+  --clay-shadow: 7px 9px 20px rgb(0 0 0 / .3), -5px -5px 15px rgb(255 255 255 / .055), inset 4px 4px 9px rgb(255 255 255 / .09), inset -5px -5px 11px rgb(0 0 0 / .26);
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-appearance="system"] {
+    --clay-shadow: 7px 9px 20px rgb(0 0 0 / .3), -5px -5px 15px rgb(255 255 255 / .055), inset 4px 4px 9px rgb(255 255 255 / .09), inset -5px -5px 11px rgb(0 0 0 / .26);
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-block: 24px; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 400 1rem/1.6 var(--theme-font, "Segoe UI", Arial, sans-serif); }
+[hidden] { display: none !important; }
+h1, h2, h3, h4, p, dl { margin: 0; }
+h1, h2, h3, h4 { line-height: 1.16; overflow-wrap: anywhere; text-wrap: balance; }
+h1, .intro-lead, .studio-title h2, .principle-section h2 { font-family: var(--display-font, var(--theme-font)); }
+a { color: inherit; text-underline-offset: .23em; text-decoration-thickness: 1px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 2px; }
+button, input, select { color: inherit; font: inherit; }
+button, select, summary { cursor: pointer; }
+button:disabled, input:disabled, select:disabled { opacity: 1; cursor: default; }
+button, input, select { max-width: 100%; }
+button, a, input, select, summary, [tabindex] { scroll-margin-block: 24px; -webkit-tap-highlight-color: transparent; }
+:focus-visible, [tabindex="-1"]:focus { outline: 3px solid var(--focus); outline-offset: 3px; }
+::selection { color: var(--on-primary); background: var(--primary); }
+section, article, div, aside, form, fieldset { min-width: 0; }
+.page-shell { width: min(1220px, calc(100% - 80px)); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.skip-link { position: absolute; z-index: 10; inset: 12px auto auto 12px; padding: 10px 16px; min-height: 44px; background: var(--raised); color: var(--ink); border: 1px solid var(--border); transform: translateY(-180%); }
+.skip-link:focus { transform: none; }
+.page-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 32px; padding-block: 25px; min-height: 96px; border-block-end: 1px solid var(--border); }
+.atlas-brand { display: inline-flex; align-items: center; gap: 11px; min-height: 44px; font-size: .9375rem; font-weight: 650; text-decoration: none; }
+.atlas-brand svg { fill: var(--primary); flex-shrink: 0; }
+.reference-nav { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: .8125rem; }
+.reference-nav a { display: inline-flex; gap: 12px; align-items: center; min-height: 44px; }
+.eyebrow { font-size: .6875rem; font-weight: 650; line-height: 1.5; letter-spacing: .105em; text-transform: uppercase; }
+.support { color: var(--muted); font-size: .8125rem; line-height: 1.6; overflow-wrap: anywhere; }
+.technical { font: 400 .6875rem/1.6 var(--mono-font, Consolas, monospace); }
+.intro { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, .8fr); align-items: end; gap: 48px; padding-block: 62px 48px; }
+h1 { margin-block-start: 16px; font-size: clamp(1.85rem, 5.6vw, 5rem); font-weight: 600; letter-spacing: -.055em; }
+h1 > span { color: var(--primary); }
+.intro-lead { margin-block-end: 16px; font-size: clamp(1.65rem, 2.45vw, 2.25rem); letter-spacing: -.035em; line-height: 1.2; }
+.intro-copy > p:last-child { max-width: 40ch; color: var(--muted); font-size: .875rem; }
+.settings-panel { display: grid; grid-template-columns: minmax(160px, .8fr) minmax(0, 2fr); gap: 18px 40px; padding: 26px 28px; background: var(--raised); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.settings-heading h2 { font-size: 1rem; line-height: 1.5; font-weight: 650; }
+.settings-heading .support { margin-block-start: 5px; }
+.control-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 20px; }
+.field { display: grid; align-content: start; gap: 8px; }
+.field label { font-size: .8125rem; line-height: 1.5; font-weight: 600; }
+input, select { width: 100%; min-width: 0; min-height: 44px; padding: 10px 12px; color: var(--ink); background: var(--raised); border: 1px solid var(--border); border-radius: var(--control-radius); font-size: 1rem; line-height: 1.5; }
+select { padding-inline-end: 28px; }
+.material-status { grid-column: 1 / -1; border-block-start: 1px solid var(--border); padding-block-start: 14px; font-size: .8125rem; font-weight: 600; }
+#js-status { grid-column: 1 / -1; margin-block-start: -10px; }
+.studio { margin-block-start: 56px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.studio-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding: 28px 36px; background: var(--raised); border-block-end: 1px solid var(--border); border-start-start-radius: inherit; border-start-end-radius: inherit; }
+.studio-title { display: flex; align-items: center; gap: 18px; }
+.studio-symbol { font-size: 3rem; line-height: 1; color: var(--primary); }
+.studio-title h2 { margin-block-start: 4px; font-size: clamp(1.7rem, 3vw, 2.6rem); font-weight: 600; letter-spacing: -.045em; }
+.studio-title .eyebrow { font-size: .625rem; }
+.studio-note { position: relative; font-size: .8125rem; padding-inline-start: 16px; }
+.local-dot { position: absolute; inset-inline-start: 0; inset-block-start: 9px; width: 6px; height: 6px; background: var(--primary); border-radius: 50%; }
+.studio-content { padding: 38px 36px 0; }
+.practice-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 0 2px 25px; }
+.practice-heading h3 { font-size: 1.4rem; letter-spacing: -.025em; margin-block-start: 8px; font-weight: 600; }
+.practice-heading > .support { max-width: 28ch; }
+.practice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+/* Inset shading is drawn on the outer shell. The opaque child sits over its
+   center: no shadow, gradient, transparency, or overlay can tint readable areas. */
+.clay-surface { padding: 12px; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 28px; box-shadow: var(--clay-shadow); }
+.clay-content { position: relative; display: block; width: 100%; background: var(--raised); color: var(--ink); border-radius: 16px; box-shadow: none; }
+.practice-card { display: block; text-align: start; }
+.practice-card > .clay-content { display: flex; flex-direction: column; gap: 13px; padding: 20px 18px; height: 100%; }
+.card-top { display: flex; align-items: start; justify-content: space-between; gap: 12px; min-height: 54px; }
+.practice-icon { width: 44px; height: 44px; flex-shrink: 0; }
+.practice-icon svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.choice-state { font-size: .625rem; line-height: 1.5; font-weight: 650; text-transform: uppercase; letter-spacing: .055em; padding-block: 4px; }
+.practice-name { font-size: 1.25rem; line-height: 1.25; letter-spacing: -.03em; }
+.practice-copy { display: block; font-size: .8125rem; line-height: 1.6; }
+.card-foot { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-block-start: auto; padding-block-start: 18px; font-size: .6875rem; line-height: 1.5; }
+.card-foot > span { font-size: 1.1rem; }
+.practice-card[aria-pressed="true"] { outline: 2px solid var(--focus); outline-offset: 4px; }
+.practice-card[aria-pressed="true"] > .clay-content { background: var(--primary); color: var(--on-primary); }
+.practice-card:not(:disabled):hover .practice-name { text-decoration: underline; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+.practice-card:not(:disabled):active .choice-state { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 2px; }
+.practice-card:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.selection-status { margin-block: 20px 28px; padding-inline: 2px; font-size: .8125rem; }
+.work-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: start; gap: 28px; }
+.work-panel { padding: 28px; background: var(--raised); color: var(--ink); border: 1px solid var(--border); border-radius: var(--card-radius); }
+.work-panel h3 { font-size: 1.5rem; letter-spacing: -.03em; margin-block: 8px 12px; font-weight: 600; }
+fieldset { padding: 0; margin: 0; border: 0; }
+#session-form { margin-block-start: 24px; }
+#session-fields { display: grid; gap: 22px; }
+.session-meta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+.practice-summary { display: grid; align-content: start; justify-items: start; gap: 8px; padding-block-start: 1px; }
+.practice-summary strong { font-size: .9375rem; min-height: 44px; display: flex; align-items: center; }
+.practice-summary a { min-height: 44px; display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.button { display: inline-flex; justify-content: center; align-items: center; gap: 20px; min-height: 44px; padding: 11px 16px; border: 1px solid var(--border); border-radius: var(--control-radius); font-size: .8125rem; font-weight: 650; line-height: 1.5; }
+.primary-button { color: var(--on-primary); background: var(--primary); }
+.secondary-button { color: var(--ink); background: var(--raised); }
+.button:not(:disabled):hover { text-decoration: underline; text-underline-offset: .25em; }
+.button:not(:disabled):active { text-decoration: underline; text-underline-offset: .25em; text-decoration-thickness: 2px; }
+.form-status { margin-block-start: 20px; padding-block-start: 16px; border-block-start: 1px solid var(--border); font-size: .8125rem; overflow-wrap: anywhere; }
+.field-error, .form-status[data-state="error"] { color: var(--error); }
+.field-error { font-size: .8125rem; font-weight: 600; }
+input[aria-invalid="true"] { border: 2px solid var(--error); }
+.session-aside > .clay-content { padding: 28px 24px; }
+.session-aside h3 { font-size: clamp(1.65rem, 2.5vw, 2.25rem); font-weight: 600; letter-spacing: -.04em; margin-block: 12px 20px; }
+.session-aside p:not(.eyebrow) { font-size: .875rem; }
+.session-aside p + p { margin-block-start: 18px; }
+.studio-sculpture { position: relative; height: 170px; margin: 2px auto 30px; max-width: 240px; overflow: hidden; }
+.studio-sculpture i { position: absolute; display: block; border: 1px solid var(--border); }
+.sculpture-base { width: 170px; height: 42px; inset-inline-start: calc(50% - 85px); bottom: 4px; background: var(--surface); border-radius: 50%; box-shadow: inset 4px 3px 9px rgb(255 255 255 / .2), inset -7px -5px 10px rgb(0 0 0 / .13); }
+.sculpture-loop { z-index: 1; width: 116px; height: 116px; inset-inline-start: calc(50% - 70px); top: 10px; background: var(--surface); border: 25px solid var(--primary) !important; border-radius: 42%; transform: rotate(-15deg); box-shadow: inset 4px 5px 8px rgb(0 0 0 / .14), 6px 8px 10px rgb(0 0 0 / .12); }
+.sculpture-ball { z-index: 2; width: 68px; height: 68px; inset-inline-start: calc(50% + 17px); top: 70px; background: var(--surface); border-radius: 42%; transform: rotate(15deg); box-shadow: inset 6px 6px 10px rgb(255 255 255 / .38), inset -8px -7px 10px rgb(0 0 0 / .18), 4px 7px 8px rgb(0 0 0 / .12); }
+#review-title { font-size: 1.125rem; line-height: 1.4; font-weight: 600; padding-block: 18px; border-block: 1px solid var(--border); }
+.review-facts { display: grid; gap: 14px; margin-block: 20px; }
+.review-facts > div { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 20px; font-size: .8125rem; }
+.review-facts dt { color: var(--muted); }
+.review-facts dd { margin: 0; font-weight: 600; }
+.studio-colophon { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 26px; }
+.studio-colophon a { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; font-size: .75rem; }
+.principle-section { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.25fr); gap: 80px; padding-block: 70px; }
+.principle-section h2 { font-size: clamp(1.9rem, 2.8vw, 2.7rem); font-weight: 550; letter-spacing: -.04em; margin-block: 14px 22px; }
+.principle-section > div > p:last-child { color: var(--muted); max-width: 38ch; font-size: .875rem; }
+details { border-block-end: 1px solid var(--border); }
+details:first-child { border-block-start: 1px solid var(--border); }
+summary { min-height: 56px; padding: 16px 4px; font-size: .875rem; font-weight: 600; }
+details > p { margin-block: 0 18px; padding-inline: 4px; font-size: .8125rem; }
+details .source-links { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 0 4px 18px; font-size: .8125rem; }
+.source-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.font-note code { display: block; font: 400 .75rem/1.6 var(--mono-font, Consolas, monospace); overflow-wrap: anywhere; margin-block-start: 6px; }
+.page-footer { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 48px; padding-block: 30px 40px; border-block-start: 1px solid var(--border); font-size: .75rem; line-height: 1.8; }
+.page-footer strong { color: var(--ink); font-size: .8125rem; }
+.page-footer nav { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0 28px; }
+.page-footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (prefers-reduced-motion: no-preference) {
+  :root[data-motion="on"] .practice-card, :root[data-motion="on"] .button { transition: transform 120ms ease; }
+  :root[data-motion="on"] .practice-card:not(:disabled):active, :root[data-motion="on"] .button:not(:disabled):active { transform: translateY(1px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .practice-card, .button { transform: none !important; transition: none !important; }
+}
+@media (max-width: 1000px) {
+  .page-shell { width: calc(100% - 48px); }
+  .intro { gap: 28px; grid-template-columns: minmax(0, 1.3fr) minmax(0, .8fr); }
+  .settings-panel { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .control-grid { gap: 16px; }
+  .studio-heading { padding: 26px; }
+  .studio-content { padding: 30px 26px 0; }
+  .practice-grid { gap: 20px; }
+  .practice-card > .clay-content { padding: 18px 14px; }
+  .practice-name { font-size: 1.1rem; }
+  .work-grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 22px; }
+  .work-panel { padding: 22px; }
+  .session-meta { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .practice-summary { gap: 0; }
+  .practice-summary strong { min-height: 36px; }
+  .session-aside > .clay-content { padding: 22px 18px; }
+  .principle-section { gap: 40px; }
+}
+@media (max-width: 760px) {
+  .page-shell { width: calc(100% - 40px); }
+  .intro { grid-template-columns: minmax(0, 1fr); align-items: start; padding-block: 40px 32px; gap: 24px; }
+  h1 { font-size: clamp(1.85rem, 8vw, 3.75rem); }
+  .intro-copy { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  .intro-lead { margin: 0; }
+  .settings-panel { padding: 22px; }
+  .studio { margin-block-start: 40px; }
+  .studio-heading { align-items: start; padding: 24px; gap: 16px; }
+  .studio-content { padding: 28px 22px 0; }
+  .practice-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .practice-card > .clay-content { min-height: 190px; padding: 20px; }
+  .card-top { min-height: 46px; }
+  .practice-name { font-size: 1.3rem; }
+  .practice-copy br { display: none; }
+  .card-foot { padding-block-start: 8px; }
+  .work-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .session-meta { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; }
+  .session-aside > .clay-content { padding: 26px; }
+  .studio-sculpture { height: 155px; margin-block-end: 20px; }
+  .principle-section { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 48px; }
+  .page-footer { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .page-footer nav { grid-column: auto; }
+}
+@media (max-width: 440px) {
+  .page-shell { width: calc(100% - 32px); }
+  .page-header { gap: 4px; padding-block: 18px; }
+  .reference-nav { gap: 8px 20px; }
+  .intro-copy { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .control-grid { grid-template-columns: minmax(0, 1fr); }
+  .settings-panel { padding: 18px; }
+  .studio-heading { padding: 22px 18px; }
+  .studio-title { gap: 12px; }
+  .studio-symbol { font-size: 2.3rem; }
+  .studio-title .eyebrow { font-size: .5625rem; }
+  .studio-content { padding: 26px 18px 0; }
+  .practice-card > .clay-content { padding: 18px 14px; }
+  .work-panel { padding: 20px 16px; }
+  .session-meta { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .form-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .button { width: 100%; }
+  .session-aside > .clay-content { padding: 22px 16px; }
+  .studio-colophon { padding-block: 20px; }
+}
+@media (forced-colors: active) {
+  :root[data-theme][data-appearance] {
+    --page: Canvas; --surface: Canvas; --raised: Canvas; --ink: CanvasText; --muted: CanvasText;
+    --primary: Highlight; --on-primary: HighlightText; --border: ButtonText; --focus: Highlight; --error: CanvasText;
+  }
+  *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; transition: none !important; }
+  .practice-card, .button { transform: none !important; }
+  .clay-surface, .clay-content, .work-panel, .settings-panel { background: Canvas; color: CanvasText; }
+  .practice-card[aria-pressed="true"] { outline: 3px double Highlight; outline-offset: 3px; }
+  .practice-card[aria-pressed="true"] > .clay-content { background: Canvas; color: CanvasText; }
+  .primary-button { background: ButtonFace; color: ButtonText; }
+  .practice-card[aria-pressed="true"] .choice-state { text-decoration: underline; text-underline-offset: .2em; }
+  .practice-card:focus-visible, :focus-visible, [tabindex="-1"]:focus { outline: 3px solid Highlight; outline-offset: 3px; }
+  .studio-sculpture { display: none; }
+  .field-error { border-inline-start: 3px solid CanvasText; padding-inline-start: 8px; }
+  input[aria-invalid="true"] { border: 2px dashed CanvasText; }
+}

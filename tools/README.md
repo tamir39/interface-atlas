@@ -151,15 +151,18 @@ node tools/style-tokens.mjs --check
 
 Style README frontmatter uses scalar fields id, name, revision, status, kind, entry_creator, attribution_summary, basis, motion_character, implementation_dependency, reviewed_on and inline lists aliases, appearances, fit_types. Kind is material, form, composition or metaphor; categories can overlap. Required package files are README.md, style.md and sources.md. Motion and evidence records are discovered when present. Only implemented entries are listed; measured document word counts help selective loading.
 
-The token generator projects selected palette, font-stack and geometry values from existing theme CSS into separate Glassmorphism and Neobrutalism shared specimens. Its manifest records source hashes, mappings and credits. It deliberately excludes full layouts, behavior, fonts and most effects. Changed source values or unsupported new themes fail check mode until the projection is deliberately refreshed.
+The token generator projects selected palette, font-stack and geometry values from existing theme CSS into separate Glassmorphism, Neobrutalism and Claymorphism shared specimens. Its manifest records source hashes, mappings and credits. It deliberately excludes full layouts, behavior, fonts and most effects. Changed source values or unsupported new themes fail check mode until the projection is deliberately refreshed.
 
 Browser checks use the same optional installed Playwright/Chromium convention:
 
 ```sh
 node tools/validate-glassmorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-glass-results
 node tools/validate-neobrutalism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-neo-results
+node tools/validate-claymorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-clay-results
 ```
 
 See the [style validation record](../styles/glassmorphism/validation.md) and [composition evaluation](../examples/style-composition-evaluation/README.md) for exact coverage and exclusions. Safe rendering of a profile is not proof that glass should replace a theme's default surfaces.
 
 Neobrutalism's [validation record](../styles/neobrutalism/validation.md) and [composition evaluation](../examples/neobrutalism-composition-evaluation/README.md) document the actual checks, source identities and limits for opaque outlines, hard shadows and optional press feedback. Both style previews receive independent local copies of the same bounded theme projection; using one style does not require loading the other style's rules or runtime files.
+
+Claymorphism's [validation record](../styles/claymorphism/validation.md) and [composition evaluation](../examples/claymorphism-composition-evaluation/README.md) cover selected rounded-shell overrides, opaque text-face containment, local task states and preference fallbacks. Its theme-token projection stays identical to the other two style previews; shell geometry is an explicit style rule rather than a modification of source tokens. The three previews have independent local runtime files and require no upstream component package.

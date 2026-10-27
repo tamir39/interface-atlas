@@ -2,6 +2,47 @@
   "schema_version": 1,
   "styles": [
     {
+      "id": "claymorphism",
+      "name": "Claymorphism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "form",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; Michał Malewicz credited for the term, with earlier soft 3D precedents acknowledged",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "soft-3d"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "consumer-app",
+        "creative-onboarding",
+        "learning-product",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-gentle",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/claymorphism/README.md",
+        "style": "styles/claymorphism/style.md",
+        "sources": "styles/claymorphism/sources.md",
+        "motion": "styles/claymorphism/motion.md",
+        "validation": "styles/claymorphism/validation.md"
+      },
+      "reading_words": {
+        "readme": 341,
+        "style": 1882,
+        "sources": 1073,
+        "motion": 447,
+        "validation": 450
+      }
+    },
+    {
       "id": "glassmorphism",
       "name": "Glassmorphism",
       "revision": "0.1.0-draft",

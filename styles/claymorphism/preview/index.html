@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" data-theme="play" data-appearance="light" data-motion="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original Interface Atlas Claymorphism study: inflated surfaces, opaque reading areas, and a browser-local creative practice planner across nine theme identities.">
+  <title>Claymorphism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the clay studio</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home">
+        <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg>
+        <span>Interface Atlas</span>
+      </a>
+      <nav class="reference-nav" aria-label="Reference pages"><a href="../../README.md">Style catalog</a><a href="../style.md">Style rules <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-heading"><p class="eyebrow">Style study / 03</p><h1 id="page-title">Claymorphism<span aria-hidden="true">.</span></h1></div>
+        <div class="intro-copy"><p class="intro-lead">Soft edges.<br>A place to begin.</p><p>Inflated forms bring a little warmth to a small task. Color and type follow your theme; selected shells take an explicit, rounded clay shape.</p></div>
+      </section>
+
+      <section class="settings-panel" aria-labelledby="settings-title">
+        <div class="settings-heading"><h2 id="settings-title">Shape the study</h2><p class="support">One specimen. Nine theme identities.</p></div>
+        <div class="control-grid">
+          <div class="field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial">Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play" selected>Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+          <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+          <div class="field"><label for="motion">Press feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On</option></select></div>
+        </div>
+        <p id="material-status" class="material-status" role="status">Opaque clay surfaces · light appearance · press travel off.</p>
+        <p id="js-status" class="support">Settings and the local session review need JavaScript. The reference content, links, and disclosures remain available.</p>
+      </section>
+
+      <section id="studio" class="studio" aria-labelledby="studio-title">
+        <header class="studio-heading">
+          <div class="studio-title"><span class="studio-symbol" aria-hidden="true">✳</span><div><p class="eyebrow">A fictional creative practice space</p><h2 id="studio-title">Little studio</h2></div></div>
+          <p class="studio-note"><span class="local-dot" aria-hidden="true"></span> A little time, well spent.<br><span class="support">Browser-local example · <span id="theme-label">Play</span></span></p>
+        </header>
+
+        <div class="studio-content">
+          <div class="practice-heading"><div><p class="eyebrow">01 / Pick a practice</p><h3>A small start is still a start.</h3></div><p class="support">Choose something to explore.<br>No perfect outcome required.</p></div>
+          <div class="practice-grid" role="group" aria-label="Choose a creative practice">
+            <button type="button" class="practice-card clay-surface" data-practice="sketch" aria-pressed="true" disabled>
+              <span class="clay-content">
+                <span class="card-top"><span class="practice-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="m14 32 3-10L33 6l9 9-16 16-12 4 3-10M29 10l9 9M8 42h32"/></svg></span><span class="choice-state">Selected</span></span>
+                <strong class="practice-name">Sketch a little</strong><span class="practice-copy">Find a detail. Follow a line.<br>See where it goes.</span><span class="card-foot">Paper + something to draw with <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button type="button" class="practice-card clay-surface" data-practice="writing" aria-pressed="false" disabled>
+              <span class="clay-content">
+                <span class="card-top"><span class="practice-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M10 8h28v32H10zM17 16h14M17 23h14M17 30h8"/></svg></span><span class="choice-state">Choose</span></span>
+                <strong class="practice-name">Write a page</strong><span class="practice-copy">Collect a thought.<br>Give it a little room.</span><span class="card-foot">A notebook or an empty document <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+            <button type="button" class="practice-card clay-surface" data-practice="making" aria-pressed="false" disabled>
+              <span class="clay-content">
+                <span class="card-top"><span class="practice-icon" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><path d="M8 32 20 11l12 21H8ZM29 15h11v24H16v-7M33 7v7M39 11h7"/></svg></span><span class="choice-state">Choose</span></span>
+                <strong class="practice-name">Make a thing</strong><span class="practice-copy">Fold, arrange, or assemble.<br>Think with your hands.</span><span class="card-foot">A few things already around you <span aria-hidden="true">↗</span></span>
+              </span>
+            </button>
+          </div>
+          <p id="selection-status" class="selection-status" role="status">Sketch a little selected. Your session will use this practice.</p>
+
+          <div class="work-grid">
+            <section class="work-panel" aria-labelledby="session-heading">
+              <p class="eyebrow">02 / Make a little room</p><h3 id="session-heading">Your next small session.</h3>
+              <p class="support">Give it a name and a little time. Review an example plan here; nothing is sent or saved.</p>
+              <form id="session-form" novalidate>
+                <fieldset id="session-fields" disabled>
+                  <legend class="sr-only">Creative practice session</legend>
+                  <div class="field"><label for="session-title">Session name <span class="support">(required)</span></label><input type="text" id="session-title" name="title" value="A page of small discoveries" required minlength="3" maxlength="48" aria-describedby="title-hint title-error"><p id="title-hint" class="support">Use 3–48 characters after trimming spaces.</p><p id="title-error" class="field-error" hidden></p></div>
+                  <div class="session-meta"><div class="field"><label for="session-minutes">Time in minutes <span class="support">(required)</span></label><input type="number" id="session-minutes" name="minutes" value="20" min="5" max="120" step="5" required inputmode="numeric" aria-describedby="minutes-hint minutes-error"><p id="minutes-hint" class="support">5–120 minutes, in steps of 5.</p><p id="minutes-error" class="field-error" hidden></p></div><div class="practice-summary"><span class="support">Your practice</span><strong id="practice-name">Sketch a little</strong><a href="#studio">Change your practice <span aria-hidden="true">↑</span></a></div></div>
+                  <div class="form-actions"><button id="review-button" class="button primary-button" type="submit">Review this session <span aria-hidden="true">→</span></button><button id="reset-button" class="button secondary-button" type="button">Reset example</button></div>
+                </fieldset>
+                <p id="form-status" class="form-status" data-state="draft" role="status">An example to play with. Your choices stay in this page only.</p>
+              </form>
+            </section>
+
+            <aside class="session-aside clay-surface" aria-labelledby="aside-heading">
+              <div class="clay-content">
+                <div class="studio-sculpture" aria-hidden="true"><i class="sculpture-loop"></i><i class="sculpture-ball"></i><i class="sculpture-base"></i></div>
+                <div id="starting-note"><p class="eyebrow">A gentle reminder</p><h3 id="aside-heading">Begin before<br>it feels ready.</h3><p>Clear a corner. Gather what you need. Let the first few minutes be an experiment.</p><p class="support">Your reviewed session will appear here.</p></div>
+                <section id="review-panel" aria-labelledby="review-heading" hidden><p class="eyebrow">03 / Ready for a little practice</p><h3 id="review-heading">A plan for right now.</h3><h4 id="review-title">A page of small discoveries</h4><dl class="review-facts"><div><dt>Practice</dt><dd id="review-practice">Sketch a little</dd></div><div><dt>Time</dt><dd id="review-minutes">20 minutes</dd></div></dl><p class="support">Reviewed in this page. This is a local example, with no saved session or timer.</p></section>
+              </div>
+            </aside>
+          </div>
+          <div class="studio-colophon"><span class="technical">Little studio / an original Atlas specimen</span><a href="#principle">See how the clay is made <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </section>
+
+      <section id="principle" class="principle-section" aria-labelledby="principle-heading">
+        <div><p class="eyebrow">The material, with boundaries</p><h2 id="principle-heading">A soft perimeter.<br>A clear center.</h2><p>Domed edges suggest volume. An opaque inner surface keeps every label, input, and message on a stable color.</p></div>
+        <div class="principle-notes">
+          <details open><summary>What does the style change?</summary><p>Selected clay shells explicitly use a 28px outer radius, 12px padding, and a 16px opaque inner radius. Their paired outer and inset shadows stay around the readable center. Ordinary fields and the work panel keep the chosen theme’s control and card geometry. The style does not preserve every corner.</p></details>
+          <details><summary>What comes from the theme?</summary><p>Palette, semantic color pairs, and declared font stacks come from each Atlas theme’s actual preview tokens. This is a shared, limited specimen, not the theme’s full layout.</p><p id="theme-fit">Play’s expressive identity has affinity with this small creative task. Clay explicitly replaces its hard depth and shell geometry.</p><p class="font-note"><span class="support">Declared body stack:</span> <code id="font-stack">'Manrope', 'Segoe UI', Arial, sans-serif</code></p><div class="source-links"><a id="theme-source-link" href="../../../themes/play/README.md">Play theme reference ↗</a><a id="theme-credits-link" href="../../../themes/play/sources.md">Play source &amp; font credits ↗</a></div></details>
+          <details><summary>What happens with device preferences?</summary><p>Press feedback starts Off. On adds only 1px of downward press travel with a 120ms transform transition. Reduced motion removes that travel and transition. Forced colors removes shadows and decorative artwork, using system colors while retaining control boundaries, selection text, errors, and focus. System appearance follows live device changes.</p></details>
+          <details><summary>Where did Claymorphism come from?</summary><p>Michał Malewicz named and popularized Claymorphism in 2021. Inflated forms and soft dimensional illustration have broader precedents. This layout, CSS artwork, and interaction code are original Atlas work. The <a href="../sources.md">source notes</a> distinguish historical references and implementation references from copied material.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer"><p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Original Little studio specimen and CSS artwork.</p><p>Claymorphism terminology: Michał Malewicz, 2021.<br>Named fonts use local fallbacks; no font files or external assets load.<br><a href="../../../assets/brand/README.md">Atlas mark credits</a> · <a href="../sources.md">Style sources</a></p><nav aria-label="Claymorphism documentation"><a href="../README.md">Style overview</a><a href="README.md">Preview scope</a><a href="../validation.md">Validation record</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav></footer>
+  </div>
+</body>
+</html>
