@@ -160,6 +160,31 @@ function project(raw) {
   const prune = value => value && typeof value === 'object' ? value.text && value.boundaries && value.paint ? summarize(value) : Array.isArray(value) ? value.map(prune) : Object.fromEntries(Object.entries(value).map(([k, v]) => [k, prune(v)])) : value;
   return { schema_version: 1, scope: report.scope, node: report.node, browser: report.browser, startedAt: report.startedAt, finishedAt: report.finishedAt, passed: report.passed, rawReport: { sha256: hash(raw), bytes: Buffer.byteLength(raw), storage: 'Temporary browser run directory; not distributed with this repository.' }, validatorSha256: report.validatorSha256, testedFiles: report.testedFiles, profileSources: report.profileSources, identities: report.identities, contrastMethod: report.contrastMethod, matrix: table(report.matrix, ['theme', 'appearance', 'width', 'motion']), interactions: table(report.interactions, ['theme', 'appearance', 'state']), checks: prune(report.checks), runtimeErrors: report.runtimeErrors, resourceFailures: report.resourceFailures, externalRequests: report.externalRequests, intentionalFailures: report.intentionalFailures, screenshots: report.screenshots, limits: report.limits };
 }
+async function publishedDocumentLinks() {
+  // A bounded regression for build-preview-site.mjs's href rewrite. Source HTML,
+  // styles and script remain the tested files; only the two initial hrefs vary.
+  const initial = '../../../themes/editorial/';
+  const published = 'https://github.com/tamir39/interface-atlas/blob/main/themes/';
+  let html = await readFile(path.join(preview, 'index.html'), 'utf8');
+  for (const file of ['README.md', 'sources.md']) {
+    assert.ok(html.includes('href="' + initial + file + '"'), 'Expected source document-link template');
+    html = html.replace('href="' + initial + file + '"', 'href="' + published + 'editorial/' + file + '"');
+  }
+  const context = await contextFor({ viewport: { width: 1280, height: 900 } });
+  const fixture = await context.newPage();
+  await fixture.route(url, route => route.fulfill({ status: 200, contentType: 'text/html; charset=utf-8', body: html }));
+  await fixture.goto(url); await fixture.waitForFunction(() => document.documentElement.dataset.ready === 'true');
+  const states = [];
+  for (const theme of ['editorial', ...ids]) {
+    await select(fixture, 'theme-select', theme);
+    const links = { readme: await fixture.locator('#theme-source-link').getAttribute('href'), credits: await fixture.locator('#theme-credits-link').getAttribute('href') };
+    assert.equal(links.readme, published + theme + '/README.md', 'Rewritten published README href survives initialization/theme change');
+    assert.equal(links.credits, published + theme + '/sources.md', 'Rewritten published credits href survives initialization/theme change');
+    states.push({ theme, ...links });
+  }
+  await context.close();
+  return { scope: 'Bounded simulated build href rewrite, then actual preview initialization/theme changes; no remote navigation or claim of full deployment verification.', states };
+}
 async function checkboxNames(page) {
   const names = {};
   for (const id of noteIds) {
@@ -203,12 +228,15 @@ try {
   assert.equal(await page.locator('#download-button').isDisabled(), true); assert.ok((await page.locator('#download-hint').innerText()).trim());
   assert.deepEqual(await page.locator('article.note').evaluateAll(els => els.map(el => el.id)), noteIds);
   assert.deepEqual(await page.locator('.note-link').evaluateAll(els => els.map(el => el.getAttribute('href'))), noteIds.map(id => '#' + id));
-  pass('Nine actual profiles, six static articles/native links, labeled controls, one h1/main, no positive tabindex, empty export disabled with hint and motion off');
+  const publishedLinks = await publishedDocumentLinks();
+  pass('Nine actual profiles, six static articles/native links, labeled controls, one h1/main, no positive tabindex, empty export disabled with hint and motion off', { publishedDocumentLinkRegression: publishedLinks });
   const focusSelectors = ['#theme-select', '#note-search', '#plan-document-order', '#plan-title', '#download-button'];
   for (const theme of ids) for (const appearance of ['light', 'dark']) {
     await select(page, 'theme-select', theme); await select(page, 'appearance', appearance);
     const values = await page.locator('html').evaluate((el, keys) => Object.fromEntries(keys.map(key => [key, getComputedStyle(el).getPropertyValue(key).trim()])), properties);
-    assert.deepEqual(values, manifest.profiles.find(x => x.id === theme).tokens[appearance], theme + '/' + appearance + ': computed 15 source variables'); report.identities.push({ theme, appearance, values });
+    assert.deepEqual(values, manifest.profiles.find(x => x.id === theme).tokens[appearance], theme + '/' + appearance + ': computed 15 source variables'); const documentLinks = { readme: await page.locator('#theme-source-link').getAttribute('href'), credits: await page.locator('#theme-credits-link').getAttribute('href') };
+    assert.equal(documentLinks.readme, '../../../themes/' + theme + '/README.md'); assert.equal(documentLinks.credits, '../../../themes/' + theme + '/sources.md');
+    report.identities.push({ theme, appearance, values, documentLinks });
     for (const width of [320, 1280]) for (const motion of ['off', 'on']) {
       await page.setViewportSize({ width, height: 900 }); await select(page, 'motion', motion); await page.mouse.move(0, 0);
       try { report.matrix.push({ theme, appearance, width, motion, passed: true, ...await checkedMetrics(page, [theme, appearance, width, motion].join('/'), { motion }) }); }

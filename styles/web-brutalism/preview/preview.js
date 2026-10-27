@@ -3,6 +3,9 @@
   'use strict';
   const root = document.documentElement;
   const byId = (id) => document.getElementById(id);
+  // Preserve local document paths or the publication build's rewritten URLs.
+  const themeSourceTemplate = byId('theme-source-link').getAttribute('href');
+  const themeCreditsTemplate = byId('theme-credits-link').getAttribute('href');
   const publicBase = 'https://tamir39.github.io/interface-atlas/styles/web-brutalism/preview/';
   const labels = { editorial: 'Editorial', swiss: 'Swiss', precision: 'Precision', play: 'Play', botanical: 'Botanical', blueprint: 'Blueprint', pulse: 'Pulse', gallery: 'Gallery', layered: 'Layered' };
   const fits = {
@@ -57,9 +60,9 @@
       byId('theme-label').textContent = name;
       byId('theme-fit').textContent = fits[field.value];
       byId('theme-source-link').textContent = name + ' theme reference';
-      byId('theme-source-link').href = '../../../themes/' + field.value + '/README.md';
+      byId('theme-source-link').href = themeSourceTemplate.replace('/editorial/', '/' + field.value + '/');
       byId('theme-credits-link').textContent = name + ' source & font credits';
-      byId('theme-credits-link').href = '../../../themes/' + field.value + '/sources.md';
+      byId('theme-credits-link').href = themeCreditsTemplate.replace('/editorial/', '/' + field.value + '/');
     }
     byId('font-stack').textContent = getComputedStyle(root).getPropertyValue('--theme-font').trim();
     updateMaterialStatus();

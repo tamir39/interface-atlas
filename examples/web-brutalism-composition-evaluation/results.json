@@ -3,19 +3,19 @@
   "scope": "Open Index: one content-first Web Brutalism composition, nine bounded source-token profiles, explicit 0px controls/sections; other brutalist expressions and complete theme applications are outside this evaluation.",
   "node": "v24.14.1",
   "browser": "153.0.8010.12",
-  "startedAt": "2026-10-27T12:34:35.390Z",
-  "finishedAt": "2026-10-27T12:35:13.746Z",
+  "startedAt": "2026-10-27T12:41:57.938Z",
+  "finishedAt": "2026-10-27T12:42:37.018Z",
   "passed": true,
   "rawReport": {
-    "sha256": "fd5e5c77e2f110892e462d67de0e7a11bf8420868961720f52f432b21bda3ad2",
-    "bytes": 59373061,
+    "sha256": "5f3a27ac8ec607f32225c08705b09d12f2b76fee723f7b58156123e1deedcc90",
+    "bytes": 59378687,
     "storage": "Temporary browser run directory; not distributed with this repository."
   },
-  "validatorSha256": "a6883070b475558001b053f94ed8709c7a4e2dc04077f29ac93f769646d409b6",
+  "validatorSha256": "fc2ff977b5cf920064a363adb9db74624663a80ab7aaa00586e64fc78e50bf7f",
   "testedFiles": {
     "index.html": "8b81379f29a0ba172af0e1ef70fc3bb5073198e7fec06610925440e0356c587d",
     "styles.css": "17bfb2850890c292eaf3199d4b871fc0c5528c83a29feca1d8bfeb15d2ba5d6c",
-    "preview.js": "6a23959e7ae623312b1d68efcafa062ca2bdf7f0eed15187dacd02a75096ca20",
+    "preview.js": "e5681bf396856683ad820e56d1db0e6a0c215212d3e3a06dfc4e691fdfff0654",
     "theme-tokens.css": "0f0cdb4920f66a4a387037e1c15fc1f75e0520f9d89586babb5a7c05a888b9fb",
     "theme-tokens.json": "4c2bdab5027a50fdaf38d71b55fc6d2fc4eeb3931fc2df68bbba0533d277a441"
   },
@@ -95,6 +95,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, monospace",
         "--card-radius": "8px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/blueprint/README.md",
+        "credits": "../../../themes/blueprint/sources.md"
       }
     },
     {
@@ -116,6 +120,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, monospace",
         "--card-radius": "8px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/blueprint/README.md",
+        "credits": "../../../themes/blueprint/sources.md"
       }
     },
     {
@@ -137,6 +145,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, monospace",
         "--card-radius": "32px 8px 32px 8px",
         "--control-radius": "22px 6px 22px 6px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/botanical/README.md",
+        "credits": "../../../themes/botanical/sources.md"
       }
     },
     {
@@ -158,6 +170,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, monospace",
         "--card-radius": "32px 8px 32px 8px",
         "--control-radius": "22px 6px 22px 6px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/botanical/README.md",
+        "credits": "../../../themes/botanical/sources.md"
       }
     },
     {
@@ -179,6 +195,10 @@
         "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
         "--card-radius": "24px",
         "--control-radius": "12px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/editorial/README.md",
+        "credits": "../../../themes/editorial/sources.md"
       }
     },
     {
@@ -200,6 +220,10 @@
         "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
         "--card-radius": "24px",
         "--control-radius": "12px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/editorial/README.md",
+        "credits": "../../../themes/editorial/sources.md"
       }
     },
     {
@@ -221,6 +245,10 @@
         "--mono-font": "Consolas, monospace",
         "--card-radius": "4px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/gallery/README.md",
+        "credits": "../../../themes/gallery/sources.md"
       }
     },
     {
@@ -242,6 +270,10 @@
         "--mono-font": "Consolas, monospace",
         "--card-radius": "4px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/gallery/README.md",
+        "credits": "../../../themes/gallery/sources.md"
       }
     },
     {
@@ -263,6 +295,10 @@
         "--mono-font": "Consolas, monospace",
         "--card-radius": "24px",
         "--control-radius": "12px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/layered/README.md",
+        "credits": "../../../themes/layered/sources.md"
       }
     },
     {
@@ -284,6 +320,10 @@
         "--mono-font": "Consolas, monospace",
         "--card-radius": "24px",
         "--control-radius": "12px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/layered/README.md",
+        "credits": "../../../themes/layered/sources.md"
       }
     },
     {
@@ -305,6 +345,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
         "--card-radius": "30px",
         "--control-radius": "14px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/play/README.md",
+        "credits": "../../../themes/play/sources.md"
       }
     },
     {
@@ -326,6 +370,10 @@
         "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
         "--card-radius": "30px",
         "--control-radius": "14px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/play/README.md",
+        "credits": "../../../themes/play/sources.md"
       }
     },
     {
@@ -347,6 +395,10 @@
         "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
         "--card-radius": "4px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/precision/README.md",
+        "credits": "../../../themes/precision/sources.md"
       }
     },
     {
@@ -368,6 +420,10 @@
         "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
         "--card-radius": "4px",
         "--control-radius": "4px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/precision/README.md",
+        "credits": "../../../themes/precision/sources.md"
       }
     },
     {
@@ -389,6 +445,10 @@
         "--mono-font": "Consolas,\"Liberation Mono\",monospace",
         "--card-radius": "12px",
         "--control-radius": "6px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/pulse/README.md",
+        "credits": "../../../themes/pulse/sources.md"
       }
     },
     {
@@ -410,6 +470,10 @@
         "--mono-font": "Consolas,\"Liberation Mono\",monospace",
         "--card-radius": "12px",
         "--control-radius": "6px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/pulse/README.md",
+        "credits": "../../../themes/pulse/sources.md"
       }
     },
     {
@@ -431,6 +495,10 @@
         "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
         "--card-radius": "2px",
         "--control-radius": "2px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/swiss/README.md",
+        "credits": "../../../themes/swiss/sources.md"
       }
     },
     {
@@ -452,6 +520,10 @@
         "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
         "--card-radius": "2px",
         "--control-radius": "2px"
+      },
+      "documentLinks": {
+        "readme": "../../../themes/swiss/README.md",
+        "credits": "../../../themes/swiss/sources.md"
       }
     }
   ],
@@ -7399,7 +7471,63 @@
     {
       "name": "Nine actual profiles, six static articles/native links, labeled controls, one h1/main, no positive tabindex, empty export disabled with hint and motion off",
       "passed": true,
-      "details": true
+      "details": {
+        "publishedDocumentLinkRegression": {
+          "scope": "Bounded simulated build href rewrite, then actual preview initialization/theme changes; no remote navigation or claim of full deployment verification.",
+          "states": [
+            {
+              "theme": "editorial",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/editorial/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/editorial/sources.md"
+            },
+            {
+              "theme": "blueprint",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/blueprint/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/blueprint/sources.md"
+            },
+            {
+              "theme": "botanical",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/botanical/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/botanical/sources.md"
+            },
+            {
+              "theme": "editorial",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/editorial/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/editorial/sources.md"
+            },
+            {
+              "theme": "gallery",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/gallery/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/gallery/sources.md"
+            },
+            {
+              "theme": "layered",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/layered/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/layered/sources.md"
+            },
+            {
+              "theme": "play",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/play/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/play/sources.md"
+            },
+            {
+              "theme": "precision",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/precision/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/precision/sources.md"
+            },
+            {
+              "theme": "pulse",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/pulse/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/pulse/sources.md"
+            },
+            {
+              "theme": "swiss",
+              "readme": "https://github.com/tamir39/interface-atlas/blob/main/themes/swiss/README.md",
+              "credits": "https://github.com/tamir39/interface-atlas/blob/main/themes/swiss/sources.md"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "72 base states: actual contrast, 320/1280 reflow, 44px targets and explicit flat 0px geometry",

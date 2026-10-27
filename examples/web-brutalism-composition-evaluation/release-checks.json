@@ -69,19 +69,19 @@
       "links": 238
     },
     {
-      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027",
+      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027-r2",
       "passed": true,
-      "output": "Built 76 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-brut-site-20261027"
+      "output": "Built 76 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-brut-site-20261027-r2"
     },
     {
-      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-brut-hub-20261027",
+      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027-r2 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-brut-hub-20261027-r2",
       "passed": true,
       "output": "Recorded actual browser results."
     }
   ],
   "style_evidence": {
     "file": "results.json",
-    "sha256": "ba858385339be787595bdb17831af2838186f8015e666b94e6bdfbcaca0b8cf2",
+    "sha256": "ba237ff510cf5627f2619c96a372f41987170085499cee25893146278fbecd9d",
     "base_states": 72,
     "interaction_contexts": 180,
     "groups": 17
