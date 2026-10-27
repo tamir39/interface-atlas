@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-motion="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Open Index: an original Interface Atlas Web Brutalism document study, with six frontend notes and a browser-local reading plan across nine theme identities.">
+  <title>Open Index · Web Brutalism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to Open Index</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home"><svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg><span>Interface Atlas</span></a>
+      <nav class="reference-nav" aria-label="Reference pages"><a href="../../README.md">Style catalog</a><a href="../style.md">Web Brutalism rules</a></nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <header class="document-header">
+        <p class="eyebrow">06 / Web Brutalism / Raw document variant</p>
+        <h1>Open Index<span class="title-mark" aria-hidden="true">.</span></h1>
+        <p class="lead">Six small notes on making the ordinary parts work.</p>
+        <p class="intro-copy">A document before a demonstration. Follow the index, read in order, or collect a few notes into a reading plan. The full text stays on the page.</p>
+        <p class="document-meta">Original Atlas notes · No account · No saved state</p>
+      </header>
+
+      <details class="settings" open>
+        <summary>Theme &amp; appearance <span class="summary-meta">/ <span id="theme-label">Editorial</span></span></summary>
+        <div class="settings-body">
+          <div class="control-grid">
+            <div class="field"><label for="theme-select">Theme identity</label><select id="theme-select" disabled><option value="editorial" selected>Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option></select></div>
+            <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+            <div class="field"><label for="motion">Border feedback</label><select id="motion" disabled><option value="off">Off</option><option value="on">On</option></select></div>
+          </div>
+          <p id="material-status" class="support" role="status">Raw document · light appearance · border feedback off.</p>
+          <p class="support">Palette and type come from the chosen theme. This variant overrides every section and control corner to 0px and removes shadows, gradients, and blur.</p>
+        </div>
+      </details>
+      <p id="js-status" class="runtime-note">Filter and reading-plan tools need JavaScript. All six notes, index links, and disclosures remain readable. Reload resets the plan and every setting.</p>
+
+      <section id="index" class="index-section" aria-labelledby="index-title" tabindex="-1">
+        <div class="section-heading"><h2 id="index-title">The index</h2><p class="technical">01—06 / Original order</p></div>
+        <form id="index-filter" class="filter-form" role="search" aria-label="Note index" novalidate>
+          <div class="field"><label for="note-search">Filter the index</label><input id="note-search" type="search" placeholder="Title, topic, or summary" aria-describedby="search-hint search-status" disabled><p id="search-hint" class="support">Only the index rows are filtered. All six articles stay below.</p></div>
+          <button id="clear-search" class="button secondary-button" type="button" disabled>Clear filter</button>
+        </form>
+        <p id="search-status" class="support index-status" role="status" aria-atomic="true">All 6 index entries in their original order.</p>
+        <ol id="note-list" class="note-list">
+          <li class="index-entry index-row" data-note-id="document-order" value="1">
+            <div class="entry-copy"><a class="note-link note-title" href="#document-order">Document order is the first layout</a><p class="note-topic">Structure</p><p class="note-summary">Make the source read sensibly before arranging it on a screen.</p></div>
+            <label class="plan-choice" for="plan-document-order"><input class="plan-checkbox" id="plan-document-order" name="note" value="document-order" data-note-id="document-order" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: Document order is the first layout</span></span></label>
+          </li>
+          <li class="index-entry index-row" data-note-id="form-labels" value="2">
+            <div class="entry-copy"><a class="note-link note-title" href="#form-labels">A label stays when the field fills</a><p class="note-topic">Forms</p><p class="note-summary">Keep names and instructions close to the fields they explain.</p></div>
+            <label class="plan-choice" for="plan-form-labels"><input class="plan-checkbox" id="plan-form-labels" name="note" value="form-labels" data-note-id="form-labels" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: A label stays when the field fills</span></span></label>
+          </li>
+          <li class="index-entry index-row" data-note-id="link-names" value="3">
+            <div class="entry-copy"><a class="note-link note-title" href="#link-names">Let the link name the destination</a><p class="note-topic">Navigation</p><p class="note-summary">Give a reader enough information to choose the next page.</p></div>
+            <label class="plan-choice" for="plan-link-names"><input class="plan-checkbox" id="plan-link-names" name="note" value="link-names" data-note-id="link-names" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: Let the link name the destination</span></span></label>
+          </li>
+          <li class="index-entry index-row" data-note-id="reading-type" value="4">
+            <div class="entry-copy"><a class="note-link note-title" href="#reading-type">Set the measure, then read a paragraph</a><p class="note-topic">Typography</p><p class="note-summary">Test type with sentences, narrow screens, and real interruptions.</p></div>
+            <label class="plan-choice" for="plan-reading-type"><input class="plan-checkbox" id="plan-reading-type" name="note" value="reading-type" data-note-id="reading-type" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: Set the measure, then read a paragraph</span></span></label>
+          </li>
+          <li class="index-entry index-row" data-note-id="empty-states" value="5">
+            <div class="entry-copy"><a class="note-link note-title" href="#empty-states">An empty result still has a next step</a><p class="note-topic">Recovery</p><p class="note-summary">Explain what is empty and keep a useful way back in reach.</p></div>
+            <label class="plan-choice" for="plan-empty-states"><input class="plan-checkbox" id="plan-empty-states" name="note" value="empty-states" data-note-id="empty-states" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: An empty result still has a next step</span></span></label>
+          </li>
+          <li class="index-entry index-row" data-note-id="motion-choice" value="6">
+            <div class="entry-copy"><a class="note-link note-title" href="#motion-choice">Feedback does not have to travel</a><p class="note-topic">Motion</p><p class="note-summary">Make an action understandable while every element stays still.</p></div>
+            <label class="plan-choice" for="plan-motion-choice"><input class="plan-checkbox" id="plan-motion-choice" name="note" value="motion-choice" data-note-id="motion-choice" type="checkbox" form="plan-form" disabled><span>Add to plan<span class="sr-only">: Feedback does not have to travel</span></span></label>
+          </li>
+        </ol>
+        <div id="empty-search" class="empty-search" hidden><p><strong>No index entries match.</strong> Try another word or use Clear filter. All six articles remain readable below; your selected notes stay in the plan.</p><a href="#notes">Continue to the full text</a></div>
+      </section>
+
+      <section class="plan-section" aria-labelledby="plan-heading">
+        <h2 id="plan-heading">Your reading plan</h2>
+        <p id="selection-status" role="status" aria-atomic="true">0 of 6 notes selected. No selected notes are hidden by the index filter.</p>
+        <form id="plan-form" novalidate>
+          <fieldset id="plan-fields" disabled>
+            <legend class="sr-only">Name and download your reading plan</legend>
+            <div class="field"><label for="plan-title">Plan title <span class="support">(required)</span></label><input id="plan-title" name="title" type="text" value="A small frontend reading plan" required minlength="3" aria-describedby="title-hint title-error"><p id="title-hint" class="support">3–48 characters after trimming spaces.</p><p id="title-error" class="field-error" hidden></p></div>
+            <div class="download-row"><button id="download-button" class="button primary-button" type="submit" aria-describedby="download-hint" disabled>Download selected notes <span aria-hidden="true">↓</span></button><p id="download-hint" class="support">Select at least one note in the index to download a .txt reading plan.</p></div>
+          </fieldset>
+          <p id="download-status" class="download-status" role="status" aria-atomic="true"></p>
+        </form>
+        <p class="support local-boundary">This page holds your plan while it is open. Filtering keeps selected notes, including hidden ones. Download makes a manual copy in original document order. Reload clears all selections and restores the original title.</p>
+      </section>
+
+      <section id="notes" class="notes-section" aria-labelledby="notes-heading" tabindex="-1">
+        <div class="section-heading"><h2 id="notes-heading">The full text</h2><p class="technical">Always on the page</p></div>
+        <article id="document-order" class="note" data-note-id="document-order" tabindex="-1" aria-labelledby="title-document-order">
+          <p class="article-meta">01 / Structure</p><h2 id="title-document-order">Document order is the first layout</h2>
+          <div class="note-copy"><p>Before drawing a column, put the page in reading order. Start with its name, explain its purpose, then place the action beside the information needed to choose it. Read the source from top to bottom. It should sound like one conversation.</p><p>A narrow screen is a useful check: when columns become a line, does the explanation still arrive before the decision? Keep that relationship in the HTML. A visual arrangement can change with the available space without making the reader reconstruct the sequence.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+        <article id="form-labels" class="note" data-note-id="form-labels" tabindex="-1" aria-labelledby="title-form-labels">
+          <p class="article-meta">02 / Forms</p><h2 id="title-form-labels">A label stays when the field fills</h2>
+          <div class="note-copy"><p>A field needs a name that survives typing. Place a visible label beside it and connect the two. Use a hint for an example, a limit, or a reason for asking. A placeholder can offer a small prompt, but it disappears precisely when someone may need to check their work.</p><p>When an entry needs correction, name the problem next to that field and keep the entered value. A helpful message says what a valid answer needs. After a failed submission, move attention to the first field that needs work so the next step is close at hand.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+        <article id="link-names" class="note" data-note-id="link-names" tabindex="-1" aria-labelledby="title-link-names">
+          <p class="article-meta">03 / Navigation</p><h2 id="title-link-names">Let the link name the destination</h2>
+          <div class="note-copy"><p>A link is a small promise about where a reader will go. Write its name with the destination in mind: the release notes, the delivery address, the full article. Repeated invitations such as “more” make sense only while their neighboring text is still in view.</p><p>Keep ordinary navigation ordinary. A real address can be copied, opened in another tab, revisited, or reached through browser history. Within a long document, a fragment gives a heading an address. The reader should be able to follow it and return without learning a separate navigation system.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+        <article id="reading-type" class="note" data-note-id="reading-type" tabindex="-1" aria-labelledby="title-reading-type">
+          <p class="article-meta">04 / Typography</p><h2 id="title-reading-type">Set the measure, then read a paragraph</h2>
+          <div class="note-copy"><p>A type sample is easy to admire and easy to misjudge. Put a whole paragraph in the chosen face. Read across a line, find the start of the next one, and pause midway. Comfortable type gives the eye enough room to resume without hunting.</p><p>Try a long heading, a familiar sentence, and a word that will not break conveniently. Then narrow the page and enlarge the text. Keep the body measure modest, let headings wrap, and leave enough space between ideas to show their relationship. The exact font available on a reader’s machine may differ from yours.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+        <article id="empty-states" class="note" data-note-id="empty-states" tabindex="-1" aria-labelledby="title-empty-states">
+          <p class="article-meta">05 / Recovery</p><h2 id="title-empty-states">An empty result still has a next step</h2>
+          <div class="note-copy"><p>An empty list can mean several things: nothing has been added, a filter matched nothing, or the page could not obtain its data. Say which condition the interface actually knows. A calm explanation is more useful than a decorative blank space.</p><p>Keep recovery near the explanation. A clear-filter action can restore the list while preserving the reader’s selections. If work exists outside the visible results, say so. A temporary search should not silently erase a decision made before the search began.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+        <article id="motion-choice" class="note" data-note-id="motion-choice" tabindex="-1" aria-labelledby="title-motion-choice">
+          <p class="article-meta">06 / Motion</p><h2 id="title-motion-choice">Feedback does not have to travel</h2>
+          <div class="note-copy"><p>Begin with the still version of an interaction. A checkbox shows its check, a message names the result, and an active control can underline its words. These cues let someone understand what happened without following an object across the screen.</p><p>If movement adds useful context, make it a small, deliberate choice and respect the device preference. A reduced-motion view still needs the same facts and actions. On this page, optional feedback changes only a border’s color; the document, links, and controls keep their positions.</p></div>
+          <a class="back-link" href="#index">Back to the index</a>
+        </article>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-heading">
+        <h2 id="about-heading">About this document</h2>
+        <details open><summary>Why this is a Web Brutalism study</summary><p>The document and its addresses are the structure: a numbered index, headings, complete articles, visible links, native controls, and thin rules. There are no stacked display cards, thick outlines, offset shadows, or decorative hero artwork. This is one content-first raw document variant; experimental and more expressive branches of the family are outside this preview’s evidence.</p></details>
+        <details><summary>What the theme contributes</summary><p id="theme-fit">Editorial contributes its warm palette and serif display stack. This raw document explicitly replaces its rounded geometry and selective elevation with square, shadow-free document structure.</p><p>All 15 projected source variables remain available, including the unmodified card and control geometry values. This variant uses 0px for every actual corner, Ink for focus, and Primary / On-primary for the download action.</p><p class="font-note"><span>Declared body stack:</span><code id="font-stack">Manrope, "Segoe UI", Arial, sans-serif</code></p><div class="source-links"><a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference</a><a id="theme-credits-link" href="../../../themes/editorial/sources.md">Editorial source &amp; font credits</a></div><p>No fonts are fetched. Installed fallbacks and language coverage depend on the reader’s machine.</p></details>
+        <details><summary>What the reading-plan tools do</summary><p>The optional filter searches only index titles, topics, and summaries. It never hides an article. Native checkboxes keep their selection when a row is filtered out; the count reports how many selected notes are hidden. Download includes every selected original note in document order, with the trimmed plan title and public note addresses.</p><p>The title requires 3–48 characters after trimming spaces. A real UTF-8 text file named <code>open-index-reading-plan.txt</code> is created in the browser. User text is plain text. Nothing is sent, stored, synchronized, or saved in this page after reload.</p></details>
+        <details><summary>Motion and system colors</summary><p>Border feedback starts Off. On allows a 100ms border-color transition from Border to Ink on hover. There is no movement, animated shadow, entrance sequence, or smooth scrolling. Active action words underline immediately. Reduced motion and forced colors remove the transition.</p><p>Forced colors uses system document, link, and control colors. Native checkbox checks, visible links, boundaries, errors, and focus remain available. System appearance follows live device changes.</p></details>
+        <details><summary>Guidelines, directory, and original work</summary><p>David Bryant Copeland’s <a href="https://brutalist-web.design/">Brutalist Web Design guidelines</a> are a credited reference for this content-first branch. The <a href="https://brutalistwebsites.com/">Brutalist Websites directory</a> records a broader, varied field. These references do not establish a single inventor or a universal recipe.</p><p>The Open Index layout, six notes, styling, and interaction code are original Atlas work. No source prose, code, page layout, screenshot, or artwork is copied. Read the <a href="../sources.md">style source record</a> for distinct credits, source terms, and limits.</p></details>
+      </section>
+    </main>
+    <footer class="page-footer"><p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Open Index / Six original frontend notes.</p><p>Guidelines reference: David Bryant Copeland.<br>Directory reference: Brutalist Websites.<br><a href="../../../assets/brand/README.md">Atlas mark credits</a> · <a href="../sources.md">Style sources</a></p><nav aria-label="Web Brutalism documentation"><a href="../README.md">Style overview</a><a href="README.md">Preview scope</a><a href="../validation.md">Validation record</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav></footer>
+  </div>
+</body>
+</html>

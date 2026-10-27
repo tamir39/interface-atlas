@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-27",
+  "scope": "Web Brutalism family entry/content-first variant, six-style discovery, shared generator and hub; prior Agent Experience draft excluded.",
+  "checks": [
+    {
+      "command": "node tools/style-catalog.mjs",
+      "passed": true,
+      "output": "Generated catalog for 6 implemented style(s)."
+    },
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "output": "Catalog matches metadata for 9 theme(s)."
+    },
+    {
+      "command": "node tools/style-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 6 implemented style(s)."
+    },
+    {
+      "command": "node tools/style-tokens.mjs --check",
+      "passed": true,
+      "output": "Verified bounded token projections for 9 themes across 6 styles."
+    },
+    {
+      "command": "node --check tools/style-tokens.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/build-preview-site.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/validate-web-brutalism.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check styles/web-brutalism/preview/preview.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "name": "glassmorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neobrutalism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "claymorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neumorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "skeuomorphism five runtime identities still equal prior published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "Relative Markdown links in entry/router/evaluation documents",
+      "passed": true,
+      "documents": 15,
+      "links": 238
+    },
+    {
+      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027",
+      "passed": true,
+      "output": "Built 76 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-brut-site-20261027"
+    },
+    {
+      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-brut-site-20261027 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-brut-hub-20261027",
+      "passed": true,
+      "output": "Recorded actual browser results."
+    }
+  ],
+  "style_evidence": {
+    "file": "results.json",
+    "sha256": "ba858385339be787595bdb17831af2838186f8015e666b94e6bdfbcaca0b8cf2",
+    "base_states": 72,
+    "interaction_contexts": 180,
+    "groups": 17
+  },
+  "hub": {
+    "passed": true,
+    "groups": 12,
+    "testedFiles": {
+      "index.html": "9ac671585d6df81e8b0c3bbe89fc165fd828fa754be1e234a929f59751393ee7",
+      "styles.css": "65bd677987a14105a063ece6eeaa2dc602e53f419d9a82208ab9eb6faf7a0324",
+      "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+    },
+    "validatorSha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b",
+    "limits": [
+      "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+      "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+      "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+    ]
+  },
+  "passed": true
+}

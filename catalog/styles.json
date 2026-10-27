@@ -205,6 +205,48 @@
         "motion": 444,
         "validation": 547
       }
+    },
+    {
+      "id": "web-brutalism",
+      "name": "Web Brutalism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "composition",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Original Atlas recipe; David Bryant Copeland credited for an authored viewpoint and Brutalist Websites as a directory reference; no sole creator claimed",
+      "basis": "original-atlas-interpretation",
+      "aliases": [
+        "raw-web-brutalism",
+        "brutalist-web-design"
+      ],
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "public-documentation",
+        "reading-index",
+        "creative-publication",
+        "selected-product-surfaces"
+      ],
+      "motion_character": "optional-and-restrained",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/web-brutalism/README.md",
+        "style": "styles/web-brutalism/style.md",
+        "sources": "styles/web-brutalism/sources.md",
+        "motion": "styles/web-brutalism/motion.md",
+        "validation": "styles/web-brutalism/validation.md"
+      },
+      "reading_words": {
+        "readme": 337,
+        "style": 1758,
+        "sources": 947,
+        "motion": 390,
+        "validation": 627
+      }
     }
   ]
 }

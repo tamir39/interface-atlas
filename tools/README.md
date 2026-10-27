@@ -161,6 +161,7 @@ node tools/validate-neobrutalism.mjs --module /path/to/playwright/index.mjs --br
 node tools/validate-claymorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-clay-results
 node tools/validate-neumorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-soft-results
 node tools/validate-skeuomorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-skeuo-results
+node tools/validate-web-brutalism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-brut-results
 ```
 
 See the [style validation record](../styles/glassmorphism/validation.md) and [composition evaluation](../examples/style-composition-evaluation/README.md) for exact coverage and exclusions. Safe rendering of a profile is not proof that glass should replace a theme's default surfaces.
@@ -172,3 +173,5 @@ Claymorphism's [validation record](../styles/claymorphism/validation.md) and [co
 Neumorphism's [validation record](../styles/neumorphism/validation.md) and [composition evaluation](../examples/neumorphism-composition-evaluation/README.md) cover matching plane/surface/face colors, per-corner derived shielding, native reading-preset constraints, draft/applied continuity and shadow-independent cues. The generated source-profile values stay identical across style previews; explicit style overrides and derived inner geometry remain in each entry. The runtime needs no upstream Soft UI library.
 
 Skeuomorphism's [validation record](../styles/skeuomorphism/validation.md) and [notebook-variant evaluation](../examples/skeuomorphism-composition-evaluation/README.md) cover opaque paper-face containment, explicit artifact geometry, indexed drafts/applied snapshots, literal text rendering and actual UTF-8 download contents. Fit judgments and numerical evidence apply to this notebook variant. No upstream UI framework, bitmap texture or platform artwork is required.
+
+Web Brutalism's [validation record](../styles/web-brutalism/validation.md) and [content-first evaluation](../examples/web-brutalism-composition-evaluation/README.md) cover authored flat geometry, ordinary document reading before scripts, native fragment/history behavior and actual selected-note downloads. Native checkbox glyphs and popup internals remain user-agent controlled. A passing token profile does not endorse this layout for every theme or every experimental family variant.

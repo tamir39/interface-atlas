@@ -20,7 +20,9 @@ Start with the project's existing rules. When the user requests a visual style o
 
 - [Skeuomorphism](skeuomorphism/README.md): a draft family entry for physical-object metaphors and material rendering. Its original [Fieldbook specimen](skeuomorphism/preview/index.html) and [composition evaluation](../examples/skeuomorphism-composition-evaluation/README.md) test one indexed-notebook variant across nine bounded theme profiles, including local drafts and applied-text downloads. Other variants need their own assessment.
 
-Only implemented entries appear in the generated catalog. Future research candidates are Web Brutalism, Flat and Minimalism. They do not yet have Atlas rules or previews. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
+- [Web Brutalism](web-brutalism/README.md): a draft family entry separating raw, content-first browser conventions from expressive experiments and Neobrutalism. Its original [Open Index specimen](web-brutalism/preview/index.html) and [composition evaluation](../examples/web-brutalism-composition-evaluation/README.md) test one content-first variant across nine bounded theme profiles, with readable HTML before enhancements and actual selected-note downloads.
+
+Only implemented entries appear in the generated catalog. Future research candidates are Flat and Minimalism. They do not yet have Atlas rules or previews. Suitability stays in each entry, not project-type folders. Material Design, Acrylic and Liquid Glass retain their specific system authorship; grain, glow and gradients remain techniques until a broader grammar justifies a separate family.
 
 ## Package and provenance
 

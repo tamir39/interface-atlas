@@ -98,7 +98,7 @@ for (const theme of catalog.themes) {
     scope: 'Selected color/font/geometry projection into a shared specimen; not the complete theme or its original app.',
     mappings: maps, tokens });
 }
-const styleIds = ['glassmorphism', 'neobrutalism', 'claymorphism', 'neumorphism', 'skeuomorphism'];
+const styleIds = ['glassmorphism', 'neobrutalism', 'claymorphism', 'neumorphism', 'skeuomorphism', 'web-brutalism'];
 const manifest = { schema_version: 1, interpretation: 'Original Atlas token projection. Source theme credits remain authoritative; system fallbacks may render instead of named fonts.', profiles };
 for (const styleId of styleIds) {
   const output = path.join(root, 'styles', styleId, 'preview');
