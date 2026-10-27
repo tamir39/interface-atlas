@@ -137,3 +137,26 @@ node tools/validate-site.mjs --site /path/to/fresh-site --module /path/to/playwr
 ```
 
 The output directory must be new. The validator serves the published site on loopback under the GitHub Pages subpath and checks name/description filtering, result counts, empty/Clear recovery, keyboard focus, narrow light/dark/forced-colors layouts, and no-JavaScript/failed-script fallbacks. It closes the browser and server, writing JSON results and screenshots. It does not exercise every theme, another browser engine, assistive technology or observed user usability. The [implementation trial](../examples/implementation-evaluation/README.md) records the first real-task run and limits. No browser dependency is included in the published site.
+
+## Optional visual-style discovery and reference profiles
+
+Generate and check the separate styling catalog:
+
+```sh
+node tools/style-catalog.mjs
+node tools/style-catalog.mjs --check
+node tools/style-tokens.mjs
+node tools/style-tokens.mjs --check
+```
+
+Style README frontmatter uses scalar fields id, name, revision, status, kind, entry_creator, attribution_summary, basis, motion_character, implementation_dependency, reviewed_on and inline lists aliases, appearances, fit_types. Kind is material, form, composition or metaphor; categories can overlap. Required package files are README.md, style.md and sources.md. Motion and evidence records are discovered when present. Only implemented entries are listed; measured document word counts help selective loading.
+
+The token generator projects selected palette, font-stack and geometry values from existing theme CSS into the Glassmorphism shared specimen. Its manifest records source hashes, mappings and credits. It deliberately excludes full layouts, behavior, fonts and most effects. Changed source values or unsupported new themes fail check mode until the projection is deliberately refreshed.
+
+Browser checks use the same optional installed Playwright/Chromium convention:
+
+```sh
+node tools/validate-glassmorphism.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-results
+```
+
+See the [style validation record](../styles/glassmorphism/validation.md) and [composition evaluation](../examples/style-composition-evaluation/README.md) for exact coverage and exclusions. Safe rendering of a profile is not proof that glass should replace a theme's default surfaces.

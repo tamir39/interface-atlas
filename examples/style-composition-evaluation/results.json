@@ -1,0 +1,4073 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "Compact projection of the actual validator report; every matrix and interaction row is retained.",
+  "rawReport": {
+    "sha256": "ff248cd4db69f6858c32126f24f083ec4b6c2e3cf4bc7a38bac222dd89494dc0",
+    "bytes": 357107,
+    "storage": "Temporary browser run directory; not distributed with this repository."
+  },
+  "scope": "Glassmorphism applied to nine bounded reference-token profiles; existing theme apps are not re-audited",
+  "startedAt": "2026-10-27T08:16:51.730Z",
+  "finishedAt": "2026-10-27T08:17:14.409Z",
+  "browser": "153.0.8010.12",
+  "node": "v24.14.1",
+  "passed": true,
+  "testedFiles": {
+    "index.html": "bd98668f63246c53f236e771bb0d13d154cf529c3c7e353eff77c9a39e0e1807",
+    "styles.css": "62ee430b441c0fa90cfcf98bc27a2a9b01f8abb2c00c6e242d11fe5c6f2563e2",
+    "preview.js": "301d0ef104ba67786001f3c912c1f1b491a6a33a9d2fe04efda1d0609850c697",
+    "theme-tokens.css": "0f0cdb4920f66a4a387037e1c15fc1f75e0520f9d89586babb5a7c05a888b9fb",
+    "theme-tokens.json": "4c2bdab5027a50fdaf38d71b55fc6d2fc4eeb3931fc2df68bbba0533d277a441"
+  },
+  "validatorSha256": "92b484b4962e5638b0d15d16d799f2587e74e8eee09608733a308f57ee2f1798",
+  "profileSources": [
+    {
+      "id": "blueprint",
+      "file": "themes/blueprint/preview/styles.css",
+      "sha256": "2e965924cd83c433653ffd73adb1a46c34308c19a4e803ed2cf9046a45d0c763",
+      "credits": "themes/blueprint/sources.md"
+    },
+    {
+      "id": "botanical",
+      "file": "themes/botanical/preview/styles.css",
+      "sha256": "f52745bf827e08cf26cd6c34894ffc0a9a4a7370c478c42813b6ed5fd8d0314b",
+      "credits": "themes/botanical/sources.md"
+    },
+    {
+      "id": "editorial",
+      "file": "themes/editorial/preview/styles.css",
+      "sha256": "f6e6a1889d4f6de1268c78f6fc4af7513f8fa1f4c5e061a82517911590d4a518",
+      "credits": "themes/editorial/sources.md"
+    },
+    {
+      "id": "gallery",
+      "file": "themes/gallery/preview/styles.css",
+      "sha256": "992ba5770238b3e5725d531939614f0b5c2f4782d898fe0f23bc83244cde8bcf",
+      "credits": "themes/gallery/sources.md"
+    },
+    {
+      "id": "layered",
+      "file": "themes/layered/preview/styles.css",
+      "sha256": "7a7751e0e00f1e6bce48ba2cf49f861999e45e22d90b78423551257519f5acad",
+      "credits": "themes/layered/sources.md"
+    },
+    {
+      "id": "play",
+      "file": "themes/play/preview/styles.css",
+      "sha256": "f2f8515e6eed32a717dabf91af2a3ff27e47fbf603ce4834c313ee51fc8e031c",
+      "credits": "themes/play/sources.md"
+    },
+    {
+      "id": "precision",
+      "file": "themes/precision/preview/styles.css",
+      "sha256": "11d164c3a2a5ded382e0fdc85692dc0b82727d3918e0b074eb952eed0fae8811",
+      "credits": "themes/precision/sources.md"
+    },
+    {
+      "id": "pulse",
+      "file": "themes/pulse/preview/styles.css",
+      "sha256": "7742b7bf79e68f694c8350a512c98a200c4ba56646d47bbe22c077e033e30f3a",
+      "credits": "themes/pulse/sources.md"
+    },
+    {
+      "id": "swiss",
+      "file": "themes/swiss/preview/styles.css",
+      "sha256": "c8ff5ac231b254862b2b0259dc150f0d371b1141b88d8c3b263b693b8ac90f2f",
+      "credits": "themes/swiss/sources.md"
+    }
+  ],
+  "summary": {
+    "matrixStates": 216,
+    "interactionStates": 72,
+    "checkGroups": 13,
+    "minimumTextRatio": 5.627,
+    "minimumFieldBoundaryRatio": 3.615,
+    "minimumSettingsFocusRatio": 5.986
+  },
+  "checks": [
+    {
+      "name": "Nine selectable profiles; native labels, single h1/main and no positive tabindex",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "216 composition states pass bounded text/field contrast, 320/1280px reflow, 44px controls and opaque essential surfaces",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Settings-select keyboard ring is visible and conservatively 3:1 against its adjacent opaque surface for all nine light/dark profiles",
+      "passed": true,
+      "details": [
+        {
+          "theme": "blueprint",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 13.181,
+          "required": 3
+        },
+        {
+          "theme": "blueprint",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 14.034,
+          "required": 3
+        },
+        {
+          "theme": "botanical",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 11.648,
+          "required": 3
+        },
+        {
+          "theme": "botanical",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 12.732,
+          "required": 3
+        },
+        {
+          "theme": "editorial",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 13.27,
+          "required": 3
+        },
+        {
+          "theme": "editorial",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 14.002,
+          "required": 3
+        },
+        {
+          "theme": "gallery",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 14.931,
+          "required": 3
+        },
+        {
+          "theme": "gallery",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 13.898,
+          "required": 3
+        },
+        {
+          "theme": "layered",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 8.066,
+          "required": 3
+        },
+        {
+          "theme": "layered",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 6.903,
+          "required": 3
+        },
+        {
+          "theme": "play",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 15.254,
+          "required": 3
+        },
+        {
+          "theme": "play",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 14.674,
+          "required": 3
+        },
+        {
+          "theme": "precision",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 5.986,
+          "required": 3
+        },
+        {
+          "theme": "precision",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 10.964,
+          "required": 3
+        },
+        {
+          "theme": "pulse",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 16.767,
+          "required": 3
+        },
+        {
+          "theme": "pulse",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 15.658,
+          "required": 3
+        },
+        {
+          "theme": "swiss",
+          "appearance": "light",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 17.78,
+          "required": 3
+        },
+        {
+          "theme": "swiss",
+          "appearance": "dark",
+          "selector": "#appearance",
+          "width": 3,
+          "style": "solid",
+          "offset": 4,
+          "ratio": 15.131,
+          "required": 3
+        }
+      ]
+    },
+    {
+      "name": "All nine light/dark profiles support keyboard surface selection and associated title errors with preserved focus, reset recovery and checked contrast",
+      "passed": true,
+      "details": {
+        "states": 72
+      }
+    },
+    {
+      "name": "Skip link, native select Tab order, visible keyboard outline, required/minlength validation and local form result",
+      "passed": true,
+      "details": {
+        "focus": {
+          "visible": true,
+          "width": "3px",
+          "style": "solid",
+          "color": "rgb(51, 43, 73)"
+        }
+      }
+    },
+    {
+      "name": "System appearance follows live light/dark changes",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Reduced-motion emulation has no active animations",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "Reduced-transparency CDP media emulation uses opaque surfaces",
+      "passed": true,
+      "details": {
+        "supported": true,
+        "matches": true
+      }
+    },
+    {
+      "name": "Forced colors preserves opaque surfaces, usable controls, focus and narrow reflow",
+      "passed": true,
+      "details": {
+        "textSamples": 143,
+        "boundarySamples": 6,
+        "minimumTextRatio": 21,
+        "minimumBoundaryRatio": 21,
+        "reflow": {
+          "viewport": 320,
+          "scroll": 320
+        },
+        "glass": [
+          {
+            "selector": "div.workspace-bar.glass-surface",
+            "fill": "rgb(0, 0, 0)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(0, 0, 0)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(0, 0, 0)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(0, 0, 0)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "aside.context-panel.glass-surface",
+            "fill": "rgb(0, 0, 0)",
+            "alpha": 1,
+            "blur": "none"
+          }
+        ],
+        "opaqueCount": 3,
+        "skipped": [
+          "legend.sr-only: visually hidden",
+          "span.sr-only: visually hidden"
+        ]
+      }
+    },
+    {
+      "name": "javascript-disabled preserves readable content and native structure",
+      "passed": true,
+      "details": {
+        "textSamples": 111,
+        "boundarySamples": 0,
+        "minimumTextRatio": 5.863,
+        "minimumBoundaryRatio": null,
+        "reflow": {
+          "viewport": 320,
+          "scroll": 320
+        },
+        "glass": [
+          {
+            "selector": "div.workspace-bar.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "aside.context-panel.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          }
+        ],
+        "opaqueCount": 3,
+        "skipped": [
+          "span.sr-only: visually hidden"
+        ]
+      }
+    },
+    {
+      "name": "script-blocked preserves readable content and native structure",
+      "passed": true,
+      "details": {
+        "textSamples": 111,
+        "boundarySamples": 0,
+        "minimumTextRatio": 5.863,
+        "minimumBoundaryRatio": null,
+        "reflow": {
+          "viewport": 320,
+          "scroll": 320
+        },
+        "glass": [
+          {
+            "selector": "div.workspace-bar.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          },
+          {
+            "selector": "aside.context-panel.glass-surface",
+            "fill": "color(srgb 1 1 1 / 0.88)",
+            "alpha": 0.88,
+            "blur": "blur(16px) saturate(1.1)"
+          }
+        ],
+        "opaqueCount": 3,
+        "skipped": [
+          "span.sr-only: visually hidden"
+        ]
+      }
+    },
+    {
+      "name": "backdrop-support-branch-removed preserves readable content and native structure",
+      "passed": true,
+      "details": {
+        "textSamples": 143,
+        "boundarySamples": 6,
+        "minimumTextRatio": 5.863,
+        "minimumBoundaryRatio": 3.803,
+        "reflow": {
+          "viewport": 320,
+          "scroll": 320
+        },
+        "glass": [
+          {
+            "selector": "div.workspace-bar.glass-surface",
+            "fill": "rgb(255, 255, 255)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(255, 255, 255)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(255, 255, 255)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "button.surface-choice.glass-surface",
+            "fill": "rgb(255, 255, 255)",
+            "alpha": 1,
+            "blur": "none"
+          },
+          {
+            "selector": "aside.context-panel.glass-surface",
+            "fill": "rgb(255, 255, 255)",
+            "alpha": 1,
+            "blur": "none"
+          }
+        ],
+        "opaqueCount": 3,
+        "skipped": [
+          "legend.sr-only: visually hidden",
+          "span.sr-only: visually hidden"
+        ]
+      }
+    },
+    {
+      "name": "Subpath preview has no ordinary runtime/resource errors or external requests",
+      "passed": true,
+      "details": true
+    }
+  ],
+  "identities": [
+    {
+      "theme": "blueprint",
+      "appearance": "light",
+      "values": {
+        "--page": "#f3f7ff",
+        "--surface": "#e4edff",
+        "--raised": "#ffffff",
+        "--ink": "#142e61",
+        "--muted": "#46618d",
+        "--primary": "#1644b8",
+        "--on-primary": "#ffffff",
+        "--border": "#6680ac",
+        "--focus": "#142e61",
+        "--error": "#a23148",
+        "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+        "--display-font": "'JetBrains Mono', Consolas, monospace",
+        "--mono-font": "'JetBrains Mono', Consolas, monospace",
+        "--card-radius": "8px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "blueprint",
+      "appearance": "dark",
+      "values": {
+        "--page": "#0c1528",
+        "--surface": "#182b48",
+        "--raised": "#12213a",
+        "--ink": "#e7f0ff",
+        "--muted": "#aabbda",
+        "--primary": "#8ab7ff",
+        "--on-primary": "#091d3c",
+        "--border": "#7292c3",
+        "--focus": "#e7f0ff",
+        "--error": "#f2afbd",
+        "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+        "--display-font": "'JetBrains Mono', Consolas, monospace",
+        "--mono-font": "'JetBrains Mono', Consolas, monospace",
+        "--card-radius": "8px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "botanical",
+      "appearance": "light",
+      "values": {
+        "--page": "#f6f5ed",
+        "--surface": "#e5eadc",
+        "--raised": "#fff",
+        "--ink": "#293d2f",
+        "--muted": "#596550",
+        "--primary": "#386046",
+        "--on-primary": "#fff",
+        "--border": "#69795f",
+        "--focus": "#293d2f",
+        "--error": "#943743",
+        "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+        "--display-font": "'DM Serif Display', Georgia, serif",
+        "--mono-font": "'JetBrains Mono', Consolas, monospace",
+        "--card-radius": "32px 8px 32px 8px",
+        "--control-radius": "22px 6px 22px 6px"
+      }
+    },
+    {
+      "theme": "botanical",
+      "appearance": "dark",
+      "values": {
+        "--page": "#101d17",
+        "--surface": "#23392c",
+        "--raised": "#192b21",
+        "--ink": "#f3edda",
+        "--muted": "#b7c9b6",
+        "--primary": "#abd0a1",
+        "--on-primary": "#14291a",
+        "--border": "#8aab89",
+        "--focus": "#f3edda",
+        "--error": "#f0b0b5",
+        "--theme-font": "'Manrope', 'Segoe UI', sans-serif",
+        "--display-font": "'DM Serif Display', Georgia, serif",
+        "--mono-font": "'JetBrains Mono', Consolas, monospace",
+        "--card-radius": "32px 8px 32px 8px",
+        "--control-radius": "22px 6px 22px 6px"
+      }
+    },
+    {
+      "theme": "editorial",
+      "appearance": "light",
+      "values": {
+        "--page": "#fbf8f5",
+        "--surface": "#eee8f2",
+        "--raised": "#ffffff",
+        "--ink": "#332b49",
+        "--muted": "#655c7e",
+        "--primary": "#493b61",
+        "--on-primary": "#ffffff",
+        "--border": "#8c7d9b",
+        "--focus": "#332b49",
+        "--error": "#9e3349",
+        "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "\"DM Serif Display\", Georgia, \"Times New Roman\", serif",
+        "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
+        "--card-radius": "24px",
+        "--control-radius": "12px"
+      }
+    },
+    {
+      "theme": "editorial",
+      "appearance": "dark",
+      "values": {
+        "--page": "#19151e",
+        "--surface": "#2d2536",
+        "--raised": "#231e2b",
+        "--ink": "#f4ede5",
+        "--muted": "#c2b2ce",
+        "--primary": "#c7abe8",
+        "--on-primary": "#24182f",
+        "--border": "#9c87af",
+        "--focus": "#f4ede5",
+        "--error": "#ffb4c1",
+        "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "\"DM Serif Display\", Georgia, \"Times New Roman\", serif",
+        "--mono-font": "\"JetBrains Mono\", Consolas, \"Courier New\", monospace",
+        "--card-radius": "24px",
+        "--control-radius": "12px"
+      }
+    },
+    {
+      "theme": "gallery",
+      "appearance": "light",
+      "values": {
+        "--page": "#f6f4f0",
+        "--surface": "#e9e5dd",
+        "--raised": "#ffffff",
+        "--ink": "#252823",
+        "--muted": "#596057",
+        "--primary": "#634a38",
+        "--on-primary": "#ffffff",
+        "--border": "#787c70",
+        "--focus": "#252823",
+        "--error": "#9a3443",
+        "--theme-font": "Inter, 'Segoe UI', Arial, sans-serif",
+        "--display-font": "Inter, 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "Consolas, monospace",
+        "--card-radius": "4px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "gallery",
+      "appearance": "dark",
+      "values": {
+        "--page": "#171a17",
+        "--surface": "#2b3029",
+        "--raised": "#20241f",
+        "--ink": "#f2f1e9",
+        "--muted": "#c3c8ba",
+        "--primary": "#dec6aa",
+        "--on-primary": "#292117",
+        "--border": "#8d9883",
+        "--focus": "#f2f1e9",
+        "--error": "#f2adb5",
+        "--theme-font": "Inter, 'Segoe UI', Arial, sans-serif",
+        "--display-font": "Inter, 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "Consolas, monospace",
+        "--card-radius": "4px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "layered",
+      "appearance": "light",
+      "values": {
+        "--page": "#eaf2f1",
+        "--surface": "#f7fbfa",
+        "--raised": "#ffffff",
+        "--ink": "#172f2c",
+        "--muted": "#405e58",
+        "--primary": "#185c50",
+        "--on-primary": "#ffffff",
+        "--border": "#58766e",
+        "--focus": "#6d3b83",
+        "--error": "#972f3a",
+        "--theme-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+        "--mono-font": "Consolas, monospace",
+        "--card-radius": "24px",
+        "--control-radius": "12px"
+      }
+    },
+    {
+      "theme": "layered",
+      "appearance": "dark",
+      "values": {
+        "--page": "#101c1c",
+        "--surface": "#1e3030",
+        "--raised": "#273c3b",
+        "--ink": "#e7f3ef",
+        "--muted": "#b4cec5",
+        "--primary": "#a2d6c5",
+        "--on-primary": "#12382e",
+        "--border": "#8aaba1",
+        "--focus": "#e7b6f4",
+        "--error": "#ffb3be",
+        "--theme-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "\"Plus Jakarta Sans\", \"Segoe UI\", Arial, sans-serif",
+        "--mono-font": "Consolas, monospace",
+        "--card-radius": "24px",
+        "--control-radius": "12px"
+      }
+    },
+    {
+      "theme": "play",
+      "appearance": "light",
+      "values": {
+        "--page": "#fff9e9",
+        "--surface": "#f0e4ff",
+        "--raised": "#ffffff",
+        "--ink": "#2b203d",
+        "--muted": "#665572",
+        "--primary": "#6331a7",
+        "--on-primary": "#ffffff",
+        "--border": "#80658d",
+        "--focus": "#2b203d",
+        "--error": "#9d2438",
+        "--theme-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+        "--display-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+        "--card-radius": "30px",
+        "--control-radius": "14px"
+      }
+    },
+    {
+      "theme": "play",
+      "appearance": "dark",
+      "values": {
+        "--page": "#1c122c",
+        "--surface": "#342248",
+        "--raised": "#281b3b",
+        "--ink": "#fff4dc",
+        "--muted": "#d2bde3",
+        "--primary": "#e7ef98",
+        "--on-primary": "#242515",
+        "--border": "#b29ac7",
+        "--focus": "#fff4dc",
+        "--error": "#ffb7c5",
+        "--theme-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+        "--display-font": "'Manrope', 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+        "--card-radius": "30px",
+        "--control-radius": "14px"
+      }
+    },
+    {
+      "theme": "precision",
+      "appearance": "light",
+      "values": {
+        "--page": "#f6f8fb",
+        "--surface": "#eef2f6",
+        "--raised": "#ffffff",
+        "--ink": "#17212f",
+        "--muted": "#526174",
+        "--primary": "#175cd3",
+        "--on-primary": "#ffffff",
+        "--border": "#7a8899",
+        "--focus": "#175cd3",
+        "--error": "#b12a3c",
+        "--theme-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+        "--display-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
+        "--card-radius": "4px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "precision",
+      "appearance": "dark",
+      "values": {
+        "--page": "#0c121c",
+        "--surface": "#1c2a3d",
+        "--raised": "#141e2c",
+        "--ink": "#e9eff7",
+        "--muted": "#aab9cc",
+        "--primary": "#88b7ff",
+        "--on-primary": "#102443",
+        "--border": "#7789a3",
+        "--focus": "#b9d2ff",
+        "--error": "#ffb2bd",
+        "--theme-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+        "--display-font": "'IBM Plex Sans', 'Segoe UI', Arial, sans-serif",
+        "--mono-font": "'IBM Plex Mono', Consolas, 'Courier New', monospace",
+        "--card-radius": "4px",
+        "--control-radius": "4px"
+      }
+    },
+    {
+      "theme": "pulse",
+      "appearance": "light",
+      "values": {
+        "--page": "#f4f5ef",
+        "--surface": "#e7eadf",
+        "--raised": "#fff",
+        "--ink": "#172013",
+        "--muted": "#53614a",
+        "--primary": "#456b0c",
+        "--on-primary": "#fff",
+        "--border": "#6a7a5a",
+        "--focus": "#172013",
+        "--error": "#982e3e",
+        "--theme-font": "\"Pulse Barlow Local\",\"Segoe UI\",sans-serif",
+        "--display-font": "\"Barlow Condensed\",Impact,\"Arial Narrow\",sans-serif",
+        "--mono-font": "Consolas,\"Liberation Mono\",monospace",
+        "--card-radius": "12px",
+        "--control-radius": "6px"
+      }
+    },
+    {
+      "theme": "pulse",
+      "appearance": "dark",
+      "values": {
+        "--page": "#10140d",
+        "--surface": "#242d1c",
+        "--raised": "#191f15",
+        "--ink": "#f5f8ee",
+        "--muted": "#bec9ae",
+        "--primary": "#c4f047",
+        "--on-primary": "#162006",
+        "--border": "#849871",
+        "--focus": "#f5f8ee",
+        "--error": "#f3a9b3",
+        "--theme-font": "\"Pulse Barlow Local\",\"Segoe UI\",sans-serif",
+        "--display-font": "\"Barlow Condensed\",Impact,\"Arial Narrow\",sans-serif",
+        "--mono-font": "Consolas,\"Liberation Mono\",monospace",
+        "--card-radius": "12px",
+        "--control-radius": "6px"
+      }
+    },
+    {
+      "theme": "swiss",
+      "appearance": "light",
+      "values": {
+        "--page": "#fafaf7",
+        "--surface": "#eeeee8",
+        "--raised": "#fff",
+        "--ink": "#181816",
+        "--muted": "#5b5b53",
+        "--primary": "#b52e21",
+        "--on-primary": "#fff",
+        "--border": "#76766c",
+        "--focus": "#181816",
+        "--error": "#962b32",
+        "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
+        "--card-radius": "2px",
+        "--control-radius": "2px"
+      }
+    },
+    {
+      "theme": "swiss",
+      "appearance": "dark",
+      "values": {
+        "--page": "#171716",
+        "--surface": "#2b2a27",
+        "--raised": "#20201e",
+        "--ink": "#faf6ed",
+        "--muted": "#c3beb4",
+        "--primary": "#ff8978",
+        "--on-primary": "#35160f",
+        "--border": "#97948a",
+        "--focus": "#faf6ed",
+        "--error": "#ffb4c1",
+        "--theme-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--display-font": "Manrope, \"Segoe UI\", Arial, sans-serif",
+        "--mono-font": "\"JetBrains Mono\", Consolas, monospace",
+        "--card-radius": "2px",
+        "--control-radius": "2px"
+      }
+    }
+  ],
+  "matrix": {
+    "columns": [
+      "theme",
+      "appearance",
+      "background",
+      "transparency",
+      "width",
+      "passed",
+      "textSamples",
+      "boundarySamples",
+      "minimumTextRatio",
+      "minimumBoundaryRatio"
+    ],
+    "rows": [
+      [
+        "blueprint",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.221,
+        5.072
+      ],
+      [
+        "botanical",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.549,
+        5.868
+      ],
+      [
+        "editorial",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        8.168,
+        5.029
+      ],
+      [
+        "gallery",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.217,
+        5.213
+      ],
+      [
+        "layered",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.003,
+        4.689
+      ],
+      [
+        "play",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.257,
+        6.366
+      ],
+      [
+        "precision",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.573,
+        4.706
+      ],
+      [
+        "pulse",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        9.739,
+        5.377
+      ],
+      [
+        "swiss",
+        "light",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "dark",
+        "calm",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "calm",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "calm",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "calm",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "bright",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "bright",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "bright",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "bright",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "busy",
+        "auto",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "busy",
+        "auto",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "busy",
+        "opaque",
+        1280,
+        true,
+        144,
+        6,
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "busy",
+        "opaque",
+        320,
+        true,
+        142,
+        6,
+        7.149,
+        5.377
+      ]
+    ]
+  },
+  "interactions": {
+    "columns": [
+      "theme",
+      "appearance",
+      "state",
+      "minimumTextRatio",
+      "minimumBoundaryRatio"
+    ],
+    "rows": [
+      [
+        "blueprint",
+        "light",
+        "surface-context",
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "surface-content",
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "surface-navigation",
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "light",
+        "title-error",
+        5.83,
+        4.001
+      ],
+      [
+        "blueprint",
+        "dark",
+        "surface-context",
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "surface-content",
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "surface-navigation",
+        8.221,
+        5.072
+      ],
+      [
+        "blueprint",
+        "dark",
+        "title-error",
+        8.221,
+        5.072
+      ],
+      [
+        "botanical",
+        "light",
+        "surface-context",
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "surface-content",
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "surface-navigation",
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "light",
+        "title-error",
+        5.644,
+        4.666
+      ],
+      [
+        "botanical",
+        "dark",
+        "surface-context",
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "surface-content",
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "surface-navigation",
+        8.549,
+        5.868
+      ],
+      [
+        "botanical",
+        "dark",
+        "title-error",
+        8.221,
+        5.868
+      ],
+      [
+        "editorial",
+        "light",
+        "surface-context",
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "surface-content",
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "surface-navigation",
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "light",
+        "title-error",
+        5.863,
+        3.803
+      ],
+      [
+        "editorial",
+        "dark",
+        "surface-context",
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "surface-content",
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "surface-navigation",
+        8.168,
+        5.029
+      ],
+      [
+        "editorial",
+        "dark",
+        "title-error",
+        8.168,
+        5.029
+      ],
+      [
+        "gallery",
+        "light",
+        "surface-context",
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "surface-content",
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "surface-navigation",
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "light",
+        "title-error",
+        5.908,
+        4.272
+      ],
+      [
+        "gallery",
+        "dark",
+        "surface-context",
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "surface-content",
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "surface-navigation",
+        9.217,
+        5.213
+      ],
+      [
+        "gallery",
+        "dark",
+        "title-error",
+        8.564,
+        5.213
+      ],
+      [
+        "layered",
+        "light",
+        "surface-context",
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "surface-content",
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "surface-navigation",
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "light",
+        "title-error",
+        6.24,
+        4.963
+      ],
+      [
+        "layered",
+        "dark",
+        "surface-context",
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "surface-content",
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "surface-navigation",
+        7.003,
+        4.689
+      ],
+      [
+        "layered",
+        "dark",
+        "title-error",
+        6.929,
+        4.689
+      ],
+      [
+        "play",
+        "light",
+        "surface-context",
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "surface-content",
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "surface-navigation",
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "light",
+        "title-error",
+        6.43,
+        5.043
+      ],
+      [
+        "play",
+        "dark",
+        "surface-context",
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "surface-content",
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "surface-navigation",
+        9.257,
+        6.366
+      ],
+      [
+        "play",
+        "dark",
+        "title-error",
+        9.257,
+        6.366
+      ],
+      [
+        "precision",
+        "light",
+        "surface-context",
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "surface-content",
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "surface-navigation",
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "light",
+        "title-error",
+        5.627,
+        3.615
+      ],
+      [
+        "precision",
+        "dark",
+        "surface-context",
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "surface-content",
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "surface-navigation",
+        7.573,
+        4.706
+      ],
+      [
+        "precision",
+        "dark",
+        "title-error",
+        7.573,
+        4.706
+      ],
+      [
+        "pulse",
+        "light",
+        "surface-context",
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "surface-content",
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "surface-navigation",
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "light",
+        "title-error",
+        5.698,
+        4.621
+      ],
+      [
+        "pulse",
+        "dark",
+        "surface-context",
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "surface-content",
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "surface-navigation",
+        9.739,
+        5.377
+      ],
+      [
+        "pulse",
+        "dark",
+        "title-error",
+        8.923,
+        5.377
+      ],
+      [
+        "swiss",
+        "light",
+        "surface-context",
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "surface-content",
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "surface-navigation",
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "light",
+        "title-error",
+        5.946,
+        4.587
+      ],
+      [
+        "swiss",
+        "dark",
+        "surface-context",
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "surface-content",
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "surface-navigation",
+        7.149,
+        5.377
+      ],
+      [
+        "swiss",
+        "dark",
+        "title-error",
+        7.149,
+        5.377
+      ]
+    ]
+  },
+  "screenshots": {
+    "storage": "Temporary browser run directory; not distributed with this repository.",
+    "files": [
+      "blueprint-light-busy-320.png",
+      "blueprint-dark-busy-320.png",
+      "layered-light-busy-320.png",
+      "layered-dark-busy-320.png",
+      "swiss-light-busy-320.png",
+      "swiss-dark-busy-320.png",
+      "form-keyboard-desktop.png",
+      "forced-colors-320.png",
+      "javascript-disabled-320.png",
+      "script-blocked-320.png",
+      "backdrop-support-branch-removed-320.png"
+    ],
+    "visuallyInspected": [
+      "swiss-light-busy-320.png",
+      "layered-dark-busy-320.png",
+      "forced-colors-320.png",
+      "form-keyboard-desktop.png"
+    ]
+  },
+  "runtimeErrors": [],
+  "externalRequests": [],
+  "resourceFailures": [],
+  "intentionalFailures": [
+    {
+      "purpose": "script-blocked",
+      "url": "/atlas-composition/preview.js",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "contrastMethod": "Conservative sRGB channel bounds: every glass surface starts over an arbitrary [0,255]^3 backdrop; its actual computed alpha fill and descendant solid fills bound the resulting color. Gradients also reset to arbitrary bounds. Opaque foreground/background or disjoint luminance intervals give a lower-bound WCAG 2 ratio. Text requires 4.5:1 (3:1 for large text); enabled field boundaries and focus rings require 3:1. This is deliberately broader than the three rendered backdrops, not an opaque-token-only calculation or per-pixel antialiasing test.",
+  "limits": [
+    "Chromium only. No screen reader, physical mobile/touch device, native zoom, text enlargement, other engine, or performance benchmark.",
+    "Reference-token profiles preserve extracted palette, font-stack and radius values, not each theme’s complete composition, content, interactions, assets, density or typography scale. Fonts are named stacks with local fallbacks; no fonts are downloaded.",
+    "Unsupported backdrop-filter is tested by removing CSS @supports branches through response substitution, exercising the shipped CSS base fallback. It does not emulate a different browser engine. Reduced-transparency support is probed through CDP; unsupported media is reported, not counted as a passing browser preference check.",
+    "Contrast excludes hidden/disabled text, placeholder text, native select popup menus, checkbox glyph internals, SVG/decorative artwork, text antialiasing, and browser-native validation bubbles. Unsupported color/compositing constructs fail the measured scope instead of silently passing.",
+    "Screenshot inspection is separate from automated assertions. The specimen is local, with no backend, account, storage, consequential command or external network dependency."
+  ],
+  "publicationNormalization": "Final run used LF line endings and one terminal newline for every preview source, matching repository publication attributes; no semantic source changes."
+}

@@ -116,3 +116,7 @@ When a source credit or license is unresolved, retain that uncertainty; do not f
 The [dated adaptation supplement](skill-adaptations.md#2026-10-20-reference-and-craft-additions) records the selected DESIGN.md directory, Design Prompts, shadcn and Motion methods, exact creators/artifacts, reuse boundaries and retained shadcn MIT notice. Google-format, Motion React and shadcn adapters remain deferred; Vercel performance and Bundui implementation sources remain linked references. Earlier source rows preserve their inspection dates. The supplement verifies MIT only for Bundui’s pinned Floating Paths implementation, not the whole marketplace, and records the directory’s Rofi / @bidah credit without assigning a legal identity. No prompt catalog, component code or asset is imported.
 
 The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preserved document trials and is optional research material, not a normal project dependency.
+
+## Visual-style research and implementation
+
+[Glassmorphism's source dossier](../styles/glassmorphism/sources.md) records primary naming, historical, platform-material, CSS and accessibility sources with specific creator roles and reuse boundaries. [Style discovery](../styles/README.md) separates implemented entries from future research candidates. [Composition guidance](../knowledge/theme-style-composition.md) and [theme-profile trials](../examples/style-composition-evaluation/README.md) are original Atlas proposals and bounded evidence, not source-authored compatibility claims.

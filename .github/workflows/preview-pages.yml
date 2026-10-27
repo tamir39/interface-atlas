@@ -6,6 +6,10 @@ on:
     paths:
       - 'assets/brand/**'
       - 'themes/*/preview/**'
+      - 'styles/*/preview/**'
+      - 'tools/style-catalog.mjs'
+      - 'tools/style-tokens.mjs'
+      - 'catalog/**'
       - 'site/**'
       - 'tools/build-preview-site.mjs'
       - '.github/workflows/preview-pages.yml'
@@ -30,6 +34,11 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Check discovery and style reference tokens
+        run: |
+          node tools/catalog.mjs --check
+          node tools/style-catalog.mjs --check
+          node tools/style-tokens.mjs --check
       - name: Build the preview site
         run: node tools/build-preview-site.mjs
       - name: Upload only the preview site

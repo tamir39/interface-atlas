@@ -3,6 +3,7 @@
 Status: {{draft_or_validated_with_evidence}}
 Design direction: {{project_system_or_supplied_or_custom_or_atlas_theme_and_revision}}
 Source snapshot: {{source_repository_and_revision}}
+Visual style, if selected: {{family_revision_scope_and_deliberate_theme_overrides}}
 
 Use this as an adaptable outline. Omit irrelevant sections; separate supplied facts, observed evidence, project proposals and missing inputs.
 
@@ -13,6 +14,10 @@ Describe users, essential tasks, real constraints, supported capabilities and un
 ## User tasks, content and design rationale
 
 State the primary outcomes, information structure and task/content priorities. Explain how hierarchy, terminology, density and the chosen design direction support those tasks. Distinguish observed user evidence from hypotheses; identify meaningful validation questions.
+
+## Optional theme and style composition
+
+Omit when no style decision is needed. Identify the selected family/variant, component scope, preserved theme rules, explicit overrides and reasons. Resolve light/dark treatments, essential state cues, opaque/no-effect fallbacks and motion preferences into concrete project values. Reference relevant source credits; do not make implementation reread Atlas.
 
 ## Color contract
 
@@ -49,7 +54,7 @@ Record Atlas theme identity/revision only when one is inherited. For a project-o
 For each used source record:
 
 - Creator or credited author and original URL.
-- Version/commit, theme revision and inspection date where available; identify relevant uncommitted snapshot limits.
+- Version/commit, theme/style revisions and inspection date where available; identify relevant uncommitted snapshot limits.
 - Retained values, referenced methods, copied material and new adaptations.
 - Applicable reuse terms and required notices; unresolved terms remain explicit.
 

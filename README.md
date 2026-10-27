@@ -7,9 +7,11 @@
 
 A frontend UI/UX knowledge library for preparing project-specific design documents and implementing focused frontend changes.
 
-[Live previews](https://tamir39.github.io/interface-atlas/) · [Explore themes](catalog/themes.json) · [Prepare a project design](skills/prepare-frontend-design/SKILL.md) · [Implement frontend UI](skills/implement-frontend-ui/SKILL.md) · [Logo kit](assets/brand/README.md)
+[Live previews](https://tamir39.github.io/interface-atlas/) · [Explore themes](catalog/themes.json) · [Explore visual styles](styles/README.md) · [Prepare a project design](skills/prepare-frontend-design/SKILL.md) · [Implement frontend UI](skills/implement-frontend-ui/SKILL.md) · [Logo kit](assets/brand/README.md)
 
 Pick a visual direction, resolve the design decisions, and give your agents a self-contained project design.md. Load selected library guidance when preparing or deliberately revising that document. For a bounded frontend change, the implementation skill starts from your project's own rules and code.
+
+**Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md) is the first optional visual-style entry beside the nine themes. Its [interactive preview](styles/glassmorphism/preview/index.html) compares bounded theme profiles; [composition trials](examples/style-composition-evaluation/README.md) distinguish render checks from theme fit. Other researched families remain candidates, not implemented packages.
 
 **Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery; Layered adds a spacious planning workspace with tonal surfaces, native editing, and scoped recovery. All nine theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), [Layered](themes/layered/validation.md).
 
@@ -17,7 +19,7 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 1. Start with the brief and the project's existing or supplied design direction. When choosing an Atlas theme, read [the theme catalog](catalog/themes.json) to find candidates.
 2. For an Atlas candidate, read its README for identity, suitability and limitations. Preserve a project-owned direction or develop a custom one when appropriate.
-3. Load inherited theme rules and only the effects, motion and shared knowledge needed for unresolved project decisions.
+3. For a requested or unresolved visual style, use [the separate style catalog](catalog/styles.json) and shortlisted READMEs. Load only chosen theme/style rules and the effects, motion and shared knowledge needed for the project.
 4. Create a self-contained project design.md with explicit adaptations and source credits.
 5. Use that project's documents for normal implementation work. Return to Atlas for deliberate design changes.
 
@@ -82,6 +84,21 @@ interface-atlas/
 ├── THIRD_PARTY_NOTICES.md
 ├── .gitattributes
 ├── .gitignore
+├── styles/
+│   ├── README.md
+│   └── glassmorphism/
+│       ├── README.md
+│       ├── style.md
+│       ├── motion.md
+│       ├── sources.md
+│       ├── validation.md
+│       └── preview/
+│           ├── README.md
+│           ├── index.html
+│           ├── styles.css
+│           ├── preview.js
+│           ├── theme-tokens.css
+│           └── theme-tokens.json
 ├── themes/
 │   ├── blueprint/
 │   │   ├── README.md
@@ -243,12 +260,14 @@ interface-atlas/
 │               ├── dark-desktop.png
 │               └── light-mobile.png
 ├── catalog/
-│   └── themes.json
+│   ├── themes.json
+│   └── styles.json
 ├── knowledge/
 │   ├── README.md
 │   ├── ui-ux-design.md
 │   ├── design-reference-evaluation.md
 │   ├── accessibility-and-responsive.md
+│   ├── theme-style-composition.md
 │   ├── agent-experience.md
 │   ├── state-and-recovery.md
 │   ├── forms-and-navigation.md
@@ -270,6 +289,12 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── style-composition-evaluation/
+│   │   ├── README.md
+│   │   ├── design.md
+│   │   ├── trials.md
+│   │   ├── results.json
+│   │   └── release-checks.json
 │   ├── implementation-evaluation/
 │   │   ├── README.md
 │   │   ├── brief.md
@@ -364,6 +389,9 @@ interface-atlas/
 ├── tools/
 │   ├── README.md
 │   ├── catalog.mjs
+│   ├── style-catalog.mjs
+│   ├── style-tokens.mjs
+│   ├── validate-glassmorphism.mjs
 │   ├── validate-site.mjs
 │   ├── validate-blueprint.mjs
 │   ├── validate-botanical.mjs

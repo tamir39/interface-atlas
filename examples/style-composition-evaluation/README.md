@@ -1,0 +1,11 @@
+# Style composition evaluation
+
+This evaluation exercises the optional [Glassmorphism style](../../styles/glassmorphism/README.md) over bounded profiles of all nine existing Atlas themes. It separates browser behavior from design fit: readable rendered chrome does not make glass a suitable default for every theme.
+
+The [live specimen](../../styles/glassmorphism/preview/index.html) uses the actual reference previews’ palette aliases, named font stacks and panel/control corners. The [profile manifest](../../styles/glassmorphism/preview/theme-tokens.json) records source paths, file identities, aliases and extracted values. These are partial profiles, not nine rebuilt theme applications. The shared composition intentionally omits each app’s layout, assets, density, interactions and complete type scale.
+
+[Design decisions and per-theme fit](design.md) state what survives, what changes and where the style conflicts. [Trial record](trials.md) distinguishes source checks, browser assertions and visual inspection. [Machine results](results.json) contain the actual run’s file hashes, measured bounds, profile values and limitations. The portable [validator](../../tools/validate-glassmorphism.mjs) can be rerun with an installed Playwright package and Chromium; screenshots belong in a fresh temporary output directory rather than the repository.
+
+On **2026-10-27**, Chromium **153.0.8010.12** passed **216 composition states**, **72 selected/error states**, **18 settings-focus samples** and **13 check groups**. Conservative lower bounds were **5.627:1 for measured text**, **3.615:1 for field boundaries** and **5.986:1 for the settings select’s focus ring**. These are this specimen’s results. Gallery, Play, Precision and Swiss still conflict with glass as their normal surface treatment; the other profiles require a scoped adaptation.
+
+This work is original Atlas implementation and evaluation by **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**. The style’s [source and credit record](../../styles/glassmorphism/sources.md) separates referenced concepts from copied material and reuse terms. The test code uses Node and optional Playwright APIs; the runtime preview needs no package, remote image, font download or service.

@@ -11,7 +11,7 @@ Review the requested artifact or interface against its brief and governing proje
 
 Start with the brief, relevant project design documents and supplied evidence. A source or rendered review can proceed without design.md; use available project rules and evidence, and distinguish inferred intent from established requirements. For document review, assess whether decisions are complete and consistent; do not describe a proposed behavior as observed. When source or rendered review is requested, inspect the relevant implementation or page and record what was actually exercised. Missing browser/tool/service access is a coverage limit, not a passing result.
 
-Do not reload the theme catalog or all source libraries for a project that already has a design contract. Use [the knowledge index](../../knowledge/README.md) to load only the chapter/section needed for an actual review question. Open selected theme rules when checking inheritance or a concrete contradiction. Read relevant source credits when propagating methods; do not load the research ledger or every license text by default.
+Do not reload the theme catalog or all source libraries for a project that already has a design contract. Use [the knowledge index](../../knowledge/README.md) to load only the chapter/section needed for an actual review question. Open selected theme or style rules when checking inheritance or a concrete contradiction. Check style scope, explicit theme overrides and fallbacks only when implicated; a visual preference or a shared-profile pass alone does not establish compatibility. Read relevant source credits when propagating methods; do not load the research ledger or every license text by default.
 
 ## Trace tasks and test findings
 

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="editorial" data-appearance="light" data-transparency="auto" data-background="calm">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="An original Interface Atlas specimen for trying Glassmorphism with nine theme identities, readable opaque content, and explicit fallbacks.">
+  <title>Glassmorphism · Interface Atlas</title>
+  <link rel="stylesheet" href="theme-tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the glass lab</a>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="atlas-brand" href="../../../README.md" aria-label="Interface Atlas home">
+        <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false"><path d="M7 52 28 10v21L18 52Z"/><path d="M32 10 57 52H44L32 31Z"/><path d="M23 38H38l6 10H18Z"/></svg>
+        <span>Interface Atlas</span>
+      </a>
+      <nav aria-label="Reference pages" class="reference-nav">
+        <a href="../../README.md">Style catalog</a>
+        <a href="../style.md">Implementation notes <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="index-mark">S / 01</span> A cross-theme style study</p>
+          <h1 id="page-title">Glassmorphism<span class="title-period">.</span></h1>
+          <p class="intro-lead">A little atmosphere.<br>A clear place to work.</p>
+          <p class="intro-description">Try frosted chrome over a changing backdrop. The theme supplies the color, type, and geometry; glass adds one restrained layer.</p>
+          <div class="intro-links">
+            <a href="#specimen">Explore the specimen <span aria-hidden="true">↓</span></a>
+            <a id="theme-source-link" href="../../../themes/editorial/README.md">Editorial theme reference <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <section class="settings-panel" data-opaque aria-labelledby="settings-title">
+          <div class="panel-heading"><h2 id="settings-title">Set the conditions</h2><span class="technical">01—09</span></div>
+          <div class="control-grid">
+            <div class="field theme-field">
+              <label for="theme-select">Theme identity</label>
+              <select id="theme-select" disabled>
+                <option value="editorial">Editorial</option><option value="swiss">Swiss</option><option value="precision">Precision</option><option value="play">Play</option><option value="botanical">Botanical</option><option value="blueprint">Blueprint</option><option value="pulse">Pulse</option><option value="gallery">Gallery</option><option value="layered">Layered</option>
+              </select>
+            </div>
+            <div class="field"><label for="appearance">Appearance</label><select id="appearance" disabled><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+            <div class="field"><label for="transparency">Transparency</label><select id="transparency" disabled><option value="auto">Automatic</option><option value="opaque">Opaque</option></select></div>
+            <div class="field"><label for="background">Backdrop</label><select id="background" disabled><option value="calm">Calm</option><option value="bright">Bright</option><option value="busy">Busy</option></select></div>
+          </div>
+          <p id="material-status" class="material-status" role="status">Tinted chrome where supported; opaque surfaces elsewhere.</p>
+          <p id="js-status" class="support">Settings and the local draft review need JavaScript. The reference content, links, and disclosures remain available.</p>
+        </section>
+      </section>
+
+      <section id="specimen" class="specimen-section" aria-labelledby="specimen-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">The same work, nine identities</p><h2 id="specimen-title">Keep the task in focus.</h2></div>
+          <p class="support">Fictional project workspace · <span id="theme-label">Editorial</span><br>Static artwork. Local interactions. No saved data.</p>
+        </div>
+
+        <div class="lab-stage">
+          <div class="backdrop-art" aria-hidden="true"><i class="art-orbit"></i><i class="art-beam"></i><i class="art-disc"></i><i class="art-grid"></i></div>
+          <div class="workspace-frame">
+            <div class="workspace-bar glass-surface" data-glass>
+              <a class="workspace-brand" href="#draft"><span class="workspace-mark" aria-hidden="true">H</span><span>Horizon <span class="brand-detail">/ project room</span></span></a>
+              <nav class="workspace-nav" aria-label="Specimen sections"><a href="#draft">Draft</a><a href="#inventory">Surfaces</a><a href="#principle">Principle</a></nav>
+              <span class="local-label"><span aria-hidden="true">●</span> Local specimen</span>
+            </div>
+
+            <div class="surface-choices" role="group" aria-label="Inspect a surface role">
+              <button class="surface-choice glass-surface" data-glass data-surface-choice="navigation" aria-pressed="true" disabled><span class="tile-index">01</span><span class="tile-copy"><strong>Navigation chrome</strong><span>A light boundary for wayfinding</span></span><span class="choice-state">Selected</span></button>
+              <button class="surface-choice glass-surface" data-glass data-surface-choice="context" aria-pressed="false" disabled><span class="tile-index">02</span><span class="tile-copy"><strong>Context card</strong><span>Short, supporting information</span></span><span class="choice-state">Inspect</span></button>
+              <button class="surface-choice glass-surface" data-glass data-surface-choice="content" aria-pressed="false" disabled><span class="tile-index">03</span><span class="tile-copy"><strong>Reading surface</strong><span>Solid fill for the detailed work</span></span><span class="choice-state">Inspect</span></button>
+            </div>
+
+            <div class="workspace-content">
+              <section class="draft-panel opaque-panel" data-opaque id="draft" aria-labelledby="draft-heading">
+                <div class="panel-heading"><div><p class="eyebrow">Project / H—024</p><h3 id="draft-heading">A small, clear brief.</h3></div><span class="draft-badge">Draft</span></div>
+                <p class="support">Review a title for the Horizon archive. This form demonstrates validation and feedback entirely in your browser.</p>
+                <form id="project-form" novalidate>
+                  <fieldset id="project-fields" disabled>
+                    <legend class="sr-only">Project draft</legend>
+                    <div class="field"><label for="project-title">Project title <span class="support">(required)</span></label><input id="project-title" name="title" type="text" value="Horizon archive" required minlength="3" maxlength="48" aria-describedby="title-hint title-error"><p id="title-hint" class="support">Use 3–48 characters after trimming spaces.</p><p id="title-error" class="field-error" hidden></p></div>
+                    <div class="field"><label for="project-note">A note for the reviewer <span class="support">(optional)</span></label><textarea id="project-note" name="note" rows="3" maxlength="120" aria-describedby="note-hint">A calm home for the ideas worth returning to.</textarea><p id="note-hint" class="support">Up to 120 characters. Keep the purpose concrete.</p></div>
+                    <div class="form-actions"><button id="review-project" class="button primary-button" type="submit">Review this draft <span aria-hidden="true">→</span></button><button id="reset-project" class="button secondary-button" type="button">Reset example</button></div>
+                  </fieldset>
+                  <p id="review-status" class="review-status" role="status">Example only. Nothing is sent or saved.</p>
+                </form>
+              </section>
+
+              <aside class="context-panel glass-surface" data-glass aria-labelledby="context-heading">
+                <div class="context-heading"><p class="eyebrow">Material / purpose</p><span class="technical" aria-hidden="true">◌</span></div>
+                <div class="material-diagram" aria-hidden="true"><span class="diagram-orbit"></span><span class="diagram-plane"></span><span class="diagram-core"></span><span class="diagram-line"></span></div>
+                <p class="eyebrow">Currently inspecting</p><h3 id="context-heading"><span id="current-surface">Navigation chrome</span></h3>
+                <p id="surface-description">Glass gives the navigation a visible edge while leaving the backdrop in view. The links keep a solid, readable foreground.</p>
+                <dl class="material-facts"><div><dt>Surface</dt><dd id="surface-treatment">Tinted glass</dd></div><div><dt>Depth</dt><dd>One shallow plane</dd></div><div><dt>Motion</dt><dd>Static by design</dd></div></dl>
+                <p id="selection-status" class="selection-status" role="status">Navigation chrome selected.</p>
+              </aside>
+            </div>
+
+            <section class="inventory-panel opaque-panel" data-opaque id="inventory" aria-labelledby="inventory-heading">
+              <div class="panel-heading"><div><p class="eyebrow">A deliberate division</p><h3 id="inventory-heading">Surface inventory</h3></div><span class="technical">3 roles</span></div>
+              <div class="table-scroll" id="surface-table-scroll" role="region" aria-label="Surface inventory, horizontally scrollable" tabindex="0">
+                <table><caption>The backdrop stays decorative. Work and reading stay on solid surfaces.</caption><thead><tr><th scope="col">Role</th><th scope="col">Treatment</th><th scope="col">Reason</th><th scope="col"><span class="sr-only">Inspect surface</span></th></tr></thead><tbody>
+                  <tr data-surface-row="navigation" data-selected="true"><th scope="row">Navigation chrome</th><td>Glass, with fallback</td><td>Brief labels and orientation</td><td><button class="inspect-button" type="button" data-surface-choice="navigation" aria-pressed="true" aria-label="Inspect navigation chrome" disabled>Inspect</button></td></tr>
+                  <tr data-surface-row="context" data-selected="false"><th scope="row">Context card</th><td>Glass, with fallback</td><td>Short supporting information</td><td><button class="inspect-button" type="button" data-surface-choice="context" aria-pressed="false" aria-label="Inspect context card" disabled>Inspect</button></td></tr>
+                  <tr data-surface-row="content" data-selected="false"><th scope="row">Reading surface</th><td>Always opaque</td><td>Input, validation, and dense data</td><td><button class="inspect-button" type="button" data-surface-choice="content" aria-pressed="false" aria-label="Inspect reading surface" disabled>Inspect</button></td></tr>
+                </tbody></table>
+              </div>
+            </section>
+          </div>
+        </div>
+        <p class="stage-caption"><span class="technical">Study 01 / frosted chrome</span><span>Theme tokens carry the identity. The style supplies the surface treatment.</span></p>
+      </section>
+
+      <section class="principle-section" id="principle" aria-labelledby="principle-heading">
+        <div class="principle-title"><p class="eyebrow">The rule behind the effect</p><h2 id="principle-heading">Atmosphere at the edges.<br>Clarity at the center.</h2></div>
+        <div class="principle-notes">
+          <details open><summary>What changes with the theme?</summary><p>Palette, named font stacks, corners, and focus colors come from the nine Atlas theme previews. This shared specimen uses a documented token subset; it does not load or reproduce their complete layouts. Fonts use installed families and system fallbacks.</p></details>
+          <details><summary>What happens when transparency is unsuitable?</summary><p>Choose Opaque at any time. A reduced-transparency preference, forced colors, or missing browser support also gives the chrome a solid fill. The form and table remain opaque in every setting. Changes are immediate; no continuous animation runs.</p></details>
+          <details><summary>Where did Glassmorphism come from?</summary><p>Michał Malewicz named and popularized Glassmorphism in 2020. Translucent and frosted interface materials have older precedents. This preview is an original Atlas adaptation, with historical references and reuse boundaries in the <a href="../sources.md">source notes</a>.</p></details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p><strong>Interface Atlas</strong><br>Created by Tamir (Phi Vuong Tuong Tam), with Codex.<br>Original specimen, CSS artwork, and interaction code.</p>
+      <p>Glassmorphism terminology: Michał Malewicz, 2020.<br>Older translucent UI precedents are credited in <a href="../sources.md">sources</a>.<br>No fonts, remote scripts, or third-party artwork are loaded.</p>
+      <nav aria-label="Glassmorphism documentation"><a href="../README.md">Style overview</a><a href="../style.md">Style rules</a><a href="README.md">Preview scope</a><a href="../../../THIRD_PARTY_NOTICES.md">Credits &amp; notices</a></nav>
+    </footer>
+  </div>
+</body>
+</html>

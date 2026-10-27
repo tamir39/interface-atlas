@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "styles": [
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "kind": "material",
+      "aliases": [
+        "frosted-glass"
+      ],
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "attribution_summary": "Name popularized by Michal Malewicz in 2020; translucent interface precedents are older",
+      "basis": "original-atlas-interpretation",
+      "appearances": [
+        "light",
+        "dark",
+        "system"
+      ],
+      "fit_types": [
+        "product-navigation",
+        "portfolio",
+        "consumer-app",
+        "selected-overlays"
+      ],
+      "motion_character": "optional-and-restrained",
+      "implementation_dependency": "none-required",
+      "reviewed_on": "2026-10-27",
+      "documents": {
+        "readme": "styles/glassmorphism/README.md",
+        "style": "styles/glassmorphism/style.md",
+        "sources": "styles/glassmorphism/sources.md",
+        "motion": "styles/glassmorphism/motion.md",
+        "validation": "styles/glassmorphism/validation.md"
+      },
+      "reading_words": {
+        "readme": 332,
+        "style": 1759,
+        "sources": 1144,
+        "motion": 429,
+        "validation": 386
+      }
+    }
+  ]
+}

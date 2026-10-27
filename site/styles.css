@@ -189,3 +189,20 @@ h1 em { color: var(--action); }
   .button { border: 1px solid ButtonText; }
   .identity svg, .brand-study svg { fill: CanvasText; }
 }
+
+/* Original style discovery study. Kept outside the theme-only search. */
+.style-section { margin-block: 1rem 3rem; padding: clamp(1.25rem, 4vw, 3rem); border: 1px solid var(--divider); border-radius: 1rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 2rem 4rem; align-items: center; background: var(--surface); }
+.style-section h2 { margin-block: .75rem 1rem; font-size: clamp(1.75rem, 3vw, 2.75rem); letter-spacing: -.035em; line-height: 1.15; }
+.style-section .support-copy { color: var(--muted); max-inline-size: 46ch; }
+.glass-study { isolation: isolate; min-block-size: 240px; display: grid; place-items: center; padding: 2rem; border-radius: .75rem; background: repeating-linear-gradient(135deg, transparent 0 24px, #ffffff33 24px 25px), linear-gradient(125deg, #bfd6d7, #bcadd4 50%, #d8d0bc); color: #232939; }
+.glass-study-pane { width: min(100%, 300px); padding: 1.5rem; border: 1px solid #ffffff; background: #f8f9fbe6; border-radius: .75rem; box-shadow: 0 16px 40px #23293926; }
+.glass-study-pane strong { display: block; margin-block: .75rem 1.5rem; font-size: 1.75rem; line-height: 1.15; font-weight: 500; letter-spacing: -.04em; }
+.glass-study-pane span { display: block; font-size: .75rem; }
+@supports (backdrop-filter: blur(12px)) {
+  .glass-study-pane { backdrop-filter: blur(12px); }
+}
+@media (max-width: 48rem) { .style-section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; } }
+@media (prefers-reduced-transparency: reduce) { .glass-study-pane { background: #f8f9fb; backdrop-filter: none; } }
+@media (forced-colors: active) {
+  .style-section, .glass-study, .glass-study-pane { background: Canvas; color: CanvasText; border: 1px solid CanvasText; box-shadow: none; backdrop-filter: none; }
+}

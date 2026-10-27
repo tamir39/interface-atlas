@@ -12,6 +12,8 @@ Use this index to select guidance for preparing or explicitly reviewing a projec
 | [Uncertain outcomes](uncertain-outcomes.md) | Remote effects, lost replies, repeat submission, retry, cancellation or reconciliation | P0 knowledge draft; requires project/service facts and gates |
 | [Agent Experience](agent-experience.md) | Human-facing agent work, proposals, progress, intervention or control | Lifecycle principles and contract questions; no agent runtime implementation |
 
+[Theme/style composition](theme-style-composition.md) is conditional on a requested style or an unresolved overlap. Discover through [styles](../catalog/styles.json), then read only the chosen rules and relevant credits. Ordinary work uses the project's resolved contract.
+
 Theme identity, values, effects and motion remain in the chosen theme package. Shared guides resolve cross-theme decisions. Select by feature: a static portfolio need not load persistence or remote outcomes; a local practice app should not acquire agent/backend flows; a remote branching form may need all three P0 chapters. An existing resolved design can need only one relevant section for a narrow revision.
 
 Reference evaluation is conditional on a selected outside source or unresolved theme fit. Use component translation only when the mapping needs resolution, and the motion contract only when motion is chosen and not already resolved. Do not automatically create a specimen, introduce a runtime, fetch external sources or reread a source collection. Resolve accepted decisions into the project handoff.

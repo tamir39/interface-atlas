@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-27",
+  "scope": "Styling catalog, optional routing and Glassmorphism release checks; prior Agent Experience draft is excluded.",
+  "checks": [
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "output": "Catalog matches metadata for 9 theme(s)."
+    },
+    {
+      "command": "node tools/style-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 1 implemented style(s)."
+    },
+    {
+      "command": "node tools/style-tokens.mjs --check",
+      "passed": true,
+      "output": "Verified bounded token projections for 9 themes."
+    },
+    {
+      "command": "node --check tools/style-catalog.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/style-tokens.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/validate-glassmorphism.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check styles/glassmorphism/preview/preview.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "name": "Relative documentation links in changed entry/routing/example documents",
+      "passed": true,
+      "documents": 18,
+      "links": 196
+    },
+    {
+      "name": "Three modified skills retain valid two-field plain-scalar frontmatter, names and non-placeholder descriptions",
+      "passed": true,
+      "limit": "The bundled Python quick_validate.py was attempted but unavailable because PyYAML is absent. This bounded check is not a general YAML parser."
+    },
+    {
+      "name": "Built Pages artifact and hub Chromium regression checks",
+      "passed": true,
+      "build_files": 51,
+      "groups": 12,
+      "source": {
+        "index.html": "e2b6e07ae991598dff63557af6d78b1cfaefc303a4ed1c22f9bc0c6597f49f00",
+        "styles.css": "2336177b4f37740c710456d5d411ded4158afb79d190a7859f7a153a6e040301",
+        "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+      },
+      "limits": [
+        "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+        "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+        "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+      ]
+    }
+  ],
+  "glass_evidence": {
+    "path": "results.json",
+    "sha256": "015823e4ed05494b1b8f66e1fae663a0ba791d5057fb865809c7f39bbdf9361a",
+    "matrix": 216,
+    "interactions": 72,
+    "groups": 13
+  },
+  "passed": true
+}

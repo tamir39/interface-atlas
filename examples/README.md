@@ -24,3 +24,7 @@ The [updated preparation and opt-in review trials](skill-evaluation/README.md) e
 The [reference and craft rerun](reference-craft-evaluation/README.md) exercises the A–D knowledge additions on the unchanged consumer, storefront and bilingual-service briefs. It preserves first drafts, independent reviews, reading logs, supported corrections and an isolated synthetic reference probe. These remain document exercises; source inspection and corrected specifications do not establish runtime or usability results.
 
 The [implementation workflow trial](implementation-evaluation/README.md) uses the new skill to add search to the actual Atlas preview hub. Its evidence separates the independent implementation, selective reads and real Chromium checks from unperformed assistive-technology or user research. Earlier design-document trials remain unchanged.
+
+## Visual-style composition
+
+[Glassmorphism composition evaluation](style-composition-evaluation/README.md) compares bounded profiles from all nine current themes, documents default-treatment conflicts and scoped adaptations, and records actual preview checks. Its sample design is an original project proposal, not a production deployment or nine fully revalidated theme applications.

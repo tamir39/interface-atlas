@@ -1,6 +1,6 @@
 ---
 name: prepare-frontend-design
-description: Prepare or deliberately revise a project's frontend design.md from its own design system, a supplied direction, or Atlas themes and selected UI/UX knowledge. Use for design planning or specification changes, not routine implementation.
+description: Prepare or deliberately revise a project's frontend design.md from its own design system, a supplied direction, or Atlas themes, optional visual styles and selected UI/UX knowledge. Use for design planning or specification changes, not routine implementation.
 ---
 
 # Prepare frontend design
@@ -12,6 +12,8 @@ Produce a self-contained project design.md from the brief and available evidence
 Identify users, essential tasks, content, supported contexts and constraints. Separate supplied facts, observations, proposed decisions and missing inputs. For an existing interface, inspect its governing design document and relevant source or supplied rendered evidence before proposing changes. Repeated code literals alone do not establish intended design rules.
 
 Preserve an existing design system, brand or supplied direction. Use [the catalog](../../catalog/themes.json) and candidate theme READMEs when an Atlas direction is requested or useful for an unresolved choice; do not require an Atlas theme. If no theme fits, develop a project-specific direction from the brief and evidence. When inheriting an Atlas theme, read its design.md and sources.md and explain adaptations. Load motion.md or effects.md only for effects actually chosen. Do not select a stack, backend or additional feature merely to fill the document.
+
+When a visual style is requested or unresolved, use [style discovery](../../catalog/styles.json) and shortlisted style READMEs. Load only the selected style rules and relevant credits; motion remains conditional. Use [composition guidance](../../knowledge/theme-style-composition.md) for actual overlap: record preserved theme rules, deliberate overrides, component scope and fallback behavior in the project handoff. A rendered profile does not establish theme suitability; neither a style nor an Atlas theme is compulsory.
 
 ## Load only relevant knowledge
 
@@ -29,7 +31,7 @@ Retain useful governing design rules and explain project adaptations. Identify t
 
 ## Preserve evidence and credits
 
-Record the used Atlas/theme revision, selected source creators and URLs, applicable terms/notices, and which values or methods were retained or adapted. For an uncommitted Atlas snapshot, identify that limit and relevant file hashes instead of implying HEAD contains the changes. Propagate relevant chapter credits and [adaptation notices](../../references/skill-adaptations.md); full license texts are redistribution records, not required reading on every invocation.
+Record the used Atlas/theme/style revisions when selected, selected source creators and URLs, applicable terms/notices, and which values or methods were retained or adapted. For an uncommitted Atlas snapshot, identify that limit and relevant file hashes instead of implying HEAD contains the changes. Propagate relevant chapter credits and [adaptation notices](../../references/skill-adaptations.md); full license texts are redistribution records, not required reading on every invocation.
 
 Use existing read records or metadata-only hashing for source identities. Do not reread source content solely to calculate a fingerprint or populate a provenance table.
 
