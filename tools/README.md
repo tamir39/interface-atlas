@@ -178,3 +178,22 @@ Skeuomorphism's [validation record](../styles/skeuomorphism/validation.md) and [
 Web Brutalism's [validation record](../styles/web-brutalism/validation.md) and [content-first evaluation](../examples/web-brutalism-composition-evaluation/README.md) cover authored flat geometry, ordinary document reading before scripts, native fragment/history behavior and actual selected-note downloads. Native checkbox glyphs and popup internals remain user-agent controlled. A passing token profile does not endorse this layout for every theme or every experimental family variant.
 
 Flat Design's [validation record](../styles/flat-design/validation.md) and [task-board evaluation](../examples/flat-design-composition-evaluation/README.md) cover opaque planes, source geometry, explicit task states, local creation/completion and filtered focus recovery. The entry removes decorative depth rather than requiring square corners or reduced content. Native checkbox glyphs and select popup internals remain user-agent controlled.
+
+## Optional component pattern discovery and previews
+
+Generate or check the small independent pattern catalog:
+
+```sh
+node tools/pattern-catalog.mjs
+node tools/pattern-catalog.mjs --check
+```
+
+Each entry uses scalar metadata id, name, revision, status, entry_creator, summary, source_mode and reviewed_on, plus inline lists decisions, fit_types and dependencies. The generator records actual document word counts and local preview paths. Only requested or unresolved decisions need this discovery route; previews and evidence are not normal implementation reads.
+
+The original labs share local neutral CSS/JavaScript under patterns/preview-assets; no external component package is published. Run their optional browser checks with an existing Playwright/Chromium installation:
+
+```sh
+node tools/validate-patterns.mjs --module /path/to/playwright/index.mjs --browser /path/to/chromium --output /path/to/fresh-pattern-results
+```
+
+The [pilot evaluation](../examples/patterns-evaluation/README.md) records exact task states, contexts and limits. The loading lab is a manually advanced state fixture, not a network-service implementation. Theme fit and actual cross-theme application need a project decision.

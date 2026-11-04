@@ -15,6 +15,8 @@ Preserve an existing design system, brand or supplied direction. Use [the catalo
 
 When a visual style is requested or unresolved, use [style discovery](../../catalog/styles.json) and shortlisted style READMEs. Load only the selected style rules and relevant credits; motion remains conditional. Use [composition guidance](../../knowledge/theme-style-composition.md) for actual overlap: record preserved theme rules, deliberate overrides, component scope and fallback behavior in the project handoff. A rendered profile does not establish theme suitability; neither a style nor an Atlas theme is compulsory.
 
+For an identified pattern, read its entry directly. For an unresolved component/effect choice, use [pattern discovery](../../catalog/patterns.json) to shortlist by decision and fit, then read only the selected README, pattern.md and relevant credits. Resolve its task states, theme/style mapping, dependencies and fallbacks into the project's design document. Existing project decisions skip that survey; a pattern does not select a new stack or require upstream installation.
+
 ## Load only relevant knowledge
 
 Use [the knowledge index](../../knowledge/README.md) as the topic router. Select material for a concrete project decision; an existing, resolved project rule does not need a fresh survey. Read relevant sections, including dependencies and source credits, rather than every chapter or upstream skill family.

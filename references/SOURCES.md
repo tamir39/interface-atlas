@@ -144,3 +144,7 @@ The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preser
 ## Flat Design family research
 
 [Flat Design sources and credits](../styles/flat-design/sources.md) records source authors/owners, inspected dates, artifact terms and reference boundaries. The entry separates planar styling from Minimalism, Web Brutalism and later depth-bearing variants. Its [Next Up composition evaluation](../examples/flat-design-composition-evaluation/README.md) distinguishes nine source-profile fit judgments, declared depth removal, original-radius preservation and finite browser/task evidence.
+
+## Component pattern pilot and library references
+
+The selected [button](../patterns/button-feedback/sources.md), [loading](../patterns/loading-feedback/sources.md) and [hero](../patterns/hero-composition/sources.md) records credit Uiverse community authors, Nitin Gupta / Uilora and Aman Shakya / Forge UI for inspected references and distinguish reuse terms. The pilot uses original Atlas implementations and framework-independent rules, with no third-party source implementation import. Its [evaluation](../examples/patterns-evaluation/README.md) distinguishes actual local behavior, a manual loading-state fixture, native navigation and source-based fit recommendations. Read the selected record only when its pattern or artifact rights are relevant.

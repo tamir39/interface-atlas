@@ -27,6 +27,12 @@ const files = [
     ['index.html', 'styles.css', 'preview.js', 'theme-tokens.css', 'theme-tokens.json'].map((name) => [
       `styles/${style}/preview/${name}`, `styles/${style}/preview/${name}`,
     ])),
+  ...['button-feedback', 'loading-feedback', 'hero-composition'].map((pattern) => [
+    `patterns/${pattern}/preview/index.html`, `patterns/${pattern}/preview/index.html`,
+  ]),
+  ...['styles.css', 'preview.js'].map((name) => [
+    `patterns/preview-assets/${name}`, `patterns/preview-assets/${name}`,
+  ]),
   ...['vessel-study.png', 'seat-study.png', 'room-study.png'].map((name) => [
     `themes/gallery/preview/assets/${name}`, `themes/gallery/preview/assets/${name}`,
   ]),

@@ -7,6 +7,8 @@ on:
       - 'assets/brand/**'
       - 'themes/*/preview/**'
       - 'styles/*/preview/**'
+      - 'patterns/**'
+      - 'tools/pattern-catalog.mjs'
       - 'tools/style-catalog.mjs'
       - 'tools/style-tokens.mjs'
       - 'catalog/**'
@@ -38,6 +40,7 @@ jobs:
         run: |
           node tools/catalog.mjs --check
           node tools/style-catalog.mjs --check
+          node tools/pattern-catalog.mjs --check
           node tools/style-tokens.mjs --check
       - name: Build the preview site
         run: node tools/build-preview-site.mjs

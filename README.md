@@ -13,6 +13,8 @@ Pick a visual direction, resolve the design decisions, and give your agents a se
 
 **Styling catalog:** [Glassmorphism](styles/glassmorphism/README.md), [Neobrutalism](styles/neobrutalism/README.md), [Claymorphism](styles/claymorphism/README.md), [Neumorphism](styles/neumorphism/README.md), [Skeuomorphism](styles/skeuomorphism/README.md), [Web Brutalism](styles/web-brutalism/README.md), and [Flat Design](styles/flat-design/README.md) are optional visual-style entries beside the nine themes. Explore their [live labs](https://tamir39.github.io/interface-atlas/#styles) and [composition guidance](knowledge/theme-style-composition.md). The [Flat Design trial](examples/flat-design-composition-evaluation/README.md), alongside earlier style trials, separates its rendered task-board evidence from source-based theme fit and deliberate changes to depth. Other researched families remain candidates.
 
+**Component patterns:** [Button feedback](patterns/button-feedback/README.md), [loading feedback](patterns/loading-feedback/README.md), and [hero composition](patterns/hero-composition/README.md) add optional task-level recipes beside themes and styles. Use the [small pattern catalog](catalog/patterns.json) only for a requested or unresolved component decision, then read the selected rules and relevant credits. Their original [interactive labs](https://tamir39.github.io/interface-atlas/#patterns) and [pilot evaluation](examples/patterns-evaluation/README.md) distinguish local behavior, explicit simulation and native navigation.
+
 **Current collection:** Editorial, Swiss, Precision, Play, Botanical, Blueprint, Pulse, Gallery, and Layered are the reusable themes. The portfolio and agent operations design examples adapt Editorial; Swiss adds a studio layout and change review; Precision adds a compact operational workspace; Play adds a creative portfolio and project brief builder; Botanical adds a narrative studio and reading room; Blueprint adds an engineering studio and diagram inspector; Pulse adds a bold event program and local schedule planner; Gallery adds an image-led collection and inline inspection with real media recovery; Layered adds a spacious planning workspace with tonal surfaces, native editing, and scoped recovery. All nine theme entries remain drafts. Their validation records describe the browser checks and limits: [Editorial](themes/editorial/validation.md), [Swiss](themes/swiss/validation.md), [Precision](themes/precision/validation.md), [Play](themes/play/validation.md), [Botanical](themes/botanical/validation.md), [Blueprint](themes/blueprint/validation.md), [Pulse](themes/pulse/validation.md), [Gallery](themes/gallery/validation.md), [Layered](themes/layered/validation.md).
 
 ## Start here
@@ -177,6 +179,35 @@ interface-atlas/
 │           ├── preview.js
 │           ├── theme-tokens.css
 │           └── theme-tokens.json
+├── patterns/
+│   ├── README.md
+│   ├── button-feedback/
+│   │   ├── README.md
+│   │   ├── pattern.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       └── index.html
+│   ├── loading-feedback/
+│   │   ├── README.md
+│   │   ├── pattern.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       └── index.html
+│   ├── hero-composition/
+│   │   ├── README.md
+│   │   ├── pattern.md
+│   │   ├── sources.md
+│   │   ├── validation.md
+│   │   └── preview/
+│   │       ├── README.md
+│   │       └── index.html
+│   └── preview-assets/
+│       ├── styles.css
+│       └── preview.js
 ├── themes/
 │   ├── blueprint/
 │   │   ├── README.md
@@ -339,7 +370,8 @@ interface-atlas/
 │               └── light-mobile.png
 ├── catalog/
 │   ├── themes.json
-│   └── styles.json
+│   ├── styles.json
+│   └── patterns.json
 ├── knowledge/
 │   ├── README.md
 │   ├── ui-ux-design.md
@@ -367,6 +399,12 @@ interface-atlas/
 │   └── project-design.md
 ├── examples/
 │   ├── README.md
+│   ├── patterns-evaluation/
+│   │   ├── README.md
+│   │   ├── trials.md
+│   │   ├── results.json
+│   │   ├── routing-checks.json
+│   │   └── release-checks.json
 │   ├── flat-design-composition-evaluation/
 │   │   ├── README.md
 │   │   ├── design.md
@@ -504,6 +542,8 @@ interface-atlas/
 │   ├── README.md
 │   ├── catalog.mjs
 │   ├── style-catalog.mjs
+│   ├── pattern-catalog.mjs
+│   ├── validate-patterns.mjs
 │   ├── style-tokens.mjs
 │   ├── validate-claymorphism.mjs
 │   ├── validate-glassmorphism.mjs

@@ -13,6 +13,7 @@ Use this index to select guidance for preparing or explicitly reviewing a projec
 | [Agent Experience](agent-experience.md) | Human-facing agent work, proposals, progress, intervention or control | Lifecycle principles and contract questions; no agent runtime implementation |
 
 [Theme/style composition](theme-style-composition.md) is conditional on a requested style or an unresolved overlap. Discover through [styles](../catalog/styles.json), then read only the chosen rules and relevant credits. Ordinary work uses the project's resolved contract.
+For a requested component/effect pattern or an unresolved task detail, read an identified pattern directly, or use [pattern discovery](../patterns/README.md) and the [small catalog](../catalog/patterns.json) to choose one. Read only the selected README, rules and relevant credits. Existing project decisions skip that survey. Patterns resolve task behavior inside the chosen theme/style; selecting one does not require a new theme, stack, dependency or skill. Resolve accepted values, states and fallbacks into the project handoff.
 
 Theme identity, values, effects and motion remain in the chosen theme package. Shared guides resolve cross-theme decisions. Select by feature: a static portfolio need not load persistence or remote outcomes; a local practice app should not acquire agent/backend flows; a remote branching form may need all three P0 chapters. An existing resolved design can need only one relevant section for a narrow revision.
 

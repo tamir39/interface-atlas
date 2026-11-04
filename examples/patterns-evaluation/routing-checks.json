@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-04",
+  "evidence_type": "Independent read-only desk forward trials; not rendered or user research",
+  "source_snapshot": "Local uncommitted working tree based on 6e416cdbbc58c6100490a6eb5360625f35e8151b; root separately verifies the release index and preserves the earlier draft",
+  "cases": [
+    {
+      "id": "prepare-known-hero",
+      "request": "Prepare the hero design for an existing HTML/CSS workshop page using hero-composition, supplied palette/type/corners and real #workshops/#about destinations, without approved media or metrics.",
+      "passed": true,
+      "observed": {
+        "selection": "Direct named hero recipe; no theme/style/pattern catalogs or preview history",
+        "origin": "Supplied project system; no Atlas theme inheritance",
+        "result": "Concrete content/order, native anchors, preserved supplied tokens, light hero in both OS preferences, natural long-content reflow, meaningful focus and verification limits",
+        "dependencies_added": [],
+        "unsupported_proof_added": false
+      },
+      "files_read": [
+        "AGENTS.md",
+        "skills/prepare-frontend-design/SKILL.md",
+        "patterns/hero-composition/README.md",
+        "patterns/hero-composition/pattern.md",
+        "patterns/hero-composition/sources.md",
+        "knowledge/README.md",
+        "knowledge/ui-ux-design.md",
+        "knowledge/accessibility-and-responsive.md",
+        "templates/project-design.md",
+        "references/skill-adaptations.md"
+      ],
+      "selected_hero_recipe_hash_at_trial": "42f7bd5ed0c63435b60bb64e984d3f9dec942cc070f7c882f78631f09c4dcc1a",
+      "later_change": "Fixture link labels were subsequently clarified; no task rule or routing behavior changed."
+    },
+    {
+      "id": "implement-resolved-focus",
+      "request": "Existing Save draft button already updates browser-local data; add only supplied focus-visible outline/offset without changing behavior or design.",
+      "passed": true,
+      "observed": {
+        "files_read": [
+          "AGENTS.md",
+          "skills/implement-frontend-ui/SKILL.md"
+        ],
+        "catalog_or_pattern_reads": [],
+        "patch": ".save:focus-visible {\n  outline: 2px solid var(--ink);\n  outline-offset: 3px;\n}",
+        "new_workflows_or_dependencies": [],
+        "verification": "Desk inspection only; rendered/keyboard/cascade/visibility checks remain consuming-project work"
+      }
+    }
+  ],
+  "review_skill": {
+    "evidence": "Source comparison only, not an independent review trial",
+    "opt_in_description_unchanged": true,
+    "implementation_authority_not_added": true
+  },
+  "limits": [
+    "Agent Git status was unavailable in its sandbox; root verifies the worktree and release separately.",
+    "Trial outputs are design/patch proposals, not a running consuming application.",
+    "Catalog and source records were not reread solely to fingerprint them."
+  ],
+  "passed": true
+}

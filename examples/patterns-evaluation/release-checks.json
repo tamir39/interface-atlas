@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-04",
+  "scope": "Three original component pattern labs, independent discovery, selective skill routes and publishing; prior Agent Experience draft excluded.",
+  "passed": true,
+  "checks": [
+    {
+      "command": "node tools/pattern-catalog.mjs",
+      "passed": true,
+      "output": "Generated catalog for 3 pattern(s)."
+    },
+    {
+      "command": "node tools/catalog.mjs --check",
+      "passed": true,
+      "output": "Catalog matches metadata for 9 theme(s)."
+    },
+    {
+      "command": "node tools/style-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 7 implemented style(s)."
+    },
+    {
+      "command": "node tools/pattern-catalog.mjs --check",
+      "passed": true,
+      "output": "Verified catalog for 3 pattern(s)."
+    },
+    {
+      "command": "node tools/style-tokens.mjs --check",
+      "passed": true,
+      "output": "Verified bounded token projections for 9 themes across 7 styles."
+    },
+    {
+      "command": "node --check tools/pattern-catalog.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/build-preview-site.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check tools/validate-patterns.mjs",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "node --check patterns/preview-assets/preview.js",
+      "passed": true,
+      "output": ""
+    },
+    {
+      "command": "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1103-1593-0_26.1103.1593.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe -X utf8 C:/Users/PC/.codex/skills/.system/skill-creator/scripts/quick_validate.py D:\\Projects\\InterfaceAtlas\\skills\\prepare-frontend-design",
+      "passed": true,
+      "output": "Skill is valid!"
+    },
+    {
+      "command": "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1103-1593-0_26.1103.1593.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe -X utf8 C:/Users/PC/.codex/skills/.system/skill-creator/scripts/quick_validate.py D:\\Projects\\InterfaceAtlas\\skills\\implement-frontend-ui",
+      "passed": true,
+      "output": "Skill is valid!"
+    },
+    {
+      "command": "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1103-1593-0_26.1103.1593.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe -X utf8 C:/Users/PC/.codex/skills/.system/skill-creator/scripts/quick_validate.py D:\\Projects\\InterfaceAtlas\\skills\\review-frontend-design",
+      "passed": true,
+      "output": "Skill is valid!"
+    },
+    {
+      "name": "glassmorphism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neobrutalism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "claymorphism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "neumorphism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "skeuomorphism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "web-brutalism runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "flat-design runtime remains equal to published browser evidence",
+      "passed": true
+    },
+    {
+      "name": "Relative Markdown references",
+      "documents": 31,
+      "links": 419,
+      "passed": true
+    },
+    {
+      "command": "node tools/build-preview-site.mjs --output C:/Users/PC/AppData/Local/Temp/atlas-patterns-site-20261104",
+      "passed": true,
+      "output": "Built 86 preview files in C:\\Users\\PC\\AppData\\Local\\Temp\\atlas-patterns-site-20261104"
+    },
+    {
+      "command": "node tools/validate-site.mjs --site C:/Users/PC/AppData/Local/Temp/atlas-patterns-site-20261104 --module C:/Users/PC/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs --browser C:/Users/PC/AppData/Local/ms-playwright/chromium-1243/chrome-win64/chrome.exe --output C:/Users/PC/AppData/Local/Temp/atlas-patterns-hub-20261104",
+      "passed": true,
+      "output": "Recorded actual browser results."
+    },
+    {
+      "name": "Final evaluation navigation links after routing/release records were linked",
+      "passed": true,
+      "document": "examples/patterns-evaluation/README.md",
+      "local_links": 8
+    }
+  ],
+  "pattern_evidence": {
+    "file": "results.json",
+    "sha256": "7f9122ba70cb08f0a852348920e4277f03c153c24532b884ddfed11aaf0f25f7",
+    "base_contexts": 12,
+    "interaction_contexts": 87,
+    "groups": 12
+  },
+  "routing_evidence": {
+    "file": "routing-checks.json",
+    "sha256": "ce4ee0f19dab7d51e096cc7e9496caa342f3186ce625b377312aa4762b6973e3",
+    "type": "Independent desk trials plus source review"
+  },
+  "hub": {
+    "passed": true,
+    "groups": 12,
+    "testedFiles": {
+      "index.html": "4d4dfc61088cbbdb22a37cc6a38bba99b372ac3d1b166e23865e5caf7a306802",
+      "styles.css": "1bc6719864b76c84b43f6d04c66c8c19126e15f9026ac7ceb59f342a9be8c476",
+      "search.js": "501be58fcfc138294125bd3549829614862f40eaec63d746529b069e9f888a0c"
+    },
+    "validatorSha256": "945cc276e7eaca3c6fbd80f1977cbec656084407ed490ce188e7158905b1d59b",
+    "limits": [
+      "Headless Chromium on Windows only. No assistive-technology session, user study, native browser zoom, or other browser engine.",
+      "Focus, status semantics, keyboard behavior and rendered styles are inspected; this is bounded evidence, not an accessibility conformance claim.",
+      "No theme preview behavior is changed or revalidated here. Build links and targeted hub behavior are checked."
+    ]
+  }
+}

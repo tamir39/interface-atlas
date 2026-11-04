@@ -4,6 +4,7 @@ Status: {{draft_or_validated_with_evidence}}
 Design direction: {{project_system_or_supplied_or_custom_or_atlas_theme_and_revision}}
 Source snapshot: {{source_repository_and_revision}}
 Visual style, if selected: {{family_revision_scope_and_deliberate_theme_overrides}}
+Component patterns, if selected: {{pattern_revisions_scope_and_resolved_task_states}}
 
 Use this as an adaptable outline. Omit irrelevant sections; separate supplied facts, observed evidence, project proposals and missing inputs.
 
@@ -33,7 +34,7 @@ Specify content/reading order, layout constraints, adaptive behavior, overflow, 
 
 ## Components, states and recovery
 
-Specify applicable default, focus, hover, selected, pending, unavailable, empty and failure behavior, meaningful labels and recovery actions.
+Specify applicable default, focus, hover, selected, pending, unavailable, empty and failure behavior, meaningful labels and recovery actions. If a pattern was selected, resolve its theme/style mapping, dependencies and fallbacks here rather than making implementation reopen the library.
 
 ## Interaction flows
 
@@ -54,7 +55,7 @@ Record Atlas theme identity/revision only when one is inherited. For a project-o
 For each used source record:
 
 - Creator or credited author and original URL.
-- Version/commit, theme/style revisions and inspection date where available; identify relevant uncommitted snapshot limits.
+- Version/commit, theme/style/pattern revisions and inspection date where available; identify relevant uncommitted snapshot limits.
 - Retained values, referenced methods, copied material and new adaptations.
 - Applicable reuse terms and required notices; unresolved terms remain explicit.
 

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "patterns": [
+    {
+      "id": "button-feedback",
+      "name": "Button feedback",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "summary": "Make activation, keyboard focus, selection and action outcomes distinguishable.",
+      "source_mode": "original-with-credited-references",
+      "reviewed_on": "2026-11-04",
+      "decisions": [
+        "action-role",
+        "feedback-states",
+        "focus-recovery",
+        "motion-purpose"
+      ],
+      "fit_types": [
+        "local-actions",
+        "form-controls",
+        "preference-toggles"
+      ],
+      "dependencies": [],
+      "documents": {
+        "readme": "patterns/button-feedback/README.md",
+        "pattern": "patterns/button-feedback/pattern.md",
+        "sources": "patterns/button-feedback/sources.md",
+        "validation": "patterns/button-feedback/validation.md"
+      },
+      "reading_words": {
+        "readme": 299,
+        "pattern": 761,
+        "sources": 386,
+        "validation": 197
+      },
+      "preview": "patterns/button-feedback/preview/index.html"
+    },
+    {
+      "id": "hero-composition",
+      "name": "Hero composition",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "summary": "Connect an opening promise, useful context and a clear next route across content sizes.",
+      "source_mode": "original-with-credited-references",
+      "reviewed_on": "2026-11-04",
+      "decisions": [
+        "opening-message",
+        "action-hierarchy",
+        "content-order",
+        "responsive-pressure"
+      ],
+      "fit_types": [
+        "landing-pages",
+        "onboarding-entry",
+        "project-introductions"
+      ],
+      "dependencies": [],
+      "documents": {
+        "readme": "patterns/hero-composition/README.md",
+        "pattern": "patterns/hero-composition/pattern.md",
+        "sources": "patterns/hero-composition/sources.md",
+        "validation": "patterns/hero-composition/validation.md"
+      },
+      "reading_words": {
+        "readme": 297,
+        "pattern": 771,
+        "sources": 389,
+        "validation": 208
+      },
+      "preview": "patterns/hero-composition/preview/index.html"
+    },
+    {
+      "id": "loading-feedback",
+      "name": "Loading feedback",
+      "revision": "0.1.0-draft",
+      "status": "draft",
+      "entry_creator": "Tamir (Phi Vuong Tuong Tam)",
+      "summary": "Tie pending, success, empty and failure feedback to the actual state owner.",
+      "source_mode": "original-with-credited-references",
+      "reviewed_on": "2026-11-04",
+      "decisions": [
+        "pending-state",
+        "retained-results",
+        "outcome-evidence",
+        "optional-motion"
+      ],
+      "fit_types": [
+        "asynchronous-results",
+        "refreshing-views",
+        "data-fetching"
+      ],
+      "dependencies": [],
+      "documents": {
+        "readme": "patterns/loading-feedback/README.md",
+        "pattern": "patterns/loading-feedback/pattern.md",
+        "sources": "patterns/loading-feedback/sources.md",
+        "validation": "patterns/loading-feedback/validation.md"
+      },
+      "reading_words": {
+        "readme": 279,
+        "pattern": 795,
+        "sources": 378,
+        "validation": 202
+      },
+      "preview": "patterns/loading-feedback/preview/index.html"
+    }
+  ]
+}

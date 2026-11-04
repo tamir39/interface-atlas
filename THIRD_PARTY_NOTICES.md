@@ -163,3 +163,7 @@ The [Web Brutalism source record](styles/web-brutalism/sources.md) credits David
 ## Flat Design references
 
 The [Flat Design source record](styles/flat-design/sources.md) distinguishes NN/g's authored explanations and original signifier research, Designmodo's Flat-UI kit, technical standards, and Atlas's own Next Up implementation. Those source works are referenced rather than copied. Designmodo's inspected kit contains differing license statements across artifacts; this entry imports no kit code, fonts, artwork or covered adaptations, and does not treat a root license as permission for every asset. Historical influences do not establish a sole inventor. The numerical recipe and task-board behavior are original Atlas choices.
+
+## Component pattern pilot
+
+The [button](patterns/button-feedback/sources.md), [loading](patterns/loading-feedback/sources.md) and [hero](patterns/hero-composition/sources.md) records distinguish Uiverse's community MIT artifacts and individual creators from Uilora / Nitin Gupta and Forge UI / Aman Shakya, whose inspected terms restrict republishing component collections. The pilot recipes, neutral preview styling, content and JavaScript are original Atlas work by Tamir / Phi Vuong Tuong Tam with Codex AI assistance. No upstream component code, article prose, imagery or fonts are imported, adapted or bundled. Source licenses do not become Atlas's publishing license, and no unused third-party notice is included to imply an import. Future artifact reuse needs its actual permission, attribution and required notices.

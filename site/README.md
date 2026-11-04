@@ -45,3 +45,7 @@ Publishing a preview does not establish full accessibility, browser, or project 
 ## Visual styles beside themes
 
 The hub links to [Glassmorphism](../styles/glassmorphism/README.md), [Neobrutalism](../styles/neobrutalism/README.md), [Claymorphism](../styles/claymorphism/README.md), [Neumorphism](../styles/neumorphism/README.md), [Skeuomorphism](../styles/skeuomorphism/README.md), [Web Brutalism](../styles/web-brutalism/README.md), and [Flat Design](../styles/flat-design/README.md), with separate interactive comparisons of nine bounded theme profiles. The builder allowlists its original HTML/CSS/JavaScript and generated token manifest; documentation links resolve to GitHub. No new frontend framework or browser dependency is published. The style specimen preserves explicit fallback states and separates rendering evidence from theme suitability. Future families are not published until their entry and preview exist.
+
+## Component pattern labs
+
+The hub links to original [button feedback](../patterns/button-feedback/README.md), [loading feedback](../patterns/loading-feedback/README.md) and [hero composition](../patterns/hero-composition/README.md) recipes. Three HTML pages share two local preview assets; the build allowlists them and rewrites documentation links to GitHub. Their neutral palette is independent of theme profiles, and their evaluation separates local actions, a manually advanced request fixture and native navigation. No upstream component code or library dependencies are published.

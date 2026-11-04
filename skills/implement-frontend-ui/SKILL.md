@@ -21,6 +21,8 @@ Route hierarchy, layout, writing, typography or component mapping to general UI/
 
 Use compatible craft guidance such as better-ui only when relevant and available. Explicit user choices and governing project design/accessibility rules take precedence over generic polish values; do not import another skill's fixed motion, shape or effect values when they conflict. Keep any additional guidance within this task rather than automatically launching a second review or loading every domain.
 
+For an unresolved component/effect detail, read an identified recipe directly or use [pattern discovery](../../catalog/patterns.json) to choose one. Read only the selected recipe and relevant credits. Preserve the project's governing tokens, components and task contract; resolve accepted behavior into its code or documents. Existing resolved tasks skip pattern discovery, and the reference preview does not require another stack, package or service.
+
 ## Implement the task and its states
 
 Reuse established components, semantic tokens and variants before adding competing abstractions. Follow the project's component ownership and map the requested role to its actual control, content and state. Prefer native semantics where they fit; keep names, input instructions, focus movement and feedback useful through the affected task. Check real content and long labels, rather than judging an isolated idealized specimen.

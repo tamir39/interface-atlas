@@ -13,6 +13,8 @@ Start with the brief, relevant project design documents and supplied evidence. A
 
 Do not reload the theme catalog or all source libraries for a project that already has a design contract. Use [the knowledge index](../../knowledge/README.md) to load only the chapter/section needed for an actual review question. Open selected theme or style rules when checking inheritance or a concrete contradiction. Check style scope, explicit theme overrides and fallbacks only when implicated; a visual preference or a shared-profile pass alone does not establish compatibility. Read relevant source credits when propagating methods; do not load the research ledger or every license text by default.
 
+When a declared pattern or an unresolved component behavior is relevant to the review, inspect the selected pattern rules and task contract; [pattern discovery](../../patterns/README.md) is available when the entry is not identified. Read its credits when propagating methods. Existing project decisions skip catalog browsing; compare actual states and evidence rather than treating the reference preview as a universal requirement.
+
 ## Trace tasks and test findings
 
 Trace the essential user paths, including relevant empty, invalid, pending, interrupted and recovery states. Consider general UI/UX as part of those tasks: information order, hierarchy, terminology, action labels, type readability, semantic color and responsive/input behavior. Use the accessibility/responsive guide for implicated components or contexts. For stateful or asynchronous actions, check the relevant state, forms and uncertain-outcome contracts. Use Agent Experience only when the product exposes agent work or decisions.
