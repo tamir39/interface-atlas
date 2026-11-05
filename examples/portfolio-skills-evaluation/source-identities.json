@@ -1,0 +1,47 @@
+{
+  "baseCommit": "0a393cb1203fae10e90ead00b178226188f4f9ce",
+  "files": [
+    {
+      "path": "skills/prepare-frontend-design/SKILL.md",
+      "baselineSha256": "dcd970f3b9c8804a7601767df97053b7da39dee9be61c2657ae0416281873098",
+      "candidateSha256": "3d545d038151d58ddd86e577f60ef485ba709a40487d2b833125e67191cc7cee",
+      "baselineWords": 774,
+      "candidateWords": 543
+    },
+    {
+      "path": "skills/implement-frontend-ui/SKILL.md",
+      "baselineSha256": "480842a78a0d5bc476dd7404ed69f25d3ed8084daa8f0447ea783c895ee3d783",
+      "candidateSha256": "d7554ac2666d5a49d0070805932d725f1a4ab3e939b9d0032cb818f8df8eb826",
+      "baselineWords": 768,
+      "candidateWords": 637
+    },
+    {
+      "path": "skills/review-frontend-design/SKILL.md",
+      "baselineSha256": "bd4e6b43afd506b98a705110313835a19671233e88f720aaf0d22386fdfea96b",
+      "candidateSha256": "3a60b2c0c8c83b1175f33a76fe24c7277d740648bf2f95f17b9823de13d7d715",
+      "baselineWords": 748,
+      "candidateWords": 551
+    },
+    {
+      "path": "knowledge/README.md",
+      "baselineSha256": "fb935297f0e0540acf245a1f944edf2dfcf924a5f22cc73360e81365623bd55a",
+      "candidateSha256": "5c2ce4a5159acd66f0dc96b37a7e947b66fb506f1fdaa12470bdb0f949f39516",
+      "baselineWords": 646,
+      "candidateWords": 369
+    },
+    {
+      "path": "knowledge/uncertain-outcomes.md",
+      "baselineSha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10",
+      "candidateSha256": "5319f2ed3b5df42952ae14bcbe7d3be481e3cc7ed88ca64bc3327d5021ecabd2",
+      "baselineWords": 2476,
+      "candidateWords": 2819
+    },
+    {
+      "path": "AGENTS.md",
+      "baselineSha256": "a4e336d7e0fc00467d6297a470db17bf4a1e6f8e5b5cec677d0b0287214fe331",
+      "candidateSha256": "83ce5dda57520e1ac2f678c5e9799f040b18dd91120da7a524e3a2fbcc162484",
+      "baselineWords": 478,
+      "candidateWords": 525
+    }
+  ]
+}

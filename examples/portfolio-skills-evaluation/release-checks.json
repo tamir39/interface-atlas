@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-05",
+  "checks": {
+    "portfolioTypecheck": "passed",
+    "portfolioBuild": "passed;20 static pages",
+    "browserAssertions": "176/176",
+    "browserPageErrors": 0,
+    "globalLikeLinks": "25 validated during staging",
+    "sourceLinksAndAnchors": {
+      "passed": true,
+      "links": 83,
+      "anchors": 30
+    },
+    "skillFrontmatter": "passed;all3 via system quick_validate.py with existing temporary PyYAML",
+    "themeCatalog": "passed;9",
+    "styleCatalog": "passed;7",
+    "patternCatalog": "passed;3",
+    "styleTokens": "passed;9 themes across7 styles",
+    "previewAssembly": "passed;86 files",
+    "preservationBeforeInstall": "passed;both original worktrees and12 installed files",
+    "frozenGuidanceHashes": "passed;all6",
+    "protocolFactsAndChapterCredits": "unchanged vs baseline"
+  },
+  "portfolioCommitted": false,
+  "portfolioSourceChangesThisRerun": false,
+  "betterUiModified": false,
+  "creditsOrLicenseNoticesRemoved": false,
+  "limits": "Filesystem publication/global-install checks are performed separately against the resulting published commit; no self-referential commit ID is embedded in this precommit trial."
+}

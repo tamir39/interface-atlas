@@ -1,6 +1,6 @@
 # Uncertain outcomes, retries, and remote effects
 
-Status: research draft for review, revision 0.2-draft, 2026-10-15. Atlas synthesis by Tamir (Phi Vuong Tuong Tam), with Codex AI assistance. Sources establish protocol facts; the design rules below are Atlas proposals requiring a project's service contract.
+Status: research draft for review, revision 0.3-draft, 2026-11-05. Atlas synthesis by Tamir (Phi Vuong Tuong Tam), with Codex AI assistance. Sources establish protocol facts; the design rules below are Atlas proposals requiring a project's service contract.
 
 ## When to load this chapter
 
@@ -29,9 +29,9 @@ If-Match uses strong entity-tag comparison to condition an action; false conditi
 | Accepted | Service acknowledges receipt or scheduling for the matching action | “Received; processing is pending.” Offer a supported status view. |
 | Confirmed | Contract-defined final evidence identifies the actual effect | “Request submitted. Reference R…” Link the resulting record. |
 | Rejected | Authoritative refusal/failure identifies this action and its scope | “Submission was declined: …” Explain correction or review. |
-| Unknown | Available evidence cannot establish the outcome | “We could not confirm submission. Check status before submitting again.” |
+| Unknown | Available evidence cannot establish the outcome | “We could not confirm submission.” Offer the project's supported next step or explain the risk of a permitted deliberate repeat. |
 
-Use “failed” only with a stated scope. A status lookup can fail while an accepted operation continues. Do not replace confirmed historical effects with a generic error because a later refresh fails. An unknown outcome remains visible after a toast disappears, alongside its reference, last checked time, and supported next step. Copy must distinguish “nothing applied” from “some steps applied” whenever the service can establish that difference.
+Use “failed” only with a stated scope. A status lookup can fail while an accepted operation continues. Do not replace confirmed historical effects with a generic error because a later refresh fails. Keep an unknown outcome visible after transient feedback disappears, with any available reference/observation details and a supported next step, for the project's documented retention period. If the [reduced-capability policy](#user-initiated-repeat-with-known-risk) permits current-attempt feedback to replace it, disclose the loss of history/recovery; a newer result does not settle the earlier outcome. Copy must distinguish “nothing applied” from “some steps applied” whenever the service can establish that difference.
 
 ## Service-contract worksheet
 
@@ -50,7 +50,7 @@ Gate promises explicitly: unsupported lookup prevents a promise of reload confir
 | What proves a terminal result? | Authoritative source, terminal states, effect reference, partial-effect explanation, and freshness/version rules. |
 | How is status recovered? | Lookup by action/operation ID, permissions, consistency lag, retention, and meanings of missing or expired records. |
 | How is observation paced? | Local wait threshold, poll/push/reconnect policy, server-directed delay, stale/last-observed presentation, stop-waiting and reconciliation escalation. Elapsed time alone proves no remote failure. |
-| What may be retried? | Eligible errors, same-action conditions, limits, delay/backoff policy, and the point requiring human reconciliation. |
+| What may be retried or deliberately repeated? | Separate automatic retry semantics from any user-initiated repeat policy accepting possible multiple effects. Record eligible errors/actions, consequence limits, attempt limits/pacing, required explanation, and the point requiring reconciliation. |
 | What does cancellation mean? | Request scope, acknowledgement versus confirmed stop, race with completion, reversibility, and unsupported cases. |
 
 Stable identity joins a user's reviewed intent to subsequent evidence. Keep the action identity across retries of that same intent, according to the contract; record a new attempt separately. A new key generated on every click defeats a mechanism that recognizes retries by key. Conversely, reusing one key for a changed target or payload can conceal a new intent or produce a conflict. An idempotency key is a contract mechanism, not a guarantee created by naming a header.
@@ -59,7 +59,7 @@ A proposal version identifies what the user approved. A resource revision identi
 
 ## Dispatch and changed intent
 
-**Atlas proposal:** preserve the immutable submitted snapshot and its action identity separately from the editable draft. Editing creates proposed new intent; it does not alter, cancel or resolve an unresolved action. Before enabling a new action, determine whether its consequence overlaps the unresolved one. Reconcile first or use a specifically documented product/service policy with an accurate explanation of possible multiple effects. A fresh key and another review do not prevent both actions from completing. Keep the original reference and outcome visible independently.
+**Atlas proposal:** preserve the immutable submitted snapshot and its action identity separately from the editable draft. Editing creates proposed new intent; it does not alter, cancel or resolve an unresolved action. Before enabling a new action, determine whether its consequence overlaps the unresolved one. Reconcile first or use the [documented user-initiated repeat policy](#user-initiated-repeat-with-known-risk). A fresh key and another review do not prevent both actions from completing. Keep the original available reference and unresolved outcome distinguishable from the newer draft or attempt; record any retention limits without promising recovery beyond them.
 
 When reload-safe outcome recovery is required, establish an acknowledged minimal recovery identity before dispatch, or use documented authorized service discovery that works independently of the lost reply. Apply the [local acknowledgement boundary](state-and-recovery.md#save-snapshots-and-completion) when a browser record supplies that identity. If retention fails and no independent route exists, gate the effect or explicitly choose a reduced capability whose loss/duplication limits are acceptable to the project; do not retain the recovery promise. Also define failure behavior for later action-to-operation-ID mapping updates. A prepared local entry proves neither delivery nor non-delivery; local retention and the remote effect are not one transaction.
 
@@ -70,14 +70,20 @@ When reload-safe outcome recovery is required, establish an acknowledged minimal
 1. Correlate the observation with the action, payload, and attempt. Reject evidence for an unrelated target, account, action, or proposal version. A delayed authoritative reply from an earlier attempt can settle the same action across retries; apply the contract's freshness/ordering rules and prevent stale state regression.
 2. Use an authorized status lookup when available. A confirmed result ends recovery; accepted/pending results keep the operation visible. An authoritative rejection is handled according to its documented scope.
 3. Interpret missing status according to the contract. Replication delay, expired history, access changes, and “never received” must not share an assumed meaning. If the service cannot distinguish them, keep the outcome unknown.
-4. Retry only when the documented semantics establish acceptable repeated effects or establish that the original action was not applied. Check key retention and payload equality before reusing the action. Apply the contract's attempt limit and pacing; a waiting interval does not itself make repetition safe.
-5. Otherwise offer status review, a reference to give support, or another documented reconciliation route. If none exists, state that the outcome cannot be confirmed and leave retry unavailable for that action. Do not invent a recovery route.
+4. Retry automatically only when documented service semantics establish idempotent effects or establish that the original action was not applied. Check key retention and payload equality before reusing the action. Apply the contract's attempt limit and pacing; a waiting interval does not itself make repetition safe. A warning or a user clicking again does not supply duplicate protection.
+5. Otherwise offer an available status review, support reference or documented reconciliation route. A separate, deliberate repeat may remain available under the [project policy below](#user-initiated-repeat-with-known-risk); it is not an automatic or proven duplicate-safe retry. If neither reconciliation nor that policy applies, explain the unknown outcome and leave the repeat action unavailable. Do not invent a recovery route.
 
-After reload or reconnect, recover unresolved action identities from the permitted recovery record, reauthorize lookup, and reconcile before enabling a repeat submission. A local “pending” record is a reminder to investigate, not remote truth. If recovery data was never retained or has expired, say what can still be checked. Reopening the form must not silently create a new action from an unresolved submission.
+After reload or reconnect, recover unresolved action identities from the permitted recovery record, reauthorize any supported lookup, and apply the same reconciliation or explicit repeat-policy decision. A local “pending” record is a reminder to investigate, not remote truth. If recovery data was never retained or has expired, say what can still be checked and honor the project's documented recovery limit. Reopening the form must not silently create a new action from an unresolved submission.
 
 Specify observation separately from effect retry: the local waiting threshold, supported status-check cadence/backoff, reconnect and hidden-page behavior, last-observed time, stale copy, and when to expose a supported reconciliation route. Respect documented server delays. After a local threshold, replace an indefinite active spinner with truthful delayed/unconfirmed feedback and safe controls; time passing cannot establish failure or authorize another effect. If lookup or escalation is unsupported, say so instead of inventing it.
 
 Use a client button guard to prevent accidental rapid activation and explain the pending state. Service duplicate prevention must also handle another tab, device, reconnect, or direct request. An interface cannot promise protection that exists only in one component's memory. Prefer a specific “Check status” control when that action is supported and useful.
+
+## User-initiated repeat with known risk
+
+**Atlas proposal:** a product owner may explicitly accept a reduced capability when reconciliation or duplicate protection is unavailable. Record the allowed action and context, possible loss or multiple effects, acceptable consequence limits, available evidence/retention, and why a deliberate repeat is permitted. Apply relevant service restrictions and pacing. Show the unknown outcome and repeat consequences before a fresh user activation; keep the original available evidence distinguishable from the new attempt. A new activation does not establish that the earlier action failed. Do not silently replay it, automatically enable a chain of repeated effects, or describe the repeat as safe or deduplicated.
+
+For example, a portfolio contact-form policy could allow the visitor to send again after a transport failure, preserve the draft, and say “Couldn't confirm whether your message was accepted. Sending again could deliver it twice.” The project must accept duplicate messages and state its recovery limits; this is not a general exemption for forms. A payment, booking or destructive operation whose consequences have not been accepted by such a project policy remains gated pending supported evidence or reconciliation. A generic warning alone is not authorization to take that risk.
 
 ## Cancellation and stale evidence
 
@@ -97,7 +103,7 @@ Keep outcome text, evidence links, and controls together. Explain why repeat sub
 
 These cases illustrate decisions to specify; no service behavior is asserted.
 
-- **Submit a service form:** the user sends one request and loses the connection. Retain its action reference, show unknown outcome, and check the service's supported lookup before offering another submission. Preserve editable draft content without presenting it as proof of non-submission.
+- **Submit a service form:** the user sends one request and loses the connection. Retain available action evidence, show unknown outcome, and use supported lookup or the documented repeat-policy decision before offering another submission. Preserve editable draft content without presenting it as proof of non-submission.
 - **Save a cart handoff:** a shared cart snapshot is sent to another system. “Handoff accepted” concerns that snapshot and version. A later cart edit requires a fresh review; a saved cart or downstream link alone does not prove the intended handoff finished. Payment and provider implementation are outside this chapter.
 - **Cancel an agent:** a stop command is acknowledged while execution events disconnect. Display the command as accepted and execution freshness separately. Confirm stopped only from service evidence; disclose known completed effects. If cancellation is unsupported, say so before presenting a stop control.
 
@@ -111,6 +117,7 @@ Before implementation, walk each scenario through the worksheet, copy, and recov
 - Reload after acceptance; later rejection or partial completion: retain references, preserve drafts, and report the actual scope.
 - Same action/key with a changed payload, or a retry after retention expires: demonstrate the explicit gate and next review step.
 - Edit the draft while an earlier action remains unknown, then request a new overlapping action: preserve both snapshots and show the reconciliation/consequence gate.
+- No lookup or duplicate protection exists: contrast an explicitly accepted contact-message repeat with an operation lacking that policy. Show the unknown original outcome and consequences before activation; verify there is no automatic repeat or unsupported recovery promise.
 - Lose or deny the recovery-record write before dispatch, or fail its operation-ID mapping update: identify the independent recovery route or blocked promise.
 - Exceed a local wait threshold or receive repeated missing/stale status: show truthful delayed feedback, bounded observation and no invented retry permission.
 - Old progress arrives after confirmation; cancellation races with completion; conflicting resource revision arrives: identify authoritative evidence and avoid silent regression or overwrite.

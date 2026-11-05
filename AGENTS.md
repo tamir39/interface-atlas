@@ -7,7 +7,7 @@ Interface Atlas is an independent frontend UI/UX knowledge library. Do not impor
 - Use Atlas for frontend design preparation, bounded frontend implementation through implement-frontend-ui, or explicitly requested design review.
 - For preparation, start from the brief and existing or supplied design direction. Read catalog/themes.json and candidate theme READMEs only when choosing an Atlas direction. Read catalog/styles.json and candidate style READMEs only for a requested or unresolved visual-style choice; neither a theme nor a style is compulsory. For review, start from the project rules and supplied evidence; a source or rendered review does not require design.md.
 - Read catalog/patterns.json and candidate pattern READMEs only for a requested or unresolved component/effect decision. Load the selected rules and relevant credits; existing project contracts skip that survey. A pattern does not require a new theme, style, stack or design.md.
-- Read detailed theme rules, optional motion/effects, and shared knowledge only when relevant. The knowledge index routes general UI/UX, accessibility/responsive behavior, state, forms, remote outcomes and Agent Experience.
+- Read detailed rules only for an unresolved decision. Follow a known section directly, or use the knowledge index to locate it; read necessary dependencies, then stop. Reuse task conclusions/read records instead of repeating indexes, whole chapters or source surveys.
 - review-frontend-design is opt-in; review does not automatically run preparation or implement fixes.
 - For implementation, start from the consuming project's request, design documents and affected source. Use implement-frontend-ui to coordinate the bounded change; load shared knowledge only for unresolved decisions. A small task does not require a new design.md or preparation/review pass.
 
@@ -19,6 +19,7 @@ Interface Atlas is an independent frontend UI/UX knowledge library. Do not impor
 - Keep identity, fit, and limitations in README.md; concrete design rules in design.md.
 - Keep source values, referenced concepts, and proposed adaptations distinguishable.
 - Preserve creator credits, source URLs, versions or commits, reuse terms, and required notices.
+- Use concise credits in selected guidance. Open research/adaptation ledgers or full terms for an actual attribution/permission question or copying/distributing a covered artifact/substantial adaptation, rather than every invocation. Hash via metadata instead of rereading content.
 - Unknown reuse terms remain unresolved; a reference link is not permission to copy code or assets.
 - Examples illustrate adaptations; they are not universal theme defaults or implemented products.
 - Do not mark a theme validated based only on source inspection or color calculations.

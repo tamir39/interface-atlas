@@ -1,0 +1,1001 @@
+{
+  "summary": {
+    "date": "2026-11-05",
+    "main": {
+      "assertions": 155,
+      "passed": 155,
+      "failed": 0,
+      "renders": 20,
+      "apiRequests": 105
+    },
+    "supplement": {
+      "assertions": 21,
+      "passed": 21,
+      "failed": 0,
+      "renders": 10,
+      "apiRequests": 21
+    },
+    "totalAssertions": 176,
+    "allAssertionsPassed": true,
+    "totalFinalRunApiRequests": 126,
+    "mainApiCounts": {
+      "/api/cat-comment": 51,
+      "/api/contact": 54
+    },
+    "supplementApiCounts": {
+      "/api/cat-comment": 10,
+      "/api/contact": 11
+    },
+    "allObservedApiIntercepted": true,
+    "realEmailOrAiCallsForwarded": 0,
+    "pageErrors": {
+      "main": 0,
+      "supplement": 0
+    },
+    "sourcesUnchanged": true,
+    "frozenSourceHashes": {
+      "components/ContactForm.tsx": "b40a2da75d92ba0685946411ea8812b41b00f277424117877ce7752acb4cfd31",
+      "app/contact.css": "cfdc38a574c3720873ced1f66fdf39f1da6f57d89375adc6b3009e9f47c0f71e"
+    },
+    "minimumContrast": {
+      "pending": 6.172696210314817,
+      "accepted": 6.943698515686729,
+      "error": 11.648366086001491
+    },
+    "durationSeconds": 191.50099999999998,
+    "harnessHashes": {
+      "main": "bc07ec5a81938683736cea35e5b00bdcd4dd82287b08539d2a2cff34f0078c71",
+      "supplement": "e7ac037e8fcdbd034f2f1695a1fa24e9b0ee4e0cde83a8979f85193be9abc972"
+    },
+    "priorAttempt": {
+      "report": "C:/Users/PC/AppData/Local/Temp/atlas-portfolio-retry-trial-20261105/verification.json",
+      "summary": {
+        "assertions": 75,
+        "passed": 75,
+        "failed": 0,
+        "renders": 4,
+        "apiRequests": 43
+      },
+      "fatal": "page.waitForFunction: TypeError: Cannot read properties of null (reading 'getAttribute')\n    at eval (eval at predicate (eval at evaluate (:311:30)), <anonymous>:1:66)\n    at predicate (eval at evaluate (:311:30), <anonymous>:7:27)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:311:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "apiRequests": 43,
+      "sourcesUnchanged": true,
+      "retained": true
+    },
+    "diagnostic": {
+      "report": "C:/Users/PC/AppData/Local/Temp/atlas-portfolio-retry-trial-20261105/hydration-probe.json",
+      "runs": 5,
+      "apiRequests": 15,
+      "pageErrors": 0,
+      "interpretation": "Five post-build hydrated submissions passed. Exact cause of transient missing form in first attempt was not reproduced or established; no causal claim about concurrent build or product defect."
+    },
+    "adjustments": "C:/Users/PC/AppData/Local/Temp/atlas-portfolio-retry-trial-20261105/attempt2/harness-adjustments.json",
+    "visuallyInspected": [
+      {
+        "file": "C:/Users/PC/AppData/Local/Temp/atlas-portfolio-retry-trial-20261105/attempt2/render-editorial-dark-320.png",
+        "finding": "Fixed companion bubble obscures form heading; appearance control occupies left edge near accepted-status text. Newer draft fields remain visible."
+      },
+      {
+        "file": "C:/Users/PC/AppData/Local/Temp/atlas-portfolio-retry-trial-20261105/attempt2/supplement-pending-botanical-light-320.png",
+        "finding": "Fixed appearance trigger overlaps left edge of wrapped pending copy; fields and submit remain visible."
+      }
+    ],
+    "limits": [
+      "Hydrated frontend with controlled local API responses; no real SMTP/provider delivery or assistive-technology announcement testing.",
+      "Known mobile overlay limitation remains; no baseline comparison establishes regression.",
+      "Overflow assertions alone do not establish absence of overlay collisions.",
+      "Temporary harness only; no portfolio source, dependency, Git, global skill, or Atlas mutations by this browser rerun."
+    ],
+    "readerLog": [
+      "Read main temporary driver107lines for failure boundary",
+      "Read selected supplement wait/loop/output lines; reused prior behavior checks",
+      "Read compact prior failure, main/supplement metadata and5-run diagnostic",
+      "Viewed2 representative screenshot images",
+      "No fresh project theme/catalog/research/license survey"
+    ]
+  },
+  "main": {
+    "summary": {
+      "assertions": 155,
+      "passed": 155,
+      "failed": 0,
+      "renders": 20,
+      "apiRequests": 105
+    },
+    "harnessHash": "bc07ec5a81938683736cea35e5b00bdcd4dd82287b08539d2a2cff34f0078c71",
+    "sourceBefore": {
+      "components/ContactForm.tsx": "b40a2da75d92ba0685946411ea8812b41b00f277424117877ce7752acb4cfd31",
+      "app/contact.css": "cfdc38a574c3720873ced1f66fdf39f1da6f57d89375adc6b3009e9f47c0f71e"
+    },
+    "sourceAfter": {
+      "components/ContactForm.tsx": "b40a2da75d92ba0685946411ea8812b41b00f277424117877ce7752acb4cfd31",
+      "app/contact.css": "cfdc38a574c3720873ced1f66fdf39f1da6f57d89375adc6b3009e9f47c0f71e"
+    },
+    "sourcesUnchanged": true,
+    "allApiIntercepted": true,
+    "pageErrors": [],
+    "assertions": [
+      {
+        "name": "editorial/light/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "Empty status persists with display enabled",
+        "pass": true
+      },
+      {
+        "name": "Empty alert persists with display enabled",
+        "pass": true
+      },
+      {
+        "name": "Required invalid fields dispatch zero requests",
+        "pass": true
+      },
+      {
+        "name": "Native email invalid dispatches zero requests",
+        "pass": true
+      },
+      {
+        "name": "Pending button focusable aria-disabled",
+        "pass": true
+      },
+      {
+        "name": "Busy confined to button; polite atomic status outside busy",
+        "pass": true
+      },
+      {
+        "name": "Rapid clicks and Enter dispatch one request while pending",
+        "pass": true
+      },
+      {
+        "name": "Pending button keyboard focus retained",
+        "pass": true
+      },
+      {
+        "name": "Unedited accepted draft clears",
+        "pass": true
+      },
+      {
+        "name": "Dispatched snapshot matches A",
+        "pass": true
+      },
+      {
+        "name": "Accepted status is available",
+        "pass": true
+      },
+      {
+        "name": "Accepted outcome persists and new draft becomes unsent",
+        "pass": true
+      },
+      {
+        "name": "No repeated status changes on subsequent keystrokes",
+        "pass": true
+      },
+      {
+        "name": "Accepted A preserves latest B including all three fields",
+        "pass": true
+      },
+      {
+        "name": "Response retains active draft focus",
+        "pass": true
+      },
+      {
+        "name": "Edited success distinguishes earlier sent message and unsent draft",
+        "pass": true
+      },
+      {
+        "name": "Edit then revert counts as edit and preserves draft",
+        "pass": true
+      },
+      {
+        "name": "503 retains latest draft",
+        "pass": true
+      },
+      {
+        "name": "503 persistent alert present",
+        "pass": true
+      },
+      {
+        "name": "503 no focus steal",
+        "pass": true
+      },
+      {
+        "name": "503 no automatic retry",
+        "pass": true
+      },
+      {
+        "name": "503 outcome remains after edit",
+        "pass": true
+      },
+      {
+        "name": "503 definite rejection does not claim acceptance",
+        "pass": true
+      },
+      {
+        "name": "429 retains latest draft",
+        "pass": true
+      },
+      {
+        "name": "429 persistent alert present",
+        "pass": true
+      },
+      {
+        "name": "429 no focus steal",
+        "pass": true
+      },
+      {
+        "name": "429 no automatic retry",
+        "pass": true
+      },
+      {
+        "name": "429 outcome remains after edit",
+        "pass": true
+      },
+      {
+        "name": "429 definite rejection does not claim acceptance",
+        "pass": true
+      },
+      {
+        "name": "400 retains latest draft",
+        "pass": true
+      },
+      {
+        "name": "400 persistent alert present",
+        "pass": true
+      },
+      {
+        "name": "400 no focus steal",
+        "pass": true
+      },
+      {
+        "name": "400 no automatic retry",
+        "pass": true
+      },
+      {
+        "name": "400 outcome remains after edit",
+        "pass": true
+      },
+      {
+        "name": "400 definite rejection does not claim acceptance",
+        "pass": true
+      },
+      {
+        "name": "502 retains latest draft",
+        "pass": true
+      },
+      {
+        "name": "502 persistent alert present",
+        "pass": true
+      },
+      {
+        "name": "502 no focus steal",
+        "pass": true
+      },
+      {
+        "name": "502 no automatic retry",
+        "pass": true
+      },
+      {
+        "name": "502 outcome remains after edit",
+        "pass": true
+      },
+      {
+        "name": "502 unknown outcome warns about duplicates",
+        "pass": true
+      },
+      {
+        "name": "502 manual resend allowed",
+        "pass": true
+      },
+      {
+        "name": "abort retains latest draft",
+        "pass": true
+      },
+      {
+        "name": "abort persistent alert present",
+        "pass": true
+      },
+      {
+        "name": "abort no focus steal",
+        "pass": true
+      },
+      {
+        "name": "abort no automatic retry",
+        "pass": true
+      },
+      {
+        "name": "abort outcome remains after edit",
+        "pass": true
+      },
+      {
+        "name": "abort unknown outcome warns about duplicates",
+        "pass": true
+      },
+      {
+        "name": "abort manual resend allowed",
+        "pass": true
+      },
+      {
+        "name": "Theme and palette change during pending preserves draft",
+        "pass": true
+      },
+      {
+        "name": "Theme change preserves pending status",
+        "pass": true
+      },
+      {
+        "name": "Theme and palette change preserves accepted earlier/newer outcome",
+        "pass": true
+      },
+      {
+        "name": "Reduced motion spinner static",
+        "pass": true
+      },
+      {
+        "name": "Motion off spinner static without system reduction",
+        "pass": true
+      },
+      {
+        "name": "Forced colors controls and pending keyboard focus visible",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/light/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/light/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/light/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "play/light/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "play/light/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "play/light/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/light/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/light/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "play/light/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "play/light/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "play/light/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/light/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/dark/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "play/dark/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "play/dark/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "play/dark/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/dark/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/dark/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "play/dark/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "play/dark/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "play/dark/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/dark/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/light/1280: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/320: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/320: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/320: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/320: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/320: alert contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/1280: editable pending native fields",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/1280: accepted retains newer draft",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/1280: form and contact controls fit viewport",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/1280: status contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark/1280: alert contrast >=4.5",
+        "pass": true
+      }
+    ],
+    "renderContexts": [
+      {
+        "theme": "editorial",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "editorial",
+        "appearance": "light",
+        "width": 1280
+      },
+      {
+        "theme": "editorial",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "editorial",
+        "appearance": "dark",
+        "width": 1280
+      },
+      {
+        "theme": "swiss",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "swiss",
+        "appearance": "light",
+        "width": 1280
+      },
+      {
+        "theme": "swiss",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "swiss",
+        "appearance": "dark",
+        "width": 1280
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "light",
+        "width": 1280
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "dark",
+        "width": 1280
+      },
+      {
+        "theme": "play",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "play",
+        "appearance": "light",
+        "width": 1280
+      },
+      {
+        "theme": "play",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "play",
+        "appearance": "dark",
+        "width": 1280
+      },
+      {
+        "theme": "botanical",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "botanical",
+        "appearance": "light",
+        "width": 1280
+      },
+      {
+        "theme": "botanical",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "botanical",
+        "appearance": "dark",
+        "width": 1280
+      }
+    ]
+  },
+  "supplement": {
+    "summary": {
+      "assertions": 21,
+      "passed": 21,
+      "failed": 0,
+      "renders": 10,
+      "apiRequests": 21
+    },
+    "harnessHash": "e7ac037e8fcdbd034f2f1695a1fa24e9b0ee4e0cde83a8979f85193be9abc972",
+    "sourceBefore": {
+      "components/ContactForm.tsx": "b40a2da75d92ba0685946411ea8812b41b00f277424117877ce7752acb4cfd31",
+      "app/contact.css": "cfdc38a574c3720873ced1f66fdf39f1da6f57d89375adc6b3009e9f47c0f71e"
+    },
+    "sourceAfter": {
+      "components/ContactForm.tsx": "b40a2da75d92ba0685946411ea8812b41b00f277424117877ce7752acb4cfd31",
+      "app/contact.css": "cfdc38a574c3720873ced1f66fdf39f1da6f57d89375adc6b3009e9f47c0f71e"
+    },
+    "sourcesUnchanged": true,
+    "allApiIntercepted": true,
+    "pageErrors": [],
+    "assertions": [
+      {
+        "name": "editorial/light: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/light: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "editorial/dark: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "swiss/light: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/light: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "swiss/dark: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/light: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "blueprint/dark: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "Unknown outcome long warning fits 320px viewport",
+        "pass": true
+      },
+      {
+        "name": "play/light: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/light: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "play/dark: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "play/dark: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "botanical/light: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/light: pending typing causes no status mutation",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark: pending contrast >=4.5",
+        "pass": true
+      },
+      {
+        "name": "botanical/dark: pending typing causes no status mutation",
+        "pass": true
+      }
+    ],
+    "renderContexts": [
+      {
+        "theme": "editorial",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "editorial",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "swiss",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "swiss",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "blueprint",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "play",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "play",
+        "appearance": "dark",
+        "width": 320
+      },
+      {
+        "theme": "botanical",
+        "appearance": "light",
+        "width": 320
+      },
+      {
+        "theme": "botanical",
+        "appearance": "dark",
+        "width": 320
+      }
+    ]
+  },
+  "evidenceNote": "Raw local drivers/reports retain full style/contrast details and intercepted fixtures; this published record omits repeated nested background trees. Drivers were temporary local evidence, not a portable test tool bundled with the skill."
+}

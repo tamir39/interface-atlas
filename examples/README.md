@@ -1,5 +1,7 @@
 # Project examples
 
+The [portfolio skill rerun](portfolio-skills-evaluation/README.md) evaluates bounded preparation, implementation and opt-in review alongside better-ui. It records retry-policy corrections, selective-reading results and intercepted real-frontend checks while preserving uncommitted portfolio work.
+
 The portfolio and agent operations examples are self-contained project specifications derived from Editorial:
 
 - [Portfolio](portfolio/design.md) preserves expressive typography and comfortable reading layouts.

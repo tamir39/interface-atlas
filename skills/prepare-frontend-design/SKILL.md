@@ -5,36 +5,32 @@ description: Prepare or deliberately revise a project's frontend design.md from 
 
 # Prepare frontend design
 
-Produce a self-contained project design.md from the brief and available evidence. Respect the user's visual direction, scope, output mode and project location. Locate Atlas through the shared-resource links below; keep the library distinct from the consuming project.
+Prepare the requested design artifact from the brief and evidence: normally a self-contained project design.md, or a scoped contract/draft when that is the requested output. Respect the user's location and output mode. Routine implementation can use implement-frontend-ui directly without this stage. Locate Atlas through the links below; keep it distinct from the consuming project.
 
 ## Establish the design
 
-Identify users, essential tasks, content, supported contexts and constraints. Separate supplied facts, observations, proposed decisions and missing inputs. For an existing interface, inspect its governing design document and relevant source or supplied rendered evidence before proposing changes. Repeated code literals alone do not establish intended design rules.
+Identify users, essential tasks, content, contexts and constraints. Separate facts, observations, proposals and missing inputs. For an existing interface, inspect governing rules and relevant source or rendered evidence; repeated literals alone do not establish design intent. Preserve the existing system, brand or supplied direction.
 
-Preserve an existing design system, brand or supplied direction. Use [the catalog](../../catalog/themes.json) and candidate theme READMEs when an Atlas direction is requested or useful for an unresolved choice; do not require an Atlas theme. If no theme fits, develop a project-specific direction from the brief and evidence. When inheriting an Atlas theme, read its design.md and sources.md and explain adaptations. Load motion.md or effects.md only for effects actually chosen. Do not select a stack, backend or additional feature merely to fill the document.
+Use [themes](../../catalog/themes.json) and candidate READMEs only when choosing an Atlas direction. A custom or project-owned direction is valid. For an inherited theme, read its design.md and sources.md; load effects/motion only when chosen. Do not add a stack, backend or feature to fill a template.
 
-When a visual style is requested or unresolved, use [style discovery](../../catalog/styles.json) and shortlisted style READMEs. Load only the selected style rules and relevant credits; motion remains conditional. Use [composition guidance](../../knowledge/theme-style-composition.md) for actual overlap: record preserved theme rules, deliberate overrides, component scope and fallback behavior in the project handoff. A rendered profile does not establish theme suitability; neither a style nor an Atlas theme is compulsory.
+Use [styles](../../catalog/styles.json) only for a requested or unresolved treatment. Read selected rules/credits and [composition guidance](../../knowledge/theme-style-composition.md) for actual overlap; record preserved theme rules, overrides, scope and fallbacks. A rendered profile does not establish project suitability.
 
-For an identified pattern, read its entry directly. For an unresolved component/effect choice, use [pattern discovery](../../catalog/patterns.json) to shortlist by decision and fit, then read only the selected README, pattern.md and relevant credits. Resolve its task states, theme/style mapping, dependencies and fallbacks into the project's design document. Existing project decisions skip that survey; a pattern does not select a new stack or require upstream installation.
+Read an identified pattern directly; use [pattern discovery](../../catalog/patterns.json) only for an unresolved component/effect choice. Resolve selected states, dependencies and fallbacks into the handoff. Existing decisions skip discovery; patterns require neither a new stack nor upstream installation.
 
 ## Load only relevant knowledge
 
-Use [the knowledge index](../../knowledge/README.md) as the topic router. Select material for a concrete project decision; an existing, resolved project rule does not need a fresh survey. Read relevant sections, including dependencies and source credits, rather than every chapter or upstream skill family.
+Start with the project's resolved rules. For a remaining decision, read the known section directly or use [the knowledge index](../../knowledge/README.md) to locate it. Follow only dependencies needed to answer that question, then stop. Reuse conclusions/read records from this task; do not repeat an index, whole chapter or source survey to reconfirm them.
 
-For a new design or unresolved UX decisions, use the general UI/UX guide to connect user goals, information structure, journeys, hierarchy and writing to the chosen visual direction. Route stateful editing to state/recovery and forms/navigation, remote effects to uncertain outcomes, accessibility or adaptive questions to their guide, and human-facing agent work to Agent Experience. Do not add agent, commerce, account or remote-action requirements to unrelated projects. Adapters are conditional on a concrete stack need.
-
-Use compatible craft guidance such as better-ui only when relevant and available. Explicit user choices and governing project design/accessibility rules take precedence over generic polish values; selecting another skill does not authorize a rebrand, extra motion, a full-domain sweep or a separate report.
+Use relevant craft guidance such as better-ui when available. Apply its useful task guidance within project/design/accessibility rules; fixed polish preferences do not authorize a rebrand, extra motion, broader audit or another workflow.
 
 ## Make the handoff actionable
 
-Use [the project template](../../templates/project-design.md) as an adaptable outline; omit irrelevant sections. Resolve chosen rules into exact values, semantic pairings, content order, labels, component states and end-to-end task transitions. For applicable flows, name state owners, acknowledgement boundaries, interruption/re-entry, failure recovery and the user's next useful action. External capabilities need an identified input/owner and implementation gate, rather than a fictional endpoint or guarantee.
+Use [the template](../../templates/project-design.md) when useful; omit irrelevant sections. Resolve rules into exact values, pairings, content order, labels, states and transitions. For applicable flows, name state owners, acknowledgement, interruption/re-entry and recovery. External capabilities need an owner/input and implementation gate, not a fictional endpoint or guarantee.
 
-Retain useful governing design rules and explain project adaptations. Identify the actual design origin, whether project-owned, supplied, custom or Atlas; do not invent a theme inheritance or source credit. Record open research questions as questions; heuristic reasoning or synthetic examples are not observed user evidence. Include enough detail for implementation to use the project's documents without reopening Atlas. Add companion documents only when they materially help.
+Identify the actual design origin and adaptations without inventing inheritance or credits. Keep research questions open; heuristics and synthetic examples are not user observations. Make the handoff usable without reopening Atlas. Add companion documents only when they help the project.
 
 ## Preserve evidence and credits
 
-Record the used Atlas/theme/style revisions when selected, selected source creators and URLs, applicable terms/notices, and which values or methods were retained or adapted. For an uncommitted Atlas snapshot, identify that limit and relevant file hashes instead of implying HEAD contains the changes. Propagate relevant chapter credits and [adaptation notices](../../references/skill-adaptations.md); full license texts are redistribution records, not required reading on every invocation.
+Record selected revisions, creators/URLs and retained/adapted methods using concise credits in the selected entry/section. Open [adaptation records](../../references/skill-adaptations.md), research ledgers or full terms only for an actual attribution/permission question or copying/distributing a covered artifact or substantial adaptation. Carry required notices; a link is not reuse permission. Identify an uncommitted snapshot honestly, using existing read records or metadata hashes rather than rereading content for fingerprints.
 
-Use existing read records or metadata-only hashing for source identities. Do not reread source content solely to calculate a fingerprint or populate a provenance table.
-
-Separate performed document, rendered, keyboard, assistive-technology and service checks from future checks. A contrast calculation does not validate an interface. Reconcile contradictions in the draft, then deliver in the requested mode; do not automatically invoke a separate review or implement the product.
+Reconcile contradictions and deliver in the requested mode. Distinguish performed document, rendered, keyboard, assistive-technology and service checks from future work; calculations alone do not validate an interface. Do not automatically implement or launch a separate review.
