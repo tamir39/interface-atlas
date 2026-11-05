@@ -10,7 +10,7 @@ Start with the project's resolved rules. Use this index only to locate guidance 
 | Drafts, retention, overlapping saves or replacement | [Ownership/lifetime](state-and-recovery.md#ownership-and-lifetime), [save snapshots](state-and-recovery.md#save-snapshots-and-completion), [stale writers](state-and-recovery.md#replacement-and-stale-writers) |
 | Editable forms, errors, pending or navigation | [Validation/recovery](forms-and-navigation.md#validation-and-error-recovery), [pending controls](forms-and-navigation.md#pending-actions-and-available-controls), [dirty exit](forms-and-navigation.md#modal-editing-and-dirty-exit), [navigation](forms-and-navigation.md#navigation-focus-and-scroll) |
 | Remote effects, lost replies or repeat submission | [Outcome copy](uncertain-outcomes.md#outcome-states-and-copy), [changed intent](uncertain-outcomes.md#dispatch-and-changed-intent), [retry/recovery](uncertain-outcomes.md#safe-retry-and-recovery); service facts constrain promises |
-| Human-facing agent work or control | [Agent Experience](agent-experience.md); no agent runtime implied |
+| Agent capabilities, proposal decisions, steering, attention, evidence or return | [Agent Experience](agent-experience.md); select relevant sections and linked P0; no agent runtime implied |
 
 For a requested or unresolved visual treatment, discover [styles](../catalog/styles.json) and load selected rules/credits. Use [composition](theme-style-composition.md) for actual overlap. Theme identity, values, effects and motion stay in the chosen theme package; existing resolved choices need no survey.
 

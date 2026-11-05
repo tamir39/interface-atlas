@@ -1,0 +1,40 @@
+{
+  "evaluatedOn": "2026-10-27",
+  "baselineCommit": "db910e7c632834ce2b72c34462199ff2df0bc379",
+  "kind": "Fictional source/document exercise; no runtime or effectiveness claim",
+  "chapter": {
+    "initialSha256": "427456e263d6b15f8382d8d772b70dc2aec436dff756ff38dddfb07675010a10",
+    "finalSha256": "aaefa5ea2f5e8c8a795dbf7a46de1ce21d6b924115139db8812afedf9397da78",
+    "finalBytes": 12605,
+    "finalWords": 1725
+  },
+  "contract": {
+    "finalSha256": "5c34bbe940a4f82dbc2153e5e734f1d7112ad7defdf20ba90b353fa301526681",
+    "finalWords": 1050
+  },
+  "reading": {
+    "generation": {
+      "events": 9,
+      "helperReturnedBytes": 111438
+    },
+    "review": {
+      "events": 5,
+      "helperReturnedBytes": 51557
+    },
+    "limits": "Manual source helper returns only; not billed tokens, complete model context, or demonstrated savings. Generation reported truncated aggregate outputs and targeted rereads."
+  },
+  "corrections": {
+    "chapterReview": 3,
+    "authorSelfCheck": 1,
+    "independentReview": 1,
+    "independentFindingStatus": "closed at document level by targeted verification"
+  },
+  "sourceScopes": "Generation used the frozen initial chapter. Independent review used the peer-corrected chapter and author-submitted candidate. Those packs remain unchanged. No rerun is represented as having occurred.",
+  "unperformed": [
+    "Real service behavior/authority/retention or concurrency",
+    "Rendered browser or keyboard checks",
+    "Assistive technology or actual spoken announcements",
+    "User comprehension, calibration or usability study",
+    "New skill implementation, framework adapter or global installation update"
+  ]
+}

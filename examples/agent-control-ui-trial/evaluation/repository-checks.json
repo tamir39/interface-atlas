@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checkedDocuments": 10,
+  "localLinks": 255,
+  "anchors": 25,
+  "previewHashesMatchFinalBrowserFreeze": true,
+  "checks": {
+    "themeCatalog": "9 passed",
+    "styleCatalog": "7 passed",
+    "patternCatalog": "3 passed",
+    "styleTokens": "9themes across7styles passed",
+    "javascriptSyntax": "passed",
+    "repositoryWhitespace": "passed"
+  },
+  "newSkill": false,
+  "published": false,
+  "scope": "Historical local evaluation before Pages publication. Retained values identify that evaluated state; publication integration is recorded separately in pages-publication.json and publication-source-identities.json."
+}

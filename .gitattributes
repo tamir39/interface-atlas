@@ -17,4 +17,6 @@
 examples/skill-evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 examples/reference-craft-evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 examples/implementation-evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+examples/agent-control-evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+examples/agent-control-ui-trial/evaluation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 references/licenses/*.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

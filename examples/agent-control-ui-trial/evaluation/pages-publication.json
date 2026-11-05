@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-06",
+  "phase": "prepublication built-artifact validation",
+  "status": "passed",
+  "buildFiles": 89,
+  "checks": [
+    {
+      "name": "Only allowlisted artifact files published",
+      "pass": true,
+      "actual": {
+        "files": 89
+      }
+    },
+    {
+      "name": "Built runtime bytes match reviewed sources",
+      "pass": true
+    },
+    {
+      "name": "Hub starts at nine themes 1280",
+      "pass": true
+    },
+    {
+      "name": "Theme search stays theme-only 1280",
+      "pass": true
+    },
+    {
+      "name": "Empty theme result preserves Agent Experience 1280",
+      "pass": true
+    },
+    {
+      "name": "Search clear restores nine themes and focus 1280",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite handoff.md 1280",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite credits.md 1280",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite evaluation/report.md 1280",
+      "pass": true
+    },
+    {
+      "name": "Hub has no horizontal overflow 1280",
+      "pass": true
+    },
+    {
+      "name": "Published Harbor page loads 1280",
+      "pass": true
+    },
+    {
+      "name": "Trial credit/contract links rewrite 1280",
+      "pass": true
+    },
+    {
+      "name": "Unknown publication keeps original action 1280",
+      "pass": true
+    },
+    {
+      "name": "Independent request remains usable 1280",
+      "pass": true
+    },
+    {
+      "name": "Check status reconciles matching effect 1280",
+      "pass": true
+    },
+    {
+      "name": "Closed cancellation coexists with later effect 1280",
+      "pass": true
+    },
+    {
+      "name": "Harbor has no horizontal overflow 1280",
+      "pass": true
+    },
+    {
+      "name": "Hub starts at nine themes 320",
+      "pass": true
+    },
+    {
+      "name": "Theme search stays theme-only 320",
+      "pass": true
+    },
+    {
+      "name": "Empty theme result preserves Agent Experience 320",
+      "pass": true
+    },
+    {
+      "name": "Search clear restores nine themes and focus 320",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite handoff.md 320",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite credits.md 320",
+      "pass": true
+    },
+    {
+      "name": "Hub document rewrite evaluation/report.md 320",
+      "pass": true
+    },
+    {
+      "name": "Hub has no horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "Published Harbor page loads 320",
+      "pass": true
+    },
+    {
+      "name": "Trial credit/contract links rewrite 320",
+      "pass": true
+    },
+    {
+      "name": "Unknown publication keeps original action 320",
+      "pass": true
+    },
+    {
+      "name": "Independent request remains usable 320",
+      "pass": true
+    },
+    {
+      "name": "Check status reconciles matching effect 320",
+      "pass": true
+    },
+    {
+      "name": "Closed cancellation coexists with later effect 320",
+      "pass": true
+    },
+    {
+      "name": "Harbor has no horizontal overflow 320",
+      "pass": true
+    },
+    {
+      "name": "No browser page/console/resource errors",
+      "pass": true,
+      "actual": {
+        "errors": [],
+        "responses": []
+      }
+    },
+    {
+      "name": "No external/API request attempted",
+      "pass": true,
+      "actual": {
+        "count": 0
+      }
+    },
+    {
+      "name": "Reviewed preview source3 remained unchanged",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 35,
+    "passed": 35,
+    "failed": 0
+  },
+  "source3": [
+    {
+      "path": "examples/agent-control-ui-trial/preview/index.html",
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/preview/styles.css",
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/preview/app.js",
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    }
+  ],
+  "errors": [],
+  "unexpectedResources": [],
+  "externalOrApiAttempts": 0,
+  "network": "Only loopback static artifact requests allowed; external/API blocked before navigation.",
+  "originalPreviewSourcesUnchanged": true,
+  "htmlTransformation": "Only copied HTML Markdown links are rewritten to GitHub/main; original preview source3 unchanged.",
+  "browserContext": "Chromium;1280x900 and320x900;reduced motion;fresh localStorage",
+  "deploymentVerified": false,
+  "route": "https://tamir39.github.io/interface-atlas/examples/agent-control-ui-trial/preview/",
+  "screenshots": [
+    "C:/Users/PC/AppData/Local/Temp/atlas-harbor-pages-smoke-20261106/hub-agent-experience-1280.png",
+    "C:/Users/PC/AppData/Local/Temp/atlas-harbor-pages-smoke-20261106/hub-agent-experience-320.png",
+    "C:/Users/PC/AppData/Local/Temp/atlas-harbor-pages-smoke-20261106/harbor-cancellation-1280.png",
+    "C:/Users/PC/AppData/Local/Temp/atlas-harbor-pages-smoke-20261106/harbor-cancellation-320.png"
+  ],
+  "limits": "Built Pages artifact smoke; does not replace the prior full local UI trial, AT/service/operator testing or deployment verification."
+}

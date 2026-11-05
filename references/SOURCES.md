@@ -117,6 +117,18 @@ The [dated adaptation supplement](skill-adaptations.md#2026-10-20-reference-and-
 
 The [practical-lesson index](practical-lessons.md) concerns Atlas’s own preserved document trials and is optional research material, not a normal project dependency.
 
+## Agent Experience research draft — 2026-10-27
+
+The [new ledger](agent-experience-research.md) and [structured evidence](agent-experience-evidence.json) extend R19 (HAX), R58 (PAIR) and R17 (W3C) without rewriting their earlier inspection records. PAIR evidence here is explicitly historical v2 (2021); current 2025 chapter text was not inspected.
+
+| ID | Source | Credited creator | Material used | Terms and scope |
+| --- | --- | --- | --- | --- |
+| R59 | [Guidelines for Human-AI Interaction](https://doi.org/10.1145/3290605.3300233) | Saleema Amershi and twelve coauthors, all named in the ledger | Historical research foundation for capability expectations and human control | 2019 paper-specific ACM notice; concepts referenced, no paper text or figures imported. |
+| R60 | [MCP 2025-11-25 specification](https://github.com/modelcontextprotocol/modelcontextprotocol/tree/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25) | MCP contributors; protocol creators David Soria Parra and Justin Spahr-Summers separately credited | Elicitation/cancellation/task capability comparison, not a required runtime | Same-revision MIT notice retained; tasks experimental, cancellation does not establish actual stop/rollback. |
+| R61 | [Copilot Accessibility Practices](https://primer.style/accessibility/patterns/copilot-accessibility-practices/) | GitHub / Primer accessibility contributors | Task announcements, focus and semantic-state considerations | Mutable practitioner page; page-specific reuse terms unresolved. No prose, code, token values or fixed cadence imported. |
+
+Targeted control/credit verification for the [rendered Harbor Desk trial](../examples/agent-control-ui-trial/README.md) is retained in its [source verification record](../examples/agent-control-ui-trial/evaluation/source-verification.json). It checks the pinned MCP cancellation/elicitation/task semantics and retained notice, distinguishes historical PAIR from current material, and separates normative accessibility requirements from practitioner examples. It does not replace the original inspection dates or import source code, assets or prose.
+
 ## Visual-style research and implementation
 
 [Glassmorphism's source dossier](../styles/glassmorphism/sources.md) records primary naming, historical, platform-material, CSS and accessibility sources with specific creator roles and reuse boundaries. [Style discovery](../styles/README.md) separates implemented entries from future research candidates. [Composition guidance](../knowledge/theme-style-composition.md) and [theme-profile trials](../examples/style-composition-evaluation/README.md) are original Atlas proposals and bounded evidence, not source-authored compatibility claims.

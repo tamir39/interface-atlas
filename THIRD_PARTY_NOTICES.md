@@ -136,6 +136,14 @@ The optional [practical lessons](references/practical-lessons.md) link preserved
 
 No additional third-party license text or dependency is introduced. Source creators do not endorse Atlas, and **Atlas's own publishing license remains undecided**. Actual code or asset imports into a consuming project need their own artifact-specific terms and required notices; the workflow's credits do not clear unrelated material.
 
+## Agent Experience research draft — 2026-10-27
+
+The [research ledger](references/agent-experience-research.md) records new original Atlas synthesis for **Tamir (Phi Vuong Tuong Tam), with Codex AI assistance**, referencing **Microsoft HAX and the named 2019 paper authors**, **Google PAIR and edition-specific contributors**, **MCP creators/contributors**, **W3C AG WG/editors** and **GitHub Primer/accessibility contributors**. No source prose, implementation, worksheet, screenshot or asset is imported. Existing Mohit Aggarwal and Burhan Sebin method credits remain unchanged.
+
+PAIR's inspected historical 2021 chapter footers identify **CC BY-NC-SA 4.0**; those findings are not attributed to uninspected current chapters. The HAX paper's ACM notice, HAX live-library terms, W3C document versus software/document licenses, and unresolved Primer page reuse terms remain artifact-specific. Source terms are not inferred from unrelated software packages.
+
+MCP specification/documentation at `38c84e9f93ad191d9eb26d92b945d17bd0efcaf3` carries MIT, copyright 2024–2025 Anthropic, PBC and contributors. Its [exact notice](references/licenses/mcp-specification-2025-11-25-MIT.txt) is retained unchanged; later repository/site terms are not substituted. These references do not endorse Atlas or select Atlas's own publishing license, which remains undecided. The fictional desk exercise supplies no real-service or usability guarantee.
+
 ## Glassmorphism styling catalog
 
 The [Glassmorphism source record](styles/glassmorphism/sources.md) distinguishes Michał Malewicz's 2020 naming/popularization from older Microsoft and Apple/WebKit translucent interfaces, and from current named platform materials. The original Atlas specimen imports no upstream component code, images or font binaries. Its selected theme token projections preserve the existing theme creators and source records through [the generated manifest](styles/glassmorphism/preview/theme-tokens.json). Third-party documentation is referenced and paraphrased, not redistributed. Unknown artwork rights remain unresolved; attribution is not permission. Atlas's publishing license remains undecided.

@@ -1,0 +1,92 @@
+{
+  "review_date": "2026-11-06",
+  "trial_date": "2026-11-05",
+  "reviewer": "Independent review subagent; source/document review and supplied browser evidence, not the browser executor",
+  "scope": "Bounded local Harbor Desk UI simulation using installed review-frontend-design and better-ui. No repository edits, source changes, service calls, browsing, new skill or research reload by this reviewer. Only this requested temporary report is written.",
+  "verdict": "Approve for the bounded fictional local UI trial. No actionable findings remain in the reviewed final state.",
+  "current_findings": [],
+  "targeted_chapter_closure": {
+    "file": "D:/Projects/InterfaceAtlas/knowledge/agent-experience.md",
+    "revision": "0.3-draft",
+    "sha256": "C5E48D348B8BC0466D61DA8B7B586CF75BAA00ACBA6B7BD8CEEDC78AC063D3DD",
+    "prior_AR1": "Closed at line 80: another effect is gated only when consequences overlap the unresolved decision; unrelated supported work remains available.",
+    "lost_control_reply": "Line 46 now preserves unresolved command identity/scope, distinguishes run observation from command receipt, uses command-specific reconciliation/repeat semantics, and explicitly refuses to derive cancellation lookup or safe cancellation repetition from publish lookup.",
+    "review_limit": "Only the changed control/attention passages and status were reread. No full chapter or research-ledger reload."
+  },
+  "historical_contract_cancellation_handoff": {
+    "prior_AR2": "Closed for the NEW UI trial, without rewriting the historical document archive.",
+    "evidence": "New handoff.md:40 and preview/app.js:149-155,233-236,305-309,348-351 define one frozen cancellation identity/scope; unknown command outcome after lost reply; no automatic or claimed duplicate-safe repeat/command lookup; separately retained requested/acknowledged/closed/lost observations; and later effects that establish no stop/undo.",
+    "scope_limit": "These are explicit fictional local fixture decisions. They establish no real cancellation, authorization, lookup, ordering or retention service capability."
+  },
+  "resolved_ui_findings": [
+    {
+      "id": "UI1",
+      "severity": "P2",
+      "location": "preview/app.js:272",
+      "trigger": "Edit a notice, type a change, choose another request to open the inline keep/discard region, then save the revised local draft directly.",
+      "observed_problem": "The successful save left the obsolete keep/discard region and pending navigation active, despite showing a saved revised comparison.",
+      "counterevidence": "Normal keep/discard paths already preserved text and focused the intended destination; no modal or focus-trap redesign was necessary.",
+      "bounded_fix": "Successful save now clears pendingNavigation and dirtyFocus, hides the obsolete region, and keeps focus on the revised comparison. Failed save still preserves working text and the choice.",
+      "closure": "Reviewer inspected the original dirty-choice-save.png, final targeted source at line 272, and final browser case 'save while dirty navigation choice pending clears obsolete choice' passing on final hashes."
+    },
+    {
+      "id": "UI2",
+      "severity": "P2",
+      "location": "preview/styles.css:7",
+      "trigger": "Hold a primary button active for 250ms with pointer or keyboard Space in light/dark appearance.",
+      "observed_problem": "The generic active background inherited the selection color while primary text kept on-action color; settled contrast measured 1.225 light and 1.590 dark. Initial immediate samples were superseded because they caught the transition before settling.",
+      "counterevidence": "Rest and hover appearances were readable. This was a settled pressed-state defect, not evidence for changing the theme or adding scale motion.",
+      "bounded_fix": "An explicit primary active rule now preserves the action-hover/on-action color pair.",
+      "closure": "Final browser pointer and held-Space checks measure 8.500862956 light and 9.163172421 dark. Reviewer inspected the final explicit active rule and final report; no new animation requirement was introduced."
+    },
+    {
+      "id": "UI3",
+      "severity": "P2",
+      "location": "preview/app.js:345-347",
+      "trigger": "Submit COR-1, observe receipt acknowledgement, then advance the lost-correction-reply fixture for the same identity.",
+      "observed_problem": "The visible header regressed to receipt/applicability unconfirmed, hiding already established receipt despite no new correction being dispatched.",
+      "counterevidence": "The ordinary acknowledgement path already kept applicability unconfirmed and editable B separate from submitted A; applied corrections were already guarded. The defect was known-receipt regression after later loss.",
+      "bounded_fix": "A narrow guard preserves acknowledged state and explicitly says known receipt survives the later lost reply while application remains unconfirmed and overlap remains gated.",
+      "closure": "Reviewer inspected correction-ack-then-loss.png and final source guard. Final browser case 'acknowledged correction receipt survives later observation loss' passes, including reload receipt preservation."
+    }
+  ],
+  "other_closed_clarification": "The initial empty cancellation record no longer denies the offered cancellation command; it says no cancellation command has been submitted and no recall/rollback is available (app.js:236). This needed only a copy correction.",
+  "final_source_hashes": {
+    "D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/index.html": "4039965BE3C2F94D83F6AFF6299EC5476EA4DA77AE060CCE249D2E1ECA288AA2",
+    "D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/styles.css": "7CE4700B61C44A7653E39E54B5CE738ACE3162CBC1084E1530ADEEE49C47F794",
+    "D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/app.js": "EA4C0F8CCBD8B289717683573CAE757569E3F7C0800BDBC4EC9AC9E19C751601",
+    "D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/handoff.md": "575748E8CED1F72DC9DF2D342F58357676BD989ADA8C277C2F45B01D4EAC9D19"
+  },
+  "supplied_browser_evidence": {
+    "path": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/results-suite-final-freeze.json",
+    "sha256": "977F87D9037FBCACC854C554E85FBD7F47F9A61F1EAA0EA1D83138DA20F4F68B",
+    "results": "28/28 scoped cases pass: 26 outcome/layout checks plus 2 presentation captures. Zero recorded runtime/console errors and zero external/API request attempts. Preview hashes match before/after.",
+    "contexts": ["1280-light", "1280-dark", "320-light", "320-dark", "320-reduced-motion", "1280-forced-colors", "320-forced-colors"],
+    "pixel_access": "Each of seven contexts measured 33 visible controls with no center-hit occlusion or horizontal clipping; document/body widths match viewport. These measurements do not prove every pixel or assistive-technology behavior.",
+    "paths": "Exact proposal/evidence; one publish dispatch/acceptance/effect; stale version/permission; unknown publish with independent work; offline historical effect; immutable correction A/editable B/application; lost correction/receipt loss; cancellation uncertainty/closure/later effect; dirty keep/discard/save; reload unknown identity; retention failure/unavailable storage/corrupt record; settled pressed contrast; seven layout contexts."
+  },
+  "independent_pixel_review": {
+    "final_images": ["presentation-1280-light.png", "presentation-320-dark.png", "layout-320-light.png", "layout-320-forced-colors.png", "reviewer-unknown-publication-1280.png", "desktop-cancel-closed-late-effect.png"],
+    "base_directory": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/",
+    "observations": "The desktop comparison places exact proposal identity, room change, complete notice and decision consequence together. The 320px examples retain readable wrapping, separate editable correction B from acknowledged submitted A, and show the overlap reason and visible focus outline. Full narrow light/forced-colors images show no observed collision or fixed overlay over actions/evidence. Forced-colors preserves selected, structure and focus boundaries. The unknown-publication crop keeps ACT-1, original immutable snapshot, Check status and overlap reason visible; the cancellation/later-effect image retains requested/receipt/closure/lost-reply context beside the later FX-201 effect without claiming stopped execution.",
+    "earlier_reproduction_images": ["dirty-choice-save.png", "correction-ack-then-loss.png"],
+    "image_limit": "Full narrow images were displayed resized from 320px width to 297px to fit the tool height limit; the 320x900 presentation crop was inspected at its native supplied size."
+  },
+  "coverage_limits": "Reviewer performed source/handoff review and inspected supplied screenshots/compact browser results; browser execution belongs to the independent browser agent. No real agent, endpoint, network delivery, authorization backend, service retention, duplicate protection or production cancellation was tested. No actual screen reader/assistive technology, participant comprehension, cross-browser/device or multi-tab guarantee was established. Motion was source-reviewed as 110ms color/border feedback with reduced-motion override; the reviewer did not inspect browser animation at 10% speed. No theme preview, upstream source, research archive or unrelated chapter was reread.",
+  "workflow_reuse": "The existing prepare-frontend-design -> implement-frontend-ui -> explicit review-frontend-design workflow was sufficient for this local trial; Agent Experience and the relevant P0 rules supplied the control questions. No new agent-specific skill was needed. The renderer/browser evidence and real service/AT evidence remain distinct.",
+  "read_ledger": [
+    {"path":"C:/Users/PC/.codex/skills/review-frontend-design/SKILL.md","scope":"Full 38 lines once","sha256":"87209E9262375C1CABD3793B2BAA1FF687E2625A393840D70EAC783ADE78DBDF"},
+    {"path":"C:/Users/PC/.codex/skills/review-frontend-design/references/state-transitions.md","scope":"Full 17 lines; selected remote-outcome, stale-observation and changing-proposal traces; followed no new chapter links","sha256":"24A51CCC3338045969BC9DE31DA75B51BF2DB4BCF0C4F539AA95262EDDFD4139"},
+    {"path":"C:/Users/PC/.codex/skills/better-ui/SKILL.md","scope":"Full 141 lines once; applied craft within project rules, not standalone polish-report formatting","sha256":"D0AD037F2F5BDF510AD78C501745CFB96804951925339DA5A834684A0F2D1B19"},
+    {"path":"D:/Projects/InterfaceAtlas/knowledge/agent-experience.md","scope":"0.3 targeted lines 3,42-60,68-85 only; prior full chapter facts reused from earlier report"},
+    {"path":"D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/handoff.md","scope":"Full 58-line initial handoff; final targeted lines 9,17,38,40,44,46,50,52,54,58 after documented fixes"},
+    {"path":"D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/app.js","scope":"Full initial 362-line implementation across split reads; cancellation-history/guard keyword excerpts after first freeze; final targeted 238-283 and 337-351. Final hash verified, no broad final reload"},
+    {"path":"D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/index.html","scope":"Full 63-line initial source; final line21 date clarification and final hash check"},
+    {"path":"D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/styles.css","scope":"Initial full compact CSS across batched output and targeted lines1-3; final explicit primary-active rule at line7 and final hash check"},
+    {"path":"C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/results-suite-final-freeze.json","scope":"Top-level keys/hash; case outcomes/details, errors/findings/network counts, source hashes and primary colors; attempted summary included an unnecessarily broad truncated pixel-control dump, followed by compact per-context counts only"},
+    {"path":"C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/","scope":"Eight PNGs visually inspected as listed above. Filename-only discovery for final evidence; no read of every run/probe report"},
+    {"path":"C:/Users/PC/AppData/Local/Temp/atlas-agent-control-review-20261105.json","scope":"Reused this review's existing facts/read ledger for historical brief/contract and published P0; files were not reloaded in the UI review"}
+  ],
+  "read_efficiency_notes": "The initial batched source output exceeded the display budget, requiring a split app.js read and targeted CSS definitions. The first final-report projection accidentally included nested pixel measurements and was truncated; a second compact projection fixed the output shape. Neither error triggered a research/chapter resurvey. All other rereads were narrow changed passages or final identity/hash checks.",
+  "credits": "Review applies original Interface Atlas synthesis and the installed better-ui craft guidance. No upstream prose/code/assets were copied or distributed; existing project credits/notices were left unchanged."
+}

@@ -1,0 +1,317 @@
+{
+  "task_id": "atlas-agent-control-ui-browser-20261105",
+  "completed_at": "2026-11-05T17:09:41.985Z",
+  "status": "Final targeted checks passed on one unchanged source freeze; all three demonstrated product defects fixed.",
+  "counts": {
+    "scoped_cases": 28,
+    "passed": 28,
+    "outcome_and_layout_checks": 26,
+    "presentation_capture_cases": 2,
+    "layout_contexts": 7,
+    "control_pixel_measurements": 231
+  },
+  "count_note": "Counts are scoped cases, not individual assertions. Two cases are presentation capture setups. Supplemental reviewer captures are not additional tests.",
+  "source_hashes_before": [
+    {
+      "file": "app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    },
+    {
+      "file": "index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    }
+  ],
+  "source_hashes_after": [
+    {
+      "file": "app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    },
+    {
+      "file": "index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    }
+  ],
+  "source_unchanged_during_final_suite": true,
+  "same_source_unchanged_during_supplemental_captures": true,
+  "cases": [
+    {
+      "name": "inspect exact proposal and authorized evidence",
+      "outcome": "pass"
+    },
+    {
+      "name": "single dispatch then acceptance then confirmed effect",
+      "outcome": "pass"
+    },
+    {
+      "name": "version and permission gates preserve correction",
+      "outcome": "pass"
+    },
+    {
+      "name": "unknown publish gates overlap while another request remains usable",
+      "outcome": "pass"
+    },
+    {
+      "name": "offline changes freshness without rewriting confirmed execution",
+      "outcome": "pass"
+    },
+    {
+      "name": "correction A immutable snapshot and editable B survive receipt and application",
+      "outcome": "pass"
+    },
+    {
+      "name": "lost correction reply preserves scope and overlap gate",
+      "outcome": "pass"
+    },
+    {
+      "name": "acknowledged correction receipt survives later observation loss",
+      "outcome": "pass"
+    },
+    {
+      "name": "cancellation reply loss, receipt, closure and later effect remain distinct",
+      "outcome": "pass"
+    },
+    {
+      "name": "dirty navigation keep/discard preserves intent and focuses destinations",
+      "outcome": "pass"
+    },
+    {
+      "name": "save while dirty navigation choice pending clears obsolete choice",
+      "outcome": "pass"
+    },
+    {
+      "name": "reload retains unknown original action and discloses memory-only drafts",
+      "outcome": "pass"
+    },
+    {
+      "name": "fixture retention failure prevents dispatch and preserves editing",
+      "outcome": "pass"
+    },
+    {
+      "name": "unavailable browser storage blocks durable dispatch",
+      "outcome": "pass"
+    },
+    {
+      "name": "corrupt retained record is not silently accepted",
+      "outcome": "pass"
+    },
+    {
+      "name": "primary settled-active contrast light pointer",
+      "outcome": "pass"
+    },
+    {
+      "name": "primary settled-active contrast light keyboard",
+      "outcome": "pass"
+    },
+    {
+      "name": "primary settled-active contrast dark pointer",
+      "outcome": "pass"
+    },
+    {
+      "name": "primary settled-active contrast dark keyboard",
+      "outcome": "pass"
+    },
+    {
+      "name": "presentation viewport 1280 light reviewed decision",
+      "outcome": "pass"
+    },
+    {
+      "name": "presentation viewport 320 dark correction receipt and newer draft",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 1280-light",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 1280-dark",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 320-light",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 320-dark",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 320-reduced-motion",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 1280-forced-colors",
+      "outcome": "pass"
+    },
+    {
+      "name": "render and pixel access 320-forced-colors",
+      "outcome": "pass"
+    }
+  ],
+  "layout_contexts": [
+    {
+      "context": "1280-light",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "1280-dark",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "320-light",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "320-dark",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "320-reduced-motion",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "1280-forced-colors",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    },
+    {
+      "context": "320-forced-colors",
+      "controls": 33,
+      "occluded_or_out_of_width": 0
+    }
+  ],
+  "primary_settled_active": [
+    {
+      "appearance": "light",
+      "modality": "pointer",
+      "after_ms": 250,
+      "pseudo_active": true,
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(18, 71, 165)",
+      "contrast_ratio": 8.500862956179024
+    },
+    {
+      "appearance": "light",
+      "modality": "keyboard",
+      "after_ms": 250,
+      "pseudo_active": true,
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(18, 71, 165)",
+      "contrast_ratio": 8.500862956179024
+    },
+    {
+      "appearance": "dark",
+      "modality": "pointer",
+      "after_ms": 250,
+      "pseudo_active": true,
+      "foreground": "rgb(16, 36, 67)",
+      "background": "rgb(166, 201, 255)",
+      "contrast_ratio": 9.16317242117786
+    },
+    {
+      "appearance": "dark",
+      "modality": "keyboard",
+      "after_ms": 250,
+      "pseudo_active": true,
+      "foreground": "rgb(16, 36, 67)",
+      "background": "rgb(166, 201, 255)",
+      "contrast_ratio": 9.16317242117786
+    }
+  ],
+  "final_errors": {
+    "page_or_console": 0,
+    "external_or_api_http_requests_observed": 0,
+    "external_or_api_http_requests_forwarded": 0,
+    "supplemental_page_or_console": 0
+  },
+  "network_policy": "Before any navigation: route all page HTTP requests, permitting only this ephemeral 127.0.0.1 static origin with document/stylesheet/script GET; block all other HTTP/API requests. Service workers disabled. All WebSocket routes closed; no separate WebSocket attempt counter. Browser background networking disabled.",
+  "pixel_method": "For every visible control in each render context, scroll into view and check actual elementFromPoint center hit and horizontal viewport bounds. Focus the intentionally offscreen skip link before measuring it. Direct screenshots reviewed for representative desktop/mobile/forced-color states. This does not inspect every text pixel.",
+  "demonstrated_defects": [
+    {
+      "issue": "Successful save left an obsolete dirty-navigation choice visible",
+      "fixed": true,
+      "verification": "Final save-while-navigation-pending and keep/discard focus cases pass."
+    },
+    {
+      "issue": "Primary button settled active text contrast was 1.225 light / 1.590 dark",
+      "fixed": true,
+      "verification": "Final pointer and Space holds sampled after 250ms: 8.50 light / 9.16 dark."
+    },
+    {
+      "issue": "A later lost correction reply erased an already-acknowledged receipt",
+      "fixed": true,
+      "verification": "Final acknowledged->loss->reload preserves receipt; applied->loss also remains confirmed."
+    }
+  ],
+  "superseded_diagnostics": [
+    "results-suite.json: original frozen run, including real dirty-save defect plus harness-assumption failures.",
+    "results-suite-active.json: immediate pretransition samples; superseded and not final contrast evidence.",
+    "results-suite-active-settled.json: demonstrated pre-fix active contrast failures.",
+    "results-suite-receipt-probe.json: demonstrated pre-fix receipt regression.",
+    "diagnostic-before-fix-*.png: retained failed active/receipt screenshots. Initial dirty-save screenshot was later replaced by a fixed-state capture; original failed-case report remains.",
+    "Early harness-only launch/import/strict-selector errors and offline/skip-link assumptions are excluded from final product-error counts."
+  ],
+  "screenshots": {
+    "desktop_review_viewport": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/presentation-1280-light.png",
+    "mobile_dark_control_viewport": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/presentation-320-dark.png",
+    "mobile_forced_colors_viewport": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/reviewer-forced-colors-320.png",
+    "unknown_publication_viewport": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/reviewer-unknown-publication-1280.png",
+    "cancellation_closed_later_effect_fullpage": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/desktop-cancel-closed-late-effect.png",
+    "mobile_light_fullpage": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/layout-320-light.png",
+    "mobile_dark_fullpage": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/layout-320-dark.png"
+  },
+  "evidence_files": {
+    "final_report": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/results-suite-final-freeze.json",
+    "supplemental_capture_report": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/results-reviewer-snapshots.json",
+    "state_traces": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/state-traces.json",
+    "harness": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/harness.mjs",
+    "cases": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105/cases-v2.mjs"
+  },
+  "reading_ledger": [
+    {
+      "path": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-brief-20261105.md",
+      "scope": "Full bounded task brief",
+      "approx_whitespace_words": 651
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/examples/agent-control-evaluation/interaction-contract.md",
+      "scope": "Full bounded fictional interaction contract",
+      "approx_whitespace_words": 1051
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/examples/agent-control-ui-trial/preview/{index.html,styles.css,app.js}",
+      "scope": "Bytes for static serving and SHA256; rendered DOM/computed style/pixels inspected. No source-code content review by browser verifier."
+    },
+    {
+      "path": "C:/Users/PC/AppData/Local/Temp/atlas-agent-control-ui-browser-20261105",
+      "scope": "Generated harness, compact reports, selected state traces and four viewport images inspected. No full-site suite, package catalog, theme survey, source-license refetch or new skill reading for this UI subtask."
+    }
+  ],
+  "repository_mutations_by_verifier": false,
+  "browser_and_local_servers_closed": true,
+  "limits": [
+    "Local fictional fixture and browser evidence only.",
+    "No real publishing/agent service, endpoint, authority, recipient delivery or recovery guarantee established.",
+    "Keyboard activation/focus checked in Chromium; actual screen-reader announcements, supported AT/browser matrix and participant comprehension not tested.",
+    "No comparative baseline or product-usability claim.",
+    "Source-credit/provenance audit is separate at C:/Users/PC/AppData/Local/Temp/atlas-agent-control-sources-20261105.json."
+  ]
+}

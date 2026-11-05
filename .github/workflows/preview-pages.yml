@@ -8,6 +8,7 @@ on:
       - 'themes/*/preview/**'
       - 'styles/*/preview/**'
       - 'patterns/**'
+      - 'examples/agent-control-ui-trial/preview/**'
       - 'tools/pattern-catalog.mjs'
       - 'tools/style-catalog.mjs'
       - 'tools/style-tokens.mjs'

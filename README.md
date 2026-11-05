@@ -45,6 +45,8 @@ Selected guidance now includes [reference evaluation and equivalent-task theme c
 
 Git preserves exact bytes for the recorded skill-trial artifacts and retained license files, so their source hashes remain verifiable across platforms.
 
+The [Agent Experience/control-contract research draft](references/agent-experience-research.md) extends the [existing chapter](knowledge/agent-experience.md) with capability expectations, proposal decisions, steering, attention and evidence/return rules. A [fresh operations desk trial](examples/agent-control-evaluation/README.md) preserves document findings and corrections. This draft changes no skill or global installation. The separate [Harbor Desk UI trial](examples/agent-control-ui-trial/README.md) implements a local simulation of inspectable proposals, correction applicability, unknown outcomes and best-effort cancellation; its rendered checks remain distinct from real-service or user validation.
+
 ## Themes and examples
 
 - [Editorial](themes/editorial/README.md): reusable identity, visual rules, optional effects, motion, and provenance.
@@ -405,6 +407,35 @@ interface-atlas/
 │   │   ├── results.json
 │   │   ├── routing-checks.json
 │   │   └── release-checks.json
+│   ├── agent-control-ui-trial/
+│   │   ├── README.md
+│   │   ├── handoff.md
+│   │   ├── credits.md
+│   │   ├── implementation-report.md
+│   │   ├── preview/
+│   │   │   ├── index.html
+│   │   │   ├── styles.css
+│   │   │   └── app.js
+│   │   └── evaluation/
+│   │       ├── browser/
+│   │       │   ├── desktop-light.png
+│   │       │   └── mobile-dark.png
+│   │       ├── browser-final.json
+│   │       ├── browser-summary.json
+│   │       ├── draft-review.json
+│   │       ├── final-source-identities.json
+│   │       ├── pages-publication.json
+│   │       ├── publication-source-identities.json
+│   │       ├── preservation.json
+│   │       ├── repository-checks.json
+│   │       ├── report.md
+│   │       ├── source-verification.json
+│   │       └── ui-review.json
+│   ├── agent-control-evaluation/
+│   │   ├── README.md
+│   │   ├── brief.md
+│   │   ├── interaction-contract.md
+│   │   └── evidence.json
 │   ├── flat-design-composition-evaluation/
 │   │   ├── README.md
 │   │   ├── design.md
@@ -522,6 +553,8 @@ interface-atlas/
 │       └── design.md
 ├── references/
 │   ├── SOURCES.md
+│   ├── agent-experience-research.md
+│   ├── agent-experience-evidence.json
 │   ├── p0-research.md
 │   ├── p0-review.md
 │   ├── p0-evidence.json
@@ -535,7 +568,8 @@ interface-atlas/
 │       ├── ghaida-intent-CC0.txt
 │       ├── mohit-aggarwal-MIT.txt
 │       ├── burhan-sebin-MIT.txt
-│       └── shadcn-MIT.txt
+│       ├── shadcn-MIT.txt
+│       └── mcp-specification-2025-11-25-MIT.txt
 ├── adapters/
 │   └── README.md
 ├── tools/

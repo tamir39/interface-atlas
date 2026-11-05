@@ -27,6 +27,10 @@ The [reference and craft rerun](reference-craft-evaluation/README.md) exercises 
 
 The [implementation workflow trial](implementation-evaluation/README.md) uses the new skill to add search to the actual Atlas preview hub. Its evidence separates the independent implementation, selective reads and real Chromium checks from unperformed assistive-technology or user research. Earlier design-document trials remain unchanged.
 
+The [Agent Experience desk trial](agent-control-evaluation/README.md) exercises a research draft on fictional venue-notice operations. It preserves the initial chapter/contract, author correction, independent P2 finding and targeted document-level resolution. It is not an implementation or service/usability validation.
+
+The [Harbor Desk UI trial](agent-control-ui-trial/README.md) implements an original local agent-operations interface using selected Precision rules, Agent Experience/P0 knowledge and the existing implementation workflow alongside better-ui. Its evaluation separates source, rendered, simulated-service and unperformed assistive-technology/user checks. No dedicated Agent Experience skill or real service is added.
+
 ## Visual-style composition
 
 [Glassmorphism composition evaluation](style-composition-evaluation/README.md) compares bounded profiles from all nine current themes, documents default-treatment conflicts and scoped adaptations, and records actual preview checks. Its sample design is an original project proposal, not a production deployment or nine fully revalidated theme applications.

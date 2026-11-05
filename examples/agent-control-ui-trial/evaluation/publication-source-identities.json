@@ -1,0 +1,79 @@
+{
+  "phase": "Pages publication preparation, after the historical local evaluation",
+  "date": "2026-11-06",
+  "baselineCommit": "665782f72c8f30eb5357f75fe643d5a43863fc80",
+  "previewSourceUnchanged": true,
+  "source": [
+    {
+      "path": ".github/workflows/preview-pages.yml",
+      "bytes": 1868,
+      "sha256": "69f6819375429c931233976616d191b3f4836fb73d2aae5dbec6ae95a3c4e7ff"
+    },
+    {
+      "path": "tools/build-preview-site.mjs",
+      "bytes": 6484,
+      "sha256": "b005c4d252ea1ae85ed304ac8b8a84e371208e5576fe91c510ad648ccbdcfe6a"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 25505,
+      "sha256": "a60d34d7f39b0d6728f885f64809a08189bb00be406a163097c0c8ead05d0a20"
+    },
+    {
+      "path": "site/README.md",
+      "bytes": 10519,
+      "sha256": "e005907ab1a1b760fa2ae4e66a76027602b3eb40a598e517df8fa7395633d40a"
+    },
+    {
+      "path": "knowledge/agent-experience.md",
+      "bytes": 13192,
+      "sha256": "c5e48d348b8bc0466d61da8b7b586cf75baa00acba6b7bd8ceedc78ac063d3dd"
+    },
+    {
+      "path": "knowledge/README.md",
+      "bytes": 4058,
+      "sha256": "59427b20b5ebcb1cbd8c643a528e5efdc51152df9931ce77a47e423ccf1a9d38"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/README.md",
+      "bytes": 2142,
+      "sha256": "bf8885925333918b6a2cedf7b697fea74b0266f55948f3edfdf9a0ed3d0a0d2a"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/handoff.md",
+      "bytes": 11370,
+      "sha256": "575748e8ced1f72dc9df2d342f58357676bd989ada8c277c2f45b01d4eac9d19"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/credits.md",
+      "bytes": 5212,
+      "sha256": "0291241f6fbf54a4a5529adef97e54fa82d5c33b08a85b4c3c4a7e5f02afef13"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/implementation-report.md",
+      "bytes": 7759,
+      "sha256": "cc50203b5ae5bc123085e4ff26a48efc353e154a0d40c489c929938212b34c0c"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/evaluation/report.md",
+      "bytes": 9255,
+      "sha256": "488fc23a94694d530987d36cbc79652e9440ff68b53cb5b6e809af9c70b73388"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/preview/index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/preview/styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    },
+    {
+      "path": "examples/agent-control-ui-trial/preview/app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    }
+  ],
+  "deployment": "The GitHub Pages workflow and live check are performed after this commit. See workflow records for the published revision."
+}

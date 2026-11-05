@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-05",
+  "scope": "Focused provenance and control-boundary check of existing Interface Atlas Agent Experience draft. No repository changes, code imports, skill imports, or full source refresh.",
+  "outcome": "No factual or credit blocker found in the reviewed draft. Existing source/inference and historical/current boundaries are suitable for a practical fictional UI trial.",
+  "local_read_log": [
+    {
+      "path": "D:/Projects/InterfaceAtlas/references/agent-experience-research.md",
+      "extent": "Full concise ledger"
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/knowledge/agent-experience.md",
+      "extent": "Full chapter"
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/references/agent-experience-evidence.json",
+      "extent": "Structure; protocol fields; source-group summaries; claimMappings; reuse and evidenceLimits. Selected source facts, not raw complete evidence dump."
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/references/licenses/mcp-specification-2025-11-25-MIT.txt",
+      "extent": "Full retained notice plus SHA256"
+    }
+  ],
+  "checks": [
+    {
+      "id": "MCP-CONTROL",
+      "sources": [
+        "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/basic/utilities/cancellation.mdx",
+        "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/basic/utilities/tasks.mdx",
+        "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/client/elicitation.mdx"
+      ],
+      "locators": "Cancellation: Behavior Requirements, Timing Considerations, Error Handling. Tasks: introductory experimental note, capabilities, Task Cancellation, related task metadata. Elicitation: User Interaction Model, URL mode response/completion notification, Response Actions.",
+      "finding": "Pinned control claims supported: ordinary cancellation may not interrupt processing; tasks use a separate operation; cancelled task status may coexist with continued execution; URL interaction consent does not establish completion; elicitation distinguishes accept, decline and dismissal.",
+      "limit": "Protocol version 2025-11-25 only. This audit did not replace the pin or survey a newer protocol revision. No protocol source establishes application-wide proposal revision approval or steering application evidence."
+    },
+    {
+      "id": "MCP-PROVENANCE",
+      "sources": [
+        "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/README.md",
+        "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/LICENSE",
+        "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/LICENSE"
+      ],
+      "locators": "Pinned README Authors and License; pinned full LICENSE; moving main LICENSE opening.",
+      "creators": "David Soria Parra and Justin Spahr-Summers created MCP; project and contributors credit is appropriate for unbylined specification pages.",
+      "terms": "Pinned repository MIT notice names 2024-2025 Anthropic, PBC and contributors and requires preservation of copyright and permission notice with copies or substantial portions. Current main announces a transition to Apache-2.0 for new code/specification contributions and CC-BY-4.0 for other documentation; those moving terms are not substituted for the pin.",
+      "retained_notice_sha256": "346E57DC40801E3D58165E97F64D45B42C4571A68A76ECB10C3C12858ACECB3F",
+      "notice_verification": "Fresh local SHA256 matches the ledger; remote pinned license text agrees. No fresh remote byte-for-byte hash comparison performed.",
+      "limit": "Raw pinned README fetch initially cache-missed; GitHub blob retry supplied Authors text. Individual specification-page authorship not established."
+    },
+    {
+      "id": "HAX",
+      "sources": [
+        "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf",
+        "https://www.microsoft.com/en-us/haxtoolkit/library/",
+        "https://www.microsoft.com/en-us/haxtoolkit/library/guideline/3/",
+        "https://www.microsoft.com/en-us/haxtoolkit/library/guideline/11/",
+        "https://www.microsoft.com/en-us/research/project/hax-toolkit/people/",
+        "https://www.microsoft.com/en-us/legal/terms-of-use"
+      ],
+      "locators": "Paper p1 authors/notice/DOI and abstract; p12 acknowledgement; library selected G1/G9 links and guideline listing; project roster; general terms Documents and default reuse scope.",
+      "creators": "All 13 paper coauthors in ledger agree with PDF. Ever Zayn McDonald is acknowledged separately. Current toolkit roster is correctly kept distinct from paper authorship.",
+      "support": "Capabilities, uncertainty, correction, dismissal and explanation are supported research/practice concepts. Atlas tables and exact proposal/control decisions remain original composition.",
+      "terms": "Paper carries author/owner copyright with ACM publication rights and conditional copying permissions; no broad import license verified. Microsoft general terms do not establish a library-specific permissive license.",
+      "limit": "Only two library detail pages spot-checked afresh; no immutable revision established. No paper or toolkit asset copied."
+    },
+    {
+      "id": "PAIR-V2",
+      "sources": [
+        "https://pair.withgoogle.com/guidebook-v2/",
+        "https://pair.withgoogle.com/guidebook-v2/chapter/mental-models/",
+        "https://pair.withgoogle.com/guidebook-v2/chapter/explainability-trust/",
+        "https://pair.withgoogle.com/guidebook-v2/chapter/feedback-controls/",
+        "https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4",
+        "https://github.com/PAIR-code/pair-code.github.io/blob/master/Blog/People%20%2B%20AI%20Guidebook%20-%202025%20Contributors.md",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      ],
+      "locators": "v2 landing publication/update/citation/footer; Mental Models and Feedback + Control concepts/footers; Explainability + Trust page; editorial initial/2021 leadership history; 2025 acknowledgements.",
+      "creators": "Google PAIR / People + AI Research team. Editorial credits corroborate Jess Holbrook and Kristie Fisher, guidance from Fernanda Viegas and Martin Wattenberg, 2021 update led by Rebecca Salois and Gabe Clapper. Do not assign these as individual authors of each chapter.",
+      "support": "Task capability expectations and actual feedback effect/timing are supported concepts. Treating correction applicability for tool-using agents remains Atlas inference.",
+      "terms": "v2 footer explicitly applies CC BY-NC-SA 4.0 to Guidebook. No prose, worksheet, asset or code imported in reviewed materials; no basis found to relabel Atlas's original synthesis under an upstream license.",
+      "limit": "Uses inspected historical v2, updated May 18 2021. 2025 credits were checked only as provenance, not as current chapter content; this audit did not retry extracting the current guidebook."
+    },
+    {
+      "id": "W3C",
+      "sources": [
+        "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages",
+        "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+        "https://www.w3.org/copyright/document-license-2023/",
+        "https://www.w3.org/copyright/software-license-2023/"
+      ],
+      "locators": "Pinned recommendation editors and SC4.1.3; Understanding Intent, Other uses of live regions/alerts, footer, license link.",
+      "creators": "Accessibility Guidelines Working Group; recommendation editors in ledger match. Understanding credits EOWG interface contributors separately.",
+      "support": "Normative criterion covers programmatic exposure of qualifying status messages without focus. Informative guidance cautions about announcement volume and does not require inventing messages.",
+      "terms": "Recommendation links W3C Document License 2023; Understanding links Software and Document License 2023.",
+      "limit": "Understanding still displays updated May 11 2026. General focus persistence in chapter is an Atlas/practitioner design choice, not itself imposed by SC4.1.3."
+    },
+    {
+      "id": "PRIMER",
+      "sources": [
+        "https://primer.style/accessibility/patterns/copilot-accessibility-practices/"
+      ],
+      "locators": "Focus; Live regions; task errors; page license text search.",
+      "creators": "GitHub / Primer accessibility contributors; no per-page author verified.",
+      "support": "Focus recovery and task/error announcement considerations agree with ledger. Example periodic loading announcement is practitioner-specific and is correctly not adopted as a universal cadence.",
+      "terms": "No page-specific license established in fetched page. Another Primer package's software license is not a substitute.",
+      "limit": "No code, prose, CSS tokens or assets imported. Page is mutable and unpinned."
+    }
+  ],
+  "recommendations": [
+    "Proceed with a bounded fictional UI trial using the draft, preserving protocol-version and Atlas-proposal labels in its supporting design documentation.",
+    "Keep local notification dismissal separate from sending an elicitation dismissal response or cancelling execution; the practical UI should make each action's consequence visible.",
+    "For the trial, show cancellation requested, task status and effect evidence independently; a cancelled status cannot support a success claim that all work stopped or rolled back.",
+    "Keep submitted correction, acknowledgement and evidence of application separate. The fixture must state what service evidence exists rather than infer it from MCP request/task identity.",
+    "Use deliberate status announcements and stable focus; evaluate actual keyboard/assistive-technology behavior when a prototype exists.",
+    "Retain source credits and the pinned MIT notice. No additional copied upstream artifact or missing mandatory notice was identified within this audit's reviewed scope; future imports require artifact-specific terms review.",
+    "No need to refetch every cited source or expand the ledger for this trial. Preserve existing unresolved publication-license choice and avoid asserting a current PAIR edition or latest MCP behavior."
+  ],
+  "blockers": [],
+  "repository_mutations": false
+}

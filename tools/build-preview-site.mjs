@@ -13,7 +13,7 @@ const brandFiles = [
 ];
 
 // Keep the deployment deliberately smaller than the knowledge repository.
-// New themes must opt in here after their preview is ready to publish.
+// New previews must opt in here after they are ready to publish.
 const files = [
   ['site/index.html', 'index.html'],
   ['site/styles.css', 'styles.css'],
@@ -32,6 +32,9 @@ const files = [
   ]),
   ...['styles.css', 'preview.js'].map((name) => [
     `patterns/preview-assets/${name}`, `patterns/preview-assets/${name}`,
+  ]),
+  ...['index.html', 'styles.css', 'app.js'].map((name) => [
+    `examples/agent-control-ui-trial/preview/${name}`, `examples/agent-control-ui-trial/preview/${name}`,
   ]),
   ...['vessel-study.png', 'seat-study.png', 'room-study.png'].map((name) => [
     `themes/gallery/preview/assets/${name}`, `themes/gallery/preview/assets/${name}`,

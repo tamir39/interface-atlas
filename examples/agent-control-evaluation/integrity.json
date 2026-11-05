@@ -1,0 +1,89 @@
+{
+  "artifacts": [
+    {
+      "path": "archive-formatting.json",
+      "bytes": 20,
+      "sha256": "6c1db664439054b14cf5baade95beb5c1b194266ecf60003a2aab24c85fd8359"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 3889,
+      "sha256": "ca3517fd825aeca0ceec9f1b3d20c708bfc2199b47ce2382bd36a9ac4b1e7ba6"
+    },
+    {
+      "path": "chapter-corrections.json",
+      "bytes": 884,
+      "sha256": "4d25615b5daef8ef2569ffb2a6d9ea7c6e02677c7346560ba5f75d7189579f42"
+    },
+    {
+      "path": "corrections.json",
+      "bytes": 1510,
+      "sha256": "29f0ca5e29d11b7fe10bf36f02f8aae4a96be636d9c9696dbf0b19a6b17c3be6"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 1660,
+      "sha256": "553a65fce7cf06a0bc47fcdfd2b0778f5e1f355aa75f14b16a8c2a0b5a3c1208"
+    },
+    {
+      "path": "finding-resolution.md",
+      "bytes": 1603,
+      "sha256": "58ee4bbba6ec499d64d19bacf49793dace550560520eff1acfef47a0629074d8"
+    },
+    {
+      "path": "first-draft.md",
+      "bytes": 8086,
+      "sha256": "591c0414af6b3f9906c8f3a93306e83862b7ab508a9a5d26d5a2e7d5145c41f2"
+    },
+    {
+      "path": "generation-report.md",
+      "bytes": 5540,
+      "sha256": "260f5baed5f67a385c678a70d4ebdc8c8432269fe6beae03c303c6e094ebe7cb"
+    },
+    {
+      "path": "initial-chapter.json",
+      "bytes": 16842,
+      "sha256": "5b1053d0290d47bfd92188063c747c4bf18a96a422bd532780513c7c10d5ab75"
+    },
+    {
+      "path": "interaction-contract.md",
+      "bytes": 8417,
+      "sha256": "5c34bbe940a4f82dbc2153e5e734f1d7112ad7defdf20ba90b353fa301526681"
+    },
+    {
+      "path": "read-events.jsonl",
+      "bytes": 1682,
+      "sha256": "269efa9cbd7508f023bd51c516b28d0e981ede0126ed566f99cb2e98999e52bb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4339,
+      "sha256": "843b5021ee82d600bb44922cdf616e314ab4374829284733ca587e066052d5ee"
+    },
+    {
+      "path": "review-read-events.jsonl",
+      "bytes": 929,
+      "sha256": "620800bcbf7530ea2e9850eefcd37c7ae8b8b22eae5c36c6a817557f02261c38"
+    },
+    {
+      "path": "review-source-snapshot.json",
+      "bytes": 2811,
+      "sha256": "aabc3eef901800df07ec40931328d0a6d5efcf1cea1773354c97820bc125f47b"
+    },
+    {
+      "path": "review.md",
+      "bytes": 5386,
+      "sha256": "b6db4372f8047f6364ac826e101e49f0e02922b2db066fcbf50999a1392df196"
+    },
+    {
+      "path": "source-snapshot.json",
+      "bytes": 2787,
+      "sha256": "c18844f27c1b5ee67326adb75e6f1301d057a40e8962dbd2d65069aba3bcdbc7"
+    },
+    {
+      "path": "submitted-candidate.md",
+      "bytes": 8114,
+      "sha256": "43b73ab9173b4cbf9c216376f62c7df4384b9a942501583f79a09bae12f8129d"
+    }
+  ]
+}

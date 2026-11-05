@@ -1,0 +1,64 @@
+{
+  "review_date": "2026-11-05",
+  "scope": "Read-only review of Agent Experience and fictional Harbor Desk interaction contract against the published P0 uncertain-outcomes chapter. No repository mutation, external source verification, browsing, service call, or skill creation.",
+  "overall": "The draft substantially preserves proposal -> inspection -> decision -> execution boundaries. Proposal/resource identity, review after edits, correction acknowledgement versus application, uncertain publish/correction overlap, cancellation versus execution, stable attention, and return evidence are already explicit. No broad rewrite or agent runtime is warranted.",
+  "findings": [
+    {
+      "id": "AR1",
+      "priority": "P2",
+      "location": "D:/Projects/InterfaceAtlas/knowledge/agent-experience.md:78",
+      "issue": "The unknown-decision attention row says to reconcile or apply a documented repeat/overlap policy before enabling 'another effect', without limiting that gate to overlapping consequences. Read literally, this can freeze unrelated operations while one decision is unknown.",
+      "evidence": "The published P0 dispatch section (uncertain-outcomes.md:62) requires determining whether the new action's consequence overlaps the unresolved action. Agent Experience:52 already says 'another overlapping change'; Harbor Desk contract:35 explicitly keeps supported non-overlapping work available.",
+      "counterevidence": "This is one broad row, not evidence that the chapter generally mandates a global block. Its correction section and the fictional contract already use the narrower rule.",
+      "bounded_correction": "Change the row to gate another effect whose consequences overlap the unresolved decision, using P0 reconciliation or the specifically documented repeat/overlap policy. Keep unrelated authorized work and evidence/status access available. Do not introduce a new recovery capability."
+    },
+    {
+      "id": "AR2",
+      "priority": "P2",
+      "location": "D:/Projects/InterfaceAtlas/examples/agent-control-evaluation/interaction-contract.md:37",
+      "issue": "Cancellation correctly separates requested, acknowledged, task-record closure and execution evidence, but its concrete operator path does not say what happens when the cancellation reply is lost or whether a repeated cancellation is allowed. The detailed publish and correction sections do specify those uncertain-command paths; cancellation could otherwise remain an ambiguous requested label or be retriggered on return.",
+      "evidence": "Agent Experience:21 names uncertain control commands; published P0:90 keeps remote cancellation pending until its result is established, and P0:62-74 requires a consequence/repeat decision rather than assuming an unresolved command can safely be repeated. The brief supplies best-effort acknowledgement/record closure, but supplies no cancellation lookup or repeat guarantee.",
+      "counterevidence": "The contract already says acknowledgement/record closure do not prove stopped execution, retains later effects, and includes generic lost-reply and cancellation validation at :47. No unsupported stop or rollback promise is present. This is a missing concrete path for the simulation handoff, not a request for generalized cancellation infrastructure.",
+      "bounded_correction": "Specify that a lost cancellation reply leaves receipt/result unconfirmed while retaining the known run/scope and locally recorded command evidence; retain independent execution/effect evidence. List repeat/overlap semantics as an unresolved input and avoid automatic resend or a claim of stopped work. Gate only a repeated/overlapping cancellation whose semantics remain unsupported; keep safe independent controls usable. Do not add a Check cancellation status control unless its backing capability is explicitly supplied as a simulation fact."
+    }
+  ],
+  "open_questions_not_counted_as_findings": [
+    {
+      "location": "D:/Projects/InterfaceAtlas/examples/agent-control-evaluation/interaction-contract.md:13,23,45",
+      "question": "What parts of an inspected snapshot or operator draft remain authorized after recipient access or permission is lost?",
+      "reason": "The contract already removes protected recipient detail at :13 and names permission-safe retention as unresolved at :45. The broad 'retain the inspected version and local edits' at :23 should be interpreted/qualified by that policy, not used to keep forbidden detail. No new cache-deletion or retention capability can be inferred from these documents."
+    }
+  ],
+  "trial_recommendation": {
+    "can_existing_three_orchestrate": true,
+    "skills": ["prepare-frontend-design", "implement-frontend-ui", "review-frontend-design"],
+    "rationale": "The needed extra knowledge is an interaction contract and evidence/state model, which fit a design -> bounded implementation -> independent UI review workflow. A new agent-operations skill is unnecessary for this local trial.",
+    "division": "Prepare resolves the chosen agent chapter sections, applicable P0 rules, fixture facts, action gates and focus/return behavior; implement builds a local simulation using those explicit facts; review walks the stated operator journeys and contradictory/stale/unknown evidence cases in the rendered UI.",
+    "limits": "This recommendation concerns chapter workflow reuse; this subreview did not inspect or certify the three installed SKILL.md bodies. The local simulation must label any added fake service behavior as a trial fixture and cannot establish real cancellation, lookup, ordering, retention, accessibility or operator-comprehension guarantees. Resolve AR1 and the cancellation handoff path before treating the trial contract as complete."
+  },
+  "source_questions": [],
+  "read_ledger": [
+    {
+      "path": "D:/Projects/InterfaceAtlas/knowledge/agent-experience.md",
+      "actual_read": "Full file, lines 1-107; repeated with line numbering for precise locations.",
+      "sha256": "AAEFA5EA2F5E8C8A795DBF7A46DE1CE21D6B924115139DB8812AFEDF9397DA78"
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/examples/agent-control-evaluation/interaction-contract.md",
+      "actual_read": "Full file, lines 1-47; repeated with line numbering, then targeted reread of lines 33-47.",
+      "sha256": "5C34BBE940A4F82DBC2153E5E734F1D7112AD7DEFDF20BA90B353FA301526681"
+    },
+    {
+      "path": "D:/Projects/InterfaceAtlas/examples/agent-control-evaluation/brief.md",
+      "actual_read": "Full file, lines 1-18, to distinguish supplied fictional facts from presentation proposals and unknown service capabilities.",
+      "sha256": "CA3517FD825AECA0CEEC9F1B3D20C708BFC2199B47CE2382BD36A9AC4B1E7BA6"
+    },
+    {
+      "path": "C:/Users/PC/.codex/skill-resources/interface-atlas/665782f72c8f/knowledge/uncertain-outcomes.md",
+      "actual_read": "Full 130-line chapter returned in the initial comparison read; relied on outcome states, worksheet, dispatch/changed intent, recovery, known-risk repeats, cancellation/stale evidence and attention sections. Repeated line-numbered comparison output. No provenance/source archive followed.",
+      "sha256": "5319F2ED3B5DF42952AE14BCBE7D3BE481E3CC7ED88CA64BC3327D5021ECABD2"
+    }
+  ],
+  "not_read": ["Agent Experience research/provenance ledger", "P0 research/provenance ledger", "Other knowledge chapters", "Installed three skill bodies", "External sources"],
+  "verification": "No external source claims were newly checked. Findings rely only on the inspected draft, supplied fictional facts and published P0 text. The only write is this explicitly requested temporary review report."
+}

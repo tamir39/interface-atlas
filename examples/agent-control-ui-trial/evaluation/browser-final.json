@@ -1,0 +1,3530 @@
+{
+  "date": "2026-11-05",
+  "scope": "Independent local fictional UI checks; no service, AT, or participant validation.",
+  "sourceHashes": [
+    {
+      "file": "app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    },
+    {
+      "file": "index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    }
+  ],
+  "checks": [
+    {
+      "name": "inspect exact proposal and authorized evidence",
+      "outcome": "pass",
+      "detail": {
+        "proposal": "PROP-401 v3",
+        "session": "SES-101 rev 12",
+        "segment": "SEG-31"
+      }
+    },
+    {
+      "name": "single dispatch then acceptance then confirmed effect",
+      "outcome": "pass",
+      "detail": {
+        "dispatchCount": 1,
+        "action": "ACT-1",
+        "effect": "FX-201",
+        "laterLossPreservesEffect": true
+      }
+    },
+    {
+      "name": "version and permission gates preserve correction",
+      "outcome": "pass",
+      "detail": {
+        "obsoleteDispatches": 0,
+        "typedTextPreserved": true
+      }
+    },
+    {
+      "name": "unknown publish gates overlap while another request remains usable",
+      "outcome": "pass",
+      "detail": {
+        "original": "ACT-1",
+        "independent": "ACT-2",
+        "explicitLookup": true
+      }
+    },
+    {
+      "name": "offline changes freshness without rewriting confirmed execution",
+      "outcome": "pass",
+      "detail": {
+        "historicalEffectRetained": true
+      }
+    },
+    {
+      "name": "correction A immutable snapshot and editable B survive receipt and application",
+      "outcome": "pass",
+      "detail": {
+        "submitted": "COR-1 v1 A",
+        "editable": "B preserved",
+        "namedApplication": "REQ-202 PROP-402 v3"
+      }
+    },
+    {
+      "name": "lost correction reply preserves scope and overlap gate",
+      "outcome": "pass",
+      "detail": {
+        "identityPreserved": true,
+        "overlapGuarded": true
+      }
+    },
+    {
+      "name": "acknowledged correction receipt survives later observation loss",
+      "outcome": "pass",
+      "detail": {
+        "receiptPreserved": true,
+        "applicationStillUnknown": true,
+        "reloadPreservesReceipt": true
+      }
+    },
+    {
+      "name": "cancellation reply loss, receipt, closure and later effect remain distinct",
+      "outcome": "pass",
+      "detail": {
+        "cancellation": "CAN-1",
+        "taskClosed": true,
+        "laterEffect": "FX-201",
+        "stopEstablished": false
+      }
+    },
+    {
+      "name": "dirty navigation keep/discard preserves intent and focuses destinations",
+      "outcome": "pass",
+      "detail": {
+        "keepPreservesText": true,
+        "discardNavigates": true
+      }
+    },
+    {
+      "name": "save while dirty navigation choice pending clears obsolete choice",
+      "outcome": "pass",
+      "detail": {
+        "obsoleteChoiceCleared": true
+      }
+    },
+    {
+      "name": "reload retains unknown original action and discloses memory-only drafts",
+      "outcome": "pass",
+      "detail": {
+        "retainedAction": "ACT-1",
+        "retainedProposal": "PROP-401 v3",
+        "unsent": "memory-only"
+      }
+    },
+    {
+      "name": "fixture retention failure prevents dispatch and preserves editing",
+      "outcome": "pass",
+      "detail": {
+        "dispatches": 0,
+        "inputPreserved": true
+      }
+    },
+    {
+      "name": "unavailable browser storage blocks durable dispatch",
+      "outcome": "pass",
+      "detail": {
+        "dispatches": 0
+      }
+    },
+    {
+      "name": "corrupt retained record is not silently accepted",
+      "outcome": "pass",
+      "detail": {
+        "invalidRecordAccepted": false
+      }
+    },
+    {
+      "name": "primary settled-active contrast light pointer",
+      "outcome": "pass",
+      "detail": {
+        "rest": {
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(23, 92, 211)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "hover": {
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(23, 92, 210)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "active": {
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(18, 71, 165)",
+          "font": "13px",
+          "weight": "600",
+          "pseudoActive": true,
+          "contrast": 8.500862956179024
+        }
+      }
+    },
+    {
+      "name": "primary settled-active contrast light keyboard",
+      "outcome": "pass",
+      "detail": {
+        "rest": {
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(23, 92, 211)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "active": {
+          "foreground": "rgb(255, 255, 255)",
+          "background": "rgb(18, 71, 165)",
+          "font": "13px",
+          "weight": "600",
+          "pseudoActive": true,
+          "contrast": 8.500862956179024
+        }
+      }
+    },
+    {
+      "name": "primary settled-active contrast dark pointer",
+      "outcome": "pass",
+      "detail": {
+        "rest": {
+          "foreground": "rgb(16, 36, 67)",
+          "background": "rgb(136, 183, 255)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "hover": {
+          "foreground": "rgb(16, 36, 67)",
+          "background": "rgb(137, 183, 255)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "active": {
+          "foreground": "rgb(16, 36, 67)",
+          "background": "rgb(166, 201, 255)",
+          "font": "13px",
+          "weight": "600",
+          "pseudoActive": true,
+          "contrast": 9.16317242117786
+        }
+      }
+    },
+    {
+      "name": "primary settled-active contrast dark keyboard",
+      "outcome": "pass",
+      "detail": {
+        "rest": {
+          "foreground": "rgb(16, 36, 67)",
+          "background": "rgb(136, 183, 255)",
+          "font": "13px",
+          "weight": "600"
+        },
+        "active": {
+          "foreground": "rgb(16, 36, 67)",
+          "background": "rgb(166, 201, 255)",
+          "font": "13px",
+          "weight": "600",
+          "pseudoActive": true,
+          "contrast": 9.16317242117786
+        }
+      }
+    },
+    {
+      "name": "presentation viewport 1280 light reviewed decision",
+      "outcome": "pass",
+      "detail": {
+        "image": "presentation-1280-light.png",
+        "viewport": "1280x900",
+        "scene": "reviewed immutable room-change decision"
+      }
+    },
+    {
+      "name": "presentation viewport 320 dark correction receipt and newer draft",
+      "outcome": "pass",
+      "detail": {
+        "image": "presentation-320-dark.png",
+        "viewport": "320x900",
+        "scene": "receipt acknowledged A, unsent editable B, overlap guard"
+      }
+    },
+    {
+      "name": "render and pixel access 1280-light",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 1280-dark",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 320-light",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 320-dark",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 320-reduced-motion",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 1280-forced-colors",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 1280,
+          "document": 1280,
+          "body": 1280
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    },
+    {
+      "name": "render and pixel access 320-forced-colors",
+      "outcome": "pass",
+      "detail": {
+        "dimensions": {
+          "viewport": 320,
+          "document": 320,
+          "body": 320
+        },
+        "controls": 33,
+        "unoccluded": true,
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        }
+      }
+    }
+  ],
+  "findings": [],
+  "errors": [],
+  "blockedRequests": [],
+  "readLog": [
+    "Task brief",
+    "Rendered preview DOM, computed layout and pixels",
+    "Source file bytes for hashes and serving only"
+  ],
+  "primaryColorMeasurements": [
+    {
+      "color": "light",
+      "modality": "pointer",
+      "rest": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(23, 92, 211)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "hover": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(23, 92, 210)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "active": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(18, 71, 165)",
+        "font": "13px",
+        "weight": "600",
+        "pseudoActive": true,
+        "contrast": 8.500862956179024
+      }
+    },
+    {
+      "color": "light",
+      "modality": "keyboard",
+      "rest": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(23, 92, 211)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "active": {
+        "foreground": "rgb(255, 255, 255)",
+        "background": "rgb(18, 71, 165)",
+        "font": "13px",
+        "weight": "600",
+        "pseudoActive": true,
+        "contrast": 8.500862956179024
+      }
+    },
+    {
+      "color": "dark",
+      "modality": "pointer",
+      "rest": {
+        "foreground": "rgb(16, 36, 67)",
+        "background": "rgb(136, 183, 255)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "hover": {
+        "foreground": "rgb(16, 36, 67)",
+        "background": "rgb(137, 183, 255)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "active": {
+        "foreground": "rgb(16, 36, 67)",
+        "background": "rgb(166, 201, 255)",
+        "font": "13px",
+        "weight": "600",
+        "pseudoActive": true,
+        "contrast": 9.16317242117786
+      }
+    },
+    {
+      "color": "dark",
+      "modality": "keyboard",
+      "rest": {
+        "foreground": "rgb(16, 36, 67)",
+        "background": "rgb(136, 183, 255)",
+        "font": "13px",
+        "weight": "600"
+      },
+      "active": {
+        "foreground": "rgb(16, 36, 67)",
+        "background": "rgb(166, 201, 255)",
+        "font": "13px",
+        "weight": "600",
+        "pseudoActive": true,
+        "contrast": 9.16317242117786
+      }
+    }
+  ],
+  "pixelMeasurements": [
+    {
+      "context": "1280-light",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 159.84375,
+            "height": 41.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 1188.046875,
+            "y": 11.40625,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 67.296875,
+            "width": 219.828125,
+            "height": 46.390625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 1151,
+            "y": 68.5,
+            "width": 105,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 41,
+            "y": 604.3125,
+            "width": 253,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 713.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 431.71875,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 473.71875,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 515.71875,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.125,
+            "width": 105.140625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1133.671875,
+            "y": 428.125,
+            "width": 93.328125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.15625,
+            "width": 128.109375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 477.109375,
+            "y": 428.15625,
+            "width": 87.09375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 574.203125,
+            "y": 428.15625,
+            "width": 123.4375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 339,
+            "y": 634.390625,
+            "width": 888,
+            "height": 44.796875
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 339,
+            "y": 440.53125,
+            "width": 77.109375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 436.109375,
+            "y": 440.53125,
+            "width": 98.5,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 339,
+            "y": 568.109375,
+            "width": 420,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 339,
+            "y": 689.09375,
+            "width": 888,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 831.875,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 486.53125,
+            "y": 831.875,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 53,
+            "y": 428.0625,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 25,
+            "y": 570.859375,
+            "width": 1230,
+            "height": 84.984375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 49,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 267.375,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 49,
+            "y": 831.625,
+            "width": 1045.8125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1106.8125,
+            "y": 831.625,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 49,
+            "y": 665.796875,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 848.78125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 187.125,
+            "y": 848.78125,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 373.484375,
+            "y": 848.78125,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "1280-dark",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 159.84375,
+            "height": 41.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 1188.046875,
+            "y": 11.40625,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 67.296875,
+            "width": 219.828125,
+            "height": 46.390625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 1151,
+            "y": 68.5,
+            "width": 105,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 41,
+            "y": 604.3125,
+            "width": 253,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 713.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.59375,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 431.71875,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 473.71875,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 515.71875,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.125,
+            "width": 105.140625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1133.671875,
+            "y": 428.125,
+            "width": 93.328125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.15625,
+            "width": 128.109375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 477.109375,
+            "y": 428.15625,
+            "width": 87.09375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 574.203125,
+            "y": 428.15625,
+            "width": 123.4375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 339,
+            "y": 634.390625,
+            "width": 888,
+            "height": 44.796875
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 339,
+            "y": 440.53125,
+            "width": 77.109375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 436.109375,
+            "y": 440.53125,
+            "width": 98.5,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 339,
+            "y": 568.109375,
+            "width": 420,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 339,
+            "y": 689.09375,
+            "width": 888,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 831.875,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 486.53125,
+            "y": 831.875,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 53,
+            "y": 428.0625,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 25,
+            "y": 570.859375,
+            "width": 1230,
+            "height": 84.984375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 49,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 267.375,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 49,
+            "y": 831.625,
+            "width": 1045.8125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1106.8125,
+            "y": 831.625,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 49,
+            "y": 665.796875,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 848.78125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 187.125,
+            "y": 848.78125,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 373.484375,
+            "y": 848.78125,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "320-light",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 159.84375,
+            "height": 41.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 236.046875,
+            "y": 74,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 123.890625,
+            "width": 189,
+            "height": 55.59375
+          },
+          "centerHit": true,
+          "hit": "SMALL#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 224,
+            "y": 139.1875,
+            "width": 80,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 829.9375,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 396.21875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 511.796875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 627.375,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 825.390625,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.484375,
+            "width": 96.546875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 201.28125,
+            "y": 428.484375,
+            "width": 85.71875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428,
+            "width": 120.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 163.734375,
+            "y": 428,
+            "width": 82.84375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482,
+            "width": 116.40625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 33,
+            "y": 752.828125,
+            "width": 254,
+            "height": 65.59375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 33,
+            "y": 441.328125,
+            "width": 70.6875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 119.6875,
+            "y": 441.328125,
+            "width": 90.296875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 710.796875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 33,
+            "y": 752.375,
+            "width": 254,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.34375,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482.34375,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 831.71875,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 17,
+            "y": 401.28125,
+            "width": 286,
+            "height": 96.765625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 660.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 720.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 805.421875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 832.421875,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 607.78125,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 821.953125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 849.140625,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 202.359375,
+            "y": 849.140625,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "320-dark",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 159.84375,
+            "height": 41.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 236.046875,
+            "y": 74,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 123.890625,
+            "width": 189,
+            "height": 55.59375
+          },
+          "centerHit": true,
+          "hit": "SMALL#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 224,
+            "y": 139.1875,
+            "width": 80,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 829.9375,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 396.21875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 511.796875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 627.375,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 825.390625,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.484375,
+            "width": 96.546875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 201.28125,
+            "y": 428.484375,
+            "width": 85.71875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428,
+            "width": 120.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 163.734375,
+            "y": 428,
+            "width": 82.84375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482,
+            "width": 116.40625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 33,
+            "y": 752.828125,
+            "width": 254,
+            "height": 65.59375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 33,
+            "y": 441.328125,
+            "width": 70.6875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 119.6875,
+            "y": 441.328125,
+            "width": 90.296875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 710.796875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 33,
+            "y": 752.375,
+            "width": 254,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.34375,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482.34375,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 831.71875,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 17,
+            "y": 401.28125,
+            "width": 286,
+            "height": 96.765625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 660.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 720.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 805.421875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 832.421875,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 607.78125,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 821.953125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 849.140625,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 202.359375,
+            "y": 849.140625,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "320-reduced-motion",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 159.84375,
+            "height": 41.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 236.046875,
+            "y": 74,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 123.890625,
+            "width": 189,
+            "height": 55.59375
+          },
+          "centerHit": true,
+          "hit": "SMALL#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 224,
+            "y": 139.1875,
+            "width": 80,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 829.9375,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 396.21875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 511.796875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 627.375,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 825.390625,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.484375,
+            "width": 96.546875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 201.28125,
+            "y": 428.484375,
+            "width": 85.71875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428,
+            "width": 120.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 163.734375,
+            "y": 428,
+            "width": 82.84375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482,
+            "width": 116.40625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 33,
+            "y": 752.828125,
+            "width": 254,
+            "height": 65.59375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 33,
+            "y": 441.328125,
+            "width": 70.6875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 119.6875,
+            "y": 441.328125,
+            "width": 90.296875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 710.796875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 33,
+            "y": 752.375,
+            "width": 254,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.34375,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482.34375,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 831.71875,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 17,
+            "y": 401.28125,
+            "width": 286,
+            "height": 96.765625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 660.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 720.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 805.421875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 832.421875,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 607.78125,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 821.953125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 849.140625,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 202.359375,
+            "y": 849.140625,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "1280-forced-colors",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 161.84375,
+            "height": 43.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 1188.046875,
+            "y": 11.40625,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 67.296875,
+            "width": 219.828125,
+            "height": 46.390625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 1151,
+            "y": 68.5,
+            "width": 105,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 41,
+            "y": 606.3125,
+            "width": 253,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 715.59375,
+            "width": 253,
+            "height": 154.171875
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.765625,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 41,
+            "y": 724.765625,
+            "width": 253,
+            "height": 151
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 431.890625,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 473.890625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 59,
+            "y": 515.890625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.125,
+            "width": 105.140625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1133.671875,
+            "y": 428.125,
+            "width": 93.328125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 428.15625,
+            "width": 128.109375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 477.109375,
+            "y": 428.15625,
+            "width": 87.09375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 574.203125,
+            "y": 428.15625,
+            "width": 123.4375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 339,
+            "y": 634.390625,
+            "width": 888,
+            "height": 44.796875
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 339,
+            "y": 440.53125,
+            "width": 77.109375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 436.109375,
+            "y": 440.53125,
+            "width": 98.5,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 339,
+            "y": 568.109375,
+            "width": 420,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 339,
+            "y": 689.09375,
+            "width": 888,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 339,
+            "y": 831.875,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 486.53125,
+            "y": 831.875,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 53,
+            "y": 428.0625,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 25,
+            "y": 570.859375,
+            "width": 1230,
+            "height": 84.984375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 49,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 267.375,
+            "y": 776.234375,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 49,
+            "y": 831.625,
+            "width": 1045.8125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 1106.8125,
+            "y": 831.625,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 49,
+            "y": 665.796875,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 24,
+            "y": 848.78125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 187.125,
+            "y": 848.78125,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 373.484375,
+            "y": 848.78125,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    },
+    {
+      "context": "320-forced-colors",
+      "controls": [
+        {
+          "id": "Skip to workspace",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 12,
+            "width": 161.84375,
+            "height": 43.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Trial contract",
+          "tag": "A",
+          "rect": {
+            "x": 236.046875,
+            "y": 74,
+            "width": 67.953125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "H\n↗\nHarbor Desk\nVenue operations / room notices",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 123.890625,
+            "width": 189,
+            "height": 55.59375
+          },
+          "centerHit": true,
+          "hit": "SMALL#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "appearance",
+          "tag": "SELECT",
+          "rect": {
+            "x": 224,
+            "y": 139.1875,
+            "width": 80,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#appearance",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-filter",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 831.9375,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#request-filter",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 394.21875,
+            "width": 254,
+            "height": 111.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 513.796875,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 629.375,
+            "width": 254,
+            "height": 107.578125
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-201",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 827.390625,
+            "width": 124.765625,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-202",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "REQ-203",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 51,
+            "y": 840.390625,
+            "width": 126.59375,
+            "height": 36
+          },
+          "centerHit": true,
+          "hit": "BUTTON#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "return-list",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.484375,
+            "width": 96.546875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#return-list",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "hide-notification",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 201.28125,
+            "y": 428.484375,
+            "width": 85.71875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#hide-notification",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "publish-notice",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428,
+            "width": 120.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#publish-notice",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "edit-draft",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 163.734375,
+            "y": 428,
+            "width": 82.84375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#edit-draft",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "decline-request",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482,
+            "width": 116.40625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#decline-request",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Inspect source records and observation context",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 33,
+            "y": 752.828125,
+            "width": 254,
+            "height": 65.59375
+          },
+          "centerHit": true,
+          "hit": "SUMMARY#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Session record",
+          "tag": "A",
+          "rect": {
+            "x": 33,
+            "y": 441.328125,
+            "width": 70.6875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Segment snapshot",
+          "tag": "A",
+          "rect": {
+            "x": 119.6875,
+            "y": 441.328125,
+            "width": 90.296875,
+            "height": 17.59375
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-scope",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 710.796875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#correction-scope",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "correction-text",
+          "tag": "TEXTAREA",
+          "rect": {
+            "x": 33,
+            "y": 752.375,
+            "width": 254,
+            "height": 125
+          },
+          "centerHit": true,
+          "hit": "TEXTAREA#correction-text",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "submit-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 428.34375,
+            "width": 137.53125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#submit-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "discard-correction",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 482.34375,
+            "width": 121.3125,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#discard-correction",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "request-cancellation",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 831.71875,
+            "width": 153.390625,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#request-cancellation",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Local fixture controls\nAdvance evidence for this trial · sep",
+          "tag": "SUMMARY",
+          "rect": {
+            "x": 17,
+            "y": 401.28125,
+            "width": 286,
+            "height": 96.765625
+          },
+          "centerHit": true,
+          "hit": "SPAN#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-offline",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 660.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-offline",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-retention-failure",
+          "tag": "INPUT",
+          "rect": {
+            "x": 33,
+            "y": 720.03125,
+            "width": 18,
+            "height": 18
+          },
+          "centerHit": true,
+          "hit": "INPUT#fixture-retention-failure",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "fixture-event",
+          "tag": "SELECT",
+          "rect": {
+            "x": 33,
+            "y": 805.421875,
+            "width": 254,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "SELECT#fixture-event",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "advance-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 832.421875,
+            "width": 124.1875,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#advance-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "reset-fixture",
+          "tag": "BUTTON",
+          "rect": {
+            "x": 33,
+            "y": 607.78125,
+            "width": 177.734375,
+            "height": 44
+          },
+          "centerHit": true,
+          "hit": "BUTTON#reset-fixture",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Source identities & credits",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 821.953125,
+            "width": 139.125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Read & implementation report",
+          "tag": "A",
+          "rect": {
+            "x": 16,
+            "y": 849.140625,
+            "width": 162.359375,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        },
+        {
+          "id": "Retained notices",
+          "tag": "A",
+          "rect": {
+            "x": 202.359375,
+            "y": 849.140625,
+            "width": 87.3125,
+            "height": 19.1875
+          },
+          "centerHit": true,
+          "hit": "A#",
+          "fullyWithinWidth": true
+        }
+      ]
+    }
+  ],
+  "sourceHashesAfter": [
+    {
+      "file": "app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    },
+    {
+      "file": "index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "file": "styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    }
+  ],
+  "sourceUnchangedDuringRun": true,
+  "finishedAt": "2026-11-05T17:09:41.985Z"
+}

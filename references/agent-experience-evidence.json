@@ -1,0 +1,793 @@
+{
+  "status": "draft for review",
+  "inspectedOn": "2026-10-27",
+  "timezone": "Asia/Bangkok",
+  "baselineCommit": "db910e7c632834ce2b72c34462199ff2df0bc379",
+  "authorship": "Original Atlas synthesis for Tamir (Phi Vuong Tuong Tam), with Codex AI assistance",
+  "sourceGroups": {
+    "haxPair": {
+      "schema_version": "1.0",
+      "scope": "Primary-source research for an Interface Atlas Agent Experience/control-contract draft; research only.",
+      "retrieved_on": "2026-10-27",
+      "timezone": "Asia/Bangkok",
+      "repository_changes": false,
+      "imported_source_assets_or_code": false,
+      "synthesis_status": "Original design hypotheses, not validated agent-specific requirements.",
+      "primary_records": [
+        {
+          "id": "HAX-2019",
+          "title": "Guidelines for Human-AI Interaction",
+          "fetched_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf",
+          "persistent_identifier": "https://doi.org/10.1145/3290605.3300233",
+          "creators": [
+            "Saleema Amershi",
+            "Dan Weld",
+            "Mihaela Vorvoreanu",
+            "Adam Fourney",
+            "Besmira Nushi",
+            "Penny Collisson",
+            "Jina Suh",
+            "Shamsi Iqbal",
+            "Paul N. Bennett",
+            "Kori Inkpen",
+            "Jaime Teevan",
+            "Ruth Kikin-Gil",
+            "Eric Horvitz"
+          ],
+          "organizations": [
+            "Microsoft",
+            "University of Washington, Paul G. Allen School of Computer Science & Engineering (Dan Weld)"
+          ],
+          "credited_contributors": [
+            {
+              "name": "Ever Zayn McDonald",
+              "role": "Acknowledged contributor; not a paper author",
+              "locator": "Section 9, PDF page index 11"
+            }
+          ],
+          "date_revision": {
+            "published": "2019; CHI conference May 4–9, 2019",
+            "pin": "DOI identified; fetched PDF URL has no content hash or verified immutable revision."
+          },
+          "inspection": {
+            "method": "Full primary PDF text inspected at authors/rights, Table 1, methods, discussion, acknowledgments",
+            "locators": [
+              "PDF index 0: authors, ACM notice, DOI",
+              "PDF index 2: Table 1",
+              "PDF indices 3–4: consolidation and evaluation",
+              "PDF indices 10–11: discussion and acknowledgments"
+            ]
+          },
+          "evidence_type": "Research synthesis and iterative guideline evaluation: 49 design practitioners assessed 20 products in the principal study.",
+          "supported_concepts": [
+            "Separate capability scope from expected quality.",
+            "Distinguish invocation, dismissal, correction, uncertainty scoping, explanations, feedback, and global controls."
+          ],
+          "caveats": [
+            "Relevance and clarity evaluation; not causal validation of the proposed Atlas composition.",
+            "General guidelines leave domain-specific needs and tradeoffs open."
+          ],
+          "reuse": {
+            "status": "Paper-specific ACM notice verified",
+            "summary": "2019 copyright held by owner/authors; publication rights licensed to ACM. Personal/classroom copying has notice and noncommercial conditions. Abstracting with credit allowed; other copying/republication requires permission and/or fee.",
+            "terms_source": "same PDF, first page"
+          },
+          "proposed_role": "Historical research foundation; use original paraphrase and citation."
+        },
+        {
+          "id": "HAX-LIBRARY",
+          "title": "HAX Design Library and inspected guideline detail pages",
+          "fetched_url": "https://www.microsoft.com/en-us/haxtoolkit/library/",
+          "creators": [
+            "Microsoft HAX Toolkit"
+          ],
+          "organizations": [
+            "Microsoft Research",
+            "Aether"
+          ],
+          "creator_scope_note": "Institutional attribution. Toolkit project roster is not an authorship list for every library artifact; do not replace the 2019 paper author list with it.",
+          "credits_source_id": "HAX-CREDITS",
+          "date_revision": {
+            "published": null,
+            "updated": null,
+            "pin": "Mutable live pages; no publication date, revision identifier, or content hash verified."
+          },
+          "inspected_artifacts": [
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/make-clear-what-the-system-can-do/",
+              "locator": "G1 introduction and pattern list",
+              "supports": "Task/domain limits; examples and controls can teach supported behavior."
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/make-clear-how-well-the-system-can-do-what-it-can-do/",
+              "locator": "G2 introduction and pattern list",
+              "supports": "Communication precision should track actual performance; report limitations."
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/support-efficient-dismissal/",
+              "locator": "G8 introduction",
+              "supports": "Make unwanted assistance easy to dismiss."
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/support-efficient-correction/",
+              "locator": "G9 introduction and pattern list",
+              "supports": "Partially useful output should remain editable; undo is one possible correction pattern."
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/scope-services-when-in-doubt/",
+              "locator": "G10 introduction and pattern list",
+              "supports": "Clarify ambiguous goals or narrow assistance before acting."
+            },
+            {
+              "url": "https://www.microsoft.com/en-us/haxtoolkit/guideline/make-clear-why-the-system-did-what-it-did/",
+              "locator": "G11 introduction and pattern list",
+              "supports": "Local/global explanations differ; explanation presence can inflate reliance."
+            }
+          ],
+          "evidence_type": "Practitioner design library; its project history reports patterns distilled from product examples and evaluated with UX designers.",
+          "method_source": "https://www.microsoft.com/en-us/haxtoolkit/about/",
+          "caveats": [
+            "Patterns are alternatives requiring product judgment.",
+            "Product examples show implementations, not independent efficacy or current-product guarantees."
+          ],
+          "reuse": {
+            "status": "Artifact-specific permissive license unresolved",
+            "summary": "No library-specific reuse grant found in inspected pages. Footer links Microsoft's general Terms of Use; no license inferred from a linked GitHub repository.",
+            "terms_source_id": "MICROSOFT-TOU"
+          },
+          "proposed_role": "Traceable pattern references; recreate no screenshots, diagrams, assets, page design, or code."
+        },
+        {
+          "id": "PAIR-V2-MODELS-EXPLAIN",
+          "title": "People + AI Guidebook v2: Mental Models; Explainability + Trust",
+          "fetched_urls": [
+            "https://pair.withgoogle.com/guidebook-v2/chapter/mental-models/",
+            "https://pair.withgoogle.com/guidebook-v2/chapter/explainability-trust/"
+          ],
+          "creators": [
+            "Google PAIR / People + AI Research team"
+          ],
+          "organizations": [
+            "Google"
+          ],
+          "credits_source_ids": [
+            "PAIR-EDITORIAL-CREDITS"
+          ],
+          "date_revision": {
+            "published": "2019-05-08 (guidebook)",
+            "updated": "2021-05-18 (v2 landing page)",
+            "pin": "Explicit historical v2 route; mutable web content, no verified content hash. Not represented as the current 2025 edition."
+          },
+          "metadata_source_id": "PAIR-V2-METADATA",
+          "evidence_type": "Practitioner synthesis with academic references and proprietary Google studies/design explorations; underlying internal study details unavailable.",
+          "inspected_sections": [
+            {
+              "chapter": "Mental Models",
+              "locators": [
+                "Set expectations for adaptation",
+                "Onboard in stages",
+                "Plan for co-learning",
+                "Account for expectations of human-like interaction",
+                "References/footer"
+              ],
+              "supported_concepts": "Teach limits through task-relevant, reversible use; explain whether user input changes future behavior. Human-like presentation can imply unsupported competence."
+            },
+            {
+              "chapter": "Explainability + Trust",
+              "locators": [
+                "Articulate data sources",
+                "Optimize for understanding",
+                "Manage influence on user decisions",
+                "References/footer"
+              ],
+              "supported_concepts": "Expose relevant data gaps; distinguish system-level explanations from output-specific explanations. Test whether confidence displays improve decisions; percentages can mislead."
+            }
+          ],
+          "caveats": [
+            "Transfer to tool-using agents is a design inference.",
+            "Do not imply learning/personalization unless the product actually implements it.",
+            "An explanation or score is not evidence that an output is correct."
+          ],
+          "reuse": {
+            "status": "Chapter-footer license verified",
+            "license": "CC BY-NC-SA 4.0",
+            "terms_source": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+            "note": "Research uses original synthesis and citation; no copied prose, visuals, worksheets, or code."
+          },
+          "proposed_role": "Inform capability expectations and calibrated evidence without prescribing a universal confidence badge."
+        },
+        {
+          "id": "PAIR-V2-FEEDBACK",
+          "title": "People + AI Guidebook v2: Feedback + Control",
+          "fetched_url": "https://pair.withgoogle.com/guidebook-v2/chapter/feedback-controls/",
+          "creators": [
+            "Google PAIR / People + AI Research team"
+          ],
+          "organizations": [
+            "Google"
+          ],
+          "credits_source_ids": [
+            "PAIR-EDITORIAL-CREDITS"
+          ],
+          "date_revision": {
+            "published": "2019-05-08 (guidebook)",
+            "updated": "2021-05-18 (v2 landing page)",
+            "pin": "Historical v2 route; mutable content, no verified hash."
+          },
+          "metadata_source_id": "PAIR-V2-METADATA",
+          "evidence_type": "Practitioner synthesis; cited public research plus proprietary internal studies/design explorations.",
+          "inspected_sections": [
+            "Align feedback with model improvement",
+            "Communicate value and time to impact",
+            "Balance control and automation",
+            "Provide editability",
+            "References/footer"
+          ],
+          "supported_concepts": [
+            "Acceptance/dismissal behavior may not reveal preference.",
+            "Feedback can inform product teams, tune a model, or merely filter current content; disclose actual effect and timing.",
+            "Support output editing, feature opt-out, and revisable/resettable preferences when applicable."
+          ],
+          "caveats": [
+            "A future learning effect must not be promised from a present edit/decline action.",
+            "These chapters do not validate one approval-card layout."
+          ],
+          "reuse": {
+            "status": "Chapter-footer license verified",
+            "license": "CC BY-NC-SA 4.0",
+            "terms_source": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          },
+          "proposed_role": "Keep task decisions distinct from optional feedback about future behavior."
+        }
+      ],
+      "supplemental_provenance": [
+        {
+          "id": "HAX-CREDITS",
+          "title": "The HAX Toolkit Project: People",
+          "fetched_url": "https://www.microsoft.com/en-us/research/project/hax-toolkit/people/",
+          "version": "Mutable; no revision/date verified",
+          "project_lead": [
+            "Mihaela Vorvoreanu"
+          ],
+          "toolkit_team": [
+            "Saleema Amershi",
+            "Jingya Chen",
+            "Xavier Fernandes",
+            "Adam Fourney",
+            "Jason Geiger",
+            "Nicholas King",
+            "Juan Lema",
+            "Tobias Schnabel",
+            "Kathy Walker",
+            "Hanna Wallach",
+            "Jenn Wortman Vaughan"
+          ],
+          "contributing_interns": [
+            "Andrew Anderson",
+            "Quan Ze (Jim) Chen",
+            "Matthew Hong",
+            "Meg Young"
+          ],
+          "caveat": "Current toolkit credits, not paper coauthors or verified per-pattern authorship."
+        },
+        {
+          "id": "MICROSOFT-TOU",
+          "title": "Microsoft Terms of Use",
+          "fetched_url": "https://www.microsoft.com/en-us/legal/terms-of-use",
+          "linked_from": "https://www.microsoft.com/en-us/haxtoolkit/library/",
+          "redirect_from": "https://go.microsoft.com/fwlink/?LinkID=206977",
+          "stated_last_update": "2022-02-07",
+          "inspected_sections": [
+            "Personal and Non-Commercial Use Limitation",
+            "Documents"
+          ],
+          "summary": "General default restricts copying/derivatives unless otherwise specified; documents have conditional personal/noncommercial informational permissions. Website layout and imagery excluded from document grant.",
+          "artifact_boundary": "The paper carries its own ACM notice. A library-specific broader grant was not established."
+        },
+        {
+          "id": "PAIR-V2-METADATA",
+          "title": "People + AI Guidebook v2 landing page",
+          "fetched_url": "https://pair.withgoogle.com/guidebook-v2/",
+          "dates": {
+            "published": "2019-05-08",
+            "updated": "2021-05-18"
+          },
+          "stated_creator": "People + AI Research team",
+          "stated_citation": "Google PAIR. People + AI Guidebook.",
+          "license": "CC BY-NC-SA 4.0",
+          "license_coverage": "License also repeated in each inspected chapter footer."
+        },
+        {
+          "id": "PAIR-EDITORIAL-CREDITS",
+          "title": "Updating the People + AI Guidebook in the age of generative AI",
+          "fetched_url": "https://medium.com/people-ai-research/updating-the-people-ai-guidebook-in-the-age-of-generative-ai-cace6c846db4",
+          "publication": "People + AI Research @ Google / People + AI Research Blog",
+          "date": "2023-11-22",
+          "authors": [
+            "Reena Jana",
+            "Mahima Pushkarna"
+          ],
+          "retrospective_credits": [
+            {
+              "edition": "Original 2018 exercise leading to 2019 launch",
+              "leads": [
+                "Jess Holbrook",
+                "Kristie Fisher"
+              ],
+              "guidance": [
+                "Fernanda Viégas",
+                "Martin Wattenberg"
+              ]
+            },
+            {
+              "edition": "2021 update",
+              "leads": [
+                "Rebecca Salois",
+                "Gabe Clapper"
+              ]
+            }
+          ],
+          "caveat": "Editorial project credits, not individual authorship assigned to specific chapter prose."
+        },
+        {
+          "id": "PAIR-2025-CREDITS",
+          "title": "Acknowledgements: People + AI Guidebook — 2025 Updates for Generative AI",
+          "fetched_url": "https://github.com/PAIR-code/pair-code.github.io/blob/master/Blog/People%20%2B%20AI%20Guidebook%20-%202025%20Contributors.md",
+          "edition": "Third edition updated April 2025",
+          "pin": "master branch; no commit verified",
+          "core_team": [
+            "Mahima Pushkarna",
+            "James Wexler",
+            "Jonathan Caton",
+            "Kevin Lozandier",
+            "Roxanne Pinto",
+            "Vanessa Milan",
+            "Josh Lee",
+            "Gloria Hu",
+            "Chris Butler",
+            "Dan Littlewood",
+            "Joscelyn Cooper",
+            "Phil Wagner"
+          ],
+          "additional_credit_scope": "File separately names contributors, partners, supporters, Google Research/DeepMind expertise, and workshop partners; full named lists remain at source.",
+          "explicit_artifact_license": "CC BY-NC-SA 4.0 stated inside this credits artifact; not inferred from repository license.",
+          "caveat": "Do not back-project this 2025 roster onto inspected 2021 chapters."
+        },
+        {
+          "id": "CC-BY-NC-SA",
+          "title": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International deed",
+          "fetched_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "summary": "Attribution, license link and change notices; noncommercial use; adaptations shared under same license; other rights can remain.",
+          "caveat": "Deed summarizes legal code. Source-specific application is supported by chapter license notices."
+        }
+      ],
+      "original_synthesis_proposal": {
+        "label": "Draft composition to evaluate; not a quotation or source-prescribed standard",
+        "boundaries": [
+          "Extend the existing Agent Experience chapter through a focused decision surface.",
+          "Link existing core questions and P0 remote-outcome guidance instead of restating them.",
+          "Exclude agent runtimes, security policy, authorization enforcement, and rollback guarantees."
+        ],
+        "proposed_components": [
+          {
+            "component": "Capabilities and limits",
+            "content": "Name the kind of help available and the relevant limits before a user invests effort.",
+            "support": [
+              "HAX-2019",
+              "HAX-LIBRARY",
+              "PAIR-V2-MODELS-EXPLAIN"
+            ]
+          },
+          {
+            "component": "Proposal under review",
+            "content": "Present the proposed result, material scope and changeable parts as one review object.",
+            "support": [
+              "HAX-LIBRARY"
+            ],
+            "inference": true
+          },
+          {
+            "component": "Evidence relevant to a decision",
+            "content": "Place inspectable sources, known gaps and applicable limitations beside the choice; offer more detail when useful.",
+            "support": [
+              "HAX-LIBRARY",
+              "PAIR-V2-MODELS-EXPLAIN"
+            ],
+            "inference": true
+          },
+          {
+            "component": "Task decision",
+            "content": "Keep accept, edit and decline understandable as choices about this proposal.",
+            "support": [
+              "HAX-LIBRARY",
+              "PAIR-V2-FEEDBACK"
+            ],
+            "inference": true
+          },
+          {
+            "component": "Future behavior",
+            "content": "If an interaction also changes preferences or supplies feedback, disclose that separately with its real scope and timing.",
+            "support": [
+              "PAIR-V2-FEEDBACK",
+              "PAIR-V2-MODELS-EXPLAIN"
+            ]
+          }
+        ],
+        "validation_questions": [
+          "Can a user predict what each choice changes now?",
+          "Can a user explain whether an edit or decline changes future behavior?",
+          "Can a user identify missing information before accepting?",
+          "Does evidence presentation improve decisions without increasing unwarranted reliance?"
+        ]
+      },
+      "retrieval_audit": [
+        {
+          "url": "https://pair.withgoogle.com/guidebook/",
+          "outcome": "HTTP HTML recognized by web tool, but zero extracted lines on repeated opens; current content not inspected."
+        },
+        {
+          "url": "https://pair.withgoogle.com/guidebook/chapters/",
+          "outcome": "Zero extracted lines; not used as chapter evidence."
+        },
+        {
+          "url": "https://pair.withgoogle.com/guidebook-v2/chapter/People%20%2B%20AI%20Guidebook%20-%20Mental%20Models.pdf",
+          "outcome": "Chapter's download link returned 404 via web tool; HTML chapter was inspected instead."
+        },
+        {
+          "url": "https://github.com/PAIR-code/pair-code.github.io/tree/master/guidebook",
+          "outcome": "Web tool cache miss; not treated as fetched source content."
+        },
+        {
+          "url": "https://pair.withgoogle.com/guidebook/",
+          "method": "PowerShell Invoke-WebRequest",
+          "outcome": "DNS failure: No such host is known; no current text obtained."
+        }
+      ],
+      "handoff_notes": [
+        "Four grouped primary records; PAIR Models/Explainability record contains two separately inspected chapter URLs.",
+        "Use historical PAIR evidence explicitly; inspect the current edition before representing its contents as current.",
+        "Research artifacts contain original synthesis and bibliographic/provenance facts; external pages remain authoritative."
+      ]
+    },
+    "protocol": {
+      "schema_version": "1.0",
+      "research_date": "2026-10-27",
+      "timezone": "Asia/Bangkok",
+      "scope": "Atlas Agent Experience: human-facing control contracts. Protocol examples establish capability boundaries; they are not universal agent UI requirements.",
+      "collection_method": "Read official dated specification pages, then inspected official repository artifacts pinned to the release commit. No SDK source used as a license proxy.",
+      "revision": {
+        "protocol": "MCP",
+        "version": "2025-11-25",
+        "git_tag": "2025-11-25",
+        "commit": "38c84e9f93ad191d9eb26d92b945d17bd0efcaf3",
+        "tag_date": "2025-11-25",
+        "verification_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/tags",
+        "commit_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/commit/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3",
+        "status": "Historical dated specification, deliberately pinned; no claim that this is the latest specification on the inspection date.",
+        "caveat": "Tasks are explicitly experimental in this revision; URL elicitation is new and may change."
+      },
+      "credit": {
+        "project": "Model Context Protocol",
+        "publisher": "modelcontextprotocol GitHub organization / MCP project",
+        "creators": [
+          "David Soria Parra",
+          "Justin Spahr-Summers"
+        ],
+        "creator_evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/README.md",
+        "copyright_notice": "Copyright (c) 2024–2025 Anthropic, PBC and contributors",
+        "attribution_limit": "The README credits the protocol's creators; individual authorship of these three specification pages was not established. Credit the MCP project and contributors for the artifacts."
+      },
+      "terms": {
+        "inspected_artifact": "Official specification-and-documentation repository LICENSE at the same pinned commit",
+        "license": "MIT",
+        "source_url": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/LICENSE",
+        "browsable_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/LICENSE",
+        "local_file": "references/licenses/mcp-specification-2025-11-25-MIT.txt",
+        "sha256": "346E57DC40801E3D58165E97F64D45B42C4571A68A76ECB10C3C12858ACECB3F",
+        "bytes": "Downloaded directly with Invoke-WebRequest -OutFile; no text reconstruction.",
+        "verified_condition": "The license requires inclusion of the copyright and permission notice in copies or substantial portions.",
+        "current_main_caveat": "Current main LICENSE describes Apache-2.0/MIT transition and CC-BY-4.0 for non-specification documentation. Those moving terms are not substituted for this pinned release license.",
+        "current_main_license_url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/LICENSE",
+        "reuse_in_this_report": "Original paraphrases and Atlas design inferences with source links. No copied source code, diagrams, UI assets, or long specification passages. Exact LICENSE bytes retained separately for prospective notices.",
+        "unresolved": "No artifact-level bylines established. No assertion of rights for current website branding, logos, hosted page chrome, or revisions after the pinned commit."
+      },
+      "sources": [
+        {
+          "id": "MCP-E",
+          "title": "Elicitation",
+          "artifact_path": "docs/specification/2025-11-25/client/elicitation.mdx",
+          "official_page": "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation",
+          "immutable_source": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/client/elicitation.mdx",
+          "inspected": "2026-10-27",
+          "document_status": "Official historical dated specification. URL mode marked new and subject to change.",
+          "evidence": [
+            {
+              "id": "E1",
+              "section": "Response Actions",
+              "fact": "Form accept submits data; decline explicitly refuses; cancel dismisses without a decision."
+            },
+            {
+              "id": "E2",
+              "section": "User Interaction Model; Capabilities",
+              "fact": "Only declared modes apply. Clients identify the requester, offer decline/cancel, permit form review, and obtain navigation consent."
+            },
+            {
+              "id": "E3",
+              "section": "URL Mode Elicitation Requests; Safe URL Handling",
+              "fact": "Sensitive input uses external URL mode. Show full URL and host; keep user inputs outside client/model access."
+            },
+            {
+              "id": "E4",
+              "section": "Completion Notifications for URL Mode Elicitation",
+              "fact": "URL acceptance is consent, not completion. Completion IDs match the originating elicitation; unknown or completed IDs are ignored."
+            },
+            {
+              "id": "E5",
+              "section": "URL Elicitation Required Error; Security Considerations",
+              "fact": "An error may list several required URL elicitations. Requests bind to client/user identity. Third-party authorization differs from MCP access authorization."
+            }
+          ],
+          "boundary": "The protocol chooses no specific UI. It supplies no general action-permission or proposal-revision approval contract."
+        },
+        {
+          "id": "MCP-C",
+          "title": "Cancellation",
+          "artifact_path": "docs/specification/2025-11-25/basic/utilities/cancellation.mdx",
+          "official_page": "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/cancellation",
+          "immutable_source": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/basic/utilities/cancellation.mdx",
+          "inspected": "2026-10-27",
+          "document_status": "Official historical dated specification.",
+          "evidence": [
+            {
+              "id": "C1",
+              "section": "Behavior Requirements",
+              "fact": "Ordinary cancellation identifies an outstanding request issued in the same direction. A receiver may ignore unknown, completed, or uncancellable requests."
+            },
+            {
+              "id": "C2",
+              "section": "Behavior Requirements; Implementation Notes",
+              "fact": "Task-augmented work uses tasks/cancel instead. Application UI should indicate cancellation was requested."
+            }
+          ],
+          "boundary": "A fire-and-forget cancellation notification proves neither remote acceptance nor stopped side effects."
+        },
+        {
+          "id": "MCP-T",
+          "title": "Tasks",
+          "artifact_path": "docs/specification/2025-11-25/basic/utilities/tasks.mdx",
+          "official_page": "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks",
+          "immutable_source": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/38c84e9f93ad191d9eb26d92b945d17bd0efcaf3/docs/specification/2025-11-25/basic/utilities/tasks.mdx",
+          "inspected": "2026-10-27",
+          "document_status": "Official experimental feature in a historical dated revision.",
+          "evidence": [
+            {
+              "id": "T1",
+              "section": "Capabilities; Tool-Level Negotiation",
+              "fact": "Task support and task cancellation are capabilities; individual tools may require, allow, or forbid tasks."
+            },
+            {
+              "id": "T2",
+              "section": "Task ID Requirements; Associating Task-Related Messages",
+              "fact": "Receiver-generated task IDs identify tasks. Related input requests share that task identity; task operations target their explicit taskId."
+            },
+            {
+              "id": "T3",
+              "section": "Task Cancellation",
+              "fact": "A valid cancel response follows transition to cancelled; execution stopping remains best-effort. Terminal tasks reject cancellation. Cancelled state stays terminal even if execution continues."
+            },
+            {
+              "id": "T4",
+              "section": "Task Isolation and Access Control",
+              "fact": "Where authorization context exists, tasks and operations bind to that context."
+            }
+          ],
+          "boundary": "A cancelled task state does not certify physical interruption, reversal, or absence of side effects. The protocol defines no universal steering acknowledgment."
+        }
+      ],
+      "atlas_proposals": [
+        {
+          "id": "AX-CONTROL-01",
+          "title": "Preserve decision intent",
+          "classification": "Atlas design inference",
+          "evidence": [
+            "E1",
+            "E2",
+            "E5"
+          ],
+          "proposed_contract": "Mark each pending item as an information request, an authority grant, or an external handoff. Use distinct submitted, declined, and dismissed outcomes. State the action, requester, and scope. A response to one item must not silently resolve another.",
+          "additive_to_existing_P0": "Decision meaning and scope, rather than another generic uncertain-outcome rule."
+        },
+        {
+          "id": "AX-CONTROL-02",
+          "title": "Keep outstanding decisions independently addressable",
+          "classification": "Atlas design inference",
+          "evidence": [
+            "E4",
+            "E5",
+            "T2",
+            "T4"
+          ],
+          "proposed_contract": "Retain a visible pending count and a stable item per unresolved decision. Bind response controls to the originating work, requester/account, and decision identity. Resolve only the matching item; preserve the others.",
+          "illustrative_acceptance_case": "Two pending decisions from different work items remain independently actionable after the first is answered.",
+          "additive_to_existing_P0": "Multiple outstanding decisions and response targeting."
+        },
+        {
+          "id": "AX-CONTROL-03",
+          "title": "Distinguish an external handoff from completion",
+          "classification": "Protocol-grounded, capability-dependent UI contract",
+          "evidence": [
+            "E2",
+            "E3",
+            "E4"
+          ],
+          "proposed_contract": "Before opening an external flow, show its destination and purpose. After consent, show awaiting external completion. Keep retry, dismiss, or resume controls available when the application supports them.",
+          "additive_to_existing_P0": "The specific consent-to-navigate boundary, not generic lost-reply recovery."
+        },
+        {
+          "id": "AX-CONTROL-04",
+          "title": "Acknowledge steering without overstating its effect",
+          "classification": "Atlas application-contract proposal; not prescribed by MCP",
+          "evidence": [
+            "C1",
+            "C2",
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "proposed_contract": "Attach steering to the intended active work. Distinguish sent, received, and applied/rejected acknowledgment only where the runtime supplies evidence. If interruption is unsupported, explain the effective boundary. Confirming protocol cancellation must not imply rollback.",
+          "additive_to_existing_P0": "Steering applicability and acknowledgment vocabulary. General cancellation races remain in existing P0."
+        },
+        {
+          "id": "AX-CONTROL-05",
+          "title": "Bind approval to the proposal the user reviewed",
+          "classification": "Atlas application-contract proposal; evidence gap in these sources",
+          "evidence": [
+            "E5",
+            "T2",
+            "T4"
+          ],
+          "proposed_contract": "Show which proposal and revision a decision authorizes. On material scope changes, invalidate the old decision and surface the changed proposal for review. Record authority scope separately from ordinary submitted information.",
+          "boundary": "MCP establishes request/task identity and contextual authorization, not proposal hashes, revision binding, universal approval policy, or steering semantics.",
+          "additive_to_existing_P0": "Inherited/reused proposal-revision consent from existing P0 and the original Agent Experience chapter; not a new contribution."
+        }
+      ],
+      "non_goals": [
+        "No instruction to install MCP, adopt its transport, write a backend, or implement its wire vocabulary.",
+        "No claim that all agents support MCP, elicitation, tasks, cancel, concurrent decisions, or steering.",
+        "No duplication of Atlas P0 general lost replies, cancellation races, stale status, or uncertain outcomes.",
+        "No repository or global policy mutation."
+      ]
+    },
+    "accessibility": [
+      {
+        "id": "AX-WCAG",
+        "title": "WCAG 2.2, SC4.1.3",
+        "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/#status-messages",
+        "version": "W3C Recommendation 2024-12-12",
+        "type": "normative",
+        "creators": [
+          "W3C Accessibility Guidelines Working Group"
+        ],
+        "editors": [
+          "Alastair Campbell",
+          "Chuck Adams",
+          "Rachael Bradley Montgomery",
+          "Michael Cooper",
+          "Andrew Kirkpatrick"
+        ],
+        "terms": {
+          "label": "W3C Document License 2023",
+          "url": "https://www.w3.org/copyright/document-license-2023/",
+          "verified": "Linked document-use notice followed to its current 2023 license page."
+        },
+        "used": "Qualifying status messages can be programmatically exposed without taking focus.",
+        "limit": "This criterion is not a complete interface conformance assessment."
+      },
+      {
+        "id": "AX-UNDERSTANDING",
+        "title": "Understanding SC4.1.3 Status Messages",
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+        "version": "Mutable page, displayed updated2026-05-11; no immutable pin",
+        "type": "informative W3C guidance",
+        "creators": [
+          "W3C Accessibility Guidelines Working Group"
+        ],
+        "additionalCredits": "Page identifies WAI/EOWG interface contributors Shadi Abou-Zahra, Steve Lee and Shawn Lawton Henry; not individual authorship of every paragraph.",
+        "terms": {
+          "label": "W3C Software and Document License 2023",
+          "url": "https://www.w3.org/copyright/software-license-2023/",
+          "verified": "Page footer permissive-license link followed to 2023 license."
+        },
+        "used": "Scope of status messages, focus/context distinction and excessive-announcement concern.",
+        "limit": "Informative guidance and techniques are not additional normative requirements."
+      },
+      {
+        "id": "AX-PRIMER",
+        "title": "Copilot Accessibility Practices",
+        "url": "https://primer.style/accessibility/patterns/copilot-accessibility-practices/",
+        "version": "Mutable current page inspected2026-10-27; no displayed revision or immutable pin established",
+        "type": "first-party practitioner guidance",
+        "creators": [
+          "GitHub / Primer accessibility contributors"
+        ],
+        "terms": {
+          "label": "Page-specific reuse terms unresolved",
+          "verified": "No license notice in fetched page. Another Primer software package license is not assumed to cover this content."
+        },
+        "used": "Focus persistence, real-time task/error announcements, semantic control states.",
+        "limit": "No code, prose, media, fixed announcement interval or Primer tokens imported; product examples are not universal rules."
+      }
+    ]
+  },
+  "claimMappings": [
+    {
+      "chapterSections": [
+        "Set expectations before delegation",
+        "Compose an inspectable decision"
+      ],
+      "sources": [
+        "HAX-2019",
+        "HAX-LIBRARY",
+        "PAIR-V2-MODELS-EXPLAIN"
+      ],
+      "classification": "Referenced concepts plus independently composed Atlas proposal; no prescribed standard layout."
+    },
+    {
+      "chapterSections": [
+        "Preserve operator control",
+        "Make steering applicability explicit"
+      ],
+      "sources": [
+        "HAX-LIBRARY",
+        "PAIR-V2-FEEDBACK",
+        "MCP-E"
+      ],
+      "classification": "Current choice versus future feedback from sources; steering scope/acknowledgement/application binding is an Atlas project-contract question, not supplied by MCP."
+    },
+    {
+      "chapterSections": [
+        "Manage decision attention",
+        "Make activity understandable"
+      ],
+      "sources": [
+        "MCP-E",
+        "MCP-C",
+        "MCP-T"
+      ],
+      "classification": "Version-scoped protocol examples plus Atlas lifecycle decisions; task cancellation is not proof of stopped execution."
+    },
+    {
+      "chapterSections": [
+        "Keep attention stable",
+        "Help someone assess evidence and return"
+      ],
+      "sources": [
+        "AX-WCAG",
+        "AX-UNDERSTANDING",
+        "AX-PRIMER",
+        "PAIR-V2-MODELS-EXPLAIN"
+      ],
+      "classification": "Normative status-message scope separated from informative practice and original re-entry composition."
+    }
+  ],
+  "reuse": "Original synthesis only; no source code, long prose, worksheets, diagrams or screenshots imported. Exact pinned MCP MIT notice retained. Other source artifact terms and unresolved permissions remain separate. Atlas publishing license remains undecided.",
+  "evidenceLimits": [
+    "Historical PAIR v2 inspected; current chapter text unavailable; 2025 roster is provenance only.",
+    "No live agent integration, browser, keyboard, assistive technology, calibration or user-comprehension study performed.",
+    "Fresh operations fixture is hypothetical and supplies no real service guarantee."
+  ],
+  "draftReviewCorrections": [
+    {
+      "id": "AX-D01",
+      "change": "Route lookup/repeat/overlap decisions through existing P0 documented alternatives; remove a stricter universal reconciliation requirement."
+    },
+    {
+      "id": "AX-D02",
+      "change": "Classify proposal-revision approval as inherited and preserve fresh review when a proposal changes."
+    },
+    {
+      "id": "AX-D03",
+      "change": "Use a portable retained-license path instead of an absolute research scratch path."
+    }
+  ]
+}

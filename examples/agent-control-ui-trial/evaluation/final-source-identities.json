@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "path": "preview/index.html",
+      "bytes": 16879,
+      "sha256": "4039965be3c2f94d83f6aff6299ec5476ea4da77ae060cce249d2e1eca288aa2"
+    },
+    {
+      "path": "preview/styles.css",
+      "bytes": 20714,
+      "sha256": "7ce4700b61c44a7653e39e54b5ce738ace3162cbc1084e1530adeee49c47f794"
+    },
+    {
+      "path": "preview/app.js",
+      "bytes": 40997,
+      "sha256": "ea4c0f8ccbd8b289717683573cae757569e3f7c0800bdbc4ec9ac9e19c751601"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1870,
+      "sha256": "126ab2d083c3a6c4916b223852d801e304ad32ef176996652a44f33116e5910d"
+    },
+    {
+      "path": "handoff.md",
+      "bytes": 11370,
+      "sha256": "575748e8ced1f72dc9df2d342f58357676bd989ada8c277c2f45b01d4eac9d19"
+    },
+    {
+      "path": "credits.md",
+      "bytes": 5212,
+      "sha256": "0291241f6fbf54a4a5529adef97e54fa82d5c33b08a85b4c3c4a7e5f02afef13"
+    },
+    {
+      "path": "implementation-report.md",
+      "bytes": 7759,
+      "sha256": "cc50203b5ae5bc123085e4ff26a48efc353e154a0d40c489c929938212b34c0c"
+    }
+  ],
+  "documentationClarification": "Read report distinguishes the two deliberately supplied historical inputs from unrelated archived reviews/logs; preview bytes remain identical to final browser freeze.",
+  "scope": "Historical local evaluation before Pages publication. Retained values identify that evaluated state; publication integration is recorded separately in pages-publication.json and publication-source-identities.json."
+}

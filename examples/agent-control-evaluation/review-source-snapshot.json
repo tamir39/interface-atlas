@@ -1,0 +1,80 @@
+{
+  "baselineCommit": "db910e7c632834ce2b72c34462199ff2df0bc379",
+  "status": "Peer-corrected 0.2-draft chapter, original fictional brief, independent generated first contract. Generation used earlier frozen source; no intended answer supplied.",
+  "brief": {
+    "bytes": 3889,
+    "sha256": "ca3517fd825aeca0ceec9f1b3d20c708bfc2199b47ce2382bd36a9ac4b1e7ba6"
+  },
+  "sources": [
+    {
+      "path": "knowledge/agent-experience.md",
+      "bytes": 12605,
+      "sha256": "aaefa5ea2f5e8c8a795dbf7a46de1ce21d6b924115139db8812afedf9397da78"
+    },
+    {
+      "path": "knowledge/uncertain-outcomes.md",
+      "bytes": 18322,
+      "sha256": "7977ea92734b0457dee69f041b22f88061970c83070fb85976a56e119736cb10"
+    },
+    {
+      "path": "knowledge/state-and-recovery.md",
+      "bytes": 17723,
+      "sha256": "ddd338c88cb26e5001c6209e91d4d3b53089912ac2bee68a9c3a95ba5eda7c51"
+    },
+    {
+      "path": "knowledge/forms-and-navigation.md",
+      "bytes": 18930,
+      "sha256": "870844c51547c2083a5b33d97048c7fdae1bdd7850a214ae375bdc3940e93b5b"
+    },
+    {
+      "path": "knowledge/accessibility-and-responsive.md",
+      "bytes": 7965,
+      "sha256": "57e53cd66e79c67e8fb689a28846845c3f5aaca486d4310e203353c1085d8db3"
+    },
+    {
+      "path": "references/agent-experience-research.md",
+      "bytes": 9323,
+      "sha256": "927c50d1aed95963ccf5cb9a2f0932a4cf2c9e28bed53e1e34c8bd25124dfb4b"
+    },
+    {
+      "path": "references/skill-adaptations.md",
+      "bytes": 22956,
+      "sha256": "f61d21022440587fef77a72c81b5d61980314e32d6898ccd1f878825479119c8"
+    },
+    {
+      "path": "references/licenses/mcp-specification-2025-11-25-MIT.txt",
+      "bytes": 1095,
+      "sha256": "346e57dc40801e3d58165e97f64d45b42c4571a68a76ecb10c3c12858acecb3f"
+    },
+    {
+      "path": "references/licenses/burhan-sebin-MIT.txt",
+      "bytes": 1069,
+      "sha256": "f1835fac859d7d648b6debd317d1a13634966a7614ca78b22d2b4063694b68b2"
+    },
+    {
+      "path": "references/licenses/ghaida-intent-CC0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "references/licenses/jakub-krehel-MIT.txt",
+      "bytes": 1069,
+      "sha256": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f"
+    },
+    {
+      "path": "references/licenses/julien-thibeaut-MIT.txt",
+      "bytes": 1072,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    },
+    {
+      "path": "references/licenses/mohit-aggarwal-MIT.txt",
+      "bytes": 1071,
+      "sha256": "18a87eaf5c6017a3ffc7a3c4927627d530cc1541406cb3e705576a1b8c47c6bd"
+    },
+    {
+      "path": "references/licenses/shadcn-MIT.txt",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "initialDraft": {
+    "bytes": 8086,
+    "sha256": "591c0414af6b3f9906c8f3a93306e83862b7ab508a9a5d26d5a2e7d5145c41f2"
+  },
+  "submittedCandidate": {
+    "bytes": 8114,
+    "sha256": "43b73ab9173b4cbf9c216376f62c7df4384b9a942501583f79a09bae12f8129d"
+  },
+  "finalContract": {
+    "bytes": 8417,
+    "sha256": "5c34bbe940a4f82dbc2153e5e734f1d7112ad7defdf20ba90b353fa301526681"
+  },
+  "corrections": [
+    {
+      "id": "AX-T01",
+      "stage": "author self-check before independent review",
+      "problem": "Absent correction-application evidence was treated as non-application.",
+      "correction": "Only mark non-application from supporting evidence; otherwise applicability stays unconfirmed.",
+      "evidence": "trial/trial-report.md; preserved initial and submitted candidate."
+    },
+    {
+      "id": "AX-T02",
+      "stage": "independent review",
+      "severity": "P2",
+      "problem": "An acknowledged correction with unresolved application had no explicit overlapping-submission gate while ordering was unspecified.",
+      "correction": "Keep new text editable; gate overlap throughout sending/acknowledged/unconfirmed applicability unless a documented supported policy permits it. Preserve each correction; do not unnecessarily block supported non-overlapping work.",
+      "evidence": "review/review.md; final contract steering and ownership paragraphs."
+    }
+  ],
+  "inputIntegrity": "Generation and independent-review source packs, read logs and submitted artifacts remain unchanged."
+}
